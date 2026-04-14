@@ -47,7 +47,13 @@
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/solutions/outbound-services\"|/solutions/outbound-call-center-services\"|g' {} +)",
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/solutions/outbound-services,|/solutions/outbound-call-center-services,|g' {} +)",
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/ai-automation\"|/services/ai-call-center-automation\"|g' {} +)",
-      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/ai-automation,|/services/ai-call-center-automation,|g' {} +)"
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/ai-automation,|/services/ai-call-center-automation,|g' {} +)",
+      "Bash(ls public/favicon* public/*.ico public/*.svg)",
+      "Bash(ls app/favicon* app/*.ico)",
+      "Bash(magick public/images/logo-v6.png -resize 32x32 app/favicon.ico)",
+      "Bash(magick public/images/logo-v6.png -resize 180x180 public/apple-touch-icon.png)",
+      "Bash(magick public/images/logo-v6.png -resize 192x192 public/icon-192.png)",
+      "Bash(magick public/images/logo-v6.png -resize 512x512 public/icon-512.png)"
     ]
   }
 }

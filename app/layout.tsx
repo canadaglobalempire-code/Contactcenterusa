@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   verification: {
     google: "Q8nqe1KtPCYANReH_fxQPK1EQsrnSpuUDKga_j0m7cc",
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   alternates: {
     canonical: "/",
   },
