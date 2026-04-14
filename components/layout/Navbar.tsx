@@ -38,21 +38,21 @@ const aboutLinks = [
 ];
 
 const industries = [
-  { label: "Automotive", href: "/about/industries" },
+  { label: "Automotive", href: "/industries/automotive-call-center-services" },
   { label: "Banking & Fintech", href: "/industries/banking-fintech-call-center" },
-  { label: "Cable & Media", href: "/about/industries" },
+  { label: "Cable & Media", href: "/industries/cable-media-call-center" },
   { label: "Ecommerce & Retail", href: "/industries/ecommerce-customer-service-outsourcing" },
   { label: "Education", href: "/industries/education-call-center-services" },
-  { label: "Energy & Utilities", href: "/about/industries" },
+  { label: "Energy & Utilities", href: "/industries/energy-utilities-call-center" },
   { label: "Financial Services", href: "/industries/financial-services-call-center" },
-  { label: "Government", href: "/about/industries" },
+  { label: "Government", href: "/industries/government-call-center" },
   { label: "Healthcare", href: "/industries/healthcare-call-center-services" },
   { label: "Insurance", href: "/industries/insurance-call-center-outsourcing" },
   { label: "Logistics & Shipping", href: "/industries/logistics-shipping-call-center" },
-  { label: "Pharmaceuticals", href: "/about/industries" },
+  { label: "Pharmaceuticals", href: "/industries/pharmaceuticals-call-center" },
   { label: "Real Estate", href: "/industries/real-estate-call-center-services" },
   { label: "SaaS & Technology", href: "/industries/saas-technology-support" },
-  { label: "Telecommunications", href: "/about/industries" },
+  { label: "Telecommunications", href: "/industries/telecommunications-call-center" },
   { label: "Travel & Hospitality", href: "/industries/travel-hospitality-call-center" },
 ];
 
