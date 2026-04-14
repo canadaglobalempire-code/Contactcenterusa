@@ -101,11 +101,9 @@ export default function FAQ() {
 
                 <div className="mt-8 space-y-4">
                   <a
-                    href={siteConfig.phoneHref}
                     className="flex items-center gap-3 text-xl font-semibold"
                   >
                     <Phone className="size-5" />
-                    {siteConfig.phone}
                   </a>
 
                   <a

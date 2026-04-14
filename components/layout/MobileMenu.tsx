@@ -132,11 +132,9 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         <SheetFooter>
           <div className="flex flex-col gap-2 text-center">
             <a
-              href={siteConfig.phoneHref}
               className="flex items-center justify-center gap-2 text-sm font-medium text-navy"
             >
               <Phone className="size-4" />
-              {siteConfig.phone}
             </a>
             <a
               href={`mailto:${siteConfig.email}`}

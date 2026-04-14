@@ -282,7 +282,6 @@ export function ContactFormSection() {
 
                 <div className="mt-8 space-y-5">
                   <a
-                    href={siteConfig.phoneHref}
                     className="flex items-center gap-4"
                   >
                     <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-red/20">
@@ -290,7 +289,6 @@ export function ContactFormSection() {
                     </div>
                     <div>
                       <div className="text-xs text-white/50">Phone</div>
-                      <div className="font-bold">{siteConfig.phone}</div>
                     </div>
                   </a>
 

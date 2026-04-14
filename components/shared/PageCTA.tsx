@@ -56,7 +56,6 @@ export function PageCTA({
               <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href={siteConfig.phoneHref}
               className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-8 py-4 text-[15px] font-semibold text-white transition-all hover:border-white/40 hover:bg-white/5"
             >
               <Phone className="h-4 w-4" />

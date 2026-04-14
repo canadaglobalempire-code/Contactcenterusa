@@ -53,7 +53,13 @@
       "Bash(magick public/images/logo-v6.png -resize 32x32 app/favicon.ico)",
       "Bash(magick public/images/logo-v6.png -resize 180x180 public/apple-touch-icon.png)",
       "Bash(magick public/images/logo-v6.png -resize 192x192 public/icon-192.png)",
-      "Bash(magick public/images/logo-v6.png -resize 512x512 public/icon-512.png)"
+      "Bash(magick public/images/logo-v6.png -resize 512x512 public/icon-512.png)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' '/<a href={siteConfig.phoneHref}/,/<\\\\/a>/d' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' '/siteConfig.phone}/d' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' '/siteConfig.phoneHref/d' {} +)",
+      "Bash(sed -i '' 's|\"telephone\": \"+1-800-555-0199\",||g' components/shared/CityPageTemplate.tsx)",
+      "Bash(sed -i '' '/siteConfig.phone/d' components/sections/ContactForm.tsx)",
+      "Bash(sed -i '' '/siteConfig.phoneHref/d' components/sections/ContactForm.tsx)"
     ]
   }
 }

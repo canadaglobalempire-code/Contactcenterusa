@@ -82,11 +82,9 @@ export function PageFAQ({
                 </p>
 
                 <a
-                  href={siteConfig.phoneHref}
                   className="mt-6 flex items-center gap-3 text-lg font-bold"
                 >
                   <Phone className="h-5 w-5" />
-                  {siteConfig.phone}
                 </a>
 
                 <Link

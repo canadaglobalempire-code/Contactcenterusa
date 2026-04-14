@@ -44,10 +44,8 @@ export function CTASection() {
                 <div>
                   <div className="text-sm text-gray-600">Call Us</div>
                   <a
-                    href={siteConfig.phoneHref}
                     className="text-lg font-bold text-navy hover:text-red transition-colors"
                   >
-                    {siteConfig.phone}
                   </a>
                 </div>
               </div>
@@ -97,7 +95,6 @@ export function CTASection() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <a
-                href={siteConfig.phoneHref}
                 className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-8 py-4 text-[15px] font-semibold text-navy transition-all hover:border-gray-300 hover:bg-gray-50"
               >
                 <Phone className="h-4 w-4" />

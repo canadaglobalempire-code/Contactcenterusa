@@ -166,13 +166,6 @@ export default function Navbar() {
 
           {/* Right side */}
           <div className="hidden items-center gap-5 lg:flex">
-            <a
-              href={siteConfig.phoneHref}
-              className="flex items-center gap-1.5 text-[14px] font-medium text-gray-900 transition-colors hover:text-red"
-            >
-              <Phone className="size-4" />
-              {siteConfig.phone}
-            </a>
             <Link
               href="/contact"
               className="rounded-lg bg-red px-7 py-3.5 text-[14px] font-semibold text-white shadow-lg shadow-red/25 transition-all hover:bg-red-dark hover:shadow-red/35"
