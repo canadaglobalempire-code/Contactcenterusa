@@ -46,6 +46,17 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-navy: #0F172A;
+  --color-red: #DC2626;
+  --color-red-dark: #B91C1C;
+  --color-red-light: #FEE2E2;
+  --color-blue: #2E75B6;
+  --color-accent-blue: #D5E8F0;
+  --color-success: #10B981;
+  --color-text-dark: #1E293B;
+  --color-text-muted: #64748B;
+  --color-bg-alt: #F8FAFC;
+  --color-bg-dark: #0F172A;
 }
 
 :root {
@@ -127,4 +138,32 @@
   html {
     @apply font-sans;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Gradient orb decorations */
+.gradient-orb-red {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.gradient-orb-blue {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.04) 0%, transparent 70%);
+  pointer-events: none;
 }

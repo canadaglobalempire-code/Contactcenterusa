@@ -1,0 +1,100 @@
+"use client";
+
+import { useState } from "react";
+import { ArrowRight, CheckCircle, Lock } from "lucide-react";
+
+export function HeroContactForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "20cc8f77-c5b7-4096-86a1-62a83bdbbcba");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      if (res.ok) setSubmitted(true);
+    } catch {}
+    setSubmitting(false);
+  };
+
+  if (submitted) {
+    return (
+      <div className="flex flex-col items-center justify-center rounded-2xl bg-white p-8 text-center shadow-xl">
+        <CheckCircle className="h-14 w-14 text-green-500" />
+        <p className="mt-4 text-lg font-bold text-navy">Thank You!</p>
+        <p className="mt-1 text-sm text-gray-700">
+          We&apos;ll respond within 1 working day.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="rounded-2xl bg-white p-6 shadow-xl lg:p-8"
+    >
+      <h3 className="text-xl font-bold text-navy">Get a Free Quote</h3>
+      <p className="mt-1 text-sm text-gray-600">
+        We&apos;ll respond within 1 working day.
+      </p>
+      <input
+        type="hidden"
+        name="subject"
+        value="Service Page Inquiry — ContactCenterUSA.com"
+      />
+      <div className="mt-6 space-y-4">
+        <input
+          name="name"
+          required
+          placeholder="John Smith"
+          className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
+        />
+        <input
+          name="company"
+          required
+          placeholder="Acme Inc."
+          className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
+        />
+        <input
+          name="email"
+          type="email"
+          required
+          placeholder="john@acme.com"
+          className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
+        />
+        <input
+          name="phone"
+          type="tel"
+          required
+          placeholder="(555) 123-4567"
+          className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
+        />
+        <textarea
+          name="requirements"
+          required
+          rows={3}
+          placeholder="Tell us about your needs..."
+          className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20 resize-none"
+        />
+      </div>
+      <button
+        type="submit"
+        disabled={submitting}
+        className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-red py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-red-dark disabled:opacity-50"
+      >
+        {submitting ? "Sending..." : "Get My Free Quote"}
+        {!submitting && <ArrowRight className="h-4 w-4" />}
+      </button>
+      <p className="mt-3 flex items-center justify-center gap-1.5 text-sm text-gray-600">
+        <Lock className="h-3 w-3" />
+        Your information is secure and never shared.
+      </p>
+    </form>
+  );
+}
