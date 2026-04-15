@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail, MapPin, Clock } from "lucide-react";
 import { siteConfig } from "@/lib/seo-config";
@@ -99,16 +100,12 @@ export function CTASection() {
             className="relative lg:col-span-2"
           >
             <div className="relative h-full min-h-[400px] overflow-hidden rounded-3xl shadow-2xl">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="absolute inset-0 h-full w-full object-cover"
-                poster="/images/hd-agents-row.jpg"
-              >
-                <source src="/images/video-3.mp4" type="video/mp4" />
-              </video>
+              <Image
+                src="/images/cc-team-huddle.jpg"
+                alt="Your US-based call center team is ready"
+                fill
+                className="object-cover"
+              />
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
 
