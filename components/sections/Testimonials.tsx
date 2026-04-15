@@ -10,7 +10,7 @@ const testimonials = [
       "Contact Center USA transformed our customer service operations. We went from missing 30% of calls to 99.8% answer rate within the first month. Their agents feel like part of our team.",
     name: "Sarah Mitchell",
     title: "VP of Operations",
-    company: "TechFlow Solutions",
+    company: "A Leading Tech Company",
     initials: "SM",
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
       "We needed bilingual support for our growing Hispanic customer base. Contact Center USA delivered fluent Spanish-speaking agents who understood our products perfectly. Sales increased 24%.",
     name: "David Rodriguez",
     title: "CEO",
-    company: "SunBright Ecommerce",
+    company: "A National Ecommerce Brand",
     initials: "DR",
   },
   {
@@ -26,7 +26,7 @@ const testimonials = [
       "The flexibility is what sets them apart. During our holiday rush, they scaled from 10 to 85 agents in under a week. No other provider could match that speed.",
     name: "Jennifer Chen",
     title: "Director of CX",
-    company: "RetailMax Inc.",
+    company: "A Major Retail Chain",
     initials: "JC",
   },
 ];

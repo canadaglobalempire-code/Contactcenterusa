@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA handles our tier 1 and tier 2 technical support across all product lines. First-call resolution jumped from 68% to 85%, and our technician dispatch rate dropped 40%. The ROI was evident within the first quarter.",
   name: "David Nakamura",
   title: "Chief Customer Officer",
-  company: "Atlas Telecom",
+  company: "A Major Telecom Provider",
   initials: "DN",
 };
 

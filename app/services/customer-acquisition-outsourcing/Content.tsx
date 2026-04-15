@@ -284,7 +284,7 @@ export function CustomerAcquisitionContent() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">MJ</div>
                   <div>
                     <div className="font-bold text-navy">Marcus Johnson</div>
-                    <div className="text-sm text-gray-600">VP of Sales, Apex Growth Partners</div>
+                    <div className="text-sm text-gray-600">VP of Sales, A Fast-Growing Tech Company</div>
                   </div>
                 </div>
               </div>

@@ -56,7 +56,7 @@ const testimonial = {
     "During Hurricane season, Contact Center USA scaled from 50 to 300 agents in 48 hours. Their crisis response team kept our customers informed and our call abandonment rate under 3%. They are an essential partner.",
   name: "Robert Chen",
   title: "Director of Customer Operations",
-  company: "Southeast Energy Cooperative",
+  company: "A Regional Energy Utility",
   initials: "RC",
 };
 

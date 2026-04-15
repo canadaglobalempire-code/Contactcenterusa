@@ -283,8 +283,8 @@ export function OmnichannelContent() {
                 <div className="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">KP</div>
                   <div>
-                    <div className="font-bold text-navy">Karen Patel</div>
-                    <div className="text-sm text-gray-600">Operations Manager, Summit Retail Group</div>
+                    <div className="font-bold text-navy">K.P.</div>
+                    <div className="text-sm text-gray-600">Operations Manager, A Multi-Location Retail Chain</div>
                   </div>
                 </div>
               </div>

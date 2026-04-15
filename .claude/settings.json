@@ -72,7 +72,14 @@
       "Bash(sed -i '' 's|import { ArrowRight, Phone, Mail, MapPin, Clock } from \"lucide-react\";|import { ArrowRight, Mail, MapPin, Clock } from \"lucide-react\";|g' components/sections/CTASection.tsx)",
       "Bash(sed -i '' 's|import { Phone, Menu, ChevronDown } from \"lucide-react\";|import { Menu, ChevronDown } from \"lucide-react\";|g' components/layout/Navbar.tsx)",
       "Bash(sed -i '' '/sameAs/,/\\\\]/d' lib/schema.ts)",
-      "Bash(sed -i '' '/social:/,/},/d' lib/seo-config.ts)"
+      "Bash(sed -i '' '/social:/,/},/d' lib/seo-config.ts)",
+      "Bash(grep -rn \"company:\" app/services/*/Content.tsx app/solutions/*/Content.tsx --include=\"*.tsx\")",
+      "Bash(cd /Users/ramanmakkar/Desktop/contactcenterusa grep -rn 'company:' app/services/*/Content.tsx app/solutions/*/Content.tsx)",
+      "Bash(sed -i '' 's/CEO, NovaTech Solutions/CEO, A Leading Tech Company/g' app/services/ai-call-center-automation/Content.tsx)",
+      "Bash(sed -i '' 's/Director of Operations, Pinnacle Financial Group/Director of Operations, A National Financial Firm/g' app/services/contact-center-software-solutions/Content.tsx)",
+      "Bash(sed -i '' 's/VP of Sales, Apex Growth Partners/VP of Sales, A Fast-Growing Tech Company/g' app/services/customer-acquisition-outsourcing/Content.tsx)",
+      "Bash(sed -i '' 's/Director of Customer Experience, BrightPath Insurance/Director of CX, A Major Insurance Carrier/g' app/services/customer-experience-analytics/Content.tsx)",
+      "Bash(sed -i '' 's/Director of E-Commerce, Urban Style Collective/Director of Ecommerce, A National Online Retailer/g' app/services/digital-customer-experience-services/Content.tsx)"
     ]
   }
 }

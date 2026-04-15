@@ -56,7 +56,7 @@ const testimonial = {
     "Since partnering with Contact Center USA, our subscriber churn dropped 30% and our NPS increased by 22 points. Their retention team is exceptional — they truly understand the cable and media landscape.",
   name: "Jennifer Walsh",
   title: "SVP Customer Experience",
-  company: "Horizon Media Networks",
+  company: "A National Cable Provider",
   initials: "JW",
 };
 

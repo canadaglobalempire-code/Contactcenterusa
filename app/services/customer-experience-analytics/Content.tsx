@@ -284,7 +284,7 @@ export function CXAnalyticsContent() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">LF</div>
                   <div>
                     <div className="font-bold text-navy">Lisa Fernandez</div>
-                    <div className="text-sm text-gray-600">Director of Customer Experience, BrightPath Insurance</div>
+                    <div className="text-sm text-gray-600">Director of CX, A Major Insurance Carrier</div>
                   </div>
                 </div>
               </div>

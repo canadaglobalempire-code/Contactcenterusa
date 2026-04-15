@@ -284,7 +284,7 @@ export function DigitalCXContent() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">RN</div>
                   <div>
                     <div className="font-bold text-navy">Rachel Nguyen</div>
-                    <div className="text-sm text-gray-600">Director of E-Commerce, Urban Style Collective</div>
+                    <div className="text-sm text-gray-600">Director of Ecommerce, A National Online Retailer</div>
                   </div>
                 </div>
               </div>

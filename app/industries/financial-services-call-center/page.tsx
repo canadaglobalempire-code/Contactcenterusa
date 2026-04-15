@@ -56,7 +56,7 @@ const testimonial = {
     "The level of security and compliance Contact Center USA brings is unmatched. Our fraud response time dropped by 60% and we have complete confidence in their handling of sensitive financial data.",
   name: "Michael Torres",
   title: "SVP of Operations",
-  company: "Meridian Financial Group",
+  company: "A National Financial Services Firm",
   initials: "MT",
 };
 

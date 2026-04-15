@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA transformed our patient communication. Wait times dropped by 60% and our HIPAA compliance is airtight. They truly understand the healthcare space.",
   name: "Dr. Sarah Mitchell",
   title: "Chief Operating Officer",
-  company: "Pinnacle Health Partners",
+  company: "A Regional Hospital Network",
   initials: "SM",
 };
 

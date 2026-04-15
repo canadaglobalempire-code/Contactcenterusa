@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA handles our Tier 1 and Tier 2 support flawlessly. Our engineering team can finally focus on building product instead of answering support tickets. First-contact resolution jumped to 92%.",
   name: "David Kim",
   title: "Head of Customer Success",
-  company: "CloudStack Technologies",
+  company: "A Fast-Growing SaaS Platform",
   initials: "DK",
 };
 

@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA reduced our branch call volume by 35% while maintaining a 98% satisfaction score. Their agents handle everything from mobile banking support to complex loan inquiries with professionalism.",
   name: "James Whitfield",
   title: "EVP of Retail Banking",
-  company: "Heritage Community Bank",
+  company: "A Regional Community Bank",
   initials: "JW",
 };
 

@@ -428,7 +428,7 @@ export function ContactCenterSoftwareContent() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">SM</div>
                   <div>
                     <div className="font-bold text-navy">Sarah Mitchell</div>
-                    <div className="text-sm text-gray-600">Director of Operations, Pinnacle Financial Group</div>
+                    <div className="text-sm text-gray-600">Director of Operations, A National Financial Firm</div>
                   </div>
                 </div>
               </div>

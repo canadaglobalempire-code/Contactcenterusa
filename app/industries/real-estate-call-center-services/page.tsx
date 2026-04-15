@@ -56,7 +56,7 @@ const testimonial = {
     "Before Contact Center USA, we were losing leads after hours. Now every call is answered in under 30 seconds, and our qualified appointment rate has tripled. They pay for themselves many times over.",
   name: "Amanda Chen",
   title: "Broker/Owner",
-  company: "Skyline Realty Group",
+  company: "A National Real Estate Brokerage",
   initials: "AC",
 };
 

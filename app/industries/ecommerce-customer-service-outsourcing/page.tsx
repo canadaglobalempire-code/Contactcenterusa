@@ -56,7 +56,7 @@ const testimonial = {
     "During our biggest Black Friday ever, Contact Center USA scaled our support team seamlessly. Customer satisfaction actually went up during our highest-volume period. They are an essential partner.",
   name: "Jason Park",
   title: "VP of Customer Experience",
-  company: "TrendWave Commerce",
+  company: "A Top Ecommerce Retailer",
   initials: "JP",
 };
 

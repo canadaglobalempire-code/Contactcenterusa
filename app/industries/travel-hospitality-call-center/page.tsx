@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA delivers the five-star experience our guests expect. Their concierge agents are as polished as our front desk staff, and they have increased our direct booking rate by 25%.",
   name: "Elena Vasquez",
   title: "VP of Guest Experience",
-  company: "Azure Resort Collection",
+  company: "A Luxury Hotel Chain",
   initials: "EV",
 };
 

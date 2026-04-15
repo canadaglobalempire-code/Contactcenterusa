@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA manages our BDC across 12 dealerships. Appointment rates are up 35% and our CSI scores have never been higher. They understand the automotive business inside and out.",
   name: "Michael Torres",
   title: "VP of Operations",
-  company: "Premier Auto Group",
+  company: "A Multi-State Auto Dealership",
   initials: "MT",
 };
 

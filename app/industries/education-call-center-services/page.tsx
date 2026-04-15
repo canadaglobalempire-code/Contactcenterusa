@@ -56,7 +56,7 @@ const testimonial = {
     "Contact Center USA helped us increase enrollment by 30% in one admissions cycle. Their agents understand higher education and treat every prospective student with the care and attention they deserve.",
   name: "Dr. Karen Williams",
   title: "VP of Enrollment Management",
-  company: "Crestview University",
+  company: "A State University System",
   initials: "KW",
 };
 

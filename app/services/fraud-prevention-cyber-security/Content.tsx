@@ -283,8 +283,8 @@ export function FraudPreventionContent() {
                 <div className="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">RC</div>
                   <div>
-                    <div className="font-bold text-navy">Robert Callahan</div>
-                    <div className="text-sm text-gray-600">CISO, Meridian Federal Credit Union</div>
+                    <div className="font-bold text-navy">R.C.</div>
+                    <div className="text-sm text-gray-600">CISO, A Regional Credit Union</div>
                   </div>
                 </div>
               </div>
