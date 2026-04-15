@@ -424,7 +424,7 @@ export default function AmericanCallCentersContent() {
                 ))}
               </ul>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                This methodology ensures our rankings reflect real-world <Link href="/services/" className="text-red font-semibold hover:underline">American call center performance</Link>, not marketing spend or company size alone.
+                This methodology ensures our rankings reflect real-world <Link href="/services" className="text-red font-semibold hover:underline">American call center performance</Link>, not marketing spend or company size alone.
               </p>
 
               {/* Company Rankings */}

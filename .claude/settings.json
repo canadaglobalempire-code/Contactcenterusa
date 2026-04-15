@@ -59,7 +59,13 @@
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' '/siteConfig.phoneHref/d' {} +)",
       "Bash(sed -i '' 's|\"telephone\": \"+1-800-555-0199\",||g' components/shared/CityPageTemplate.tsx)",
       "Bash(sed -i '' '/siteConfig.phone/d' components/sections/ContactForm.tsx)",
-      "Bash(sed -i '' '/siteConfig.phoneHref/d' components/sections/ContactForm.tsx)"
+      "Bash(sed -i '' '/siteConfig.phoneHref/d' components/sections/ContactForm.tsx)",
+      "Bash(find app/ -name \"page.tsx\" -exec dirname {} \\\\;)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/inbound-call-center\"|/solutions/inbound-call-center-services\"|g' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/outbound-call-center\"|/solutions/outbound-call-center-services\"|g' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/quality-assurance\"|/services/customer-experience-analytics\"|g' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/workforce-management\"|/services/contact-center-software-solutions\"|g' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/industries/financial-services\"|/industries/financial-services-call-center\"|g' {} +)"
     ]
   }
 }
