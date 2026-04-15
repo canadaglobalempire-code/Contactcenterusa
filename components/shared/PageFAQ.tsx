@@ -81,8 +81,6 @@ export function PageFAQ({
                   Our team is standing by to help you find the perfect solution.
                 </p>
 
-                >
-
                 <Link
                   href="/contact"
                   className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-red py-3.5 font-semibold text-white transition-all hover:bg-red-dark"
