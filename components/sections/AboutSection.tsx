@@ -49,7 +49,7 @@ export function AboutSection() {
                 className="absolute inset-0 h-full w-full object-cover"
                 poster="/images/hd-agents-working.jpg"
               >
-                <source src="/images/video-1.mp4" type="video/mp4" />
+                <source src="/images/video-3.mp4" type="video/mp4" />
               </video>
               {/* Cinematic overlay */}
               <div className="absolute inset-0 bg-black/20" />
