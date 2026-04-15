@@ -103,7 +103,6 @@ export default function FAQ() {
                   <a
                     className="flex items-center gap-3 text-xl font-semibold"
                   >
-                    <Phone className="size-5" />
                   </a>
 
                   <a

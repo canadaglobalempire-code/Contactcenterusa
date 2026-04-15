@@ -9,8 +9,8 @@ export function MobileStickyCTA() {
       <a
         className="flex-1 flex items-center justify-center gap-2 bg-navy text-white py-3 rounded-lg font-semibold text-sm"
       >
-        <Phone className="w-4 h-4" />
-        Call Now
+        <FileText className="w-4 h-4" />
+        Get a Quote
       </a>
       <a
         href="/contact"

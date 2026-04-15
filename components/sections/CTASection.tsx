@@ -39,19 +39,6 @@ export function CTASection() {
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-red/10">
-                  <Phone className="h-5 w-5 text-red" />
-                </div>
-                <div>
-                  <div className="text-sm text-gray-600">Call Us</div>
-                  <a
-                    className="text-lg font-bold text-navy hover:text-red transition-colors"
-                  >
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-red/10">
                   <Mail className="h-5 w-5 text-red" />
                 </div>
                 <div>
@@ -94,12 +81,12 @@ export function CTASection() {
                 Get Your Free Quote
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <a
+              <Link
+                href="/services"
                 className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-8 py-4 text-[15px] font-semibold text-navy transition-all hover:border-gray-300 hover:bg-gray-50"
               >
-                <Phone className="h-4 w-4" />
-                Call Now
-              </a>
+                Explore Services
+              </Link>
             </div>
           </motion.div>
 

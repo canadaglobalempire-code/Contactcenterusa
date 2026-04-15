@@ -81,11 +81,7 @@ export function PageFAQ({
                   Our team is standing by to help you find the perfect solution.
                 </p>
 
-                <a
-                  className="mt-6 flex items-center gap-3 text-lg font-bold"
                 >
-                  <Phone className="h-5 w-5" />
-                </a>
 
                 <Link
                   href="/contact"

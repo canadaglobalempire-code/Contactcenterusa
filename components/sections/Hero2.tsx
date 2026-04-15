@@ -27,7 +27,7 @@ export function Hero2() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col justify-between px-5 lg:px-8">
         {/* Main centered content */}
-        <div className="flex flex-1 flex-col items-center justify-center text-center pt-20">
+        <div className="flex flex-1 flex-col items-center justify-center text-center pt-32">
           {/* Top label */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
