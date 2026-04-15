@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, FileText } from "lucide-react";
+import { FileText } from "lucide-react";
 import { siteConfig } from "@/lib/seo-config";
 
 export function MobileStickyCTA() {

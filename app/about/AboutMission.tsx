@@ -35,7 +35,7 @@ export function AboutMission() {
                 className="absolute inset-0 h-full w-full object-cover"
                 poster="/images/hd-agents-working.jpg"
               >
-                <source src="/images/video-1.mp4" type="video/mp4" />
+                <source src="/images/hero-video.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-black/20" />
             </div>

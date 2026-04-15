@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Phone, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import {
   Sheet,
   SheetContent,
@@ -131,10 +131,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
 
         <SheetFooter>
           <div className="flex flex-col gap-2 text-center">
-            <a
-              className="flex items-center justify-center gap-2 text-sm font-medium text-navy"
-            >
-            </a>
             <a
               href={`mailto:${siteConfig.email}`}
               className="flex items-center justify-center gap-2 text-sm text-gray-700"

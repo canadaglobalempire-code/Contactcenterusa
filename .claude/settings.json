@@ -65,7 +65,12 @@
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/outbound-call-center\"|/solutions/outbound-call-center-services\"|g' {} +)",
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/quality-assurance\"|/services/customer-experience-analytics\"|g' {} +)",
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/services/workforce-management\"|/services/contact-center-software-solutions\"|g' {} +)",
-      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/industries/financial-services\"|/industries/financial-services-call-center\"|g' {} +)"
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's|/industries/financial-services\"|/industries/financial-services-call-center\"|g' {} +)",
+      "Bash(sed -i '' 's|/images/video-1.mp4|/images/hero-video.mp4|g' components/sections/AboutSection.tsx app/about/AboutMission.tsx)",
+      "Bash(sed -i '' 's|import { Phone, FileText } from \"lucide-react\";|import { FileText } from \"lucide-react\";|g' components/shared/MobileStickyCTA.tsx)",
+      "Bash(sed -i '' 's|import { ArrowRight, Phone } from \"lucide-react\";|import { ArrowRight } from \"lucide-react\";|g' components/shared/PageFAQ.tsx)",
+      "Bash(sed -i '' 's|import { ArrowRight, Phone, Mail, MapPin, Clock } from \"lucide-react\";|import { ArrowRight, Mail, MapPin, Clock } from \"lucide-react\";|g' components/sections/CTASection.tsx)",
+      "Bash(sed -i '' 's|import { Phone, Menu, ChevronDown } from \"lucide-react\";|import { Menu, ChevronDown } from \"lucide-react\";|g' components/layout/Navbar.tsx)"
     ]
   }
 }

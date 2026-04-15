@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Clock } from "lucide-react";
 import { siteConfig } from "@/lib/seo-config";
 
 export function CTASection() {
