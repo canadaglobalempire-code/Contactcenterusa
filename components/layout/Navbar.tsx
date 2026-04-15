@@ -85,8 +85,8 @@ function Dropdown({
       </div>
 
       {open && (
-        <div className="absolute left-0 top-full pt-4">
-          <div className={`rounded-xl border border-gray-100 bg-white p-2 shadow-xl ${items.length > 10 ? "w-[420px] grid grid-cols-2 gap-0" : "min-w-[230px]"}`}>
+        <div className={`absolute top-full pt-4 ${items.length > 10 ? "left-1/2 -translate-x-1/2" : "left-0"}`}>
+          <div className={`rounded-xl border border-gray-100 bg-white p-3 shadow-2xl ${items.length > 10 ? "w-[480px] grid grid-cols-2 gap-1" : "min-w-[230px]"}`}>
             {items.map((item) => (
               <Link
                 key={item.href + item.label}
