@@ -52,12 +52,14 @@ export function HeroContactForm() {
         <input
           name="name"
           required
+          aria-label="Full name"
           placeholder="John Smith"
           className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
         />
         <input
           name="company"
           required
+          aria-label="Company name"
           placeholder="Acme Inc."
           className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
         />
@@ -65,6 +67,7 @@ export function HeroContactForm() {
           name="email"
           type="email"
           required
+          aria-label="Email address"
           placeholder="john@acme.com"
           className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
         />
@@ -72,6 +75,7 @@ export function HeroContactForm() {
           name="phone"
           type="tel"
           required
+          aria-label="Phone number"
           placeholder="(555) 123-4567"
           className="h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20"
         />
@@ -79,6 +83,7 @@ export function HeroContactForm() {
           name="requirements"
           required
           rows={3}
+          aria-label="Your requirements"
           placeholder="Tell us about your needs..."
           className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-navy outline-none transition-colors placeholder:text-gray-400 focus:border-red focus:ring-2 focus:ring-red/20 resize-none"
         />
@@ -86,6 +91,7 @@ export function HeroContactForm() {
       <button
         type="submit"
         disabled={submitting}
+        aria-label="Submit contact form"
         className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-red py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-red-dark disabled:opacity-50"
       >
         {submitting ? "Sending..." : "Get My Free Quote"}

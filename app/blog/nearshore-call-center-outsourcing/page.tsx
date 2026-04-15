@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "nearshore vs offshore call center",
     "US based call center",
   ],
+  alternates: { canonical: "/blog/nearshore-call-center-outsourcing" },
 };
 
 export default function Page() {

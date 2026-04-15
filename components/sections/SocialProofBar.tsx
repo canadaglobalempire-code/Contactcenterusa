@@ -51,7 +51,7 @@ export function SocialProofBar() {
               "/images/agent-smiling.jpg",
             ].map((src, i) => (
               <div key={i} className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-white shadow-md" style={{ marginLeft: i > 0 ? "-8px" : "0" }}>
-                <Image src={src} alt="Team member" fill className="object-cover" />
+                <Image src={src} alt={`Contact Center USA team member ${i + 1}`} fill className="object-cover" />
               </div>
             ))}
             <span className="ml-2 text-sm font-medium text-text-muted">

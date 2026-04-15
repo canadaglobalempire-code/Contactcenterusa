@@ -128,6 +128,7 @@ export function SurgeSection() {
               <button
                 key={surge.label}
                 onClick={() => setActive(i)}
+                aria-label={surge.label}
                 className={`group flex items-center gap-3 rounded-xl p-4 text-left transition-all duration-300 ${
                   active === i
                     ? "bg-white shadow-lg"
@@ -174,7 +175,7 @@ export function SurgeSection() {
                 {/* Image */}
                 <Image
                   src={surges[active].image}
-                  alt={surges[active].label}
+                  alt={`Call center agents supporting ${surges[active].label} surge demand`}
                   fill
                   className="object-cover object-top"
                 />

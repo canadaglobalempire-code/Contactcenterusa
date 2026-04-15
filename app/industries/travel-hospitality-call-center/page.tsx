@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Travel & Hospitality Call Center Services | Reservations & Concierge | Contact Center USA",
   description:
     "Travel and hospitality call center services for reservations, cancellations, concierge support, and loyalty programs. Deliver five-star guest experiences at scale.",
+  alternates: { canonical: "/industries/travel-hospitality-call-center" },
 };
 
 const features = [

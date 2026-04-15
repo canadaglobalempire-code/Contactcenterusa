@@ -17,11 +17,6 @@ export function generateOrganizationSchema() {
       contactType: "sales",
       availableLanguage: ["English", "Spanish"],
     },
-    sameAs: [
-      "https://www.linkedin.com/company/contactcenterusa",
-      "https://twitter.com/contactcenterus",
-      "https://www.facebook.com/contactcenterusa",
-    ],
   };
 }
 

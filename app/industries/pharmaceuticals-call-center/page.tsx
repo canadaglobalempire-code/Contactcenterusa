@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Pharmaceutical Call Center Services | Patient & HCP Support | Contact Center USA",
   description:
     "Pharmaceutical call center services including patient assistance programs, adverse event reporting, drug information, clinical trial support, and HCP inquiries. FDA-compliant and HIPAA-certified.",
+  alternates: { canonical: "/industries/pharmaceuticals-call-center" },
 };
 
 const features = [

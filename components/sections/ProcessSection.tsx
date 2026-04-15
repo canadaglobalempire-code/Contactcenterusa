@@ -175,7 +175,7 @@ export function ProcessSection() {
             <div className="absolute -bottom-6 -left-6 h-[140px] w-[120px] overflow-hidden rounded-2xl border-4 border-navy shadow-xl">
               <Image
                 src="/images/hd-agents-pair.jpg"
-                alt="Agent smiling"
+                alt="US-based call center agent pair collaborating"
                 fill
                 className="object-cover"
               />

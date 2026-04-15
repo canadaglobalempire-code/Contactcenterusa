@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Banking Call Center Services | Account Support & Digital Banking | Contact Center USA",
   description:
     "Banking call center services for account support, loan processing, digital banking assistance, and regulatory compliance. Secure, reliable support for banks and credit unions.",
+  alternates: { canonical: "/industries/banking-fintech-call-center" },
 };
 
 const features = [

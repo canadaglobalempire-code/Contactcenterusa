@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "How to Choose the Right Call Center Outsourcing Partner",
   description:
     "A structured framework for evaluating and selecting the best call center outsourcing partner. Covers key criteria, essential questions, red flags, evaluation checklists, and technology requirements for 2026.",
+  alternates: { canonical: "/blog/how-to-choose-call-center-partner" },
 };
 
 export default function Page() {

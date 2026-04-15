@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Energy & Utilities Call Center Services | Utility Customer Support | Contact Center USA",
   description:
     "Energy and utilities call center services including outage management, billing inquiries, smart meter support, energy conservation programs, and crisis response. Trusted by utility companies nationwide.",
+  alternates: { canonical: "/industries/energy-utilities-call-center" },
 };
 
 const features = [

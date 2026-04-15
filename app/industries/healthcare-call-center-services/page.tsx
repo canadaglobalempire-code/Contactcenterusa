@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Healthcare Call Center Services | HIPAA Compliant Support | Contact Center USA",
   description:
     "HIPAA-compliant healthcare call center services including patient scheduling, medical triage, insurance verification, and 24/7 nurse hotlines. Trusted by hospitals and clinics nationwide.",
+  alternates: { canonical: "/industries/healthcare-call-center-services" },
 };
 
 const features = [

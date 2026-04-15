@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Call Center Services in San Diego | Contact Center USA",
   description:
     "Contact Center USA provides US-based call center outsourcing services in San Diego, CA. 24/7 inbound & outbound support, AI automation, and omnichannel solutions. Get a free quote.",
+  alternates: { canonical: "/call-center-services-san-diego" },
 };
 
 export default function SanDiegoPage() {

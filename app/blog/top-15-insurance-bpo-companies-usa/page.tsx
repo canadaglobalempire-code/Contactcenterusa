@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "insurance bpo providers 2026",
     "insurance back office outsourcing",
   ],
+  alternates: { canonical: "/blog/top-15-insurance-bpo-companies-usa" },
 };
 
 export default function Page() {

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Real Estate Call Center Services | Lead Qualification & Scheduling | Contact Center USA",
   description:
     "Real estate call center services for lead qualification, appointment scheduling, property inquiries, and investor support. Never miss a hot lead again.",
+  alternates: { canonical: "/industries/real-estate-call-center-services" },
 };
 
 const features = [

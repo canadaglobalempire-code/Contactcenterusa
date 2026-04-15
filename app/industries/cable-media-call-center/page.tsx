@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Cable & Media Call Center Services | Entertainment Support | Contact Center USA",
   description:
     "Cable and media call center services including billing support, technical troubleshooting, service activation, subscriber retention, and upgrade campaigns. Trusted by cable and media companies nationwide.",
+  alternates: { canonical: "/industries/cable-media-call-center" },
 };
 
 const features = [

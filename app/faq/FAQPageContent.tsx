@@ -233,6 +233,7 @@ export function FAQPageContent() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
+                aria-label={cat}
                 className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all ${
                   activeCategory === cat
                     ? "bg-navy text-white shadow-lg"

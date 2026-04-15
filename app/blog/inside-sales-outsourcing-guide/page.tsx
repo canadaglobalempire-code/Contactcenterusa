@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "outsourced sales team",
     "inside sales BPO",
   ],
+  alternates: { canonical: "/blog/inside-sales-outsourcing-guide" },
 };
 
 export default function Page() {

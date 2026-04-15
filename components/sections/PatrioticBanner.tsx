@@ -21,7 +21,7 @@ export function PatrioticBanner() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src="/images/america.jpg"
-                alt="American pride"
+                alt="American flag representing US-based call center services"
                 fill
                 className="object-cover"
               />

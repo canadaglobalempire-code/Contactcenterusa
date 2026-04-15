@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Financial Solutions | PCI-Compliant Payment Processing & Collections",
   description:
     "Secure, PCI-DSS compliant payment processing, professional collections, and billing support from trained US-based agents. Improve collections by 35% and reduce billing disputes by 60%.",
+  alternates: { canonical: "/solutions/financial-call-center-services" },
 };
 
 export default function Page() {

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "top BPO companies healthcare",
     "healthcare BPO providers 2026",
   ],
+  alternates: { canonical: "/blog/top-15-healthcare-bpo-companies-usa" },
 };
 
 export default function Page() {

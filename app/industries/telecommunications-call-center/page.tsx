@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Telecommunications Call Center Services | Telecom Support | Contact Center USA",
   description:
     "Telecommunications call center services including technical support tiers 1-3, billing support, service activation, equipment troubleshooting, and subscriber retention. Trusted by telecom providers nationwide.",
+  alternates: { canonical: "/industries/telecommunications-call-center" },
 };
 
 const features = [

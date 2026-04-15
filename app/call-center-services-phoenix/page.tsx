@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Call Center Services in Phoenix | Contact Center USA",
   description:
     "Contact Center USA provides US-based call center outsourcing services in Phoenix, AZ. 24/7 inbound & outbound support, AI automation, and omnichannel solutions. Get a free quote.",
+  alternates: { canonical: "/call-center-services-phoenix" },
 };
 
 export default function PhoenixPage() {

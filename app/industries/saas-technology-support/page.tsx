@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Technology Call Center Services | SaaS & IT Support | Contact Center USA",
   description:
     "Technology and SaaS call center services including Tier 1-3 technical support, user onboarding, bug reporting, and 24/7 help desk. Scale your support with experts.",
+  alternates: { canonical: "/industries/saas-technology-support" },
 };
 
 const features = [

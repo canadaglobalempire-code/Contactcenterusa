@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Financial Services Call Center | PCI Compliant Support | Contact Center USA",
   description:
     "PCI-compliant financial services call center for secure transactions, fraud alerts, account support, and regulatory compliance. Trusted by financial institutions nationwide.",
+  alternates: { canonical: "/industries/financial-services-call-center" },
 };
 
 const features = [

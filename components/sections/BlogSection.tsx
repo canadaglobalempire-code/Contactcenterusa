@@ -83,7 +83,7 @@ export function BlogSection() {
                 <div className="relative h-[220px] overflow-hidden">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={`Blog post image for ${post.title}`}
                     fill
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />

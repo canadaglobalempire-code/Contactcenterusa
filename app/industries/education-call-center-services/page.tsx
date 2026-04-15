@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Education Call Center Services | Enrollment & Student Support | Contact Center USA",
   description:
     "Education call center services for enrollment management, student services, alumni relations, and financial aid support. Improve student satisfaction and enrollment rates.",
+  alternates: { canonical: "/industries/education-call-center-services" },
 };
 
 const features = [

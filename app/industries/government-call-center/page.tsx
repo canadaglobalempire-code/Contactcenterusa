@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Government Call Center Services | Citizen Support Solutions | Contact Center USA",
   description:
     "Government call center services including citizen support, benefits enrollment, compliance hotlines, public information lines, and emergency alert systems. Trusted by federal, state, and local agencies.",
+  alternates: { canonical: "/industries/government-call-center" },
 };
 
 const features = [

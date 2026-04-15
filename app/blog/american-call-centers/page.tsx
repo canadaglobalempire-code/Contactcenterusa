@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "domestic call center companies",
     "best US based call centers 2026",
   ],
+  alternates: { canonical: "/blog/american-call-centers" },
 };
 
 export default function Page() {

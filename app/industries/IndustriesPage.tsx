@@ -213,7 +213,7 @@ export default function IndustriesPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/new-flag.jpg"
-            alt="American flag"
+            alt="American flag background representing US-based call center services across multiple industries"
             fill
             className="object-cover"
           />

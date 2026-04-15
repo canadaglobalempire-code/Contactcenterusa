@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "handling angry customers",
     "conflict resolution customer service",
   ],
+  alternates: { canonical: "/blog/de-escalation-techniques-customer-service" },
 };
 
 export default function Page() {

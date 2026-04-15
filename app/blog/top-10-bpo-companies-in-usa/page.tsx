@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "outsourcing companies in america",
     "best outsourcing companies in united states",
   ],
+  alternates: { canonical: "/blog/top-10-bpo-companies-in-usa" },
 };
 
 export default function Page() {

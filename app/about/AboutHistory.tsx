@@ -172,7 +172,7 @@ export function AboutHistory() {
           >
             <Image
               src="/images/hd-agents-row.jpg"
-              alt="Our team at work"
+              alt="Contact Center USA agents working at enterprise-grade call center workstations"
               fill
               className="object-cover"
             />

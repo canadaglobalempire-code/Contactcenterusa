@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Top 10 KPIs Every Outsourced Call Center Should Track",
   description:
     "Discover the 10 most critical call center KPIs including FCR, CSAT, NPS, AHT, and cost per contact. Industry benchmarks, measurement frameworks, and actionable tips to drive continuous improvement.",
+  alternates: { canonical: "/blog/call-center-kpis" },
 };
 
 export default function Page() {

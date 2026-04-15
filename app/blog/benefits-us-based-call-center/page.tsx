@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Benefits of US-Based Call Center Services",
   description:
     "Explore the advantages of US-based call center services including cultural alignment, native English fluency, data security, regulatory compliance, and superior CSAT scores compared to offshore alternatives.",
+  alternates: { canonical: "/blog/benefits-us-based-call-center" },
 };
 
 export default function Page() {

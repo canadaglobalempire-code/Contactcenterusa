@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "customer care tips",
     "customer service strategies",
   ],
+  alternates: { canonical: "/blog/customer-service-best-practices" },
 };
 
 export default function Page() {

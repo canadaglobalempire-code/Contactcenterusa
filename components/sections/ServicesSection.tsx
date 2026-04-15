@@ -151,7 +151,7 @@ export function ServicesSection() {
                 <div className="relative h-[220px] overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} — Contact Center USA service`}
                     fill
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

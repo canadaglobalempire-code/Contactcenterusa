@@ -339,7 +339,7 @@ export default function Content() {
         <div className="absolute inset-0">
           <Image
             src="/images/new-flag.jpg"
-            alt="American flag"
+            alt="American flag background symbolizing domestic US-based contact center operations"
             fill
             className="object-cover"
           />

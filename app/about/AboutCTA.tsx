@@ -11,7 +11,7 @@ export function AboutCTA() {
       <div className="absolute inset-0">
         <Image
           src="/images/new-flag.jpg"
-          alt="American flag"
+          alt="American flag background representing US-based contact center services"
           fill
           className="object-cover"
         />

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Call Center Services in Austin | Contact Center USA",
   description:
     "Contact Center USA provides US-based call center outsourcing services in Austin, TX. 24/7 inbound & outbound support, AI automation, and omnichannel solutions. Get a free quote.",
+  alternates: { canonical: "/call-center-services-austin" },
 };
 
 export default function AustinPage() {

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Inbound vs Outbound Call Centers: Which Is Right for You?",
   description:
     "Learn the key differences between inbound and outbound call centers, including use cases, KPIs, agent skills, technology requirements, and how to choose the right model for your business goals.",
+  alternates: { canonical: "/blog/inbound-vs-outbound-call-centers" },
 };
 
 export default function Page() {

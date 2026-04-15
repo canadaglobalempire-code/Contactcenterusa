@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Logistics & Supply Chain Call Center Services | Tracking & Dispatch | Contact Center USA",
   description:
     "Logistics call center services for shipment tracking, dispatch coordination, delivery inquiries, and fleet support. Keep your supply chain running smoothly 24/7.",
+  alternates: { canonical: "/industries/logistics-shipping-call-center" },
 };
 
 const features = [

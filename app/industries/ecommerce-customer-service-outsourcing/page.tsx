@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "E-Commerce Call Center Services | Order Support & Live Chat | Contact Center USA",
   description:
     "E-commerce call center services for order support, returns processing, live chat, and peak season scalability. Boost customer satisfaction and reduce cart abandonment.",
+  alternates: { canonical: "/industries/ecommerce-customer-service-outsourcing" },
 };
 
 const features = [

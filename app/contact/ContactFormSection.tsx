@@ -98,6 +98,7 @@ export function ContactFormSection() {
                     <input
                       name="name"
                       required
+                      aria-label="Name"
                       placeholder="John Smith"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     />
@@ -109,6 +110,7 @@ export function ContactFormSection() {
                     <input
                       name="company"
                       required
+                      aria-label="Company name"
                       placeholder="Acme Inc."
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     />
@@ -125,6 +127,7 @@ export function ContactFormSection() {
                       name="email"
                       type="email"
                       required
+                      aria-label="Email address"
                       placeholder="john@acme.com"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     />
@@ -137,6 +140,7 @@ export function ContactFormSection() {
                       name="phone"
                       type="tel"
                       required
+                      aria-label="Phone number"
                       placeholder="(555) 123-4567"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     />
@@ -150,6 +154,7 @@ export function ContactFormSection() {
                   </label>
                   <input
                     name="website"
+                    aria-label="Website URL"
                     placeholder="https://yourcompany.com"
                     className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                   />
@@ -163,6 +168,7 @@ export function ContactFormSection() {
                     </label>
                     <select
                       name="service_type"
+                      aria-label="Call center services type"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
                       <option value="">Select service type</option>
@@ -177,6 +183,7 @@ export function ContactFormSection() {
                     </label>
                     <select
                       name="solution_type"
+                      aria-label="Solution type"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
                       <option value="">Select solution type</option>
@@ -195,6 +202,7 @@ export function ContactFormSection() {
                     </label>
                     <select
                       name="agents"
+                      aria-label="Agent requirements"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
                       <option value="">Select agent count</option>
@@ -209,6 +217,7 @@ export function ContactFormSection() {
                     </label>
                     <select
                       name="call_volume"
+                      aria-label="Call volume"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
                       <option value="">Select volume</option>
@@ -226,6 +235,7 @@ export function ContactFormSection() {
                   </label>
                   <select
                     name="schedule"
+                    aria-label="Operating schedule"
                     className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                   >
                     <option value="">Select schedule</option>
@@ -244,6 +254,7 @@ export function ContactFormSection() {
                     name="message"
                     rows={4}
                     placeholder="Tell us about your company, your program, or your requirements..."
+                    aria-label="Additional comments"
                     className="mt-1.5 w-full rounded-xl border border-gray-200 p-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                   />
                 </div>
@@ -251,6 +262,7 @@ export function ContactFormSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
+                  aria-label="Submit form"
                   className="flex w-full items-center justify-center gap-2 rounded-xl bg-red py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark disabled:opacity-50"
                 >
                   {isSubmitting ? "Sending..." : "Submit Inquiry"}

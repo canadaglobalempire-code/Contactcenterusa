@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Insurance Call Center Services | Claims & Enrollment Support | Contact Center USA",
   description:
     "Insurance call center services for claims processing, open enrollment, policy inquiries, and regulatory compliance. Licensed agents ready to support your policyholders.",
+  alternates: { canonical: "/industries/insurance-call-center-outsourcing" },
 };
 
 const features = [

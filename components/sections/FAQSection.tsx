@@ -237,12 +237,14 @@ export function FAQSection() {
                       id="faq-message"
                       placeholder="Tell us about your needs..."
                       className="mt-1.5 min-h-20 rounded-lg"
+                      aria-label="Your requirements"
                       {...register("message")}
                     />
                   </div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
+                    aria-label="Submit form"
                     className="flex w-full items-center justify-center gap-2 rounded-lg bg-red py-3.5 font-semibold text-white transition-all hover:bg-red-dark disabled:opacity-50"
                   >
                     {isSubmitting ? "Sending..." : "Get My Free Quote"}

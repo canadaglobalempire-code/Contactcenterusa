@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Automotive Call Center Services | Dealer & OEM Support | Contact Center USA",
   description:
     "Automotive call center services including dealer support, OEM customer care, recall management, warranty claims, and 24/7 roadside assistance. Trusted by dealerships and manufacturers nationwide.",
+  alternates: { canonical: "/industries/automotive-call-center-services" },
 };
 
 const features = [

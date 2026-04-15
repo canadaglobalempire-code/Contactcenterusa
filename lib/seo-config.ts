@@ -13,10 +13,5 @@ export const siteConfig = {
     zip: "",
     country: "United States",
   },
-  social: {
-    linkedin: "https://www.linkedin.com/company/contactcenterusa",
-    twitter: "https://twitter.com/contactcenterus",
-    facebook: "https://www.facebook.com/contactcenterusa",
-  },
   hours: "Monday - Friday, 8AM - 8PM EST | 24/7 Emergency Support",
 };

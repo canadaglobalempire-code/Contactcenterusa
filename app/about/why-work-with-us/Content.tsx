@@ -289,7 +289,7 @@ export default function Content() {
             >
               <Image
                 src="/images/cc-agent-blue.jpg"
-                alt="Contact Center USA agent providing excellent service"
+                alt="Professional US-based contact center agent providing excellent customer service"
                 fill
                 className="object-cover"
               />
@@ -312,7 +312,7 @@ export default function Content() {
             >
               <Image
                 src="/images/cc-office-wide.jpg"
-                alt="Contact Center USA enterprise infrastructure"
+                alt="Contact Center USA enterprise-grade office infrastructure with redundant systems"
                 fill
                 className="object-cover"
               />
@@ -412,7 +412,7 @@ export default function Content() {
         <div className="absolute inset-0">
           <Image
             src="/images/new-flag.jpg"
-            alt="American flag"
+            alt="American flag background showcasing commitment to US-based call center outsourcing"
             fill
             className="object-cover"
           />

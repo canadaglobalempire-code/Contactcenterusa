@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Call Center Outsourcing Cost: Complete 2026 Guide",
   description:
     "Comprehensive breakdown of call center outsourcing costs in 2026. Compare onshore, nearshore, and offshore pricing models, hidden fees, and ROI calculations to make a data-driven outsourcing decision.",
+  alternates: { canonical: "/blog/call-center-outsourcing-cost" },
 };
 
 export default function Page() {

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "healthcare contact center solutions",
     "healthcare call center metrics",
   ],
+  alternates: { canonical: "/blog/medical-call-center-services" },
 };
 
 export default function Page() {

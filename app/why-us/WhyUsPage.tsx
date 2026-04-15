@@ -310,7 +310,7 @@ export default function WhyUsPage() {
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
                 <Image
                   src="/images/hd-office-team.jpg"
-                  alt="Contact Center USA office and technology"
+                  alt="Contact Center USA office with enterprise-grade technology and call center infrastructure"
                   fill
                   className="object-cover"
                 />
@@ -351,7 +351,7 @@ export default function WhyUsPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/new-flag.jpg"
-            alt="American flag"
+            alt="American flag background representing 100% US-based contact center outsourcing services"
             fill
             className="object-cover"
           />
