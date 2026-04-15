@@ -284,7 +284,7 @@ export default function LeadGenerationContent() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">SJ</div>
                   <div>
                     <div className="font-bold text-navy">Sarah Jennings</div>
-                    <div className="text-sm text-gray-600">VP of Sales, Apex Commercial Real Estate</div>
+                    <div className="text-sm text-gray-600">VP of Sales, A Commercial Real Estate Firm</div>
                   </div>
                 </div>
               </div>

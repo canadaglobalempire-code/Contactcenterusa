@@ -79,7 +79,13 @@
       "Bash(sed -i '' 's/Director of Operations, Pinnacle Financial Group/Director of Operations, A National Financial Firm/g' app/services/contact-center-software-solutions/Content.tsx)",
       "Bash(sed -i '' 's/VP of Sales, Apex Growth Partners/VP of Sales, A Fast-Growing Tech Company/g' app/services/customer-acquisition-outsourcing/Content.tsx)",
       "Bash(sed -i '' 's/Director of Customer Experience, BrightPath Insurance/Director of CX, A Major Insurance Carrier/g' app/services/customer-experience-analytics/Content.tsx)",
-      "Bash(sed -i '' 's/Director of E-Commerce, Urban Style Collective/Director of Ecommerce, A National Online Retailer/g' app/services/digital-customer-experience-services/Content.tsx)"
+      "Bash(sed -i '' 's/Director of E-Commerce, Urban Style Collective/Director of Ecommerce, A National Online Retailer/g' app/services/digital-customer-experience-services/Content.tsx)",
+      "Bash(sed -i '' 's/David Thornton/D.T./g' app/solutions/customer-service-outsourcing/Content.tsx)",
+      "Bash(sed -i '' 's/Chief Customer Officer, Pinnacle Home Services/Chief Customer Officer, A National Home Services Company/g' app/solutions/customer-service-outsourcing/Content.tsx)",
+      "Bash(sed -i '' 's/VP of Sales, Apex Commercial Real Estate/VP of Sales, A Commercial Real Estate Firm/g' app/solutions/lead-generation-appointment-setting/Content.tsx)",
+      "Bash(sed -i '' 's/Director of Revenue Cycle, Summit Healthcare Partners/Director of Revenue Cycle, A Regional Healthcare System/g' app/solutions/financial-call-center-services/Content.tsx)",
+      "Bash(sed -i '' 's/CTO, CloudSync Technologies/CTO, A Fast-Growing SaaS Platform/g' app/solutions/technical-support-outsourcing/Content.tsx)",
+      "Bash(grep -rn '\"[A-Z][a-z]* [A-Z][a-z]*\"' app/solutions/*/Content.tsx app/services/*/Content.tsx)"
     ]
   }
 }

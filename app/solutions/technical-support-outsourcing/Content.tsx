@@ -284,7 +284,7 @@ export default function TechnicalSupportContent() {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">TP</div>
                   <div>
                     <div className="font-bold text-navy">Thomas Park</div>
-                    <div className="text-sm text-gray-600">CTO, CloudSync Technologies</div>
+                    <div className="text-sm text-gray-600">CTO, A Fast-Growing SaaS Platform</div>
                   </div>
                 </div>
               </div>

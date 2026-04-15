@@ -402,8 +402,8 @@ export default function CustomerServiceContent() {
                 <div className="mt-8 flex items-center gap-4 border-t border-gray-100 pt-6">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-red to-red-dark text-lg font-bold text-white">DT</div>
                   <div>
-                    <div className="font-bold text-navy">David Thornton</div>
-                    <div className="text-sm text-gray-600">Chief Customer Officer, Pinnacle Home Services</div>
+                    <div className="font-bold text-navy">D.T.</div>
+                    <div className="text-sm text-gray-600">Chief Customer Officer, A National Home Services Company</div>
                   </div>
                 </div>
               </div>
