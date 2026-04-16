@@ -213,6 +213,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
+        </div>
 
         {/* Bottom bar */}
         <div className="mt-8 border-t border-gray-100 pt-8">
