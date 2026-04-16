@@ -84,7 +84,7 @@ export function AboutHistory() {
           <div className="space-y-12 lg:space-y-0">
             {milestones.map((milestone, i) => (
               <motion.div
-                key={milestone.year}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
