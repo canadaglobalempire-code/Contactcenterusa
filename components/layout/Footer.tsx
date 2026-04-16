@@ -150,8 +150,8 @@ export default function Footer() {
               Industries
             </h3>
             <ul className="space-y-3">
-              {industries.map((item) => (
-                <li key={item.href}>
+              {industries.map((item, i) => (
+                <li key={`ind-${i}`}>
                   <Link
                     href={item.href}
                     className="text-sm text-gray-700 transition-colors hover:text-navy"
@@ -169,8 +169,8 @@ export default function Footer() {
               Company
             </h3>
             <ul className="space-y-3">
-              {company.map((item) => (
-                <li key={item.href}>
+              {company.map((item, i) => (
+                <li key={`co-${i}`}>
                   <Link
                     href={item.href}
                     className="text-sm text-gray-700 transition-colors hover:text-navy"
