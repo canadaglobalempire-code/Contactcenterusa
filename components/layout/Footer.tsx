@@ -4,19 +4,15 @@ import { siteConfig } from "@/lib/seo-config";
 
 const services = [
   { label: "Customer Acquisition", href: "/services/customer-acquisition-outsourcing" },
-  { label: "Customer Care", href: "/solutions/customer-service-outsourcing" },
   { label: "Customer Service", href: "/solutions/customer-service-outsourcing" },
   { label: "Financial Solutions", href: "/solutions/financial-call-center-services" },
   { label: "Government Services", href: "/solutions/government-call-center-services" },
   { label: "Inbound Services", href: "/solutions/inbound-call-center-services" },
   { label: "Lead Generation", href: "/solutions/lead-generation-appointment-setting" },
-  { label: "Live Chat", href: "/services/omnichannel-contact-center-solutions" },
   { label: "Multilingual Services", href: "/solutions/multilingual-call-center-services" },
   { label: "Outbound Services", href: "/solutions/outbound-call-center-services" },
   { label: "Social Media", href: "/solutions/social-media-customer-support" },
   { label: "Technical Support", href: "/solutions/technical-support-outsourcing" },
-  { label: "Telemarketing Services", href: "/solutions/outbound-call-center-services" },
-  { label: "Virtual / Remote Support", href: "/solutions/customer-service-outsourcing" },
 ];
 
 const solutions = [
@@ -27,8 +23,6 @@ const solutions = [
   { label: "Digital & CX Services", href: "/services/digital-customer-experience-services" },
   { label: "Fraud Prevention", href: "/services/fraud-prevention-cyber-security" },
   { label: "Omnichannel Solutions", href: "/services/omnichannel-contact-center-solutions" },
-  { label: "Sales", href: "/solutions/outbound-call-center-services" },
-  { label: "Social Customer Care", href: "/solutions/social-media-customer-support" },
 ];
 
 const industries = [
