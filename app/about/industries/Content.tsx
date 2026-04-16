@@ -287,7 +287,7 @@ export default function Content() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: i * 0.04 }}
-                  className="group rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
+                  className="group h-full min-h-[280px] flex flex-col rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red transition-all duration-300 group-hover:bg-red group-hover:text-white">
                     <industry.icon className="h-6 w-6" />
@@ -295,7 +295,7 @@ export default function Content() {
                   <h3 className="mt-4 text-base font-bold text-navy">
                     {industry.name}
                   </h3>
-                  <ul className="mt-3 space-y-1.5">
+                  <ul className="mt-3 flex-1 space-y-1.5">
                     {industry.capabilities.map((cap) => (
                       <li
                         key={cap}
