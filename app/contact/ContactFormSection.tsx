@@ -81,8 +81,8 @@ export function ContactFormSection() {
                   Thank You!
                 </h3>
                 <p className="mt-2 text-gray-700">
-                  Your message has been sent. We will contact you within 2
-                  business hours.
+                  Your message has been sent. We will contact you within 24
+                  hours.
                 </p>
               </div>
             ) : (
