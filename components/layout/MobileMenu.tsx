@@ -13,27 +13,27 @@ import { siteConfig } from "@/lib/seo-config"
 
 const services = [
   { label: "All Services", href: "/services", description: "View all services" },
-  { label: "A.I. Automation", href: "/services/ai-call-center-automation", description: "Intelligent automation solutions" },
-  { label: "Contact Center Software", href: "/services/contact-center-software-solutions", description: "Enterprise-grade platform" },
   { label: "Customer Acquisition", href: "/services/customer-acquisition-outsourcing", description: "Grow your customer base" },
-  { label: "CX Analytics", href: "/services/customer-experience-analytics", description: "Data-driven insights" },
-  { label: "Digital & CX Services", href: "/services/digital-customer-experience-services", description: "End-to-end digital CX" },
-  { label: "Fraud Prevention", href: "/services/fraud-prevention-cyber-security", description: "Protect your business" },
-  { label: "Omnichannel Solutions", href: "/services/omnichannel-contact-center-solutions", description: "Seamless channel integration" },
+  { label: "Customer Service", href: "/solutions/customer-service-outsourcing", description: "Professional support teams" },
+  { label: "Financial Solutions", href: "/solutions/financial-call-center-services", description: "Payment processing & compliance" },
+  { label: "Government Services", href: "/solutions/government-call-center-services", description: "Citizen support & compliance" },
+  { label: "Inbound Services", href: "/solutions/inbound-call-center-services", description: "Handle incoming inquiries" },
+  { label: "Lead Generation", href: "/solutions/lead-generation-appointment-setting", description: "Fill your sales pipeline" },
+  { label: "Multilingual Services", href: "/solutions/multilingual-call-center-services", description: "English, Spanish & more" },
+  { label: "Outbound Services", href: "/solutions/outbound-call-center-services", description: "Proactive outreach campaigns" },
+  { label: "Social Media", href: "/solutions/social-media-customer-support", description: "Social monitoring & response" },
+  { label: "Technical Support", href: "/solutions/technical-support-outsourcing", description: "Expert troubleshooting" },
 ]
 
 const solutions = [
   { label: "All Solutions", href: "/solutions", description: "View all solutions" },
-  { label: "Back Office", href: "/solutions/back-office-outsourcing", description: "Streamlined back office operations" },
-  { label: "Customer Service", href: "/solutions/customer-service-outsourcing", description: "Professional support teams" },
-  { label: "Inbound Services", href: "/solutions/inbound-call-center-services", description: "Handle incoming inquiries" },
-  { label: "Outbound Services", href: "/solutions/outbound-call-center-services", description: "Proactive outreach campaigns" },
-  { label: "Lead Generation", href: "/solutions/lead-generation-appointment-setting", description: "Fill your sales pipeline" },
-  { label: "Technical Support", href: "/solutions/technical-support-outsourcing", description: "Expert troubleshooting" },
-  { label: "Financial Solutions", href: "/solutions/financial-call-center-services", description: "Payment processing & compliance" },
-  { label: "Government Services", href: "/solutions/government-call-center-services", description: "Citizen support & compliance" },
-  { label: "Social Media", href: "/solutions/social-media-customer-support", description: "Social monitoring & response" },
-  { label: "Multilingual Services", href: "/solutions/multilingual-call-center-services", description: "English, Spanish & more" },
+  { label: "A.I. Automation", href: "/services/ai-call-center-automation", description: "Intelligent automation solutions" },
+  { label: "Back Office Support", href: "/solutions/back-office-outsourcing", description: "Streamlined back office operations" },
+  { label: "Contact Center Software", href: "/services/contact-center-software-solutions", description: "Enterprise-grade platform" },
+  { label: "CX Analytics", href: "/services/customer-experience-analytics", description: "Data-driven insights" },
+  { label: "Digital & CX Services", href: "/services/digital-customer-experience-services", description: "End-to-end digital CX" },
+  { label: "Fraud Prevention", href: "/services/fraud-prevention-cyber-security", description: "Protect your business" },
+  { label: "Omnichannel Solutions", href: "/services/omnichannel-contact-center-solutions", description: "Seamless channel integration" },
 ]
 
 const mainLinks = [

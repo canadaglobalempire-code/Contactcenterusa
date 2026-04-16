@@ -9,26 +9,26 @@ import { siteConfig } from "@/lib/seo-config";
 import MobileMenu from "@/components/layout/MobileMenu";
 
 const services = [
-  { label: "A.I. Automation", href: "/services/ai-call-center-automation" },
-  { label: "Contact Center Software", href: "/services/contact-center-software-solutions" },
   { label: "Customer Acquisition", href: "/services/customer-acquisition-outsourcing" },
-  { label: "CX Analytics", href: "/services/customer-experience-analytics" },
-  { label: "Digital and CX Services", href: "/services/digital-customer-experience-services" },
-  { label: "Fraud Prevention & Cyber Security", href: "/services/fraud-prevention-cyber-security" },
-  { label: "Omnichannel Solutions", href: "/services/omnichannel-contact-center-solutions" },
-];
-
-const solutions = [
-  { label: "Back Office Support", href: "/solutions/back-office-outsourcing" },
-  { label: "Customer Service Outsourcing", href: "/solutions/customer-service-outsourcing" },
+  { label: "Customer Service", href: "/solutions/customer-service-outsourcing" },
   { label: "Financial Solutions", href: "/solutions/financial-call-center-services" },
   { label: "Government Services", href: "/solutions/government-call-center-services" },
   { label: "Inbound Services", href: "/solutions/inbound-call-center-services" },
   { label: "Lead Generation", href: "/solutions/lead-generation-appointment-setting" },
   { label: "Multilingual Services", href: "/solutions/multilingual-call-center-services" },
   { label: "Outbound Services", href: "/solutions/outbound-call-center-services" },
-  { label: "Social Media Support", href: "/solutions/social-media-customer-support" },
+  { label: "Social Media", href: "/solutions/social-media-customer-support" },
   { label: "Technical Support", href: "/solutions/technical-support-outsourcing" },
+];
+
+const solutions = [
+  { label: "A.I. Automation", href: "/services/ai-call-center-automation" },
+  { label: "Back Office Support", href: "/solutions/back-office-outsourcing" },
+  { label: "Contact Center Software", href: "/services/contact-center-software-solutions" },
+  { label: "CX Analytics", href: "/services/customer-experience-analytics" },
+  { label: "Digital and CX Services", href: "/services/digital-customer-experience-services" },
+  { label: "Fraud Prevention & Cyber Security", href: "/services/fraud-prevention-cyber-security" },
+  { label: "Omnichannel Solutions", href: "/services/omnichannel-contact-center-solutions" },
 ];
 
 const aboutLinks = [
