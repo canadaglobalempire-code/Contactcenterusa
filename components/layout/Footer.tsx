@@ -183,8 +183,6 @@ export default function Footer() {
           </div>
         </div>
 
-        </div>
-
         {/* City Pages */}
         <div className="mt-12 border-t border-gray-100 pt-8">
           <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-4">
