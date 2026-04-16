@@ -147,18 +147,7 @@ export function ContactFormSection() {
                   </div>
                 </div>
 
-                {/* Website */}
-                <div>
-                  <label className="text-sm font-medium text-navy">
-                    Website / URL
-                  </label>
-                  <input
-                    name="website"
-                    aria-label="Website URL"
-                    placeholder="https://yourcompany.com"
-                    className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
-                  />
-                </div>
+
 
                 {/* Service Type & Solution Type */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
