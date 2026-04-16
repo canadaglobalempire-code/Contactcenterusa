@@ -225,7 +225,7 @@ export default function Content() {
               Industries We Serve
             </span>
             <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl">
-              Not Just a Call Center —{" "}
+              Not Just a Call Center<br />
               <span className="text-red">Your Strategic Partner</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
