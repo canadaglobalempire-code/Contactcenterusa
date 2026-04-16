@@ -90,7 +90,9 @@
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/3,000/500/g' {} +)",
       "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/3000/500/g' {} +)",
       "Bash(sed -i '' 's/5,000+/500+/g' app/solutions/SolutionsContent.tsx)",
-      "Bash(sed -i '' 's/\"2015\"/\"2018\"/g' app/about/company-history/Content.tsx)"
+      "Bash(sed -i '' 's/\"2015\"/\"2018\"/g' app/about/company-history/Content.tsx)",
+      "Bash(cd /Users/ramanmakkar/Desktop/contactcenterusa echo \"=== TOTAL SIZE ===\" du -sh . echo \"\" echo \"=== BIGGEST FOLDERS ===\" du -sh */ .next/ node_modules/ public/)",
+      "Bash(ls -lh public/images/*.mp4)"
     ]
   }
 }

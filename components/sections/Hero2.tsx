@@ -47,6 +47,8 @@ export function Hero2() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="max-w-5xl text-4xl font-bold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[68px]"
           >
+            Contact Center USA
+            <br />
             Keep America Great
             <br />
             By Employing Americans
