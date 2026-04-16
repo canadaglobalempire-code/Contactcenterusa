@@ -85,7 +85,12 @@
       "Bash(sed -i '' 's/VP of Sales, Apex Commercial Real Estate/VP of Sales, A Commercial Real Estate Firm/g' app/solutions/lead-generation-appointment-setting/Content.tsx)",
       "Bash(sed -i '' 's/Director of Revenue Cycle, Summit Healthcare Partners/Director of Revenue Cycle, A Regional Healthcare System/g' app/solutions/financial-call-center-services/Content.tsx)",
       "Bash(sed -i '' 's/CTO, CloudSync Technologies/CTO, A Fast-Growing SaaS Platform/g' app/solutions/technical-support-outsourcing/Content.tsx)",
-      "Bash(grep -rn '\"[A-Z][a-z]* [A-Z][a-z]*\"' app/solutions/*/Content.tsx app/services/*/Content.tsx)"
+      "Bash(grep -rn '\"[A-Z][a-z]* [A-Z][a-z]*\"' app/solutions/*/Content.tsx app/services/*/Content.tsx)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/3,000+/500+/g' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/3,000/500/g' {} +)",
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/3000/500/g' {} +)",
+      "Bash(sed -i '' 's/5,000+/500+/g' app/solutions/SolutionsContent.tsx)",
+      "Bash(sed -i '' 's/\"2015\"/\"2018\"/g' app/about/company-history/Content.tsx)"
     ]
   }
 }

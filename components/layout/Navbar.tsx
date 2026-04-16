@@ -35,6 +35,7 @@ const aboutLinks = [
   { label: "About Us", href: "/about" },
   { label: "Company History", href: "/about/company-history" },
   { label: "Why Work With Us", href: "/about/why-work-with-us" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 const industries = [

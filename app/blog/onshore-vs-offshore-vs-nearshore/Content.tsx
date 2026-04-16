@@ -241,9 +241,9 @@ export default function OnshoreVsOffshoreVsNearshoreContent() {
                       </tr>
                       <tr className="border-b border-gray-200">
                         <td className="py-3 px-4 font-semibold">Technology</td>
-                        <td className="py-3 px-4">$3,000</td>
-                        <td className="py-3 px-4">$3,000</td>
-                        <td className="py-3 px-4">$3,000</td>
+                        <td className="py-3 px-4">$500</td>
+                        <td className="py-3 px-4">$500</td>
+                        <td className="py-3 px-4">$500</td>
                       </tr>
                       <tr className="border-b border-gray-200">
                         <td className="py-3 px-4 font-semibold">QA & training</td>
@@ -255,7 +255,7 @@ export default function OnshoreVsOffshoreVsNearshoreContent() {
                         <td className="py-3 px-4 font-semibold">Travel & oversight</td>
                         <td className="py-3 px-4">$500</td>
                         <td className="py-3 px-4">$1,500</td>
-                        <td className="py-3 px-4">$3,000</td>
+                        <td className="py-3 px-4">$500</td>
                       </tr>
                       <tr className="bg-gray-50 font-bold">
                         <td className="py-3 px-4">Total Monthly</td>

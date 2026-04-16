@@ -293,30 +293,6 @@ export function ContactFormSection() {
                 </p>
 
                 <div className="mt-8 space-y-5">
-                  <a
-                    className="flex items-center gap-4"
-                  >
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-red/20">
-                      <Phone className="h-5 w-5 text-red" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-white/50">Phone</div>
-                    </div>
-                  </a>
-
-                  <a
-                    href={`mailto:${siteConfig.email}`}
-                    className="flex items-center gap-4"
-                  >
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-red/20">
-                      <Mail className="h-5 w-5 text-red" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-white/50">Email</div>
-                      <div className="font-bold">{siteConfig.email}</div>
-                    </div>
-                  </a>
-
                   <div className="flex items-center gap-4">
                     <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-red/20">
                       <MapPin className="h-5 w-5 text-red" />

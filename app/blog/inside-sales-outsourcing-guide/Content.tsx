@@ -254,7 +254,7 @@ export default function InsideSalesOutsourcingContent() {
                       ["Per Qualified Lead", "$50 - $250/lead", "Lead generation, lead qualification"],
                       ["Per Hour", "$25 - $75/hour", "Flexible, project-based campaigns"],
                       ["Revenue Share / Commission", "10-20% of closed revenue", "Full-cycle sales, performance alignment"],
-                      ["Hybrid (Base + Performance)", "$3,000-$5,000/mo + bonuses", "Balanced risk-sharing model"],
+                      ["Hybrid (Base + Performance)", "$500-$5,000/mo + bonuses", "Balanced risk-sharing model"],
                     ].map((row, i) => (
                       <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                         <td className="p-3 font-semibold text-navy">{row[0]}</td>

@@ -81,7 +81,7 @@ const infraCapabilities = [
 
 const stats = [
   { value: "1999", label: "Founded", suffix: "" },
-  { value: "3,000", label: "Employees", suffix: "+" },
+  { value: "500", label: "Employees", suffix: "+" },
   { value: "30", label: "Years of Experience", suffix: "+" },
   { value: "24/7", label: "Availability", suffix: "/365" },
   { value: "98", label: "CSAT Score", suffix: "%" },

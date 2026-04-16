@@ -25,19 +25,19 @@ const milestones = [
       "Launched full omnichannel support capabilities — phone, email, live chat, and social media — all managed under one roof with unified reporting and quality assurance.",
   },
   {
-    year: "2015",
+    year: "2018",
     title: "AI Integration",
     description:
       "Integrated AI-powered chatbots, predictive analytics, and intelligent call routing to complement our human agents and deliver faster, more personalized customer experiences.",
   },
   {
-    year: "2020",
-    title: "3,000+ Employees",
+    year: "2025",
+    title: "500+ Employees",
     description:
-      "Grew to over 3,000 US-based employees, solidifying our position as one of the largest domestically operated contact center companies serving clients worldwide.",
+      "Grew to over 500 US-based employees, solidifying our position as one of the largest domestically operated contact center companies serving clients worldwide.",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Next-Gen Platform",
     description:
       "Launched our next-generation contact center platform with advanced AI, real-time sentiment analysis, and seamless CRM integrations to set the standard for modern customer engagement.",
@@ -46,7 +46,7 @@ const milestones = [
 
 const stats = [
   { label: "Founded", value: "1999" },
-  { label: "Employees", value: "3,000+" },
+  { label: "Employees", value: "500+" },
   { label: "Years Experience", value: "30+" },
   { label: "Availability", value: "24/7/365" },
 ];
@@ -91,7 +91,7 @@ export default function Content() {
               <span className="text-red">Soar</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
-              From our founding in 1999 to over 3,000 employees today, discover
+              From our founding in 1999 to over 500 employees today, discover
               the milestones that shaped Contact Center USA into the trusted
               partner businesses rely on.
             </p>
@@ -258,7 +258,7 @@ export default function Content() {
                 depends on the quality of the person behind it.
               </p>
               <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
-                With over 3,000 employees across the United States, we have
+                With over 500 employees across the United States, we have
                 built a team that understands American culture, values, and
                 customer expectations. Our agents do not just answer calls — they
                 represent your brand and enable it to grow.

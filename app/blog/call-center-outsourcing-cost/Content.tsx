@@ -171,8 +171,8 @@ export default function CallCenterOutsourcingCostContent() {
                   <li><strong>Management and supervision:</strong> 2-3 supervisors at $55,000-$70,000 = $110,000-$210,000</li>
                   <li><strong>Facility lease and utilities:</strong> $50,000-$120,000 annually</li>
                   <li><strong>Technology and software:</strong> $40,000-$80,000 annually for telephony, CRM, WFM tools</li>
-                  <li><strong>Recruiting and training:</strong> $3,000-$5,000 per hire with 30-45% annual turnover = $18,000-$45,000</li>
-                  <li><strong>Total estimated annual cost:</strong> $1,093,000-$1,670,000</li>
+                  <li><strong>Recruiting and training:</strong> $500-$5,000 per hire with 30-45% annual turnover = $18,000-$45,000</li>
+                  <li><strong>Total estimated annual cost:</strong> $1,09500-$1,670,000</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">
@@ -181,7 +181,7 @@ export default function CallCenterOutsourcingCostContent() {
                 <ul className="space-y-3 my-6">
                   <li><strong>Monthly per-agent fee:</strong> $3,200 average x 20 agents = $64,000/month</li>
                   <li><strong>Annual cost:</strong> $768,000</li>
-                  <li><strong>Setup and onboarding:</strong> $3,000-$8,000 one-time</li>
+                  <li><strong>Setup and onboarding:</strong> $500-$8,000 one-time</li>
                   <li><strong>Technology add-ons:</strong> $500-$2,000/month</li>
                   <li><strong>Total estimated annual cost:</strong> $780,000-$800,000</li>
                 </ul>

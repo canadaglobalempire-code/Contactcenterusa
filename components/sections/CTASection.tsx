@@ -40,21 +40,6 @@ export function CTASection() {
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-red/10">
-                  <Mail className="h-5 w-5 text-red" />
-                </div>
-                <div>
-                  <div className="text-sm text-gray-600">Email Us</div>
-                  <a
-                    href={`mailto:${siteConfig.email}`}
-                    className="text-lg font-bold text-navy hover:text-red transition-colors"
-                  >
-                    {siteConfig.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-red/10">
                   <MapPin className="h-5 w-5 text-red" />
                 </div>
                 <div>

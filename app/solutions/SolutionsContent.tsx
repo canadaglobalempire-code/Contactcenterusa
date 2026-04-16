@@ -93,7 +93,7 @@ const solutions = [
 
 const stats = [
   { value: "10+", label: "Solution Categories" },
-  { value: "5,000+", label: "US-Based Agents" },
+  { value: "500+", label: "US-Based Agents" },
   { value: "98%", label: "Client Retention" },
   { value: "24/7/365", label: "Availability" },
 ];

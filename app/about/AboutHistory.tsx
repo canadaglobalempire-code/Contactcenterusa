@@ -6,7 +6,7 @@ import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 
 const stats = [
   { value: 1999, label: "Founded", suffix: "" },
-  { value: 3000, label: "Employees", suffix: "+" },
+  { value: 500, label: "Employees", suffix: "+" },
   { value: 30, label: "Years Experience", suffix: "+" },
   { value: 24, label: "Hours / 7 Days", suffix: "/7" },
 ];
@@ -33,9 +33,9 @@ const milestones = [
     desc: "Integrated AI-powered chatbots and automation tools to complement our human agents.",
   },
   {
-    year: "2024",
-    title: "3,000+ Employees",
-    desc: "Grew to over 3,000 US-based employees serving clients worldwide across every major industry.",
+    year: "2025",
+    title: "500+ Employees",
+    desc: "Grew to over 500 US-based employees serving clients worldwide across every major industry.",
   },
 ];
 
