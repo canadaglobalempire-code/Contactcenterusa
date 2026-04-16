@@ -152,7 +152,7 @@ export default function IndustriesPage() {
             </span>
             <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl">
               Deep Expertise Across{" "}
-              <span className="text-red">Every Industry</span>
+              <br /><span className="text-red">Your Industry</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
               From healthcare to fintech, our specialized teams understand the
@@ -174,7 +174,7 @@ export default function IndustriesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="group rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-200"
+                className="group flex h-full min-h-[280px] flex-col rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-200"
               >
                 <div
                   className={`flex h-14 w-14 items-center justify-center rounded-2xl transition-all duration-300 ${industry.color} ${industry.hoverColor}`}
@@ -184,7 +184,7 @@ export default function IndustriesPage() {
                 <h3 className="mt-5 text-lg font-bold text-navy">
                   {industry.name}
                 </h3>
-                <ul className="mt-4 space-y-2.5">
+                <ul className="mt-4 flex-1 space-y-2.5">
                   {industry.bullets.map((bullet, j) => (
                     <li
                       key={j}

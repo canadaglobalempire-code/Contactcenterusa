@@ -136,6 +136,37 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Industries */}
+        <div className="mt-12 border-t border-gray-100 pt-8">
+          <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-4">
+            Industries We Serve
+          </h3>
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
+            {[
+              { label: "Airlines", href: "/industries/automotive-call-center-services" },
+              { label: "Automotive", href: "/industries/automotive-call-center-services" },
+              { label: "Banking & Financial", href: "/industries/banking-fintech-call-center" },
+              { label: "Cable & Media", href: "/industries/cable-media-call-center" },
+              { label: "Ecommerce", href: "/industries/ecommerce-customer-service-outsourcing" },
+              { label: "Education", href: "/industries/education-call-center-services" },
+              { label: "Energy & Utilities", href: "/industries/energy-utilities-call-center" },
+              { label: "Government", href: "/industries/government-call-center" },
+              { label: "Healthcare", href: "/industries/healthcare-call-center-services" },
+              { label: "Insurance", href: "/industries/insurance-call-center-outsourcing" },
+              { label: "Logistics", href: "/industries/logistics-shipping-call-center" },
+              { label: "Pharmaceuticals", href: "/industries/pharmaceuticals-call-center" },
+              { label: "Real Estate", href: "/industries/real-estate-call-center-services" },
+              { label: "Technology", href: "/industries/saas-technology-support" },
+              { label: "Telecommunications", href: "/industries/telecommunications-call-center" },
+              { label: "Travel", href: "/industries/travel-hospitality-call-center" },
+            ].map((industry) => (
+              <Link key={industry.label} href={industry.href} className="text-sm text-gray-600 transition-colors hover:text-navy">
+                {industry.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* City Pages */}
         <div className="mt-12 border-t border-gray-100 pt-8">
           <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-4">

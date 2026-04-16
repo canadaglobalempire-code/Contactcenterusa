@@ -104,7 +104,7 @@ export function SurgeSection() {
           </span>
           <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[44px]">
             From Expected Surges to{" "}
-            <span className="text-red">Urgent Demands</span>
+            <br /><span className="text-red">Urgent Demands</span>
             <br />
             We&apos;ve Got Your Back
           </h2>

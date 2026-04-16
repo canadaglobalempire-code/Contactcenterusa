@@ -167,7 +167,7 @@ export default function BlogPage() {
             </span>
             <h1 className="mx-auto mt-6 max-w-3xl text-4xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl">
               Latest Insights &{" "}
-              <span className="text-red">Industry News</span>
+              <br /><span className="text-red">Industry News</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
               Expert perspectives on call center outsourcing, customer service

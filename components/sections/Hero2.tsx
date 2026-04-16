@@ -60,7 +60,7 @@ export function Hero2() {
             className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg"
           >
             Have your customers had enough of foreign offshore call center
-            agents? Grow your brand, protect your reputation, and provide
+            agents?<br /> Grow your brand, protect your reputation, and provide
             customer support with excellence and peace of mind.
           </motion.p>
 
