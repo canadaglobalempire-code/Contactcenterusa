@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Since outsourcing our customer care to Contact Center USA, our churn rate dropped 27% and our NPS climbed from 38 to 62. Their agents genuinely care about our customers — it shows in every interaction.",
-  name: "Jennifer Park",
+  name: "J.P.",
   title: "Director of Customer Success",
   company: "A Fast-Growing Subscription Services Company",
   initials: "JP",

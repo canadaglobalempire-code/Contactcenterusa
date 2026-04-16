@@ -258,7 +258,7 @@ export default function BenefitsUSBasedCallCenterContent() {
                   Financial Services Regulations
                 </h3>
                 <p>
-                  <Link href="/industries/banking-fintech-call-center" className="text-red hover:text-red-dark font-semibold">Banking</Link>, <Link href="/industries/insurance-call-center-outsourcing" className="text-red hover:text-red-dark font-semibold">insurance</Link>, and <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link> companies must comply with regulations including PCI-DSS, Gramm-Leach-Bliley, SOX, and various state-level requirements. US-based providers are familiar with these regulations, maintain appropriate certifications, and are subject to domestic regulatory oversight.
+                  <Link href="/industries/banking-financial-services-call-center" className="text-red hover:text-red-dark font-semibold">Banking</Link>, <Link href="/industries/insurance-call-center-outsourcing" className="text-red hover:text-red-dark font-semibold">insurance</Link>, and <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link> companies must comply with regulations including PCI-DSS, Gramm-Leach-Bliley, SOX, and various state-level requirements. US-based providers are familiar with these regulations, maintain appropriate certifications, and are subject to domestic regulatory oversight.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">

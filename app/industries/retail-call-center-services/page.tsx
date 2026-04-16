@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA handles our entire customer service operation across three brands. During last holiday season, they scaled from 40 to 120 agents in two weeks and maintained a 97% satisfaction score. They are a true extension of our team.",
-  name: "Jennifer Park",
+  name: "J.P.",
   title: "VP of Customer Operations",
   company: "A National Retail Brand",
   initials: "JP",

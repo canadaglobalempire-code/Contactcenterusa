@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "During our busiest enrollment season ever, Contact Center USA handled a 300% increase in call volume without missing a beat. Their insurance knowledge is impressive and compliance is always on point.",
-  name: "Patricia Gomez",
+  name: "P.G.",
   title: "Director of Operations",
   company: "A National Insurance Carrier",
   initials: "PG",

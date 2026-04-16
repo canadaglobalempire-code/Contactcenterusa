@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Before Contact Center USA, we were losing leads after hours. Now every call is answered in under 30 seconds, and our qualified appointment rate has tripled. They pay for themselves many times over.",
-  name: "Amanda Chen",
+  name: "A.C.",
   title: "Broker/Owner",
   company: "A National Real Estate Brokerage",
   initials: "AC",

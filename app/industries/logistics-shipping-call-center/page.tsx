@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA became an extension of our dispatch team. Missed delivery complaints dropped 45% and our drivers love having 24/7 support. Their logistics expertise is the real deal.",
-  name: "Robert Franklin",
+  name: "R.F.",
   title: "Director of Logistics",
   company: "A National Shipping Company",
   initials: "RF",

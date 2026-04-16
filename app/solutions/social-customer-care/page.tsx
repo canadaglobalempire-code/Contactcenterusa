@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA manages our social customer care across every platform. Response times went from hours to minutes, our social sentiment improved 35%, and we turned a channel that used to generate complaints into one that generates loyalty.",
-  name: "Amanda Wright",
+  name: "A.W.",
   title: "VP of Digital Marketing",
   company: "A National Retail Brand",
   initials: "AW",

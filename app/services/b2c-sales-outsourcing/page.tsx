@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "We partnered with Contact Center USA for our holiday campaign and they exceeded every target. Conversion rates jumped 34% and their agents handled the volume spike flawlessly. They truly understand consumer sales.",
-  name: "Sarah Mitchell",
+  name: "S.M.",
   title: "VP of Sales",
   company: "A National Home Goods Retailer",
   initials: "SM",

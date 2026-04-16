@@ -52,7 +52,7 @@ const services = [
 
 const industryLinks: Record<string, string> = {
   finance: "/industries/financial-services-call-center",
-  banking: "/industries/banking-fintech-call-center",
+  banking: "/industries/banking-financial-services-call-center",
   tech: "/industries/saas-technology-support",
   healthcare: "/industries/healthcare-call-center-services",
   insurance: "/industries/insurance-call-center-outsourcing",

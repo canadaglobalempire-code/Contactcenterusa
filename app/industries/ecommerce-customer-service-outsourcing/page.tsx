@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "During our biggest Black Friday ever, Contact Center USA scaled our support team seamlessly. Customer satisfaction actually went up during our highest-volume period. They are an essential partner.",
-  name: "Jason Park",
+  name: "J.P.",
   title: "VP of Customer Experience",
   company: "A Top Ecommerce Retailer",
   initials: "JP",

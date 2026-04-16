@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA manages our entire IT help desk and cloud infrastructure. Response times are under 15 minutes, uptime is consistently above 99.9%, and our IT costs dropped 35%. They feel like an extension of our own technology team.",
-  name: "Robert Chen",
+  name: "R.C.",
   title: "CTO",
   company: "A Mid-Market E-Commerce Company",
   initials: "RC",

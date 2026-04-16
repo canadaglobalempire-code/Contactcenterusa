@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA handles content moderation across our platform and social channels. Harmful content removal is down 60% and our community engagement scores have never been higher. Their moderators truly understand our brand voice.",
-  name: "David Patel",
+  name: "D.P.",
   title: "Head of Trust & Safety",
   company: "A Leading Online Marketplace",
   initials: "DP",

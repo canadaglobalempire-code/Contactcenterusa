@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA manages our patient assistance program and adverse event reporting for three branded products. Their pharmacovigilance training is rigorous, and we have never missed an FDA submission deadline. They are a true extension of our team.",
-  name: "Dr. Angela Reeves",
+  name: "A.R.",
   title: "VP Medical Affairs",
   company: "A Leading Pharmaceutical Company",
   initials: "AR",

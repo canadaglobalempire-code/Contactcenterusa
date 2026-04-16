@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Adding 24/7 managed live chat through Contact Center USA increased our website conversions by 45%. Their agents handle three chats simultaneously without any drop in quality. It's like having a sales floor on our website.",
-  name: "Kevin Tran",
+  name: "K.T.",
   title: "Head of Digital Experience",
   company: "A Leading Online Insurance Marketplace",
   initials: "KT",

@@ -93,7 +93,22 @@
       "Bash(sed -i '' 's/\"2015\"/\"2018\"/g' app/about/company-history/Content.tsx)",
       "Bash(cd /Users/ramanmakkar/Desktop/contactcenterusa echo \"=== TOTAL SIZE ===\" du -sh . echo \"\" echo \"=== BIGGEST FOLDERS ===\" du -sh */ .next/ node_modules/ public/)",
       "Bash(ls -lh public/images/*.mp4)",
-      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/20cc8f77-c5b7-4096-86a1-62a83bdbbcba/183e4294-688f-4d77-aad2-2f417993a014/g' {} +)"
+      "Bash(find app/ components/ -name \"*.tsx\" -exec sed -i '' 's/20cc8f77-c5b7-4096-86a1-62a83bdbbcba/183e4294-688f-4d77-aad2-2f417993a014/g' {} +)",
+      "Bash(sed -i '' 's|name: \"Sarah Mitchell\"|name: \"S.M.\"|' components/sections/TestimonialsSection.tsx)",
+      "Bash(sed -i '' 's|name: \"David Rodriguez\"|name: \"D.R.\"|' components/sections/TestimonialsSection.tsx)",
+      "Bash(sed -i '' 's|name: \"Jennifer Chen\"|name: \"J.C.\"|' components/sections/TestimonialsSection.tsx)",
+      "Bash(sed -i '' 's|name: \"Marcus Thompson\"|name: \"M.T.\"|' components/sections/TestimonialsSection.tsx)",
+      "Bash(sed -i '' 's|name: \"Dr. Lisa Patel\"|name: \"L.P.\"|' components/sections/TestimonialsSection.tsx)",
+      "Bash(grep -rn 'name: \"' app/solutions/*/page.tsx)",
+      "Bash(sed -i '' 's|{ label: \"Logistics\", href: \"/industries/logistics-shipping-call-center\" }|{ label: \"Logistics \\\\& Shipping\", href: \"/industries/logistics-shipping-call-center\" }|' components/layout/Footer.tsx)",
+      "Bash(grep -rn 'name: \"' app/services/*/page.tsx)",
+      "Bash(sed -i '' 's|name: \"David Chen\"|name: \"D.C.\"|' app/services/b2b-sales-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|name: \"Sarah Mitchell\"|name: \"S.M.\"|' app/services/b2c-sales-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|name: \"Jennifer Park\"|name: \"J.P.\"|' app/services/customer-care-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|name: \"Robert Garcia\"|name: \"R.G.\"|' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|name: \"Amanda Foster\"|name: \"A.F.\"|' app/services/interactive-voice-response/page.tsx)",
+      "Bash(kill 10832)",
+      "Bash([ -f \"app/industries/$dir/page.tsx\" ])"
     ]
   }
 }

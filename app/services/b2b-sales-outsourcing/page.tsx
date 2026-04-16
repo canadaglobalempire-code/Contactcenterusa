@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA built us a dedicated outbound team that generated over 200 qualified meetings in the first quarter. Our pipeline tripled and our sales team can finally focus on closing instead of prospecting.",
-  name: "David Chen",
+  name: "D.C.",
   title: "Chief Revenue Officer",
   company: "A Leading Enterprise SaaS Company",
   initials: "DC",

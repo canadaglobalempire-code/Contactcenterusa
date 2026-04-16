@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA transitioned our entire 500-agent operation to work-from-home in under 30 days. Facility costs dropped 50%, agent retention improved 20%, and customer satisfaction actually went up. Their remote infrastructure and monitoring tools are best in class.",
-  name: "Patricia Gomez",
+  name: "P.G.",
   title: "SVP of Operations",
   company: "A National BPO Services Company",
   initials: "PG",

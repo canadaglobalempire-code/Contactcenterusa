@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "The IVR system Contact Center USA designed for us handles 40% of our call volume without ever reaching an agent. Customer satisfaction actually went up because people get answers instantly instead of waiting on hold.",
-  name: "Amanda Foster",
+  name: "A.F.",
   title: "Director of Operations",
   company: "A Major Regional Utility Provider",
   initials: "AF",

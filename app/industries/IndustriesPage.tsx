@@ -116,7 +116,7 @@ const industries = [
   },
   {
     icon: Wallet,
-    name: "Banking & Fintech",
+    name: "Banking & Financial Services",
     color: "bg-green-100 text-green-600",
     hoverColor: "group-hover:bg-green-600 group-hover:text-white",
     bullets: [

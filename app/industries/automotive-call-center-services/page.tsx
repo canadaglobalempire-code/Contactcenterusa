@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA manages our BDC across 12 dealerships. Appointment rates are up 35% and our CSI scores have never been higher. They understand the automotive business inside and out.",
-  name: "Michael Torres",
+  name: "M.T.",
   title: "VP of Operations",
   company: "A Multi-State Auto Dealership",
   initials: "MT",

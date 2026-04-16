@@ -8,7 +8,7 @@ const testimonials = [
   {
     quote:
       "Contact Center USA transformed our customer service operations. We went from missing 30% of calls to a 99.8% answer rate within the first month. Their agents truly feel like part of our team.",
-    name: "Sarah Mitchell",
+    name: "S.M.",
     title: "VP of Operations",
     company: "A Leading Tech Company",
     initials: "SM",
@@ -16,7 +16,7 @@ const testimonials = [
   {
     quote:
       "We needed bilingual support for our growing Hispanic customer base. Contact Center USA delivered fluent Spanish-speaking agents who understood our products perfectly. Sales increased 24%.",
-    name: "David Rodriguez",
+    name: "D.R.",
     title: "CEO",
     company: "A National Ecommerce Brand",
     initials: "DR",
@@ -24,7 +24,7 @@ const testimonials = [
   {
     quote:
       "The flexibility is what sets them apart. During our holiday rush, they scaled from 10 to 85 agents in under a week. No other provider could match that speed or quality.",
-    name: "Jennifer Chen",
+    name: "J.C.",
     title: "Director of CX",
     company: "A Major Retail Chain",
     initials: "JC",
@@ -32,7 +32,7 @@ const testimonials = [
   {
     quote:
       "Switching to Contact Center USA was the best decision we made last year. Our CSAT scores jumped from 78% to 96%, and our customers constantly praise the quality of support they receive.",
-    name: "Marcus Thompson",
+    name: "M.T.",
     title: "Head of Support",
     company: "A Fast-Growing SaaS Company",
     initials: "MT",
@@ -40,7 +40,7 @@ const testimonials = [
   {
     quote:
       "As a healthcare provider, HIPAA compliance is non-negotiable. Contact Center USA not only met every requirement but exceeded our expectations in patient communication and care coordination.",
-    name: "Dr. Lisa Patel",
+    name: "L.P.",
     title: "COO",
     company: "A Regional Healthcare Provider",
     initials: "LP",

@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/industries/financial-services-call-center", "/industries/real-estate-call-center-services",
     "/industries/saas-technology-support", "/industries/insurance-call-center-outsourcing",
     "/industries/travel-hospitality-call-center", "/industries/logistics-shipping-call-center",
-    "/industries/education-call-center-services", "/industries/banking-fintech-call-center",
+    "/industries/education-call-center-services", "/industries/banking-financial-services-call-center",
     "/industries/automotive-call-center-services", "/industries/cable-media-call-center",
     "/industries/energy-utilities-call-center", "/industries/government-call-center",
     "/industries/pharmaceuticals-call-center", "/industries/telecommunications-call-center",

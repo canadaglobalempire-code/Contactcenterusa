@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA recovered 38% more on our aged receivables portfolio than our previous vendor — all while maintaining zero compliance violations. Their professional approach actually improved our customer relationships.",
-  name: "Robert Garcia",
+  name: "R.G.",
   title: "VP of Revenue Cycle",
   company: "A Regional Healthcare Provider Network",
   initials: "RG",

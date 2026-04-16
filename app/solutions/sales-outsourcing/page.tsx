@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA built and manages our entire SDR function. Our pipeline tripled in the first year and cost per acquisition dropped 45%. They operate like an extension of our sales team, not an outsourced vendor.",
-  name: "Marcus Johnson",
+  name: "M.J.",
   title: "SVP of Revenue",
   company: "A B2B Technology Company",
   initials: "MJ",

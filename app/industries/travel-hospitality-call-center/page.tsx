@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA delivers the five-star experience our guests expect. Their concierge agents are as polished as our front desk staff, and they have increased our direct booking rate by 25%.",
-  name: "Elena Vasquez",
+  name: "E.V.",
   title: "VP of Guest Experience",
   company: "A Luxury Hotel Chain",
   initials: "EV",

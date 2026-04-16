@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Since partnering with Contact Center USA for call monitoring, our QA scores have improved by 40% and compliance violations dropped to near zero. Their scorecards and coaching workflows transformed how we develop our agents.",
-  name: "Karen Liu",
+  name: "K.L.",
   title: "Director of Quality Assurance",
   company: "A National Insurance Provider",
   initials: "KL",

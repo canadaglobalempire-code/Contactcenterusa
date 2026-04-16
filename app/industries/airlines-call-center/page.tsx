@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA transformed our passenger support operation. During peak travel disruptions, their team rebooking capacity scaled overnight and our customer satisfaction scores improved by 28%. They truly understand the airline industry.",
-  name: "Sarah Whitfield",
+  name: "S.W.",
   title: "Director of Customer Experience",
   company: "A Major U.S. Airline",
   initials: "SW",

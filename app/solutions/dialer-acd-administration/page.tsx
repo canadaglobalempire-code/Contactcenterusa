@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA re-engineered our entire dialer and ACD configuration. Agent talk time increased 45%, wait times dropped by a third, and our outbound connect rates hit levels we did not think were possible. Their technical expertise is outstanding.",
-  name: "James Rivera",
+  name: "J.R.",
   title: "VP of Contact Center Operations",
   company: "A Regional Financial Services Firm",
   initials: "JR",

@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 
 export const metadata: Metadata = {
-  title: "Banking Call Center Services | Account Support & Digital Banking | Contact Center USA",
+  title: "Banking & Financial Services Call Center | Account Support & Compliance | Contact Center USA",
   description:
-    "Banking call center services for account support, loan processing, digital banking assistance, and regulatory compliance. Secure, reliable support for banks and credit unions.",
-  alternates: { canonical: "/industries/banking-fintech-call-center" },
+    "Banking and financial services call center solutions for account support, loan processing, digital banking, wealth management, and regulatory compliance. Trusted by banks, credit unions, and financial institutions nationwide.",
+  alternates: { canonical: "/industries/banking-financial-services-call-center" },
 };
 
 const features = [
@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA reduced our branch call volume by 35% while maintaining a 98% satisfaction score. Their agents handle everything from mobile banking support to complex loan inquiries with professionalism.",
-  name: "James Whitfield",
+  name: "J.W.",
   title: "EVP of Retail Banking",
   company: "A Regional Community Bank",
   initials: "JW",
@@ -92,7 +92,7 @@ const relatedServices = [
   {
     title: "Inbound Call Center",
     desc: "Professional inbound support for account inquiries and banking services.",
-    href: "/services/inbound",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "Fraud Prevention",
@@ -102,18 +102,18 @@ const relatedServices = [
   {
     title: "Back-Office Processing",
     desc: "Loan document processing, data verification, and administrative support.",
-    href: "/services/back-office",
+    href: "/solutions/back-office-outsourcing",
   },
 ];
 
 export default function BankingPage() {
   return (
     <ServicePageTemplate
-      badge="Banking Call Center Services"
-      title="Call Center Solutions for Banks & Credit Unions"
-      titleHighlight="Banks & Credit Unions"
-      subtitle="Secure, compliant call center services for account support, loan processing, digital banking, and fraud prevention — trusted by community banks and credit unions nationwide."
-      description="Banking customers expect immediate, accurate, and secure support for every interaction. Our agents are trained on core banking platforms, understand regulatory requirements, and deliver the professional service that reflects your institution's reputation. From routine balance inquiries to complex loan processing, we handle the volume so your team can focus on relationship banking."
+      badge="Banking & Financial Services Call Center"
+      title="Call Center Solutions for Banking & Financial Services"
+      titleHighlight="Banking & Financial Services"
+      subtitle="Secure, compliant call center services for account support, loan processing, wealth management, digital banking, and fraud prevention — trusted by banks, credit unions, and financial institutions nationwide."
+      description="Banking and financial services customers expect immediate, accurate, and secure support for every interaction. Our agents are trained on core banking platforms, understand regulatory requirements, and deliver the professional service that reflects your institution's reputation. From routine balance inquiries to complex loan processing and wealth management support, we handle the volume so your team can focus on relationship banking."
       features={features}
       benefits={benefits}
       image="/images/hd-agents-pair.jpg"

@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA ran our product launch telemarketing campaign and delivered 4.5x ROI. Their agents were professional, persistent, and fully compliant. We've since made them our ongoing telemarketing partner for all outbound campaigns.",
-  name: "Marcus Johnson",
+  name: "M.J.",
   title: "Marketing Director",
   company: "A National Business Services Company",
   initials: "MJ",

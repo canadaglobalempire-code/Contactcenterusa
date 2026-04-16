@@ -288,7 +288,7 @@ export default function CallCenterOutsourcingCostContent() {
                   Financial Services
                 </h3>
                 <p>
-                  <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">Financial services</Link> and <Link href="/industries/banking-fintech-call-center" className="text-red hover:text-red-dark font-semibold">banking</Link> call centers must comply with PCI-DSS, SOX, and other regulatory frameworks, adding 10-20% to base costs. Specialized <Link href="/services/fraud-prevention-cyber-security" className="text-red hover:text-red-dark font-semibold">fraud prevention</Link> services require additional investment but protect against losses that average $4.35 million per data breach.
+                  <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">Financial services</Link> and <Link href="/industries/banking-financial-services-call-center" className="text-red hover:text-red-dark font-semibold">banking</Link> call centers must comply with PCI-DSS, SOX, and other regulatory frameworks, adding 10-20% to base costs. Specialized <Link href="/services/fraud-prevention-cyber-security" className="text-red hover:text-red-dark font-semibold">fraud prevention</Link> services require additional investment but protect against losses that average $4.35 million per data breach.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">

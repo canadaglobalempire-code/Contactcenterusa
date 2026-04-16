@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA handles our data entry, scheduling, and receptionist services. Administrative overhead dropped 40% and our data accuracy is nearly perfect. Our internal team can finally focus on growing the business instead of managing paperwork.",
-  name: "Lisa Hernandez",
+  name: "L.H.",
   title: "Director of Operations",
   company: "A Regional Professional Services Firm",
   initials: "LH",

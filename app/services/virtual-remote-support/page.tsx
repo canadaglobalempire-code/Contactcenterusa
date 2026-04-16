@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Moving to Contact Center USA's virtual agent model cut our operating costs by 30% while actually improving quality scores. Their remote infrastructure is rock-solid and their agents are more engaged and productive than our previous in-office team.",
-  name: "Lisa Hernandez",
+  name: "L.H.",
   title: "SVP of Customer Operations",
   company: "A Leading Financial Services Firm",
   initials: "LH",

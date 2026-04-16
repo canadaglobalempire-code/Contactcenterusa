@@ -91,9 +91,9 @@ const industries = [
   },
   {
     icon: Banknote,
-    label: "Banking & Fintech",
+    label: "Banking & Financial Services",
     desc: "Account support, loan processing, and digital banking",
-    href: "/industries/banking-fintech-call-center",
+    href: "/industries/banking-financial-services-call-center",
     color: "#16a34a",
     lightBg: "#f0fdf4",
   },

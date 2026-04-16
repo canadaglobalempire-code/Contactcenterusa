@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA helped us redesign our entire customer journey. Our NPS jumped 30 points in six months and customer retention improved by 22%. They brought a level of CX expertise we simply did not have in-house.",
-  name: "Sarah Mitchell",
+  name: "S.M.",
   title: "Chief Customer Officer",
   company: "A National Healthcare Services Company",
   initials: "SM",

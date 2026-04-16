@@ -54,7 +54,7 @@ const stats = [
 const testimonial = {
   quote:
     "Contact Center USA helped us launch our benefits enrollment hotline in three weeks. Their agents handled over 200,000 calls in the first quarter with a 97% satisfaction rate. Their compliance and security standards are exactly what we needed.",
-  name: "Patricia Hammond",
+  name: "P.H.",
   title: "Director of Constituent Services",
   company: "A State Government Agency",
   initials: "PH",
