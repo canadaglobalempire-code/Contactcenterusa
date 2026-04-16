@@ -112,8 +112,8 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-3">
-              {services.map((item) => (
-                <li key={item.href}>
+              {services.map((item, i) => (
+                <li key={`svc-${i}`}>
                   <Link
                     href={item.href}
                     className="text-sm text-gray-700 transition-colors hover:text-navy"
@@ -131,8 +131,8 @@ export default function Footer() {
               Solutions
             </h3>
             <ul className="space-y-3">
-              {solutions.map((item) => (
-                <li key={item.href}>
+              {solutions.map((item, i) => (
+                <li key={`sol-${i}`}>
                   <Link
                     href={item.href}
                     className="text-sm text-gray-700 transition-colors hover:text-navy"
