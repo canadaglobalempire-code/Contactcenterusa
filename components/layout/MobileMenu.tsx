@@ -13,25 +13,42 @@ import { siteConfig } from "@/lib/seo-config"
 
 const services = [
   { label: "All Services", href: "/services", description: "View all services" },
+  { label: "B2B Sales", href: "/services/b2b-sales-outsourcing", description: "Business-to-business sales" },
+  { label: "B2C Sales", href: "/services/b2c-sales-outsourcing", description: "Consumer sales programs" },
   { label: "Customer Acquisition", href: "/services/customer-acquisition-outsourcing", description: "Grow your customer base" },
+  { label: "Customer Care", href: "/services/customer-care-outsourcing", description: "Dedicated care teams" },
   { label: "Customer Service", href: "/solutions/customer-service-outsourcing", description: "Professional support teams" },
+  { label: "Debt Collection", href: "/services/debt-collection-outsourcing", description: "Compliant recovery services" },
   { label: "Financial Solutions", href: "/solutions/financial-call-center-services", description: "Payment processing & compliance" },
   { label: "Inbound Services", href: "/solutions/inbound-call-center-services", description: "Handle incoming inquiries" },
+  { label: "Interactive Voice Response", href: "/services/interactive-voice-response", description: "Automated phone systems" },
   { label: "Lead Generation", href: "/solutions/lead-generation-appointment-setting", description: "Fill your sales pipeline" },
+  { label: "Live Chat", href: "/services/live-chat-outsourcing", description: "Real-time chat support" },
   { label: "Outbound Services", href: "/solutions/outbound-call-center-services", description: "Proactive outreach campaigns" },
   { label: "Social Media", href: "/solutions/social-media-customer-support", description: "Social monitoring & response" },
   { label: "Technical Support", href: "/solutions/technical-support-outsourcing", description: "Expert troubleshooting" },
+  { label: "Telemarketing Services", href: "/services/telemarketing-services", description: "Professional telemarketing" },
+  { label: "Virtual / Remote Support", href: "/services/virtual-remote-support", description: "Remote agent solutions" },
 ]
 
 const solutions = [
   { label: "All Solutions", href: "/solutions", description: "View all solutions" },
   { label: "A.I. Automation", href: "/services/ai-call-center-automation", description: "Intelligent automation solutions" },
   { label: "Back Office Support", href: "/solutions/back-office-outsourcing", description: "Streamlined back office operations" },
+  { label: "Call Monitoring", href: "/solutions/call-monitoring-services", description: "Quality assurance monitoring" },
   { label: "Contact Center Software", href: "/services/contact-center-software-solutions", description: "Enterprise-grade platform" },
+  { label: "Content Moderation", href: "/solutions/content-moderation-services", description: "Content review & safety" },
+  { label: "Customer Experience Management", href: "/solutions/customer-experience-management", description: "Strategic CX programs" },
   { label: "CX Analytics", href: "/services/customer-experience-analytics", description: "Data-driven insights" },
-  { label: "Digital & CX Services", href: "/services/digital-customer-experience-services", description: "End-to-end digital CX" },
-  { label: "Fraud Prevention", href: "/services/fraud-prevention-cyber-security", description: "Protect your business" },
+  { label: "Dialer & ACD Administration", href: "/solutions/dialer-acd-administration", description: "Call routing management" },
+  { label: "Digital and CX Services", href: "/services/digital-customer-experience-services", description: "End-to-end digital CX" },
+  { label: "Fraud Prevention & Cyber Security", href: "/services/fraud-prevention-cyber-security", description: "Protect your business" },
+  { label: "Information Technology Services", href: "/solutions/information-technology-services", description: "IT support solutions" },
+  { label: "Office Support Services", href: "/solutions/office-support-services", description: "Administrative support" },
   { label: "Omnichannel Solutions", href: "/services/omnichannel-contact-center-solutions", description: "Seamless channel integration" },
+  { label: "Sales", href: "/solutions/sales-outsourcing", description: "Sales outsourcing programs" },
+  { label: "Social Customer Care", href: "/solutions/social-customer-care", description: "Social media care teams" },
+  { label: "Work From Home", href: "/solutions/work-from-home-solutions", description: "Remote workforce solutions" },
 ]
 
 const mainLinks = [
@@ -128,15 +145,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         </nav>
 
         <SheetFooter>
-          <div className="flex flex-col gap-2 text-center">
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="flex items-center justify-center gap-2 text-sm text-gray-700"
-            >
-              <Mail className="size-3.5" />
-              {siteConfig.email}
-            </a>
-          </div>
           <Link
             href="/contact"
             onClick={() => onOpenChange(false)}
