@@ -6,19 +6,30 @@ import { ArrowRight, CheckCircle, Lock } from "lucide-react";
 export function HeroContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
+    setError(null);
     const formData = new FormData(e.currentTarget);
     formData.append("access_key", "183e4294-688f-4d77-aad2-2f417993a014");
+    formData.append("from_name", "ContactCenterUSA Hero Form");
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
+        headers: { Accept: "application/json" },
         body: formData,
       });
-      if (res.ok) setSubmitted(true);
-    } catch {}
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setError(data.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    }
     setSubmitting(false);
   };
 
@@ -97,6 +108,9 @@ export function HeroContactForm() {
         {submitting ? "Sending..." : "Get My Free Quote"}
         {!submitting && <ArrowRight className="h-4 w-4" />}
       </button>
+      {error && (
+        <p className="mt-3 text-center text-sm text-red">{error}</p>
+      )}
       <p className="mt-3 flex items-center justify-center gap-1.5 text-sm text-gray-600">
         <Lock className="h-3 w-3" />
         Your information is secure and never shared.

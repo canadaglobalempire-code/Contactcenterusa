@@ -37,15 +37,19 @@ export function ContactFormSection() {
 
     const formData = new FormData(e.currentTarget);
     formData.append("access_key", "183e4294-688f-4d77-aad2-2f417993a014");
+    formData.append("from_name", "ContactCenterUSA Contact Form");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
+        headers: { Accept: "application/json" },
         body: formData,
       });
-
-      if (response.ok) {
+      const data = await response.json();
+      if (response.ok && data.success) {
         setIsSubmitted(true);
+      } else {
+        alert("Error: " + (data.message || "Something went wrong. Please try again."));
       }
     } catch {
       alert("Something went wrong. Please try again.");

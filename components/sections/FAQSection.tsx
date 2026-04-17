@@ -78,14 +78,31 @@ export function FAQSection() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
+    const formData = new FormData();
+    formData.append("access_key", "183e4294-688f-4d77-aad2-2f417993a014");
+    formData.append("from_name", "ContactCenterUSA Homepage Form");
+    formData.append("subject", "Homepage FAQ Form Inquiry — ContactCenterUSA.com");
+    formData.append("name", data.fullName);
+    formData.append("company", data.company);
+    formData.append("email", data.email);
+    formData.append("phone", data.phone);
+    formData.append("message", data.message || "");
+
     try {
-      await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        headers: { Accept: "application/json" },
+        body: formData,
       });
-    } catch {}
-    setIsSubmitted(true);
+      const result = await response.json();
+      if (response.ok && result.success) {
+        setIsSubmitted(true);
+      } else {
+        alert("Error: " + (result.message || "Something went wrong. Please try again."));
+      }
+    } catch {
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   return (
