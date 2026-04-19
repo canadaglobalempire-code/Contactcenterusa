@@ -165,7 +165,7 @@ const seoContent: SEOPattern[] = [
     items: [
       {
         stat: "+25–45%",
-        title: "Higher Recovery on Aged AR",
+        title: "Higher Recovery on Aged Receivables",
         body: [
           "Collection curves drop sharply after 60–90 days of delinquency. Internal teams often lack the capacity, technology, or specialized training to work late-stage and charged-off accounts efficiently.",
           "A professional debt collection BPO partner deploys dedicated recovery teams, multi-channel outreach (voice, SMS, email, letter, portal), and data-driven segmentation strategies that outperform in-house efforts and most incumbent vendors on aged portfolios.",

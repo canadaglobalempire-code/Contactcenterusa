@@ -313,7 +313,7 @@ function StatsBlock({ data }: { data: StatsPattern }) {
             )}
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-0">
+          <div className="mt-16 divide-y divide-gray-200 border-y border-gray-200">
             {data.items.map((item, i) => {
               const paras = Array.isArray(item.body) ? item.body : [item.body];
               return (
@@ -322,19 +322,29 @@ function StatsBlock({ data }: { data: StatsPattern }) {
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="md:border-l md:border-gray-200 md:px-8 md:first:border-l-0"
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
+                  className="grid grid-cols-1 gap-6 py-10 lg:grid-cols-[260px_1fr] lg:gap-16"
                 >
-                  <div className="text-[60px] font-bold leading-[1] tracking-[-0.03em] text-red">
-                    {item.stat}
+                  {/* Left: big stat + short label */}
+                  <div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                      Result
+                    </div>
+                    <div className="mt-2 text-[64px] font-bold leading-[0.95] tracking-[-0.035em] text-red lg:text-[76px]">
+                      {item.stat}
+                    </div>
+                    <div className="mt-3 text-[16px] font-semibold text-navy">
+                      {item.title}
+                    </div>
                   </div>
-                  <h3 className="mt-5 text-[20px] font-semibold tracking-tight text-navy">
-                    {item.title}
-                  </h3>
-                  <div className="mt-3 space-y-3 text-[15.5px] leading-[1.72] text-gray-700">
-                    {paras.map((p, j) => (
-                      <p key={j}>{p}</p>
-                    ))}
+
+                  {/* Right: narrative body */}
+                  <div>
+                    <div className="space-y-4 text-[16.5px] leading-[1.78] text-gray-700">
+                      {paras.map((p, j) => (
+                        <p key={j}>{p}</p>
+                      ))}
+                    </div>
                   </div>
                 </motion.div>
               );
