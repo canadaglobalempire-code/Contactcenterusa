@@ -11,7 +11,7 @@ import { PageFAQ } from "@/components/shared/PageFAQ";
 import { RelatedServices } from "@/components/shared/RelatedServices";
 import { PageCTA } from "@/components/shared/PageCTA";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
-import { SEOContentSection, type SEOSection } from "@/components/shared/SEOContentSection";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
 interface ServicePageTemplateProps {
   badge: string;
@@ -28,7 +28,7 @@ interface ServicePageTemplateProps {
   relatedServices?: { title: string; desc: string; href: string }[];
   ctaHeading?: string;
   ctaSubtitle?: string;
-  seoContent?: { intro?: string; sections: SEOSection[] };
+  seoContent?: SEOPattern[];
 }
 
 export function ServicePageTemplate({
@@ -239,7 +239,7 @@ export function ServicePageTemplate({
         </div>
       </section>
 
-      {seoContent && <SEOContentSection intro={seoContent.intro} sections={seoContent.sections} />}
+      {seoContent && <SEOContentSection sections={seoContent} />}
       {stats && <StatsBar stats={stats} />}
       {testimonial && <PageTestimonial {...testimonial} />}
       {faqs && faqs.length > 0 && <PageFAQ faqs={faqs} />}
