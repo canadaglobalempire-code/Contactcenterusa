@@ -116,7 +116,9 @@
       "Bash(sed -i '' 's|\"2\\\\. Analytics-Driven Segmentation\"|\"Analytics-Driven Segmentation\"|' app/services/debt-collection-outsourcing/page.tsx)",
       "Bash(sed -i '' 's|\"3\\\\. Compliant Multi-Channel Contact\"|\"Compliant Multi-Channel Contact\"|' app/services/debt-collection-outsourcing/page.tsx)",
       "Bash(sed -i '' 's|\"4\\\\. Payment Processing & Plan Management\"|\"Payment Processing \\\\& Plan Management\"|' app/services/debt-collection-outsourcing/page.tsx)",
-      "Bash(sed -i '' 's|\"5\\\\. Dispute Handling & Documentation\"|\"Dispute Handling \\\\& Documentation\"|' app/services/debt-collection-outsourcing/page.tsx)"
+      "Bash(sed -i '' 's|\"5\\\\. Dispute Handling & Documentation\"|\"Dispute Handling \\\\& Documentation\"|' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -i '' '102,286d' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -n '100,108p' app/services/debt-collection-outsourcing/page.tsx)"
     ]
   }
 }
