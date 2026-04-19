@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Check } from "lucide-react";
 
 export interface SEOSection {
   eyebrow?: string;
@@ -13,13 +12,28 @@ export interface SEOSection {
   numbered?: boolean;
 }
 
-function Paragraphs({ body, className = "" }: { body: string | string[]; className?: string }) {
+function Paragraphs({
+  body,
+  className = "",
+}: {
+  body: string | string[];
+  className?: string;
+}) {
   const paragraphs = Array.isArray(body) ? body : [body];
   return (
-    <div className={`space-y-4 text-[16px] leading-[1.75] text-gray-700 ${className}`}>
+    <div className={`space-y-5 text-[16.5px] leading-[1.78] text-gray-700 ${className}`}>
       {paragraphs.map((p, i) => (
         <p key={i}>{p}</p>
       ))}
+    </div>
+  );
+}
+
+function SectionNumber({ n }: { n: number }) {
+  return (
+    <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.18em] text-gray-400">
+      <span className="h-px w-10 bg-gray-300" />
+      <span className="tabular-nums">{String(n).padStart(2, "0")}</span>
     </div>
   );
 }
@@ -35,22 +49,22 @@ export function SEOContentSection({
     <>
       {/* Intro lead block */}
       {intro && (
-        <section className="border-b border-gray-100 bg-white py-20">
-          <div className="mx-auto max-w-[860px] px-5 lg:px-8">
+        <section className="bg-white pt-24 pb-8">
+          <div className="mx-auto max-w-[820px] px-5 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="space-y-5"
+              className="border-l-2 border-red pl-7"
             >
               {intro.split("\n\n").map((p, i) => (
                 <p
                   key={i}
                   className={
                     i === 0
-                      ? "text-[20px] font-medium leading-[1.6] text-navy"
-                      : "text-[16px] leading-[1.8] text-gray-700"
+                      ? "mb-5 text-[20px] font-medium leading-[1.55] tracking-tight text-navy"
+                      : "mb-4 text-[16.5px] leading-[1.8] text-gray-700"
                   }
                 >
                   {p}
@@ -64,13 +78,9 @@ export function SEOContentSection({
       {/* Content sections */}
       {sections.map((section, i) => {
         const imageLeft = i % 2 === 0;
-        const altBg = i % 2 === 1;
 
         return (
-          <section
-            key={i}
-            className={`${altBg ? "bg-gray-50" : "bg-white"} border-b border-gray-100 py-24`}
-          >
+          <section key={i} className="bg-white py-24">
             <div className="mx-auto max-w-[1200px] px-5 lg:px-8">
               {/* Top row: image + heading/intro text */}
               {section.image ? (
@@ -79,31 +89,33 @@ export function SEOContentSection({
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 0.5 }}
-                  className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16"
+                  className="grid grid-cols-1 items-center gap-14 lg:grid-cols-[1.05fr_1fr] lg:gap-20"
                 >
                   {/* Image */}
                   <div className={imageLeft ? "lg:order-1" : "lg:order-2"}>
-                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100">
                       <Image
                         src={section.image}
                         alt={section.heading}
                         fill
                         className="object-cover"
+                        sizes="(min-width: 1024px) 600px, 100vw"
                       />
                     </div>
                   </div>
 
                   {/* Heading + intro text */}
                   <div className={imageLeft ? "lg:order-2" : "lg:order-1"}>
+                    <SectionNumber n={i + 1} />
                     {section.eyebrow && (
-                      <div className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-red">
+                      <div className="mt-6 text-[11px] font-bold uppercase tracking-[0.2em] text-red">
                         {section.eyebrow}
                       </div>
                     )}
-                    <h2 className="text-[28px] font-bold leading-[1.2] tracking-tight text-navy sm:text-[34px]">
+                    <h2 className="mt-3 text-[30px] font-bold leading-[1.15] tracking-[-0.01em] text-navy sm:text-[38px]">
                       {section.heading}
                     </h2>
-                    <Paragraphs body={section.body} className="mt-5" />
+                    <Paragraphs body={section.body} className="mt-6" />
                   </div>
                 </motion.div>
               ) : (
@@ -114,57 +126,80 @@ export function SEOContentSection({
                   transition={{ duration: 0.5 }}
                   className="mx-auto max-w-[820px]"
                 >
+                  <SectionNumber n={i + 1} />
                   {section.eyebrow && (
-                    <div className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-red">
+                    <div className="mt-6 text-[11px] font-bold uppercase tracking-[0.2em] text-red">
                       {section.eyebrow}
                     </div>
                   )}
-                  <h2 className="text-[28px] font-bold leading-[1.2] tracking-tight text-navy sm:text-[34px]">
+                  <h2 className="mt-3 text-[30px] font-bold leading-[1.15] tracking-[-0.01em] text-navy sm:text-[40px]">
                     {section.heading}
                   </h2>
-                  <Paragraphs body={section.body} className="mt-5" />
+                  <Paragraphs body={section.body} className="mt-6" />
                 </motion.div>
               )}
 
-              {/* Subsections as card grid */}
+              {/* Subsections — premium card grid */}
               {section.subsections && section.subsections.length > 0 && (
                 <div
-                  className={`grid grid-cols-1 gap-5 ${
-                    section.image ? "mt-16" : "mt-12"
+                  className={`grid grid-cols-1 gap-6 ${
+                    section.image ? "mt-20" : "mt-16"
                   } md:grid-cols-2 lg:grid-cols-3`}
                 >
                   {section.subsections.map((sub, j) => (
-                    <motion.div
+                    <motion.article
                       key={j}
-                      initial={{ opacity: 0, y: 12 }}
+                      initial={{ opacity: 0, y: 14 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ duration: 0.35, delay: j * 0.05 }}
-                      className="rounded-xl border border-gray-200 bg-white p-6"
+                      transition={{ duration: 0.4, delay: j * 0.05 }}
+                      className="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-gray-300 hover:shadow-[0_20px_40px_-20px_rgba(15,23,42,0.15)]"
                     >
-                      <div className="mb-3 flex items-center gap-3">
+                      {/* Top accent line on hover */}
+                      <div className="absolute left-0 right-0 top-0 h-[2px] origin-left scale-x-0 bg-red transition-transform duration-300 group-hover:scale-x-100" />
+
+                      <div className="mb-5 flex items-center justify-between">
                         {section.numbered ? (
-                          <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-navy text-[13px] font-bold text-white">
-                            {String(j + 1).padStart(2, "0")}
+                          <div className="flex items-baseline gap-1.5">
+                            <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                              Step
+                            </span>
+                            <span className="text-[28px] font-bold tabular-nums leading-none text-navy">
+                              {String(j + 1).padStart(2, "0")}
+                            </span>
                           </div>
                         ) : (
-                          <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md bg-red/10 text-red">
-                            <Check className="h-4 w-4" strokeWidth={3} />
+                          <div className="flex items-baseline gap-1.5">
+                            <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                              /
+                            </span>
+                            <span className="text-[13px] font-semibold tabular-nums text-gray-400">
+                              {String(j + 1).padStart(2, "0")}
+                            </span>
                           </div>
                         )}
+                        <div className="h-px w-10 bg-gray-200 transition-colors group-hover:bg-red" />
                       </div>
-                      <h3 className="text-[17px] font-semibold leading-snug text-navy">
+
+                      <h3 className="text-[18px] font-semibold leading-[1.3] tracking-tight text-navy">
                         {sub.heading}
                       </h3>
                       <Paragraphs
                         body={sub.body}
-                        className="mt-2 !text-[15px] !leading-[1.7]"
+                        className="mt-3 !space-y-3 !text-[15px] !leading-[1.7] text-gray-600"
                       />
-                    </motion.div>
+                    </motion.article>
                   ))}
                 </div>
               )}
             </div>
+
+            {/* Thin divider between sections */}
+            {i < sections.length - 1 && (
+              <div className="mx-auto mt-24 max-w-[1200px] px-5 lg:px-8">
+                <div className="h-px bg-gray-100" />
+              </div>
+            )}
           </section>
         );
       })}
