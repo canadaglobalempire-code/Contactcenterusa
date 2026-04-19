@@ -111,7 +111,12 @@
       "Bash([ -f \"app/industries/$dir/page.tsx\" ])",
       "Bash(curl -s -X POST https://api.web3forms.com/submit -F access_key=183e4294-688f-4d77-aad2-2f417993a014 -F name=Test -F email=test@test.com -F phone=5551234567 -F 'company=Test Co' -F 'requirements=Test message' -F subject=Test)",
       "Bash(cd /Users/ramanmakkar/Desktop/contactcenterusa du -sh .next)",
-      "Bash(curl -s http://localhost:3000/services/debt-collection-outsourcing)"
+      "Bash(curl -s http://localhost:3000/services/debt-collection-outsourcing)",
+      "Bash(sed -i '' 's|\"1\\\\. Portfolio Onboarding & Data Validation\"|\"Portfolio Onboarding \\\\& Data Validation\"|' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|\"2\\\\. Analytics-Driven Segmentation\"|\"Analytics-Driven Segmentation\"|' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|\"3\\\\. Compliant Multi-Channel Contact\"|\"Compliant Multi-Channel Contact\"|' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|\"4\\\\. Payment Processing & Plan Management\"|\"Payment Processing \\\\& Plan Management\"|' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(sed -i '' 's|\"5\\\\. Dispute Handling & Documentation\"|\"Dispute Handling \\\\& Documentation\"|' app/services/debt-collection-outsourcing/page.tsx)"
     ]
   }
 }

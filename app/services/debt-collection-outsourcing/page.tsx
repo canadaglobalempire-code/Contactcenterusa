@@ -103,7 +103,9 @@ const seoContent = {
     "Contact Center USA is one of the best debt collection BPO companies in the USA, operating a 100% US-based, FDCPA-compliant debt collection call centre with 30+ years of recovery experience, licensed collectors in all 50 states, and independently audited recovery rates that outperform both offshore vendors and most domestic competitors. For businesses searching for the best debt collection outsourcing BPO in USA, Contact Center USA delivers higher recovery on aged receivables, lower cost of collection, and a compliance program that has never produced a material regulatory finding.\n\nDebt collection outsourcing BPO in USA has become a strategic lever for businesses looking to recover more revenue without expanding internal collections infrastructure. Whether you operate in healthcare, financial services, telecommunications, utilities, or consumer credit, partnering with one of the top debt collection companies in the country lets you accelerate recovery on aged receivables, reduce internal operating costs, and transfer regulatory risk to a specialized debt collection call centre that focuses exclusively on compliant accounts receivable recovery.",
   sections: [
     {
+      eyebrow: "Top Rated",
       heading: "Best Debt Collection BPO Company in the USA",
+      image: "/images/cc-office-wide.jpg",
       body: [
         "Among the many debt collection companies operating in the United States, Contact Center USA stands out as the best debt collection BPO partner for organizations that need to recover revenue without sacrificing compliance or customer experience. Our ranking among top debt collection companies in the USA is based on four objective criteria that buyers should always evaluate: recovery performance, regulatory track record, workforce location, and client transparency.",
         "Recovery performance: independently audited recovery rates on aged portfolios average 25%–45% higher than typical industry benchmarks for comparable vintages, driven by analytics-led segmentation, skip tracing, and senior collector specialization on late-stage placements.",
@@ -113,14 +115,18 @@ const seoContent = {
       ],
     },
     {
+      eyebrow: "Overview",
       heading: "What Is Debt Collection Outsourcing BPO?",
+      image: "/images/cc-agent-desk.jpg",
       body: [
         "Debt collection BPO (Business Process Outsourcing) is the practice of contracting a licensed third-party debt collection call centre to recover outstanding balances on your behalf — either under a first-party arrangement where collectors represent your brand, or a third-party arrangement where charged-off accounts are placed with a commercial collection partner. Our debt collection outsourcing BPO in USA combines trained collection agents, proven contact strategies, predictive dialer technology, skip tracing tools, and strict FDCPA-compliant procedures to maximize recovery rates while protecting your organization from Fair Debt Collection Practices Act violations.",
         "Unlike in-house collection teams that require significant investment in compliance training, collection management software, dialing systems, and licensed collector headcount, debt collection companies like Contact Center USA deliver all of that as a scalable BPO service. You pay for performance on recovered dollars — not for fixed overhead — and gain access to a nationwide US-based debt collection call centre workforce that has already been onboarded to federal and state debt collection regulations.",
       ],
     },
     {
+      eyebrow: "Benefits",
       heading: "Why Outsource to a Debt Collection Call Centre?",
+      image: "/images/cc-team-collab.jpg",
       body: "Companies choose to outsource collections to a specialized debt collection BPO for three core reasons: higher recovery rates, lower total cost of collection, and reduced regulatory exposure. Leading debt collection companies bring expertise that internal teams rarely replicate — from skip tracing databases that locate hard-to-reach debtors to compliance programs audited against CFPB, FDCPA, TCPA, and HIPAA requirements. The result is a measurable lift in cash recovery on aged accounts receivable combined with a dramatic drop in compliance risk — which is exactly why debt collection outsourcing BPO in USA has grown into a multi-billion-dollar category.",
       subsections: [
         {
@@ -138,33 +144,38 @@ const seoContent = {
       ],
     },
     {
+      eyebrow: "How It Works",
       heading: "How Our FDCPA-Compliant Collection Process Works",
+      image: "/images/cc-agent-monitor.jpg",
+      numbered: true,
       body: "Our debt collection outsourcing process is engineered around two principles: maximize recovery on every placement and keep your organization out of compliance trouble. From the moment a portfolio is onboarded, accounts are scored, segmented, and routed through the collection strategies most likely to produce payment — always within the bounds of federal collection law and the consumer protections of each state where the debtor resides.",
       subsections: [
         {
-          heading: "1. Portfolio Onboarding & Data Validation",
+          heading: "Portfolio Onboarding & Data Validation",
           body: "We ingest your delinquent accounts receivable file, validate data integrity, run address and phone number enrichment, and scrub the portfolio against do-not-contact registries, bankruptcy filings, deceased records, active-duty military status, and litigation holds. This up-front hygiene protects you from contacting consumers you legally cannot contact.",
         },
         {
-          heading: "2. Analytics-Driven Segmentation",
+          heading: "Analytics-Driven Segmentation",
           body: "Accounts are segmented by age, balance, payment history, risk score, and behavioral indicators. Each segment is matched to a tailored collection workflow — for example, early-stage accounts receive payment reminders and self-service portal links, while late-stage accounts are routed to certified senior collectors trained in settlement negotiation and payment plan structuring.",
         },
         {
-          heading: "3. Compliant Multi-Channel Contact",
+          heading: "Compliant Multi-Channel Contact",
           body: "Our agents use predictive and preview dialers configured for TCPA compliance, along with SMS, email, letter, and consumer portal channels. Every outbound contact is governed by Regulation F's 7-in-7 call frequency rule, proper mini-Miranda disclosures, and state-specific time-of-day restrictions. Calls are recorded, transcribed, and scored for compliance and customer experience.",
         },
         {
-          heading: "4. Payment Processing & Plan Management",
+          heading: "Payment Processing & Plan Management",
           body: "We accept ACH, debit, credit, and check-by-phone payments through PCI DSS Level 1 processing. Negotiated payment plans are monitored in real time, with automated reminders and re-engagement workflows for missed installments. Post-dated payments and recurring schedules are handled without requiring additional consumer re-authorization beyond what each state permits.",
         },
         {
-          heading: "5. Dispute Handling & Documentation",
+          heading: "Dispute Handling & Documentation",
           body: "Consumer disputes are processed within Regulation F and FDCPA Section 809 validation windows. All contact attempts, call recordings, consent records, and dispute correspondence are stored in an audit-ready repository you can access on demand — critical for regulatory examinations, litigation defense, or portfolio audits.",
         },
       ],
     },
     {
+      eyebrow: "Industries",
       heading: "Industries We Serve with Outsourced Debt Recovery",
+      image: "/images/cc-diverse-team.jpg",
       body: "Different industries carry different collection dynamics, regulatory overlays, and consumer expectations. Our debt collection outsourcing services are tuned to the specific requirements of the sectors we serve, from HIPAA-regulated medical debt to financial services portfolios governed by the CFPB.",
       subsections: [
         {
@@ -187,6 +198,7 @@ const seoContent = {
     },
     {
       heading: "Why Choose Contact Center USA Among Debt Collection Companies",
+      image: "/images/cc-management.jpg",
       body: [
         "Not every debt collection BPO vendor is built the same. Offshore agencies often underperform on US consumer portfolios because of accent bias, cultural distance, and inconsistent adherence to US collection regulations. Low-cost domestic debt collection companies frequently cut corners on compliance training and monitoring, exposing clients to FDCPA and TCPA lawsuits. Enterprise collection firms carry bloated overhead that eats into recovery economics.",
         "Contact Center USA operates a 100% US-based debt collection call centre workforce from secure domestic facilities, backed by a compliance program that has never produced a material regulatory finding. Our collectors are licensed in all states where licensing is required, every call is monitored and scored, and clients get real-time access to recovery dashboards, call recordings, and compliance documentation. You get enterprise-grade compliance, small-vendor responsiveness, and contingency-fee pricing that aligns our incentives with your recovery goals — all from one of the most trusted debt collection outsourcing BPO providers in the USA.",
@@ -208,6 +220,7 @@ const seoContent = {
     },
     {
       heading: "Get Started with Debt Collection Outsourcing BPO in USA",
+      image: "/images/cc-team-huddle.jpg",
       body: "If your accounts receivable team is stretched, your aged debt is growing, or your current debt collection companies are under-performing on recovery or compliance, it's time to evaluate a better debt collection BPO partner. Contact Center USA specializes in debt collection outsourcing BPO in USA for mid-market and enterprise organizations across healthcare, financial services, utilities, telecom, and B2B — operated from a fully US-based debt collection call centre. Request a free portfolio analysis and we'll show you expected lift, compliance posture, and projected cost of collection before you place a single account.",
     },
   ],
@@ -241,7 +254,7 @@ export default function DebtCollectionOutsourcingPage() {
       description="Recovering outstanding debt requires a delicate balance of persistence, professionalism, and strict regulatory compliance. Our outsourced collection teams are licensed, bonded, and trained on every applicable federal and state regulation. We use data-driven contact strategies, empathetic communication techniques, and flexible payment solutions to recover more revenue faster — without jeopardizing your customer relationships or exposing your organization to compliance risk."
       features={features}
       benefits={benefits}
-      image="/images/cc-masked-agents.jpg"
+      image="/images/cc-agent-headset.jpg"
       stats={stats}
       testimonial={testimonial}
       faqs={faqs}
