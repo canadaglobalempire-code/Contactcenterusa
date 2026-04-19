@@ -101,99 +101,126 @@ const faqs = [
 
 const seoContent: SEOPattern[] = [
   {
-    pattern: "lead",
-    heading: "The Best Debt Collection BPO Company in the USA",
+    pattern: "hero-statement",
+    eyebrow: "Best Debt Collection BPO in USA",
+    heading: "The trusted debt collection BPO for US businesses that refuse to compromise on recovery or compliance.",
+    accent: "refuse to compromise",
     body: [
-      "Contact Center USA is one of the best debt collection BPO companies in the USA — a 100% US-based, FDCPA-compliant debt collection call centre with 30+ years of recovery experience, licensed collectors in all 50 states, and independently audited recovery rates that outperform offshore vendors and most domestic competitors.",
-      "For businesses searching for the best debt collection outsourcing BPO in USA, we deliver higher recovery on aged receivables, lower cost of collection, and a compliance program that has never produced a material regulatory finding. Our ranking among top debt collection companies in the country is based on four objective criteria — recovery performance, regulatory track record, US-based workforce, and real-time client transparency.",
-    ],
-    image: "/images/cc-office-wide.jpg",
-  },
-  {
-    pattern: "split-stats",
-    eyebrow: "Why Outsource",
-    heading: "Three Reasons to Partner with a Debt Collection BPO",
-    body: [
-      "Companies choose a specialized debt collection call centre for three core reasons: higher recovery rates on aged receivables, lower total cost of collection, and reduced regulatory exposure.",
-      "Collection curves drop sharply after 60 days of delinquency, and internal teams often lack the late-stage operators, skip tracing tools, and FDCPA-certified workflows to work aged accounts efficiently. A professional debt collection BPO deploys dedicated recovery teams, multi-channel outreach, and analytics-driven segmentation that consistently outperforms in-house collections and underperforming incumbents.",
-      "Outsourcing also shifts cost structure from fixed overhead — hiring, dialer licenses, compliance audits, management — to variable contingency-fee pricing tied to actual recovery. Blended cost of collection drops 30%–50% while recovery rates rise. And because a reputable debt collection BPO maintains state licensing, surety bonds, E&O insurance, and Regulation F-compliant procedures, compliance risk is transferred away from your organization instead of just rebranded.",
+      "Contact Center USA is one of the best debt collection BPO companies in the USA — a 100% US-based, FDCPA-compliant debt collection call centre with 30+ years of recovery experience and licensed collectors in all 50 states.",
+      "For businesses searching for the best debt collection outsourcing BPO in USA, we deliver higher recovery on aged receivables, lower cost of collection, and a compliance program that has never produced a material regulatory finding.",
     ],
     stats: [
-      { stat: "+25–45%", label: "Higher recovery on aged receivables" },
-      { stat: "−30–50%", label: "Lower blended cost of collection" },
-      { stat: "Zero", label: "Material regulatory findings in 10+ years" },
+      { stat: "+25–45%", label: "Higher recovery on aged receivables vs. in-house & incumbent vendors" },
+      { stat: "50 States", label: "Licensed, bonded, and E&O insured in every US jurisdiction" },
+      { stat: "0", label: "Material CFPB / FDCPA / TCPA findings in 10+ years of operation" },
     ],
   },
   {
-    pattern: "numbered",
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Collections vs. Outsourced Debt Collection BPO",
+    intro:
+      "Every buyer weighs the same decision: build collections internally or place portfolios with a specialized debt collection BPO. Here's how the two compare on the factors that actually determine recovery, cost, and regulatory risk.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Recovery on 60–90+ Day Aged AR",
+        left: "Typically 15–25% lower than specialist vendors — internal teams lack late-stage experience and settlement authority.",
+        right: "25–45% higher recovery — dedicated late-stage operators, skip tracing, and multi-channel cadence.",
+        leftYes: false,
+      },
+      {
+        label: "Cost Structure",
+        left: "Fixed salaries, licensing, dialer, compliance audits — whether or not accounts are worked.",
+        right: "Variable contingency-fee pricing tied to actual recovery. Pay only on performance.",
+        leftYes: false,
+      },
+      {
+        label: "State Licensing & Bonding",
+        left: "Typically licensed only where your company operates — limits collection on interstate debtors.",
+        right: "Licensed, bonded, and E&O insured in all 50 states where licensing is required.",
+        leftYes: false,
+      },
+      {
+        label: "FDCPA / TCPA / Reg F Compliance",
+        left: "Compliance burden stays with your organization; internal training often inconsistent.",
+        right: "Independently audited compliance QA. 100% call recording. Certified agent training.",
+        leftYes: false,
+      },
+      {
+        label: "Reporting & Visibility",
+        left: "Static monthly reports; limited visibility into collector behavior or call quality.",
+        right: "Real-time dashboards by vintage, segment, collector, channel — plus on-demand call recordings.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability",
+        left: "Hiring/ramp cycles of 60–90 days limit response to portfolio spikes.",
+        right: "New placements live in 10–15 business days — scale up or down without fixed headcount.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
     eyebrow: "How It Works",
     heading: "Our FDCPA-Compliant Collection Process",
     intro:
-      "Every portfolio follows the same rigorous five-step process — engineered to maximize recovery while keeping your organization out of compliance trouble.",
-    items: [
+      "Every portfolio flows through the same rigorous five-stage workflow — engineered to maximize recovery while keeping your organization out of compliance trouble.",
+    steps: [
       {
-        title: "Portfolio Onboarding & Data Validation",
-        body: [
-          "We ingest your delinquent accounts receivable file, validate data integrity, and run address and phone enrichment so every account has the best possible contact information before outreach begins.",
-          "Portfolios are scrubbed against do-not-contact registries, bankruptcy filings, deceased records, active-duty military (SCRA), and litigation holds — so you never contact a consumer you legally cannot contact.",
-        ],
+        title: "Portfolio Onboarding",
+        body: "File ingest, data validation, and scrubbing against DNC, bankruptcy, deceased, and SCRA lists.",
       },
       {
-        title: "Analytics-Driven Segmentation",
-        body: [
-          "Accounts are segmented by age, balance, payment history, risk score, and behavioral indicators. Each segment is matched to a tailored collection workflow based on what the data shows actually works.",
-          "Early-stage accounts receive payment reminders and self-service portal links. Late-stage accounts are routed to certified senior collectors trained in settlement negotiation and payment plan structuring.",
-        ],
+        title: "Analytics Segmentation",
+        body: "Accounts scored by age, balance, risk, and behavior — each routed to the optimal recovery workflow.",
       },
       {
-        title: "Compliant Multi-Channel Contact",
-        body: [
-          "Agents use predictive and preview dialers configured for TCPA compliance, along with SMS, email, letter, and consumer portal channels. Every outbound contact follows Regulation F's 7-in-7 call frequency rule, mini-Miranda disclosures, and state-specific time-of-day restrictions.",
-          "Calls are recorded, transcribed, and scored for both compliance and customer experience. Every touch is logged in an audit-ready repository.",
-        ],
+        title: "Multi-Channel Contact",
+        body: "TCPA-configured dialers plus SMS, email, letter, portal — all under Regulation F 7-in-7 rules.",
       },
       {
-        title: "Payment Processing & Plan Management",
-        body: [
-          "We accept ACH, debit, credit, and check-by-phone through PCI DSS Level 1 certified processing — the highest tier of payment card industry data security available.",
-          "Negotiated payment plans are monitored in real time, with automated reminders and re-engagement workflows for missed installments.",
-        ],
+        title: "Payment & Plans",
+        body: "PCI DSS Level 1 processing. Negotiated plans monitored with automated re-engagement workflows.",
       },
       {
-        title: "Dispute Handling & Documentation",
-        body: [
-          "Consumer disputes are processed within Regulation F and FDCPA Section 809 validation windows. Our team responds with proper validation notices, investigates underlying records, and communicates resolution in writing on the correct regulatory timeline.",
-          "All contact attempts, call recordings, consent records, and dispute correspondence are stored in an audit-ready repository you can access on demand.",
-        ],
+        title: "Disputes & Audit",
+        body: "Section 809 validation handling with audit-ready documentation of every touch and consent record.",
       },
     ],
   },
   {
-    pattern: "industry-row",
+    pattern: "featured-industries",
     eyebrow: "Industries",
     heading: "Industries We Serve with Outsourced Debt Recovery",
     intro:
-      "Different industries carry different collection dynamics and regulatory overlays. Our workflows are tuned to the specific requirements of each sector — from HIPAA-regulated medical debt to CFPB-governed financial services portfolios.",
+      "Each industry carries its own regulatory overlays and collection dynamics. Our workflows are tuned to the specific requirements of the sectors we serve.",
     items: [
       {
         icon: "heart-pulse",
+        stat: "HIPAA",
         title: "Healthcare & Medical Debt",
-        body: "HIPAA-compliant recovery with charity care screening, insurance re-verification, and sensitive patient communication — protecting the patient–provider relationship while recovering revenue.",
+        body: "Patient-balance recovery with charity care screening, insurance re-verification, and sensitive communication.",
       },
       {
         icon: "landmark",
-        title: "Financial Services & Consumer Credit",
-        body: "Early-stage cure, pre-charge-off, and post-charge-off recovery for banks, credit unions, auto lenders, BNPL, and personal loan originators — CFPB-audited and regulator-ready.",
+        stat: "CFPB",
+        title: "Financial Services & Credit",
+        body: "Pre- and post-charge-off recovery for banks, credit unions, auto lenders, BNPL, and personal loans.",
       },
       {
         icon: "signal",
-        title: "Telecom, Utilities & Subscriptions",
-        body: "Churned-customer balances, final-bill debt, disconnect prevention, and win-back sequences for telecom carriers, utilities, SaaS, and subscription businesses.",
+        stat: "Reg F",
+        title: "Telecom, Utilities & SaaS",
+        body: "Final-bill debt, disconnect prevention, and win-back sequences for telecom, utility, and subscription businesses.",
       },
       {
         icon: "briefcase",
-        title: "B2B Commercial Collections",
-        body: "Senior commercial collectors handling AP navigation, PO reconciliation, and structured settlement — recovering commercial AR without damaging ongoing trade relationships.",
+        stat: "B2B",
+        title: "Commercial Collections",
+        body: "Senior commercial collectors handling AP navigation, PO reconciliation, and structured settlement.",
       },
     ],
   },
@@ -204,15 +231,25 @@ const seoContent: SEOPattern[] = [
     image: "/images/cc-management.jpg",
     imagePosition: "right",
     body: [
-      "Not every debt collection BPO vendor is built the same. Offshore agencies underperform on US consumer portfolios because of accent bias, cultural distance, and inconsistent adherence to US collection regulations. Low-cost domestic debt collection companies cut corners on compliance training, exposing clients to FDCPA and TCPA lawsuits. Enterprise collection firms carry bloated overhead that eats into recovery economics.",
-      "Contact Center USA operates a 100% US-based debt collection call centre from secure domestic facilities, backed by a compliance program with zero material regulatory findings. Every call is monitored and scored. Clients get real-time dashboards, call recordings, and compliance documentation — enterprise-grade compliance with small-vendor responsiveness and contingency-fee pricing that aligns our incentives with your recovery goals.",
-      "Most new client portfolios go live within 10–15 business days of signed MSA. We support first-party, third-party, pre-charge-off cure, post-charge-off recovery, and hybrid engagement models.",
+      "Offshore agencies underperform on US consumer portfolios because of accent bias, cultural distance, and inconsistent adherence to US collection regulations. Low-cost domestic debt collection companies cut corners on compliance training, exposing clients to FDCPA and TCPA lawsuits. Enterprise collection firms carry bloated overhead that eats into recovery economics.",
+      "Contact Center USA is different: a 100% US-based debt collection call centre from secure domestic facilities, backed by a compliance program with zero material regulatory findings and contingency-fee pricing that aligns our incentives with your recovery goals.",
+    ],
+    bullets: [
+      "100% US-based collection workforce, no offshore or nearshore handoffs",
+      "Licensed in all 50 states; bonded and E&O insured",
+      "Real-time recovery dashboards with on-demand call recordings",
+      "First-party, third-party, pre- and post-charge-off engagement models",
+      "10–15 business day portfolio launch from signed MSA",
     ],
   },
   {
-    pattern: "closing",
-    heading: "Ready to Evaluate a Better Debt Collection BPO Partner?",
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better debt collection BPO partner?",
+    accent: "better debt collection BPO",
     body: "If your accounts receivable team is stretched, your aged debt is growing, or your current debt collection companies are under-performing, request a free portfolio analysis. We'll show you expected lift, compliance posture, and projected cost of collection before you place a single account.",
+    ctaLabel: "Request a Free Portfolio Analysis",
+    ctaHref: "/contact",
   },
 ];
 
