@@ -68,14 +68,14 @@ export function SEOContentSection({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-80px" }}
                     transition={{ duration: 0.6 }}
-                    className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20"
+                    className="grid grid-cols-1 items-stretch gap-14 lg:grid-cols-2 lg:gap-20"
                   >
-                    {/* Image column */}
+                    {/* Image column — stretches to match content column height on desktop */}
                     <div className={imageLeft ? "lg:order-1" : "lg:order-2"}>
-                      <div className="relative">
+                      <div className="relative h-full min-h-[420px]">
                         {/* Red accent block behind image */}
                         <div className="absolute -inset-4 -z-10 rounded-[28px] bg-gradient-to-br from-red/20 via-red/5 to-transparent blur-xl" />
-                        <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[24px] shadow-2xl ring-1 ring-gray-100">
+                        <div className="relative aspect-[5/4] h-full w-full overflow-hidden rounded-[24px] shadow-2xl ring-1 ring-gray-100 lg:aspect-auto">
                           <Image
                             src={section.image!}
                             alt={section.heading}
