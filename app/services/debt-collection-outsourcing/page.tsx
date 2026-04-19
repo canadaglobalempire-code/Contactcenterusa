@@ -166,26 +166,17 @@ const seoContent: SEOPattern[] = [
       {
         stat: "+25–45%",
         title: "Higher Recovery on Aged Receivables",
-        body: [
-          "Collection curves drop sharply after 60–90 days of delinquency. Internal teams often lack the capacity, technology, or specialized training to work late-stage and charged-off accounts efficiently.",
-          "A professional debt collection BPO partner deploys dedicated recovery teams, multi-channel outreach (voice, SMS, email, letter, portal), and data-driven segmentation strategies that outperform in-house efforts and most incumbent vendors on aged portfolios.",
-        ],
+        body: "Collection curves drop sharply after 60 days of delinquency. Our dedicated recovery teams, multi-channel outreach, and analytics-driven segmentation recover 25%–45% more revenue on aged portfolios than in-house efforts or most incumbent debt collection companies.",
       },
       {
         stat: "−30–50%",
         title: "Lower Cost of Collection",
-        body: [
-          "Operating an internal collections department means paying for hiring, ongoing FDCPA certification, dialer licenses, compliance audits, call recording infrastructure, and management overhead — whether or not accounts are being actively worked.",
-          "Outsourcing shifts that cost structure to variable, contingency-fee pricing tied to actual recovery. For most organizations, blended cost of collection drops 30%–50% while recovery rates simultaneously go up.",
-        ],
+        body: "Replace fixed overhead — hiring, FDCPA certification, dialer licenses, compliance audits, management — with variable contingency-fee pricing tied only to actual recovery. Blended cost of collection drops 30%–50% while recovery rates simultaneously go up.",
       },
       {
         stat: "Zero",
         title: "Material Compliance Findings",
-        body: [
-          "The CFPB, state attorneys general, and the FTC actively enforce the FDCPA, Regulation F, TCPA, and state-specific statutes. A single violation can cost thousands in statutory damages per account.",
-          "Contact Center USA maintains licensing in all 50 states, carries surety bonds and E&O insurance, records and audits every call, and stays current on Regulation F disclosure and contact-frequency requirements — transferring compliance risk away from your organization.",
-        ],
+        body: "Licensed in all 50 states, bonded, E&O insured, and operating under Regulation F — audited compliance QA and 100% call recording transfer CFPB, FDCPA, and TCPA exposure away from your organization.",
       },
     ],
   },
