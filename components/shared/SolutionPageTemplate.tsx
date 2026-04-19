@@ -12,6 +12,7 @@ import { PageFAQ } from "@/components/shared/PageFAQ";
 import { RelatedServices } from "@/components/shared/RelatedServices";
 import { PageCTA } from "@/components/shared/PageCTA";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
+import { SEOContentSection, type SEOSection } from "@/components/shared/SEOContentSection";
 
 interface Feature {
   icon: LucideIcon;
@@ -36,6 +37,7 @@ interface SolutionPageTemplateProps {
   relatedServices?: { title: string; desc: string; href: string }[];
   ctaHeading?: string;
   ctaSubtitle?: string;
+  seoContent?: { intro?: string; sections: SEOSection[] };
 }
 
 export function SolutionPageTemplate({
@@ -55,6 +57,7 @@ export function SolutionPageTemplate({
   relatedServices,
   ctaHeading,
   ctaSubtitle,
+  seoContent,
 }: SolutionPageTemplateProps) {
   return (
     <>
@@ -290,6 +293,7 @@ export function SolutionPageTemplate({
         </div>
       </section>
 
+      {seoContent && <SEOContentSection intro={seoContent.intro} sections={seoContent.sections} />}
       {stats && <StatsBar stats={stats} />}
       {testimonial && <PageTestimonial {...testimonial} />}
       {faqs && faqs.length > 0 && <PageFAQ faqs={faqs} />}
