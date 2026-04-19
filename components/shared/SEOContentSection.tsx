@@ -64,7 +64,7 @@ type CriteriaPattern = {
   eyebrow?: string;
   heading: string;
   intro?: string;
-  items: { title: string; body: string }[];
+  items: { title: string; body: string | string[] }[];
 };
 
 type EditorialPattern = {
@@ -81,7 +81,7 @@ type StatsPattern = {
   eyebrow?: string;
   heading: string;
   intro?: string;
-  items: { stat: string; title: string; body: string }[];
+  items: { stat: string; title: string; body: string | string[] }[];
 };
 
 type ProcessPattern = {
@@ -89,7 +89,7 @@ type ProcessPattern = {
   eyebrow?: string;
   heading: string;
   intro?: string;
-  steps: { title: string; body: string }[];
+  steps: { title: string; body: string | string[] }[];
 };
 
 type GridPattern = {
@@ -97,7 +97,8 @@ type GridPattern = {
   eyebrow?: string;
   heading: string;
   intro?: string;
-  items: { icon?: IconKey; title: string; body: string }[];
+  columns?: 2 | 3 | 4;
+  items: { icon?: IconKey; title: string; body: string | string[] }[];
 };
 
 type ClosingPattern = {
@@ -176,17 +177,24 @@ function FadeIn({
 function StatementBlock({ data }: { data: StatementPattern }) {
   const paras = Array.isArray(data.body) ? data.body : [data.body];
   return (
-    <section className="bg-white pt-24 pb-4">
-      <div className="mx-auto max-w-[860px] px-5 lg:px-8">
+    <section className="bg-white pt-28 pb-6">
+      <div className="mx-auto max-w-[920px] px-5 lg:px-8">
         <FadeIn>
-          <div className="border-l-[3px] border-red pl-8">
+          <div className="relative pl-10">
+            {/* Large quote mark */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -left-3 -top-6 select-none font-serif text-[120px] leading-none text-red/20"
+            >
+              &ldquo;
+            </span>
             {paras.map((p, i) => (
               <p
                 key={i}
                 className={
                   i === 0
-                    ? "text-[22px] font-medium leading-[1.5] tracking-[-0.01em] text-navy"
-                    : "mt-5 text-[17px] leading-[1.75] text-gray-700"
+                    ? "text-[26px] font-medium leading-[1.4] tracking-[-0.015em] text-navy sm:text-[30px]"
+                    : "mt-6 text-[17.5px] leading-[1.78] text-gray-700"
                 }
               >
                 {p}
@@ -214,36 +222,39 @@ function CriteriaBlock({ data }: { data: CriteriaPattern }) {
             </div>
           )}
 
-          <ol className="mt-12 divide-y divide-gray-200 border-y border-gray-200">
-            {data.items.map((item, i) => (
-              <motion.li
-                key={i}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: i * 0.05 }}
-                className="flex gap-6 py-7"
-              >
-                <div className="flex-shrink-0 pt-1">
-                  <div className="flex h-7 items-baseline gap-2 text-navy">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-400">
-                      No.
-                    </span>
-                    <span className="text-[22px] font-bold tabular-nums leading-none">
+          <ol className="mt-14 divide-y divide-gray-200 border-y border-gray-200">
+            {data.items.map((item, i) => {
+              const paras = Array.isArray(item.body) ? item.body : [item.body];
+              return (
+                <motion.li
+                  key={i}
+                  initial={{ opacity: 0, y: 8 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35, delay: i * 0.05 }}
+                  className="grid grid-cols-[auto_1fr] gap-8 py-9 lg:grid-cols-[180px_1fr] lg:gap-12"
+                >
+                  <div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                      Criterion
+                    </div>
+                    <div className="mt-1 text-[44px] font-bold tabular-nums leading-none tracking-[-0.02em] text-navy">
                       {String(i + 1).padStart(2, "0")}
-                    </span>
+                    </div>
                   </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-[19px] font-semibold tracking-tight text-navy">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-[16px] leading-[1.75] text-gray-700">
-                    {item.body}
-                  </p>
-                </div>
-              </motion.li>
-            ))}
+                  <div>
+                    <h3 className="text-[21px] font-semibold tracking-tight text-navy">
+                      {item.title}
+                    </h3>
+                    <div className="mt-3 space-y-3 text-[16px] leading-[1.78] text-gray-700">
+                      {paras.map((p, j) => (
+                        <p key={j}>{p}</p>
+                      ))}
+                    </div>
+                  </div>
+                </motion.li>
+              );
+            })}
           </ol>
         </FadeIn>
       </div>
@@ -302,27 +313,32 @@ function StatsBlock({ data }: { data: StatsPattern }) {
             )}
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-6">
-            {data.items.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="text-center md:border-l md:border-gray-200 md:px-6 md:first:border-l-0"
-              >
-                <div className="text-[52px] font-bold leading-none tracking-[-0.02em] text-navy">
-                  {item.stat}
-                </div>
-                <h3 className="mt-4 text-[18px] font-semibold tracking-tight text-navy">
-                  {item.title}
-                </h3>
-                <p className="mx-auto mt-2 max-w-[320px] text-[15px] leading-[1.7] text-gray-700">
-                  {item.body}
-                </p>
-              </motion.div>
-            ))}
+          <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-0">
+            {data.items.map((item, i) => {
+              const paras = Array.isArray(item.body) ? item.body : [item.body];
+              return (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.08 }}
+                  className="md:border-l md:border-gray-200 md:px-8 md:first:border-l-0"
+                >
+                  <div className="text-[60px] font-bold leading-[1] tracking-[-0.03em] text-red">
+                    {item.stat}
+                  </div>
+                  <h3 className="mt-5 text-[20px] font-semibold tracking-tight text-navy">
+                    {item.title}
+                  </h3>
+                  <div className="mt-3 space-y-3 text-[15.5px] leading-[1.72] text-gray-700">
+                    {paras.map((p, j) => (
+                      <p key={j}>{p}</p>
+                    ))}
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </FadeIn>
       </div>
@@ -347,36 +363,39 @@ function ProcessBlock({ data }: { data: ProcessPattern }) {
             )}
           </div>
 
-          <div className="mt-14 relative">
-            {/* Horizontal connector line on desktop */}
-            <div
-              className="absolute left-0 right-0 top-5 hidden h-px bg-gray-200 lg:block"
-              aria-hidden
-            />
-            <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-6">
-              {data.steps.map((step, i) => (
+          <div className="mt-16 divide-y divide-gray-200 border-y border-gray-200">
+            {data.steps.map((step, i) => {
+              const paras = Array.isArray(step.body) ? step.body : [step.body];
+              return (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.35, delay: i * 0.05 }}
-                  className="relative"
+                  transition={{ duration: 0.35, delay: i * 0.04 }}
+                  className="grid grid-cols-[auto_1fr] gap-8 py-9 lg:grid-cols-[220px_1fr] lg:gap-12"
                 >
-                  <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white">
-                    <span className="text-[13px] font-bold tabular-nums text-navy">
+                  <div className="flex items-start gap-4 lg:block">
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-400">
+                      Step
+                    </div>
+                    <div className="text-[40px] font-bold tabular-nums leading-none tracking-[-0.02em] text-red lg:mt-1 lg:text-[56px]">
                       {String(i + 1).padStart(2, "0")}
-                    </span>
+                    </div>
                   </div>
-                  <h3 className="mt-5 text-[16px] font-semibold leading-[1.3] tracking-tight text-navy">
-                    {step.title}
-                  </h3>
-                  <p className="mt-2 text-[14.5px] leading-[1.65] text-gray-600">
-                    {step.body}
-                  </p>
+                  <div>
+                    <h3 className="text-[21px] font-semibold tracking-tight text-navy">
+                      {step.title}
+                    </h3>
+                    <div className="mt-3 space-y-3 text-[16px] leading-[1.78] text-gray-700">
+                      {paras.map((p, j) => (
+                        <p key={j}>{p}</p>
+                      ))}
+                    </div>
+                  </div>
                 </motion.div>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </FadeIn>
       </div>
@@ -401,22 +420,33 @@ function GridBlock({ data }: { data: GridPattern }) {
             )}
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            className={`mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-gray-200 bg-gray-200 sm:grid-cols-2 ${
+              data.columns === 4
+                ? "lg:grid-cols-4"
+                : data.columns === 3
+                ? "lg:grid-cols-3"
+                : "lg:grid-cols-2"
+            }`}
+          >
             {data.items.map((item, i) => {
               const Icon = item.icon ? ICON_MAP[item.icon] : null;
+              const paras = Array.isArray(item.body) ? item.body : [item.body];
               return (
-                <div key={i} className="bg-white p-7">
+                <div key={i} className="bg-white p-8 lg:p-10">
                   {Icon && (
-                    <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-red/10">
+                    <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-red/10">
                       <Icon className="h-5 w-5 text-red" strokeWidth={2} />
                     </div>
                   )}
-                  <h3 className="text-[17px] font-semibold leading-snug tracking-tight text-navy">
+                  <h3 className="text-[19px] font-semibold leading-snug tracking-tight text-navy">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-[15px] leading-[1.65] text-gray-700">
-                    {item.body}
-                  </p>
+                  <div className="mt-3 space-y-3 text-[15.5px] leading-[1.72] text-gray-700">
+                    {paras.map((p, j) => (
+                      <p key={j}>{p}</p>
+                    ))}
+                  </div>
                 </div>
               );
             })}
