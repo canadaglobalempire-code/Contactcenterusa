@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Dialer & ACD Administration | Call Routing Solutions | Contact Center USA",
+  title: "Dialer Administration USA | Predictive Dialer Management | Contact Center USA",
   description:
-    "Predictive dialer and ACD administration services including call routing optimization, campaign management, IVR configuration, and workforce management integration for high-performance contact centers.",
+    "US-based dialer administration, ACD administration BPO, and predictive dialer management. Certified engineers managing Five9, NICE, Genesys, and Avaya — TCPA-compliant campaigns and intelligent routing.",
+  keywords: [
+    "dialer administration",
+    "acd administration bpo",
+    "predictive dialer management",
+    "dialer management services",
+    "ivr design services",
+    "call routing optimization",
+    "five9 administration",
+    "genesys administration services",
+  ],
   alternates: { canonical: "/solutions/dialer-acd-administration" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Dialer Administration in USA",
+    heading: "The dialer administration partner that squeezes every minute of productive talk time out of your stack.",
+    accent: "every minute",
+    body: [
+      "Contact Center USA is one of the best dialer administration providers in the USA — an ACD administration BPO with certified engineers across Five9, NICE CXone, Genesys, Avaya, Cisco, Amazon Connect, and Twilio Flex, managing predictive dialer management, ACD routing, and IVR tuning as a single service.",
+      "For contact centers searching for predictive dialer management and ACD administration BPO services in the USA, we take configuration, pacing, routing, and compliance off your plate — so every agent hour is spent on productive customer conversations, not platform babysitting.",
+    ],
+    stats: [
+      { stat: "+45%", label: "Average increase in productive agent talk time post-optimization" },
+      { stat: "98%", label: "Inbound service-level achievement across managed ACD queues" },
+      { stat: "24/7", label: "Dialer and ACD engineering coverage with on-call response SLAs" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Telephony Admin vs. Dialer Administration BPO",
+    intro:
+      "Most contact centers try to keep dialer and ACD administration in-house — then quietly watch talk-time, service levels, and TCPA risk drift in the wrong direction. Here's how outsourced predictive dialer management compares to the internal model.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Platform Expertise",
+        left: "One or two generalists covering every system — shallow certification across vendors.",
+        right: "Certified engineers across Five9, NICE, Genesys, Avaya, Cisco, Amazon Connect, Twilio.",
+        leftYes: false,
+      },
+      {
+        label: "Predictive Dialer Pacing",
+        left: "Default pacing settings; abandoned-call rates dangerously close to TCPA thresholds.",
+        right: "Model-driven pacing, list-scoring, and DNC scrubbing that maximize talk-time within TCPA.",
+        leftYes: false,
+      },
+      {
+        label: "ACD Routing Sophistication",
+        left: "Simple skills routing; no real-time queue balancing or customer-context-aware routing.",
+        right: "Skills + language + priority + history + queue-state routing with real-time reoptimization.",
+        leftYes: false,
+      },
+      {
+        label: "IVR Design",
+        left: "Legacy menus nobody wants to touch; high zero-out and abandonment rates.",
+        right: "Data-driven IVR redesign targeting containment, deflection, and caller-effort reduction.",
+        leftYes: false,
+      },
+      {
+        label: "After-Hours Support",
+        left: "PagerDuty rotations among overstretched in-house admins — slow response, high burnout.",
+        right: "24/7 NOC + on-call engineering with strict MTTR SLAs for dialer and ACD incidents.",
+        leftYes: false,
+      },
+      {
+        label: "Cost to Scale",
+        left: "Senior telephony engineers command $140K+ fully loaded plus certifications and tools.",
+        right: "Managed-service pricing; scale engineering hours up for projects, down for steady-state.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Dialer & ACD Administration Process",
+    intro:
+      "Every dialer administration engagement runs through the same disciplined five-stage process — from audit to optimization.",
+    steps: [
+      {
+        title: "Platform Audit",
+        body: "Complete review of dialer configuration, ACD routing logic, IVR flows, and telephony integrations across every vendor in scope.",
+      },
+      {
+        title: "Roadmap Design",
+        body: "Prioritized optimization roadmap tied to talk-time, service-level, abandonment, and TCPA-risk goals — with measurable KPIs.",
+      },
+      {
+        title: "Implementation",
+        body: "Staged configuration changes, IVR re-design, routing re-architecture, and WFM integration — zero-downtime rollout where possible.",
+      },
+      {
+        title: "Run & Monitor",
+        body: "24/7 NOC monitoring, proactive alerting, real-time pacing and routing adjustments, and TCPA compliance enforcement.",
+      },
+      {
+        title: "Continuous Tuning",
+        body: "Monthly performance reviews, quarterly configuration audits, and continuous optimization against evolving traffic patterns.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries That Rely on Our Dialer Administration BPO",
+    intro:
+      "Each industry carries its own dialer-compliance overlays, queue-design requirements, and IVR patterns. Our engineers tune configurations to the specific regulatory and operational profile of each sector.",
+    items: [
+      {
+        icon: "dollar",
+        stat: "TCPA",
+        title: "Collections & Recovery",
+        body: "Reg F 7-in-7 enforcement, DNC scrubbing, consent-aware dialing, and right-party-contact optimization.",
+      },
+      {
+        icon: "landmark",
+        stat: "PCI DSS",
+        title: "Financial Services",
+        body: "Secure IVR payments, PCI tokenization in dialer flows, and CFPB-aware outbound campaign pacing.",
+      },
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Pharma",
+        body: "PHI-safe IVR menus, Medicare-compliant outbound programs, and appointment-reminder pacing.",
+      },
+      {
+        icon: "shield",
+        stat: "SOC 2",
+        title: "Insurance & Lead Gen",
+        body: "One-to-one consent architecture, time-zone-aware pacing, and lead-distribution-friendly ACD routing.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for Predictive Dialer Management",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Most dialer administration vendors are single-platform shops with limited experience outside one ecosystem — forcing you to compromise on vendor choice to get good support. Internal telephony admins, meanwhile, are usually stretched across too many tools, making reactive changes instead of strategic optimization.",
+      "Contact Center USA is different: a US-based ACD administration BPO with certified engineers across every major cloud and on-prem platform, plus the operational muscle to run dialer and ACD administration as a 24/7 managed service.",
+    ],
+    bullets: [
+      "Certified across Five9, NICE CXone, Genesys, Avaya, Cisco, Amazon Connect, Twilio",
+      "TCPA / Reg F / DNC compliance enforced at the configuration layer",
+      "Data-driven IVR redesign proven to lift containment by 15–30%",
+      "24/7 NOC + on-call engineering with SLA-bound incident response",
+      "WFM-integrated routing for real-time adherence and service-level protection",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to let the experts run your dialer and ACD?",
+    accent: "run your dialer and ACD",
+    body: "If your talk-time is flat, your service-levels are slipping, or your TCPA risk is trending the wrong way, request a free dialer and ACD audit. We'll show expected lift on talk-time, service-level, and compliance posture before you change a single configuration.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Inbound Call Center",
@@ -121,6 +286,7 @@ export default function DialerAcdAdministrationPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

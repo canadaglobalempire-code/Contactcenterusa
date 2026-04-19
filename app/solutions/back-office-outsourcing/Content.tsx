@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "What systems and software do your back office teams work with?", answer: "Our teams are experienced with all major platforms including Salesforce, SAP, Oracle, Microsoft Dynamics, QuickBooks, NetSuite, SharePoint, and dozens of industry-specific tools. We integrate via secure API connections, VPN access, or direct platform login — whatever your IT team prefers. If your system is proprietary, we train our agents on it during onboarding." },
 ];
 
-export default function BackOfficeContent() {
+export default function BackOfficeContent({ seoContent }: { seoContent?: SEOPattern[] } = {}) {
   return (
     <>
       {/* HERO */}
@@ -316,6 +317,9 @@ export default function BackOfficeContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT — keyword-rich patterned sections */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
 
       {/* FAQ */}
       <PageFAQ heading="Back Office Outsourcing FAQ" faqs={faqs} />

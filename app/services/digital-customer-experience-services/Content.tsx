@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "What omnichannel CX services do you offer?", answer: "Our omnichannel CX services include live chat support, social media management, email support, mobile app support, SMS/text support, self-service portal development, and community management. All channels are integrated through a unified platform so agents have complete customer context and customers can switch channels without repeating themselves." },
 ];
 
-export function DigitalCXContent() {
+export function DigitalCXContent({ seoContent }: { seoContent?: SEOPattern[] }) {
   return (
     <>
       {/* HERO */}
@@ -316,6 +317,9 @@ export function DigitalCXContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
 
       {/* FAQ */}
       <PageFAQ heading="Digital & CX Services FAQ" faqs={faqs} />

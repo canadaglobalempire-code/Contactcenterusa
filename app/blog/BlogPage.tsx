@@ -7,6 +7,51 @@ import { ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Top 10 Debt Collection BPO Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 debt collection BPO companies in the USA. Ranked by FDCPA compliance, recovery rates, technology, and client satisfaction — covering first-party and third-party collections.",
+    category: "Industry Rankings",
+    readTime: "19 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/top-10-debt-collection-bpo-companies-usa",
+  },
+  {
+    title: "Top 10 Financial Services Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 financial services call center companies in the USA. Ranked by PCI/SOC 2 compliance, CX quality, and technology — covering banks, lenders, credit unions, and fintech.",
+    category: "Industry Rankings",
+    readTime: "19 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/top-10-financial-services-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Customer Service Outsourcing Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 customer service outsourcing companies in the USA. Ranked by CX quality, omnichannel technology, and scalability — covering inbound support, chat, and email outsourcing.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/top-10-customer-service-outsourcing-companies-usa",
+  },
+  {
+    title: "Top 10 E-commerce Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 e-commerce call center companies in the USA. Ranked by peak-season scaling, Shopify/Gorgias integration, and CX quality — ideal for DTC, subscription, and omnichannel brands.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/top-10-ecommerce-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Technical Support Outsourcing Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 technical support outsourcing companies in the USA. Ranked by Tier 1-3 coverage, ITIL maturity, platform integrations, and CX quality — covering SaaS, IT help desk, and device support.",
+    category: "Industry Rankings",
+    readTime: "19 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/top-10-technical-support-outsourcing-companies-usa",
+  },
+  {
     title: "Call Center Outsourcing Cost: Complete 2026 Guide",
     excerpt:
       "How much does call center outsourcing really cost in 2026? We break down per-agent pricing, per-minute models, hidden fees, and proven strategies to maximize your ROI.",

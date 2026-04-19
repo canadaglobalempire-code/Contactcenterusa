@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Office Support Services | Admin & Data Entry | Contact Center USA",
+  title: "Office Support Services USA | Office Admin BPO USA | Contact Center USA",
   description:
-    "Office support services including administrative assistance, scheduling, data entry, document management, and virtual receptionist solutions. Streamline your operations with dedicated support teams.",
+    "US-based office support services and administrative outsourcing BPO. Office admin BPO USA delivering virtual receptionist, data entry, document management, and scheduling at 40% less cost with 99.8% accuracy.",
+  keywords: [
+    "office support services",
+    "administrative outsourcing bpo",
+    "office admin bpo usa",
+    "virtual receptionist services",
+    "administrative bpo services",
+    "outsourced office support",
+    "admin outsourcing companies",
+    "back office admin services",
+  ],
   alternates: { canonical: "/solutions/office-support-services" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Office Support Services in USA",
+    heading: "The office admin BPO USA companies choose when administrative accuracy is non-negotiable.",
+    accent: "non-negotiable",
+    body: [
+      "Contact Center USA is one of the best office support services providers in the USA — a 100% US-based administrative outsourcing BPO delivering virtual receptionists, data entry operators, document processors, and scheduling coordinators with 99.8% measured accuracy.",
+      "For operations leaders searching for office admin BPO USA partners that actually reduce administrative burn rate, we deliver trained domestic office support professionals, SOC 2-aligned document handling, and elastic capacity that scales without fixed headcount on your P&L.",
+    ],
+    stats: [
+      { stat: "40%", label: "Average reduction in fully loaded administrative overhead cost" },
+      { stat: "99.8%", label: "Measured accuracy across data entry and document workflows" },
+      { stat: "24/7", label: "Virtual receptionist and office support coverage every day of the year" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Admin Team vs. Office Support Services BPO",
+    intro:
+      "Every operations lead weighs the same decision: keep admin work on payroll or outsource to a specialized office admin BPO. Here's how the models actually compare on the metrics that show up in your P&L and service levels.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Fully Loaded Cost per Admin FTE",
+        left: "$50–$70K per admin FTE including benefits, PTO, management overhead, and desk space.",
+        right: "30–40% lower all-in cost with predictable per-hour, per-task, or retainer pricing.",
+        leftYes: false,
+      },
+      {
+        label: "Data Entry Accuracy",
+        left: "Typically 95–97% — manual spot checks, inconsistent QA coverage, no statistical sampling.",
+        right: "99.8% measured accuracy with multi-tier QA, validation rules, and audit sampling.",
+        leftYes: false,
+      },
+      {
+        label: "Receptionist Coverage",
+        left: "Limited to business hours; lunch, PTO, and sick days leave phones unanswered.",
+        right: "24/7 virtual receptionist coverage with no gaps — every call answered professionally.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability for Peak Periods",
+        left: "60–90 day hiring cycles for seasonal admin spikes; overtime required in between.",
+        right: "Scale office admin capacity up or down in days — no new hires, no idle headcount.",
+        leftYes: false,
+      },
+      {
+        label: "Document & Data Security",
+        left: "SOC 2 and HIPAA controls often inconsistent across dispersed admin staff.",
+        right: "SOC 2, ISO 27001, and HIPAA-aligned controls with encrypted transmission and audit trails.",
+        leftYes: false,
+      },
+      {
+        label: "Technology & Tooling",
+        left: "Per-seat licenses for calendar, DMS, CRM, and scheduling tools paid regardless of use.",
+        right: "Enterprise admin tooling, RPA, OCR, and scheduling platforms included in pricing.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Administrative Outsourcing BPO Lifecycle",
+    intro:
+      "Every engagement runs through the same five-stage lifecycle — engineered to stand up accurate, compliant office admin operations in weeks, not quarters.",
+    steps: [
+      {
+        title: "Admin Workflow Audit",
+        body: "We shadow your current administrative workflows, document SOPs, and benchmark cost, accuracy, and turnaround times against industry norms.",
+      },
+      {
+        title: "Process Engineering",
+        body: "Workflows re-engineered for automation, dual-check QA, and SLA adherence — with scheduling, DMS, and CRM integrations layered where ROI is clear.",
+      },
+      {
+        title: "Team Build & Training",
+        body: "US-based office support professionals recruited, vetted, NDA-signed, and certified on your systems and SOPs before touching a single task.",
+      },
+      {
+        title: "Integration & Go-Live",
+        body: "Secure VPN, SSO, and role-based access to your CRM, calendar, DMS, and phone system — with a staged ramp to full production volume.",
+      },
+      {
+        title: "Optimize & Report",
+        body: "Weekly KPI reports, monthly process reviews, and continuous improvement — accuracy, throughput, and per-task cost trending the right way.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries That Rely on Our Office Admin BPO USA",
+    intro:
+      "Every industry carries its own compliance overlays, document types, and administrative complexity. Our office support teams specialize by vertical with the certifications your auditors expect.",
+    items: [
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Medical Practices",
+        body: "Patient scheduling, insurance verification, medical records indexing, and PHI-safe correspondence for providers and payers.",
+      },
+      {
+        icon: "landmark",
+        stat: "SOC 2",
+        title: "Financial & Professional Services",
+        body: "Client intake, document preparation, scheduling, and billing administration for banks, CPA firms, and advisory practices.",
+      },
+      {
+        icon: "briefcase",
+        stat: "NDA",
+        title: "Legal Services",
+        body: "Calendar management, case file organization, court filing coordination, and privileged correspondence under strict chain-of-custody.",
+      },
+      {
+        icon: "home",
+        stat: "MLS",
+        title: "Real Estate & Property Management",
+        body: "Listing data entry, lease administration, tenant scheduling, and closing document preparation for agents and property firms.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for Office Support Services",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Most administrative outsourcing BPO vendors chase the lowest hourly rate by stacking offshore staff on time-zone-mismatched shifts, with inconsistent training and compliance evidence that falls apart under audit. The rework, missed appointments, and data errors wipe out every dollar of apparent savings.",
+      "Contact Center USA is different: a 100% US-based office admin BPO USA partner with trained domestic receptionists and admin staff, SOC 2 and HIPAA-aligned facilities, and process discipline that delivers 99.8% accuracy from day one — at 30–40% less than the in-house alternative.",
+    ],
+    bullets: [
+      "100% US-based office support staff — no offshore or nearshore handoffs",
+      "SOC 2 Type II, ISO 27001, and HIPAA-aligned controls and facilities",
+      "Multi-tier QA on data entry with automated validation and sampling",
+      "24/7 virtual receptionist coverage with custom call-handling scripts",
+      "Elastic capacity — scale up for peaks, down after seasonality",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better office support services partner?",
+    accent: "better office support services",
+    body: "If your admin team is buried in paperwork, your receptionist line is missing calls, or your data entry error rate is eating margin, request a free office support assessment. We'll benchmark cost, accuracy, and turnaround before you move a single task.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Back-Office Outsourcing",
@@ -121,6 +286,7 @@ export default function OfficeSupportServicesPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

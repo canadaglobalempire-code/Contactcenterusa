@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "Do you support social media customer support for regulated industries?", answer: "Yes. We provide compliant social media support for healthcare (HIPAA), financial services (FINRA/SEC), and government agencies. Our agents are trained on industry-specific disclosure requirements, prohibited claims, privacy protocols, and regulatory response guidelines. Every response is logged and auditable for compliance review." },
 ];
 
-export default function SocialMediaContent() {
+export default function SocialMediaContent({ seoContent }: { seoContent?: SEOPattern[] } = {}) {
   return (
     <>
       {/* HERO */}
@@ -318,6 +319,9 @@ export default function SocialMediaContent() {
       </section>
 
       {/* FAQ */}
+      {/* SEO CONTENT — keyword-rich patterned sections */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
+
       <PageFAQ heading="Social Media Support FAQ" faqs={faqs} />
 
       {/* CTA */}

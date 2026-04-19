@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Monitoring Services | QA & Call Scoring | Contact Center USA",
+  title: "Call Monitoring Services USA | Call Center QA Services | Contact Center USA",
   description:
-    "Professional call monitoring services including quality assurance, call recording, agent scoring, and real-time coaching. Improve service quality and compliance across your contact center.",
+    "US-based call monitoring services, call quality monitoring BPO, and call center QA services. Live whisper coaching, PCI/HIPAA-compliant recording, custom QA scorecards, speech analytics, and compliance auditing.",
+  keywords: [
+    "call monitoring services",
+    "call quality monitoring bpo",
+    "call center qa services",
+    "call monitoring outsourcing",
+    "qa scorecards bpo",
+    "speech analytics services",
+    "pci compliant call recording",
+    "contact center quality assurance",
+  ],
   alternates: { canonical: "/solutions/call-monitoring-services" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Call Monitoring Services in USA",
+    heading: "The call center QA services partner for brands that refuse to ship a bad interaction.",
+    accent: "refuse to ship a bad interaction",
+    body: [
+      "Contact Center USA is one of the best call monitoring services providers in the USA — a 100% US-based call quality monitoring BPO with certified QA analysts, custom scorecards, and enterprise-grade recording infrastructure across every channel.",
+      "For enterprises searching for the best call center QA services in the USA, we deliver consistent quality uplift, defensible compliance evidence, and agent-development programs that actually move QA scores and CSAT in the same direction.",
+    ],
+    stats: [
+      { stat: "40%", label: "Average lift in QA scores within 90 days of program launch" },
+      { stat: "2M+", label: "Calls monitored and scored annually across client portfolios" },
+      { stat: "99.9%", label: "Recording platform uptime with PCI-DSS & HIPAA controls" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House QA Team vs. Outsourced Call Monitoring Services",
+    intro:
+      "Internal QA teams work — until they don't. Sampling drops, calibration drifts, and compliance coverage lags volume. Here's how a dedicated call quality monitoring BPO compares to running call center QA services in-house.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Monitoring Coverage",
+        left: "3–5% of calls sampled on average — gaps across channels, shifts, and agents.",
+        right: "100% call capture with 10–20% human-evaluated plus AI coverage of every interaction.",
+        leftYes: false,
+      },
+      {
+        label: "Scorecard Calibration",
+        left: "Inconsistent inter-rater reliability; scorecards rarely refreshed against current policy.",
+        right: "Weekly calibration sessions, locked scorecards, and drift-detection on analyst scoring.",
+        leftYes: false,
+      },
+      {
+        label: "Speech Analytics",
+        left: "Point-solution licenses under-utilized; models not tuned to your portfolio.",
+        right: "Tuned topic, sentiment, and compliance models with dedicated analytics engineers.",
+        leftYes: false,
+      },
+      {
+        label: "Compliance Evidence",
+        left: "Ad-hoc reports produced reactively when regulators or clients ask.",
+        right: "Audit-ready TCPA, PCI-DSS, HIPAA, and state-specific compliance dashboards, always on.",
+        leftYes: false,
+      },
+      {
+        label: "Coaching Linkage",
+        left: "Scores land in a spreadsheet; supervisors lack time to coach.",
+        right: "Targeted coaching tickets with verbatim clips pushed to supervisors within 24 hours.",
+        leftYes: false,
+      },
+      {
+        label: "Cost to Scale",
+        left: "$80–$120K fully loaded per QA FTE plus platform licensing and hidden admin time.",
+        right: "Flat per-evaluated-interaction pricing; scale up or down without fixed headcount.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Call Quality Monitoring Process",
+    intro:
+      "Every engagement flows through the same rigorous five-stage workflow — designed to improve agent behavior, not just produce scores.",
+    steps: [
+      {
+        title: "Program Design",
+        body: "We build scorecards mapped to your brand voice, regulatory obligations, and CX metrics — then calibrate with your leadership team.",
+      },
+      {
+        title: "Recording & Ingest",
+        body: "Secure capture across voice, chat, email, and SMS with PCI-DSS tokenization and HIPAA-grade encryption at rest and in transit.",
+      },
+      {
+        title: "AI + Human Evaluation",
+        body: "Speech analytics triages 100% of calls; certified analysts human-score a statistically valid sample plus every AI-flagged risk call.",
+      },
+      {
+        title: "Coaching & Feedback",
+        body: "Actionable coaching tickets with verbatim clips pushed to supervisors, paired with agent-facing acknowledgment and goal tracking.",
+      },
+      {
+        title: "Reporting & Calibration",
+        body: "Executive dashboards, weekly trend reports, and monthly calibration sessions keep scoring consistent and the program evolving.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries That Rely on Our Call Center QA Services",
+    intro:
+      "Every regulated industry has its own QA overlays and compliance evidence requirements. Our scorecards and analytics models are tuned for the sectors most exposed to call center risk.",
+    items: [
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Pharma",
+        body: "PHI handling audits, Medicare Marketing Guideline monitoring, and empathy scoring for patient-facing interactions.",
+      },
+      {
+        icon: "landmark",
+        stat: "PCI DSS",
+        title: "Financial Services",
+        body: "Card-holder data redaction, Reg E/Z disclosure checks, and fraud-indicator monitoring across contact channels.",
+      },
+      {
+        icon: "shield",
+        stat: "TCPA",
+        title: "Insurance & Collections",
+        body: "Consent capture evidence, mini-Miranda disclosure tracking, and Reg F 7-in-7 cadence monitoring.",
+      },
+      {
+        icon: "laptop",
+        stat: "SOC 2",
+        title: "SaaS & Technology",
+        body: "Technical accuracy scoring, escalation adherence, and renewal/churn-signal detection across tier 1 and tier 2 support.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for Call Monitoring Services",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Generic BPO QA teams apply the same scorecard to every client, miss industry-specific regulatory overlays, and deliver reports your supervisors never open. Offshore QA vendors struggle with US accents, idioms, and compliance context — leading to inconsistent scoring and missed risk signals on your most sensitive calls.",
+      "Contact Center USA is different: a US-based call quality monitoring BPO with analysts trained on your industry, scorecards calibrated to your policies, and coaching workflows engineered so QA actually changes behavior on the floor.",
+    ],
+    bullets: [
+      "100% US-based QA analysts with industry-specific certifications",
+      "PCI-DSS, HIPAA, SOC 2 Type II, and TCPA compliance built in",
+      "AI-assisted monitoring covering 100% of calls, not 3% samples",
+      "Scorecards calibrated weekly with measured inter-rater reliability",
+      "Coaching tickets, not PDFs — QA that actually reaches the floor",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to raise the bar on call quality monitoring?",
+    accent: "raise the bar",
+    body: "If your QA coverage is spotty, compliance evidence is reactive, or your scorecards haven't been calibrated in a year, book a free call monitoring assessment. We'll benchmark your program and show expected QA, CSAT, and compliance lift before you move a single recording.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Inbound Call Center",
@@ -121,6 +286,7 @@ export default function CallMonitoringServicesPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

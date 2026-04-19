@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Education Call Center Services | Enrollment & Student Support | Contact Center USA",
+  title: "Education Call Center & University BPO Services in USA | Contact Center USA",
   description:
-    "Education call center services for enrollment management, student services, alumni relations, and financial aid support. Improve student satisfaction and enrollment rates.",
+    "US-based education call center and university BPO services — student support outsourcing, enrollment, financial aid, alumni relations, and LMS help desk for colleges, universities, and EdTech.",
+  keywords: [
+    "education call center",
+    "university bpo services",
+    "student support outsourcing",
+    "higher education call center",
+    "enrollment management bpo",
+    "financial aid call center",
+    "alumni fundraising outsourcing",
+    "lms help desk support",
+  ],
   alternates: { canonical: "/industries/education-call-center-services" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Education Call Center in USA",
+    heading: "The education call center that turns inquiries into enrollments and protects every student interaction under FERPA.",
+    accent: "under FERPA",
+    body: [
+      "Contact Center USA is one of the best education call center providers in the USA — a 100% US-based university BPO services operation with FERPA-certified agents, SIS integrations, and enrollment playbooks built for the US higher-ed funnel.",
+      "For universities, community colleges, EdTech platforms, and K-12 district offices evaluating student support outsourcing, we deliver faster response times, higher yield, and accessible, empathetic service across every stage of the student lifecycle.",
+    ],
+    stats: [
+      { stat: "+30%", label: "Enrollment lift after a full admissions-cycle partnership" },
+      { stat: "95%", label: "Student satisfaction score across inbound support queues" },
+      { stat: "200K+", label: "Student inquiries handled annually for higher-ed partners" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Student Support vs. Contact Center USA BPO",
+    intro:
+      "Most institutions staff enrollment, student services, financial aid, and alumni relations as separate units — budget pressure leaves every queue understaffed. Here's how an internal model compares to dedicated university BPO services.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Lead Response Time",
+        left: "Prospective students wait 24–72 hours; high-intent leads go cold before second contact.",
+        right: "Sub-5-minute response 24/7 — inquiry to application with a consistent nurture cadence.",
+        leftYes: false,
+      },
+      {
+        label: "FERPA Compliance",
+        left: "Training inconsistent across enrollment, financial aid, and help desk functions.",
+        right: "Every agent FERPA-certified before go-live with quarterly recertification and QA audits.",
+        leftYes: false,
+      },
+      {
+        label: "Peak Cycle Scaling",
+        left: "Open houses, FAFSA windows, and add/drop create chronic queue overflow.",
+        right: "Pre-planned seasonal surge staffing tied to your academic calendar.",
+        leftYes: false,
+      },
+      {
+        label: "SIS & LMS Integration",
+        left: "Manual lookups across Banner, PeopleSoft, Workday Student, Canvas, and Blackboard.",
+        right: "Live integrations for real-time record access and single-call resolution.",
+        leftYes: false,
+      },
+      {
+        label: "Alumni Fundraising Output",
+        left: "Student callers and in-house phonathon programs produce inconsistent giving lift.",
+        right: "Professional alumni outreach agents with calibrated ask ladders and gift-processing discipline.",
+        leftYes: false,
+      },
+      {
+        label: "Accessibility & Languages",
+        left: "Limited TTY/TDD, Section 508, and non-English coverage.",
+        right: "Full accessibility stack plus English/Spanish/Mandarin and 200+ languages on demand.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Student Support Outsourcing Onboarding",
+    intro:
+      "Every institution and EdTech platform follows the same five-stage launch — engineered to protect student records, stand up FERPA-compliant workflows, and move the needle on yield and retention.",
+    steps: [
+      {
+        title: "Institution Discovery",
+        body: "Programs, funnel, FERPA posture, SIS/LMS stack, and academic calendar mapped with your team.",
+      },
+      {
+        title: "Data & System Integration",
+        body: "Secure connections to Banner, PeopleSoft, Workday, Canvas, Blackboard, Salesforce Education.",
+      },
+      {
+        title: "FERPA & Program Training",
+        body: "Agents certified on FERPA plus your majors, financial aid, residence life, and student policies.",
+      },
+      {
+        title: "Pilot Queue Launch",
+        body: "Controlled rollout on enrollment or help desk with joint QA calibration and yield tracking.",
+      },
+      {
+        title: "Lifecycle Expansion",
+        body: "Expanding to financial aid, student services, alumni, and LMS help desk over the academic year.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Sub-Segments",
+    heading: "Education Sub-Segments Our BPO Supports",
+    intro:
+      "Four-year universities, community colleges, online programs, and K-12 districts all have different KPIs. Our university BPO services flex to the economics of each sub-segment.",
+    items: [
+      {
+        icon: "graduation-cap",
+        stat: "4-Year",
+        title: "Universities & Colleges",
+        body: "Enrollment management, residence life, financial aid, and bursar support for traditional institutions.",
+      },
+      {
+        icon: "building",
+        stat: "2-Year",
+        title: "Community & Technical Colleges",
+        body: "Open-enrollment support, workforce program outreach, and student success coaching.",
+      },
+      {
+        icon: "laptop",
+        stat: "Online",
+        title: "Online & OPM Programs",
+        body: "Lead nurture, LMS help desk, proctoring support, and student retention outreach.",
+      },
+      {
+        icon: "graduation-cap",
+        stat: "K-12",
+        title: "K-12 Districts & EdTech",
+        body: "Parent hotlines, emergency notification, EdTech tier-1 support, and student family services.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Universities and EdTech Choose Contact Center USA",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore student support outsourcing breaks trust with families and prospects; generalist BPOs treat FERPA as an afterthought. In-house programs can't staff for the compression of open enrollment, FAFSA season, and move-in weekend all landing inside a 60-day window.",
+      "Contact Center USA is different: a 100% US-based education call center with FERPA-certified supervisors, SIS-integrated agents, and a funnel-obsessed enrollment management playbook that consistently lifts yield.",
+    ],
+    bullets: [
+      "100% US-based education call center workforce — families hear clear, domestic voices",
+      "FERPA certification, Section 508 accessibility, and TTY/TDD baked into every program",
+      "Live SIS/LMS integration with Banner, PeopleSoft, Workday, Canvas, Blackboard",
+      "Dedicated enrollment, financial aid, retention, and alumni pods with separate QA",
+      "Academic-calendar surge model covering FAFSA, add/drop, commencement, and giving days",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to outsource your education call center to a US-based BPO?",
+    accent: "US-based BPO",
+    body: "If your yield is slipping, your financial aid queues are overwhelmed at FAFSA season, or your alumni fundraising has plateaued, request a free consultation. We'll build a funnel and lifecycle model that quantifies enrollment lift and student-satisfaction impact before you sign a thing.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Inbound Call Center",
@@ -121,6 +286,7 @@ export default function EducationPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

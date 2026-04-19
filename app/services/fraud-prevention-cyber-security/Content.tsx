@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "Can fraud prevention be implemented without impacting customer experience?", answer: "Absolutely. Modern fraud prevention operates transparently in the background — voice biometrics verify identity passively during normal conversation, behavioral analytics assess risk without additional questions, and intelligent authentication only challenges customers when genuine risk is detected. Our approach actually improves CX by reducing security questions and speeding up verification for legitimate customers." },
 ];
 
-export function FraudPreventionContent() {
+export function FraudPreventionContent({ seoContent }: { seoContent?: SEOPattern[] }) {
   return (
     <>
       {/* HERO */}
@@ -316,6 +317,9 @@ export function FraudPreventionContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
 
       {/* FAQ */}
       <PageFAQ heading="Fraud Prevention FAQ" faqs={faqs} />

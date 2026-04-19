@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -64,6 +65,160 @@ const faqs = [
   { question: "Do you provide multilingual support for government contracts?", answer: "Yes. We help government agencies meet language access requirements under Executive Order 13166 and Title VI of the Civil Rights Act. Our multilingual teams support benefits enrollment, citizen hotlines, public health outreach, and emergency communications in multiple languages — with full documentation for compliance audits." },
   { question: "How do you ensure quality in non-English customer interactions?", answer: "Every language program has native-speaking quality analysts who monitor calls, score interactions, and provide coaching in the agent's primary language. We track CSAT, FCR, and AHT by language to ensure non-English callers receive the exact same service quality as English-speaking customers. Quality reports are available in English for your team." },
   { question: "How quickly can you launch multilingual call center support?", answer: "For Spanish language support, we can typically launch within 1-2 weeks using our existing pool of trained bilingual agents. Other languages may take 2-4 weeks depending on volume requirements and specialization. We handle all script localization, IVR recording, knowledge base translation, and agent training during the onboarding period." },
+];
+
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Multilingual Call Center in USA",
+    heading: "The multilingual call center US brands trust to serve Spanish-speaking and global customers with native fluency.",
+    accent: "trust to serve",
+    body: [
+      "Contact Center USA is one of the best multilingual call center providers in the USA — a 100% US-based bilingual bpo usa operator delivering native and fluent support across Spanish plus 20+ additional languages, with zero accent bias and zero third-party interpreter delays.",
+      "For brands searching for multilingual customer support that actually moves CSAT, we serve the 42M+ Spanish-speaking consumers in the US plus global markets with culturally aware agents who resolve issues on the first call — not hand them off to a translator.",
+    ],
+    stats: [
+      { stat: "42M+", label: "Spanish-speaking consumers in the US we help brands reach every day" },
+      { stat: "20+", label: "Languages supported in one bilingual bpo usa operation" },
+      { stat: "+18 pts", label: "Average CSAT lift vs. English-only or interpreter-based support" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House vs. Contact Center USA BPO",
+    intro:
+      "Every CX leader faces the same decision: hire multilingual agents internally, rely on over-the-phone interpreters, or partner with a specialized multilingual call center. Here's how the three approaches actually compare.",
+    leftTitle: "Internal / Interpreter Line",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Native-Fluent Agents",
+        left: "Small bilingual staff + third-party interpreters — high friction and delay on every Spanish call.",
+        right: "Native and fluent agents across Spanish and 20+ languages — zero interpreter bridge required.",
+        leftYes: false,
+      },
+      {
+        label: "First-Call Resolution (Spanish)",
+        left: "First-call resolution drops 20–30 points when interpreters are involved.",
+        right: "Spanish FCR matches English FCR — because the agent speaks the language.",
+        leftYes: false,
+      },
+      {
+        label: "Cost per Bilingual Call",
+        left: "Interpreter minutes add $1–$3/minute on top of agent time — budget killers at scale.",
+        right: "Flat per-interaction multilingual customer support pricing — no interpreter add-ons.",
+        leftYes: false,
+      },
+      {
+        label: "Language Coverage",
+        left: "Practical coverage limited to Spanish and maybe one more language in-house.",
+        right: "Spanish, Portuguese, French, Mandarin, Tagalog, Arabic, and 15+ more on one platform.",
+        leftYes: false,
+      },
+      {
+        label: "Cultural Awareness",
+        left: "Generic, translated scripts miss cultural nuance that actually drives trust.",
+        right: "Agents are culturally aware — scripts and escalations tuned to each market.",
+        leftYes: false,
+      },
+      {
+        label: "Surge Capacity",
+        left: "Hiring a Spanish SDR or CS rep in peak season is nearly impossible.",
+        right: "Scale bilingual bpo usa capacity up or down in 10–15 business days.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Multilingual Customer Support Launch Process",
+    intro:
+      "Every multilingual call center engagement follows the same disciplined five-step playbook — engineered to deliver CSAT parity across every language you support.",
+    steps: [
+      {
+        title: "Market & Language Assessment",
+        body: "Map customer demographics, call drivers, and top missed-language demand — prioritize launch sequence by volume and revenue impact.",
+      },
+      {
+        title: "Localization Workshop",
+        body: "Translate and culturally adapt scripts, IVR prompts, email templates, and knowledge base — no literal translations.",
+      },
+      {
+        title: "Agent Staffing",
+        body: "Staff native and fluent agents across your priority languages, with shadow training on your products and brand voice.",
+      },
+      {
+        title: "Integrated Routing",
+        body: "Configure ACD and IVR for language detection, skills-based routing, and seamless English/Spanish bilingual bpo usa blending.",
+      },
+      {
+        title: "Measure & Optimize",
+        body: "Dashboard CSAT, FCR, and AHT by language — identify cultural gaps and tune scripts to match each market's expectations.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Serve with Bilingual BPO USA",
+    intro:
+      "Each industry faces distinct multilingual customer support demands — from regulated financial conversations in Spanish to after-hours Mandarin technical support. Our workflows are tuned to each vertical.",
+    items: [
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Medical",
+        body: "Spanish and multilingual patient intake, insurance verification, and clinical support — HIPAA-compliant end to end.",
+      },
+      {
+        icon: "landmark",
+        stat: "CFPB",
+        title: "Financial Services",
+        body: "Bilingual account servicing, fraud alerts, and collections for banks, credit unions, and insurers serving diverse markets.",
+      },
+      {
+        icon: "shopping-bag",
+        stat: "Retail",
+        title: "Retail & Ecommerce",
+        body: "Native Spanish and multilingual order support, returns, and VIP concierge for DTC brands and retailers.",
+      },
+      {
+        icon: "landmark",
+        stat: "Gov",
+        title: "Government & Public Services",
+        body: "Section 508 and LEP-aligned multilingual citizen hotlines for federal, state, and local agencies.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for Multilingual Call Center Services",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore multilingual BPOs struggle with US-specific dialect and cultural context — callers notice immediately, and CSAT suffers. Interpreter-line models add 2–4x cost per minute and double average handle time. Local bilingual agencies lack the surge capacity, QA discipline, and language coverage to scale across 20+ languages.",
+      "Contact Center USA is different: a 100% US-based bilingual bpo usa operator staffed by native and fluent agents across Spanish and 20+ additional languages, with culturally aware scripts and interpreter-free conversations that deliver CSAT parity across every language you support.",
+    ],
+    bullets: [
+      "100% US-based native and fluent agents for multilingual customer support",
+      "Spanish + 20+ additional languages on a single platform",
+      "Interpreter-free conversations — same FCR and AHT as your English queues",
+      "Culturally aware scripts and localization — not literal translations",
+      "Scale bilingual bpo usa capacity up or down in 10–15 business days",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better multilingual call center partner?",
+    accent: "better multilingual call center",
+    body: "If your Spanish-language CSAT trails English, your interpreter bills are out of control, or your current multilingual customer support vendor can only cover one or two languages, request a free consultation. We'll benchmark your language mix, FCR by language, and cost per bilingual call — then show you exactly what bilingual bpo usa with Contact Center USA would look like.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
 ];
 
 export default function MultilingualServicesContent() {
@@ -316,6 +471,9 @@ export default function MultilingualServicesContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      <SEOContentSection sections={seoContent} />
 
       {/* FAQ */}
       <PageFAQ heading="Multilingual Services FAQ" faqs={faqs} />

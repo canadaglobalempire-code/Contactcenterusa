@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Customer Care Outsourcing | Retention & Loyalty Programs | Contact Center USA",
+  title: "Customer Care Outsourcing BPO USA | Outsourced Customer Care Services | Contact Center USA",
   description:
-    "Customer care outsourcing services including customer retention, loyalty programs, complaint resolution, and satisfaction management. Build lasting relationships that reduce churn.",
+    "US-based customer care outsourcing and customer care BPO USA services. Outsourced customer care teams for retention, loyalty, complaints, and VIP support — reduce churn and lift NPS.",
+  keywords: [
+    "customer care outsourcing",
+    "customer care bpo usa",
+    "outsourced customer care services",
+    "customer care outsourcing company",
+    "customer care call center usa",
+    "retention outsourcing services",
+    "loyalty program outsourcing",
+    "outsourced customer retention services",
+  ],
   alternates: { canonical: "/services/customer-care-outsourcing" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Customer Care Outsourcing BPO in USA",
+    heading: "The customer care outsourcing partner US brands trust to protect revenue and loyalty.",
+    accent: "protect revenue and loyalty",
+    body: [
+      "Contact Center USA is one of the best customer care outsourcing providers in the USA — a 100% US-based customer care BPO USA operation delivering outsourced customer care services that lower churn, lift NPS, and protect lifetime value across every channel.",
+      "For CX, support, and success leaders looking for the best customer care BPO in USA, we run omnichannel retention, loyalty, VIP, and complaint-resolution programs that make your customer care feel premium — not outsourced.",
+    ],
+    stats: [
+      { stat: "-27%", label: "Lower customer churn within 12 months of launching outsourced customer care" },
+      { stat: "94%", label: "CSAT across customer care outsourcing programs we run today" },
+      { stat: "89%", label: "First-contact resolution on complaint and escalation queues" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Customer Care Teams vs. Outsourced Customer Care BPO",
+    intro:
+      "Customer care economics are brutal: attrition, holidays, and overnight coverage crush in-house teams. Here's how staying internal compares to partnering with a dedicated customer care BPO USA operation.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "24/7 Coverage & Overnight Support",
+        left: "Expensive to staff in-house — shift premiums, attrition, and skeleton weekend crews erode CX.",
+        right: "Always-on outsourced customer care services with real 24/7/365 coverage including holidays.",
+        leftYes: false,
+      },
+      {
+        label: "Cost per Interaction",
+        left: "Fully-loaded in-house cost per contact is 30–50% higher than an optimized customer care BPO.",
+        right: "Per-minute, per-contact, or FTE commercials tuned to actual volume — not peak staffing.",
+        leftYes: false,
+      },
+      {
+        label: "Retention & Save Rates",
+        left: "Save queues handled by generalists — save rates swing by agent, not by playbook.",
+        right: "Dedicated retention specialists with scripted save offers lifting save rates by 20–40%.",
+        leftYes: false,
+      },
+      {
+        label: "Omnichannel Coverage",
+        left: "Phone, email, chat, and social are run by different teams with siloed history.",
+        right: "Unified outsourced customer care services across voice, email, chat, SMS, and social.",
+        leftYes: false,
+      },
+      {
+        label: "Quality Assurance Program",
+        left: "Ad-hoc call listening by managers already pulled in ten directions.",
+        right: "Dedicated QA team scoring every queue weekly with calibration back to supervisors.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability on Spikes",
+        left: "Ticket volume spikes during outages, holidays, or launches overwhelm fixed headcount.",
+        right: "Flex capacity inside the customer care BPO absorbs 2–5x volume spikes on demand.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Customer Care Outsourcing Process",
+    intro:
+      "Every outsourced customer care program runs on the same five-stage framework — built to lift CSAT, lower churn, and make customers feel genuinely taken care of.",
+    steps: [
+      {
+        title: "CX Discovery & KPI Design",
+        body: "We map your journeys, contact drivers, escalation paths, and KPIs (CSAT, NPS, FCR, churn) before we touch a call.",
+      },
+      {
+        title: "Brand Playbook & Training",
+        body: "Brand voice playbook, policy library, and certified training modules for every agent in the customer care BPO.",
+      },
+      {
+        title: "Omnichannel Launch",
+        body: "Voice, email, chat, SMS, and social queues stood up inside our customer care outsourcing platform.",
+      },
+      {
+        title: "Proactive & VIP Programs",
+        body: "Retention outreach, win-back, loyalty management, and VIP concierge lines running alongside reactive support.",
+      },
+      {
+        title: "Measure, Coach, Improve",
+        body: "QA scoring, voice-of-customer analytics, and weekly business reviews drive continuous improvement.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Serve with Outsourced Customer Care Services",
+    intro:
+      "Each industry has its own regulatory, tone, and SLA demands. Our customer care outsourcing teams are purpose-staffed for the sectors they serve.",
+    items: [
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Health Plans",
+        body: "HIPAA-compliant outsourced customer care services for members, patients, and providers across care journeys.",
+      },
+      {
+        icon: "landmark",
+        stat: "PCI DSS",
+        title: "Financial Services & FinTech",
+        body: "PCI-compliant customer care BPO for banks, cards, lenders, and FinTech platforms needing high-trust support.",
+      },
+      {
+        icon: "shopping-bag",
+        stat: "CCPA",
+        title: "Retail, E-Commerce & Subscription",
+        body: "Order, returns, loyalty, and VIP customer care with surge-ready staffing for peak seasons and launches.",
+      },
+      {
+        icon: "signal",
+        stat: "CPNI",
+        title: "Telecom, SaaS & Streaming",
+        body: "Tier 1/2 support, retention, and win-back programs for subscription-driven telecom, SaaS, and streaming brands.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Brands Pick Us Among Customer Care BPO USA Providers",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore customer care vendors show up in CSAT scores — accent bias, cultural distance, and scripted rigidity frustrate US consumers and quietly push churn up. Low-cost domestic customer care BPO shops cut corners on QA and brand training, making every escalation a risk to your reputation.",
+      "Contact Center USA is different: a US-based customer care outsourcing operation with career CX agents, structured QA, and dedicated customer success managers who treat your NPS like it's their own number.",
+    ],
+    bullets: [
+      "100% US-based outsourced customer care services, no offshore routing",
+      "Bilingual English/Spanish agents across every queue",
+      "Omnichannel platform: voice, email, chat, SMS, social",
+      "Dedicated customer success manager, QA lead, and ops manager per account",
+      "Retention, loyalty, VIP, and complaint specialists as modular add-ons",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to partner with an outsourced customer care team that actually protects retention?",
+    accent: "outsourced customer care team",
+    body: "Whether you're replacing an underperforming vendor, adding 24/7 coverage, or standing up a retention program, request a free consultation. We'll benchmark your current CSAT, churn, and cost-per-contact — and show exactly what a Contact Center USA customer care outsourcing program would unlock.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Customer Service Outsourcing",
@@ -110,9 +275,9 @@ export default function CustomerCareOutsourcingPage() {
   return (
     <ServicePageTemplate
       badge="Customer Care Outsourcing"
-      title="Customer Care Programs That Build Lasting Loyalty and Reduce Churn"
-      titleHighlight="Lasting Loyalty"
-      subtitle="Our dedicated care teams deliver the empathetic, personalized support that turns one-time buyers into lifelong customers."
+      title="Customer Care Outsourcing BPO in USA"
+      titleHighlight="Customer Care Outsourcing BPO"
+      subtitle="Outsourced customer care services and customer care BPO USA programs that lower churn, lift CSAT, and protect lifetime value across every channel."
       description="Exceptional customer care is the single greatest driver of retention and lifetime value. Our outsourced customer care teams combine emotional intelligence with operational excellence to resolve issues, strengthen relationships, and protect your revenue. From proactive retention outreach to VIP concierge support, we help you deliver the kind of care that earns five-star reviews and word-of-mouth referrals."
       features={features}
       benefits={benefits}
@@ -121,6 +286,7 @@ export default function CustomerCareOutsourcingPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

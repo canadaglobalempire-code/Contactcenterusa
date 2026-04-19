@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Cable & Media Call Center Services | Entertainment Support | Contact Center USA",
+  title: "Cable Media BPO & Media Call Center Services in USA | Contact Center USA",
   description:
-    "Cable and media call center services including billing support, technical troubleshooting, service activation, subscriber retention, and upgrade campaigns. Trusted by cable and media companies nationwide.",
+    "US-based cable media BPO and media call center services — cable TV customer support, billing, tier-2 tech support, retention, and OTT subscriber care for cable, broadband, and media companies.",
+  keywords: [
+    "cable media bpo",
+    "media call center services",
+    "cable tv customer support",
+    "broadband call center outsourcing",
+    "cable subscriber retention bpo",
+    "tier 2 tech support outsourcing",
+    "ott streaming customer support",
+    "telecom cable billing bpo",
+  ],
   alternates: { canonical: "/industries/cable-media-call-center" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Cable Media BPO in USA",
+    heading: "The cable media BPO that saves subscribers, kills truck rolls, and lifts ARPU — all in one workforce.",
+    accent: "saves subscribers",
+    body: [
+      "Contact Center USA is one of the best cable media BPO providers in the USA — a 100% US-based media call center services operation with cable, broadband, and OTT experience, tier-2 tech fluency, and save-team economics that move real churn numbers.",
+      "For cable MSOs, regional broadband operators, streaming platforms, and media publishers evaluating cable TV customer support partners, we deliver first-call resolution, measurable churn reduction, and upgrade revenue that more than pays for the program.",
+    ],
+    stats: [
+      { stat: "92%", label: "First-call resolution across cable billing and tier-1 tech support queues" },
+      { stat: "-30%", label: "Voluntary churn reduction after save-team integration" },
+      { stat: "-45%", label: "Truck roll reduction through improved remote troubleshooting" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Cable Support vs. Contact Center USA BPO",
+    intro:
+      "MSOs and streaming platforms share a problem: call volumes spike on outages and content launches, then flatline. Here's how an internal center stacks up against a dedicated cable media BPO.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Outage Surge Handling",
+        left: "Fixed staffing — large fiber cuts and regional outages drop abandonment rates into double digits.",
+        right: "Storm-mode protocols activate overflow and proactive IVR within minutes of detection.",
+        leftYes: false,
+      },
+      {
+        label: "Save-Team Performance",
+        left: "Save-team training is inconsistent; retention offers applied reactively, not strategically.",
+        right: "Dedicated save team with calibrated offer matrix — 30% voluntary churn reduction is the norm.",
+        leftYes: false,
+      },
+      {
+        label: "Tier-2 Technical Depth",
+        left: "Tier-2 is a career ladder — heavy attrition erodes institutional network knowledge.",
+        right: "Dedicated tier-2 pods on DOCSIS, PON, Wi-Fi mesh, and set-top/streaming device diagnostics.",
+        leftYes: false,
+      },
+      {
+        label: "Upgrade & Upsell Revenue",
+        left: "Reps focus on issue resolution; cross-sell and upgrade conversations go unexecuted.",
+        right: "Scripted upgrade paths and ARPU-focused coaching drive measurable upsell lift.",
+        leftYes: false,
+      },
+      {
+        label: "Billing & CSG Integration",
+        left: "Siloed from the billing platform — reps explain charges without real-time resolution authority.",
+        right: "Live integrations to CSG, ICOMS, Salesforce, and custom billing stacks for same-call resolution.",
+        leftYes: false,
+      },
+      {
+        label: "24/7 Content Launch Support",
+        left: "Launches strain existing rosters; seasonal hiring cycles can't match launch calendars.",
+        right: "Pre-launch surge staffing up to 200% within two weeks — tuned to your content release calendar.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Cable Media BPO Onboarding",
+    intro:
+      "Every MSO, broadband operator, and OTT platform follows the same five-stage onboarding — engineered to protect subscriber data, integrate with CSG/billing, and light up save-team performance fast.",
+    steps: [
+      {
+        title: "Operator Discovery",
+        body: "Footprint, plant, bundles, OTT app stack, and retention offer matrix mapped with your ops leaders.",
+      },
+      {
+        title: "Billing & OSS Integration",
+        body: "Secure integrations to CSG, ICOMS, SingleView, Salesforce, and your TR-069/ACS provisioning.",
+      },
+      {
+        title: "Tiered Agent Training",
+        body: "Tier-1, tier-2, retention, and billing pods trained on DOCSIS/PON, set-top boxes, and streaming apps.",
+      },
+      {
+        title: "Pilot Market",
+        body: "Controlled launch in a single DMA with joint QA calibration and save-team offer stress-test.",
+      },
+      {
+        title: "Footprint-Wide Cutover",
+        body: "Staggered rollout across DMAs with storm-mode drill and content-launch surge validation.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Sub-Segments",
+    heading: "Cable & Media Sub-Segments We Serve",
+    intro:
+      "Cable MSOs, regional broadband operators, streaming platforms, and traditional media publishers all have distinct economics. Our media call center services flex to each sub-segment's stack and margin profile.",
+    items: [
+      {
+        icon: "tv",
+        stat: "MSO",
+        title: "Cable MSOs & Broadband",
+        body: "Billing, tier-2 tech, plant-outage comms, and retention for cable, fiber, and hybrid operators.",
+      },
+      {
+        icon: "radio",
+        stat: "OTT",
+        title: "OTT & Streaming Platforms",
+        body: "Subscriber onboarding, device troubleshooting, plan changes, and lapsed-subscriber win-back.",
+      },
+      {
+        icon: "signal",
+        stat: "Regional",
+        title: "Regional & Rural ISPs",
+        body: "Cooperative and municipal broadband support — installs, tech support, and billing at rural scale.",
+      },
+      {
+        icon: "building",
+        stat: "Media",
+        title: "Media Publishers & Networks",
+        body: "Subscription support, paywall recovery, affiliate coordination, and audience-research surveys.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Cable and Media Companies Choose Contact Center USA",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore cable TV customer support creates friction on tier-2 and save conversations — subscribers disengage and churn anyway. Generalist BPOs don't invest in the DOCSIS/PON/streaming device training required to keep truck-roll rates low.",
+      "Contact Center USA is different: a 100% US-based media call center services operation with dedicated cable supervisors, certified tier-2 pods, and save-team playbooks calibrated to your offer matrix and subscriber LTV economics.",
+    ],
+    bullets: [
+      "100% US-based cable media BPO workforce — no offshore handoff on PII or billing data",
+      "Tier-2 pods on DOCSIS 3.1/4.0, XGS-PON, Wi-Fi 6/6E mesh, and OTT device troubleshooting",
+      "Save team with offer-matrix QA and weekly churn-driver calibration",
+      "Storm-mode protocols that activate within minutes of outage detection",
+      "Seasonal surge capacity of 200% for content launches and promotional sprints",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to outsource your cable media BPO to a US-based specialist?",
+    accent: "US-based specialist",
+    body: "If your voluntary churn is trending the wrong way, truck rolls are eroding margin, or your internal center can't absorb content-launch and outage surges, request a free consultation. We'll build a subscriber-economics business case and show expected impact on churn, truck rolls, and ARPU.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Technical Support",
@@ -121,6 +286,7 @@ export default function CableMediaPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

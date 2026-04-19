@@ -120,7 +120,15 @@
       "Bash(sed -i '' '102,286d' app/services/debt-collection-outsourcing/page.tsx)",
       "Bash(sed -n '100,108p' app/services/debt-collection-outsourcing/page.tsx)",
       "Bash(sed -i '' '102,217d' app/services/debt-collection-outsourcing/page.tsx)",
-      "Bash(sed -n '99,108p' app/services/debt-collection-outsourcing/page.tsx)"
+      "Bash(sed -n '99,108p' app/services/debt-collection-outsourcing/page.tsx)",
+      "Bash(ps -p 4230,4231,4233,7710,7743,7753 -o pid,command)",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(tee /tmp/build-output.log)",
+      "Bash(NEXT_DIST_DIR=.next-build npx next build --turbopack)",
+      "Bash(tee /tmp/build-output2.log)",
+      "Bash(NEXT_DIST_DIR=.next-build npx next build)",
+      "Read(//private/var/folders/**)",
+      "Bash(NEXT_DIST_DIR=/tmp/ccusa-build-out npx next build)"
     ]
   }
 }

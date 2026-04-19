@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Interactive Voice Response (IVR) Solutions | Self-Service & Automation | Contact Center USA",
+  title: "IVR Services & Interactive Voice Response Outsourcing USA | Contact Center USA",
   description:
-    "Interactive voice response solutions including custom IVR design, automated menus, self-service portals, speech recognition, and intelligent call routing. Reduce costs and improve customer satisfaction.",
+    "US-based IVR services, interactive voice response outsourcing, and IVR BPO USA. Custom IVR design, speech recognition, self-service payments, and intelligent call routing that cuts costs and boosts CSAT.",
+  keywords: [
+    "ivr services",
+    "interactive voice response outsourcing",
+    "ivr bpo usa",
+    "ivr outsourcing companies",
+    "custom ivr development",
+    "speech recognition ivr",
+    "ivr self-service",
+    "ivr call center provider",
+  ],
   alternates: { canonical: "/services/interactive-voice-response" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best IVR BPO in USA",
+    heading: "The IVR services partner that actually contains calls, cuts cost, and lifts CSAT — all at the same time.",
+    accent: "contains calls",
+    body: [
+      "Contact Center USA is one of the best IVR services providers in the USA — a 100% US-based IVR BPO delivering custom interactive voice response outsourcing for banks, healthcare systems, utilities, telecom carriers, and Fortune 1000 enterprises across every US time zone.",
+      "If you are evaluating IVR outsourcing companies or looking for the best IVR BPO USA option for a new deployment or a rebuild of a legacy phone tree, our engineering team designs containment-first IVR flows, tunes speech recognition grammars, and instruments analytics that prove ROI inside 90 days.",
+    ],
+    stats: [
+      { stat: "40%+", label: "Reduction in live agent call volume after IVR redesign" },
+      { stat: "92%", label: "Self-service completion rate on optimized IVR flows" },
+      { stat: "4-6 wks", label: "From signed SOW to production IVR go-live" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House IVR vs. Outsourced Interactive Voice Response BPO",
+    intro:
+      "Most enterprises hit the same wall — their legacy IVR annoys customers, their ACD vendor charges for every change, and their in-house team cannot tune grammars or A/B test prompts. Here is how an IVR BPO compares.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Containment Rate",
+        left: "Typical legacy IVR contains 10-20% of calls — most escalate to agents.",
+        right: "Optimized IVR flows contain 40-60% of call volume without agent intervention.",
+        leftYes: false,
+      },
+      {
+        label: "Speech Recognition Tuning",
+        left: "Grammars set once at launch and rarely revisited — accuracy decays over time.",
+        right: "Weekly grammar tuning, confidence-score analysis, and utterance review to keep ASR sharp.",
+        leftYes: false,
+      },
+      {
+        label: "Change Velocity",
+        left: "IVR changes queued with telecom vendor — 4-8 week lead times, per-change fees.",
+        right: "In-flow prompt, menu, and routing changes deployed in days, not weeks.",
+        leftYes: false,
+      },
+      {
+        label: "Analytics & Containment Reporting",
+        left: "Flat call detail records — no visibility into drop-off points or caller paths.",
+        right: "Full IVR analytics: drop-off heatmaps, intent capture, completion by segment.",
+        leftYes: false,
+      },
+      {
+        label: "PCI-Compliant Self-Service Payments",
+        left: "Requires additional vendor, integration, and PCI scope remediation project.",
+        right: "Built-in PCI DSS Level 1 self-service payment capture with tokenization.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability for Seasonal Spikes",
+        left: "Trunk capacity and menu performance degrade under spike volume.",
+        right: "Cloud-native IVR auto-scales for open enrollment, tax season, and storm events.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Interactive Voice Response Outsourcing Process",
+    intro:
+      "Every IVR project we deliver — new build, replatform, or optimization — follows the same five-stage workflow engineered to contain more calls without hurting CSAT.",
+    steps: [
+      {
+        title: "Discovery & Call Reason Analysis",
+        body: "Mine 90 days of call data, identify top intents, model caller journeys, and quantify containment opportunity.",
+      },
+      {
+        title: "IVR Flow & Grammar Design",
+        body: "Design conversational menus, write prompt scripts, define grammars, and map DTMF and speech paths.",
+      },
+      {
+        title: "Integration & Build",
+        body: "Integrate CRM, billing, and payment APIs. Build in our cloud IVR platform with full SIP and WebRTC support.",
+      },
+      {
+        title: "UAT & Controlled Rollout",
+        body: "End-to-end UAT, staged traffic cutover, and parallel production for blast-radius control.",
+      },
+      {
+        title: "Continuous Optimization",
+        body: "Weekly grammar tuning, A/B prompt testing, and containment tracking against baseline KPIs.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Serve with IVR Services and IVR Outsourcing",
+    intro:
+      "Each vertical carries distinct regulatory, integration, and containment requirements. Our IVR BPO team pre-builds compliance-ready flow templates for the industries we serve most.",
+    items: [
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Payers",
+        body: "Appointment self-service, Rx refills, member eligibility checks, and HIPAA-compliant caller authentication.",
+      },
+      {
+        icon: "landmark",
+        stat: "PCI DSS",
+        title: "Banking & Financial Services",
+        body: "Balance inquiry, self-service payments, fraud alerts, and card activation with PCI Level 1 tokenization.",
+      },
+      {
+        icon: "zap",
+        stat: "SOC 2",
+        title: "Utilities & Energy",
+        body: "Outage reporting, pay-by-phone, move-in and move-out, and storm event auto-scaling IVR.",
+      },
+      {
+        icon: "signal",
+        stat: "TCPA",
+        title: "Telecom & Subscription",
+        body: "Plan changes, bill dispute capture, activation, and churn-save IVR offers with deflection to agents.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA Among IVR Outsourcing Companies",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Most IVR vendors fall into two camps: telecom carriers who charge for every prompt change, or offshore IVR BPOs whose English and Spanish speech recognition accuracy collapses on real US accents. Neither is built to continuously optimize containment.",
+      "Contact Center USA is a US-based IVR services provider with a dedicated conversation design team, in-house speech scientists, and a cloud IVR platform we control end-to-end — so every grammar, prompt, and flow improvement ships in days, not months. We measure ourselves on containment and CSAT, not minutes of use.",
+    ],
+    bullets: [
+      "US-based conversation designers and speech science team",
+      "PCI DSS Level 1, HIPAA, and SOC 2 Type II certified IVR platform",
+      "Real-time containment and intent dashboards with call recording",
+      "Native integrations for Salesforce, ServiceNow, Epic, Guidewire, and custom APIs",
+      "4-6 week standard go-live with zero production downtime during cutover",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to upgrade to IVR services that actually deflect calls?",
+    accent: "actually deflect calls",
+    body: "If your current IVR is bleeding calls to agents, failing on speech recognition, or costing you a fortune in change fees, talk to our IVR BPO USA team. We will audit your current flow, identify the top three containment opportunities, and scope a rebuild — free of charge.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "AI Call Center Automation",
@@ -110,10 +275,10 @@ export default function InteractiveVoiceResponsePage() {
   return (
     <ServicePageTemplate
       badge="Interactive Voice Response"
-      title="Intelligent IVR Systems That Resolve Calls Before They Reach an Agent"
-      titleHighlight="Resolve Calls"
-      subtitle="Custom-designed IVR solutions with speech recognition, self-service automation, and intelligent routing that reduce costs and improve customer satisfaction simultaneously."
-      description="A well-designed IVR system is your most powerful tool for balancing cost efficiency with customer satisfaction. Our custom IVR solutions go far beyond basic phone trees — we build intelligent self-service experiences with natural language understanding, secure payment processing, and seamless escalation to live agents when needed. The result: faster resolutions for your customers and dramatically lower costs for your business."
+      title="IVR Services & Interactive Voice Response Outsourcing"
+      titleHighlight="Interactive Voice Response Outsourcing"
+      subtitle="One of the leading IVR outsourcing companies in the USA — our IVR BPO delivers custom interactive voice response services, speech recognition, and self-service automation that cut costs while lifting CSAT."
+      description="A well-designed IVR system is your most powerful tool for balancing cost efficiency with customer satisfaction. Our custom IVR services go far beyond basic phone trees — we build intelligent interactive voice response outsourcing programs with natural language understanding, secure payment processing, and seamless escalation to live agents when needed. The result: faster resolutions for your customers and dramatically lower costs for your business."
       features={features}
       benefits={benefits}
       image="/images/cc-team-desk.jpg"
@@ -121,6 +286,7 @@ export default function InteractiveVoiceResponsePage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

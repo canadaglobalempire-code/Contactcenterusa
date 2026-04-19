@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -64,6 +65,160 @@ const faqs = [
   { question: "Can you integrate with our existing billing and payment systems?", answer: "Absolutely. We integrate with major billing platforms (Stripe, Square, Braintree), payment gateways, ERP systems (SAP, Oracle, NetSuite), and CRMs (Salesforce, HubSpot). Our IT team handles all integration during onboarding to ensure seamless data flow, real-time transaction processing, and accurate reconciliation." },
   { question: "How do your services reduce chargebacks and billing disputes?", answer: "Our agents proactively address billing confusion, clarify charges before they escalate to disputes, and provide clear payment confirmations with reference numbers. This preventive approach typically reduces chargebacks by 40-60% compared to automated-only billing systems. We also handle dispute responses and representment on your behalf." },
   { question: "What financial regulations do your agents follow?", answer: "Our agents are trained and certified on FDCPA (Fair Debt Collection Practices Act), TCPA (Telephone Consumer Protection Act), PCI-DSS, Regulation E, state-specific collection laws, and mini-Miranda requirements. Training is updated quarterly as regulations change, and every call is recorded and available for compliance review." },
+];
+
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Financial Call Center Services in USA",
+    heading: "The financial call center services partner US banks, credit unions, and lenders trust for compliant revenue operations.",
+    accent: "trust for compliant",
+    body: [
+      "Contact Center USA is one of the best financial call center services providers in the USA — a 100% US-based financial services bpo usa operator delivering PCI-DSS compliant payment processing, FDCPA-compliant collections, and professional billing support from secure domestic facilities.",
+      "For banks, credit unions, lenders, insurers, and healthcare systems searching for banking call center outsourcing with zero tolerance for compliance risk, we combine trained on-shore agents with a quality program that has never produced a material regulatory finding — protecting both your revenue and your brand.",
+    ],
+    stats: [
+      { stat: "35%+", label: "Recovery lift on past-due receivables vs. in-house teams" },
+      { stat: "60%", label: "Reduction in billing disputes and chargebacks" },
+      { stat: "12M+", label: "PCI-DSS secure financial transactions processed annually" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House vs. Contact Center USA BPO",
+    intro:
+      "Every finance or revenue leader faces the same decision: staff a compliant internal financial call center or partner with a specialized financial services bpo usa provider. Here's how the two compare on the factors that actually drive recovery, cost, and regulatory defense.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "PCI-DSS & FDCPA Compliance",
+        left: "Annual audits, tooling, and training are funded by you — compliance burden sits entirely in-house.",
+        right: "PCI-DSS Level 1 and FDCPA-compliant by default — audited, documented, and defensible.",
+        leftYes: false,
+      },
+      {
+        label: "Collection Recovery Rate",
+        left: "15–25% typical recovery — internal teams lack late-stage experience and settlement authority.",
+        right: "35%+ recovery on past-due accounts — specialist operators, skip tracing, and multi-channel cadence.",
+        leftYes: false,
+      },
+      {
+        label: "Cost per Agent / Transaction",
+        left: "$50K–$65K fully loaded per agent plus dialer, tooling, and QA — regardless of volume.",
+        right: "~40% lower fully loaded cost for financial call center services — variable, tied to volume.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability for Cycle Peaks",
+        left: "60–90 day hiring cycles limit your ability to cover month-end or tax-season spikes.",
+        right: "Scale banking call center outsourcing capacity up or down in 10–15 business days.",
+        leftYes: false,
+      },
+      {
+        label: "Technology Stack",
+        left: "$100K+ in telephony, payment gateway, and compliance-monitoring licenses.",
+        right: "Enterprise stack included — IVR, recording, QA, payment processing, and dashboards.",
+        leftYes: false,
+      },
+      {
+        label: "Reporting & Analytics",
+        left: "Static spreadsheets; limited visibility into collector behavior and payment trends.",
+        right: "Real-time dashboards by portfolio, vintage, and agent — plus on-demand call recordings.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our PCI-DSS & FDCPA-Compliant Financial Workflow",
+    intro:
+      "Every financial services bpo usa engagement flows through the same rigorous five-stage workflow — engineered to maximize recovery and customer satisfaction while keeping regulators at arm's length.",
+    steps: [
+      {
+        title: "Compliance Assessment",
+        body: "Audit your current financial workflows, map regulatory requirements, and design compliant processes for payments, billing, and collections.",
+      },
+      {
+        title: "Secure Integration",
+        body: "Encrypted API connections into your billing platform, payment gateway, and CRM — all within a PCI-DSS Level 1 audited environment.",
+      },
+      {
+        title: "Agent Certification",
+        body: "Every agent is trained and certified on FDCPA, TCPA, Reg E, and your product specifics before handling a single consumer account.",
+      },
+      {
+        title: "Live Operations",
+        body: "Multi-channel financial call center services across phone, chat, SMS, email, and portal — 100% call recording and compliance-audited QA.",
+      },
+      {
+        title: "Optimize & Report",
+        body: "Real-time dashboards track recovery, CSAT, and compliance scores — with weekly reviews to tune strategy per portfolio segment.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Serve with Banking Call Center Outsourcing",
+    intro:
+      "Each financial vertical carries its own regulatory overlays and customer dynamics. Our workflows are tuned to the specific requirements of each sector we support.",
+    items: [
+      {
+        icon: "landmark",
+        stat: "SOC 2",
+        title: "Banks & Credit Unions",
+        body: "Account servicing, loan payment processing, delinquency management, and fraud alert handling for community banks and credit unions.",
+      },
+      {
+        icon: "shield",
+        stat: "CFPB",
+        title: "Consumer Lending & BNPL",
+        body: "Pre- and post-charge-off recovery, payment plan administration, and hardship outreach for auto, personal, and installment lenders.",
+      },
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare Revenue Cycle",
+        body: "Patient-balance recovery, insurance re-verification, and payment plan enrollment for hospitals and provider networks.",
+      },
+      {
+        icon: "dollar",
+        stat: "PCI-DSS",
+        title: "Insurance & FinTech",
+        body: "Premium processing, policy billing inquiries, subscription billing support, and failed payment recovery for insurers and fintechs.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for Financial Call Center Services",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore vendors struggle with US consumer finance portfolios — accent bias reduces right-party contact rates, and cultural distance erodes trust at exactly the moment you need it. Low-cost domestic providers cut corners on FDCPA, TCPA, and PCI-DSS training, exposing clients to lawsuits and data breaches. Enterprise-scale BPOs bury you in pricing complexity with soft SLAs.",
+      "Contact Center USA is different: a 100% US-based financial services bpo usa partner operating from PCI-DSS Level 1 audited facilities, staffed by FDCPA-certified agents and backed by a compliance program with zero material regulatory findings — all at 40% lower fully loaded cost than internal equivalents.",
+    ],
+    bullets: [
+      "100% US-based agents for financial call center services — no offshore handoffs",
+      "PCI-DSS Level 1, FDCPA, TCPA, and Reg E compliant operations",
+      "35%+ recovery lift on past-due receivables vs. internal benchmarks",
+      "Real-time dashboards with on-demand call recordings and payment audit logs",
+      "10–15 business day launch for banking call center outsourcing programs",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better financial call center services partner?",
+    accent: "better financial call center",
+    body: "If your payment operations are stretched, your receivables are aging, or your current financial services bpo usa vendor is missing recovery targets, request a free consultation. We'll benchmark your PCI posture, recovery rate, and cost-per-transaction — then show you exactly what banking call center outsourcing with Contact Center USA would look like.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
 ];
 
 export default function FinancialSolutionsContent() {
@@ -316,6 +471,9 @@ export default function FinancialSolutionsContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      <SEOContentSection sections={seoContent} />
 
       {/* FAQ */}
       <PageFAQ heading="Financial Services FAQ" faqs={faqs} />

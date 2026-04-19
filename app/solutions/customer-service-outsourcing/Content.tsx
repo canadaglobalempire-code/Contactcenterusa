@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "What industries do you provide customer service outsourcing for?", answer: "We serve ecommerce, healthcare, financial services, technology, insurance, real estate, legal, hospitality, and more. Each industry vertical has dedicated agent pools with specialized training — including HIPAA compliance for healthcare, PCI DSS for financial, and product-specific certifications for technology clients." },
 ];
 
-export default function CustomerServiceContent() {
+export default function CustomerServiceContent({ seoContent }: { seoContent?: SEOPattern[] } = {}) {
   return (
     <>
       {/* HERO — Image bg + form */}
@@ -435,6 +436,9 @@ export default function CustomerServiceContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT — keyword-rich patterned sections */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
 
       {/* FAQ */}
       <PageFAQ heading="Customer Service Outsourcing FAQ" faqs={faqs} />

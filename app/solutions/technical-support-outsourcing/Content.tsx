@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "What is the typical first-call resolution rate for outsourced technical support?", answer: "Our technical support teams consistently achieve 80-85% first-call resolution rates across client programs. This is achieved through comprehensive agent training, well-maintained knowledge bases, access to diagnostic tools, and structured escalation procedures. FCR rates typically improve 3-5 percentage points in the first 90 days as our knowledge base matures." },
 ];
 
-export default function TechnicalSupportContent() {
+export default function TechnicalSupportContent({ seoContent }: { seoContent?: SEOPattern[] } = {}) {
   return (
     <>
       {/* HERO — Image bg + form */}
@@ -318,6 +319,9 @@ export default function TechnicalSupportContent() {
       </section>
 
       {/* FAQ */}
+      {/* SEO CONTENT — keyword-rich patterned sections */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
+
       <PageFAQ heading="Technical Support Outsourcing FAQ" faqs={faqs} />
 
       {/* CTA */}

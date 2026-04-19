@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Technology Call Center Services | SaaS & IT Support | Contact Center USA",
+  title: "SaaS Technical Support & Technology BPO USA | SaaS Customer Support Outsourcing | Contact Center USA",
   description:
-    "Technology and SaaS call center services including Tier 1-3 technical support, user onboarding, bug reporting, and 24/7 help desk. Scale your support with experts.",
+    "One of the best SaaS technical support and technology BPO USA providers. SaaS customer support outsourcing for startups, scale-ups, and enterprise SaaS platforms.",
+  keywords: [
+    "saas technical support",
+    "technology bpo usa",
+    "saas customer support outsourcing",
+    "tier 1 technical support",
+    "help desk outsourcing",
+    "developer support outsourcing",
+    "it support bpo",
+    "enterprise saas support",
+  ],
   alternates: { canonical: "/industries/saas-technology-support" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Technology BPO in USA",
+    heading: "The SaaS technical support partner engineering teams choose when every unresolved ticket drags down NPS and product velocity.",
+    accent: "product velocity",
+    body: [
+      "Contact Center USA is one of the best SaaS technical support providers in the USA — a 100% US-based technology BPO USA operation delivering SaaS customer support outsourcing for venture-backed startups, PE-backed scale-ups, and enterprise SaaS platforms.",
+      "For SaaS operators evaluating technical support outsourcing, the priorities are clear: first-contact resolution, ticketing fluency, developer-grade API knowledge, and a team that keeps engineers out of the support queue so they can ship product.",
+    ],
+    stats: [
+      { stat: "92%", label: "First-contact resolution across Tier 1 technical support engagements" },
+      { stat: "4.8/5", label: "Average CSAT score maintained across active SaaS support programs" },
+      { stat: "24/7", label: "Global help desk coverage with blended voice, chat, email, and API support" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Support Team vs. Contact Center USA BPO",
+    intro:
+      "Every SaaS company weighs the same decision: hire and manage an internal support org, or outsource Tier 1-2 to a specialized technology BPO. Here's how the two compare on the factors that drive CSAT, churn, and engineering efficiency.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Ticketing Platform Fluency",
+        left: "Support hires ramp on Zendesk or Intercom from scratch; 30-60 day time-to-productive.",
+        right: "Active agents in Zendesk, Freshdesk, Intercom, HubSpot Service Hub, Jira Service Management.",
+        leftYes: false,
+      },
+      {
+        label: "SOC 2 & GDPR Data Handling",
+        left: "SOC 2 scope includes every support laptop and network endpoint your team touches.",
+        right: "SOC 2 Type II certified facilities with documented data handling controls.",
+        leftYes: false,
+      },
+      {
+        label: "24/7 Follow-the-Sun Coverage",
+        left: "Round-the-clock coverage requires multi-region hiring that rarely pencils for early-stage SaaS.",
+        right: "24/7/365 coverage already in production across all time zones.",
+        leftYes: false,
+      },
+      {
+        label: "Engineering Escalation Discipline",
+        left: "Tier 1 agents escalate anything unfamiliar; engineering inboxes fill with low-quality tickets.",
+        right: "Structured escalation with reproduction steps, logs, and severity classification.",
+        leftYes: false,
+      },
+      {
+        label: "Developer & API Support",
+        left: "Developer-facing issues require senior CSMs or engineers to respond — costly and slow.",
+        right: "Technically proficient agents trained on API docs, SDKs, webhooks, and integration patterns.",
+        leftYes: false,
+      },
+      {
+        label: "Scaling with User Growth",
+        left: "Hiring cycles can't keep up with viral or product-launch-driven ticket spikes.",
+        right: "Pre-trained bench scales 2-5x within weeks to absorb growth and launch spikes.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our SaaS Customer Support Outsourcing Onboarding Process",
+    intro:
+      "Every SaaS startup, scale-up, and enterprise platform we support flows through the same five-stage workflow — engineered to stand up a production-ready support team without burying your engineering team in onboarding.",
+    steps: [
+      {
+        title: "Product & Workflow Discovery",
+        body: "Feature walkthroughs, top-issue analysis, and ticket taxonomy captured directly from your CX leads.",
+      },
+      {
+        title: "Tooling Integration",
+        body: "Zendesk, Freshdesk, Intercom, Jira, GitHub Issues, and product telemetry connections configured with least-privilege access.",
+      },
+      {
+        title: "Macro & Escalation Buildout",
+        body: "Tier 1-2 macros, escalation templates, reproduction step checklists, and severity rubrics.",
+      },
+      {
+        title: "Technical Certification",
+        body: "Product certification, API and integration training, and shadow shifts before live ticket ownership.",
+      },
+      {
+        title: "Go-Live & Continuous Improvement",
+        body: "Phased ramp with weekly CSAT/FCR reviews, monthly retro with your CX lead, and quarterly knowledge base refresh.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Sub-Segments",
+    heading: "Technology Sub-Segments We Serve",
+    intro:
+      "Technology isn't one market — it spans vertical SaaS, horizontal platforms, developer tools, and enterprise IT. Our SaaS customer support outsourcing programs are tuned to each.",
+    items: [
+      {
+        icon: "laptop",
+        stat: "SaaS",
+        title: "Vertical & Horizontal SaaS",
+        body: "Tier 1-2 support for CRM, HR tech, fintech apps, martech, and other vertical SaaS categories.",
+      },
+      {
+        icon: "wrench",
+        stat: "DevTools",
+        title: "Developer Tools & Platforms",
+        body: "API docs support, SDK troubleshooting, webhook debugging, and developer community moderation.",
+      },
+      {
+        icon: "shield",
+        stat: "Security",
+        title: "Cybersecurity & IT Management",
+        body: "MSP, MDR, EDR, and IT management platform support with incident triage and escalation workflows.",
+      },
+      {
+        icon: "factory",
+        stat: "Enterprise",
+        title: "Enterprise Software & Hardware",
+        body: "Multi-tier enterprise support with named account coordination and SLA-bound response.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why SaaS Companies Choose Contact Center USA for Technology BPO USA Services",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore SaaS support drags on NPS because of language friction, time-zone-bound escalations, and inconsistent product knowledge across agent cohorts. Generic domestic help desks miss the technical depth modern SaaS products require — every misrouted ticket lands on your engineering team.",
+      "Contact Center USA is different: a 100% US-based SaaS technical support operation with native fluency in major ticketing platforms, structured engineering handoffs, and the technical discipline to keep developers focused on shipping.",
+    ],
+    bullets: [
+      "100% US-based voice, chat, email, and in-app support agents",
+      "SOC 2 Type II certified facilities with documented data handling controls",
+      "Native experience on Zendesk, Freshdesk, Intercom, Jira, HubSpot Service Hub",
+      "Developer-grade API, SDK, webhook, and integration troubleshooting support",
+      "24/7/365 follow-the-sun coverage with structured engineering escalation",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better technology BPO partner?",
+    accent: "better technology BPO",
+    body: "Whether you're a Series A startup protecting engineering focus, a scale-up racing churn, a developer tools company scaling API support, or an enterprise platform consolidating support vendors — we can show you the CSAT, FCR, and engineering-time-saved impact before you commit. Request a free consultation and we'll walk through product discovery, tooling integration, and go-live timeline.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Help Desk Support",
@@ -121,6 +286,7 @@ export default function TechnologyPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

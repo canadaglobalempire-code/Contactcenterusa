@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Sales Outsourcing | SDR & Full-Cycle Sales | Contact Center USA",
+  title: "Sales Outsourcing USA | Sales BPO USA | Outsourced Sales Team | Contact Center USA",
   description:
-    "Sales outsourcing services including SDR teams, full-cycle sales, lead qualification, appointment setting, and pipeline management. Scale your revenue engine without the overhead.",
+    "US-based sales outsourcing and sales BPO services. An outsourced sales team of SDRs, closers, and full-cycle reps delivering 3x pipeline growth and 45% lower cost per acquisition.",
+  keywords: [
+    "sales outsourcing",
+    "sales bpo usa",
+    "outsourced sales team",
+    "sdr outsourcing",
+    "outsourced sales development",
+    "b2b sales outsourcing",
+    "sales outsourcing companies",
+    "outsourced sales reps usa",
+  ],
   alternates: { canonical: "/solutions/sales-outsourcing" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Sales Outsourcing in USA",
+    heading: "The sales BPO USA growth teams trust when pipeline and close rate both need to move.",
+    accent: "pipeline and close rate",
+    body: [
+      "Contact Center USA is one of the best sales outsourcing providers in the USA — a 100% US-based outsourced sales team of SDRs, closers, and full-cycle reps operating under your brand, on your CRM, inside your playbooks.",
+      "For revenue leaders searching for a sales BPO USA partner that can actually scale pipeline without ballooning cost of acquisition, we deliver trained domestic sales talent, performance-aligned pricing models, and repeatable playbooks that have tripled pipeline for clients across SaaS, financial services, and B2B technology.",
+    ],
+    stats: [
+      { stat: "3x", label: "Average pipeline growth in year one of partnership" },
+      { stat: "45%", label: "Reduction in blended cost per acquisition vs. in-house build" },
+      { stat: "200K+", label: "Qualified meetings and opportunities set annually across client book" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Sales Build vs. Outsourced Sales Team",
+    intro:
+      "Every growth leader weighs the same trade-off: build an internal SDR and AE team or partner with a specialized sales BPO. Here's how the two models compare on the economics, ramp time, and pipeline predictability that actually matter.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Time to First Qualified Meeting",
+        left: "4–6 months from hiring kickoff to consistent meeting flow — recruit, ramp, and manage overhead.",
+        right: "Qualified meetings in 3–5 weeks from signed SOW — trained reps ready to dial.",
+        leftYes: false,
+      },
+      {
+        label: "Fully Loaded Cost per SDR",
+        left: "$85–$120K per SDR including salary, commission, benefits, tooling, and management layer.",
+        right: "30–45% lower blended cost with per-meeting, per-opportunity, or base-plus-variable pricing.",
+        leftYes: false,
+      },
+      {
+        label: "Ramp Risk on New Hires",
+        left: "50%+ of in-house SDR hires miss quota or churn in year one — bench never fully productive.",
+        right: "Pre-trained reps, proven playbooks, and managed QA — ramp risk lives with us, not you.",
+        leftYes: false,
+      },
+      {
+        label: "Pipeline Reporting & Forecasting",
+        left: "Inconsistent CRM hygiene; forecasts built on subjective deal stages and rep optimism.",
+        right: "Daily dashboards on contacts, meetings, SQLs, and conversion — forecast math, not vibes.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability & Flexibility",
+        left: "Hiring cycles of 60–90 days; painful to scale down after campaign or market shifts.",
+        right: "Scale SDR or closer capacity up or down in days — capacity aligned to pipeline demand.",
+        leftYes: false,
+      },
+      {
+        label: "Tech Stack Cost",
+        left: "Outreach, SalesLoft, ZoomInfo, dialer, and enablement tools paid per seat regardless of use.",
+        right: "Sales engagement, data, and dialer stack included in managed-service pricing.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Sales Outsourcing Engagement Flow",
+    intro:
+      "Every client goes through the same five-stage engagement — engineered to move from signed SOW to consistent pipeline contribution in under 45 days.",
+    steps: [
+      {
+        title: "ICP & Playbook Design",
+        body: "We codify your ideal customer profile, messaging, objection handling, and qualification criteria into a shared playbook.",
+      },
+      {
+        title: "Team Build & Certification",
+        body: "Domestic SDRs and closers recruited, trained on your product and positioning, and certified before making a single dial.",
+      },
+      {
+        title: "Stack & CRM Integration",
+        body: "We plug into your Salesforce, HubSpot, or Dynamics CRM and configure dialer, cadence, and enablement tools.",
+      },
+      {
+        title: "Pilot & Calibration",
+        body: "Controlled two-to-three-week pilot with daily calibration on messaging, rebuttals, and qualification until SQLs convert.",
+      },
+      {
+        title: "Scale & Optimize",
+        body: "Full production volume with weekly QBRs on pipeline, conversion rate, and cost per opportunity — continuous improvement baked in.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Support with Outsourced Sales",
+    intro:
+      "Sales motions differ sharply by industry. Our sales BPO USA pods are specialized by vertical, with reps who speak the language of your buyers from day one.",
+    items: [
+      {
+        icon: "laptop",
+        stat: "SaaS",
+        title: "B2B Technology & SaaS",
+        body: "SDR pods and full-cycle closers for mid-market and enterprise SaaS with PLG, sales-led, and hybrid motions.",
+      },
+      {
+        icon: "landmark",
+        stat: "FinTech",
+        title: "Financial & FinTech Services",
+        body: "Compliance-aware outbound for banking, wealth, lending, and FinTech — licensed reps where required.",
+      },
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Life Sciences",
+        body: "HIPAA-trained reps selling into payers, providers, and pharma with credible clinical and operational fluency.",
+      },
+      {
+        icon: "briefcase",
+        stat: "B2B",
+        title: "Professional & Business Services",
+        body: "Consultative outbound for agencies, consultancies, staffing, and business services selling to operators and execs.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA as Your Sales BPO USA",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Most sales outsourcing companies are glorified appointment-setting shops with scripted readers, offshore dialers, and no ownership of close-rate economics. The meetings get set, the pipeline looks good on a spreadsheet, and the opportunities never close.",
+      "Contact Center USA is different: a 100% US-based outsourced sales team with domestic SDRs and closers, performance-aligned pricing tied to qualified opportunities and revenue, and playbooks refined across hundreds of client programs. We sell on your CRM, under your brand, with the discipline of a high-performing internal team.",
+    ],
+    bullets: [
+      "100% US-based sales talent — no offshore dialing or nearshore handoffs",
+      "Performance-aligned pricing — base plus per-opportunity or revenue-share models",
+      "Trained across Salesforce, HubSpot, Outreach, SalesLoft, Apollo, ZoomInfo",
+      "Daily dashboards on dials, connects, meetings, SQLs, and win rate",
+      "Elastic capacity — ramp pods up for launches, down after campaigns",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better sales outsourcing partner?",
+    accent: "better sales outsourcing",
+    body: "If your pipeline is flatlining, your SDR ramp is stalling, or your CAC is creeping in the wrong direction, request a free sales outsourcing assessment. We'll pressure-test your ICP, offer, and motion before you sign anything.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Lead Generation & Appointment Setting",
@@ -121,6 +286,7 @@ export default function SalesOutsourcingPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

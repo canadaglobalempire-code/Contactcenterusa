@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
+import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Logistics & Supply Chain Call Center Services | Tracking & Dispatch | Contact Center USA",
+  title: "Logistics Call Center & Shipping BPO Services in USA | Contact Center USA",
   description:
-    "Logistics call center services for shipment tracking, dispatch coordination, delivery inquiries, and fleet support. Keep your supply chain running smoothly 24/7.",
+    "US-based logistics call center and shipping BPO services — logistics customer support, 24/7 dispatch, shipment tracking, driver support, and claims for carriers, 3PLs, and supply-chain operators.",
+  keywords: [
+    "logistics call center",
+    "shipping bpo services",
+    "logistics customer support",
+    "supply chain call center",
+    "3pl customer service outsourcing",
+    "dispatch call center",
+    "last mile customer service",
+    "freight claims outsourcing",
+  ],
   alternates: { canonical: "/industries/logistics-shipping-call-center" },
 };
 
@@ -88,6 +99,160 @@ const faqs = [
   },
 ];
 
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Logistics Call Center in USA",
+    heading: "The logistics call center that keeps loads moving, drivers supported, and customers informed around the clock.",
+    accent: "around the clock",
+    body: [
+      "Contact Center USA is one of the best logistics call center providers in the USA — a 100% US-based shipping BPO services operation with live TMS integrations, multi-carrier tracking, and 24/7 dispatch coverage built for carriers, 3PLs, and shippers.",
+      "For asset-based carriers, last-mile operators, and supply-chain teams evaluating logistics customer support partners, we deliver fewer missed deliveries, faster claims cycle times, and measurable driver-retention lift from after-hours support.",
+    ],
+    stats: [
+      { stat: "99%", label: "Dispatch accuracy rate across freight and last-mile programs" },
+      { stat: "-45%", label: "Fewer missed-delivery complaints within 90 days of program launch" },
+      { stat: "750K+", label: "Shipments tracked and updated annually across our logistics book" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House Dispatch & Support vs. Contact Center USA BPO",
+    intro:
+      "Logistics runs 24/7 but in-house dispatch rarely does. Here's how internal operations compare to a dedicated logistics call center partner.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "After-Hours Coverage",
+        left: "Drivers and customers wait until morning for non-urgent tracking and dispatch support.",
+        right: "24/7 coverage across dispatch, driver support, and customer tracking queues.",
+        leftYes: false,
+      },
+      {
+        label: "TMS & WMS Integration",
+        left: "Agents navigate multiple systems; manual updates slow response to exceptions.",
+        right: "Live integration to Oracle OTM, MercuryGate, TMW, McLeod, and custom WMS platforms.",
+        leftYes: false,
+      },
+      {
+        label: "Claims Cycle Time",
+        left: "Freight claims drag 30–60 days with inconsistent documentation and follow-up.",
+        right: "Structured claims workflow drives resolution 40% faster than industry averages.",
+        leftYes: false,
+      },
+      {
+        label: "Multi-Carrier Tracking",
+        left: "Siloed tracking portals — reps swivel-chair between FedEx, UPS, USPS, DHL, and LTL portals.",
+        right: "Unified multi-carrier dashboard with real-time data across every mode and lane.",
+        leftYes: false,
+      },
+      {
+        label: "Driver Retention Impact",
+        left: "Drivers feel unsupported after hours — churn and dispatch satisfaction suffer.",
+        right: "24/7 driver hotline with breakdown coordination and route-level support.",
+        leftYes: false,
+      },
+      {
+        label: "Peak-Season Surge",
+        left: "Peak, produce, and retail cycles overwhelm internal dispatch and customer service.",
+        right: "Pre-planned seasonal surge staffing aligned to your peak and project-cargo calendar.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our Shipping BPO Services Onboarding",
+    intro:
+      "Every carrier, 3PL, and shipper partnership follows the same five-stage launch — engineered to respect dispatch culture, integrate with your TMS/WMS, and prove 24/7 reliability before peak season.",
+    steps: [
+      {
+        title: "Operator Discovery",
+        body: "Lanes, modes, carrier network, TMS/WMS stack, and dispatch escalation paths mapped together.",
+      },
+      {
+        title: "Systems Integration",
+        body: "Secure connections to Oracle OTM, MercuryGate, TMW, McLeod, and multi-carrier tracking APIs.",
+      },
+      {
+        title: "Logistics Certification",
+        body: "Agents trained on your lanes, OS&D process, driver protocols, and customer SLA standards.",
+      },
+      {
+        title: "Pilot Lane Launch",
+        body: "Live traffic on a single lane or account with joint QA and dispatch-team calibration.",
+      },
+      {
+        title: "Full Operations Cutover",
+        body: "Network-wide rollout with 24/7 coverage, peak-season surge plan, and claims workflow online.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Sub-Segments",
+    heading: "Logistics Sub-Segments Our BPO Supports",
+    intro:
+      "Asset-based carriers, 3PLs, brokers, and last-mile operators all have different customer profiles. Our logistics customer support model flexes to the economics of each sub-segment.",
+    items: [
+      {
+        icon: "truck",
+        stat: "Carrier",
+        title: "Asset-Based Carriers",
+        body: "FTL, LTL, and specialized carrier support — driver assistance, dispatch, and shipper updates.",
+      },
+      {
+        icon: "truck",
+        stat: "3PL",
+        title: "3PLs & Freight Brokers",
+        body: "Load tracking, carrier check calls, capacity sourcing, and customer communication support.",
+      },
+      {
+        icon: "home",
+        stat: "Last-Mile",
+        title: "Last-Mile & Parcel",
+        body: "Delivery window confirmation, exception handling, redelivery scheduling, and customer tracking.",
+      },
+      {
+        icon: "building",
+        stat: "Warehouse",
+        title: "Warehousing & Fulfillment",
+        body: "Inventory inquiries, receiving coordination, returns management, and fulfillment status support.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Carriers and 3PLs Choose Contact Center USA",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore logistics customer support creates friction with US drivers and shippers — nuance on lane detail, OS&D claims, and exception management gets lost. Generalist BPOs miss the operational urgency that defines freight.",
+      "Contact Center USA is different: a 100% US-based logistics call center with dedicated supervisors who've run dispatch operations, real TMS/WMS integration, and a 24/7 model engineered for the freight cycle.",
+    ],
+    bullets: [
+      "100% US-based logistics call center workforce — US drivers get US support",
+      "Native TMS/WMS integrations and multi-carrier tracking dashboards",
+      "24/7 dispatch, driver-support, and customer-tracking lanes with separate QA",
+      "Structured claims workflow for OS&D with 40% faster cycle time",
+      "Seasonal surge staffing tuned to peak, produce, retail, and project-cargo cycles",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to outsource your logistics call center to a US-based freight specialist?",
+    accent: "freight specialist",
+    body: "If after-hours dispatch is a weak spot, freight claims are dragging, or last-mile complaints are eroding shipper relationships, request a free consultation. We'll build a lane-level staffing plan and expected impact on missed deliveries, driver retention, and claims cycle time.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
+];
+
 const relatedServices = [
   {
     title: "Dispatch Services",
@@ -121,6 +286,7 @@ export default function LogisticsPage() {
       testimonial={testimonial}
       faqs={faqs}
       relatedServices={relatedServices}
+      seoContent={seoContent}
     />
   );
 }

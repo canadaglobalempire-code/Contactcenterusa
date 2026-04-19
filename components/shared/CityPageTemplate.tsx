@@ -27,6 +27,7 @@ import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { siteConfig } from "@/lib/seo-config";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
 interface CityPageTemplateProps {
   city: string;
@@ -37,6 +38,7 @@ interface CityPageTemplateProps {
   industries: string[];
   population: string;
   businesses: string;
+  seoContent?: SEOPattern[];
 }
 
 const services = [
@@ -106,7 +108,7 @@ function getFAQs(city: string, state: string) {
 }
 
 export function CityPageTemplate({
-  city, state, stateAbbr, description, businessLandscape, industries, population, businesses,
+  city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent,
 }: CityPageTemplateProps) {
   const testimonial = testimonials[city];
   const faqs = getFAQs(city, state);
@@ -375,6 +377,8 @@ export function CityPageTemplate({
       )}
 
       {/* FAQ */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
+
       <PageFAQ heading={`${city} Call Center Services FAQ`} faqs={faqs} />
 
       {/* CTA — with video */}

@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -64,6 +65,160 @@ const faqs = [
   { question: "What is the typical cost per lead for outsourced lead generation?", answer: "Cost per qualified lead varies by industry, target audience, and qualification complexity, but our clients typically see 30-40% lower cost per lead compared to maintaining in-house SDR teams when you factor in salaries, benefits, tools, management overhead, and ramp-up time. We offer transparent per-lead, per-appointment, and dedicated agent pricing models." },
   { question: "How long does it take to start generating leads?", answer: "Most lead generation programs begin producing qualified leads within 3-4 weeks of kickoff. The first 2 weeks cover ICP definition, list building, script development, agent training, and system setup. Week 3 is a controlled pilot for testing and optimization. By week 4, you are receiving a steady flow of qualified leads into your pipeline." },
   { question: "What industries do your lead generation services cover?", answer: "We serve B2B clients across technology, SaaS, financial services, healthcare, real estate, professional services, manufacturing, and more. Our agents are trained on industry-specific terminology, buying cycles, decision-maker titles, and common objections for each vertical — so conversations feel authentic and informed, not scripted." },
+];
+
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Lead Generation Services in USA",
+    heading: "The lead generation services partner B2B sales teams trust to fill their pipeline with qualified, sales-ready meetings.",
+    accent: "trust to fill",
+    body: [
+      "Contact Center USA is one of the best lead generation services providers in the USA — a 100% US-based appointment setting bpo delivering strategic cold calling, BANT qualification, and booked meetings that your sales team actually wants to take.",
+      "For B2B companies searching for b2b lead gen outsourcing usa partners that understand their market, we replace unpredictable inbound volume and unqualified lead noise with a consistent flow of decision-maker conversations — at roughly 35% lower cost per lead than internal SDR teams.",
+    ],
+    stats: [
+      { stat: "3x", label: "Pipeline growth typical in the first 90 days of engagement" },
+      { stat: "35%", label: "Lower cost per qualified lead vs. internal SDR/BDR teams" },
+      { stat: "85%", label: "Show rate on appointments booked by our US-based agents" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House vs. Contact Center USA BPO",
+    intro:
+      "Every revenue leader faces the same decision: build an internal SDR/BDR team or partner with an appointment setting bpo. Here's how the two compare on the factors that actually drive qualified pipeline.",
+    leftTitle: "Internal SDR Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Cost per Qualified Lead",
+        left: "Fully loaded SDR cost $85K+ — often paying $400+ per qualified lead.",
+        right: "~35% lower cost per qualified lead — variable pricing tied to meeting volume.",
+        leftYes: false,
+      },
+      {
+        label: "Ramp Time to Pipeline",
+        left: "New SDRs take 4–6 months to reach productive quota; attrition resets the clock.",
+        right: "First qualified meetings in 30 days; full pipeline cadence by day 60.",
+        leftYes: false,
+      },
+      {
+        label: "Data, Cadence & Tooling",
+        left: "$40K+ annually for list, dialer, engagement, and enrichment tooling.",
+        right: "B2B lead gen outsourcing usa stack included — lists, dialer, cadence, and enrichment.",
+        leftYes: false,
+      },
+      {
+        label: "Decision-Maker Conversations",
+        left: "Junior SDRs struggle to hold attention with VPs and C-suite prospects.",
+        right: "Senior US-based callers trained on your ICP and objection map.",
+        leftYes: false,
+      },
+      {
+        label: "Attrition & Management",
+        left: "Industry SDR attrition above 35%; constant hiring and coaching load.",
+        right: "Attrition, QA, coaching, and career path fully managed — zero overhead for you.",
+        leftYes: false,
+      },
+      {
+        label: "Scalability",
+        left: "Hiring cycles of 60–90 days bottleneck growth and new-market expansion.",
+        right: "Scale lead generation services capacity up/down in 10–15 business days.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our B2B Lead Gen Outsourcing USA Process",
+    intro:
+      "Every appointment setting bpo engagement follows the same disciplined five-step playbook — engineered to produce qualified meetings, not activity metrics.",
+    steps: [
+      {
+        title: "ICP & Offer Workshop",
+        body: "Pressure-test your ideal customer profile, offer, and value proposition — then translate into calling scripts, objection maps, and qualification criteria.",
+      },
+      {
+        title: "Data & List Build",
+        body: "Build, enrich, and verify target account and contact lists against your ICP — TCPA-scrubbed and DNC-compliant.",
+      },
+      {
+        title: "Multi-Touch Cadence",
+        body: "Launch integrated call/email/LinkedIn cadences with trained US-based callers holding decision-maker conversations.",
+      },
+      {
+        title: "BANT Qualification & Booking",
+        body: "Qualify on Budget, Authority, Need, and Timeline — then book calendared meetings directly into your AEs' calendars.",
+      },
+      {
+        title: "Weekly Optimization",
+        body: "Weekly pipeline reviews analyze list quality, messaging, and conversion — tuning cadence to drive higher show rates and opportunity creation.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Serve with Lead Generation Services",
+    intro:
+      "Each B2B vertical carries its own buyer dynamics, compliance overlays, and deal cycles. Our appointment setting bpo workflows are tuned to the sectors we serve.",
+    items: [
+      {
+        icon: "laptop",
+        stat: "SaaS",
+        title: "B2B SaaS & Technology",
+        body: "ICP-based outbound to VP and C-level technology buyers — filling pipeline for mid-market and enterprise SaaS teams.",
+      },
+      {
+        icon: "briefcase",
+        stat: "Pro Svcs",
+        title: "Professional Services & Consulting",
+        body: "Booked executive meetings for management consulting, staffing, and financial advisory firms.",
+      },
+      {
+        icon: "factory",
+        stat: "Mfg",
+        title: "Manufacturing & Industrial",
+        body: "Plant-manager and procurement outreach for industrial suppliers, MRO, and capital-equipment vendors.",
+      },
+      {
+        icon: "shield",
+        stat: "Sec",
+        title: "Cybersecurity & MSPs",
+        body: "CISO and IT leader outreach for cybersecurity vendors, MSPs, and infrastructure providers.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for B2B Lead Gen Outsourcing USA",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore lead gen shops generate call volume but rarely book meetings that close — accent bias and lack of US business context kill decision-maker conversations. Freelance SDR services lack the management, tooling, and QA required to deliver consistently. Enterprise BPOs treat lead gen as a low-margin afterthought, bolted onto customer service staffing.",
+      "Contact Center USA is different: a 100% US-based lead generation services partner with senior callers, a battle-tested b2b lead gen outsourcing usa stack, and a management team that obsesses over qualified pipeline rather than dials per day — all at ~35% lower cost per lead than an internal SDR team.",
+    ],
+    bullets: [
+      "100% US-based callers — no offshore voice on your prospects' first impression",
+      "Senior appointment setters trained on your ICP, offer, and objection map",
+      "TCPA-compliant dialing, DNC-scrubbed lists, and full call recording for QA",
+      "Booked meetings dropped directly into your AEs' calendars with context",
+      "Weekly pipeline reviews with show-rate and opportunity conversion reporting",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better lead generation services partner?",
+    accent: "better lead generation services",
+    body: "If your SDR team is expensive and underperforming, your pipeline is unpredictable, or your current b2b lead gen outsourcing usa vendor is delivering unqualified meetings, request a free consultation. We'll review your ICP, offer, and cost per lead — then show you exactly what appointment setting bpo with Contact Center USA would look like.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
 ];
 
 export default function LeadGenerationContent() {
@@ -316,6 +471,9 @@ export default function LeadGenerationContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      <SEOContentSection sections={seoContent} />
 
       {/* FAQ */}
       <PageFAQ heading="Lead Generation Call Center FAQ" faqs={faqs} />

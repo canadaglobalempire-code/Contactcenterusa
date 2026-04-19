@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "How do you handle Do Not Call lists and opt-outs?", answer: "We scrub all calling lists against the National DNC Registry, state-specific DNC lists, and your internal suppression lists before every campaign. Opt-out requests are processed in real time and added to suppression lists immediately. Our compliance system is audited daily and we maintain full documentation for regulatory inquiries." },
 ];
 
-export default function OutboundServicesContent() {
+export default function OutboundServicesContent({ seoContent }: { seoContent?: SEOPattern[] } = {}) {
   return (
     <>
       {/* HERO — Image bg + form */}
@@ -318,6 +319,9 @@ export default function OutboundServicesContent() {
       </section>
 
       {/* FAQ */}
+      {/* SEO CONTENT — keyword-rich patterned sections */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
+
       <PageFAQ heading="Outbound Call Center Services FAQ" faqs={faqs} />
 
       {/* CTA */}

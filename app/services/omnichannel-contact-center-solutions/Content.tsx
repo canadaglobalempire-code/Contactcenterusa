@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -66,7 +67,7 @@ const faqs = [
   { question: "How much does an omnichannel call center solution cost?", answer: "Omnichannel pricing depends on the number of channels, agents, and features required. Contact Center USA offers flexible plans that start with your highest-impact channels and scale from there. Most businesses find that omnichannel actually reduces total support costs by consolidating tools, eliminating redundant systems, and improving first-contact resolution — which reduces repeat contacts by 35%." },
 ];
 
-export function OmnichannelContent() {
+export function OmnichannelContent({ seoContent }: { seoContent?: SEOPattern[] }) {
   return (
     <>
       {/* HERO */}
@@ -316,6 +317,9 @@ export function OmnichannelContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      {seoContent && <SEOContentSection sections={seoContent} />}
 
       {/* FAQ */}
       <PageFAQ heading="Omnichannel Solutions FAQ" faqs={faqs} />

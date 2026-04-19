@@ -2,9 +2,19 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Government Call Center Services | FISMA & FedRAMP Compliant",
+  title: "Government Call Center USA | Government BPO Services & Public Sector Call Center Outsourcing",
   description:
-    "Trusted government contact center services with 100% US-based agents, security clearance capabilities, and HIPAA/FISMA/FedRAMP compliance-ready infrastructure for federal, state, and local agencies.",
+    "US-based government call center for federal, state, and local agencies. Government BPO services and public sector call center outsourcing with FISMA, FedRAMP-ready, HIPAA, and CJIS-aligned operations.",
+  keywords: [
+    "government call center",
+    "government bpo services",
+    "public sector call center outsourcing",
+    "federal call center",
+    "state government call center",
+    "fisma compliant call center",
+    "fedramp call center",
+    "citizen services hotline",
+  ],
   alternates: { canonical: "/solutions/government-call-center-services" },
 };
 

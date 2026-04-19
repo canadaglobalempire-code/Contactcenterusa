@@ -18,6 +18,7 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { siteConfig } from "@/lib/seo-config";
 
 const features = [
@@ -64,6 +65,160 @@ const faqs = [
   { question: "How do you handle call volume spikes and overflow?", answer: "Our flexible staffing model means we can absorb unexpected volume spikes — from seasonal rushes to product launches to marketing campaigns — without any drop in service quality. We also offer dedicated overflow programs where calls route to us only when your in-house team is at capacity, so you never miss a call." },
   { question: "How much do inbound call center services cost?", answer: "Pricing depends on call volume, hours of coverage, and complexity. We offer per-minute, per-call, and dedicated agent models to fit different budgets and call patterns. Most clients save 30-50% compared to hiring in-house receptionists or support staff when you factor in salaries, benefits, technology, management, and facilities costs." },
   { question: "What is the difference between inbound and outbound call center services?", answer: "Inbound services handle incoming calls from your customers — support inquiries, orders, appointments, and after-hours coverage. Outbound services involve proactively calling prospects or customers for telemarketing, lead generation, surveys, and follow-ups. Many businesses use both: our inbound team handles the incoming volume while our outbound team drives new revenue through proactive outreach." },
+];
+
+const seoContent: SEOPattern[] = [
+  {
+    pattern: "hero-statement",
+    eyebrow: "Best Inbound Call Center Services in USA",
+    heading: "The inbound call center services partner US brands trust to answer every customer call, every hour of the day.",
+    accent: "trust to answer",
+    body: [
+      "Contact Center USA is one of the best inbound call center services providers in the USA — a 100% US-based inbound bpo usa operator delivering live call answering, order taking, help desk, appointment scheduling, and customer care from secure domestic facilities.",
+      "For businesses searching for 24/7 inbound support outsourcing that protects revenue and brand, we replace missed calls, long hold times, and offshore-accent complaints with trained on-shore agents answering within 15 seconds — 99.9% of the time, every single day of the year.",
+    ],
+    stats: [
+      { stat: "<15s", label: "Average speed to answer across every inbound queue" },
+      { stat: "99.9%", label: "Call answer rate — no voicemail, no IVR mazes, no dropped calls" },
+      { stat: "24/7/365", label: "Always-on inbound bpo usa coverage — nights, weekends, holidays" },
+    ],
+  },
+  {
+    pattern: "comparison",
+    eyebrow: "Head to Head",
+    heading: "In-House vs. Contact Center USA BPO",
+    intro:
+      "Every operations leader faces the same decision: keep answering inbound calls with an internal team or partner with a specialist for inbound call center services. Here's how the two compare on the factors that drive CSAT, revenue capture, and cost.",
+    leftTitle: "Internal In-House Team",
+    rightTitle: "Contact Center USA BPO",
+    rows: [
+      {
+        label: "Coverage Hours",
+        left: "Business hours only — calls outside 9–5 go to voicemail or automated IVR.",
+        right: "True 24/7/365 inbound support outsourcing — nights, weekends, and holidays covered.",
+        leftYes: false,
+      },
+      {
+        label: "Speed to Answer",
+        left: "Hold times of 2–5 minutes during peaks; abandon rates spike above 15%.",
+        right: "Under 15 seconds average speed to answer — abandon rate below 3%.",
+        leftYes: false,
+      },
+      {
+        label: "Cost per Call",
+        left: "$8–$12 fully loaded per inbound call — fixed regardless of volume.",
+        right: "30–45% lower cost per call with variable, volume-based inbound bpo usa pricing.",
+        leftYes: false,
+      },
+      {
+        label: "Surge Capacity",
+        left: "Marketing launches, outages, and seasonal peaks crush fixed internal staffing.",
+        right: "Pre-positioned surge capacity — no dropped calls during product launches or incidents.",
+        leftYes: false,
+      },
+      {
+        label: "Technology Stack",
+        left: "$80K+ annually for telephony, IVR, WFM, QA, and recording licenses.",
+        right: "Enterprise inbound stack included — ACD, IVR, WFM, QA, and real-time dashboards.",
+        leftYes: false,
+      },
+      {
+        label: "Training & Attrition",
+        left: "Constant hiring, onboarding, and attrition eat management bandwidth.",
+        right: "Attrition, QA, coaching, and continuous training fully managed for you.",
+        leftYes: false,
+      },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "How It Works",
+    heading: "Our 24/7 Inbound Support Outsourcing Process",
+    intro:
+      "Every inbound call center services engagement follows the same disciplined five-step playbook — designed to capture every call, protect your brand voice, and prove ROI in the first 60 days.",
+    steps: [
+      {
+        title: "Discovery & Scripting",
+        body: "Map every inbound call type, rebuild IVR and routing logic, and co-author on-brand scripts and objection handlers.",
+      },
+      {
+        title: "Secure Integrations",
+        body: "Connect CRM, order management, helpdesk, and knowledge base via secure APIs — single pane of glass for agents.",
+      },
+      {
+        title: "Agent Training & Certification",
+        body: "Every inbound agent is trained on your products, policies, and compliance requirements before handling a single call.",
+      },
+      {
+        title: "Go-Live with Pilot",
+        body: "Launch a pilot queue, validate SLAs, CSAT, and FCR — then ramp 24/7 coverage across all inbound channels.",
+      },
+      {
+        title: "Optimize & Report",
+        body: "Real-time dashboards track ASA, AHT, FCR, CSAT, and conversion — with weekly reviews to tune performance.",
+      },
+    ],
+  },
+  {
+    pattern: "featured-industries",
+    eyebrow: "Industries",
+    heading: "Industries We Serve with Inbound BPO USA",
+    intro:
+      "Each vertical carries its own inbound dynamics, compliance overlays, and customer expectations. Our workflows are tuned to the specific requirements of the sectors we serve.",
+    items: [
+      {
+        icon: "heart-pulse",
+        stat: "HIPAA",
+        title: "Healthcare & Medical",
+        body: "Patient intake, appointment scheduling, insurance verification, and nurse triage — HIPAA-compliant end to end.",
+      },
+      {
+        icon: "shopping-bag",
+        stat: "PCI",
+        title: "Ecommerce & Retail",
+        body: "Order taking, product inquiries, return/exchange handling, and peak-season surge coverage for retailers and DTC brands.",
+      },
+      {
+        icon: "landmark",
+        stat: "SOC 2",
+        title: "Financial Services",
+        body: "Account servicing, card activation, fraud alerts, and general inbound support for banks, fintechs, and insurers.",
+      },
+      {
+        icon: "laptop",
+        stat: "24/7",
+        title: "SaaS & Technology",
+        body: "Tier 1 help desk, trial conversion support, and after-hours inbound support outsourcing for SaaS and tech brands.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Why Us",
+    heading: "Why Choose Contact Center USA for Inbound Call Center Services",
+    image: "/images/cc-management.jpg",
+    imagePosition: "right",
+    body: [
+      "Offshore inbound BPOs deliver cost savings but pay for it in CSAT — accent bias, cultural distance, and inconsistent product knowledge cause abandoned calls and lost revenue. Answering services cover the basics but cannot handle complex inquiries, sales, or technical support. Enterprise vendors bury you in volume commitments with hidden fees.",
+      "Contact Center USA is different: a 100% US-based inbound bpo usa partner operating from secure domestic facilities, staffed by trained on-shore agents, with volume-based pricing and no long-term contracts — so every call is answered by someone who sounds like your customer, on a platform that proves ROI every single month.",
+    ],
+    bullets: [
+      "100% US-based agents for all inbound call center services — no offshore handoffs",
+      "True 24/7/365 inbound support outsourcing coverage",
+      "Under 15 seconds average speed to answer with <3% abandon rate",
+      "Full enterprise stack included — ACD, IVR, WFM, QA, and dashboards",
+      "Go-live within 15 business days; no long-term contracts required",
+    ],
+  },
+  {
+    pattern: "dark-cta",
+    eyebrow: "Get Started",
+    heading: "Ready to evaluate a better inbound call center services partner?",
+    accent: "better inbound call center",
+    body: "If your inbound queues are overflowing, your after-hours calls are going to voicemail, or your current inbound bpo usa vendor is missing SLAs, request a free consultation. We'll benchmark your current call volume, ASA, abandon rate, and cost-per-call — then show you exactly what 24/7 inbound support outsourcing with Contact Center USA would look like.",
+    ctaLabel: "Request a Free Consultation",
+    ctaHref: "/contact",
+  },
 ];
 
 export default function InboundServicesContent() {
@@ -316,6 +471,9 @@ export default function InboundServicesContent() {
           </div>
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+      <SEOContentSection sections={seoContent} />
 
       {/* FAQ */}
       <PageFAQ heading="Inbound Call Center Services FAQ" faqs={faqs} />
