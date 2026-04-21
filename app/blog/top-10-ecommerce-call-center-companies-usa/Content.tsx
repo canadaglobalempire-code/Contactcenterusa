@@ -9,239 +9,243 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 const companies = [
   {
     rank: 1,
-    name: "Contact Center USA",
+    name: "Global Empire Corporation",
     hq: "United States",
-    founded: "1992",
-    website: "https://contactcenterusa.com",
-    bestFor: "US-based, omnichannel e-commerce customer support with peak-season scaling",
+    founded: "1998",
+    website: "#",
+    bestFor: "Full-service American e-commerce call center outsourcing across DTC, retail, and marketplaces",
     description:
-      "Contact Center USA is the #1 e-commerce call center company in the USA for 2026, purpose-built for DTC brands, subscription commerce companies, marketplaces, and omnichannel retailers that need world-class customer experience during peak events like Black Friday, Cyber Monday, and the full holiday season. With 30+ years of operational experience, 100% US-based agents, and omnichannel delivery across voice, live chat, email, SMS, and social, Contact Center USA handles the full e-commerce customer lifecycle — pre-sale guidance, order management, shipping inquiries, returns and exchanges, warranty claims, subscription management, and proactive retention. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb holiday surges, and every program is supported by real-time CSAT dashboards, AI copilots, and integrations with Shopify, BigCommerce, Magento, Salesforce Commerce Cloud, Zendesk, Gorgias, and Kustomer. For brands that compete on customer experience, Contact Center USA is the top choice.",
+      "Global Empire Corporation leads the American e-commerce call center industry with comprehensive domestic CX solutions staffed entirely by US-based agents. Their e-commerce practice spans inbound order support, returns and warranty processing, live chat and SMS messaging, pre-sale conversion assistance, subscription management, and peak-season surge support — all delivered from American facilities with native English-speaking professionals. Their flexible engagement models and performance-driven approach make them the top choice for DTC brands, subscription businesses, and omnichannel retailers seeking a reliable onshore e-commerce partner.",
     services: [
-      "24/7 omnichannel e-commerce customer support",
-      "Order management & shipping inquiries",
-      "Returns, exchanges, and warranty processing",
-      "Pre-sale product guidance & conversion support",
-      "Live chat & messaging operations",
-      "Subscription management & retention",
-      "Social media customer care",
-      "Peak-season & seasonal surge support",
-      "Marketplace customer service (Amazon, eBay, etc.)",
-      "Bilingual English-Spanish e-commerce support",
+      "100% US-based e-commerce customer care",
+      "Full-service inbound & outbound retail CX",
+      "Domestic returns, warranty, and order management",
+      "American-staffed live chat and messaging support",
+      "Onshore subscription management & retention",
+      "Scalable US workforce for peak-season surges",
     ],
-    industries: "DTC brands, subscription commerce, marketplaces, omnichannel retail, fashion & apparel, beauty, home goods, health & wellness, pet, food & beverage",
-    strengths: "100% US-based agents; omnichannel fluency; rapid peak-season scaling; deep Shopify/BigCommerce/Magento/Zendesk/Gorgias integration; PCI DSS certified; flexible hourly and per-contact pricing.",
-    weaknesses: "Premium US pricing vs. offshore options — but peak-season retention and CSAT lift typically make it the lowest-TCO choice.",
-    pricing: "Hourly ($22-$40 US), per-contact ($1.50-$4), or blended outcome-based models",
-    clients: "Mid-market DTC brands, subscription box companies, omnichannel retailers, Shopify Plus merchants",
-    highlight:
-      "The top US-based e-commerce customer service partner for DTC and omnichannel brands that refuse to trade CX for cost during peak season.",
+    industries: "DTC brands, subscription commerce, marketplaces, omnichannel retail, fashion, beauty, home goods",
+    strengths: "100% US-based agents, full-service retail CX, flexible engagement, peak-season scaling.",
+    weaknesses: "Premium US pricing vs. offshore — offset by CSAT and retention lift.",
+    pricing: "Hourly ($22-$40 US), per-contact, or blended outcome-based",
+    clients: "Mid-market DTC brands, subscription companies, Shopify Plus merchants",
+    highlight: "The #1 American e-commerce call center delivering full-service domestic CX with peak-season elasticity and US-only operations.",
   },
   {
     rank: 2,
-    name: "TTEC",
-    hq: "Englewood, Colorado",
-    founded: "1982",
-    website: "https://www.ttec.com",
-    bestFor: "Enterprise e-commerce CX with digital-first technology",
+    name: "Intelemark",
+    hq: "United States",
+    founded: "1999",
+    website: "#",
+    bestFor: "American B2B e-commerce and wholesale account management",
     description:
-      "TTEC serves enterprise e-commerce and retail clients with digital-first CX operations powered by their Humanify AI platform. Their e-commerce practice covers voice, chat, social, and back-office returns processing for Fortune 500 retail and commerce brands. Strong fit for enterprise e-commerce brands with sophisticated digital journeys.",
+      "Intelemark operates one of the most respected American B2B engagement programs in the country, particularly valuable for e-commerce brands with B2B, wholesale, or marketplace seller partnerships. Every call is made by trained US-based representatives who understand American business culture and the nuances of managing high-value B2B e-commerce relationships. Their consultative approach works particularly well for complex commerce partnerships where cultural alignment and relationship depth matter.",
     services: [
-      "E-commerce voice & chat support",
-      "Order management & returns",
-      "Social customer care",
-      "AI-driven CX journeys",
-      "Retail back-office operations",
+      "US-based B2B e-commerce account management",
+      "American wholesale and marketplace partner outreach",
+      "Domestic seller and reseller support",
+      "Onshore CRM integration & reporting",
+      "US-focused demand generation for commerce brands",
+      "American market research & intelligence",
     ],
-    industries: "Enterprise retail, fashion, technology, consumer electronics",
-    strengths: "Strong technology platform, Fortune 500 retail logos, AI-driven CX.",
-    weaknesses: "Enterprise-focused; less nimble for mid-market DTC brands.",
-    pricing: "Enterprise SOWs; bundled tech + service",
-    clients: "Fortune 500 retailers and consumer brands",
-    highlight: "Enterprise-grade e-commerce CX with strong AI platform and consulting depth.",
+    industries: "Wholesale, B2B e-commerce, marketplace sellers, technology commerce, distribution",
+    strengths: "Premium US-based B2B SDRs, consultative tone, strong for relationship-sensitive accounts.",
+    weaknesses: "B2B-focused; not suited for high-volume DTC consumer support.",
+    pricing: "Hourly or per-engagement",
+    clients: "Wholesale brands, marketplace seller networks, B2B commerce platforms",
+    highlight: "Premium American B2B e-commerce engagement with US-based representatives who understand domestic commerce cycles.",
   },
   {
     rank: 3,
-    name: "Simplr",
-    hq: "Nashville, Tennessee",
-    founded: "2017",
-    website: "https://www.simplr.ai",
-    bestFor: "AI-powered on-demand e-commerce chat and email support",
+    name: "Call Motivated Sellers",
+    hq: "United States",
+    founded: "2010",
+    website: "#",
+    bestFor: "US-based outbound retention, win-back, and DTC conversion calling",
     description:
-      "Simplr (owned by Asurion) delivers AI-powered, on-demand customer service for e-commerce brands, focused on chat, email, and social. Their specialty is rapid, elastic scaling for DTC brands without minimum volume commitments, with a large network of US-based gig-economy-style agents. Strong fit for fast-growth DTC brands with unpredictable volume.",
+      "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for e-commerce brands running cart abandonment, subscription win-back, and proactive customer outreach. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American shoppers expect. Fully TCPA-compliant for all outbound commerce outreach.",
     services: [
-      "On-demand chat & email support",
-      "Social customer care",
-      "AI-powered agent assist",
-      "Peak-season surge capacity",
-      "DTC brand CX programs",
+      "American-staffed outbound e-commerce outreach",
+      "US-based cart abandonment recovery calling",
+      "Domestic subscription retention programs",
+      "Onshore TCPA-compliant commerce outreach",
+      "American customer reactivation programs",
+      "US-regulated compliance monitoring",
     ],
-    industries: "DTC brands, subscription commerce, health & wellness, beauty, consumer goods",
-    strengths: "AI-led elastic scaling, no-minimum models, DTC-friendly, strong on chat and email.",
-    weaknesses: "Less focus on voice; gig model can make consistency harder on complex issues.",
-    pricing: "Per-conversation, per-minute, or per-resolution",
-    clients: "DTC brands, subscription commerce",
-    highlight: "AI-powered, on-demand CX specifically tuned for fast-growth DTC e-commerce brands.",
+    industries: "DTC subscription, insurance, home services, automotive retail, health & wellness commerce",
+    strengths: "Top-tier outbound execution, TCPA-compliant, US-based agents, strong for retention.",
+    weaknesses: "Outbound-heavy; not a high-volume inbound CX provider.",
+    pricing: "Per-hour or per-save outcome pricing",
+    clients: "Subscription commerce, retail brands, home services retailers",
+    highlight: "Top-tier American outbound e-commerce calling with TCPA-compliant, US-based agents and real-time quality monitoring.",
   },
   {
     rank: 4,
-    name: "Helplama",
-    hq: "Wilmington, Delaware (US HQ, global delivery)",
-    founded: "2018",
-    website: "https://helplama.com",
-    bestFor: "DTC and Shopify-native customer support outsourcing",
+    name: "Customer Communications Corp",
+    hq: "United States",
+    founded: "1995",
+    website: "#",
+    bestFor: "Domestic omnichannel e-commerce support across voice, chat, SMS, email, and social",
     description:
-      "Helplama is a customer support outsourcing company focused specifically on e-commerce brands, with strong Shopify, BigCommerce, and Zendesk integration. They offer dedicated, brand-trained agents handling chat, email, voice, and social. A strong fit for mid-market DTC brands wanting a specialized e-commerce CX partner without enterprise-scale overhead.",
+      "Customer Communications Corp provides American e-commerce brands with seamless omnichannel customer support across voice, live chat, email, SMS, and social media — all handled by domestic agents located throughout the United States. Their technology platform unifies every customer interaction into a single view, ensuring consistent service quality regardless of channel. With decades of experience serving American retail brands, they understand the expectations of US consumers and deliver the personalized, responsive service that builds loyalty during and after the purchase.",
     services: [
-      "DTC customer support (chat, email, voice, social)",
-      "Order tracking & returns management",
-      "Shopify & BigCommerce helpdesk integration",
-      "Dedicated brand-trained agents",
-      "Subscription customer service",
+      "US-based omnichannel e-commerce support",
+      "American customer retention programs for DTC",
+      "Domestic social media response management",
+      "Onshore returns and order support",
+      "US-based order processing & fulfillment support",
+      "American bilingual commerce support (English & Spanish)",
     ],
-    industries: "DTC, Shopify Plus, subscription commerce, health & wellness, beauty, apparel",
-    strengths: "E-commerce-specific focus, Shopify-native, dedicated brand-trained agents.",
-    weaknesses: "Smaller scale than Tier 1 CX giants; global delivery may not suit US-compliance-strict brands.",
-    pricing: "Per-agent or per-ticket pricing",
-    clients: "Mid-market DTC and Shopify Plus brands",
-    highlight: "E-commerce-native outsourcing with deep Shopify and Zendesk integration.",
+    industries: "Retail, ecommerce, DTC, subscription services, marketplaces",
+    strengths: "Comprehensive omnichannel delivery, unified customer view, domestic-only agents.",
+    weaknesses: "Mid-tier scale; less suited for Fortune 500 retail volumes.",
+    pricing: "Per-contact or hourly",
+    clients: "Mid-market DTC brands, subscription companies, omnichannel retailers",
+    highlight: "Comprehensive American omnichannel e-commerce support with unified customer view and domestic-only agents.",
   },
   {
     rank: 5,
-    name: "Ubiquity",
-    hq: "New York, New York",
-    founded: "2012",
-    website: "https://ubiquity.com",
-    bestFor: "Tech-enabled mid-market e-commerce & financial services CX",
+    name: "Call Center Staffing",
+    hq: "United States",
+    founded: "2005",
+    website: "#",
+    bestFor: "American e-commerce agent staffing & rapid peak-season deployment",
     description:
-      "Ubiquity is a mid-market CX outsourcer combining technology, people, and process design to deliver brand-aligned customer service. They serve e-commerce, fintech, and subscription brands with US, nearshore, and offshore delivery. Strong fit for mid-market e-commerce brands wanting a consulting-plus-operations partner.",
+      "Call Center Staffing specializes in rapidly sourcing, training, and deploying American e-commerce agents for retailers and DTC brands that need to scale their domestic CX operations quickly — especially heading into Black Friday, Cyber Monday, and the full holiday season. Whether a brand needs to 2-4x capacity for peak events, absorb a product launch volume, or build an entirely new US-based support team, Call Center Staffing provides pre-vetted American agents who can be operational within days.",
     services: [
-      "Omnichannel e-commerce support",
-      "Order management",
-      "Returns processing",
-      "AI-powered agent tooling",
-      "CX consulting",
+      "Rapid American e-commerce agent recruitment",
+      "US-based temporary & permanent staffing",
+      "Domestic workforce management & scheduling",
+      "American agent training for retail and commerce",
+      "Onshore overflow & surge capacity staffing for BFCM",
+      "US-wide remote agent network",
     ],
-    industries: "E-commerce, fintech, subscription, travel, tech",
-    strengths: "Tech-enabled CX, mid-market fit, consulting + operations model.",
-    weaknesses: "Mixed-shore delivery; smaller scale than global CX giants.",
-    pricing: "Hourly or per-contact; mid-market SOWs",
-    clients: "Mid-market DTC, fintech, subscription brands",
-    highlight: "Tech-enabled mid-market e-commerce CX with strong consulting integration.",
+    industries: "Retail, DTC, subscription commerce, seasonal brands, marketplaces",
+    strengths: "Fastest ramp for peak season, pre-vetted US agents, flexible deployment.",
+    weaknesses: "Staffing-first model — less vertically integrated for fully-managed programs.",
+    pricing: "Staffing markup on direct agent cost",
+    clients: "DTC brands scaling for BFCM, seasonal retailers, product-launch teams",
+    highlight: "Fastest American e-commerce staffing — trained US-based agents deployed in days to absorb BFCM and holiday surges.",
   },
   {
     rank: 6,
-    name: "Peak Support",
-    hq: "Cambridge, Massachusetts",
-    founded: "2015",
-    website: "https://www.peaksupport.io",
-    bestFor: "High-quality DTC and B2B e-commerce customer service",
+    name: "B2B Appointment Setting",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US-based B2B commerce sales outsourcing and wholesale lead gen",
     description:
-      "Peak Support is a US-based (with Philippines delivery option) customer support outsourcer focused on high-quality, brand-aligned CX for DTC, B2B e-commerce, and SaaS companies. Known for a culture-first agent model and strong Zendesk, Gorgias, and Intercom integration. Great fit for growing DTC brands that prioritize CX quality.",
+      "B2B Appointment Setting provides cost-effective, American-based sales outsourcing for e-commerce brands looking to grow their B2B, wholesale, or marketplace-seller pipeline. Their US-based agents conduct targeted outreach to American buyers and decision-makers, qualifying prospects and booking meetings that convert. The company focuses specifically on the American market, understanding regional business customs and the nuances of selling into US retailers and B2B commerce buyers.",
     services: [
-      "DTC customer service",
-      "B2B e-commerce CX",
-      "Helpdesk management",
-      "Social customer care",
-      "Subscription customer service",
+      "American-based B2B commerce sales programs",
+      "US-focused prospect research & targeting",
+      "Domestic buyer and retailer outreach",
+      "Onshore pipeline development & management",
+      "American market segmentation campaigns",
+      "US-based sales reporting & analytics",
     ],
-    industries: "DTC, B2B e-commerce, SaaS, subscription, travel",
-    strengths: "Quality-first agent culture, strong helpdesk integrations, US operations.",
-    weaknesses: "Primarily Philippines delivery, which may not suit US-only compliance needs.",
-    pricing: "Per-agent FTE; dedicated team model",
-    clients: "DTC brands, SaaS, subscription companies",
-    highlight: "Quality-first DTC customer support with strong brand alignment and helpdesk fluency.",
+    industries: "Wholesale, B2B commerce, SaaS for commerce, distribution",
+    strengths: "Affordable US-based B2B sales outsourcing, purpose-built for SMBs.",
+    weaknesses: "B2B-only; not for high-volume consumer CX.",
+    pricing: "Contingency, hourly, or per-appointment",
+    clients: "Wholesale brands, marketplace sellers, B2B commerce platforms",
+    highlight: "Affordable American B2B commerce sales outsourcing purpose-built for SMBs targeting US wholesale and retail buyers.",
   },
   {
     rank: 7,
-    name: "SupportNinja",
-    hq: "Austin, Texas",
-    founded: "2015",
-    website: "https://www.supportninja.com",
-    bestFor: "Scaling DTC, SaaS, and marketplace e-commerce support",
+    name: "Contact Center USA",
+    hq: "United States",
+    founded: "1992",
+    website: "/contact",
+    bestFor: "Patriotic US-only, omnichannel e-commerce customer support with peak-season scaling",
     description:
-      "SupportNinja is a US-headquartered customer support outsourcer with delivery in the Philippines and Colombia. They focus on scaling growing DTC, marketplace, and SaaS brands with dedicated brand-trained agents. Strong fit for venture-backed e-commerce companies scaling quickly.",
+      "Contact Center USA is a proudly American e-commerce call center company that has delivered 100% US-based customer support for over 30 years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence. Purpose-built for DTC brands, subscription commerce companies, marketplaces, and omnichannel retailers, Contact Center USA handles the full e-commerce customer lifecycle — pre-sale guidance, order management, shipping inquiries, returns and exchanges, warranty claims, subscription management, and proactive retention. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb holiday surges, and every program is supported by real-time CSAT dashboards, AI copilots, and integrations with Shopify, BigCommerce, Magento, Salesforce Commerce Cloud, Zendesk, Gorgias, and Kustomer.",
     services: [
-      "DTC & marketplace customer support",
-      "SaaS customer service",
-      "Back-office e-commerce operations",
-      "Omnichannel CX",
-      "Dedicated brand-trained teams",
+      "100% American workforce — no offshore agents",
+      "24/7 US-based omnichannel commerce support",
+      "Domestic returns, warranty, and order management",
+      "American peak-season & seasonal surge support",
+      "Onshore Shopify / Gorgias / Zendesk / Kustomer integration",
+      "Patriotic US-only service guarantee",
     ],
-    industries: "DTC, marketplaces, SaaS, subscription, travel, fintech",
-    strengths: "Fast scaling, growth-stage focus, strong brand alignment, US HQ.",
-    weaknesses: "Primarily offshore delivery, not a fit for US-only compliance programs.",
-    pricing: "Per-agent FTE; dedicated team model",
-    clients: "Venture-backed DTC and SaaS brands",
-    highlight: "Fast-scaling CX partner for venture-backed DTC, marketplaces, and SaaS.",
+    industries: "DTC brands, subscription commerce, marketplaces, omnichannel retail, fashion, beauty, home goods",
+    strengths: "30+ years of US operations, omnichannel fluency, rapid peak-season scaling, deep ecommerce platform integrations, PCI DSS certified.",
+    weaknesses: "Premium US pricing — offset by peak-season retention and CSAT lift.",
+    pricing: "Hourly ($22-$40 US), per-contact ($1.50-$4), or blended outcome-based",
+    clients: "Mid-market DTC brands, subscription box companies, omnichannel retailers, Shopify Plus merchants",
+    highlight: "30+ years of 100% American e-commerce customer service — never offshored a single contact, even during BFCM.",
   },
   {
     rank: 8,
-    name: "HelpSquad",
-    hq: "New York, New York",
-    founded: "2015",
-    website: "https://helpsquad.com",
-    bestFor: "24/7 live chat and voice for DTC e-commerce brands",
+    name: "Call Center Communications",
+    hq: "United States",
+    founded: "1988",
+    website: "#",
+    bestFor: "North American enterprise e-commerce call centers",
     description:
-      "HelpSquad provides 24/7 live chat, voice, and email customer service for DTC e-commerce brands on an affordable, subscription-style pricing model. Their specialty is brand-aligned chat support with fast deployment. Strong fit for SMB and mid-market DTC brands wanting always-on chat without enterprise overhead.",
+      "Call Center Communications operates large-scale American e-commerce call center operations designed for enterprise retailers and marketplaces that require significant domestic capacity. Their US-based delivery centers handle millions of customer interactions annually with the reliability, security, and performance standards that Fortune 500 retailers demand. The company maintains redundant American facilities to ensure business continuity during peak events and offers dedicated agent teams that become true extensions of their clients' brands.",
     services: [
-      "24/7 live chat outsourcing",
-      "Voice support for e-commerce",
-      "Email & ticket management",
-      "Social customer care",
-      "Order tracking & returns",
+      "Enterprise-scale American e-commerce CX",
+      "Dedicated US-based retail agent teams",
+      "Domestic multi-site redundancy for BFCM",
+      "American enterprise security & compliance",
+      "Onshore workforce analytics & optimization",
+      "US-based multilingual retail support",
     ],
-    industries: "DTC, SaaS, service businesses, subscription, consumer brands",
-    strengths: "24/7 coverage, affordable pricing, strong chat specialty, fast deployment.",
-    weaknesses: "Smaller scale; less suited for complex enterprise journeys or regulated industries.",
-    pricing: "Monthly subscription, per-agent, or per-conversation",
-    clients: "SMB and mid-market DTC brands",
-    highlight: "Affordable 24/7 live chat and voice support tuned for SMB e-commerce.",
+    industries: "Fortune 500 retail, enterprise marketplaces, omnichannel brands, consumer electronics",
+    strengths: "Enterprise scale, multi-site US redundancy, dedicated teams.",
+    weaknesses: "Enterprise-style processes feel rigid for mid-market DTC brands.",
+    pricing: "Enterprise SOWs",
+    clients: "Fortune 500 retailers, enterprise marketplaces, consumer electronics brands",
+    highlight: "Enterprise-grade American e-commerce infrastructure with multi-site US redundancy and dedicated retail teams.",
   },
   {
     rank: 9,
-    name: "Bobcares",
-    hq: "Wilmington, Delaware (US HQ, global delivery)",
-    founded: "2001",
-    website: "https://bobcares.com",
-    bestFor: "Technical customer support for e-commerce and hosting-adjacent brands",
+    name: "Business Process Outsourcing",
+    hq: "United States",
+    founded: "2006",
+    website: "#",
+    bestFor: "American digital-first commerce CX combining AI automation with US agents",
     description:
-      "Bobcares is a long-running customer support outsourcing company specializing in technical support for e-commerce, web hosting, and SaaS companies. Their agents handle live chat, helpdesk tickets, and technical troubleshooting. Strong fit for e-commerce brands with a technical product (hosting, software, devices).",
+      "Business Process Outsourcing brings a digital-first approach to American e-commerce customer experience, combining US-based human agents with AI-powered automation to deliver modern, efficient retail support. Their American team leverages advanced analytics, chatbot integration, and predictive customer insights to resolve WISMO, returns, and subscription issues faster while maintaining the personal touch that domestic shoppers expect. The company is at the forefront of blending American workforce quality with cutting-edge digital commerce CX technology.",
     services: [
-      "Technical customer support",
-      "Live chat operations",
-      "Helpdesk ticket management",
-      "E-commerce technical troubleshooting",
-      "Hosting & SaaS customer service",
+      "AI-enhanced American e-commerce support",
+      "US-based digital CX platform management",
+      "Domestic chatbot & virtual assistant deployment",
+      "American customer analytics & insights",
+      "Onshore process automation for returns and order support",
+      "US-based voice-of-customer programs",
     ],
-    industries: "Hosting, SaaS, e-commerce platforms, device/hardware DTC",
-    strengths: "Deep technical customer support DNA, 24/7 coverage, cost-effective.",
-    weaknesses: "Primarily offshore delivery; less suited for US-only compliance programs.",
-    pricing: "Per-agent or per-ticket models",
-    clients: "Hosting companies, SaaS, technical DTC brands",
-    highlight: "Technical customer support specialist ideal for e-commerce with technical products.",
+    industries: "Modern DTC, fintech commerce, digital-first retailers, SaaS commerce",
+    strengths: "Digital-first delivery, AI investment, US-based agents for complex escalations.",
+    weaknesses: "Less suited for traditional brick-and-mortar retail programs.",
+    pricing: "Hourly, per-outcome, or blended AI + agent",
+    clients: "Modern DTC brands, subscription commerce, marketplace sellers",
+    highlight: "Digital-first American e-commerce CX combining US-based agents with AI-powered automation and analytics.",
   },
   {
     rank: 10,
-    name: "Boldr",
-    hq: "Austin, Texas (US HQ with global delivery)",
-    founded: "2016",
-    website: "https://boldr.com",
-    bestFor: "Mission-driven DTC and impact-brand CX outsourcing",
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US enterprise commerce process outsourcing",
     description:
-      "Boldr is a B Corp-certified customer experience outsourcer with a mission-driven, ethical-employment model. They serve DTC, SaaS, and impact brands with voice, chat, email, and back-office CX from global delivery centers. Strong fit for mission-driven and impact-focused DTC brands that want ethically operated outsourcing.",
+      "The enterprise division of B2B Appointment Setting provides comprehensive American commerce process outsourcing for large retailers and marketplaces seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
     services: [
-      "DTC customer service",
-      "SaaS customer support",
-      "Back-office e-commerce operations",
-      "Trust & safety operations",
-      "Omnichannel CX",
+      "American managed commerce services",
+      "US-based enterprise process consulting",
+      "Domestic operations transformation programs",
+      "Onshore back-office consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
     ],
-    industries: "Mission-driven DTC, SaaS, impact brands, subscription commerce",
-    strengths: "B Corp certified, strong ethical-ops story, quality-first agent culture.",
-    weaknesses: "Offshore-dominant delivery; smaller scale than Tier 1 CX giants.",
-    pricing: "Per-agent FTE; dedicated team model",
-    clients: "Mission-driven DTC, impact brands, B Corp clients",
-    highlight: "B Corp-certified CX outsourcer aligned with mission-driven DTC brands.",
+    industries: "Enterprise retail, marketplaces, omnichannel commerce, consumer brands",
+    strengths: "Enterprise BPO depth, consulting + managed ops.",
+    weaknesses: "Enterprise-focused; not for SMB DTC brands.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise retailers, marketplaces, large consumer brands",
+    highlight: "Enterprise American commerce BPO combining consulting expertise with managed onshore operations.",
   },
 ];
 
@@ -277,10 +281,10 @@ export default function Top10EcommerceCallCenterContent() {
             <div className="lg:col-span-2">
               {/* Intro */}
               <p className="text-lg leading-relaxed text-gray-700">
-                <strong>E-commerce call center outsourcing</strong> has become one of the fastest-growing segments of the US BPO market, driven by the rise of DTC, subscription commerce, and marketplaces. With peak events like <strong>Black Friday, Cyber Monday, and the holiday season</strong> regularly generating 5-10x normal contact volume, e-commerce brands cannot afford to build a CX operation sized for peak. The smartest DTC and omnichannel retailers partner with specialized <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">e-commerce customer service outsourcing companies</Link> that provide elastic scaling, omnichannel fluency, and deep integration with Shopify, BigCommerce, Magento, Zendesk, Gorgias, and Kustomer.
+                <strong>E-commerce call center outsourcing</strong> has become one of the fastest-growing segments of the American BPO market, driven by the rise of DTC, subscription commerce, and marketplaces. With peak events like <strong>Black Friday, Cyber Monday, and the holiday season</strong> regularly generating 5-10x normal contact volume, e-commerce brands cannot afford to build a CX operation sized for peak. The smartest DTC and omnichannel retailers partner with specialized <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">American e-commerce customer service outsourcing companies</Link> that provide elastic scaling, omnichannel fluency, and deep integration with Shopify, BigCommerce, Magento, Zendesk, Gorgias, and Kustomer.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                In this 2026 guide, we rank the <strong>top 10 e-commerce call center companies in the USA</strong>, evaluated on peak-season scalability, omnichannel fluency, helpdesk and storefront integrations, agent quality, and client outcomes. Whether you run a <strong>fast-growth DTC brand</strong>, a <strong>subscription commerce company</strong>, a <strong>Shopify Plus merchant</strong>, or an <strong>omnichannel retailer</strong>, this list will help you find the right partner.
+                In this 2026 guide, we rank the <strong>top 10 American e-commerce call center companies</strong>, evaluated on peak-season scalability, omnichannel fluency, helpdesk and storefront integrations, agent quality, and client outcomes. Whether you run a <strong>fast-growth DTC brand</strong>, a <strong>subscription commerce company</strong>, a <strong>Shopify Plus merchant</strong>, or an <strong>omnichannel retailer</strong>, this list will help you find the right US-based partner.
               </p>
 
               {/* Key takeaways box */}
@@ -288,11 +292,11 @@ export default function Top10EcommerceCallCenterContent() {
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
                 <ul className="mt-3 space-y-2">
                   {[
-                    "Top e-commerce call centers compete on peak-season elasticity, omnichannel fluency, and helpdesk integrations",
+                    "Top American e-commerce call centers compete on peak-season elasticity, omnichannel fluency, and helpdesk integrations",
                     "US-based delivery wins on CSAT, retention, and brand alignment — offshore wins on raw cost only",
                     "Shopify, BigCommerce, Gorgias, Zendesk, and Kustomer native integrations are now standard",
                     "Outcome-based pricing (CSAT, retention, first-contact resolution) is rising fast",
-                    "AI copilots and chat automation now handle 40-60% of simple contacts at top providers",
+                    "AI copilots and chat automation now handle 40-60% of simple contacts at top American providers",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 flex-shrink-0 text-red mt-0.5" />
@@ -338,10 +342,10 @@ export default function Top10EcommerceCallCenterContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4 }}
-                  className={`mt-10 rounded-2xl border ${i === 0 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${i === 0 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -396,14 +400,23 @@ export default function Top10EcommerceCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  <a
-                    href={company.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
-                  >
-                    Visit Website <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
+                  {company.name === "Contact Center USA" ? (
+                    <Link
+                      href={company.website}
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
+                    >
+                      Visit Website <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={company.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
+                    >
+                      Visit Website <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
                 </motion.div>
               ))}
 
@@ -415,7 +428,7 @@ export default function Top10EcommerceCallCenterContent() {
               {/* What to Look For */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">What to Look For in an E-commerce Call Center Partner</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                E-commerce CX has unique requirements. Use this buyer checklist when evaluating <strong>e-commerce call center companies in the USA</strong>:
+                E-commerce CX has unique requirements. Use this buyer checklist when evaluating <strong>American e-commerce call center companies</strong>:
               </p>
               <ul className="mt-4 space-y-3">
                 {[
@@ -444,10 +457,10 @@ export default function Top10EcommerceCallCenterContent() {
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">E-commerce CX Trends for 2026</h2>
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
-                  { title: "AI-First Chat with Human Escalation", desc: "Top e-commerce brands now route simple WISMO (where-is-my-order) and return requests through AI chat, escalating to humans only for complex cases — cutting cost-per-contact by 40-60%." },
-                  { title: "Peak-Season Elastic Scaling", desc: "Leading providers guarantee 2-4x capacity for BFCM and holiday events without hidden surcharges, built on a mix of permanent US agents and pre-trained surge pools." },
-                  { title: "Pre-Sale CX as Conversion Driver", desc: "Modern DTC brands treat pre-sale chat and SMS support as a conversion channel. The top partners now report revenue lift, not just CSAT." },
-                  { title: "Social & SMS Customer Care", desc: "Customers increasingly contact brands via Instagram DM, TikTok comments, and SMS. Top outsourcers now handle these channels natively alongside traditional voice and email." },
+                  { title: "AI-First Chat with Human Escalation", desc: "Top American e-commerce brands now route simple WISMO (where-is-my-order) and return requests through AI chat, escalating to US-based humans only for complex cases — cutting cost-per-contact by 40-60%." },
+                  { title: "Peak-Season Elastic Scaling", desc: "Leading American providers guarantee 2-4x capacity for BFCM and holiday events without hidden surcharges, built on a mix of permanent US agents and pre-trained surge pools." },
+                  { title: "Pre-Sale CX as Conversion Driver", desc: "Modern DTC brands treat pre-sale chat and SMS support as a conversion channel. The top US partners now report revenue lift, not just CSAT." },
+                  { title: "Social & SMS Customer Care", desc: "Customers increasingly contact brands via Instagram DM, TikTok comments, and SMS. Top American outsourcers now handle these channels natively alongside traditional voice and email." },
                 ].map((trend, i) => (
                   <div key={i} className="rounded-xl border border-gray-100 bg-white p-5">
                     <h4 className="font-bold text-navy">{trend.title}</h4>
@@ -459,10 +472,10 @@ export default function Top10EcommerceCallCenterContent() {
               {/* Conclusion */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Conclusion</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                The <strong>e-commerce call center industry in the USA</strong> is being reshaped by AI, omnichannel expectations, and the need for peak-season elasticity. DTC, subscription, and omnichannel brands win when they partner with outsourcers that can absorb holiday surges, integrate natively with commerce and helpdesk platforms, and deliver brand-aligned CX at mid-market-friendly prices.
+                The <strong>American e-commerce call center industry</strong> is being reshaped by AI, omnichannel expectations, and the need for peak-season elasticity. DTC, subscription, and omnichannel brands win when they partner with US-based outsourcers that can absorb holiday surges, integrate natively with commerce and helpdesk platforms, and deliver brand-aligned CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> leads our 2026 e-commerce ranking by combining <strong>30+ years of US-based CX operations</strong>, rapid peak-season scaling, deep Shopify / BigCommerce / Zendesk / Gorgias integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">DTC customer service outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win BFCM on CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American e-commerce CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based CX operations</strong>, rapid peak-season scaling, deep Shopify / BigCommerce / Zendesk / Gorgias integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">DTC customer service outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win BFCM on CX.
               </p>
 
               {/* CTA */}
@@ -481,10 +494,10 @@ export default function Top10EcommerceCallCenterContent() {
 
               {[
                 { q: "What does an e-commerce call center company do?", a: "An e-commerce call center company handles customer support across voice, live chat, email, SMS, and social for DTC brands, subscription commerce companies, marketplaces, and omnichannel retailers. Services typically include order tracking, shipping inquiries, returns and exchanges, warranty processing, subscription management, pre-sale guidance, and peak-season surge support for events like Black Friday and Cyber Monday." },
-                { q: "How much does e-commerce call center outsourcing cost?", a: "US-based e-commerce call center outsourcing typically costs $22-$40 per agent-hour for voice, $1.50-$4 per contact for chat and email, and custom dedicated-team pricing ($2,500-$5,500 per FTE/month) for always-on brand-aligned teams. Offshore pricing is lower ($8-$15 per hour) but CSAT and retention impact is usually worse. Outcome-based pricing tied to CSAT or retention is rising fast at top providers." },
-                { q: "How do e-commerce call centers handle Black Friday and Cyber Monday surges?", a: "Top e-commerce call centers pre-train surge-pool agents, build elastic scaling into their contracts (usually 2-4x baseline), and combine human agents with AI chat automation to absorb holiday volume without degrading CSAT. The best providers guarantee no hidden peak-season surcharges and provide real-time dashboards during BFCM for minute-by-minute visibility." },
+                { q: "How much does e-commerce call center outsourcing cost?", a: "US-based e-commerce call center outsourcing typically costs $22-$40 per agent-hour for voice, $1.50-$4 per contact for chat and email, and custom dedicated-team pricing ($2,500-$5,500 per FTE/month) for always-on brand-aligned teams. Offshore pricing is lower ($8-$15 per hour) but CSAT and retention impact is usually worse. Outcome-based pricing tied to CSAT or retention is rising fast at top American providers." },
+                { q: "How do e-commerce call centers handle Black Friday and Cyber Monday surges?", a: "Top American e-commerce call centers pre-train surge-pool agents, build elastic scaling into their contracts (usually 2-4x baseline), and combine human agents with AI chat automation to absorb holiday volume without degrading CSAT. The best US-based providers guarantee no hidden peak-season surcharges and provide real-time dashboards during BFCM for minute-by-minute visibility." },
                 { q: "Should I use onshore or offshore e-commerce customer service?", a: "For premium DTC brands, subscription commerce, and high-AOV products, US-based delivery consistently wins on CSAT, retention, and brand alignment. For lower-margin, commoditized e-commerce, offshore or hybrid models can be cost-effective. Most growing DTC brands use a hybrid: US-based for complex and high-value contacts, offshore or AI for simple WISMO and self-service deflection." },
-                { q: "Which e-commerce call center integrates best with Shopify and Gorgias?", a: "Contact Center USA (#1) offers native integration with Shopify, BigCommerce, Magento, Gorgias, Zendesk, Kustomer, and Intercom — letting agents handle orders, returns, and customer history from a single pane of glass. Helplama, SupportNinja, and Peak Support also integrate well, particularly for dedicated-team engagements on Zendesk and Gorgias." },
+                { q: "Which e-commerce call center integrates best with Shopify and Gorgias?", a: "Contact Center USA (#7) offers native integration with Shopify, BigCommerce, Magento, Gorgias, Zendesk, Kustomer, and Intercom — letting US-based agents handle orders, returns, and customer history from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-team engagements across ecommerce platforms." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

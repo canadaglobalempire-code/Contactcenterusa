@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.contactcenterusa.com";
+  const baseUrl = "https://contactcenterusa.com";
 
   const routes = [
     "",
@@ -22,12 +22,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/medical-call-center-services",
     "/blog/nearshore-call-center-outsourcing",
     "/blog/onshore-vs-offshore-vs-nearshore",
+    "/blog/top-10-ai-call-center-companies-usa",
+    "/blog/top-10-answering-service-companies-usa",
+    "/blog/top-10-appointment-setting-companies-usa",
     "/blog/top-10-bpo-companies-in-usa",
     "/blog/top-10-customer-service-outsourcing-companies-usa",
     "/blog/top-10-debt-collection-bpo-companies-usa",
     "/blog/top-10-ecommerce-call-center-companies-usa",
     "/blog/top-10-financial-services-call-center-companies-usa",
+    "/blog/top-10-hvac-home-services-call-center-companies-usa",
+    "/blog/top-10-inbound-call-center-companies-usa",
+    "/blog/top-10-lead-generation-companies-usa",
+    "/blog/top-10-legal-intake-call-center-companies-usa",
+    "/blog/top-10-live-chat-outsourcing-companies-usa",
+    "/blog/top-10-multilingual-call-center-companies-usa",
+    "/blog/top-10-outbound-call-center-companies-usa",
+    "/blog/top-10-real-estate-call-center-companies-usa",
+    "/blog/top-10-saas-customer-support-companies-usa",
+    "/blog/top-10-small-business-call-center-companies-usa",
     "/blog/top-10-technical-support-outsourcing-companies-usa",
+    "/blog/top-10-telemarketing-companies-usa",
+    "/blog/top-10-virtual-receptionist-companies-usa",
     "/blog/top-15-healthcare-bpo-companies-usa",
     "/blog/top-15-insurance-bpo-companies-usa",
     "/call-center-services-austin",
@@ -106,9 +121,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/why-us",
   ];
 
+  const getPriority = (route: string): number => {
+    if (route === "") return 1.0;
+    if (["/services", "/solutions", "/industries", "/contact"].includes(route)) return 0.9;
+    if (route.startsWith("/services/") || route.startsWith("/solutions/")) return 0.8;
+    if (route.startsWith("/industries/")) return 0.8;
+    if (route.startsWith("/call-center-services-")) return 0.7;
+    if (route === "/blog") return 0.7;
+    if (route.startsWith("/blog/")) return 0.6;
+    if (["/about", "/why-us", "/case-studies", "/faq"].includes(route)) return 0.5;
+    return 0.4;
+  };
+
+  const getChangeFrequency = (
+    route: string
+  ): MetadataRoute.Sitemap[number]["changeFrequency"] => {
+    if (route === "") return "daily";
+    if (route.startsWith("/blog")) return "weekly";
+    if (route.startsWith("/services") || route.startsWith("/solutions")) return "monthly";
+    return "monthly";
+  };
+
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === "" ? "daily" : route.startsWith("/blog") ? "weekly" : "monthly",
+    changeFrequency: getChangeFrequency(route),
+    priority: getPriority(route),
   }));
 }

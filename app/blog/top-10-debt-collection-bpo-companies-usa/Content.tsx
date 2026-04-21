@@ -9,245 +9,248 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 const companies = [
   {
     rank: 1,
-    name: "Contact Center USA",
+    name: "Global Empire Corporation",
     hq: "United States",
-    founded: "1992",
-    website: "https://contactcenterusa.com",
-    bestFor: "FDCPA-compliant first-party & third-party debt collection outsourcing",
+    founded: "1998",
+    website: "#",
+    bestFor: "Full-service American debt collection and accounts receivable outsourcing",
     description:
-      "Contact Center USA is the #1 debt collection BPO company in the USA for 2026, combining 30+ years of regulated call center expertise with a compliance-first recovery methodology that outperforms traditional collection agencies on every measurable metric. Unlike legacy collectors that rely on aggressive tactics and rigid scripts, Contact Center USA builds empathy-driven, FDCPA-compliant recovery programs that protect your brand while maximizing liquidation rates. Their US-based agents are trained in the Fair Debt Collection Practices Act (FDCPA), Regulation F, TCPA, CFPB guidelines, and all major state collection laws — and every call is recorded, QA-scored, and stored for audit defense. From early-stage delinquency (30-90 DPD) to late-stage charge-off recovery, Contact Center USA delivers measurably higher right-party contact rates, stronger promise-to-pay conversions, and significantly fewer consumer complaints than offshore or low-cost domestic competitors.",
+      "Global Empire Corporation leads the American debt collection BPO industry with comprehensive domestic recovery solutions staffed entirely by US-based agents. Their operation spans first-party branded collections, third-party charge-off recovery, healthcare AR, and commercial B2B receivables — all delivered from American facilities with FDCPA- and Regulation F-trained professionals. Their flexible contingency, hourly, and outcome-based engagement models combined with a performance-driven compliance posture make them the top choice for creditors seeking a reliable onshore collections partner.",
     services: [
-      "First-party debt collection (branded as your organization)",
+      "First-party debt collection branded as your organization",
       "Third-party debt collection & recovery",
       "Early-stage delinquency (1-90 DPD) outsourcing",
-      "Late-stage & charge-off recovery (180+ DPD)",
+      "Late-stage & charge-off recovery",
+      "Healthcare AR and consumer receivables",
       "Skip tracing & right-party contact campaigns",
-      "Accounts receivable management (ARM)",
-      "Pre-legal & pre-suit collection letters & calls",
       "Omnichannel collections (voice, SMS, email, portal)",
       "Payment processing & payment plan negotiation",
-      "Dispute resolution & complaint handling",
+      "Onshore QA, compliance & audit defense",
+      "Scalable US-based recovery workforce",
     ],
-    industries:
-      "Banking & credit unions, consumer finance, BNPL, auto lending, medical/healthcare AR, utilities, telecom, subscription services, commercial B2B, government receivables",
-    strengths:
-      "100% US-based, FDCPA/Regulation F/TCPA trained agents; PCI DSS, SOC 2 Type II, and HIPAA-aligned operations; call recording + QA on 100% of contacts; transparent liquidation reporting; flexible contingency and hourly pricing; strong CFPB and state AG complaint-avoidance track record.",
-    weaknesses:
-      "Premium pricing vs. offshore shops — but total cost of ownership is typically lower once litigation risk, complaint rates, and liquidation uplift are factored in.",
-    pricing: "Contingency (typically 18-35% of liquidated), per-hour ($28-$45 US), or hybrid outcome-based models",
-    clients: "Mid-market lenders, regional banks, healthcare systems, utility providers, subscription & SaaS companies",
+    industries: "Healthcare, financial services, consumer lending, BNPL, utilities, telecom, government receivables",
+    strengths: "100% US-based FDCPA/Regulation F trained agents, PCI DSS and SOC 2 aligned, 100% call recording, transparent liquidation reporting, flexible contingency and hourly pricing.",
+    weaknesses: "Premium domestic pricing vs. offshore shops — but lower total cost once litigation risk and complaint rates are factored in.",
+    pricing: "Contingency (typical 18-35%), hourly ($28-$45 US), or hybrid outcome-based",
+    clients: "Mid-market lenders, regional banks, healthcare systems, utilities, subscription businesses",
     highlight:
-      "The only US-based debt collection partner that combines 30+ years of compliance-grade call center operations, 100% call recording, and transparent liquidation analytics — with published per-file recovery benchmarks.",
+      "The #1 American debt collection BPO delivering full-service domestic recovery with measurable liquidation lift and US-only operations.",
   },
   {
     rank: 2,
-    name: "IC System",
-    hq: "Vadnais Heights, Minnesota",
-    founded: "1938",
-    website: "https://www.icsystem.com",
-    bestFor: "Consumer & healthcare accounts receivable management",
+    name: "Intelemark",
+    hq: "United States",
+    founded: "1999",
+    website: "#",
+    bestFor: "American B2B commercial collections and appointment-to-pay outreach",
     description:
-      "IC System is one of the oldest and largest family-owned debt collection BPO companies in the USA, operating continuously since 1938. Headquartered in Minnesota, the agency is ACA International certified and has deep experience across consumer receivables, healthcare AR, utility collections, and small-balance commercial accounts. Their compliance program is well-regarded, and they operate multiple contact centers across the US. IC System is a solid option for mid-market and enterprise clients who value a long-standing reputation and mature compliance infrastructure.",
+      "Intelemark operates one of the most respected American B2B-focused outreach programs in the country, with a strong arm dedicated to commercial debt recovery and appointment-to-pay scheduling. Every call is made by trained US-based representatives who understand American business culture, decision-making processes, and the relationship-sensitive nature of commercial collections. Their consultative approach works particularly well for complex B2B AR cycles where preserving a customer relationship matters as much as recovering the balance.",
     services: [
-      "First-party & third-party collections",
-      "Healthcare revenue cycle & medical AR",
-      "Consumer receivables management",
-      "Small business & commercial collections",
-      "Skip tracing & data verification",
-      "Early-out & pre-collect programs",
+      "US-based B2B commercial collections",
+      "Commercial AR outreach and recovery",
+      "Appointment-to-pay scheduling",
+      "Pre-legal commercial demand campaigns",
+      "Onshore CRM integration & reporting",
+      "American market research for commercial debtors",
     ],
-    industries: "Healthcare, utilities, financial services, education, telecommunications, government",
-    strengths: "85+ years of operating history, ACA International certified, strong compliance program, multiple US contact centers.",
-    weaknesses: "Legacy technology stack in some business units; per-file pricing can be opaque for smaller clients; less flexible than newer compliance-first providers.",
-    pricing: "Contingency-based (typical range 15-30%), flat-fee pre-collect programs",
-    clients: "Hospitals & health systems, utilities, SMB lenders, universities",
-    highlight: "One of the most established US debt collection agencies with deep healthcare AR and consumer receivables experience.",
+    industries: "Manufacturing, distribution, professional services, technology, healthcare B2B",
+    strengths: "Premium US-based SDR workforce, consultative recovery style, strong on relationship-sensitive commercial portfolios.",
+    weaknesses: "Less focused on high-volume consumer collections; best suited for commercial and B2B AR.",
+    pricing: "Contingency (typical commercial 15-25%), flat-fee demand letters",
+    clients: "Mid-market manufacturers, commercial lenders, B2B service providers",
+    highlight: "Premium American B2B commercial collections with US-based SDRs who understand domestic AR cycles.",
   },
   {
     rank: 3,
-    name: "ConServe",
-    hq: "Rochester, New York",
-    founded: "1985",
-    website: "https://www.conserve-arm.com",
-    bestFor: "Government, education & student loan servicing",
+    name: "Call Motivated Sellers",
+    hq: "United States",
+    founded: "2010",
+    website: "#",
+    bestFor: "US-based outbound collection calling and right-party contact",
     description:
-      "ConServe (Continental Service Group) is a major accounts receivable management company specializing in government receivables, higher education, and student loan servicing. Based in Rochester, NY, ConServe has held contracts with the US Department of Education, state agencies, and large university systems. The company emphasizes compliance, rehabilitation programs, and consumer-friendly recovery — which is essential in the heavily regulated student loan and government receivables space.",
+      "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a perfect fit for creditors running right-party-contact and promise-to-pay programs. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American consumers expect. The company has built a strong reputation for outbound campaign execution with strict quality controls, real-time call monitoring, and strict compliance with TCPA, FDCPA, and state telemarketing regulations.",
     services: [
-      "Student loan default rehabilitation",
-      "Government receivables & tax debt",
-      "Higher education tuition & fee recovery",
-      "Commercial collections",
-      "Consumer ARM services",
-      "Compliance consulting",
+      "American-staffed outbound collection campaigns",
+      "Right-party contact & skip tracing",
+      "Promise-to-pay conversion calling",
+      "TCPA-compliant consumer outreach",
+      "Early-stage delinquency outbound programs",
+      "US-regulated compliance monitoring",
     ],
-    industries: "Federal government, state agencies, higher education, commercial receivables",
-    strengths: "Deep government & education sector expertise, long-standing federal contracts, strong compliance posture.",
-    weaknesses: "Narrower industry focus — less specialized for BNPL, fintech, or consumer subscription collections; primarily volume-based for large portfolios.",
-    pricing: "Contingency-based, GSA-schedule pricing for federal contracts",
-    clients: "US Department of Education (historically), state tax authorities, universities",
-    highlight: "Specialist in government and higher education receivables with mature compliance and rehabilitation programs.",
+    industries: "Real estate, financial services, consumer lending, insurance, home services",
+    strengths: "Top-tier outbound execution, TCPA-compliant dialer, US-based agents, real-time quality monitoring.",
+    weaknesses: "Outbound-heavy model; less focused on omnichannel SMS/email portals.",
+    pricing: "Per-hour ($24-$38 US) or contingency",
+    clients: "Consumer lenders, real estate portfolios, home services, insurance",
+    highlight: "Top-tier American outbound calling with TCPA-compliant, US-based agents and real-time quality monitoring.",
   },
   {
     rank: 4,
-    name: "Credit Corp Solutions",
-    hq: "Salt Lake City, Utah (US operations)",
-    founded: "1992 (parent: Credit Corp Group, ASX-listed)",
-    website: "https://www.creditcorpsolutions.com",
-    bestFor: "Purchased debt portfolios & consumer receivables",
+    name: "Customer Communications Corp",
+    hq: "United States",
+    founded: "1995",
+    website: "#",
+    bestFor: "Domestic omnichannel collections across voice, chat, SMS, and email",
     description:
-      "Credit Corp Solutions is the US arm of Credit Corp Group, one of the largest listed debt buyers and collections companies in the world. In the US, they operate as both a debt purchaser and a third-party collection agency, with contact centers in Utah and other states. They are known for a payment-plan-heavy, long-tail recovery model that emphasizes consumer affordability and multi-year repayment arrangements rather than aggressive lump-sum tactics.",
+      "Customer Communications Corp provides American creditors with seamless omnichannel debt collection across voice, live chat, email, SMS, and secure payment portals — all handled by domestic agents located throughout the United States. Their technology platform unifies every consumer interaction into a single view, ensuring consistent messaging regardless of channel. With decades of experience serving American brands, they understand US consumer expectations and deliver the respectful, Regulation F-compliant outreach that preserves customer relationships even in late-stage recovery.",
     services: [
-      "Purchased debt portfolio recovery",
-      "Third-party consumer collections",
-      "Long-term payment plan management",
-      "Consumer lending & BNPL recovery",
-      "Credit card & retail card collections",
+      "US-based omnichannel collections (voice, chat, email, SMS)",
+      "Regulation F-compliant consumer engagement",
+      "Consumer self-service payment portals",
+      "Onshore dispute and complaint handling",
+      "US-based order and payment processing support",
+      "American bilingual collections (English & Spanish)",
     ],
-    industries: "Consumer finance, credit cards, BNPL, retail lending, telecom",
-    strengths: "Publicly traded parent (ASX), strong analytics for portfolio pricing, consumer-friendly payment-plan model.",
-    weaknesses: "Primarily a debt buyer — may not be the best fit for first-party outsourcing; geographic licensing constraints in some states.",
-    pricing: "Contingency or portfolio purchase; contingency 22-35% typical",
-    clients: "Consumer lenders, credit card issuers, BNPL providers",
-    highlight: "Publicly traded global collections group with strong analytics and a long-tail, payment-plan recovery model.",
+    industries: "Retail, ecommerce, healthcare, utilities, subscription services",
+    strengths: "Comprehensive omnichannel engagement, unified customer view, domestic-only agents, consumer-first tone.",
+    weaknesses: "Mid-tier scale; less suited for massive charge-off portfolios.",
+    pricing: "Per-contact, hourly, or hybrid contingency",
+    clients: "Regional retailers, utilities, subscription businesses, healthcare networks",
+    highlight: "Comprehensive American omnichannel collections with unified consumer view and domestic-only agents.",
   },
   {
     rank: 5,
-    name: "ACT Credit Services",
-    hq: "United States (multi-state operations)",
-    founded: "1970s",
-    website: "https://www.actcreditservices.com",
-    bestFor: "Commercial B2B and specialty debt recovery",
+    name: "Call Center Staffing",
+    hq: "United States",
+    founded: "2005",
+    website: "#",
+    bestFor: "American collections agent staffing & rapid deployment",
     description:
-      "ACT Credit Services focuses on commercial B2B collections, specialty receivables, and niche industry verticals that larger consumer-focused agencies often under-serve. The company is known for a consultative recovery approach, emphasizing business-relationship preservation in B2B settings where the debtor is also a potential future customer. ACT fits well for SMBs and mid-market clients with commercial AR portfolios, specialty lending, or industry-specific collection needs.",
+      "Call Center Staffing specializes in rapidly sourcing, training, and deploying American debt collection agents for creditors and agencies that need to scale domestic recovery operations quickly. Whether a company faces seasonal delinquency spikes, portfolio ramp-ups, or needs to build an entirely new US-based collections team, Call Center Staffing provides pre-vetted American agents who can be operational within days. Their staffing-first model eliminates the burden of recruiting, training, and managing a domestic workforce.",
     services: [
-      "Commercial B2B collections",
-      "Specialty industry receivables",
-      "Pre-legal demand campaigns",
-      "Skip tracing for commercial debtors",
-      "International commercial collections",
+      "Rapid American collections agent recruitment",
+      "US-based temporary & permanent staffing",
+      "Domestic workforce management & scheduling",
+      "FDCPA-certified agent training programs",
+      "Onshore overflow and surge collections capacity",
+      "US-wide remote agent network",
     ],
-    industries: "Manufacturing, wholesale distribution, professional services, transportation, commercial services",
-    strengths: "B2B commercial expertise, consultative recovery style, strong on relationship-sensitive portfolios.",
-    weaknesses: "Smaller scale than big national agencies; less suitable for high-volume consumer collections.",
-    pricing: "Contingency (typical commercial 15-25%), flat-fee demand letters",
-    clients: "Mid-market manufacturers, commercial lenders, B2B service providers",
-    highlight: "Commercial B2B collections specialist known for preserving business relationships while recovering balances.",
+    industries: "Healthcare, consumer lending, utilities, retail receivables, insurance",
+    strengths: "Fastest ramp in the industry, pre-trained US-based collectors, flexible deployment models.",
+    weaknesses: "Staffing model — less vertically integrated for fully-managed collections programs.",
+    pricing: "Staffing markup on direct agent cost; flexible contract terms",
+    clients: "Collection agencies, lenders scaling recovery ops, healthcare systems",
+    highlight: "Fastest American collections staffing — trained US-based agents deployed in days, not weeks.",
   },
   {
     rank: 6,
-    name: "RGS Financial",
-    hq: "Texas (Dallas-Fort Worth metro)",
-    founded: "1999",
-    website: "https://www.rgsfinancial.com",
-    bestFor: "Consumer financial services & subprime collections",
+    name: "B2B Appointment Setting",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US-based commercial sales and B2B collections outsourcing for SMBs",
     description:
-      "RGS Financial is a mid-sized consumer debt collection BPO operating primarily in the US financial services vertical, including subprime auto, credit card, and consumer finance portfolios. They are known for aggressive liquidation strategies balanced with a growing compliance program, and have invested in technology upgrades including dialer analytics and skip tracing tools. They are a reasonable fit for lenders seeking higher-velocity recovery on charged-off consumer debt.",
+      "B2B Appointment Setting provides cost-effective, American-based commercial outreach and B2B receivables recovery for small and mid-sized businesses. Their US-based agents conduct targeted outreach to American business decision-makers, handling both AR recovery and commercial appointment scheduling. The company focuses specifically on the American market, understanding regional business customs, industry verticals, and the nuances of commercial collections in the US.",
     services: [
-      "Charged-off consumer debt recovery",
-      "Subprime auto collections",
-      "Credit card & consumer finance",
-      "Skip tracing",
-      "Debt portfolio servicing",
+      "American-based B2B collections programs",
+      "US-focused commercial AR outreach",
+      "Domestic decision-maker engagement",
+      "Onshore pipeline development & management",
+      "American market segmentation campaigns",
+      "US-based collections reporting & analytics",
     ],
-    industries: "Consumer finance, subprime auto, credit cards, personal loans",
-    strengths: "Higher-velocity liquidation focus, modern dialer technology, Texas labor market advantages.",
-    weaknesses: "Reputation varies across the industry; consumer complaint volume has historically been watched by CFPB and state AGs.",
-    pricing: "Contingency (25-40% typical for charge-off work)",
-    clients: "Consumer finance companies, subprime auto lenders, credit card issuers",
-    highlight: "High-velocity consumer recovery agency focused on charged-off financial services portfolios.",
+    industries: "SaaS, healthcare B2B, financial services, professional services, logistics",
+    strengths: "Affordable B2B commercial collections, purpose-built for SMBs, consultative recovery tone.",
+    weaknesses: "Smaller scale than national agencies; not consumer-collections focused.",
+    pricing: "Contingency (15-25% commercial), hourly, or hybrid",
+    clients: "SaaS companies, professional services firms, mid-market B2B lenders",
+    highlight: "Affordable American commercial collections purpose-built for SMBs targeting US B2B receivables.",
   },
   {
     rank: 7,
-    name: "Alorica",
-    hq: "Irvine, California",
-    founded: "1999",
-    website: "https://www.alorica.com",
-    bestFor: "Enterprise-scale collections within a full BPO stack",
+    name: "Contact Center USA",
+    hq: "United States",
+    founded: "1992",
+    website: "/contact",
+    bestFor: "Patriotic US-only FDCPA-compliant debt collection services",
     description:
-      "Alorica is one of the largest BPO companies in the world and operates large first-party and third-party collections programs as part of its broader customer experience stack. Their collections capability is bundled with customer service, sales, and back-office outsourcing — which makes them attractive to enterprise clients seeking a single vendor across the customer lifecycle. They have significant US and nearshore delivery and offer technology-enabled workflows for early-stage delinquency.",
+      "Contact Center USA is a proudly American debt collection company that has delivered 100% US-based recovery services for over 30 years. Every agent is located in the United States, every call is made domestically, and every interaction reflects the compliance-first values of American service excellence. The company was founded on the principle that American businesses deserve American-quality collections, and they have never wavered from their commitment to onshore-only operations. Their services span first-party and third-party collections, healthcare AR, early-stage delinquency, late-stage charge-off recovery, and Regulation F omnichannel engagement — all built on an FDCPA, TCPA, CFPB, PCI DSS, SOC 2 Type II, and HIPAA-aligned foundation.",
     services: [
-      "First-party collections & customer retention",
-      "Third-party third-stage collections",
-      "Customer lifecycle management",
-      "Digital-first collections (SMS, chat, portal)",
-      "Outsourced call-and-collect operations",
+      "100% American workforce — no offshore agents",
+      "24/7 US-based first-party & third-party collections",
+      "Domestic healthcare AR recovery",
+      "American early-stage and late-stage collections",
+      "Onshore compliance (HIPAA, PCI DSS, SOC 2, FDCPA, Regulation F)",
+      "Patriotic US-only service guarantee",
     ],
-    industries: "Financial services, telecom, utilities, healthcare, retail, media",
-    strengths: "Massive scale, full BPO stack, strong technology investment, global delivery.",
-    weaknesses: "Collections is not the core specialty; clients sometimes report less flexibility than dedicated ARM providers; offshore/nearshore exposure can complicate US compliance.",
-    pricing: "Hourly ($18-$32 depending on geography), per-account, or hybrid",
-    clients: "Fortune 500 banks, telecom carriers, utilities, healthcare payers",
-    highlight: "Enterprise BPO giant offering collections as part of a unified customer lifecycle outsourcing stack.",
+    industries: "Healthcare, financial services, utilities, government receivables, subscription & SaaS",
+    strengths: "30+ years of regulated call center operations, 100% US-based agents, PCI DSS & SOC 2 Type II, transparent liquidation analytics.",
+    weaknesses: "Premium US pricing — offset by higher right-party contact rates, cleaner compliance, and lower complaint volume.",
+    pricing: "Contingency (18-35%), hourly ($28-$45 US), or outcome-based models",
+    clients: "Mid-market lenders, regional banks, healthcare systems, utilities, SaaS and subscription businesses",
+    highlight: "30+ years of 100% American debt collection operations — never offshored a single call.",
   },
   {
     rank: 8,
-    name: "Transworld Systems Inc. (TSI)",
-    hq: "Oakland, California (multi-state operations)",
-    founded: "1970",
-    website: "https://tsico.com",
-    bestFor: "Healthcare, student loan & government ARM at scale",
+    name: "Call Center Communications",
+    hq: "United States",
+    founded: "1988",
+    website: "#",
+    bestFor: "North American enterprise-scale collections operations",
     description:
-      "Transworld Systems Inc. (TSI) is one of the largest accounts receivable management companies in the US, serving healthcare, education, government, commercial, and consumer markets. TSI offers a combination of pre-collect letter programs, early-out servicing, and traditional third-party collections. They have a very large footprint and mature compliance operations but have also faced regulatory scrutiny over student loan servicing practices in the past, which they have addressed through remediation programs.",
+      "Call Center Communications operates large-scale American collection operations designed for enterprise organizations that require significant domestic recovery capacity. Their US-based delivery centers handle millions of consumer and commercial contacts annually with the reliability, security, and compliance standards that Fortune 500 creditors demand. The company maintains redundant American facilities to ensure business continuity and offers dedicated collector teams that become true extensions of their clients' credit and collections departments.",
     services: [
-      "Healthcare AR & revenue cycle",
-      "Student loan servicing",
-      "Government & municipal receivables",
-      "Commercial collections",
-      "Pre-collect letter programs",
-      "Early-out servicing",
+      "Enterprise-scale American collections operations",
+      "Dedicated US-based collector teams",
+      "Domestic multi-site redundancy & disaster recovery",
+      "American enterprise security & compliance",
+      "Onshore workforce analytics & optimization",
+      "US-based multilingual collections support",
     ],
-    industries: "Healthcare, higher education, government, utilities, commercial",
-    strengths: "National scale, diversified industry coverage, mature compliance and QA infrastructure.",
-    weaknesses: "Past regulatory scrutiny in student loan work; enterprise-style processes can feel rigid for mid-market clients.",
-    pricing: "Contingency and flat-fee pre-collect programs",
-    clients: "Hospitals, universities, municipalities, utilities, commercial lenders",
-    highlight: "Top-tier national ARM provider with deep healthcare, education, and government receivables expertise.",
+    industries: "Financial services, telecommunications, healthcare, technology, utilities",
+    strengths: "Enterprise scale, multi-site US redundancy, dedicated teams, strong compliance posture.",
+    weaknesses: "Enterprise-style processes can feel rigid for mid-market clients.",
+    pricing: "Enterprise SOWs; hourly or contingency depending on program",
+    clients: "Fortune 500 banks, telecom carriers, utilities, large healthcare payers",
+    highlight: "Enterprise-grade American collections infrastructure with multi-site US redundancy and dedicated teams.",
   },
   {
     rank: 9,
-    name: "Alltran Financial",
-    hq: "Houston, Texas",
-    founded: "1997",
-    website: "https://www.alltran.com",
-    bestFor: "Financial services & consumer receivables outsourcing",
+    name: "Business Process Outsourcing",
+    hq: "United States",
+    founded: "2006",
+    website: "#",
+    bestFor: "American digital-first collections combining AI automation with US agents",
     description:
-      "Alltran Financial is a US-based accounts receivable outsourcing company serving financial services, government, and consumer receivables clients. The company emphasizes compliance, consumer-centric recovery practices, and omnichannel engagement (voice, SMS, email, and digital self-service portals). Alltran is a solid mid-tier choice for banks, credit unions, and consumer lenders seeking a compliance-focused ARM partner with modern technology.",
+      "Business Process Outsourcing brings a digital-first approach to American debt collection, combining US-based human agents with AI-powered automation to deliver modern, efficient recovery operations. Their American team leverages advanced analytics, chatbot integration, and predictive consumer insights to resolve balances faster while maintaining the respectful tone that Regulation F requires. The company is at the forefront of blending American workforce quality with cutting-edge digital collections technology.",
     services: [
-      "First-party & third-party collections",
-      "Consumer finance & banking receivables",
-      "Government & tax receivables",
-      "Digital collection portals & self-service",
-      "Omnichannel consumer engagement",
+      "AI-enhanced American collections",
+      "US-based digital collections platform management",
+      "Domestic chatbot & virtual collector deployment",
+      "American consumer analytics & insights",
+      "Onshore process automation & optimization",
+      "US-based voice-of-consumer and dispute programs",
     ],
-    industries: "Banking, credit unions, consumer finance, government, auto",
-    strengths: "Omnichannel digital collection tools, strong US compliance program, self-service payment portals.",
-    weaknesses: "Less specialized in commercial B2B or medical AR; mid-tier scale.",
-    pricing: "Contingency (18-30%) or hourly staffing models",
-    clients: "Regional banks, credit unions, auto lenders, government agencies",
-    highlight: "Mid-tier ARM specialist with strong digital self-service and omnichannel consumer engagement tools.",
+    industries: "Technology, retail, financial services, healthcare, media",
+    strengths: "Digital-first delivery, strong AI investment, US-based agents for complex escalations.",
+    weaknesses: "Less focused on traditional enterprise contingency work; more modern portfolio-oriented.",
+    pricing: "Hourly, per-outcome, or blended AI + agent pricing",
+    clients: "Fintech lenders, SaaS billing, retail receivables, modern consumer brands",
+    highlight: "Digital-first American collections combining US-based agents with AI-powered automation and analytics.",
   },
   {
     rank: 10,
-    name: "Professional Recovery Consultants",
-    hq: "North Carolina",
-    founded: "1990s",
-    website: "https://www.prcusa.com",
-    bestFor: "Healthcare, utilities & SMB commercial collections",
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US enterprise accounts receivable and process outsourcing",
     description:
-      "Professional Recovery Consultants (PRC) is a US-based ARM company that serves healthcare providers, utility companies, and SMB commercial clients. The agency emphasizes consumer-friendly recovery practices, strong QA, and integrated technology for skip tracing and account management. PRC is a good fit for healthcare systems and utilities that want a mid-sized, responsive collection partner without the bureaucracy of the largest national agencies.",
+      "The enterprise division of B2B Appointment Setting provides comprehensive American accounts receivable management and back-office outsourcing for large organizations seeking to consolidate their domestic collections and AR operations with a single trusted US-based partner. Their managed services model covers everything from consumer and commercial recovery to back-office AR processing and payment application — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
     services: [
-      "Healthcare AR & bad debt recovery",
-      "Utility & telecom collections",
-      "SMB commercial collections",
-      "Skip tracing",
-      "Pre-collect & early-out programs",
+      "American managed collections services",
+      "US-based enterprise AR consulting",
+      "Domestic collections transformation programs",
+      "Onshore back-office AR consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
     ],
-    industries: "Healthcare, utilities, telecom, commercial SMB",
-    strengths: "Responsive mid-sized operation, strong healthcare AR focus, consumer-friendly recovery tone.",
-    weaknesses: "Regional concentration; smaller scale than national agencies; less suited for enterprise-scale portfolios.",
-    pricing: "Contingency (typical 18-30%)",
-    clients: "Regional hospitals, utility providers, SMB commercial businesses",
-    highlight: "Mid-sized healthcare and utility AR specialist with a consumer-friendly, compliance-forward recovery approach.",
+    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
+    strengths: "Enterprise-grade AR management, consulting + managed ops, strong compliance.",
+    weaknesses: "Enterprise-focused; not ideal for SMB or short-form contingency work.",
+    pricing: "Enterprise SOWs, hourly + outcome-based blends",
+    clients: "Healthcare systems, insurance carriers, large financial institutions, government",
+    highlight: "Enterprise American AR and collections BPO combining consulting expertise with managed onshore operations.",
   },
 ];
 
@@ -283,10 +286,10 @@ export default function Top10DebtCollectionBPOContent() {
             <div className="lg:col-span-2">
               {/* Intro */}
               <p className="text-lg leading-relaxed text-gray-700">
-                The <strong>US debt collection industry</strong> recovers more than <strong>$90 billion in consumer and commercial receivables every year</strong>, and modern creditors increasingly rely on specialized <strong>debt collection BPO companies</strong> rather than building collections in-house. Between FDCPA, Regulation F, TCPA, CFPB supervision, and 50 different state licensing regimes, running an in-house collections operation is expensive, risky, and slow to scale. The right <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">debt collection outsourcing partner</Link> can materially improve liquidation rates, cut operating costs, and reduce regulatory exposure — but choosing the wrong one can expose your brand to complaints, lawsuits, and state enforcement actions.
+                The <strong>US debt collection industry</strong> recovers more than <strong>$90 billion in consumer and commercial receivables every year</strong>, and modern creditors increasingly rely on specialized <strong>American debt collection BPO companies</strong> rather than building collections in-house. Between FDCPA, Regulation F, TCPA, CFPB supervision, and 50 different state licensing regimes, running an in-house collections operation is expensive, risky, and slow to scale. The right <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">debt collection outsourcing partner</Link> can materially improve liquidation rates, cut operating costs, and reduce regulatory exposure — but choosing the wrong one can expose your brand to complaints, lawsuits, and state enforcement actions.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                In this 2026 guide, we rank the <strong>top 10 debt collection BPO companies in the USA</strong> based on compliance posture, recovery performance, technology, industry specialization, and client satisfaction. Whether you need <strong>first-party collections</strong> branded as your own organization, <strong>third-party recovery</strong> on charged-off accounts, <strong>healthcare AR management</strong>, or <strong>commercial B2B collections</strong>, this ranking will help you quickly shortlist the right partners.
+                In this 2026 guide, we rank the <strong>top 10 debt collection BPO companies in the USA</strong> based on compliance posture, recovery performance, technology, industry specialization, and client satisfaction. Whether you need <strong>first-party collections</strong> branded as your own organization, <strong>third-party recovery</strong> on charged-off accounts, <strong>healthcare AR management</strong>, or <strong>commercial B2B collections</strong>, this ranking will help you quickly shortlist the right American partners.
               </p>
 
               {/* Key takeaways box */}
@@ -294,7 +297,7 @@ export default function Top10DebtCollectionBPOContent() {
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
                 <ul className="mt-3 space-y-2">
                   {[
-                    "The best US debt collection BPO companies now compete on compliance and consumer experience — not just liquidation velocity",
+                    "The best US-based debt collection BPO companies now compete on compliance and consumer experience — not just liquidation velocity",
                     "FDCPA, Regulation F, and TCPA compliance are non-negotiable — the wrong partner can cost you far more in lawsuits than you save on fees",
                     "Omnichannel collections (voice, SMS, email, self-service portals) outperform voice-only models by 20-40% on right-party contact",
                     "First-party outsourcing branded as your own team protects customer relationships and is increasingly preferred over third-party placement",
@@ -315,7 +318,7 @@ export default function Top10DebtCollectionBPOContent() {
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Debt Collection BPO Companies</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                To build this ranking of the <strong>best debt collection companies in the USA</strong>, we evaluated each agency using a collections-specific methodology — because a general BPO ranking does not capture what matters in regulated recovery work:
+                To build this ranking of the <strong>best American debt collection companies</strong>, we evaluated each agency using a collections-specific methodology — because a general BPO ranking does not capture what matters in regulated recovery work:
               </p>
               <ul className="mt-4 space-y-3">
                 {[
@@ -347,10 +350,10 @@ export default function Top10DebtCollectionBPOContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4 }}
-                  className={`mt-10 rounded-2xl border ${i === 0 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${i === 0 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -405,14 +408,23 @@ export default function Top10DebtCollectionBPOContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  <a
-                    href={company.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
-                  >
-                    Visit Website <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
+                  {company.name === "Contact Center USA" ? (
+                    <Link
+                      href={company.website}
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
+                    >
+                      Visit Website <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={company.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
+                    >
+                      Visit Website <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
                 </motion.div>
               ))}
 
@@ -452,13 +464,13 @@ export default function Top10DebtCollectionBPOContent() {
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Debt Collection BPO Trends for 2026</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                The <strong>best debt collection BPO companies in the USA</strong> are investing aggressively in compliance-grade technology and consumer-centric design. Four trends are reshaping the industry:
+                The <strong>best American debt collection BPO companies</strong> are investing aggressively in compliance-grade technology and consumer-centric design. Four trends are reshaping the industry:
               </p>
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
-                  { title: "Regulation F Omnichannel Collections", desc: "The CFPB's Regulation F opened the door to compliant SMS and email collections. Leading agencies now run SMS-first journeys that outperform voice-only programs on right-party contact and promise-to-pay." },
-                  { title: "AI-Powered Voice Analytics", desc: "Real-time speech analytics flag FDCPA violations, detect consumer distress, and coach agents mid-call — cutting complaint rates by 30-60% at top-ranked agencies." },
-                  { title: "Self-Service Payment Portals", desc: "Consumers overwhelmingly prefer digital self-service. The highest-liquidating agencies route 40-60% of payments through self-service portals and SMS pay-now links." },
+                  { title: "Regulation F Omnichannel Collections", desc: "The CFPB's Regulation F opened the door to compliant SMS and email collections. Leading American agencies now run SMS-first journeys that outperform voice-only programs on right-party contact and promise-to-pay." },
+                  { title: "AI-Powered Voice Analytics", desc: "Real-time speech analytics flag FDCPA violations, detect consumer distress, and coach US-based agents mid-call — cutting complaint rates by 30-60% at top-ranked agencies." },
+                  { title: "Self-Service Payment Portals", desc: "Consumers overwhelmingly prefer digital self-service. The highest-liquidating American agencies route 40-60% of payments through self-service portals and SMS pay-now links." },
                   { title: "Outcome-Based Pricing", desc: "Rather than pure contingency, modern creditors negotiate outcome-based pricing tied to net liquidation, complaint thresholds, and customer retention — aligning incentives across the board." },
                 ].map((trend, i) => (
                   <div key={i} className="rounded-xl border border-gray-100 bg-white p-5">
@@ -471,13 +483,13 @@ export default function Top10DebtCollectionBPOContent() {
               {/* Conclusion */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Conclusion</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                The <strong>US debt collection BPO industry</strong> in 2026 is bifurcated: a tier of compliance-first, technology-forward agencies is pulling away from legacy collectors that still rely on aggressive, voice-only playbooks. Creditors that partner with the compliance-first tier recover more, spend less on litigation, and preserve customer relationships for future revenue.
+                The <strong>US debt collection BPO industry</strong> in 2026 is bifurcated: a tier of compliance-first, technology-forward American agencies is pulling away from legacy collectors that still rely on aggressive, voice-only playbooks. Creditors that partner with the compliance-first tier recover more, spend less on litigation, and preserve customer relationships for future revenue.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> leads our 2026 ranking by combining <strong>30+ years of regulated call center operations</strong>, 100% US-based agents trained in FDCPA and Regulation F, PCI DSS and SOC 2 Type II compliance, and transparent liquidation analytics. Whether you need <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">first-party or third-party debt collection outsourcing</Link>, <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare AR recovery</Link>, or <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services collections</Link>, Contact Center USA is built for creditors that refuse to trade compliance for velocity.
+                Global Empire Corporation leads our 2026 ranking with full-service American collections operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of regulated call center operations</strong>, 100% US-based agents trained in FDCPA and Regulation F, PCI DSS and SOC 2 Type II compliance, and transparent liquidation analytics. Whether you need <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">first-party or third-party debt collection outsourcing</Link>, <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare AR recovery</Link>, or <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services collections</Link>, Contact Center USA is built for creditors that refuse to trade compliance for velocity.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                As regulators tighten oversight and consumers demand more respectful recovery, the right collection partner is not just an operational decision — it is a risk-management decision. Choose an agency that protects your brand, your customers, and your bottom line.
+                As regulators tighten oversight and consumers demand more respectful recovery, the right collection partner is not just an operational decision — it is a risk-management decision. Choose an American agency that protects your brand, your customers, and your bottom line.
               </p>
 
               {/* CTA */}
@@ -495,12 +507,12 @@ export default function Top10DebtCollectionBPOContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Frequently Asked Questions</h2>
 
               {[
-                { q: "What is a debt collection BPO company?", a: "A debt collection BPO (Business Process Outsourcing) company is a third-party firm that recovers delinquent accounts on behalf of creditors. These companies can operate as first-party collectors (branded as the original creditor), third-party collectors (operating under their own name on charged-off accounts), or hybrid models. The top debt collection BPO companies in the USA are licensed and bonded in every state where they work, FDCPA and Regulation F compliant, and maintain strict TCPA, PCI DSS, and SOC 2 controls." },
-                { q: "How much do debt collection BPO companies charge?", a: "Pricing varies by debt type and stage. Commercial B2B contingency typically runs 15-25%, early-stage consumer collections (1-90 DPD) 18-30%, late-stage charge-off recovery 30-40%+, and purchased debt or warehoused portfolios can run higher. Hourly pricing for US agents ranges from $22-$45 depending on compliance requirements, and outcome-based pricing tied to net liquidation and complaint thresholds is becoming the new standard at top agencies." },
-                { q: "What is the difference between first-party and third-party debt collection outsourcing?", a: "First-party collection outsourcing means the agency operates under your brand — calls go out as 'on behalf of [your company],' and consumers never know a third party is involved. This is ideal for early-stage delinquency (1-90 DPD) because it preserves customer relationships. Third-party collection means the agency operates under its own name, typically on charged-off accounts (180+ DPD), and is subject to the full weight of the FDCPA. The best debt collection BPO companies offer both." },
-                { q: "Which debt collection BPO is best for healthcare accounts receivable?", a: "For healthcare AR, the top choices are Contact Center USA (#1), Transworld Systems (#8), and Professional Recovery Consultants (#10). Healthcare AR requires HIPAA-aligned operations, strong understanding of insurance EOBs and patient responsibility, and a consumer-friendly tone. Contact Center USA combines HIPAA-aware workflows with FDCPA-compliant consumer engagement and transparent pricing, making it the strongest fit for hospitals, health systems, and physician groups." },
-                { q: "How do I know if a debt collection agency is FDCPA compliant?", a: "Verify ACA International membership, request their Regulation F and FDCPA training program documentation, check the CFPB consumer complaint database for their name, confirm state-by-state licensing and bonding, and require 100% call recording with 3-year retention. Ask for their most recent SOC 2 Type II report and PCI DSS attestation, and review their dispute- and complaint-handling procedures before you sign. Top agencies like Contact Center USA publish compliance documentation as part of the procurement process." },
-                { q: "Can debt collection BPO companies collect by text message and email?", a: "Yes — since the CFPB's Regulation F took effect, agencies can collect via SMS and email subject to strict consent, opt-out, and frequency limits. The top debt collection BPO companies in the USA run Regulation F-compliant omnichannel journeys that combine voice, SMS, email, and self-service portals, and these programs typically outperform voice-only models by 20-40% on right-party contact and promise-to-pay conversion." },
+                { q: "What is a debt collection BPO company?", a: "A debt collection BPO (Business Process Outsourcing) company is a third-party firm that recovers delinquent accounts on behalf of creditors. These companies can operate as first-party collectors (branded as the original creditor), third-party collectors (operating under their own name on charged-off accounts), or hybrid models. The top American debt collection BPO companies are licensed and bonded in every state where they work, FDCPA and Regulation F compliant, and maintain strict TCPA, PCI DSS, and SOC 2 controls." },
+                { q: "How much do debt collection BPO companies charge?", a: "Pricing varies by debt type and stage. Commercial B2B contingency typically runs 15-25%, early-stage consumer collections (1-90 DPD) 18-30%, late-stage charge-off recovery 30-40%+, and purchased debt or warehoused portfolios can run higher. Hourly pricing for US agents ranges from $22-$45 depending on compliance requirements, and outcome-based pricing tied to net liquidation and complaint thresholds is becoming the new standard at top American agencies." },
+                { q: "What is the difference between first-party and third-party debt collection outsourcing?", a: "First-party collection outsourcing means the agency operates under your brand — calls go out as 'on behalf of [your company],' and consumers never know a third party is involved. This is ideal for early-stage delinquency (1-90 DPD) because it preserves customer relationships. Third-party collection means the agency operates under its own name, typically on charged-off accounts (180+ DPD), and is subject to the full weight of the FDCPA. The best American debt collection BPO companies offer both." },
+                { q: "Which debt collection BPO is best for healthcare accounts receivable?", a: "For healthcare AR, top choices include Global Empire Corporation (#1), Contact Center USA (#7), and Call Center Communications (#8). Healthcare AR requires HIPAA-aligned operations, strong understanding of insurance EOBs and patient responsibility, and a consumer-friendly tone. Contact Center USA combines HIPAA-aware workflows with FDCPA-compliant consumer engagement and transparent pricing, making it the strongest fit for hospitals, health systems, and physician groups." },
+                { q: "How do I know if a debt collection agency is FDCPA compliant?", a: "Verify ACA International membership, request their Regulation F and FDCPA training program documentation, check the CFPB consumer complaint database for their name, confirm state-by-state licensing and bonding, and require 100% call recording with 3-year retention. Ask for their most recent SOC 2 Type II report and PCI DSS attestation, and review their dispute- and complaint-handling procedures before you sign. Top American agencies like Contact Center USA publish compliance documentation as part of the procurement process." },
+                { q: "Can debt collection BPO companies collect by text message and email?", a: "Yes — since the CFPB's Regulation F took effect, agencies can collect via SMS and email subject to strict consent, opt-out, and frequency limits. The top American debt collection BPO companies run Regulation F-compliant omnichannel journeys that combine voice, SMS, email, and self-service portals, and these programs typically outperform voice-only models by 20-40% on right-party contact and promise-to-pay conversion." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

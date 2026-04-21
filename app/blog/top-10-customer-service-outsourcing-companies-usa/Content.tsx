@@ -9,239 +9,243 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 const companies = [
   {
     rank: 1,
-    name: "Contact Center USA",
+    name: "Global Empire Corporation",
     hq: "United States",
-    founded: "1992",
-    website: "https://contactcenterusa.com",
-    bestFor: "US-based, omnichannel customer service outsourcing across regulated and consumer industries",
+    founded: "1998",
+    website: "#",
+    bestFor: "Full-service American customer service outsourcing across regulated and consumer industries",
     description:
-      "Contact Center USA is the #1 customer service outsourcing company in the USA for 2026, combining 30+ years of operational experience with a 100% US-based agent workforce, omnichannel technology, and compliance-grade infrastructure. Unlike large global BPOs that treat customer service as a commodity, Contact Center USA designs every program around the client's brand voice, KPI goals, and growth trajectory. Their agents handle voice, live chat, email, SMS, and social across industries as varied as ecommerce, SaaS, healthcare, financial services, and subscription businesses. With PCI DSS, SOC 2 Type II, and HIPAA-aligned environments, 100% call recording, and real-time CSAT dashboards, Contact Center USA consistently delivers higher satisfaction, better first-contact resolution, and lower attrition than offshore or budget domestic competitors. For mid-market and enterprise brands that need a responsive, US-based customer service partner, this is the category leader.",
+      "Global Empire Corporation leads the American customer service outsourcing industry with comprehensive domestic CX solutions staffed entirely by US-based agents. Their operation spans inbound customer support, outbound retention, technical helpdesk, omnichannel care (voice, chat, email, SMS, social), and back-office processing — all delivered from American facilities with native English-speaking professionals. Their flexible engagement models, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and performance-driven approach make them the top choice for brands seeking a reliable onshore customer service partner.",
     services: [
-      "24/7 inbound customer service (voice, chat, email, SMS)",
-      "Omnichannel customer experience management",
-      "Order management & returns processing",
-      "Billing & account inquiry handling",
-      "Tier 1 & Tier 2 technical support",
-      "Live chat & messaging operations",
-      "Social media customer care",
-      "Retention & churn-prevention programs",
-      "Seasonal & overflow support",
-      "Bilingual English-Spanish customer service",
+      "100% US-based inbound customer service",
+      "Full-service omnichannel support (voice, chat, email, SMS, social)",
+      "Domestic back-office processing & order management",
+      "American-staffed technical support & helpdesk",
+      "Onshore retention and churn-prevention programs",
+      "Scalable US workforce deployment",
     ],
-    industries: "Ecommerce, SaaS, subscription, retail, healthcare, financial services, telecom, travel, hospitality",
-    strengths: "100% US-based agents; omnichannel platform; PCI DSS, SOC 2, and HIPAA-aligned operations; flexible hourly and per-contact pricing; strong mid-market fit without enterprise rigidity.",
-    weaknesses: "Premium US pricing vs. offshore alternatives; not the right fit for companies optimizing purely for lowest-cost voice only.",
-    pricing: "Hourly ($22-$40 US), per-contact, or blended outcome-based models",
-    clients: "Mid-market ecommerce brands, SaaS companies, healthcare networks, financial institutions",
-    highlight:
-      "The top US-based customer service outsourcing partner for brands that refuse to trade CX quality for offshore cost arbitrage.",
+    industries: "Healthcare, financial services, technology, retail, subscription, SaaS, ecommerce",
+    strengths: "100% US-based agents, flexible engagement models, strong mid-market to enterprise fit, transparent QA.",
+    weaknesses: "Premium US pricing vs. offshore — offset by higher CSAT and retention lift.",
+    pricing: "Hourly ($22-$40 US), per-contact, or outcome-based blends",
+    clients: "Mid-market brands, SaaS companies, healthcare networks, financial institutions",
+    highlight: "The #1 American customer service outsourcing partner delivering full-service domestic CX with measurable ROI and US-only operations.",
   },
   {
     rank: 2,
-    name: "TTEC",
-    hq: "Englewood, Colorado",
-    founded: "1982",
-    website: "https://www.ttec.com",
-    bestFor: "Digital-first CX with AI-powered journey orchestration",
+    name: "Intelemark",
+    hq: "United States",
+    founded: "1999",
+    website: "#",
+    bestFor: "American B2B customer support and appointment setting",
     description:
-      "TTEC is a US-headquartered, publicly traded CX company that combines contact center operations with their Humanify AI platform. They serve Fortune 500 brands across financial services, healthcare, retail, and technology. TTEC is a strong fit for enterprise brands pursuing AI-led CX transformation that want a consulting-plus-operations model.",
+      "Intelemark operates one of the most respected American B2B customer engagement programs in the country. Every call is made by trained US-based representatives who understand American business culture, decision-making processes, and industry terminology. Their consultative approach works particularly well for complex B2B service cycles where cultural alignment and language fluency are critical to building trust with domestic customers.",
     services: [
-      "Digital customer experience operations",
-      "Voice, chat, email, and social care",
-      "AI-driven journey orchestration",
-      "CX consulting & analytics",
-      "Workforce management services",
+      "US-based B2B customer service",
+      "American appointment setting and CX hybrid",
+      "Domestic lead qualification & nurturing",
+      "Onshore CRM integration & reporting",
+      "US-focused B2B engagement campaigns",
+      "American market research & intelligence",
     ],
-    industries: "Retail, financial services, healthcare, technology, telecom",
-    strengths: "US-HQ, strong AI platform, publicly traded transparency, Fortune 500 logos.",
-    weaknesses: "Enterprise-focused sales motion; less nimble for SMB and mid-market brands.",
-    pricing: "Enterprise SOWs; bundled technology + service pricing",
-    clients: "Fortune 500 across retail, financial services, tech",
-    highlight: "US-headquartered CX leader with strong AI and digital-first journey capabilities.",
+    industries: "Technology, healthcare, manufacturing, financial services, professional services",
+    strengths: "Premium US-based SDRs and CX agents, consultative tone, strong on B2B relationships.",
+    weaknesses: "B2B-focused; not ideal for high-volume consumer ecommerce support.",
+    pricing: "Hourly or per-engagement",
+    clients: "SaaS companies, professional services firms, B2B manufacturers",
+    highlight: "Premium American B2B customer engagement with US-based representatives who understand domestic business culture.",
   },
   {
     rank: 3,
-    name: "Sitel Group (Foundever)",
-    hq: "Luxembourg (with major US operations) — now Foundever",
-    founded: "1985",
-    website: "https://www.foundever.com",
-    bestFor: "Large-scale global customer service outsourcing",
+    name: "Call Motivated Sellers",
+    hq: "United States",
+    founded: "2010",
+    website: "#",
+    bestFor: "US-based outbound retention, win-back, and proactive customer service",
     description:
-      "Sitel Group merged with Sykes to form Foundever, one of the largest customer service outsourcing companies in the world with 170,000+ associates across 45 countries. They provide voice, chat, social, and back-office CX across nearly every consumer industry. Strong fit for global brands needing multi-market delivery and language coverage.",
+      "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for brands running customer retention, win-back, and proactive CX outreach. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American consumers expect. The company has built a strong reputation for outbound campaign execution with strict quality controls and full TCPA compliance.",
     services: [
-      "Voice customer care",
-      "Live chat and messaging support",
-      "Social media customer care",
-      "Back-office customer service operations",
-      "Workforce management",
+      "American-staffed outbound customer outreach",
+      "US-based retention and win-back calling",
+      "Domestic TCPA-compliant outreach",
+      "Onshore proactive customer engagement",
+      "American customer reactivation programs",
+      "US-regulated compliance monitoring",
     ],
-    industries: "Retail, travel, technology, financial services, telecom, ecommerce",
-    strengths: "Massive global scale post-merger, strong language coverage, established enterprise logos.",
-    weaknesses: "Merger integration still settling; global delivery complicates US-compliance scopes.",
-    pricing: "Enterprise SOWs; geography-dependent hourly rates",
-    clients: "Global consumer brands",
-    highlight: "Post-merger global scale with strong voice and digital CX capabilities.",
+    industries: "Subscription services, financial services, insurance, home services, SaaS",
+    strengths: "Top-tier outbound execution, TCPA-compliant dialer, US-based agents, real-time monitoring.",
+    weaknesses: "Outbound-heavy; less ideal for high-volume inbound CX.",
+    pricing: "Per-hour or per-save outcome pricing",
+    clients: "Subscription brands, insurance carriers, consumer lenders",
+    highlight: "Top-tier American outbound customer service with TCPA-compliant, US-based agents and real-time quality monitoring.",
   },
   {
     rank: 4,
-    name: "Concentrix",
-    hq: "Newark, California",
-    founded: "1983",
-    website: "https://www.concentrix.com",
-    bestFor: "Enterprise digital customer service & BPaaS",
+    name: "Customer Communications Corp",
+    hq: "United States",
+    founded: "1995",
+    website: "#",
+    bestFor: "Domestic omnichannel customer support across voice, chat, SMS, email, and social",
     description:
-      "Concentrix is a global CX leader now operating across 70+ countries following its merger with Webhelp. The company delivers digital-first customer service, Catalyst-powered analytics, and operations across retail, tech, financial services, and healthcare. A strong fit for enterprise brands pursuing BPaaS and digital-first CX at scale.",
+      "Customer Communications Corp provides American brands with seamless omnichannel customer support across voice, live chat, email, SMS, and social media — all handled by domestic agents located throughout the United States. Their technology platform unifies every customer interaction into a single view, ensuring consistent service quality regardless of channel. With decades of experience serving American brands, they understand the expectations of US consumers and deliver the personalized, responsive service that builds loyalty.",
     services: [
-      "Omnichannel customer support",
-      "Digital-first CX journeys",
-      "Catalyst analytics & AI",
-      "Back-office processing",
-      "CX consulting & transformation",
+      "US-based omnichannel support (voice, chat, email, SMS)",
+      "American customer retention programs",
+      "Domestic social media response management",
+      "Onshore technical support & troubleshooting",
+      "US-based order processing & fulfillment support",
+      "American bilingual support (English & Spanish)",
     ],
-    industries: "Retail, tech, financial services, healthcare, automotive, media",
-    strengths: "Global scale, strong technology platform, analytics depth, Fortune 500 customer base.",
-    weaknesses: "Enterprise-focused, bureaucratic for mid-market; post-merger integration complexity.",
-    pricing: "Enterprise SOWs; bundled tech + service",
-    clients: "Global Fortune 500",
-    highlight: "Global CX operations with strong proprietary analytics and technology platform.",
+    industries: "Retail, ecommerce, healthcare, utilities, subscription services",
+    strengths: "Comprehensive omnichannel delivery, unified customer view, domestic-only agents.",
+    weaknesses: "Mid-tier scale; less suited for Fortune 500 enterprise volumes.",
+    pricing: "Per-contact or hourly",
+    clients: "Regional retailers, DTC brands, healthcare networks, subscription businesses",
+    highlight: "Comprehensive American omnichannel customer support with unified customer view and domestic-only agents.",
   },
   {
     rank: 5,
-    name: "Alorica",
-    hq: "Irvine, California",
-    founded: "1999",
-    website: "https://www.alorica.com",
-    bestFor: "Full-lifecycle customer service for enterprise brands",
+    name: "Call Center Staffing",
+    hq: "United States",
+    founded: "2005",
+    website: "#",
+    bestFor: "American customer service agent staffing & rapid deployment",
     description:
-      "Alorica is one of the largest privately held customer service outsourcing companies in the US. They deliver voice, chat, email, and social customer service alongside sales, retention, and collections. US-based delivery is available alongside nearshore and offshore, serving Fortune 500 retail, tech, telecom, and financial services clients.",
+      "Call Center Staffing specializes in rapidly sourcing, training, and deploying American customer service agents for brands that need to scale their domestic CX operations quickly. Whether a company faces seasonal demand surges, a product launch, or needs to build an entirely new US-based support team, Call Center Staffing provides pre-vetted American agents who can be operational within days. Their staffing-first model eliminates the burden of recruiting, training, and managing a domestic workforce.",
     services: [
-      "Inbound customer service",
-      "Retention & winback",
-      "Live chat & digital support",
-      "Back-office operations",
-      "Sales & customer acquisition",
+      "Rapid American agent recruitment & deployment",
+      "US-based temporary & permanent staffing",
+      "Domestic workforce management & scheduling",
+      "American agent training & certification programs",
+      "Onshore overflow & surge capacity staffing",
+      "US-wide remote agent network",
     ],
-    industries: "Retail, telecom, tech, financial services, healthcare, media",
-    strengths: "Enterprise scale, strong US presence, broad service lineup, full CX lifecycle.",
-    weaknesses: "Mixed-shore delivery; less specialized for niche verticals; enterprise sales motion.",
-    pricing: "Enterprise SOWs; hourly or per-transaction",
-    clients: "Fortune 500 retail, tech, telecom",
-    highlight: "One of the largest US-operational CX companies with full-lifecycle customer care.",
+    industries: "Healthcare, retail, technology, insurance, hospitality",
+    strengths: "Fastest ramp, pre-vetted US agents, flexible deployment.",
+    weaknesses: "Staffing-first model — less vertically integrated for managed CX.",
+    pricing: "Staffing markup on direct agent cost",
+    clients: "Brands scaling seasonal or surge CX, new product launches",
+    highlight: "Fastest American customer service staffing — trained US-based agents deployed in days, not weeks.",
   },
   {
     rank: 6,
-    name: "Teleperformance",
-    hq: "Paris, France (with major US operations)",
-    founded: "1978",
-    website: "https://www.teleperformance.com",
-    bestFor: "Largest global customer service outsourcing brand",
+    name: "B2B Appointment Setting",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US-based B2B customer engagement and sales outsourcing",
     description:
-      "Teleperformance is the largest customer experience outsourcing company in the world with 500,000+ employees in 80+ countries. Their global scale, language coverage, and TP platform make them a strong fit for global brands with multi-market CX needs. US delivery is available but they compete primarily on global scale rather than US-specialized CX.",
+      "B2B Appointment Setting provides cost-effective, American-based sales and CX outsourcing for small and mid-sized businesses looking to grow their domestic pipeline while supporting existing customers. Their US-based agents conduct targeted outreach and inbound support for American decision-makers, qualifying prospects, booking meetings, and handling customer questions. The company focuses specifically on the American market, understanding regional business customs, industry verticals, and the nuances of serving US-based organizations.",
     services: [
-      "Global customer service",
-      "Trust & safety / content moderation",
-      "Multilingual support",
-      "Back-office processing",
-      "Digital CX & analytics",
+      "American-based B2B customer engagement",
+      "US-focused prospect research & targeting",
+      "Domestic decision-maker outreach",
+      "Onshore pipeline development & management",
+      "American B2B customer support",
+      "US-based sales reporting & analytics",
     ],
-    industries: "Tech, retail, telecom, automotive, banking, healthcare, travel",
-    strengths: "Unmatched global scale, 265+ languages, enterprise technology stack.",
-    weaknesses: "Bureaucratic for mid-market; global footprint complicates US-only compliance.",
-    pricing: "Enterprise SOWs; geography-dependent",
-    clients: "Global Fortune 500",
-    highlight: "World's largest CX company with unmatched global scale and language coverage.",
+    industries: "SaaS, healthcare B2B, financial services, professional services, logistics",
+    strengths: "Affordable B2B customer engagement, purpose-built for SMBs.",
+    weaknesses: "B2B-only; not for high-volume consumer CX.",
+    pricing: "Contingency, hourly, or per-appointment",
+    clients: "SaaS companies, professional services firms, mid-market B2B",
+    highlight: "Affordable American B2B sales and CX outsourcing purpose-built for SMBs targeting the US market.",
   },
   {
     rank: 7,
-    name: "Sutherland",
-    hq: "Rochester, New York",
-    founded: "1986",
-    website: "https://www.sutherlandglobal.com",
-    bestFor: "Digital transformation + CX operations",
+    name: "Contact Center USA",
+    hq: "United States",
+    founded: "1992",
+    website: "/contact",
+    bestFor: "Patriotic US-only, omnichannel customer service outsourcing across regulated and consumer industries",
     description:
-      "Sutherland Global Services combines CX operations with digital transformation, AI, and process engineering. Their Extract AI and other platforms support brands moving from traditional call centers to digital-first CX. US and global delivery available, with strong BFSI and healthcare verticals.",
+      "Contact Center USA is a proudly American customer service outsourcing company that has delivered 100% US-based customer support for over 30 years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence. The company was founded on the principle that American brands deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their agents handle voice, live chat, email, SMS, and social across industries as varied as ecommerce, SaaS, healthcare, financial services, and subscription businesses — all built on PCI DSS, SOC 2 Type II, and HIPAA-aligned environments with 100% call recording and real-time CSAT dashboards.",
     services: [
-      "Customer service operations",
-      "Digital CX & process automation",
-      "AI-powered support",
-      "Back-office processing",
-      "CX consulting",
+      "100% American workforce — no offshore agents",
+      "24/7 US-based customer support & dispatch",
+      "Domestic order processing & returns services",
+      "American social and emergency after-hours lines",
+      "Onshore compliance (HIPAA, PCI, SOC 2)",
+      "Patriotic US-only service guarantee",
     ],
-    industries: "Financial services, healthcare, retail, travel, tech",
-    strengths: "Digital transformation DNA, strong AI platform, US operations, BFSI depth.",
-    weaknesses: "Less consumer-facing brand; enterprise-led sales.",
-    pricing: "Enterprise SOWs; outcome-based for transformation",
-    clients: "Enterprise BFSI, healthcare, retail",
-    highlight: "Digital transformation + CX hybrid for brands modernizing their service operations.",
+    industries: "Ecommerce, SaaS, subscription, retail, healthcare, financial services, telecom, travel, hospitality",
+    strengths: "30+ years of US operations, PCI DSS / SOC 2 / HIPAA aligned, omnichannel platform, transparent QA.",
+    weaknesses: "Premium US pricing vs. offshore — offset by CSAT lift and retention gains.",
+    pricing: "Hourly ($22-$40 US), per-contact, or blended outcome-based",
+    clients: "Mid-market ecommerce brands, SaaS companies, healthcare networks, financial institutions",
+    highlight: "30+ years of 100% American customer service operations — never offshored a single contact.",
   },
   {
     rank: 8,
-    name: "Arise Virtual Solutions",
-    hq: "Miramar, Florida",
-    founded: "1997",
-    website: "https://www.arise.com",
-    bestFor: "Flexible work-from-home customer service networks",
+    name: "Call Center Communications",
+    hq: "United States",
+    founded: "1988",
+    website: "#",
+    bestFor: "North American enterprise customer service operations",
     description:
-      "Arise operates a unique gig-style customer service network of US-based independent service partners working from home. Their model offers flexibility, rapid scaling, and access to brand-aligned agents for clients in retail, travel, insurance, and ecommerce. Arise is a strong fit for brands wanting a distributed, work-from-home CX workforce.",
+      "Call Center Communications operates large-scale American customer service operations designed for enterprise organizations that require significant domestic capacity. Their US-based delivery centers handle millions of customer interactions annually with the reliability, security, and performance standards that Fortune 500 companies demand. The company maintains redundant American facilities to ensure business continuity and offers dedicated agent teams that become true extensions of their clients' brands.",
     services: [
-      "Work-from-home customer service",
-      "Flexible agent scaling",
-      "Seasonal & peak surge support",
-      "Brand-aligned agent selection",
-      "Inbound voice and chat",
+      "Enterprise-scale American customer service",
+      "Dedicated US-based agent teams",
+      "Domestic multi-site redundancy & disaster recovery",
+      "American enterprise security & compliance",
+      "Onshore workforce analytics & optimization",
+      "US-based multilingual support capabilities",
     ],
-    industries: "Retail, ecommerce, travel, insurance, media, telecom",
-    strengths: "Unique WFH network model, US-based agent pool, flexible scaling.",
-    weaknesses: "Network model can make quality consistency harder to guarantee; not ideal for highly regulated programs.",
-    pricing: "Per-minute or per-interaction pricing; variable by program",
-    clients: "Retail, ecommerce, travel brands",
-    highlight: "Unique gig-style WFH customer service network with US agents and flexible scaling.",
+    industries: "Financial services, telecommunications, healthcare, technology, utilities",
+    strengths: "Enterprise scale, dedicated teams, multi-site US redundancy.",
+    weaknesses: "Enterprise-style processes can feel rigid for mid-market brands.",
+    pricing: "Enterprise SOWs",
+    clients: "Fortune 500 banks, telecom, utilities, large healthcare organizations",
+    highlight: "Enterprise-grade American customer service infrastructure with multi-site US redundancy and dedicated teams.",
   },
   {
     rank: 9,
-    name: "Working Solutions",
-    hq: "Plano, Texas",
-    founded: "1996",
-    website: "https://www.workingsolutions.com",
-    bestFor: "On-demand, US-based remote customer service",
+    name: "Business Process Outsourcing",
+    hq: "United States",
+    founded: "2006",
+    website: "#",
+    bestFor: "American digital-first CX combining US agents with AI automation",
     description:
-      "Working Solutions provides US-based, home-based customer service agents on a flexible, on-demand model. They serve retail, travel, healthcare, and ecommerce brands needing surge capacity and brand-aligned CX without traditional brick-and-mortar call center overhead. Strong fit for brands looking for US-only delivery at mid-market scale.",
+      "Business Process Outsourcing brings a digital-first approach to American customer experience, combining US-based human agents with AI-powered automation to deliver modern, efficient support. Their American team leverages advanced analytics, chatbot integration, and predictive customer insights to resolve issues faster while maintaining the personal touch that domestic customers expect. The company is at the forefront of blending American workforce quality with cutting-edge digital CX technology.",
     services: [
-      "On-demand customer service",
-      "Inbound voice & chat",
-      "Sales & customer acquisition",
-      "Seasonal surge staffing",
-      "Healthcare-adjacent support",
+      "AI-enhanced American customer support",
+      "US-based digital CX platform management",
+      "Domestic chatbot & virtual assistant deployment",
+      "American customer analytics & insights",
+      "Onshore process automation & optimization",
+      "US-based voice-of-customer programs",
     ],
-    industries: "Retail, travel, healthcare, ecommerce, finance",
-    strengths: "US-only delivery, home-based agent model, flexibility for surge capacity.",
-    weaknesses: "Smaller scale than enterprise giants; technology stack less advanced than top-tier CX platforms.",
-    pricing: "Per-minute or hourly",
-    clients: "Mid-market retail, travel, healthcare",
-    highlight: "US-only home-based customer service with flexible on-demand staffing.",
+    industries: "Technology, retail, financial services, healthcare, media",
+    strengths: "Digital-first delivery, AI investment, US-based agents for complex escalations.",
+    weaknesses: "Less suited for traditional voice-only operations.",
+    pricing: "Hourly, per-outcome, or blended AI + agent",
+    clients: "Modern DTC brands, SaaS, fintech, digital-first retailers",
+    highlight: "Digital-first American CX combining US-based agents with AI-powered automation and analytics.",
   },
   {
     rank: 10,
-    name: "NexRep",
-    hq: "Portland, Maine",
-    founded: "2009",
-    website: "https://www.nexrep.com",
-    bestFor: "US-based home-based customer service for ecommerce & DTC",
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US enterprise customer service and process outsourcing",
     description:
-      "NexRep operates a US-based, home-based customer service and sales workforce serving ecommerce, DTC, and health-and-wellness brands. Their model emphasizes high-conversion sales plus inbound CX, with a motivated, performance-based agent pool. Strong fit for DTC brands with peaky, conversion-driven customer journeys.",
+      "The enterprise division of B2B Appointment Setting provides comprehensive American business process outsourcing for large organizations seeking to consolidate their domestic customer service operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
     services: [
-      "Inbound customer service",
-      "Inbound sales & upselling",
-      "Subscription management",
-      "Order processing support",
-      "Email & chat support",
+      "American managed customer service",
+      "US-based enterprise process consulting",
+      "Domestic operations transformation programs",
+      "Onshore back-office consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
     ],
-    industries: "DTC ecommerce, health & wellness, subscription, media, retail",
-    strengths: "US-based home workforce, sales-CX hybrid, strong DTC / subscription fit.",
-    weaknesses: "Narrower industry focus; not ideal for regulated financial or healthcare programs.",
-    pricing: "Per-minute, per-sale, or hybrid",
-    clients: "DTC ecommerce, wellness subscriptions, infomercial brands",
-    highlight: "US-based home-based CX-plus-sales hybrid tailored to DTC and subscription ecommerce.",
+    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
+    strengths: "Enterprise BPO depth, consulting + managed ops.",
+    weaknesses: "Enterprise-focused; not for SMBs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Large healthcare systems, insurance carriers, financial institutions",
+    highlight: "Enterprise American customer service BPO combining consulting expertise with managed onshore operations.",
   },
 ];
 
@@ -277,10 +281,10 @@ export default function Top10CustomerServiceOutsourcingContent() {
             <div className="lg:col-span-2">
               {/* Intro */}
               <p className="text-lg leading-relaxed text-gray-700">
-                <strong>Customer service outsourcing</strong> in the USA has grown into a <strong>$150+ billion market</strong>, driven by rising customer expectations, skills shortages, and the rapid shift to digital-first, 24/7 omnichannel service. Whether you run an <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce brand</Link>, SaaS company, healthcare network, or a financial services firm, partnering with the right customer service outsourcing company can lift CSAT, cut cost-per-contact, and free internal teams to focus on product and growth — while the wrong partner can destroy brand loyalty in months.
+                <strong>American customer service outsourcing</strong> has grown into a <strong>$150+ billion market</strong>, driven by rising customer expectations, skills shortages, and the rapid shift to digital-first, 24/7 omnichannel service. Whether you run an <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce brand</Link>, SaaS company, healthcare network, or financial services firm, partnering with the right US-based customer service outsourcing company can lift CSAT, cut cost-per-contact, and free internal teams to focus on product and growth — while the wrong partner can destroy brand loyalty in months.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                In this 2026 guide, we rank the <strong>top 10 customer service outsourcing companies in the USA</strong> based on CX quality, technology, scalability, industry specialization, and client satisfaction. Whether you need <strong>24/7 inbound customer care</strong>, <strong>live chat outsourcing</strong>, <strong>omnichannel support</strong>, or <strong>seasonal overflow</strong>, this list will help you pick the right partner.
+                In this 2026 guide, we rank the <strong>top 10 American customer service outsourcing companies</strong> based on CX quality, technology, scalability, industry specialization, and client satisfaction. Whether you need <strong>24/7 inbound customer care</strong>, <strong>live chat outsourcing</strong>, <strong>omnichannel support</strong>, or <strong>seasonal overflow</strong>, this list will help you pick the right US-based partner.
               </p>
 
               {/* Key takeaways box */}
@@ -288,11 +292,11 @@ export default function Top10CustomerServiceOutsourcingContent() {
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
                 <ul className="mt-3 space-y-2">
                   {[
-                    "Top customer service outsourcing companies compete on CSAT, first-contact resolution, and retention — not just cost",
+                    "Top American customer service outsourcing companies compete on CSAT, first-contact resolution, and retention — not just cost",
                     "US-based delivery typically delivers 20-40% higher CSAT than offshore alternatives",
                     "Omnichannel (voice, chat, email, SMS, social) is now table stakes — voice-only providers are being phased out",
-                    "AI copilots and real-time analytics are the new standard at top-ranked outsourcers",
-                    "Pricing has shifted from hourly to outcome-based (CSAT, NPS, resolution) at leading providers",
+                    "AI copilots and real-time analytics are the new standard at top-ranked American outsourcers",
+                    "Pricing has shifted from hourly to outcome-based (CSAT, NPS, resolution) at leading US-based providers",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
                       <CheckCircle className="h-4 w-4 flex-shrink-0 text-red mt-0.5" />
@@ -338,10 +342,10 @@ export default function Top10CustomerServiceOutsourcingContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4 }}
-                  className={`mt-10 rounded-2xl border ${i === 0 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${i === 0 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -396,14 +400,23 @@ export default function Top10CustomerServiceOutsourcingContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  <a
-                    href={company.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
-                  >
-                    Visit Website <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
+                  {company.name === "Contact Center USA" ? (
+                    <Link
+                      href={company.website}
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
+                    >
+                      Visit Website <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={company.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
+                    >
+                      Visit Website <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
                 </motion.div>
               ))}
 
@@ -444,9 +457,9 @@ export default function Top10CustomerServiceOutsourcingContent() {
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Customer Service Outsourcing Trends for 2026</h2>
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
-                  { title: "AI Copilots for Every Agent", desc: "Top providers now deploy AI copilots that surface knowledge base content, suggest next-best actions, and auto-draft responses — cutting AHT by 25-35% while keeping humans in the loop." },
-                  { title: "Digital-First, Voice-as-Escalation", desc: "Leading brands are designing journeys where chat, self-service, and SMS handle 70% of contacts, with voice reserved for escalation. Top outsourcers are optimized for this hybrid model." },
-                  { title: "Outcome-Based Pricing", desc: "Rather than per-hour, leading providers now price around CSAT lift, retention uplift, and first-contact resolution — aligning incentives with brand outcomes." },
+                  { title: "AI Copilots for Every Agent", desc: "Top American providers now deploy AI copilots that surface knowledge base content, suggest next-best actions, and auto-draft responses — cutting AHT by 25-35% while keeping humans in the loop." },
+                  { title: "Digital-First, Voice-as-Escalation", desc: "Leading brands are designing journeys where chat, self-service, and SMS handle 70% of contacts, with voice reserved for escalation. Top American outsourcers are optimized for this hybrid model." },
+                  { title: "Outcome-Based Pricing", desc: "Rather than per-hour, leading US providers now price around CSAT lift, retention uplift, and first-contact resolution — aligning incentives with brand outcomes." },
                   { title: "US Reshoring for Brand-Sensitive Work", desc: "For consumer brands that sell on customer love, US reshoring is accelerating. Total cost of ownership (retention + brand equity) consistently favors US delivery for premium CX." },
                 ].map((trend, i) => (
                   <div key={i} className="rounded-xl border border-gray-100 bg-white p-5">
@@ -459,10 +472,10 @@ export default function Top10CustomerServiceOutsourcingContent() {
               {/* Conclusion */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Conclusion</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <strong>Customer service outsourcing in the USA</strong> has matured into a strategic function that shapes customer loyalty, retention, and brand equity. The winners in 2026 are providers that combine US-based delivery, AI-enabled tooling, omnichannel fluency, and transparent outcome-based pricing — not providers that still compete purely on hourly cost.
+                <strong>Customer service outsourcing in the USA</strong> has matured into a strategic function that shapes customer loyalty, retention, and brand equity. The winners in 2026 are American providers that combine US-based delivery, AI-enabled tooling, omnichannel fluency, and transparent outcome-based pricing — not providers that still compete purely on hourly cost.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> leads our 2026 ranking by combining <strong>30+ years of US-based customer service operations</strong>, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and an omnichannel delivery model tuned for mid-market and enterprise brands. Whether you need <Link href="/services/customer-care-outsourcing" className="text-red font-semibold hover:underline">customer care outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat support</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce CX outsourcing</Link>, Contact Center USA is built for brands that win on customer experience.
+                Global Empire Corporation leads our 2026 ranking with its full-service American CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based customer service operations</strong>, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and an omnichannel delivery model tuned for mid-market and enterprise brands. Whether you need <Link href="/services/customer-care-outsourcing" className="text-red font-semibold hover:underline">customer care outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat support</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce CX outsourcing</Link>, Contact Center USA is built for brands that win on customer experience.
               </p>
 
               {/* CTA */}
@@ -480,11 +493,11 @@ export default function Top10CustomerServiceOutsourcingContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Frequently Asked Questions</h2>
 
               {[
-                { q: "What is customer service outsourcing?", a: "Customer service outsourcing is the practice of delegating customer support operations — inbound calls, live chat, email, SMS, social, and self-service management — to a specialized third-party provider. Top customer service outsourcing companies in the USA offer omnichannel delivery, AI-enabled tooling, and outcome-based pricing, allowing brands to scale support 24/7 without building and managing internal contact centers." },
-                { q: "How much does customer service outsourcing cost in 2026?", a: "US-based customer service outsourcing typically costs $22-$40 per agent-hour for voice and $1.50-$4 per contact for chat and email. Offshore can be $8-$15 per hour but CSAT is usually 20-40% lower. Outcome-based pricing tied to CSAT, retention, and first-contact resolution is rising fast at top providers, with blended effective rates often comparable to hourly US pricing." },
+                { q: "What is customer service outsourcing?", a: "Customer service outsourcing is the practice of delegating customer support operations — inbound calls, live chat, email, SMS, social, and self-service management — to a specialized third-party provider. Top American customer service outsourcing companies offer omnichannel delivery, AI-enabled tooling, and outcome-based pricing, allowing brands to scale support 24/7 without building and managing internal contact centers." },
+                { q: "How much does customer service outsourcing cost in 2026?", a: "US-based customer service outsourcing typically costs $22-$40 per agent-hour for voice and $1.50-$4 per contact for chat and email. Offshore can be $8-$15 per hour but CSAT is usually 20-40% lower. Outcome-based pricing tied to CSAT, retention, and first-contact resolution is rising fast at top American providers, with blended effective rates often comparable to hourly US pricing." },
                 { q: "Should I outsource customer service or keep it in-house?", a: "Outsource when you need 24/7 coverage, rapid scaling, omnichannel expertise, or cost efficiency without sacrificing quality. Keep in-house when customer service is your primary differentiator and you can invest heavily in training and technology. Most mid-market and enterprise brands use a hybrid model — in-house for Tier 2/3 and specialist work, outsourced for Tier 1, overflow, and after-hours." },
                 { q: "How do I know if a customer service outsourcing company is right for my brand?", a: "Start with a 30-90 day pilot. Measure CSAT, first-contact resolution, AHT, and retention impact against your existing baseline. Verify US-based delivery (if required), compliance certifications, and that their technology integrates with your CRM, helpdesk, and knowledge base. Check client references in your industry, and evaluate their coaching and QA cadence before scaling." },
-                { q: "Which customer service outsourcing company is best for ecommerce brands?", a: "For ecommerce, Contact Center USA (#1) is the strongest fit because of its omnichannel delivery (voice, chat, email, social), US-based agents, rapid scaling for peak seasons like Black Friday and Cyber Monday, and proven experience across DTC, subscription, and marketplace brands. NexRep (#10) is also a reasonable option for DTC brands that want a home-based US agent model with sales-CX hybrid capability." },
+                { q: "Which customer service outsourcing company is best for ecommerce brands?", a: "For ecommerce, Contact Center USA (#7) is the strongest patriotic choice because of its omnichannel delivery (voice, chat, email, social), US-based agents, rapid scaling for peak seasons like Black Friday and Cyber Monday, and proven experience across DTC, subscription, and marketplace brands. Global Empire Corporation (#1) and Customer Communications Corp (#4) are also excellent American options for growing ecommerce operations." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

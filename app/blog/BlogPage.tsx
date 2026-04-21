@@ -7,6 +7,141 @@ import { ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Top 10 Small Business Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 call center services for small business in the USA. Ranked by affordability, no-minimum contracts, 24/7 answering, overflow capacity, and SMB-friendly pricing.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/top-10-small-business-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Legal Intake Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 legal intake call center companies in the USA. Ranked by 24/7 live intake, personal injury & mass tort qualification, bilingual Spanish, and Litify/Clio integrations.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-legal-intake-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 HVAC & Home Services Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 HVAC, plumbing, and home services call center companies in the USA. Ranked by 24/7 emergency dispatch, ServiceTitan/Jobber integrations, and bilingual booking support.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-hvac-home-services-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 AI Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 AI call center companies in the USA. Ranked by conversational AI, voice agents, AI call deflection, agent-assist copilots, and AI + human hybrid delivery models.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/top-10-ai-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Appointment Setting Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 appointment setting companies in the USA. Ranked by B2B pipeline performance, per-appointment pricing, LinkedIn + phone outreach, and Salesforce/HubSpot integrations.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-discussion.jpg",
+    href: "/blog/top-10-appointment-setting-companies-usa",
+  },
+  {
+    title: "Top 10 Inbound Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 inbound call center companies in the USA. Ranked by 24/7 coverage, FCR, CSAT, omnichannel technology, and compliance — covering inbound customer support, IVR, and ACD.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-inbound-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Outbound Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 outbound call center companies in the USA. Ranked by TCPA compliance, predictive dialer technology, lead qualification, and appointment setting performance.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/top-10-outbound-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Telemarketing Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 telemarketing companies in the USA for B2B and B2C campaigns. Ranked by TCPA compliance, DNC scrubbing, dialer technology, and lead qualification performance.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-discussion.jpg",
+    href: "/blog/top-10-telemarketing-companies-usa",
+  },
+  {
+    title: "Top 10 Lead Generation Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 lead generation companies in the USA. Ranked by B2B pipeline performance, SDR-as-a-service quality, appointment setting, and ABM-ready outreach campaigns.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/top-10-lead-generation-companies-usa",
+  },
+  {
+    title: "Top 10 Live Chat Outsourcing Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 live chat outsourcing companies in the USA. Ranked by 24/7 chat coverage, chatbot + live agent hybrid models, and Zendesk/Intercom/Drift platform integrations.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/top-10-live-chat-outsourcing-companies-usa",
+  },
+  {
+    title: "Top 10 Answering Service Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 answering service companies in the USA. Ranked by 24/7 live answering, after-hours coverage, HIPAA-compliant medical answering, and bilingual service quality.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-answering-service-companies-usa",
+  },
+  {
+    title: "Top 10 Virtual Receptionist Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 virtual receptionist companies in the USA. Ranked by professional call handling, appointment booking, CRM integration, and specialty industry coverage (law, medical, SMB).",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/top-10-virtual-receptionist-companies-usa",
+  },
+  {
+    title: "Top 10 Multilingual Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 multilingual call center companies in the USA. Ranked by Spanish bilingual quality, language coverage (French, Mandarin, Portuguese, Vietnamese), and cultural fluency.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-diverse-team.jpg",
+    href: "/blog/top-10-multilingual-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Real Estate Call Center Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 real estate call center companies in the USA. Ranked by ISA services, speed-to-lead, motivated seller outreach, and CRM integration (Follow Up Boss, kvCORE, Salesforce).",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-discussion.jpg",
+    href: "/blog/top-10-real-estate-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 SaaS Customer Support Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 SaaS customer support companies in the USA. Ranked by Tier 1-3 coverage, NRR/activation outcomes, in-app chat, and Intercom/Zendesk/Front/HubSpot integrations.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/top-10-saas-customer-support-companies-usa",
+  },
+  {
     title: "Top 10 Debt Collection BPO Companies in USA (2026)",
     excerpt:
       "Compare the top 10 debt collection BPO companies in the USA. Ranked by FDCPA compliance, recovery rates, technology, and client satisfaction — covering first-party and third-party collections.",

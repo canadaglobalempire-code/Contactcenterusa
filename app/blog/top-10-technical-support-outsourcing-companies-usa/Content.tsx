@@ -9,239 +9,243 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 const companies = [
   {
     rank: 1,
-    name: "Contact Center USA",
+    name: "Global Empire Corporation",
     hq: "United States",
-    founded: "1992",
-    website: "https://contactcenterusa.com",
-    bestFor: "US-based, multi-tier technical support for SaaS, IT, and device brands",
+    founded: "1998",
+    website: "#",
+    bestFor: "Full-service American technical support outsourcing across SaaS, IT, and device brands",
     description:
-      "Contact Center USA is the #1 technical support outsourcing company in the USA for 2026, delivering multi-tier tech support (Tier 1 triage through Tier 3 escalation) for SaaS companies, IT help desks, device and hardware brands, telecom carriers, and enterprise software vendors. With 30+ years of regulated-industry operations, 100% US-based technical agents, and SOC 2 Type II compliance, Contact Center USA handles the full technical support lifecycle — from first-contact triage and knowledge-base navigation through remote diagnostics, case escalation, and bug-reporting feedback loops to product engineering teams. Their agents are trained on ITIL frameworks, use modern ticketing platforms (Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, Freshdesk), and leverage AI copilots to solve technical issues faster. For software and device brands that compete on product quality, Contact Center USA keeps customers productive and satisfied with every support interaction.",
+      "Global Empire Corporation leads the American technical support outsourcing industry with comprehensive domestic tech support solutions staffed entirely by US-based agents. Their practice spans Tier 1 triage through Tier 3 escalation coordination for SaaS companies, IT help desks, hardware brands, enterprise software vendors, and connected-device manufacturers — all delivered from American facilities with ITIL-trained, native-English-speaking professionals. Their flexible engagement models and deep ticketing platform fluency (Zendesk, Jira, ServiceNow, Salesforce, Freshdesk) make them the top choice for software and device brands seeking a reliable onshore technical support partner.",
     services: [
-      "Tier 1 triage & first-contact resolution",
-      "Tier 2 troubleshooting & diagnostics",
-      "Tier 3 escalation coordination",
-      "24/7 IT help desk outsourcing",
-      "SaaS technical support & customer success",
-      "Device & hardware technical support",
-      "Remote diagnostics & screen-share support",
-      "Bug reporting & engineering feedback loops",
-      "Knowledge base management & KCS",
-      "Technical chat, email, and phone support",
+      "100% US-based multi-tier tech support",
+      "Full-service Tier 1-3 escalation coordination",
+      "Domestic SaaS customer support and success",
+      "American-staffed IT help desk outsourcing",
+      "Onshore device & hardware technical support",
+      "Scalable US workforce for product launches",
     ],
-    industries: "SaaS, IT services, telecom, consumer electronics, connected devices, smart home, enterprise software, cybersecurity",
-    strengths: "100% US-based technical agents; SOC 2 Type II compliance; deep ticketing platform integrations; ITIL-trained agents; AI-enabled agent tooling; proven Tier 1-3 escalation workflow.",
-    weaknesses: "Premium US pricing vs. offshore tech support shops — but higher FCR and lower repeat-contact rates usually produce a lower TCO.",
-    pricing: "Hourly ($26-$50 US for technical skills), per-ticket, or outcome-based",
-    clients: "Mid-market SaaS companies, enterprise software vendors, device manufacturers, MSPs",
-    highlight:
-      "The top US-based technical support outsourcing partner for SaaS, device, and IT brands that need compliance-grade infrastructure and high first-contact resolution.",
+    industries: "SaaS, IT services, consumer electronics, connected devices, cybersecurity, enterprise software",
+    strengths: "100% US-based ITIL-trained agents, full-service tech CX, flexible engagement, SOC 2 aligned operations.",
+    weaknesses: "Premium US pricing vs. offshore tech support shops — offset by higher FCR and lower repeat-contact rates.",
+    pricing: "Hourly ($26-$50 US), per-ticket, or outcome-based",
+    clients: "Mid-market SaaS, enterprise software vendors, device manufacturers, MSPs",
+    highlight: "The #1 American technical support BPO delivering full-service domestic tech CX with measurable FCR lift and US-only operations.",
   },
   {
     rank: 2,
-    name: "Alorica",
-    hq: "Irvine, California",
+    name: "Intelemark",
+    hq: "United States",
     founded: "1999",
-    website: "https://www.alorica.com",
-    bestFor: "Enterprise-scale technical customer support",
+    website: "#",
+    bestFor: "American B2B SaaS and technology sales outreach with technical qualification",
     description:
-      "Alorica is one of the largest customer experience companies in the world and delivers enterprise-scale technical support for telecom, consumer electronics, and technology clients. Their tech support practice includes Tier 1-3 voice, chat, and email, with US, nearshore, and offshore delivery. Strong fit for Fortune 500 tech and telecom clients needing global scale.",
+      "Intelemark operates one of the most respected American B2B technology outreach programs in the country, with a strong arm dedicated to qualifying technical buyers, scheduling product demos, and supporting inbound technical inquiries for enterprise SaaS and IT vendors. Every conversation is led by trained US-based representatives who understand American technology buying cycles and speak fluently to IT directors, CTOs, and DevOps leaders. Their consultative approach works particularly well for complex technical sales motions where product depth matters as much as pipeline velocity.",
     services: [
-      "Enterprise technical support",
-      "Telecom device & service troubleshooting",
-      "Consumer electronics support",
-      "Chat & email technical support",
-      "Tier 1-3 escalation coordination",
+      "US-based B2B SaaS and technology outreach",
+      "Technical demo scheduling and qualification",
+      "American IT decision-maker engagement",
+      "Onshore CRM integration and technical reporting",
+      "US-focused demand generation for tech brands",
+      "American technology market research",
     ],
-    industries: "Telecom, consumer electronics, technology, SaaS, gaming, cable/media",
-    strengths: "Enterprise scale, global delivery options, Fortune 500 technical clients.",
-    weaknesses: "Mixed-shore delivery; enterprise sales; less nimble for mid-market SaaS.",
-    pricing: "Enterprise SOWs; hourly or per-ticket",
-    clients: "Major telecom carriers, consumer electronics brands",
-    highlight: "Enterprise-scale technical support across telecom, electronics, and tech verticals.",
+    industries: "SaaS, cloud infrastructure, cybersecurity, devops tooling, enterprise software",
+    strengths: "Premium US-based technical SDRs, consultative style, strong for enterprise SaaS and IT sales motions.",
+    weaknesses: "B2B sales-oriented — not a front-line Tier 1 support operation.",
+    pricing: "Hourly or per-engagement",
+    clients: "B2B SaaS companies, cloud infrastructure vendors, cybersecurity brands",
+    highlight: "Premium American B2B technology outreach with US-based SDRs who understand technical buyers and enterprise IT sales cycles.",
   },
   {
     rank: 3,
-    name: "Sitel Group (Foundever)",
-    hq: "Luxembourg (with major US operations) — now Foundever",
-    founded: "1985",
-    website: "https://www.foundever.com",
-    bestFor: "Global technical support & customer care at scale",
+    name: "Call Motivated Sellers",
+    hq: "United States",
+    founded: "2010",
+    website: "#",
+    bestFor: "US-based outbound technical follow-up and proactive support calling",
     description:
-      "Foundever (formed by Sitel + Sykes merger) delivers large-scale technical support for tech, telecom, gaming, and consumer electronics brands. Strong multilingual support and global delivery make them a fit for enterprise brands with multi-market tech support needs.",
+      "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for software and device brands running proactive technical support outreach, NPS/CSAT follow-up calls, and renewal-risk intervention. Their agents operate from domestic facilities across the United States, providing the clear communication and cultural alignment that US customers expect on technical escalations. Fully TCPA-compliant for all outbound technical outreach.",
     services: [
-      "Technical support operations",
-      "Gaming & consumer electronics tech support",
-      "Telecom technical care",
-      "Multilingual tech support",
-      "Back-office technical operations",
+      "American-staffed outbound technical follow-up",
+      "US-based proactive support outreach",
+      "Domestic renewal-risk intervention calling",
+      "Onshore TCPA-compliant technical outreach",
+      "American NPS/CSAT follow-up programs",
+      "US-regulated quality monitoring",
     ],
-    industries: "Gaming, technology, telecom, consumer electronics",
-    strengths: "Global scale post-merger, strong language coverage, gaming & electronics experience.",
-    weaknesses: "Merger integration still settling; less US-specialized than domestic competitors.",
-    pricing: "Enterprise SOWs; geography-dependent",
-    clients: "Global tech, gaming, telecom brands",
-    highlight: "Global scale tech support with strong gaming, telecom, and electronics verticals.",
+    industries: "SaaS, connected devices, consumer electronics, IT services, subscription software",
+    strengths: "Top-tier outbound execution, TCPA-compliant, US-based agents, strong for technical follow-up.",
+    weaknesses: "Outbound-heavy model — not for inbound-only Tier 1 help desk.",
+    pricing: "Per-hour or per-outcome pricing",
+    clients: "SaaS vendors, device manufacturers, subscription software companies",
+    highlight: "Top-tier American outbound technical calling with TCPA-compliant, US-based agents for proactive tech support outreach.",
   },
   {
     rank: 4,
-    name: "Teleperformance",
-    hq: "Paris, France (with major US operations)",
-    founded: "1978",
-    website: "https://www.teleperformance.com",
-    bestFor: "Largest global technical support provider",
+    name: "Customer Communications Corp",
+    hq: "United States",
+    founded: "1995",
+    website: "#",
+    bestFor: "Domestic omnichannel technical support across voice, chat, email, and screen-share",
     description:
-      "Teleperformance is the world's largest CX outsourcer with a major technical support practice across tech, telecom, consumer electronics, and gaming. US delivery is available alongside their 80+ country footprint. Strong fit for global tech brands needing multi-language tech support at massive scale.",
+      "Customer Communications Corp provides American technology brands with seamless omnichannel technical support across voice, live chat, email, SMS, screen-share, and secure portals — all handled by domestic agents located throughout the United States. Their unified platform surfaces ticket history, knowledge-base articles, and diagnostic tools in a single agent view, ensuring consistent resolution quality regardless of channel. With decades of experience serving American software and device brands, they understand the expectations of US customers on technical escalations.",
     services: [
-      "Multilingual technical support",
-      "Consumer electronics tech support",
-      "Gaming customer & tech support",
-      "Telecom technical care",
-      "AI-powered agent tooling",
+      "US-based omnichannel tech support (voice, chat, email, SMS)",
+      "Domestic screen-share and remote diagnostics",
+      "Onshore self-service knowledge base management",
+      "American Tier 1-2 ticket resolution and routing",
+      "US-based chat deflection and AI copilot support",
+      "American bilingual tech support (English & Spanish)",
     ],
-    industries: "Technology, telecom, gaming, consumer electronics",
-    strengths: "Unmatched global scale, 265+ languages, enterprise technology.",
-    weaknesses: "Bureaucratic for mid-market; global footprint complicates US-only compliance.",
-    pricing: "Enterprise SOWs; geography-dependent",
-    clients: "Fortune 500 tech, telecom, gaming brands",
-    highlight: "World's largest CX company with massive global technical support capacity.",
+    industries: "SaaS, consumer electronics, IT services, subscription software, fintech platforms",
+    strengths: "Comprehensive omnichannel technical delivery, unified agent view, domestic-only agents, strong knowledge management.",
+    weaknesses: "Mid-tier scale; less suited for Fortune 500 enterprise IT volumes.",
+    pricing: "Per-contact or hourly",
+    clients: "Mid-market SaaS, device brands, fintech platforms, digital-first software companies",
+    highlight: "Comprehensive American omnichannel tech support with unified agent view and domestic-only Tier 1-2 coverage.",
   },
   {
     rank: 5,
-    name: "Concentrix",
-    hq: "Newark, California",
-    founded: "1983",
-    website: "https://www.concentrix.com",
-    bestFor: "Enterprise technical support & digital transformation",
+    name: "Call Center Staffing",
+    hq: "United States",
+    founded: "2005",
+    website: "#",
+    bestFor: "American tech support agent staffing & rapid product-launch deployment",
     description:
-      "Concentrix delivers technical support for enterprise tech, telecom, and software clients across 70+ countries, powered by their Catalyst platform. Following the Webhelp merger, they have one of the largest technical CX footprints globally. Fit for enterprise brands pursuing digital-first technical support at scale.",
+      "Call Center Staffing specializes in rapidly sourcing, training, and deploying American technical support agents for software and device brands that need to scale their domestic tech CX operations quickly — especially heading into product launches, major releases, or incident-driven surges. Whether a company needs to 2-4x help-desk capacity for a launch, absorb a CVE-driven support spike, or build an entirely new US-based tech support team, Call Center Staffing provides pre-vetted American agents with ITIL and ticketing platform training who can be operational within days.",
     services: [
-      "Enterprise technical support",
-      "SaaS customer support",
-      "Telecom & tech troubleshooting",
-      "Catalyst-powered analytics",
-      "Digital transformation consulting",
+      "Rapid American tech support agent recruitment",
+      "US-based temporary & permanent staffing",
+      "Domestic workforce management for help desks",
+      "American ITIL-certified agent training",
+      "Onshore overflow and surge capacity staffing",
+      "US-wide remote tech agent network",
     ],
-    industries: "Technology, telecom, SaaS, gaming, consumer electronics",
-    strengths: "Global scale, proprietary technology platform, strong enterprise logos.",
-    weaknesses: "Enterprise-focused; post-merger integration complexity.",
-    pricing: "Enterprise SOWs; bundled tech + service",
-    clients: "Global Fortune 500 tech and telecom",
-    highlight: "Global technical support with strong analytics and digital transformation capabilities.",
+    industries: "SaaS, connected devices, IT services, gaming, cybersecurity, product-launch teams",
+    strengths: "Fastest ramp for product launches, pre-vetted US tech agents, flexible deployment.",
+    weaknesses: "Staffing-first model — less vertically integrated for fully-managed programs.",
+    pricing: "Staffing markup on direct agent cost",
+    clients: "SaaS companies scaling Tier 1, device brands launching new products, MSPs",
+    highlight: "Fastest American tech support staffing — ITIL-trained US-based agents deployed in days, not weeks, for product-launch surges.",
   },
   {
     rank: 6,
-    name: "Sutherland",
-    hq: "Rochester, New York",
-    founded: "1986",
-    website: "https://www.sutherlandglobal.com",
-    bestFor: "Technical support with process engineering & automation",
+    name: "B2B Appointment Setting",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US-based B2B technology sales outsourcing and SMB tech support for growth-stage software",
     description:
-      "Sutherland combines technical support operations with digital transformation, process engineering, and AI-powered automation. Their tech support practice covers SaaS, telecom, and enterprise software, with US and global delivery. Strong fit for enterprise tech brands pursuing automation and process redesign alongside CX.",
+      "B2B Appointment Setting provides cost-effective, American-based sales outsourcing and tech support overflow for growing software and device brands looking to expand their B2B pipeline and support smaller customer tiers without building in-house capacity. Their US-based agents conduct targeted outreach to American IT decision-makers and cover Tier 1 triage for low-volume technical queues. The company focuses specifically on the American market, understanding the nuances of selling and supporting US SMB technology customers.",
     services: [
-      "Technical support operations",
-      "SaaS customer support",
-      "Process automation & RPA",
-      "AI-powered technical tooling",
-      "Digital transformation",
+      "American-based B2B technology sales programs",
+      "US-focused SMB tech support overflow",
+      "Domestic IT decision-maker outreach",
+      "Onshore pipeline development for tech brands",
+      "American Tier 1 triage for growth-stage SaaS",
+      "US-based sales and support reporting",
     ],
-    industries: "Technology, SaaS, telecom, BFSI, healthcare",
-    strengths: "Process engineering + AI, strong US delivery, digital transformation DNA.",
-    weaknesses: "Less consumer-facing brand; enterprise sales motion.",
-    pricing: "Enterprise SOWs; outcome-based for transformation",
-    clients: "Enterprise tech, SaaS, telecom",
-    highlight: "Technical support paired with process engineering and AI-driven automation.",
+    industries: "SaaS, IT services, cybersecurity, growth-stage software, fintech platforms",
+    strengths: "Affordable US-based B2B tech sales and Tier 1 overflow, purpose-built for growth-stage SMBs.",
+    weaknesses: "Smaller scale; not for enterprise-volume help desks.",
+    pricing: "Contingency, hourly, or per-appointment",
+    clients: "Growth-stage SaaS, SMB-focused IT vendors, cybersecurity startups",
+    highlight: "Affordable American B2B tech sales and Tier 1 overflow purpose-built for growth-stage software and IT companies.",
   },
   {
     rank: 7,
-    name: "TTEC",
-    hq: "Englewood, Colorado",
-    founded: "1982",
-    website: "https://www.ttec.com",
-    bestFor: "Digital-first technical customer support with AI",
+    name: "Contact Center USA",
+    hq: "United States",
+    founded: "1992",
+    website: "/contact",
+    bestFor: "Patriotic US-only, multi-tier technical support for SaaS, IT, and device brands",
     description:
-      "TTEC delivers enterprise technical support powered by their Humanify AI platform. Strong fit for enterprise tech and telecom brands pursuing AI-driven technical CX transformation alongside traditional agent-based support.",
+      "Contact Center USA is a proudly American technical support company that has delivered 100% US-based tech CX for over 30 years. Every agent is located in the United States, every ticket is answered domestically, and every escalation reflects the compliance-first values of American service excellence. Purpose-built for SaaS companies, IT help desks, hardware brands, telecom carriers, and enterprise software vendors, Contact Center USA handles the full technical support lifecycle — from first-contact triage and knowledge-base navigation through remote diagnostics, case escalation, and bug-reporting feedback loops to product engineering teams. Their agents are trained on ITIL frameworks, use modern ticketing platforms (Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, Freshdesk), and leverage AI copilots to solve technical issues faster. For software and device brands that compete on product quality, Contact Center USA keeps customers productive with every interaction.",
     services: [
-      "Technical customer support",
-      "AI-powered agent tooling",
-      "SaaS customer success",
-      "Digital CX consulting",
-      "Telecom technical support",
+      "100% American workforce — no offshore agents",
+      "24/7 US-based Tier 1-3 technical support",
+      "Domestic SaaS customer support and success",
+      "American device and hardware tech support",
+      "Onshore SOC 2 Type II, HIPAA, and PCI compliance",
+      "Patriotic US-only service guarantee",
     ],
-    industries: "Technology, telecom, SaaS, healthcare-tech, financial technology",
-    strengths: "US-HQ, strong AI platform, enterprise technology logos.",
-    weaknesses: "Enterprise-focused sales; less flexible for mid-market SaaS.",
-    pricing: "Enterprise SOWs; bundled tech + service",
-    clients: "Fortune 500 technology and telecom",
-    highlight: "US-HQ enterprise technical support with strong AI-driven Humanify platform.",
+    industries: "SaaS, IT services, telecom, consumer electronics, connected devices, enterprise software, cybersecurity",
+    strengths: "30+ years of US operations, ITIL-trained agents, SOC 2 Type II compliance, deep ticketing platform integrations, AI copilot tooling.",
+    weaknesses: "Premium US pricing — offset by higher FCR, lower repeat-contact rates, and cleaner compliance posture.",
+    pricing: "Hourly ($26-$50 US), per-ticket, or outcome-based",
+    clients: "Mid-market SaaS, enterprise software vendors, device manufacturers, MSPs, telecom carriers",
+    highlight: "30+ years of 100% American technical support — never offshored a single ticket, with ITIL-trained agents across all major ticketing platforms.",
   },
   {
     rank: 8,
-    name: "Conduent",
-    hq: "Florham Park, New Jersey",
-    founded: "2017 (spun from Xerox)",
-    website: "https://www.conduent.com",
-    bestFor: "Enterprise IT help desk & government-adjacent tech support",
+    name: "Call Center Communications",
+    hq: "United States",
+    founded: "1988",
+    website: "#",
+    bestFor: "North American enterprise-scale technical support operations",
     description:
-      "Conduent delivers enterprise IT help desk and technical business process services with a strong US presence. Their tech support practice serves government agencies, education, and transportation clients. Strong fit for enterprise and government IT help desk outsourcing.",
+      "Call Center Communications operates large-scale American technical support centers designed for enterprise software, telecom, and connected-device brands that require significant domestic help-desk capacity. Their US-based delivery sites handle millions of technical tickets annually with the reliability, security, and compliance standards that Fortune 500 tech clients demand. The company maintains redundant American facilities to ensure business continuity during major release events and offers dedicated technical agent teams that become true extensions of their clients' engineering organizations.",
     services: [
-      "Enterprise IT help desk",
-      "Government IT support",
-      "Education technical support",
-      "Transportation tech support",
-      "Back-office IT operations",
+      "Enterprise-scale American technical support",
+      "Dedicated US-based technical agent teams",
+      "Domestic multi-site redundancy for incidents",
+      "American enterprise security & compliance",
+      "Onshore technical workforce analytics",
+      "US-based multilingual tech support",
     ],
-    industries: "Government, education, transportation, enterprise IT",
-    strengths: "US-HQ, strong government and education presence, enterprise IT capability.",
-    weaknesses: "Not focused on consumer SaaS or device support; narrower tech focus.",
-    pricing: "Enterprise and government contract-based",
-    clients: "Government agencies, large enterprise IT departments",
-    highlight: "US-HQ IT help desk outsourcer strong in government and enterprise IT support.",
+    industries: "Enterprise software, telecom, consumer electronics, cybersecurity, Fortune 500 IT",
+    strengths: "Enterprise scale, multi-site US redundancy, dedicated teams with strong compliance posture.",
+    weaknesses: "Enterprise-style processes feel rigid for mid-market SaaS.",
+    pricing: "Enterprise SOWs",
+    clients: "Fortune 500 tech, major telecom carriers, large enterprise software vendors",
+    highlight: "Enterprise-grade American technical support infrastructure with multi-site US redundancy and dedicated technical teams.",
   },
   {
     rank: 9,
-    name: "Firstsource",
-    hq: "Mumbai, India (with US operations, listed parent)",
-    founded: "2001",
-    website: "https://www.firstsource.com",
-    bestFor: "Telecom, media, and healthcare-tech support BPO",
+    name: "Business Process Outsourcing",
+    hq: "United States",
+    founded: "2006",
+    website: "#",
+    bestFor: "American digital-first tech support combining AI copilots with US agents",
     description:
-      "Firstsource Solutions delivers technical support for telecom, media, and healthcare-tech clients from US and global delivery centers. Strong fit for enterprise telecom and media brands seeking tech support at scale with mixed-shore economics.",
+      "Business Process Outsourcing brings a digital-first approach to American technical support, combining US-based human agents with AI-powered automation, copilots, and knowledge-base intelligence to deliver modern, efficient tech CX. Their American team leverages advanced ticket analytics, virtual agent deflection, and predictive escalation models to resolve technical issues faster while maintaining the depth that complex software and device support requires. The company is at the forefront of blending American workforce quality with cutting-edge technical AI tooling.",
     services: [
-      "Telecom technical support",
-      "Media & cable tech support",
-      "Healthcare-tech support",
-      "Chat & email technical operations",
-      "Multichannel technical care",
+      "AI-enhanced American tech support",
+      "US-based virtual agent and chatbot deployment",
+      "Domestic knowledge-centered service (KCS) programs",
+      "American ticket analytics and insights",
+      "Onshore process automation for tech operations",
+      "US-based voice-of-customer technical programs",
     ],
-    industries: "Telecom, media, cable, healthcare tech, consumer lenders",
-    strengths: "Strong telecom and media verticals, US delivery options.",
-    weaknesses: "Offshore-dominant delivery; less US-specialized than domestic competitors.",
-    pricing: "Enterprise SOWs; hourly or per-ticket",
-    clients: "Telecom carriers, media/cable companies, healthcare-tech",
-    highlight: "Enterprise telecom and media technical support BPO with mixed-shore delivery.",
+    industries: "SaaS, fintech, digital-first software, cloud infrastructure, cybersecurity",
+    strengths: "Digital-first delivery, strong AI investment, US-based agents for complex escalations.",
+    weaknesses: "Less suited for legacy enterprise IT or bespoke on-prem support.",
+    pricing: "Hourly, per-outcome, or blended AI + agent",
+    clients: "Modern SaaS brands, fintech platforms, digital-native software companies",
+    highlight: "Digital-first American technical support combining US-based agents with AI copilots and analytics-driven ticket resolution.",
   },
   {
     rank: 10,
-    name: "Wipro",
-    hq: "Bangalore, India (with significant US operations)",
-    founded: "1945",
-    website: "https://www.wipro.com",
-    bestFor: "Enterprise IT services + technical support at massive scale",
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "#",
+    bestFor: "US enterprise managed technical services and IT process outsourcing",
     description:
-      "Wipro is one of the largest IT services companies in the world, delivering technical support, managed IT services, and digital transformation for Fortune 500 enterprises. Their tech support practice is deeply integrated with broader IT services contracts, making them a strong fit for enterprise clients already using Wipro for IT.",
+      "The enterprise division of B2B Appointment Setting provides comprehensive American managed technical services and IT process outsourcing for large software, device, and IT organizations seeking to consolidate their domestic technical CX operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 technical support and IT help desk operations to back-office IT processing — all delivered by American professionals working from secure onshore facilities with enterprise-grade security infrastructure.",
     services: [
-      "Enterprise IT help desk",
-      "Managed technical support services",
-      "Cloud & infrastructure support",
-      "Application support",
-      "Digital transformation + support",
+      "American managed technical services",
+      "US-based enterprise IT help desk outsourcing",
+      "Domestic technical operations transformation",
+      "Onshore back-office IT processing",
+      "American program management & governance",
+      "US enterprise technology integration consulting",
     ],
-    industries: "Financial services, telecom, retail, manufacturing, healthcare, energy",
-    strengths: "Massive global scale, deep IT services DNA, Fortune 500 enterprise logos.",
-    weaknesses: "Offshore-dominant; enterprise-focused; not optimized for consumer-facing tech support brand voice.",
-    pricing: "Enterprise SOWs; integrated IT services contracts",
-    clients: "Global Fortune 500 enterprises",
-    highlight: "Enterprise IT services giant with deep technical support capability for global enterprises.",
+    industries: "Enterprise software, Fortune 500 IT, large telecom, cybersecurity enterprises, government IT",
+    strengths: "Enterprise-grade technical BPO, consulting + managed ops, strong compliance.",
+    weaknesses: "Enterprise-focused; not ideal for SMB or growth-stage SaaS.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Fortune 500 tech, large enterprise software vendors, government IT organizations",
+    highlight: "Enterprise American technical BPO combining consulting expertise with managed onshore IT operations.",
   },
 ];
 
@@ -277,10 +281,10 @@ export default function Top10TechnicalSupportContent() {
             <div className="lg:col-span-2">
               {/* Intro */}
               <p className="text-lg leading-relaxed text-gray-700">
-                <strong>Technical support outsourcing in the USA</strong> has become one of the fastest-growing segments of the BPO industry, driven by the expansion of SaaS, cloud, connected devices, and enterprise IT. Software and device brands live or die by the quality of their technical support — a single bad support experience can tank a NPS score, trigger churn, and drive negative reviews that last years. The top <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">technical support outsourcing companies in the USA</Link> combine deep product expertise, ITIL-trained agents, AI-powered tooling, and US-based delivery to keep customers productive at every tier of escalation.
+                <strong>Technical support outsourcing in the USA</strong> has become one of the fastest-growing segments of the BPO industry, driven by the expansion of SaaS, cloud, connected devices, and enterprise IT. Software and device brands live or die by the quality of their technical support — a single bad experience can tank NPS, trigger churn, and drive negative reviews that last years. The top <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">American technical support outsourcing companies</Link> combine deep product expertise, ITIL-trained agents, AI-powered tooling, and 100% US-based delivery to keep customers productive at every tier of escalation.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                In this 2026 guide, we rank the <strong>top 10 technical support outsourcing companies in the USA</strong>, evaluated on technical skill depth, platform coverage, CX quality, US-based delivery, and client outcomes. Whether you need <strong>24/7 IT help desk outsourcing</strong>, <strong>SaaS Tier 1-3 technical support</strong>, <strong>device and hardware tech support</strong>, or <strong>cloud and cybersecurity support</strong>, this list will help you find the right partner.
+                In this 2026 guide, we rank the <strong>top 10 technical support outsourcing companies in the USA</strong>, evaluated on technical skill depth, platform coverage, CX quality, onshore delivery, and client outcomes. Whether you need <strong>24/7 IT help desk outsourcing</strong>, <strong>SaaS Tier 1-3 technical support</strong>, <strong>device and hardware tech support</strong>, or <strong>cloud and cybersecurity support</strong>, this list will help you find the right American partner.
               </p>
 
               {/* Key takeaways box */}
@@ -288,10 +292,10 @@ export default function Top10TechnicalSupportContent() {
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
                 <ul className="mt-3 space-y-2">
                   {[
-                    "Top technical support providers compete on first-contact resolution, ITIL maturity, and AI-enabled agent tooling",
-                    "US-based delivery wins on complex technical escalations and brand-sensitive SaaS",
+                    "Top American technical support providers compete on first-contact resolution, ITIL maturity, and AI-enabled agent tooling",
+                    "US-based delivery wins on complex technical escalations and brand-sensitive SaaS programs",
                     "Modern tech support is omnichannel — phone, chat, email, screen-share, and knowledge base",
-                    "AI copilots now handle 40-60% of Tier 1 triage at top providers",
+                    "AI copilots now handle 40-60% of Tier 1 triage at top US providers",
                     "Outcome-based pricing tied to FCR, CSAT, and ticket deflection is replacing pure hourly models",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
@@ -338,10 +342,10 @@ export default function Top10TechnicalSupportContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4 }}
-                  className={`mt-10 rounded-2xl border ${i === 0 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${i === 0 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -396,14 +400,23 @@ export default function Top10TechnicalSupportContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  <a
-                    href={company.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
-                  >
-                    Visit Website <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
+                  {company.name === "Contact Center USA" ? (
+                    <Link
+                      href={company.website}
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
+                    >
+                      Visit Website <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={company.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red hover:underline"
+                    >
+                      Visit Website <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
                 </motion.div>
               ))}
 
@@ -415,7 +428,7 @@ export default function Top10TechnicalSupportContent() {
               {/* What to Look For */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">What to Look For in a Technical Support Outsourcing Partner</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Technical support outsourcing has stricter quality requirements than general customer service. Use this checklist when shortlisting <strong>technical support outsourcing companies in the USA</strong>:
+                Technical support outsourcing has stricter quality requirements than general customer service. Use this checklist when shortlisting <strong>American technical support outsourcing companies</strong>:
               </p>
               <ul className="mt-4 space-y-3">
                 {[
@@ -444,7 +457,7 @@ export default function Top10TechnicalSupportContent() {
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Technical Support Outsourcing Trends for 2026</h2>
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {[
-                  { title: "AI Copilots for Technical Agents", desc: "Top tech support providers now deploy AI copilots that surface KB articles, suggest troubleshooting steps, and auto-draft responses. FCR improves 15-30% and AHT drops 20-35%." },
+                  { title: "AI Copilots for Technical Agents", desc: "Top American tech support providers now deploy AI copilots that surface KB articles, suggest troubleshooting steps, and auto-draft responses. FCR improves 15-30% and AHT drops 20-35%." },
                   { title: "Proactive, Sensor-Driven Support", desc: "For IoT, connected devices, and enterprise software, sensor telemetry is now feeding proactive support — top providers reach out before customers call." },
                   { title: "Knowledge-Centered Service (KCS)", desc: "Leading tech support outsourcers embed KCS into agent workflows, creating a virtuous cycle where every ticket improves the knowledge base and future deflection." },
                   { title: "Outcome-Based Pricing", desc: "Providers are shifting from hourly to outcome-based pricing tied to ticket deflection, FCR, and customer success metrics — aligning incentives with software and device company KPIs." },
@@ -459,10 +472,10 @@ export default function Top10TechnicalSupportContent() {
               {/* Conclusion */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Conclusion</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <strong>Technical support outsourcing in the USA</strong> has matured into a strategic function that drives customer retention, NPS, and product adoption for software, device, and IT brands. The winners in 2026 combine US-based technical talent, AI-enabled tooling, deep platform integrations, and outcome-based pricing — the providers that still rely on pure hourly offshore models are losing ground fast.
+                <strong>American technical support outsourcing</strong> has matured into a strategic function that drives customer retention, NPS, and product adoption for software, device, and IT brands. The winners in 2026 combine US-based technical talent, AI-enabled tooling, deep platform integrations, and outcome-based pricing — the providers that still rely on pure hourly offshore models are losing ground fast.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> leads our 2026 technical support ranking by combining <strong>30+ years of US-based operations</strong>, SOC 2 Type II compliance, ITIL-trained agents, and deep integration with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk. Whether you need <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 1-3 technical support</Link>, <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer success support</Link>, or <Link href="/solutions/information-technology-services" className="text-red font-semibold hover:underline">managed IT help desk outsourcing</Link>, Contact Center USA is built for software, device, and IT brands that compete on product quality.
+                Global Empire Corporation leads our 2026 technical support ranking with full-service American operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based operations</strong>, SOC 2 Type II compliance, ITIL-trained agents, and deep integration with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk. Whether you need <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 1-3 technical support</Link>, <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer success support</Link>, or <Link href="/solutions/information-technology-services" className="text-red font-semibold hover:underline">managed IT help desk outsourcing</Link>, Contact Center USA is built for American software, device, and IT brands that compete on product quality.
               </p>
 
               {/* CTA */}
@@ -480,11 +493,11 @@ export default function Top10TechnicalSupportContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Frequently Asked Questions</h2>
 
               {[
-                { q: "What is technical support outsourcing?", a: "Technical support outsourcing is the practice of delegating Tier 1-3 technical customer support to a specialized third-party provider. Top technical support outsourcing companies in the USA deliver 24/7 IT help desk, SaaS customer support, device troubleshooting, cloud technical support, and remote diagnostics. They typically integrate natively with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk." },
-                { q: "How much does technical support outsourcing cost?", a: "US-based technical support outsourcing typically costs $26-$50 per agent-hour depending on technical skill level and certifications (CompTIA, AWS, Cisco). Enterprise per-ticket pricing ranges from $4-$15. Offshore tech support can be $10-$20 per hour but FCR and CSAT are usually lower. Outcome-based pricing tied to ticket deflection, FCR, and MTTR is rising fast at top providers." },
-                { q: "What's the difference between Tier 1, Tier 2, and Tier 3 technical support?", a: "Tier 1 is first-contact triage — password resets, basic troubleshooting, and ticket routing. Tier 2 involves deeper diagnostics, configuration assistance, and issue reproduction. Tier 3 is engineering-adjacent escalation for complex bugs, platform issues, and custom troubleshooting. The top technical support outsourcing companies in the USA cover Tier 1-2 directly and coordinate Tier 3 escalations with your internal engineering team." },
+                { q: "What is technical support outsourcing?", a: "Technical support outsourcing is the practice of delegating Tier 1-3 technical customer support to a specialized third-party provider. The top American technical support outsourcing companies deliver 24/7 IT help desk, SaaS customer support, device troubleshooting, cloud technical support, and remote diagnostics. They typically integrate natively with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk." },
+                { q: "How much does technical support outsourcing cost?", a: "US-based technical support outsourcing typically costs $26-$50 per agent-hour depending on technical skill level and certifications (CompTIA, AWS, Cisco). Enterprise per-ticket pricing ranges from $4-$15. Offshore tech support can be $10-$20 per hour but FCR and CSAT are usually lower. Outcome-based pricing tied to ticket deflection, FCR, and MTTR is rising fast at top American providers." },
+                { q: "What's the difference between Tier 1, Tier 2, and Tier 3 technical support?", a: "Tier 1 is first-contact triage — password resets, basic troubleshooting, and ticket routing. Tier 2 involves deeper diagnostics, configuration assistance, and issue reproduction. Tier 3 is engineering-adjacent escalation for complex bugs, platform issues, and custom troubleshooting. The top American technical support outsourcing companies cover Tier 1-2 directly and coordinate Tier 3 escalations with your internal engineering team." },
                 { q: "Should technical support be onshore or offshore?", a: "For SaaS brands, enterprise software, and premium device brands, US-based (onshore) technical support consistently wins on NPS, retention, and brand alignment. For high-volume, commoditized Tier 1 triage, offshore or AI-first models can be cost-effective. Most growing software companies use a hybrid: US for Tier 2-3 and enterprise customers, AI + offshore for Tier 1 deflection and low-value tiers." },
-                { q: "Which technical support outsourcing company is best for a SaaS company?", a: "For SaaS companies, Contact Center USA (#1) is the strongest fit because of its US-based delivery, SOC 2 compliance, ITIL-trained agents, native integration with Zendesk, Jira Service Management, and Salesforce Service Cloud, and flexibility to scale from 5-person startup support teams to 200+ agent enterprise operations. TTEC (#7) and Sutherland (#6) are also strong for enterprise SaaS clients pursuing AI-driven technical CX transformation." },
+                { q: "Which technical support outsourcing company is best for a SaaS company?", a: "For SaaS companies, Global Empire Corporation (#1) and Contact Center USA (#7) are the strongest fits because of their US-based delivery, SOC 2 compliance, ITIL-trained agents, native integration with Zendesk, Jira Service Management, and Salesforce Service Cloud, and flexibility to scale from 5-person startup support teams to 200+ agent enterprise operations. Customer Communications Corp (#4) and Business Process Outsourcing (#9) are also strong for digital-first SaaS brands pursuing AI-driven technical CX." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>
