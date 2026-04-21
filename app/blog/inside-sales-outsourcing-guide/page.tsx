@@ -36,7 +36,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-07",
             dateModified: "2026-04-07",
-            url: "https://www.contactcenterusa.com/blog/inside-sales-outsourcing-guide",
+            url: "https://contactcenterusa.com/blog/inside-sales-outsourcing-guide",
           }),
         }}
       />

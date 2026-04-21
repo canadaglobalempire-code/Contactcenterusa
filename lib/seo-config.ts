@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Contact Center USA",
-  url: "https://www.contactcenterusa.com",
+  url: "https://contactcenterusa.com",
   phone: "1-800-555-0199",
   phoneHref: "tel:+18005550199",
   email: "info@contactcenterusa.com",

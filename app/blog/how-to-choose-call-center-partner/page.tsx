@@ -22,7 +22,7 @@ export default function Page() {
             author: { "@type": "Organization", name: "Contact Center USA" },
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-01",
-            url: "https://www.contactcenterusa.com/blog/how-to-choose-call-center-partner",
+            url: "https://contactcenterusa.com/blog/how-to-choose-call-center-partner",
           }),
         }}
       />

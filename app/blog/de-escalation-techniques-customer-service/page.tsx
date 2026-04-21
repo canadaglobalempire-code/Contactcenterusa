@@ -37,7 +37,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-11",
             dateModified: "2026-04-11",
-            url: "https://www.contactcenterusa.com/blog/de-escalation-techniques-customer-service",
+            url: "https://contactcenterusa.com/blog/de-escalation-techniques-customer-service",
           }),
         }}
       />

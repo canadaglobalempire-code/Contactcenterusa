@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.contactcenterusa.com"),
+  metadataBase: new URL("https://contactcenterusa.com"),
   verification: {
     google: "Q8nqe1KtPCYANReH_fxQPK1EQsrnSpuUDKga_j0m7cc",
   },

@@ -127,8 +127,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (route.startsWith("/services/") || route.startsWith("/solutions/")) return 0.8;
     if (route.startsWith("/industries/")) return 0.8;
     if (route.startsWith("/call-center-services-")) return 0.7;
-    if (route === "/blog") return 0.7;
-    if (route.startsWith("/blog/")) return 0.6;
+    if (route === "/blog") return 0.9;
+    if (route.startsWith("/blog/")) return 0.9;
     if (["/about", "/why-us", "/case-studies", "/faq"].includes(route)) return 0.5;
     return 0.4;
   };

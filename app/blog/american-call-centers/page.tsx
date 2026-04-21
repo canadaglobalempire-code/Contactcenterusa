@@ -37,7 +37,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-12",
             dateModified: "2026-04-12",
-            url: "https://www.contactcenterusa.com/blog/american-call-centers",
+            url: "https://contactcenterusa.com/blog/american-call-centers",
           }),
         }}
       />

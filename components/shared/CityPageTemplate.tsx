@@ -122,7 +122,7 @@ export function CityPageTemplate({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "Contact Center USA",
-            url: `https://www.contactcenterusa.com/call-center-services-${city.toLowerCase().replace(/\s+/g, '-')}`,
+            url: `https://contactcenterusa.com/call-center-services-${city.toLowerCase().replace(/\s+/g, '-')}`,
             description: `US-based call center outsourcing services in ${city}, ${stateAbbr}`,
             address: {
               "@type": "PostalAddress",

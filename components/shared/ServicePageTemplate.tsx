@@ -58,7 +58,7 @@ export function ServicePageTemplate({
           __html: JSON.stringify(generateServiceSchema(
             badge,
             subtitle,
-            `https://www.contactcenterusa.com/services/${badge.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+            `https://contactcenterusa.com/services/${badge.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
           )),
         }}
       />

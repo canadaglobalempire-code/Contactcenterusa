@@ -37,7 +37,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-03-15",
             dateModified: "2026-04-10",
-            url: "https://www.contactcenterusa.com/blog/top-15-healthcare-bpo-companies-usa",
+            url: "https://contactcenterusa.com/blog/top-15-healthcare-bpo-companies-usa",
           }),
         }}
       />

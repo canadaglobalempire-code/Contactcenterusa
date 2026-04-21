@@ -38,7 +38,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-19",
             dateModified: "2026-04-19",
-            url: "https://www.contactcenterusa.com/blog/top-10-multilingual-call-center-companies-usa",
+            url: "https://contactcenterusa.com/blog/top-10-multilingual-call-center-companies-usa",
           }),
         }}
       />

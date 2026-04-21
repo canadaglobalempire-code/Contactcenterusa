@@ -67,7 +67,7 @@ export function SolutionPageTemplate({
           __html: JSON.stringify(generateServiceSchema(
             label,
             subtitle,
-            `https://www.contactcenterusa.com/solutions/${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+            `https://contactcenterusa.com/solutions/${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
           )),
         }}
       />

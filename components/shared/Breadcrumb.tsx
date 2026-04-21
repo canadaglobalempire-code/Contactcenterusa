@@ -16,7 +16,7 @@ interface BreadcrumbProps {
 export function Breadcrumb({ items }: BreadcrumbProps) {
   const schemaItems = items.map((item) => ({
     name: item.label,
-    url: `https://www.contactcenterusa.com${item.href}`,
+    url: `https://contactcenterusa.com${item.href}`,
   }));
 
   return (

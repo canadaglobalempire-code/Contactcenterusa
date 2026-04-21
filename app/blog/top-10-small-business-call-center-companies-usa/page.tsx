@@ -38,14 +38,14 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-21",
             dateModified: "2026-04-21",
-            url: "https://www.contactcenterusa.com/blog/top-10-small-business-call-center-companies-usa",
+            url: "https://contactcenterusa.com/blog/top-10-small-business-call-center-companies-usa",
             keywords:
               "call center services for small business, small business answering service, affordable call center outsourcing, cheap call center services, outsourced customer service for small business, SMB call center, small business telephone answering, entrepreneur call center services, startup customer support outsourcing, 24/7 answering service for small business",
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://www.contactcenterusa.com/blog/top-10-small-business-call-center-companies-usa",
+              "@id": "https://contactcenterusa.com/blog/top-10-small-business-call-center-companies-usa",
             },
-            image: "https://www.contactcenterusa.com/images/cc-agent-smile.jpg",
+            image: "https://contactcenterusa.com/images/cc-agent-smile.jpg",
           }),
         }}
       />

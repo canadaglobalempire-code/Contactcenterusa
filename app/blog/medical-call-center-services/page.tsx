@@ -37,7 +37,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-09",
             dateModified: "2026-04-09",
-            url: "https://www.contactcenterusa.com/blog/medical-call-center-services",
+            url: "https://contactcenterusa.com/blog/medical-call-center-services",
           }),
         }}
       />

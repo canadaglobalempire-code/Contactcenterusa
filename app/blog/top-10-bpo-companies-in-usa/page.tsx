@@ -37,7 +37,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-08",
             dateModified: "2026-04-14",
-            url: "https://www.contactcenterusa.com/blog/top-10-bpo-companies-in-usa",
+            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-in-usa",
           }),
         }}
       />

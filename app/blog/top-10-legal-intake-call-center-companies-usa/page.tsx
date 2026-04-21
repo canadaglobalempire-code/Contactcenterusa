@@ -38,7 +38,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-21",
             dateModified: "2026-04-21",
-            url: "https://www.contactcenterusa.com/blog/top-10-legal-intake-call-center-companies-usa",
+            url: "https://contactcenterusa.com/blog/top-10-legal-intake-call-center-companies-usa",
           }),
         }}
       />

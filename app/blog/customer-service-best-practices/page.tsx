@@ -37,7 +37,7 @@ export default function Page() {
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-06",
             dateModified: "2026-04-06",
-            url: "https://www.contactcenterusa.com/blog/customer-service-best-practices",
+            url: "https://contactcenterusa.com/blog/customer-service-best-practices",
           }),
         }}
       />

@@ -3,8 +3,8 @@ export function generateOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Contact Center USA",
-    url: "https://www.contactcenterusa.com",
-    logo: "https://www.contactcenterusa.com/images/logo.png",
+    url: "https://contactcenterusa.com",
+    logo: "https://contactcenterusa.com/images/logo.png",
     description:
       "US-based call center outsourcing services for businesses across the United States and Canada.",
     address: {
@@ -25,8 +25,8 @@ export function generateLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Contact Center USA",
-    url: "https://www.contactcenterusa.com",
-    image: "https://www.contactcenterusa.com/images/logo.png",
+    url: "https://contactcenterusa.com",
+    image: "https://contactcenterusa.com/images/logo.png",
     telephone: "+1-800-555-0199",
     priceRange: "$$",
     address: {
@@ -85,7 +85,7 @@ export function generateServiceSchema(
     provider: {
       "@type": "Organization",
       name: "Contact Center USA",
-      url: "https://www.contactcenterusa.com",
+      url: "https://contactcenterusa.com",
     },
     areaServed: [
       { "@type": "Country", name: "United States" },

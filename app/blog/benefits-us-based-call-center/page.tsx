@@ -22,7 +22,7 @@ export default function Page() {
             author: { "@type": "Organization", name: "Contact Center USA" },
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-04-01",
-            url: "https://www.contactcenterusa.com/blog/benefits-us-based-call-center",
+            url: "https://contactcenterusa.com/blog/benefits-us-based-call-center",
           }),
         }}
       />
