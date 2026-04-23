@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Content from "./Content";
+import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
   title: "Top 15 Insurance BPO Companies in the USA (2026 Rankings)",
@@ -41,6 +42,7 @@ export default function Page() {
           }),
         }}
       />
+      <BlogAEOSchemas slug="top-15-insurance-bpo-companies-usa" />
       <Content />
     </>
   );

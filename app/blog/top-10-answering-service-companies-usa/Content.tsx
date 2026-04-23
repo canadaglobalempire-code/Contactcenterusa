@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American 24/7 answering service and live virtual receptionist coverage",
     description:
       "Global Empire Corporation leads the American answering service industry with comprehensive 24/7/365 live answering, virtual receptionist, and after-hours call handling delivered entirely by US-based agents. Their answering practice spans live call answering, professional message taking, appointment scheduling, call screening and transfer, overflow and lunch-hour coverage, bilingual English and Spanish support, and HIPAA-compliant medical answering — all from American facilities with native English-speaking receptionists. Their flexible per-minute and per-call plans make them the top choice for law firms, medical practices, property managers, and small businesses that need a polished, always-on US-based answering partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B answering service and executive-grade virtual receptionist",
     description:
       "Intelemark operates one of the most respected premium B2B answering programs in the country, particularly valuable for professional services firms, consultancies, and B2B SaaS companies that need an executive-grade virtual receptionist. Every call is answered by trained US-based representatives who understand American business etiquette and the nuances of qualifying high-value B2B callers. Their consultative approach works particularly well for firms where first impressions, caller screening, and message quality directly influence revenue.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based after-hours answering and real estate lead capture",
     description:
       "Call Motivated Sellers delivers high-performance inbound answering and lead capture powered by an entirely American workforce — a strong fit for real estate investors, home-service brands, and lead-gen businesses that need every after-hours call answered and qualified. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American callers expect. Every inbound call is logged, qualified, and routed in real time to your CRM, with full TCPA-compliant follow-up available.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel answering across voice, chat, SMS, and email",
     description:
       "Customer Communications Corp provides American businesses with seamless omnichannel answering service across voice, live chat, email, and SMS — all handled by domestic receptionists located throughout the United States. Their technology platform unifies every caller and message into a single view, ensuring consistent service quality regardless of channel. With decades of experience serving American professional services and healthcare brands, they understand the expectations of US callers and deliver the personalized, responsive service that builds trust at the very first ring.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American answering service staffing & rapid overflow deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American receptionists and answering-service agents for businesses that need to scale their domestic inbound operations quickly — especially during tax season, open enrollment, storm-season spikes for home services, and unexpected PR surges. Whether a firm needs overflow coverage for lunch hours, a dedicated after-hours team, or a brand-new 24/7 answering program, Call Center Staffing provides pre-vetted American receptionists who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based appointment-setting answering service for small business",
     description:
       "B2B Appointment Setting provides cost-effective, American-based answering and appointment-booking services for small businesses and professional services firms looking to convert every inbound call into a booked consultation. Their US-based receptionists answer calls live, qualify prospects, and book appointments directly on the client's calendar — all integrated with popular scheduling tools. The company focuses specifically on the American market, understanding regional business customs and the nuances of converting inbound inquiries into revenue.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise answering and 24/7 inbound coverage",
     description:
       "Call Center Communications operates large-scale American answering-service operations designed for enterprise brands, multi-location healthcare systems, and franchises that require significant domestic capacity. Their US-based delivery centers handle millions of inbound calls annually with the reliability, security, and performance standards that enterprise clients demand. The company maintains redundant American facilities to ensure business continuity during storms, outages, and peak events, and offers dedicated receptionist teams that become true extensions of their clients' front desks.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first answering service combining AI with US receptionists",
     description:
       "Business Process Outsourcing brings a digital-first approach to American answering service, combining US-based human receptionists with AI-powered call automation to deliver modern, efficient inbound handling. Their American team leverages voice AI, smart call routing, and predictive caller insights to triage routine inquiries faster while escalating to a live US receptionist the moment a caller needs a human. The company is at the forefront of blending American workforce quality with cutting-edge answering-service technology for businesses that want faster answer times without sacrificing the human touch.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise inbound and managed answering operations",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American managed answering and inbound operations for large professional services firms, healthcare networks, and multi-location brands seeking to consolidate their domestic front-desk operations with a single trusted US-based partner. Their managed services model covers everything from 24/7 live answering and appointment booking to back-office intake processing and caller data management — all delivered by American receptionists working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10AnsweringServiceContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

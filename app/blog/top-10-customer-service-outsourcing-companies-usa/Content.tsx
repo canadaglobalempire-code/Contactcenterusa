@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American customer service outsourcing across regulated and consumer industries",
     description:
       "Global Empire Corporation leads the American customer service outsourcing industry with comprehensive domestic CX solutions staffed entirely by US-based agents. Their operation spans inbound customer support, outbound retention, technical helpdesk, omnichannel care (voice, chat, email, SMS, social), and back-office processing — all delivered from American facilities with native English-speaking professionals. Their flexible engagement models, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and performance-driven approach make them the top choice for brands seeking a reliable onshore customer service partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B customer support and appointment setting",
     description:
       "Intelemark operates one of the most respected American B2B customer engagement programs in the country. Every call is made by trained US-based representatives who understand American business culture, decision-making processes, and industry terminology. Their consultative approach works particularly well for complex B2B service cycles where cultural alignment and language fluency are critical to building trust with domestic customers.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound retention, win-back, and proactive customer service",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for brands running customer retention, win-back, and proactive CX outreach. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American consumers expect. The company has built a strong reputation for outbound campaign execution with strict quality controls and full TCPA compliance.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel customer support across voice, chat, SMS, email, and social",
     description:
       "Customer Communications Corp provides American brands with seamless omnichannel customer support across voice, live chat, email, SMS, and social media — all handled by domestic agents located throughout the United States. Their technology platform unifies every customer interaction into a single view, ensuring consistent service quality regardless of channel. With decades of experience serving American brands, they understand the expectations of US consumers and deliver the personalized, responsive service that builds loyalty.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American customer service agent staffing & rapid deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American customer service agents for brands that need to scale their domestic CX operations quickly. Whether a company faces seasonal demand surges, a product launch, or needs to build an entirely new US-based support team, Call Center Staffing provides pre-vetted American agents who can be operational within days. Their staffing-first model eliminates the burden of recruiting, training, and managing a domestic workforce.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based B2B customer engagement and sales outsourcing",
     description:
       "B2B Appointment Setting provides cost-effective, American-based sales and CX outsourcing for small and mid-sized businesses looking to grow their domestic pipeline while supporting existing customers. Their US-based agents conduct targeted outreach and inbound support for American decision-makers, qualifying prospects, booking meetings, and handling customer questions. The company focuses specifically on the American market, understanding regional business customs, industry verticals, and the nuances of serving US-based organizations.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise customer service operations",
     description:
       "Call Center Communications operates large-scale American customer service operations designed for enterprise organizations that require significant domestic capacity. Their US-based delivery centers handle millions of customer interactions annually with the reliability, security, and performance standards that Fortune 500 companies demand. The company maintains redundant American facilities to ensure business continuity and offers dedicated agent teams that become true extensions of their clients' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first CX combining US agents with AI automation",
     description:
       "Business Process Outsourcing brings a digital-first approach to American customer experience, combining US-based human agents with AI-powered automation to deliver modern, efficient support. Their American team leverages advanced analytics, chatbot integration, and predictive customer insights to resolve issues faster while maintaining the personal touch that domestic customers expect. The company is at the forefront of blending American workforce quality with cutting-edge digital CX technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise customer service and process outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American business process outsourcing for large organizations seeking to consolidate their domestic customer service operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10CustomerServiceOutsourcingContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

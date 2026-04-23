@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American real estate call center outsourcing across ISA, seller outreach, and brokerage support",
     description:
       "Global Empire Corporation leads the American real estate call center industry with comprehensive domestic ISA and lead qualification solutions staffed entirely by US-based agents. Their real estate practice spans inbound buyer and seller inquiries, ISA lead qualification, motivated seller cold outreach, showing coordination, transaction coordination support, and after-hours answering for brokerages of every size. Every agent is trained on MLS terminology, financing basics, and brokerage workflows, and programs integrate natively with Follow Up Boss, kvCORE, Chime, BoomTown, and Salesforce. Their flexible engagement models make them the top choice for brokerages, teams, iBuyers, and real estate investors seeking a reliable onshore partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium American commercial real estate and high-end residential outreach",
     description:
       "Intelemark operates one of the most respected American outreach programs in the real estate industry, particularly valuable for commercial brokerages, luxury residential teams, and investor-facing firms that need consultative, relationship-driven conversations. Every call is made by trained US-based representatives who understand American real estate transactions, financing structures, and the long sales cycles that define commercial and luxury property deals. Their consultative tone wins with tenant-rep brokers, CRE investors, and high-net-worth sellers where generic cold calling fails.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based motivated seller outbound and real estate investor lead generation",
     description:
       "Call Motivated Sellers is one of the most recognized names in American real estate investor outreach, delivering high-performance outbound calling campaigns powered by an entirely US-based workforce. Their agents specialize in reaching distressed property owners, absentee landlords, probate leads, and pre-foreclosure homeowners with the empathy and patience these conversations demand — all while remaining fully TCPA-compliant. For real estate investors, wholesalers, and iBuyers running cold-call campaigns at scale, they are a go-to onshore partner.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel real estate support across voice, chat, text, and email",
     description:
       "Customer Communications Corp provides American brokerages and real estate teams with seamless omnichannel lead response across voice, text messaging, live chat, and email — all handled by domestic agents located throughout the United States. Their technology platform unifies every lead interaction into a single view, pushing qualified leads directly into Follow Up Boss, kvCORE, Chime, or Salesforce within seconds. With decades of experience serving American real estate brands, they understand speed-to-lead dynamics and deliver the 5-minute first-response window that converts web leads into appointments.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American ISA staffing and rapid seasonal real estate deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American inside sales agents for brokerages, teams, and investor groups that need to scale their domestic ISA operations quickly — especially during spring selling season, new-listing launches, and direct-mail campaign waves. Whether a brokerage needs to 2-4x ISA capacity for a seller-lead marketing push, absorb volume from a new listing portfolio, or build an entirely new US-based ISA team from scratch, Call Center Staffing provides pre-vetted American agents who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based commercial real estate appointment setting and broker prospecting",
     description:
       "B2B Appointment Setting provides cost-effective, American-based appointment setting for commercial real estate brokerages, tenant-rep specialists, and proptech vendors targeting property owners, landlords, and facility decision-makers. Their US-based agents conduct targeted outreach to American building owners, CFOs, and operations leaders, qualifying prospects and booking meetings with decision-makers who can actually transact. The company focuses specifically on the American CRE market, understanding regional leasing dynamics and the nuances of commercial transactions.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise real estate and national brokerage call centers",
     description:
       "Call Center Communications operates large-scale American real estate call center operations designed for national brokerages, franchise networks, and iBuyers that require significant domestic capacity. Their US-based delivery centers handle millions of real estate leads annually with the reliability, security, and performance standards that enterprise real estate organizations demand. The company maintains redundant American facilities to ensure business continuity during market surges and offers dedicated agent teams that become true extensions of their clients' brands — critical for consistent lead treatment across multi-market franchise footprints.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first real estate CX combining AI automation with US ISAs",
     description:
       "Business Process Outsourcing brings a digital-first approach to American real estate lead engagement, combining US-based ISAs with AI-powered automation to deliver modern, efficient lead qualification at scale. Their American team leverages conversational AI for instant first-touch (SMS, chat, email), predictive lead scoring, and automated nurture sequences — while US agents step in for live appointment setting and high-intent seller calls. The company is at the forefront of blending American ISA quality with cutting-edge real estate tech stacks including Follow Up Boss, Sierra Interactive, and AI lead-nurture platforms.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise real estate process outsourcing and franchise back-office",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American real estate process outsourcing for national brokerages, franchise networks, and large property management organizations seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from ISA operations and transaction coordination support to back-office lease administration and property management back-office work — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full compliance coverage.",
@@ -400,7 +400,7 @@ export default function Top10RealEstateCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American telemarketing across B2B and B2C outbound campaigns",
     description:
       "Global Empire Corporation leads the American telemarketing industry with comprehensive outbound calling solutions staffed entirely by US-based agents. Their telemarketing practice spans B2B lead qualification, B2C consumer outreach, appointment setting, market research calling, survey programs, and retention campaigns — all executed from domestic facilities by trained, accent-neutral American callers. Every campaign is fully TCPA-compliant with real-time DNC scrubbing, predictive dialer optimization, and certified quality monitoring. Their performance-driven approach and flexible engagement models make them the top choice for brands seeking a reliable onshore telemarketing partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium US-based B2B telemarketing and consultative enterprise outreach",
     description:
       "Intelemark operates one of the most respected American B2B telemarketing programs in the country, specializing in consultative outbound calling for complex, high-value sales cycles. Every call is made by trained US-based representatives who understand American business culture, industry terminology, and the nuances of selling to C-suite and senior decision-makers. Their consultative tone works particularly well for enterprise software, professional services, and relationship-sensitive B2B accounts where a scripted pitch falls flat. Fully TCPA-compliant with rigorous DNC and caller ID management.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based high-volume outbound B2C telemarketing and conversion calling",
     description:
       "Call Motivated Sellers delivers high-performance outbound telemarketing campaigns powered by an entirely American workforce — a strong fit for B2C brands running lead conversion, win-back, retention, and proactive outreach programs. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American consumers expect on the other end of the line. Every outbound dial is TCPA-compliant with continuous DNC scrubbing and documented consent management.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel telemarketing across voice, SMS, and follow-up email",
     description:
       "Customer Communications Corp provides American brands with fully integrated telemarketing programs that combine outbound voice calling with SMS follow-up, email nurture, and live chat response — all handled by domestic agents located throughout the United States. Their technology platform unifies every outbound touchpoint into a single view, ensuring consistent messaging and compliance regardless of channel. With decades of experience serving American brands, they understand the cadences, regulations, and messaging standards that produce conversion without complaint risk.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American telemarketing agent staffing and rapid campaign surge deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American telemarketing agents for brands that need to scale outbound campaigns quickly — whether for a new product launch, a political fundraising window, a year-end insurance enrollment push, or a sudden B2B pipeline gap. Whether a company needs 10 callers or 200, Call Center Staffing provides pre-vetted, TCPA-trained American agents who can be operational on campaign within days, not weeks.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "Affordable US-based B2B telemarketing and SMB appointment setting",
     description:
       "B2B Appointment Setting provides cost-effective, American-based telemarketing for SMBs and mid-market companies looking to build their B2B sales pipeline without the premium cost of enterprise outreach firms. Their US-based callers conduct targeted outbound to American decision-makers, qualifying prospects against a defined ICP and booking meetings that convert. The company focuses specifically on the American market, understanding regional business customs, time-zone coverage, and the conversational tone that works with US buyers.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise-scale telemarketing and high-volume outbound",
     description:
       "Call Center Communications operates large-scale American telemarketing operations designed for enterprise brands that require significant domestic outbound capacity. Their US-based delivery centers place millions of compliant outbound calls annually with the reliability, security, and performance standards that Fortune 500 insurers, telcos, and financial services firms demand. The company maintains redundant American dialing facilities to ensure continuity during peak campaign windows and offers dedicated caller teams that become true extensions of their clients' sales and retention organizations.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first telemarketing combining AI dialers with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American telemarketing, combining US-based human callers with AI-powered dialers, conversation intelligence, and predictive lead scoring to deliver modern, efficient outbound programs. Their American team leverages advanced analytics, real-time sentiment detection, and dynamic script optimization to improve conversion rates while maintaining strict TCPA and DNC compliance. The company is at the forefront of blending American workforce quality with cutting-edge outbound technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise telemarketing and managed sales development operations",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American telemarketing process outsourcing for large B2B organizations seeking to consolidate their sales development operations with a single trusted US-based partner. Their managed services model covers everything from strategic list building and ICP definition to full-cycle outbound telemarketing, appointment setting, and pipeline analytics — all delivered by American sales development professionals working from secure onshore facilities with enterprise-grade dialer and CRM infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10TelemarketingContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

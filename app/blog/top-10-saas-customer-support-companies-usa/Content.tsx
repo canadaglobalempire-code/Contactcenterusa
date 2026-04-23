@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American SaaS customer support outsourcing across Tier 1-3 and customer success",
     description:
       "Global Empire Corporation leads the American SaaS customer support industry with comprehensive domestic support solutions staffed entirely by US-based agents trained on modern software products. Their SaaS practice spans Tier 1 in-app chat, Tier 2 technical troubleshooting, Tier 3 engineering escalation management, customer success and onboarding, expansion and retention outreach, and 24/7 incident response — all delivered from American facilities with agents fluent in SaaS workflows, SSO, API basics, and enterprise integrations. Their flexible engagement models and product-first training make them the top choice for B2B SaaS, PLG-driven SaaS, and enterprise software companies seeking a reliable onshore support partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium American B2B SaaS customer success and high-touch account management",
     description:
       "Intelemark operates one of the most respected American high-touch customer engagement programs for B2B SaaS, particularly valuable for enterprise SaaS vendors, PLG-to-Sales-Led transitions, and any software company where CSM work must feel consultative rather than transactional. Every outreach is performed by trained US-based representatives who understand SaaS lifecycle dynamics, annual renewal cycles, expansion motions, and the nuances of supporting executive-level software buyers. Their consultative approach works particularly well for complex enterprise renewals, multi-stakeholder expansion deals, and executive escalations where cultural alignment matters.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound SaaS retention, win-back, and churn-save calling",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for SaaS companies running churn-save outreach, downgrade prevention, canceled-trial win-back, and proactive renewal outreach. Their agents operate from domestic facilities across the United States, bringing the empathetic, consultative tone that SaaS customers expect when they are being asked to reconsider a cancellation. Fully TCPA-compliant for all outbound customer outreach with audit trails and consent capture.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel SaaS support across in-app chat, voice, email, and community",
     description:
       "Customer Communications Corp provides American SaaS companies with seamless omnichannel customer support across in-app chat, voice, email, SMS, and community forums — all handled by domestic agents located throughout the United States. Their technology platform unifies every customer interaction into a single view, ensuring consistent service quality regardless of channel. With decades of experience serving American software brands, they understand the expectations of US SaaS users and deliver the technically fluent, responsive service that drives product adoption and reduces churn.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American SaaS agent staffing and rapid product-launch deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American SaaS support agents for software companies that need to scale their domestic support operations quickly — especially around major product launches, platform migrations, enterprise customer rollouts, or sudden ticket-volume surges. Whether a SaaS company needs to 2-4x capacity for a new-feature launch, absorb volume from a competitor-migration promotion, or build an entirely new US-based support team, Call Center Staffing provides pre-vetted American agents trained on modern SaaS workflows who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based SaaS sales outsourcing, trial-to-paid conversion, and expansion lead gen",
     description:
       "B2B Appointment Setting provides cost-effective, American-based sales and expansion outreach for SaaS companies looking to accelerate trial-to-paid conversion, book demos with in-product signals, and expand existing accounts into new seats or products. Their US-based agents conduct targeted outreach to American buyers, champions, and decision-makers, qualifying prospects and booking meetings that convert. The company focuses specifically on the American SaaS market, understanding trial dynamics and the nuances of selling software to US mid-market and SMB buyers.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise SaaS support centers",
     description:
       "Call Center Communications operates large-scale American SaaS support operations designed for enterprise software vendors, public SaaS companies, and platform businesses that require significant domestic capacity and strict security compliance. Their US-based delivery centers handle millions of support tickets annually with the reliability, security, and performance standards that enterprise SaaS buyers demand. The company maintains redundant American facilities to ensure business continuity during platform incidents and offers dedicated agent teams — critical for enterprise SaaS vendors where inconsistent Tier 1 treatment creates churn risk in seven-figure contracts.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first SaaS support combining AI deflection with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American SaaS customer support, combining US-based human agents with AI-powered automation to deliver modern, efficient software support. Their American team leverages AI deflection (answering common how-to and WISME-type questions via bots), predictive ticket routing, customer health scoring, and automated onboarding sequences — while US agents step in for complex Tier 2-3 issues, bug triage, and high-value customer moments. The company is at the forefront of blending American workforce quality with cutting-edge SaaS support tech including Intercom Fin AI, Zendesk AI, Ada, and custom LLM copilots.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise SaaS customer operations outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American customer operations outsourcing for large SaaS vendors seeking to consolidate their domestic CS, support, and revenue operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 support and customer success management to back-office billing operations, revenue operations, and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full SOC 2 / ISO 27001 compliance coverage.",
@@ -400,7 +400,7 @@ export default function Top10SaaSCustomerSupportContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

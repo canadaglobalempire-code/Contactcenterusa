@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American technical support outsourcing across SaaS, IT, and device brands",
     description:
       "Global Empire Corporation leads the American technical support outsourcing industry with comprehensive domestic tech support solutions staffed entirely by US-based agents. Their practice spans Tier 1 triage through Tier 3 escalation coordination for SaaS companies, IT help desks, hardware brands, enterprise software vendors, and connected-device manufacturers — all delivered from American facilities with ITIL-trained, native-English-speaking professionals. Their flexible engagement models and deep ticketing platform fluency (Zendesk, Jira, ServiceNow, Salesforce, Freshdesk) make them the top choice for software and device brands seeking a reliable onshore technical support partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B SaaS and technology sales outreach with technical qualification",
     description:
       "Intelemark operates one of the most respected American B2B technology outreach programs in the country, with a strong arm dedicated to qualifying technical buyers, scheduling product demos, and supporting inbound technical inquiries for enterprise SaaS and IT vendors. Every conversation is led by trained US-based representatives who understand American technology buying cycles and speak fluently to IT directors, CTOs, and DevOps leaders. Their consultative approach works particularly well for complex technical sales motions where product depth matters as much as pipeline velocity.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound technical follow-up and proactive support calling",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for software and device brands running proactive technical support outreach, NPS/CSAT follow-up calls, and renewal-risk intervention. Their agents operate from domestic facilities across the United States, providing the clear communication and cultural alignment that US customers expect on technical escalations. Fully TCPA-compliant for all outbound technical outreach.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel technical support across voice, chat, email, and screen-share",
     description:
       "Customer Communications Corp provides American technology brands with seamless omnichannel technical support across voice, live chat, email, SMS, screen-share, and secure portals — all handled by domestic agents located throughout the United States. Their unified platform surfaces ticket history, knowledge-base articles, and diagnostic tools in a single agent view, ensuring consistent resolution quality regardless of channel. With decades of experience serving American software and device brands, they understand the expectations of US customers on technical escalations.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American tech support agent staffing & rapid product-launch deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American technical support agents for software and device brands that need to scale their domestic tech CX operations quickly — especially heading into product launches, major releases, or incident-driven surges. Whether a company needs to 2-4x help-desk capacity for a launch, absorb a CVE-driven support spike, or build an entirely new US-based tech support team, Call Center Staffing provides pre-vetted American agents with ITIL and ticketing platform training who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based B2B technology sales outsourcing and SMB tech support for growth-stage software",
     description:
       "B2B Appointment Setting provides cost-effective, American-based sales outsourcing and tech support overflow for growing software and device brands looking to expand their B2B pipeline and support smaller customer tiers without building in-house capacity. Their US-based agents conduct targeted outreach to American IT decision-makers and cover Tier 1 triage for low-volume technical queues. The company focuses specifically on the American market, understanding the nuances of selling and supporting US SMB technology customers.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise-scale technical support operations",
     description:
       "Call Center Communications operates large-scale American technical support centers designed for enterprise software, telecom, and connected-device brands that require significant domestic help-desk capacity. Their US-based delivery sites handle millions of technical tickets annually with the reliability, security, and compliance standards that Fortune 500 tech clients demand. The company maintains redundant American facilities to ensure business continuity during major release events and offers dedicated technical agent teams that become true extensions of their clients' engineering organizations.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first tech support combining AI copilots with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American technical support, combining US-based human agents with AI-powered automation, copilots, and knowledge-base intelligence to deliver modern, efficient tech CX. Their American team leverages advanced ticket analytics, virtual agent deflection, and predictive escalation models to resolve technical issues faster while maintaining the depth that complex software and device support requires. The company is at the forefront of blending American workforce quality with cutting-edge technical AI tooling.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise managed technical services and IT process outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American managed technical services and IT process outsourcing for large software, device, and IT organizations seeking to consolidate their domestic technical CX operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 technical support and IT help desk operations to back-office IT processing — all delivered by American professionals working from secure onshore facilities with enterprise-grade security infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10TechnicalSupportContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

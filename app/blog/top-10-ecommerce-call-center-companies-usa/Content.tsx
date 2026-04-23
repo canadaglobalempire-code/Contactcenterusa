@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American e-commerce call center outsourcing across DTC, retail, and marketplaces",
     description:
       "Global Empire Corporation leads the American e-commerce call center industry with comprehensive domestic CX solutions staffed entirely by US-based agents. Their e-commerce practice spans inbound order support, returns and warranty processing, live chat and SMS messaging, pre-sale conversion assistance, subscription management, and peak-season surge support — all delivered from American facilities with native English-speaking professionals. Their flexible engagement models and performance-driven approach make them the top choice for DTC brands, subscription businesses, and omnichannel retailers seeking a reliable onshore e-commerce partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B e-commerce and wholesale account management",
     description:
       "Intelemark operates one of the most respected American B2B engagement programs in the country, particularly valuable for e-commerce brands with B2B, wholesale, or marketplace seller partnerships. Every call is made by trained US-based representatives who understand American business culture and the nuances of managing high-value B2B e-commerce relationships. Their consultative approach works particularly well for complex commerce partnerships where cultural alignment and relationship depth matter.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound retention, win-back, and DTC conversion calling",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for e-commerce brands running cart abandonment, subscription win-back, and proactive customer outreach. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American shoppers expect. Fully TCPA-compliant for all outbound commerce outreach.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel e-commerce support across voice, chat, SMS, email, and social",
     description:
       "Customer Communications Corp provides American e-commerce brands with seamless omnichannel customer support across voice, live chat, email, SMS, and social media — all handled by domestic agents located throughout the United States. Their technology platform unifies every customer interaction into a single view, ensuring consistent service quality regardless of channel. With decades of experience serving American retail brands, they understand the expectations of US consumers and deliver the personalized, responsive service that builds loyalty during and after the purchase.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American e-commerce agent staffing & rapid peak-season deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American e-commerce agents for retailers and DTC brands that need to scale their domestic CX operations quickly — especially heading into Black Friday, Cyber Monday, and the full holiday season. Whether a brand needs to 2-4x capacity for peak events, absorb a product launch volume, or build an entirely new US-based support team, Call Center Staffing provides pre-vetted American agents who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based B2B commerce sales outsourcing and wholesale lead gen",
     description:
       "B2B Appointment Setting provides cost-effective, American-based sales outsourcing for e-commerce brands looking to grow their B2B, wholesale, or marketplace-seller pipeline. Their US-based agents conduct targeted outreach to American buyers and decision-makers, qualifying prospects and booking meetings that convert. The company focuses specifically on the American market, understanding regional business customs and the nuances of selling into US retailers and B2B commerce buyers.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise e-commerce call centers",
     description:
       "Call Center Communications operates large-scale American e-commerce call center operations designed for enterprise retailers and marketplaces that require significant domestic capacity. Their US-based delivery centers handle millions of customer interactions annually with the reliability, security, and performance standards that Fortune 500 retailers demand. The company maintains redundant American facilities to ensure business continuity during peak events and offers dedicated agent teams that become true extensions of their clients' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first commerce CX combining AI automation with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American e-commerce customer experience, combining US-based human agents with AI-powered automation to deliver modern, efficient retail support. Their American team leverages advanced analytics, chatbot integration, and predictive customer insights to resolve WISMO, returns, and subscription issues faster while maintaining the personal touch that domestic shoppers expect. The company is at the forefront of blending American workforce quality with cutting-edge digital commerce CX technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise commerce process outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American commerce process outsourcing for large retailers and marketplaces seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10EcommerceCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

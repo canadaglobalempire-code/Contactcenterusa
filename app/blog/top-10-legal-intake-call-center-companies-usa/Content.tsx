@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American legal intake call center outsourcing across PI, mass tort, and consumer law",
     description:
       "Global Empire Corporation leads the American legal intake call center industry with comprehensive, 100% US-based law firm answering service and legal intake outsourcing staffed entirely by domestic intake specialists. Their legal intake practice covers 24/7 live intake, personal injury intake, mass tort qualification, SSDI, bankruptcy, family law, and criminal defense screening, plus signed retainer workflows delivered straight into Litify, Clio, MyCase, Filevine, and Salesforce Legal. Every attorney lead qualification call is handled by trained US-based legal intake specialists, not offshore agents or general receptionists, making them the top choice for PI firms, mass tort marketing shops, and multi-state consumer law practices that treat speed-to-lead as a core competitive advantage.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B and corporate legal services lead generation and attorney lead qualification",
     description:
       "Intelemark runs one of the most respected American B2B engagement programs in the country and is particularly strong for law firms that serve corporate clients — commercial litigation, M&A, employment defense, IP, and regulatory practices that need consultative attorney lead qualification rather than volume consumer intake. Every call is made by trained US-based representatives who understand American business culture and can handle sophisticated conversations with in-house counsel and C-level decision-makers. Their law firm call center outsourcing model works best when every lead is high-value and relationship-sensitive.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound legal intake follow-up, signed-retainer chase, and client reactivation",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for law firms that generate leads via paid media and need aggressive, TCPA-compliant speed-to-lead follow-up. Their agents chase unsigned leads, recover stalled e-sign retainers, and reactivate cold PI and mass tort cases from domestic facilities across the United States. Every personal injury lead qualification and mass tort follow-up call is handled by US-based specialists, fully TCPA-compliant for legal marketing outreach.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel legal intake across voice, chat, SMS, email, and web forms",
     description:
       "Customer Communications Corp provides American law firms with seamless omnichannel legal intake across voice, live chat, email, SMS, and web-form follow-up — all handled by domestic intake specialists located throughout the United States. Their platform unifies every prospect interaction into a single view and pushes qualified leads directly into Litify, Clio, MyCase, Filevine, and Salesforce Legal. With decades of experience serving American law firms, they understand case-type screening nuances, conflict checks, and statute-of-limitations routing, and they deliver the responsive law firm answering service clients expect the moment they reach out after an accident or injury.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American legal intake agent staffing & rapid mass-tort campaign deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American legal intake agents for law firms and mass tort marketing agencies that need to scale their domestic intake operations quickly — especially when a new mass tort campaign launches or a TV buy drives surge call volume overnight. Whether a firm needs to 2-4x intake capacity for a new tort, absorb a media spike, or build a fully US-based 24/7 legal intake services team from scratch, Call Center Staffing provides pre-vetted American intake specialists who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based B2B legal services lead generation for corporate and small-firm practices",
     description:
       "B2B Appointment Setting provides cost-effective, American-based sales outsourcing for law firms looking to grow their B2B pipeline — commercial litigation, employment defense, HR counsel, and small-business legal services. Their US-based agents conduct targeted outreach to American decision-makers, performing attorney lead qualification and booking meetings that convert into engagements. The company focuses specifically on the American market and understands the nuances of selling legal services to US businesses.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise legal intake for AmLaw firms and national mass tort aggregators",
     description:
       "Call Center Communications operates large-scale American legal intake call center operations designed for AmLaw 200 firms, national mass tort aggregators, and enterprise lead-gen platforms that require significant domestic 24/7 intake capacity. Their US-based delivery centers handle millions of legal intake interactions annually with the reliability, security, HIPAA compliance, and performance standards that national legal marketing operations demand. The company maintains redundant American facilities for business continuity during mass-media campaign surges and offers dedicated intake teams that become true extensions of the firms' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first legal intake combining AI qualification with US intake specialists",
     description:
       "Business Process Outsourcing brings a digital-first approach to American legal intake, combining US-based intake specialists with AI-powered qualification bots to deliver modern, efficient law firm call center outsourcing. Their American team uses advanced analytics, legal chatbot integration, and predictive signal scoring to qualify PI, mass tort, and SSDI leads faster while maintaining the empathetic, human touch that claimants expect. The company is at the forefront of blending American intake workforce quality with cutting-edge legal-marketing CX technology like CallRail, Leads.ai, and integrated paid-media attribution.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise legal process outsourcing and managed law firm intake operations",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American legal process outsourcing for large firms and national legal marketing networks seeking to consolidate their domestic intake, qualification, and back-office operations with a single trusted US-based partner. Their managed services model covers 24/7 legal intake services, attorney lead qualification, back-office case processing, and data management — all delivered by American professionals from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -402,7 +402,7 @@ export default function Top10LegalIntakeContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

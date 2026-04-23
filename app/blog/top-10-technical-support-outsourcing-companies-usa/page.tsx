@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Content from "./Content";
+import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
   title: "Top 10 Technical Support Outsourcing Companies in USA (2026)",
@@ -42,6 +43,7 @@ export default function Page() {
           }),
         }}
       />
+      <BlogAEOSchemas slug="top-10-technical-support-outsourcing-companies-usa" />
       <Content />
     </>
   );

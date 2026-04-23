@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service AI call center outsourcing with AI voice agents, conversational AI, and US-based human-in-the-loop escalation",
     description:
       "Global Empire Corporation leads the American AI call center industry with a fully integrated AI powered contact center stack — AI voice agents for Tier 0 resolution, generative AI customer service copilots for every live US agent, and intent-detection-driven call deflection that routes roughly half of inbound volume to automated channels before a human is ever paged. Their conversational AI contact center platform supports AI phone answering in English and Spanish, real-time transcription, sentiment analysis, and AI-powered QA across 100% of calls. Every automated workflow has a human-in-the-loop US escalation path, so complex or emotionally charged interactions are seamlessly handed to American agents with the full AI-generated summary already in hand.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "AI-augmented B2B outbound with AI agent assist and conversational AI qualification",
     description:
       "Intelemark pairs its respected US-based B2B engagement program with a mature AI agent assist layer that gives every American SDR real-time generative AI customer service prompts, next-best-action suggestions, objection-handling cues, and automatic CRM updates. Their conversational AI contact center tooling pre-qualifies leads through AI voice agents and AI chatbot outsourcing before live US reps engage, meaning human time is spent only on high-intent B2B conversations. AI-powered QA runs on every call for compliance and coaching, and intent detection automatically categorizes outcomes into the client's CRM.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "AI-driven outbound retention and win-back with AI voice agents and US human escalation",
     description:
       "Call Motivated Sellers layers voice AI for business on top of its US-based outbound operation, blending AI voice agents with American human closers to drive retention, win-back, and renewal outcomes. Their automated call center services model uses conversational AI to handle first-touch outreach and scheduling, then seamlessly warm-transfers interested customers to US-based retention specialists. AI agent assist delivers real-time talking points, sentiment analysis flags churn risk, and AI-powered QA scores every contact for compliance and coaching — all wrapped in a fully TCPA-compliant framework.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "Omnichannel AI customer service automation across voice, chat, SMS, email, and social",
     description:
       "Customer Communications Corp runs an omnichannel AI powered contact center that unifies AI phone answering, AI chatbot outsourcing, SMS, email, and social under a single conversational AI contact center platform. Their generative AI customer service engine writes draft replies for US agents across every channel, while AI call deflection pushes routine WISMO, FAQ, and scheduling requests into self-service with measured deflection rates of 45-60%. Real-time transcription, sentiment analysis, and intent detection keep the AI honest, and every interaction above a confidence threshold is routed to a domestic US agent with full context.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Rapid deployment of AI-trained US agents for AI + human hybrid contact centers",
     description:
       "Call Center Staffing specializes in standing up the human half of AI + human hybrid contact centers — recruiting, training, and deploying US-based agents who are specifically coached on AI agent assist tools, generative AI customer service copilots, and escalation protocols for conversational AI contact center workflows. Brands that have invested in AI customer service automation but need domestic humans to handle escalations, empathy-heavy interactions, and complex edge cases use Call Center Staffing to ramp US workforces in days, not months. Every agent is trained on AI knowledge base tooling, real-time transcription review, and human-in-the-loop AI sign-off.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "AI-assisted B2B appointment setting with conversational AI and US-based closers",
     description:
       "B2B Appointment Setting augments its affordable US-based B2B outreach with conversational AI and AI agent assist to improve qualification quality and lower cost per booked meeting. AI voice agents handle top-of-funnel outreach and simple scheduling, while generative AI customer service tooling generates personalized talking points, account research summaries, and follow-up drafts for every American SDR. AI-powered QA reviews 100% of calls for messaging consistency and compliance, and AI call deflection moves low-intent prospects to nurture without burning SDR time.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "Enterprise-scale AI powered contact center with dedicated AI + human teams",
     description:
       "Call Center Communications operates enterprise-scale AI powered contact center programs for Fortune 500 clients, combining large dedicated US agent teams with an enterprise-grade conversational AI contact center platform. Their AI stack integrates with major CCaaS vendors and supports AI voice agents, AI phone answering, AI chatbot outsourcing, and AI agent assist across millions of monthly interactions. Multi-site US redundancy ensures continuity even when AI models need to failover, and their AI-powered QA practice analyzes 100% of contacts — not the 2-5% sampled in traditional enterprise operations.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "Digital-first AI customer service automation with US agents on escalation",
     description:
       "Business Process Outsourcing brings a digital-first approach to generative AI customer service, combining AI chatbot outsourcing, AI voice agents, and voice AI for business with a smaller but high-quality US agent team that handles everything the AI cannot. Their automated call center services platform emphasizes measurable AI call deflection, with per-intent deflection dashboards, confidence-threshold tuning, and active learning that improves AI containment every week. Complex escalations are routed to American agents with an AI-generated customer history summary, sentiment label, and recommended next action.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "Enterprise AI + human hybrid B2B process outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting delivers full-lifecycle AI + human hybrid contact center programs for large B2B enterprises — combining conversational AI contact center infrastructure, AI voice agents, AI chatbot outsourcing, and a dedicated US-based human tier for complex B2B conversations. Their managed services wrap AI customer service automation, AI-powered QA, AI agent assist, and AI knowledge base governance into a single enterprise SOW, with program management and AI model governance handled onshore.",

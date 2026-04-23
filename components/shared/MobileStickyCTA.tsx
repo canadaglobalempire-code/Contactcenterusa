@@ -1,24 +1,18 @@
 "use client";
 
-import { FileText } from "lucide-react";
-import { siteConfig } from "@/lib/seo-config";
+import Link from "next/link";
+import { MessageSquare } from "lucide-react";
 
 export function MobileStickyCTA() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.1)] p-3 flex gap-3 lg:hidden">
-      <a
-        className="flex-1 flex items-center justify-center gap-2 bg-navy text-white py-3 rounded-lg font-semibold text-sm"
-      >
-        <FileText className="w-4 h-4" />
-        Get a Quote
-      </a>
-      <a
+    <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.1)] p-3 lg:hidden safe-area-bottom">
+      <Link
         href="/contact"
-        className="flex-1 flex items-center justify-center gap-2 bg-blue text-white py-3 rounded-lg font-semibold text-sm"
+        className="flex w-full items-center justify-center gap-2 bg-red text-white py-3.5 rounded-lg font-semibold text-sm active:scale-[0.98] transition"
       >
-        <FileText className="w-4 h-4" />
-        Get a Quote
-      </a>
+        <MessageSquare className="w-4 h-4" />
+        Enquire Now
+      </Link>
     </div>
   );
 }

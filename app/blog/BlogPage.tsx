@@ -7,6 +7,69 @@ import { ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Call Center Outsourcing Cost Per Hour in 2026 (Real Pricing by Country)",
+    excerpt:
+      "How much does call center outsourcing cost per hour in 2026? Real rates for US, nearshore, and offshore providers, by service type, seniority, and pricing model — with a full cost breakdown.",
+    category: "Pricing Guide",
+    readTime: "14 min read",
+    image: "/images/hd-agents-working.jpg",
+    href: "/blog/call-center-outsourcing-cost-per-hour-2026",
+  },
+  {
+    title: "In-House vs Outsourced Call Center: True Cost Comparison (2026)",
+    excerpt:
+      "Should you build or outsource your call center in 2026? A line-by-line cost comparison of in-house vs outsourced operations — salaries, benefits, tech, facilities, and hidden overhead.",
+    category: "Cost Comparison",
+    readTime: "13 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/in-house-vs-outsourced-call-center",
+  },
+  {
+    title: "How to Write a Call Center RFP (Free Template + Checklist)",
+    excerpt:
+      "Write a call center RFP that gets apples-to-apples vendor proposals. Free 25-section RFP template, scoring rubric, and the exact questions top BPO buyers ask in 2026.",
+    category: "Buyer's Toolkit",
+    readTime: "15 min read",
+    image: "/images/cc-team-plan.jpg",
+    href: "/blog/call-center-rfp-template",
+  },
+  {
+    title: "Teleperformance Alternatives: 7 Better Options for Mid-Market (2026)",
+    excerpt:
+      "Looking for a Teleperformance alternative in 2026? Compare 7 outsourcing partners that deliver better CX, flexible contracts, and lower cost — ranked for mid-market brands.",
+    category: "Competitor Comparison",
+    readTime: "12 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/teleperformance-alternatives",
+  },
+  {
+    title: "HIPAA-Compliant Call Center Services: Complete 2026 Guide",
+    excerpt:
+      "Everything healthcare leaders need to know about HIPAA-compliant call centers — BAA requirements, safeguards, vendor checklist, cost, and 2026 compliance trends.",
+    category: "Healthcare Compliance",
+    readTime: "16 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/hipaa-compliant-call-center-services",
+  },
+  {
+    title: "AI Call Center vs Human Agents: Cost, Quality & What to Outsource (2026)",
+    excerpt:
+      "Should you use AI call center agents, human agents, or both in 2026? Honest comparison of cost, CX quality, deflection rates, and exactly which calls to route where.",
+    category: "AI & Automation",
+    readTime: "14 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/ai-call-center-vs-human-agents",
+  },
+  {
+    title: "2026 Call Center Benchmarks: AHT, CSAT, FCR & More by Industry",
+    excerpt:
+      "2026 call center benchmarks for every metric that matters — AHT, CSAT, FCR, NPS, abandon rate, occupancy, attrition — broken down by industry and channel.",
+    category: "Benchmarks & Data",
+    readTime: "17 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/call-center-benchmarks-2026",
+  },
+  {
     title: "Top 10 Small Business Call Center Companies in USA (2026)",
     excerpt:
       "Compare the top 10 call center services for small business in the USA. Ranked by affordability, no-minimum contracts, 24/7 answering, overflow capacity, and SMB-friendly pricing.",
@@ -327,7 +390,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy py-28 lg:py-36">
+      <section className="relative overflow-hidden bg-navy pt-36 pb-20 lg:pt-40 lg:pb-28">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
           style={{

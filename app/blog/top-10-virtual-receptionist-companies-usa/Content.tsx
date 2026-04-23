@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American virtual receptionist solutions for SMBs, professional services, and growing businesses",
     description:
       "Global Empire Corporation leads the American virtual receptionist industry with premium live call answering services staffed entirely by US-based receptionists. Their virtual receptionist practice spans 24/7 live call answering, appointment booking, lead qualification, message taking, CRM integration, and bilingual English/Spanish support — all delivered from domestic facilities with professional receptionists trained in your brand voice. Their flexible engagement models make them the top choice for law firms, medical practices, home services, and professional SMBs seeking a reliable onshore virtual front desk.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium American virtual receptionists for B2B professional services and high-touch clientele",
     description:
       "Intelemark operates one of the most respected American live-answer programs in the country, particularly valuable for professional services firms, consultants, and B2B companies that need a polished front-of-house experience for every caller. Every call is handled by trained US-based receptionists who understand American business culture, executive communication, and the nuances of representing high-value professional brands. Their consultative approach works particularly well for relationship-sensitive businesses where first impressions directly drive revenue.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based live receptionists for outbound follow-up, lead nurturing, and home services intake",
     description:
       "Call Motivated Sellers delivers high-performance virtual reception combined with outbound follow-up campaigns powered by an entirely American workforce — a strong fit for real estate investors, home services contractors, and SMBs that need both inbound call answering and proactive lead re-engagement. Their US-based receptionists operate from domestic facilities, providing the accent-neutral, high-energy communication that American callers expect. Fully TCPA-compliant for all outbound lead follow-up.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel virtual reception across voice, chat, email, SMS, and web forms",
     description:
       "Customer Communications Corp provides American SMBs with seamless omnichannel virtual reception across voice, live chat, email, SMS, and web-form capture — all handled by domestic receptionists located throughout the United States. Their technology platform unifies every inbound touchpoint into a single message log, ensuring consistent intake regardless of channel. With decades of experience serving American professional firms, they understand the expectations of US callers and deliver the personalized, responsive reception that turns a cold inquiry into a booked appointment.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "Rapid American virtual receptionist staffing & surge front-desk deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American virtual receptionists for practices and SMBs that need to scale their domestic front-desk operations quickly — especially during seasonal surges, new office openings, or unexpected staff shortages. Whether a firm needs to double reception capacity ahead of a marketing campaign, cover maternity leave, or build an entirely new US-based virtual front-desk team, Call Center Staffing provides pre-vetted American receptionists who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "Affordable US-based virtual reception for SMB professional services and local businesses",
     description:
       "B2B Appointment Setting provides cost-effective, American-based virtual reception and appointment-booking services for SMBs looking to professionalize their front desk without the overhead of a full-time in-house receptionist. Their US-based receptionists handle inbound calls, qualify leads, and book appointments directly into your calendar. The company focuses specifically on the American SMB market, understanding regional business customs and the needs of local professional practices and contractors.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise virtual reception and corporate switchboard",
     description:
       "Call Center Communications operates large-scale American virtual reception operations designed for enterprises and multi-location professional services groups that require significant domestic call-handling capacity. Their US-based delivery centers handle millions of front-desk interactions annually with the reliability, security, and performance standards that large law firms, hospital systems, and multi-site practices demand. The company maintains redundant American facilities to ensure business continuity and offers dedicated receptionist pods that become true extensions of their clients' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first virtual reception combining AI automation with US receptionists",
     description:
       "Business Process Outsourcing brings a digital-first approach to American virtual reception, combining US-based human receptionists with AI-powered automation to deliver modern, efficient front-desk support. Their American team leverages conversational AI for simple FAQs and message capture while routing complex intake, booking, and qualification calls to live US receptionists. The company is at the forefront of blending American reception quality with cutting-edge voice-AI technology — ideal for SaaS companies, modern professional firms, and digital-first SMBs.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise front-office BPO and managed virtual reception programs",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American front-office outsourcing for large organizations and multi-location practices seeking to consolidate their virtual reception, appointment booking, and inbound intake operations with a single trusted US-based partner. Their managed services model covers everything from live reception and scheduling to back-office intake processing and data entry — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10VirtualReceptionistContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

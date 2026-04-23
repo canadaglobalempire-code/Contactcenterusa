@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American inbound call center outsourcing with 24/7 live agent coverage",
     description:
       "Global Empire Corporation leads the American inbound call center industry with comprehensive 24/7 customer support staffed entirely by US-based live agents. Their inbound practice covers tier-1 and tier-2 customer service, help desk support, order-taking, reservations, billing inquiries, and escalation handling — all delivered from domestic facilities with native English-speaking professionals. Industry-leading first-contact resolution (FCR) rates above 85% and average CSAT scores of 4.7/5 make them the top choice for brands seeking a reliable onshore inbound partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium American B2B inbound support and consultative account servicing",
     description:
       "Intelemark operates one of the most respected American inbound programs for B2B brands, particularly valuable for companies with complex, consultative customer inquiries. Every inbound call is answered by trained US-based representatives who understand American business culture and the nuances of managing high-value B2B relationships. Their consultative approach works particularly well for technology, professional services, and enterprise-facing inbound programs where cultural alignment, active listening, and deep product fluency matter.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based inbound retention, win-back, and conversion support",
     description:
       "Call Motivated Sellers delivers high-performance inbound handling powered by an entirely American workforce — a strong fit for brands running proactive save desks, retention hotlines, and inbound sales conversion programs. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American customers expect. Fully TCPA-compliant for any outbound follow-up required after an inbound contact, with real-time QA on every call.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel inbound support across voice, chat, SMS, email, and social",
     description:
       "Customer Communications Corp provides American brands with seamless omnichannel inbound support across voice, live chat, email, SMS, and social media — all handled by domestic agents located throughout the United States. Their technology platform unifies every inbound interaction into a single customer view, ensuring consistent service quality regardless of channel. With decades of experience serving American consumer brands, they understand US customer expectations and deliver the personalized, responsive inbound service that builds long-term loyalty.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American inbound agent staffing & rapid surge deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American inbound agents for brands that need to scale their domestic customer service operations quickly — especially during product launches, recalls, open enrollment, or peak inbound seasons. Whether a brand needs to 2-4x inbound capacity for a launch event, absorb sudden campaign volume, or build an entirely new US-based inbound team, Call Center Staffing provides pre-vetted American agents who can be operational on inbound queues within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based SMB inbound lead qualification and B2B inbound support",
     description:
       "B2B Appointment Setting provides cost-effective, American-based inbound support for SMB brands looking to qualify inbound leads, route marketing-generated inquiries, and service B2B inbound callers. Their US-based agents answer inbound business inquiries, qualify prospects, and book meetings that convert. The company focuses specifically on the American market, understanding regional business customs and the nuances of servicing US business callers and B2B prospects across inbound channels.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise inbound call centers at Fortune 500 scale",
     description:
       "Call Center Communications operates large-scale American inbound call center operations designed for enterprise brands and marketplaces that require significant domestic inbound capacity. Their US-based delivery centers handle millions of inbound customer interactions annually with the reliability, security, and performance standards that Fortune 500 brands demand. The company maintains redundant American facilities to ensure business continuity during peak inbound events and offers dedicated agent teams that become true extensions of their clients' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first inbound CX combining AI automation with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American inbound customer experience, combining US-based human agents with AI-powered automation to deliver modern, efficient inbound support. Their American team leverages advanced analytics, chatbot integration, intelligent IVR, and predictive routing to resolve inbound inquiries faster while maintaining the personal touch that domestic customers expect. The company is at the forefront of blending American workforce quality with cutting-edge digital inbound CX technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise inbound process outsourcing and managed services",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American inbound process outsourcing for large brands seeking to consolidate their domestic inbound operations with a single trusted US-based partner. Their managed services model covers everything from inbound customer support and help desk to back-office inbound processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -402,7 +402,7 @@ export default function Top10InboundCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

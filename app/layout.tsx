@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { MobileStickyCTA } from "@/components/shared/MobileStickyCTA";
 import { generateOrganizationSchema, generateLocalBusinessSchema } from "@/lib/schema";
 
 const inter = Inter({
@@ -109,8 +110,9 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           }}
         />
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-[72px] lg:pb-0">{children}</main>
         <Footer />
+        <MobileStickyCTA />
       </body>
     </html>
   );

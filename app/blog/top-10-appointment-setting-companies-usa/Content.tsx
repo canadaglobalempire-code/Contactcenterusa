@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American appointment setting services across B2B and B2C pipelines",
     description:
       "Global Empire Corporation leads the American appointment setting industry with comprehensive SDR-as-a-service programs staffed entirely by US-based appointment setters. Their B2B appointment setting outsourcing practice spans outbound cold calling, LinkedIn appointment setting, email cadences, account-based prospecting, and full-funnel pipeline development — all delivered from American facilities with native English-speaking SDRs. Their multichannel cadence engine combines cold calling appointment setting with LinkedIn and email to book qualified meetings for SaaS, insurance, financial services, medical device, and manufacturing brands.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium American B2B appointment setting companies for high-ACV enterprise sales",
     description:
       "Intelemark operates one of the most respected American B2B appointment setting programs in the country, particularly for enterprise appointment setting engagements where deal sizes exceed $100K. Every meeting is booked by trained US-based appointment setters who understand American business culture, buyer committees, and the nuances of complex B2B selling. Their consultative approach works particularly well for SaaS appointment setting targeting VP and C-level buyers, and their senior-SDR model produces qualified meetings that convert at 3-5x the rate of junior-setter programs.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "High-velocity cold calling appointment setting for B2C and insurance",
     description:
       "Call Motivated Sellers delivers high-performance cold calling appointment setting campaigns powered by an entirely American SDR team — a strong fit for insurance appointment setting, real estate, home services, and B2C financial services brands running high-volume dialing programs. Their appointment setters operate from domestic facilities across the United States, dialing 150-250 prospects per day per SDR while maintaining full TCPA compliance. Their power-dialer infrastructure, call recording, and real-time QA make them one of the most effective outsourced appointment setters for pipeline velocity.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Multichannel US-based appointment setting services across phone, email, LinkedIn, and SMS",
     description:
       "Customer Communications Corp provides American B2B and B2C appointment setting services across a true multichannel cadence — combining phone, email, LinkedIn, SMS, and direct mail in coordinated sequences handled by domestic appointment setters. Their technology platform unifies every touchpoint into a single prospect timeline, ensuring no lead falls through the cracks. With decades of experience running appointment setting agencies and sales development programs, they understand how modern B2B buyers move through multichannel cadences and deliver the consistency that turns cold prospects into booked meetings.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "Rapid American SDR staffing & on-demand outsourced appointment setters",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American SDRs and outsourced appointment setters for sales teams that need to scale their outbound motion quickly. Whether a company needs to add 5-25 SDRs for a new product launch, backfill open roles, or build a dedicated appointment setting team from scratch, Call Center Staffing provides pre-vetted American appointment setters who can be operational within days. Their workforce is trained across voice, LinkedIn appointment setting, and email — and is a strong option for companies that want embedded US-based SDRs rather than a fully-managed program.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "SMB-friendly B2B appointment setting outsourcing and sales appointment setting services",
     description:
       "B2B Appointment Setting provides cost-effective, American-based B2B appointment setting outsourcing for SMB and mid-market companies looking to build qualified sales pipeline without hiring an in-house SDR team. Their US-based appointment setters conduct targeted outreach to American decision-makers across SaaS appointment setting, manufacturing, professional services, and B2B financial services — qualifying prospects with BANT-style criteria and booking meetings that convert. The company focuses specifically on the American market with transparent pay-per-appointment and per-SDR pricing that SMBs can actually afford.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise appointment setting at scale",
     description:
       "Call Center Communications operates large-scale American enterprise appointment setting operations designed for Fortune 500 sales organizations and enterprise technology vendors that require significant domestic SDR capacity. Their US-based delivery centers run hundreds of seats of coordinated outbound appointment setters, booking meetings against strict qualification criteria for high-ACV enterprise appointment setting programs. The company maintains redundant American facilities, dedicated SDR pods per client, and enterprise-grade security — making them a strong fit for enterprise appointment setting programs that need to flex 50-200 SDRs.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "Digital-first American appointment setting services combining AI + human SDRs",
     description:
       "Business Process Outsourcing brings a digital-first approach to American appointment setting, combining US-based human SDRs with AI-powered conversation intelligence, intent signals, and predictive dialing to deliver modern, efficient outbound motion. Their American appointment setters leverage tools like Gong, Chorus, 6sense, Apollo, and ZoomInfo alongside Outreach and SalesLoft — using AI to surface buying signals, recommend the next best action, and triage accounts for human SDRs to work. They are one of the most forward-leaning outsourced appointment setters in the US for modern B2B revenue teams.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise appointment setting outsourcing and managed SDR programs",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American enterprise appointment setting outsourcing for large organizations seeking to consolidate their SDR function with a single trusted US-based partner. Their managed-SDR model covers everything from persona research and account-based targeting to multichannel cadence execution and full sales appointment setting services — all delivered by American appointment setters working from secure onshore facilities. A strong fit for enterprise appointment setting programs that need 25-100+ SDRs, strict governance, and integration with enterprise revenue stacks (Salesforce, Outreach, 6sense, Demandbase).",
@@ -401,7 +401,7 @@ export default function Top10AppointmentSettingContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

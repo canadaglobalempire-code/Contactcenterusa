@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American HVAC call center and home services dispatcher operations across plumbing, electrical, roofing, and pest control",
     description:
       "Global Empire Corporation leads the American HVAC call center industry with a comprehensive home services dispatcher practice staffed entirely by US-based agents. Their contractor call center services cover 24/7 home services answering, after hours HVAC dispatch, emergency service dispatcher coverage, HVAC booking service for new install and maintenance jobs, and overflow call handling for busy weather events. Every technician dispatch is coordinated through ServiceTitan, Housecall Pro, Jobber, or FieldEdge — giving HVAC, plumbing, electrical, and roofing contractors a true domestic extension of their office staff. Their bilingual English and Spanish agents ensure every homeowner call is qualified, booked, and routed to the right service area without a missed revenue opportunity.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American HVAC and home services outbound — maintenance membership renewals, tune-up campaigns, and commercial contractor call center services",
     description:
       "Intelemark operates one of the most respected American outbound engagement programs in the country, particularly valuable for HVAC, plumbing, and commercial contractors running maintenance membership renewals, seasonal tune-up campaigns, and B2B commercial property outreach. Every call is made by trained US-based representatives who understand the seasonality of the HVAC industry and the trust-based nature of selling to homeowners and facility managers. Their consultative approach works particularly well for high-ticket system replacement conversations where cultural alignment and professional tone matter more than raw dial volume.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound for home services — estimate follow-up, aging-lead reactivation, and HVAC booking service confirmations",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for HVAC, roofing, plumbing, and home remodeling companies running estimate follow-up, aging-lead reactivation, and appointment confirmation calls. Their agents operate from domestic facilities across the United States, providing the accent-neutral tone and homeowner-friendly communication that residential services customers expect. Every outbound program is fully TCPA-compliant with recorded consent and DNC scrubbing — critical for contractor call center services that dial homeowners at scale.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel HVAC answering service and plumbing call center support across voice, chat, SMS, and email",
     description:
       "Customer Communications Corp provides American HVAC and home services brands with seamless omnichannel customer communication across voice, live chat, email, SMS, and web-form intake — all handled by domestic agents located throughout the United States. Their technology platform unifies every homeowner interaction into a single dispatch view, ensuring every service request is captured, qualified, and booked. With decades of experience serving American residential services brands, they understand the expectations of US homeowners and deliver the warm, responsive HVAC answering service and plumbing call center tone that converts inbound calls into scheduled jobs.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American HVAC call center agent staffing and rapid seasonal deployment for heat waves, cold snaps, and storm response",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American HVAC call center agents and home services dispatchers for contractors that need to scale their domestic answering operations quickly — especially heading into summer heat waves, winter freeze events, and storm-driven roofing demand. Whether an HVAC company needs to 2-4x capacity for a heat emergency, a plumbing franchise needs overflow call handling during a pipe-burst cold snap, or a roofing contractor needs storm-response agents trained in 48 hours, Call Center Staffing provides pre-vetted US-based agents who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based commercial HVAC sales outsourcing and B2B contractor call center services for facility and property managers",
     description:
       "B2B Appointment Setting provides cost-effective, American-based sales outsourcing for commercial HVAC contractors, mechanical service companies, and commercial roofing brands looking to grow their B2B pipeline with property managers, facility directors, and general contractors. Their US-based agents conduct targeted outreach to American commercial decision-makers, qualifying prospects by building type, service contract spend, and upcoming capital projects before booking qualified meetings. The company focuses specifically on the American market, understanding regional construction cycles and the nuances of selling into US property management and facility services.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise HVAC call center and national franchise home services dispatcher operations",
     description:
       "Call Center Communications operates large-scale American HVAC call center and home services dispatcher operations designed for enterprise franchise brands and national multi-location contractors that require significant domestic capacity. Their US-based delivery centers handle millions of homeowner calls annually with the reliability, after hours HVAC dispatch coverage, and security standards that national HVAC, plumbing, and pest control franchises demand. The company maintains redundant American facilities to ensure business continuity during hurricane season and regional weather emergencies, and offers dedicated agent teams that become true extensions of each franchisee's brand.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first HVAC answering service combining AI automation with US-based emergency service dispatcher agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American HVAC call center and home services dispatcher operations, combining US-based human agents with AI-powered automation to deliver modern, efficient contractor call center services. Their American team leverages advanced analytics, chatbot intake, and predictive dispatch insights to resolve routine HVAC booking service requests, plumbing call center triage, and pest control answering service intake faster while maintaining the empathetic tone that homeowners expect. The company is at the forefront of blending American workforce quality with cutting-edge digital CX technology for after hours HVAC dispatch and 24/7 home services answering.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise home services BPO — managed HVAC call center, plumbing call center, and commercial roofing call center operations",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American home services process outsourcing for large HVAC, plumbing, and roofing networks seeking to consolidate their domestic dispatcher operations with a single trusted US-based partner. Their managed services model covers everything from HVAC answering service and 24/7 home services answering to back-office dispatch operations, membership administration, and field-service platform management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -402,7 +402,7 @@ export default function Top10HVACHomeServicesContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

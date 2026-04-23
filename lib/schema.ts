@@ -108,3 +108,77 @@ export function generateBreadcrumbSchema(
     })),
   };
 }
+
+export function generateItemListSchema(
+  items: { rank: number; name: string; description?: string; url?: string }[],
+  name: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.map((it) => ({
+      "@type": "ListItem",
+      position: it.rank,
+      name: it.name,
+      ...(it.description ? { description: it.description } : {}),
+      ...(it.url ? { url: it.url } : {}),
+    })),
+  };
+}
+
+export function generateBlogAEOSchema(opts: {
+  slug: string;
+  headline: string;
+  description: string;
+  datePublished?: string;
+  dateModified?: string;
+  image?: string;
+  keywords?: string[];
+  faqs?: { question: string; answer: string }[];
+  companies?: { rank: number; name: string; description?: string; url?: string }[];
+}) {
+  const baseUrl = "https://contactcenterusa.com";
+  const url = `${baseUrl}/blog/${opts.slug}`;
+  const publishDate = opts.datePublished || "2026-04-19";
+  const modifyDate = opts.dateModified || publishDate;
+  const image = opts.image || `${baseUrl}/images/logo-v3.png`;
+
+  const blogPosting: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: opts.headline,
+    description: opts.description,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    author: {
+      "@type": "Organization",
+      name: "Contact Center USA",
+      url: baseUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Contact Center USA",
+      url: baseUrl,
+      logo: { "@type": "ImageObject", url: `${baseUrl}/images/logo-v3.png` },
+    },
+    datePublished: publishDate,
+    dateModified: modifyDate,
+    image,
+    url,
+    inLanguage: "en-US",
+    ...(opts.keywords ? { keywords: opts.keywords.join(", ") } : {}),
+  };
+
+  const schemas: Record<string, unknown>[] = [blogPosting];
+
+  if (opts.faqs && opts.faqs.length > 0) {
+    schemas.push(generateFAQSchema(opts.faqs));
+  }
+
+  if (opts.companies && opts.companies.length > 0) {
+    schemas.push(generateItemListSchema(opts.companies, opts.headline));
+  }
+
+  return schemas;
+}

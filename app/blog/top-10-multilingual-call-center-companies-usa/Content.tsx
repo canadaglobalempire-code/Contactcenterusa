@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American multilingual call center outsourcing across Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog",
     description:
       "Global Empire Corporation leads the American multilingual call center industry with comprehensive bilingual and multilingual CX solutions staffed by US-based agents fluent in Spanish, French, Mandarin, Portuguese, Vietnamese, Tagalog, and more. Their multilingual practice spans Hispanic-market inbound support, bilingual English/Spanish customer care, over-the-phone interpretation (OPI), and dedicated language-line programs — all delivered from American facilities with native and near-native speakers. Their flexible engagement models and language-certified agent pools make them the top choice for retailers, healthcare networks, financial services firms, and government programs that need to reach America's 68+ million multilingual consumers.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Bilingual B2B engagement and Hispanic-market outbound campaigns",
     description:
       "Intelemark operates one of the most respected American bilingual B2B engagement programs in the country, particularly valuable for brands needing Spanish-fluent SDRs to reach Hispanic decision-makers, Latin American buyers, and multicultural markets. Every call is placed by trained US-based representatives who speak native-level Spanish and English and understand the cultural nuances of selling into the Hispanic business community. Their consultative approach works well for complex multilingual partnerships where cultural alignment and relationship depth matter.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound Spanish-language retention, win-back, and Hispanic-market DTC calling",
     description:
       "Call Motivated Sellers delivers high-performance bilingual outbound calling campaigns powered by an entirely American workforce — a strong fit for brands running Spanish-language cart abandonment, Hispanic-market win-back, and proactive customer outreach to US Latino consumers. Their agents operate from domestic facilities across the United States and are native or near-native Spanish speakers who bring cultural fluency as well as linguistic skill. Fully TCPA-compliant for all outbound bilingual outreach.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel multilingual support across voice, chat, SMS, email, and social",
     description:
       "Customer Communications Corp provides American brands with seamless multilingual omnichannel customer support across voice, live chat, email, SMS, and social media — all handled by domestic bilingual and multilingual agents located throughout the United States. Their technology platform unifies every customer interaction into a single view regardless of language, ensuring consistent service quality across English, Spanish, French, Portuguese, and Tagalog channels. With decades of experience serving American multicultural brands, they understand the expectations of US Hispanic, Asian, and immigrant consumers and deliver the personalized, culturally-aligned service that builds loyalty.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American bilingual agent staffing & rapid multilingual team deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American bilingual and multilingual agents for companies that need to scale their Spanish-language, French, Mandarin, or Portuguese CX operations quickly. Whether a brand needs to stand up a Hispanic-market support team, add language-line capacity during Open Enrollment, or build a dedicated bilingual workforce, Call Center Staffing provides pre-vetted, language-tested American agents who can be operational within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based bilingual B2B sales outsourcing and Hispanic-market lead gen",
     description:
       "B2B Appointment Setting provides cost-effective, American-based bilingual sales outsourcing for brands looking to grow their Hispanic-market, Latin American, and multicultural B2B pipeline. Their US-based bilingual agents conduct targeted Spanish- and English-language outreach to American Latino buyers and decision-makers, qualifying prospects and booking meetings that convert. The company focuses specifically on the Hispanic and multicultural markets, understanding regional business customs and the nuances of selling into US Latino businesses.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise multilingual call centers",
     description:
       "Call Center Communications operates large-scale American multilingual call center operations designed for enterprise clients that require significant domestic bilingual and multilingual capacity. Their US-based delivery centers handle millions of Spanish, French, Portuguese, and Tagalog interactions annually with the reliability, security, and performance standards that Fortune 500 healthcare carriers, utilities, and retailers demand. The company maintains redundant American facilities staffed with certified bilingual agents and offers dedicated multilingual teams that become true extensions of their clients' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first multilingual CX combining AI translation with bilingual US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American multilingual customer experience, combining US-based bilingual human agents with AI-powered real-time translation and language detection to deliver modern, efficient multicultural support. Their American team leverages AI language routing, translation assistants, and predictive cultural insights to resolve Spanish, French, Mandarin, and Portuguese inquiries faster while maintaining the personal touch and cultural alignment that Hispanic and multicultural consumers expect. The company is at the forefront of blending American workforce quality with cutting-edge multilingual CX technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise multilingual process outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American multilingual process outsourcing for large healthcare carriers, retailers, and utilities seeking to consolidate their bilingual and multilingual operations with a single trusted US-based partner. Their managed services model covers everything from Spanish-language customer support and Hispanic-market sales operations to multilingual back-office processing — all delivered by American bilingual professionals working from secure onshore facilities with enterprise-grade language technology infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10MultilingualCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

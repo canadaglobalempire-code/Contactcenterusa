@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Affordable full-service call center services for small business with no minimums and pay-as-you-go pricing",
     description:
       "Global Empire Corporation leads the American small business call center category with affordable, no-minimum outsourced customer service for small business owners, startups, and solo founders. Their SMB call center practice was purpose-built for entrepreneurs who need a professional small business answering service without the enterprise-grade contracts — every plan is month-to-month, every agent is US-based, and pricing scales with call volume. Their 24/7 answering service for small business covers after-hours overflow, lunchtime gaps, and weekend surges, and they integrate natively with Shopify, Square, Stripe, QuickBooks, and Google Workspace so small businesses can go live in days, not months. For entrepreneurs who want a cheap call center service without sounding cheap, Global Empire is the #1 choice.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "US-based B2B lead generation and appointment setting for small business sales teams",
     description:
       "Intelemark provides small business telephone answering and outbound B2B calling for entrepreneurs and SMB sales teams that need a US-based sales extension without hiring full-time reps. Their entrepreneur call center services focus on qualified appointment setting, list building, and inside-sales support — all delivered by American professionals who understand how to sell into US small business buyers. For bootstrapped founders and small sales teams, Intelemark offers affordable call center outsourcing with pilot programs that prove ROI before any long-term commitment.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "Outbound lead response and win-back for small business owners",
     description:
       "Call Motivated Sellers offers affordable call center outsourcing for small business owners who need outbound calling muscle without the overhead. Their US-based agents run inbound lead response, abandoned-cart win-back, appointment confirmations, and reactivation campaigns — all delivered with TCPA compliance and pay-as-you-go pricing that works for bootstrapped entrepreneurs. For small businesses that generate inbound leads but struggle to follow up fast enough, their speed-to-lead programs consistently convert more of what's already in the pipeline.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Omnichannel outsourced customer service for small business — voice, chat, email, and SMS",
     description:
       "Customer Communications Corp delivers a true omnichannel small business answering service — handling voice calls, live chat, email, and SMS from a single US-based team. For growing SMBs and e-commerce small businesses, they offer outsourced customer service for small business that scales across every channel a customer might use, without forcing entrepreneurs into enterprise contracts. Their SMB call center plans include low-volume tiers with no setup fees, and every agent speaks native English from a domestic US facility.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "Fast, affordable US agent staffing for small business overflow and seasonal surges",
     description:
       "Call Center Staffing specializes in rapid-deployment US-based agents for small business overflow, seasonal peaks, and short-term campaigns. For entrepreneurs who need a cheap call center service to handle a product launch, a holiday season, or an unexpected PR spike, they can source, train, and deploy pre-vetted American agents in days. Their SMB call center staffing model is ideal for small businesses that don't want to hire full-time employees but still need professional US-based coverage on demand.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "Affordable US-based sales calling for small business and startup pipeline",
     description:
       "B2B Appointment Setting delivers affordable call center outsourcing focused entirely on sales pipeline for small businesses and startups. Their US-based agents conduct targeted outreach, qualify small business prospects, and book meetings for founders and SMB sales teams. For entrepreneur call center services, they offer contingency pricing, per-appointment packages, and flexible contracts that work for bootstrapped founders who need to grow revenue without hiring a full sales team.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "Established US small business answering service with deep overflow capacity",
     description:
       "Call Center Communications is one of the longest-running American small business answering service providers, delivering reliable overflow, after-hours, and 24/7 coverage for established SMBs that have outgrown voicemail but aren't ready for enterprise contracts. Their US-based agents handle small business telephone answering with the professionalism of a full receptionist team, and their infrastructure gives growing small businesses the reliability of a much larger operation — without enterprise pricing.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "Tech-forward AI-enhanced small business call center for digital-first SMBs",
     description:
       "Business Process Outsourcing combines US-based small business agents with AI automation to deliver a tech-forward, affordable call center outsourcing option for digital-first SMBs. Their SMB call center blends AI chatbots, voice AI, and human escalations to cut cost-per-contact for startups and small e-commerce brands that need efficient outsourced customer service for small business. For entrepreneurs who want a modern tech stack without enterprise pricing, they offer hybrid plans that keep costs low while maintaining a US-based human touch for complex calls.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "Established SMBs graduating to larger-scale US-based sales operations",
     description:
       "The enterprise division of B2B Appointment Setting serves established small businesses that have outgrown pure-SMB providers and need more structured US-based sales operations — without fully committing to an enterprise contract. For growing small businesses that have validated their product and now need to scale pipeline, their managed sales programs combine US-based agents, structured process, and reporting typically reserved for mid-market — at SMB-accessible pricing. A strong bridge between entrepreneur call center services and true enterprise BPO.",

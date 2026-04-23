@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Content from "./Content";
+import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
   title: "Top 15 American Call Centers: Best US-Based Call Center Companies (2026)",
@@ -41,6 +42,7 @@ export default function Page() {
           }),
         }}
       />
+      <BlogAEOSchemas slug="american-call-centers" />
       <Content />
     </>
   );

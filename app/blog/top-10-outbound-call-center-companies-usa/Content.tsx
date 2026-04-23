@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American outbound call center outsourcing across B2B and B2C",
     description:
       "Global Empire Corporation leads the American outbound call center industry with comprehensive TCPA-compliant outbound campaigns staffed entirely by US-based agents. Their outbound practice spans cold calling, appointment setting, lead qualification, sales development, market research, and customer win-back — all delivered from domestic facilities with native English-speaking professionals. Industry-leading conversion rates, advanced predictive dialer technology, and full DNC/TCPA compliance make them the top choice for B2B and B2C brands seeking a reliable onshore outbound partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "Premium American B2B outbound and consultative sales development",
     description:
       "Intelemark operates one of the most respected American B2B outbound programs in the country, particularly valuable for brands with complex, consultative sales cycles. Every outbound call is made by trained US-based SDRs who understand American business culture and the nuances of reaching senior decision-makers. Their consultative outbound approach works particularly well for enterprise technology, professional services, and high-ACV B2B programs where cultural alignment, active listening, and pipeline quality matter more than raw dial volume.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based high-volume B2C outbound, retention, and win-back calling",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a strong fit for B2C brands running cold outreach, retention, win-back, and lead-nurture campaigns. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American consumers expect. Fully TCPA-compliant across all outbound outreach, with real-time DNC scrubbing, mandatory call-recording disclosure, and active consent validation on every call.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel outbound across voice, SMS, email, and outbound chat",
     description:
       "Customer Communications Corp provides American brands with seamless omnichannel outbound outreach across voice, SMS, email, and outbound chat — all handled by domestic agents located throughout the United States. Their technology platform unifies every outbound touch into a single cadence, ensuring consistent messaging regardless of channel. With decades of experience serving American consumer brands, they understand US outbound expectations and deliver the personalized, responsive outbound cadences that drive conversion without triggering fatigue or TCPA violations.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American outbound agent staffing & rapid campaign deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American outbound agents for brands that need to scale their domestic outbound operations quickly — especially for product launches, campaign blasts, or seasonal outbound pushes. Whether a brand needs to 2-4x outbound dialer capacity for a launch, absorb a sudden campaign demand, or build an entirely new US-based outbound team, Call Center Staffing provides pre-vetted American outbound agents who can be operational on the dialer within days.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based SMB B2B appointment setting and outbound lead qualification",
     description:
       "B2B Appointment Setting provides cost-effective, American-based outbound appointment setting for SMB brands looking to grow their B2B pipeline. Their US-based agents conduct targeted outbound outreach to American buyers and decision-makers, qualifying prospects and booking meetings that convert. The company focuses specifically on the American market, understanding regional business customs and the nuances of selling into US SMB and mid-market buyers through outbound channels.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise outbound call centers at Fortune 500 scale",
     description:
       "Call Center Communications operates large-scale American outbound call center operations designed for enterprise brands that require significant domestic outbound capacity. Their US-based delivery centers handle millions of outbound dials annually with the reliability, security, and TCPA compliance standards that Fortune 500 brands demand. The company maintains redundant American facilities to ensure business continuity during campaign peaks and offers dedicated outbound agent teams that become true extensions of their clients' sales organizations.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first outbound combining AI dialers with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American outbound calling, combining US-based human agents with AI-powered dialer technology to deliver modern, efficient outbound campaigns. Their American team leverages advanced analytics, AI-driven contact prioritization, intent scoring, and predictive dialer optimization to improve right-party-contact rates and conversion while maintaining full TCPA compliance. The company is at the forefront of blending American workforce quality with cutting-edge digital outbound technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise outbound process outsourcing and managed sales operations",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American outbound process outsourcing for large brands seeking to consolidate their domestic outbound sales operations with a single trusted US-based partner. Their managed services model covers everything from outbound SDR teams and appointment setting to sales operations consulting and CRM administration — all delivered by American professionals working from secure onshore facilities with enterprise-grade dialer and compliance infrastructure.",
@@ -402,7 +402,7 @@ export default function Top10OutboundCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American live chat outsourcing across ecommerce, SaaS, and enterprise websites",
     description:
       "Global Empire Corporation leads the American live chat outsourcing industry with comprehensive domestic chat solutions staffed entirely by US-based agents. Their live chat practice spans 24/7 website chat, proactive engagement, chat-to-voice handoff, chatbot integration, co-browse assistance, and pre-sale conversion chat — all delivered from American facilities with native English-speaking professionals. Their flexible engagement models and real-time QA approach make them the top choice for DTC brands, SaaS platforms, and enterprise websites that treat live chat as both a support and conversion channel.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B live chat for high-value accounts, SaaS sales, and consultative chat",
     description:
       "Intelemark operates one of the most respected American B2B chat programs in the country, particularly valuable for SaaS platforms and B2B technology brands where live chat is a high-touch sales and qualification channel. Every chat is handled by trained US-based representatives who understand American business culture and can move fluidly between qualification questions, product explanations, and scheduled demos. Their consultative tone works particularly well for enterprise buyers who expect chat agents to feel like members of the sales team, not scripted responders.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound chat, proactive engagement, and cart abandonment chat recovery",
     description:
       "Call Motivated Sellers delivers high-performance proactive and outbound chat campaigns powered by an entirely American workforce — a strong fit for ecommerce brands running cart abandonment chat, subscription win-back chat, and triggered proactive engagement. Their agents operate from domestic facilities across the United States, providing the natural-sounding, culturally aligned chat experience that American shoppers expect. Every chat interaction is fully TCPA and consumer-consent compliant, with real-time QA on every conversation.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel chat support blended with voice, email, SMS, and social",
     description:
       "Customer Communications Corp provides American brands with seamless omnichannel live chat support that unifies website chat with voice, email, SMS, and social media messaging — all handled by domestic agents located throughout the United States. Their technology platform gives every US-based chat agent a single-pane view of the customer across every prior channel, so chats never feel disconnected from the broader relationship. With decades of experience serving American brands, they deliver the warm, articulate chat experience that drives CSAT and loyalty.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American chat agent staffing & rapid surge deployment for seasonal spikes",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American live chat agents for brands that need to scale their domestic chat operations quickly — especially heading into product launches, marketing campaigns, Black Friday, and holiday season. Whether a brand needs to 2-4x chat capacity for peak events, absorb a viral marketing moment, or build an entirely new US-based chat team, Call Center Staffing provides pre-vetted American chat agents who can be operational within days, not months.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based B2B chat, website chat lead qualification, and SMB-focused chat programs",
     description:
       "B2B Appointment Setting provides cost-effective, American-based live chat outsourcing for SMB and mid-market B2B brands that want to turn their website into an active lead-qualification channel. Their US-based chat agents engage website visitors in real time, qualify intent against sales criteria, and book meetings directly into reps' calendars. The company focuses specifically on the American market and understands the nuances of selling into US buyers through a fast, friendly website chat experience.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise live chat operations at Fortune 500 scale",
     description:
       "Call Center Communications operates large-scale American live chat operations designed for enterprise brands that require significant domestic chat capacity across multiple business units and product lines. Their US-based delivery centers handle millions of chat and messaging interactions annually with the reliability, security, and performance standards that Fortune 500 enterprises demand. The company maintains redundant American facilities to ensure chat availability during peak events and offers dedicated chat agent teams that become true extensions of their clients' brands.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first chat CX combining AI chatbots, conversational AI, and US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American live chat outsourcing, combining US-based chat agents with AI chatbots, conversational AI, and generative-AI copilots to deliver modern, efficient chat support. Their American team leverages AI to deflect simple questions, draft real-time responses, and surface relevant knowledge articles — freeing human agents to focus on complex and high-value conversations. The company is at the forefront of blending American chat workforce quality with cutting-edge conversational AI technology.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise chat process outsourcing and managed conversational services",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American chat process outsourcing for large brands seeking to consolidate their domestic chat operations with a single trusted US-based partner. Their managed services model covers end-to-end chat strategy, bot design, live agent delivery, and chat analytics — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full regulatory compliance.",
@@ -400,7 +400,7 @@ export default function Top10LiveChatContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

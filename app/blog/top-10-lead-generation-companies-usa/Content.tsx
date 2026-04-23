@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American B2B lead generation across SDR-as-a-service, ABM, and appointment setting",
     description:
       "Global Empire Corporation leads the American B2B lead generation industry with a comprehensive, domestically-staffed demand-gen engine built for mid-market and enterprise sales teams. Their lead generation practice spans outbound SDR programs, multi-touch account-based marketing (ABM), LinkedIn social selling, intent-data prospecting, MQL-to-SQL qualification, and fully-booked appointment setting — all delivered by US-based SDRs with native English fluency and vertical expertise. Their performance-driven pricing and fully-managed playbooks make them the top choice for SaaS, tech, and professional services companies that need predictable pipeline creation from a reliable onshore partner.",
@@ -36,7 +36,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B appointment setting for high-consideration enterprise sales cycles",
     description:
       "Intelemark operates one of the most respected American B2B appointment-setting programs in the country, specializing in high-consideration, high-ACV sales cycles where every conversation matters. Every call and email is executed by trained US-based SDRs who understand American business culture and the nuances of engaging C-suite and VP-level buyers. Their consultative approach works particularly well for enterprise technology, industrial, and professional services companies where cultural alignment, business fluency, and relationship depth move deals forward.",
@@ -60,7 +60,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based high-volume outbound calling, list penetration, and cold-call lead generation",
     description:
       "Call Motivated Sellers delivers high-performance outbound lead-generation calling campaigns powered by an entirely American workforce — a strong fit for companies running cold outbound, list penetration, reactivation, and high-volume prospecting. Their SDRs operate from domestic facilities across the United States, providing the accent-neutral, TCPA-compliant communication that American buyers expect. Their sweet spot is mid-market companies that need dialed-up calling volume, strong talk-track discipline, and measurable meetings-booked output.",
@@ -84,7 +84,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic multi-channel lead generation across voice, email, LinkedIn, and SMS",
     description:
       "Customer Communications Corp provides American companies with multi-channel lead generation across voice, email, LinkedIn, and SMS — all executed by US-based SDRs and BDRs located throughout the United States. Their technology stack unifies every prospect touchpoint into a single sequenced cadence, ensuring consistent engagement quality across channels. With decades of experience serving American B2B brands, they understand US buyer psychology and deliver the personalized, multi-threaded outreach that modern buying committees respond to.",
@@ -108,7 +108,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American SDR and BDR staffing with rapid ramp and pre-trained talent pools",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American SDRs and BDRs for sales teams that need to scale their pipeline creation quickly — especially when launching new products, opening new verticals, or backfilling in-house SDR teams. Whether a company needs to add 5, 20, or 50 US-based SDRs, Call Center Staffing provides pre-vetted American sales-development professionals who can be operational within days rather than months.",
@@ -132,7 +132,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based SMB and mid-market B2B appointment setting with transparent per-meeting pricing",
     description:
       "B2B Appointment Setting provides cost-effective, American-based appointment-setting programs purpose-built for SMB and mid-market companies that need predictable meeting flow without the overhead of building an internal SDR team. Their US-based agents conduct targeted outreach to American buyers and decision-makers, qualifying prospects on BANT criteria and booking sales-ready meetings that convert. The company focuses on the American market, understanding regional business customs and the buyer behavior of US-based B2B targets.",
@@ -180,7 +180,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise lead generation and global demand-gen programs",
     description:
       "Call Center Communications operates large-scale American lead-generation operations designed for enterprise B2B companies and Fortune 500 sales organizations that require significant domestic SDR capacity. Their US-based delivery centers run hundreds of concurrent demand-gen campaigns annually with the security, compliance, and performance standards that enterprise sales leaders demand. The company maintains redundant American facilities to ensure program continuity and offers dedicated SDR pods that become true extensions of their clients' sales teams.",
@@ -204,7 +204,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first lead generation combining intent data, AI, and US SDRs",
     description:
       "Business Process Outsourcing brings a digital-first approach to American B2B lead generation, combining US-based SDRs with AI-powered intent data, predictive scoring, and marketing-automation workflows to deliver modern, efficient pipeline creation. Their American team leverages 6sense, Bombora, and ZoomInfo intent signals, LinkedIn Sales Navigator, and conversational AI to identify in-market accounts and hand off sales-ready conversations to human SDRs. The company is at the forefront of blending American SDR quality with cutting-edge revenue-technology stacks.",
@@ -228,7 +228,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise sales-development outsourcing and managed demand-gen programs",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American sales-development outsourcing for large B2B companies seeking to consolidate their domestic demand-gen operations with a single trusted US-based partner. Their managed services model covers everything from ICP definition and list building through SDR execution, pipeline management, and sales-intelligence reporting — all delivered by American SDRs and revops professionals working from secure onshore facilities with enterprise-grade sales-tech infrastructure.",
@@ -400,7 +400,7 @@ export default function Top10LeadGenerationContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"

@@ -12,7 +12,7 @@ const companies = [
     name: "Global Empire Corporation",
     hq: "United States",
     founded: "1998",
-    website: "#",
+    website: "https://globalempire.com/",
     bestFor: "Full-service American debt collection and accounts receivable outsourcing",
     description:
       "Global Empire Corporation leads the American debt collection BPO industry with comprehensive domestic recovery solutions staffed entirely by US-based agents. Their operation spans first-party branded collections, third-party charge-off recovery, healthcare AR, and commercial B2B receivables — all delivered from American facilities with FDCPA- and Regulation F-trained professionals. Their flexible contingency, hourly, and outcome-based engagement models combined with a performance-driven compliance posture make them the top choice for creditors seeking a reliable onshore collections partner.",
@@ -41,7 +41,7 @@ const companies = [
     name: "Intelemark",
     hq: "United States",
     founded: "1999",
-    website: "#",
+    website: "https://www.intelemark.com/",
     bestFor: "American B2B commercial collections and appointment-to-pay outreach",
     description:
       "Intelemark operates one of the most respected American B2B-focused outreach programs in the country, with a strong arm dedicated to commercial debt recovery and appointment-to-pay scheduling. Every call is made by trained US-based representatives who understand American business culture, decision-making processes, and the relationship-sensitive nature of commercial collections. Their consultative approach works particularly well for complex B2B AR cycles where preserving a customer relationship matters as much as recovering the balance.",
@@ -65,7 +65,7 @@ const companies = [
     name: "Call Motivated Sellers",
     hq: "United States",
     founded: "2010",
-    website: "#",
+    website: "https://callmotivatedsellers.com/",
     bestFor: "US-based outbound collection calling and right-party contact",
     description:
       "Call Motivated Sellers delivers high-performance outbound calling campaigns powered by an entirely American workforce — a perfect fit for creditors running right-party-contact and promise-to-pay programs. Their agents operate from domestic facilities across the United States, providing the accent-neutral communication and cultural understanding that American consumers expect. The company has built a strong reputation for outbound campaign execution with strict quality controls, real-time call monitoring, and strict compliance with TCPA, FDCPA, and state telemarketing regulations.",
@@ -89,7 +89,7 @@ const companies = [
     name: "Customer Communications Corp",
     hq: "United States",
     founded: "1995",
-    website: "#",
+    website: "https://customercommunicationscorp.com/",
     bestFor: "Domestic omnichannel collections across voice, chat, SMS, and email",
     description:
       "Customer Communications Corp provides American creditors with seamless omnichannel debt collection across voice, live chat, email, SMS, and secure payment portals — all handled by domestic agents located throughout the United States. Their technology platform unifies every consumer interaction into a single view, ensuring consistent messaging regardless of channel. With decades of experience serving American brands, they understand US consumer expectations and deliver the respectful, Regulation F-compliant outreach that preserves customer relationships even in late-stage recovery.",
@@ -113,7 +113,7 @@ const companies = [
     name: "Call Center Staffing",
     hq: "United States",
     founded: "2005",
-    website: "#",
+    website: "/contact",
     bestFor: "American collections agent staffing & rapid deployment",
     description:
       "Call Center Staffing specializes in rapidly sourcing, training, and deploying American debt collection agents for creditors and agencies that need to scale domestic recovery operations quickly. Whether a company faces seasonal delinquency spikes, portfolio ramp-ups, or needs to build an entirely new US-based collections team, Call Center Staffing provides pre-vetted American agents who can be operational within days. Their staffing-first model eliminates the burden of recruiting, training, and managing a domestic workforce.",
@@ -137,7 +137,7 @@ const companies = [
     name: "B2B Appointment Setting",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "https://www.b2bappointmentsetting.com/",
     bestFor: "US-based commercial sales and B2B collections outsourcing for SMBs",
     description:
       "B2B Appointment Setting provides cost-effective, American-based commercial outreach and B2B receivables recovery for small and mid-sized businesses. Their US-based agents conduct targeted outreach to American business decision-makers, handling both AR recovery and commercial appointment scheduling. The company focuses specifically on the American market, understanding regional business customs, industry verticals, and the nuances of commercial collections in the US.",
@@ -185,7 +185,7 @@ const companies = [
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
-    website: "#",
+    website: "/contact",
     bestFor: "North American enterprise-scale collections operations",
     description:
       "Call Center Communications operates large-scale American collection operations designed for enterprise organizations that require significant domestic recovery capacity. Their US-based delivery centers handle millions of consumer and commercial contacts annually with the reliability, security, and compliance standards that Fortune 500 creditors demand. The company maintains redundant American facilities to ensure business continuity and offers dedicated collector teams that become true extensions of their clients' credit and collections departments.",
@@ -209,7 +209,7 @@ const companies = [
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
-    website: "#",
+    website: "/contact",
     bestFor: "American digital-first collections combining AI automation with US agents",
     description:
       "Business Process Outsourcing brings a digital-first approach to American debt collection, combining US-based human agents with AI-powered automation to deliver modern, efficient recovery operations. Their American team leverages advanced analytics, chatbot integration, and predictive consumer insights to resolve balances faster while maintaining the respectful tone that Regulation F requires. The company is at the forefront of blending American workforce quality with cutting-edge digital collections technology.",
@@ -233,7 +233,7 @@ const companies = [
     name: "B2B Appointment Setting (Enterprise)",
     hq: "United States",
     founded: "2002",
-    website: "#",
+    website: "/contact",
     bestFor: "US enterprise accounts receivable and process outsourcing",
     description:
       "The enterprise division of B2B Appointment Setting provides comprehensive American accounts receivable management and back-office outsourcing for large organizations seeking to consolidate their domestic collections and AR operations with a single trusted US-based partner. Their managed services model covers everything from consumer and commercial recovery to back-office AR processing and payment application — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
@@ -408,7 +408,7 @@ export default function Top10DebtCollectionBPOContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.name === "Contact Center USA" ? (
+                  {company.website.startsWith("/") ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
