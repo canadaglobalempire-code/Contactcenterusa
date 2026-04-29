@@ -7,6 +7,141 @@ import { ArrowRight, Clock } from "lucide-react";
 
 const blogPosts = [
   {
+    title: "Top 10 BPO Companies in Texas (2026 Rankings)",
+    excerpt:
+      "Compare the top 10 BPO companies in Texas. Dallas, Houston, Austin, San Antonio coverage with Spanish-bilingual agents, energy/SaaS/healthcare expertise, and TTSA-compliant operations.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-team-meeting.jpg",
+    href: "/blog/top-10-bpo-companies-texas",
+  },
+  {
+    title: "Top 10 BPO Companies in California (2026 Rankings)",
+    excerpt:
+      "The top 10 BPO companies serving California — LA, SF, San Diego — with CIPA two-party recording, CCPA compliance, and premium SaaS/biotech/entertainment vertical experience.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/top-10-bpo-companies-california",
+  },
+  {
+    title: "Top 10 BPO Companies in New York (2026 Rankings)",
+    excerpt:
+      "Top BPO partners for New York businesses — NYS DFS Part 500 + SHIELD Act compliance, Wall Street SLAs, financial services expertise, and multilingual NYC market coverage.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/top-10-bpo-companies-new-york",
+  },
+  {
+    title: "Top 10 BPO Companies in Florida (2026 Rankings)",
+    excerpt:
+      "Top 10 BPO companies in Florida — Miami, Orlando, Tampa, Jacksonville. FTSA-compliant outbound, hurricane disaster recovery, Spanish bilingual, and healthcare/insurance/tourism expertise.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-discussion.jpg",
+    href: "/blog/top-10-bpo-companies-florida",
+  },
+  {
+    title: "Top 10 BPO Companies in Illinois (2026 Rankings)",
+    excerpt:
+      "Top BPO partners serving Illinois — Chicago insurance HQ cluster, healthcare, manufacturing — with BIPA-compliant biometric handling, ICRAA collections, and Central-time alignment.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/top-10-bpo-companies-illinois",
+  },
+  {
+    title: "Top 10 Medical Answering Service Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 medical answering service companies in the USA. Ranked by HIPAA compliance, BAA willingness, EHR integration depth, nurse triage option, and after-hours physician on-call workflow.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-medical-answering-service-companies-usa",
+  },
+  {
+    title: "Top 10 Outsourced SDR Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 outsourced SDR companies in the USA. Ranked by US-based SDR talent, multichannel cadence sophistication, CRM integration depth, qualified-meeting frameworks, and B2B SaaS pipeline ROI.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/top-10-outsourced-sdr-companies-usa",
+  },
+  {
+    title: "Top 10 Mortgage Call Center Companies in USA (2026)",
+    excerpt:
+      "The top 10 mortgage call center companies in the USA — NMLS state licensing, TCPA-compliant outbound, Encompass/BytePro/LendingPad LOS integrations, and refi-vs-purchase fluency for lenders.",
+    category: "Industry Rankings",
+    readTime: "18 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/top-10-mortgage-call-center-companies-usa",
+  },
+  {
+    title: "Top 10 Plumbing Answering Service Companies in USA (2026)",
+    excerpt:
+      "Compare the top 10 plumbing answering service companies in the USA. Ranked by emergency triage capability, ServiceTitan/Housecall Pro integration, Spanish bilingual coverage, and after-hours dispatch.",
+    category: "Industry Rankings",
+    readTime: "17 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-plumbing-answering-service-companies-usa",
+  },
+  {
+    title: "Top 10 Property Management Call Center Companies in USA (2026)",
+    excerpt:
+      "The top 10 property management call center companies in the USA — AppFolio/Buildium/Yardi integrations, tenant emergency triage, leasing inquiry conversion, multifamily/SFR/HOA fluency.",
+    category: "Industry Rankings",
+    readTime: "17 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/top-10-property-management-call-center-companies-usa",
+  },
+  {
+    title: "60-Second Lead Response Service: Capture Every Sales Lead in Under a Minute",
+    excerpt:
+      "Why 60-second lead response is the new gold standard. The math behind missed leads, what fast response actually looks like, and how to outsource it — for home services, B2B SaaS, real estate, and more.",
+    category: "Lead Response Playbook",
+    readTime: "12 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/60-second-lead-response-service",
+  },
+  {
+    title: "After-Hours Answering Service for HVAC Companies: Stop Losing $400+ Jobs After 5pm",
+    excerpt:
+      "The deep guide for HVAC owners — peak emergency hours, lost-revenue math, ServiceTitan/Housecall Pro/Jobber integrations, in-house vs outsourced, bilingual coverage, and what to look for.",
+    category: "HVAC Operations",
+    readTime: "13 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/after-hours-answering-service-hvac-companies",
+  },
+  {
+    title: "HIPAA-Compliant Answering Service for Doctors: BAA, PHI, Triage & Cost (2026)",
+    excerpt:
+      "What HIPAA-compliant medical answering really requires — BAA must-haves, nurse triage vs message-only, EHR integration, OCR breach exposure, and realistic pricing for medical practices.",
+    category: "Healthcare Compliance",
+    readTime: "14 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/hipaa-compliant-answering-service-doctors",
+  },
+  {
+    title: "Spanish-Speaking Answering Service for Personal Injury Firms",
+    excerpt:
+      "Capture Hispanic PI clients 24/7 — bilingual intake economics, Spanish-language scripts (accidente de auto, lesión laboral), Litify/Clio integration, and ROI math per signed case.",
+    category: "Legal Intake",
+    readTime: "13 min read",
+    image: "/images/cc-discussion.jpg",
+    href: "/blog/spanish-speaking-answering-service-personal-injury",
+  },
+  {
+    title: "US-Based Virtual Receptionist for Real Estate Investors: Capture Every Motivated Seller",
+    excerpt:
+      "Win more wholesale and flip deals — motivated seller pre-qualification scripts, 24/7 coverage, Podio/REIPro/InvestorFuse/Carrot integrations, bilingual coverage, and funnel ROI math.",
+    category: "Real Estate Investing",
+    readTime: "13 min read",
+    image: "/images/cc-discussion.jpg",
+    href: "/blog/us-based-virtual-receptionist-real-estate-investors",
+  },
+  {
     title: "Call Center Outsourcing Cost Per Hour in 2026 (Real Pricing by Country)",
     excerpt:
       "How much does call center outsourcing cost per hour in 2026? Real rates for US, nearshore, and offshore providers, by service type, seniority, and pricing model — with a full cost breakdown.",

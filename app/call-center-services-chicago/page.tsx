@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Chicago | Chicago BPO | Contact Center USA",
+  title: "Call Center Services Chicago | Chicago BPO",
   description:
     "Call center services Chicago — Contact Center USA provides Chicago BPO and Chicago outsourced customer service for the Loop, West Loop, and Chicagoland. 100% US-based. Free quote.",
   keywords: [

@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services New York | NYC Call Center BPO | Contact Center USA",
+  title: "Call Center Services New York | NYC Call Center BPO",
   description:
     "Call center services New York — Contact Center USA runs a 100% US-based NYC call center BPO for Manhattan customer support outsourcing. 24/7 inbound, outbound, AI, and omnichannel. Free quote.",
   keywords: [

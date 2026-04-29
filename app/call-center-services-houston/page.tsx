@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Houston | Houston BPO | Contact Center USA",
+  title: "Call Center Services Houston | Houston BPO",
   description:
     "Call center services Houston — Contact Center USA provides Houston BPO and Houston call center outsourcing for energy, healthcare, and aerospace. 100% US-based agents. Free quote.",
   keywords: [

@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Dallas | Dallas BPO Services | Contact Center USA",
+  title: "Call Center Services Dallas | Dallas BPO Services",
   description:
     "Call center services Dallas — Contact Center USA delivers Dallas BPO services and Dallas call center outsourcing for DFW Fortune 500s, telecom, and finance. 100% US-based. Free quote.",
   keywords: [

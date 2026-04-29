@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services San Francisco | SF Bay Area BPO | Contact Center USA",
+  title: "Call Center Services San Francisco | SF Bay Area BPO",
   description:
     "Call center services San Francisco — Contact Center USA delivers SF Bay Area BPO and Bay Area customer support outsourcing for SoMa SaaS, FiDi fintech, and biotech. Free quote.",
   keywords: [

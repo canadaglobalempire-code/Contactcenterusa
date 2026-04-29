@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Phoenix | Phoenix BPO Services | Contact Center USA",
+  title: "Call Center Services Phoenix | Phoenix BPO Services",
   description:
     "Call center services Phoenix — Contact Center USA delivers Phoenix BPO services and Arizona call center outsourcing for the Valley's fastest-growing industries. 100% US-based. Free quote.",
   keywords: [

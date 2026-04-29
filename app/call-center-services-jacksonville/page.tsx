@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Jacksonville | Jacksonville BPO | Contact Center USA",
+  title: "Call Center Services Jacksonville | Jacksonville BPO",
   description:
     "Call center services Jacksonville — Contact Center USA provides Jacksonville BPO and Florida customer service outsourcing for insurance, finance, logistics, and healthcare. Free quote.",
   keywords: [

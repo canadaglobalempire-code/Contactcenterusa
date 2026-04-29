@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Los Angeles | LA BPO Services | Contact Center USA",
+  title: "Call Center Services Los Angeles | LA BPO Services",
   description:
     "Call center services Los Angeles — Contact Center USA delivers LA BPO services and Los Angeles customer service outsourcing for Hollywood, Silicon Beach, and SoCal brands. Get a free quote.",
   keywords: [

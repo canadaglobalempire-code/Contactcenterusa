@@ -49,6 +49,10 @@ export function buildFAQPageSchema(
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h2", "h3", ".prose p"],
+    },
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -57,6 +61,61 @@ export function buildFAQPageSchema(
         text: faq.answer,
       },
     })),
+  };
+}
+
+// Speakable + AEO-optimized BlogPosting with E-E-A-T signals.
+// AI engines (Google AI Overviews, ChatGPT, Perplexity, Bing Copilot) prefer
+// pages with strong author/publisher signals + speakable content selectors.
+export function buildAEOBlogPostingSchema(opts: {
+  url: string;
+  headline: string;
+  description: string;
+  datePublished?: string;
+  dateModified?: string;
+  image?: string;
+  keywords?: string[];
+  category?: string;
+}) {
+  const baseUrl = "https://contactcenterusa.com";
+  const publishDate = opts.datePublished || "2026-04-19";
+  const modifyDate = opts.dateModified || publishDate;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: opts.headline,
+    description: opts.description,
+    mainEntityOfPage: { "@type": "WebPage", "@id": opts.url },
+    author: {
+      "@type": "Organization",
+      name: "Contact Center USA",
+      url: baseUrl,
+      sameAs: [baseUrl],
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Contact Center USA",
+      url: baseUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/images/logo-v3.png`,
+        width: 1200,
+        height: 630,
+      },
+    },
+    datePublished: publishDate,
+    dateModified: modifyDate,
+    image: opts.image || `${baseUrl}/images/logo-v3.png`,
+    url: opts.url,
+    inLanguage: "en-US",
+    isFamilyFriendly: true,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".prose > p:first-of-type"],
+    },
+    ...(opts.category ? { articleSection: opts.category } : {}),
+    ...(opts.keywords ? { keywords: opts.keywords.join(", ") } : {}),
   };
 }
 

@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services San Diego | San Diego BPO | Contact Center USA",
+  title: "Call Center Services San Diego | San Diego BPO",
   description:
     "Call center services San Diego — Contact Center USA delivers San Diego BPO and SD customer support outsourcing for biotech, defense, and tech. 100% US-based agents. Free quote.",
   keywords: [

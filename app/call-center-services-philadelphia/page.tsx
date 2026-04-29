@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Philadelphia | Philly BPO | Contact Center USA",
+  title: "Call Center Services Philadelphia | Philly BPO",
   description:
     "Call center services Philadelphia — Contact Center USA provides Philly BPO and Philadelphia customer service outsourcing for Penn Medicine, Center City finance, and pharma. Free quote.",
   keywords: [

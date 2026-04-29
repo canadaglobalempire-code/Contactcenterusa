@@ -135,6 +135,56 @@ const BLOG_TOPIC_MAP: Record<
     topic: "B2B appointment setting outsourcing",
     topicShort: "appointment setting",
   },
+  "top-10-medical-answering-service-companies-usa": {
+    headline: "Top 10 Medical Answering Service Companies in USA (2026)",
+    topic: "medical answering service",
+    topicShort: "medical answering",
+  },
+  "top-10-outsourced-sdr-companies-usa": {
+    headline: "Top 10 Outsourced SDR Companies in USA (2026)",
+    topic: "outsourced SDR services",
+    topicShort: "outsourced SDR",
+  },
+  "top-10-mortgage-call-center-companies-usa": {
+    headline: "Top 10 Mortgage Call Center Companies in USA (2026)",
+    topic: "mortgage call center outsourcing",
+    topicShort: "mortgage call center",
+  },
+  "top-10-plumbing-answering-service-companies-usa": {
+    headline: "Top 10 Plumbing Answering Service Companies in USA (2026)",
+    topic: "plumbing answering service",
+    topicShort: "plumbing answering",
+  },
+  "top-10-property-management-call-center-companies-usa": {
+    headline: "Top 10 Property Management Call Center Companies in USA (2026)",
+    topic: "property management call center outsourcing",
+    topicShort: "property management call center",
+  },
+  "top-10-bpo-companies-texas": {
+    headline: "Top 10 BPO Companies in Texas (2026 Rankings)",
+    topic: "BPO outsourcing in Texas",
+    topicShort: "Texas BPO",
+  },
+  "top-10-bpo-companies-california": {
+    headline: "Top 10 BPO Companies in California (2026 Rankings)",
+    topic: "BPO outsourcing in California",
+    topicShort: "California BPO",
+  },
+  "top-10-bpo-companies-new-york": {
+    headline: "Top 10 BPO Companies in New York (2026 Rankings)",
+    topic: "BPO outsourcing in New York",
+    topicShort: "New York BPO",
+  },
+  "top-10-bpo-companies-florida": {
+    headline: "Top 10 BPO Companies in Florida (2026 Rankings)",
+    topic: "BPO outsourcing in Florida",
+    topicShort: "Florida BPO",
+  },
+  "top-10-bpo-companies-illinois": {
+    headline: "Top 10 BPO Companies in Illinois (2026 Rankings)",
+    topic: "BPO outsourcing in Illinois",
+    topicShort: "Illinois BPO",
+  },
 };
 
 export function BlogAEOSchemas({ slug }: { slug: string }) {
