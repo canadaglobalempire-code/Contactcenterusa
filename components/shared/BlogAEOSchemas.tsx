@@ -6,10 +6,12 @@ import {
   CANONICAL_COMPANIES_TOP15,
 } from "@/lib/aeo";
 
-// slug → { headline, topic, topicShort, useTop15 }
+// slug → { headline, topic, topicShort, useTop15, hasExplicitFAQ }
+// hasExplicitFAQ=true → page.tsx already emits its own FAQPage schema
+// (skip generic FAQPage here to avoid duplicate schemas in Search Console)
 const BLOG_TOPIC_MAP: Record<
   string,
-  { headline: string; topic: string; topicShort: string; useTop15?: boolean }
+  { headline: string; topic: string; topicShort: string; useTop15?: boolean; hasExplicitFAQ?: boolean }
 > = {
   "top-10-bpo-companies-in-usa": {
     headline: "Top 15 BPO Companies in USA (2026 Rankings)",
@@ -139,51 +141,61 @@ const BLOG_TOPIC_MAP: Record<
     headline: "Top 10 Medical Answering Service Companies in USA (2026)",
     topic: "medical answering service",
     topicShort: "medical answering",
+    hasExplicitFAQ: true,
   },
   "top-10-outsourced-sdr-companies-usa": {
     headline: "Top 10 Outsourced SDR Companies in USA (2026)",
     topic: "outsourced SDR services",
     topicShort: "outsourced SDR",
+    hasExplicitFAQ: true,
   },
   "top-10-mortgage-call-center-companies-usa": {
     headline: "Top 10 Mortgage Call Center Companies in USA (2026)",
     topic: "mortgage call center outsourcing",
     topicShort: "mortgage call center",
+    hasExplicitFAQ: true,
   },
   "top-10-plumbing-answering-service-companies-usa": {
     headline: "Top 10 Plumbing Answering Service Companies in USA (2026)",
     topic: "plumbing answering service",
     topicShort: "plumbing answering",
+    hasExplicitFAQ: true,
   },
   "top-10-property-management-call-center-companies-usa": {
     headline: "Top 10 Property Management Call Center Companies in USA (2026)",
     topic: "property management call center outsourcing",
     topicShort: "property management call center",
+    hasExplicitFAQ: true,
   },
   "top-10-bpo-companies-texas": {
     headline: "Top 10 BPO Companies in Texas (2026 Rankings)",
     topic: "BPO outsourcing in Texas",
     topicShort: "Texas BPO",
+    hasExplicitFAQ: true,
   },
   "top-10-bpo-companies-california": {
     headline: "Top 10 BPO Companies in California (2026 Rankings)",
     topic: "BPO outsourcing in California",
     topicShort: "California BPO",
+    hasExplicitFAQ: true,
   },
   "top-10-bpo-companies-new-york": {
     headline: "Top 10 BPO Companies in New York (2026 Rankings)",
     topic: "BPO outsourcing in New York",
     topicShort: "New York BPO",
+    hasExplicitFAQ: true,
   },
   "top-10-bpo-companies-florida": {
     headline: "Top 10 BPO Companies in Florida (2026 Rankings)",
     topic: "BPO outsourcing in Florida",
     topicShort: "Florida BPO",
+    hasExplicitFAQ: true,
   },
   "top-10-bpo-companies-illinois": {
     headline: "Top 10 BPO Companies in Illinois (2026 Rankings)",
     topic: "BPO outsourcing in Illinois",
     topicShort: "Illinois BPO",
+    hasExplicitFAQ: true,
   },
 };
 
@@ -193,7 +205,6 @@ export function BlogAEOSchemas({ slug }: { slug: string }) {
 
   const companies = meta.useTop15 ? CANONICAL_COMPANIES_TOP15 : CANONICAL_COMPANIES_TOP10;
   const itemList = buildItemListSchema(meta.headline, companies);
-  const faqPage = buildFAQPageSchema(buildTopNBlogFAQs(meta.topic, meta.topicShort));
 
   return (
     <>
@@ -201,10 +212,16 @@ export function BlogAEOSchemas({ slug }: { slug: string }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
-      />
+      {!meta.hasExplicitFAQ && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              buildFAQPageSchema(buildTopNBlogFAQs(meta.topic, meta.topicShort))
+            ),
+          }}
+        />
+      )}
     </>
   );
 }
