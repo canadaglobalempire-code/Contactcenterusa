@@ -13,10 +13,9 @@ export function HeroContactForm() {
     setSubmitting(true);
     setError(null);
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "183e4294-688f-4d77-aad2-2f417993a014");
-    formData.append("from_name", "ContactCenterUSA Hero Form");
+    formData.append("access_key", "abaffe957645499b9c3bf360f0bc7661");
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://splitforms.com/api/submit", {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,

@@ -79,8 +79,7 @@ export function FAQSection() {
 
   const onSubmit = async (data: ContactFormData) => {
     const formData = new FormData();
-    formData.append("access_key", "183e4294-688f-4d77-aad2-2f417993a014");
-    formData.append("from_name", "ContactCenterUSA Homepage Form");
+    formData.append("access_key", "abaffe957645499b9c3bf360f0bc7661");
     formData.append("subject", "Homepage FAQ Form Inquiry — ContactCenterUSA.com");
     formData.append("name", data.fullName);
     formData.append("company", data.company);
@@ -89,7 +88,7 @@ export function FAQSection() {
     formData.append("message", data.message || "");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://splitforms.com/api/submit", {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,

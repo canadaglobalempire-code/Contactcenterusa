@@ -36,11 +36,10 @@ export function ContactFormSection() {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "183e4294-688f-4d77-aad2-2f417993a014");
-    formData.append("from_name", "ContactCenterUSA Contact Form");
+    formData.append("access_key", "abaffe957645499b9c3bf360f0bc7661");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://splitforms.com/api/submit", {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,
