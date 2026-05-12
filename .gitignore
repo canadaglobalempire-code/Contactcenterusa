@@ -39,3 +39,23 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local dev environment — AI tools / editor configs (personal, not project)
+.claude/
+.cursor/
+.cursorrules
+.mcp.json
+.opencode.json
+.windsurfrules
+GEMINI.md
+
+# Loose images / screenshots in repo root (assets belong in /public)
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+
+# Loose docs / backups in repo root
+/*.docx
+/Award/
+/FULL_BACKUP_*.zip
