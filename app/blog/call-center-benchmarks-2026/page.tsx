@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "2026 Call Center Benchmarks: AHT, CSAT, FCR & More by Industry",
+  title: "Call Center Benchmarks for 2026",
   description:
-    "2026 call center benchmarks for every metric that matters — AHT, CSAT, FCR, NPS, abandon rate, occupancy, attrition — broken down by industry and channel.",
+    "Read the call center benchmarks for 2026 guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/call-center-benchmarks-2026" },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { CaseStudiesContent } from "./CaseStudiesContent";
 
 export const metadata: Metadata = {
-  title: "Case Studies | Call Center Outsourcing Success Stories",
+  title: "Call Center Case Studies",
   description:
-    "Explore how Contact Center USA has helped businesses across healthcare, ecommerce, financial services, and technology achieve measurable results with US-based call center outsourcing.",
+    "Explore call center outsourcing case studies and examples of customer support, sales, technical support, and BPO programs.",
   alternates: { canonical: "/case-studies" },
 };
 

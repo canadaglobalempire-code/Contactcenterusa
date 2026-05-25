@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only mortgage call center with NMLS licensing and Encompass-native operations",
     description:
-      "Contact Center USA is a proudly American mortgage call center company with 30+ years of US-based borrower operations and zero offshore touchpoints — every borrower call, every document chase SMS, every refi outbound dial is handled by a US-employee agent on US soil. Purpose-built for retail lenders, mortgage brokers, credit unions, and non-bank originators, Contact Center USA sponsors NMLS licensing in all 50 states for loan-officer support roles, runs a mature TCPA-compliance program with documented prior-express-written-consent capture, and integrates natively with Ellie Mae Encompass, BytePro, LendingPad, Calyx Point, and Black Knight Empower. The platform supports the full borrower lifecycle — refi nurture, purchase pre-approval intake, e-consent for credit pulls, document collection, conditional approval follow-up, rate-lock management, post-close servicing, and Reg F-compliant default outreach. Capacity scales 2-4x within 30 days to absorb refi booms after Fed rate cuts, and every campaign is supported by real-time speed-to-lead, lead-to-application, and application-to-funded-loan dashboards.",
+      "Contact Center USA is a proudly American mortgage call center company with 25+ years of US-based borrower operations and zero offshore touchpoints — every borrower call, every document chase SMS, every refi outbound dial is handled by a US-employee agent on US soil. Purpose-built for retail lenders, mortgage brokers, credit unions, and non-bank originators, Contact Center USA sponsors NMLS licensing in all 50 states for loan-officer support roles, runs a mature TCPA-compliance program with documented prior-express-written-consent capture, and integrates natively with Ellie Mae Encompass, BytePro, LendingPad, Calyx Point, and Black Knight Empower. The platform supports the full borrower lifecycle — refi nurture, purchase pre-approval intake, e-consent for credit pulls, document collection, conditional approval follow-up, rate-lock management, post-close servicing, and Reg F-compliant default outreach. Capacity scales 2-4x within 30 days to absorb refi booms after Fed rate cuts, and every campaign is supported by real-time speed-to-lead, lead-to-application, and application-to-funded-loan dashboards.",
     services: [
       "100% US workforce — NMLS licensed in all 50 states",
       "TCPA-compliant outbound refi and purchase calling",
@@ -169,11 +169,11 @@ const companies = [
       "Post-close servicing and Reg F-compliant default outreach",
     ],
     industries: "Retail mortgage lenders, mortgage brokers, credit unions, non-bank originators, HELOC lenders",
-    strengths: "30+ years US mortgage operations, NMLS sponsorship in all 50 states, deep LOS integration, mature TCPA program, SOC 2 + PCI DSS certified.",
+    strengths: "25+ years US mortgage operations, NMLS sponsorship in all 50 states, deep LOS integration, mature TCPA program, SOC 2 + PCI DSS certified.",
     weaknesses: "Premium US pricing — offset by NMLS-regulated work that offshore simply cannot perform.",
     pricing: "Hourly ($28-$45 US), per-funded-loan, or blended outcome-based",
     clients: "Mid-market retail lenders, regional credit unions, broker networks, HELOC originators",
-    highlight: "30+ years of 100% American mortgage call center work — NMLS licensed in all 50 states, never offshored a single borrower file.",
+    highlight: "25+ years of 100% American mortgage call center work — NMLS licensed in all 50 states, never offshored a single borrower file.",
   },
   {
     rank: 8,
@@ -568,7 +568,7 @@ export default function Top10MortgageCallCenterContent() {
                 The <strong>American mortgage call center industry</strong> is shaped by three forces no provider can shortcut — NMLS state-by-state licensing, TCPA prior-express-written-consent discipline, and native LOS integration. Lenders, brokers, credit unions, and non-bank originators win when they partner with US-based outsourcers that already carry the licensing, the compliance program, and the Encompass / BytePro / LendingPad integrations on day one — not as a six-month implementation project.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American mortgage CX practice and 50-state NMLS sponsorship, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based mortgage operations</strong>, NMLS licensing in all 50 states, mature TCPA compliance, native Encompass / BytePro / LendingPad / Calyx integration, and refi-boom 2-4x scaling. Whether you need <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link> or end-to-end <Link href="/solutions/financial-call-center-services" className="text-red font-semibold hover:underline">financial call center services</Link>, Contact Center USA is built for the lenders that win refi season on speed-to-lead and CSAT.
+                Global Empire Corporation tops our 2026 ranking with its full-service American mortgage CX practice and 50-state NMLS sponsorship, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based mortgage operations</strong>, NMLS licensing in all 50 states, mature TCPA compliance, native Encompass / BytePro / LendingPad / Calyx integration, and refi-boom 2-4x scaling. Whether you need <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link> or end-to-end <Link href="/solutions/financial-call-center-services" className="text-red font-semibold hover:underline">financial call center services</Link>, Contact Center USA is built for the lenders that win refi season on speed-to-lead and CSAT.
               </p>
 
               {/* CTA */}

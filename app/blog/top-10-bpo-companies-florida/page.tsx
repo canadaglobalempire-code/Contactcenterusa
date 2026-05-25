@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 BPO Companies in Florida (2026 Rankings)",
+  title: "Top 10 BPO Companies in Florida (2026)",
   description:
-    "Compare the top 10 BPO companies in Florida for 2026. Best call center outsourcing partners for Miami, Orlando, Tampa, Jacksonville, and Fort Lauderdale — FTSA mini-TCPA, FIPA, hurricane DR, Spanish bilingual.",
+    "Read the top 10 bpo companies in florida guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "BPO companies Florida",
     "best BPO companies in Florida",

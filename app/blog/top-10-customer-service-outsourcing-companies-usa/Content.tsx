@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, omnichannel customer service outsourcing across regulated and consumer industries",
     description:
-      "Contact Center USA is a proudly American customer service outsourcing company that has delivered 100% US-based customer support for over 30 years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence. The company was founded on the principle that American brands deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their agents handle voice, live chat, email, SMS, and social across industries as varied as ecommerce, SaaS, healthcare, financial services, and subscription businesses — all built on PCI DSS, SOC 2 Type II, and HIPAA-aligned environments with 100% call recording and real-time CSAT dashboards.",
+      "Contact Center USA is a proudly American customer service outsourcing company that has delivered 100% US-based customer support for 25+ years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence. The company was founded on the principle that American brands deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their agents handle voice, live chat, email, SMS, and social across industries as varied as ecommerce, SaaS, healthcare, financial services, and subscription businesses — all built on PCI DSS, SOC 2 Type II, and HIPAA-aligned environments with 100% call recording and real-time CSAT dashboards.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based customer support & dispatch",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "Ecommerce, SaaS, subscription, retail, healthcare, financial services, telecom, travel, hospitality",
-    strengths: "30+ years of US operations, PCI DSS / SOC 2 / HIPAA aligned, omnichannel platform, transparent QA.",
+    strengths: "25+ years of US operations, PCI DSS / SOC 2 / HIPAA aligned, omnichannel platform, transparent QA.",
     weaknesses: "Premium US pricing vs. offshore — offset by CSAT lift and retention gains.",
     pricing: "Hourly ($22-$40 US), per-contact, or blended outcome-based",
     clients: "Mid-market ecommerce brands, SaaS companies, healthcare networks, financial institutions",
-    highlight: "30+ years of 100% American customer service operations — never offshored a single contact.",
+    highlight: "25+ years of 100% American customer service operations — never offshored a single contact.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10CustomerServiceOutsourcingContent() {
                 In this 2026 guide, we rank the <strong>top 10 American customer service outsourcing companies</strong> based on CX quality, technology, scalability, industry specialization, and client satisfaction. Whether you need <strong>24/7 inbound customer care</strong>, <strong>live chat outsourcing</strong>, <strong>omnichannel support</strong>, or <strong>seasonal overflow</strong>, this list will help you pick the right US-based partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="customer_service_top_inline_cta"
+                leadOffer="Customer service outsourcing quote"
+                heading="Need a US-based customer service team sized for your volume?"
+                body="Share your channels, monthly contacts, hours, and peak seasons. We'll recommend the right outsourced CX setup and quote path."
+                primaryLabel="Get a Customer Service Quote"
+                serviceHref="/solutions/customer-service-outsourcing"
+                serviceLabel="See customer service"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10CustomerServiceOutsourcingContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-headset.jpg" alt="Customer service outsourcing agent in the USA" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="customer_service_mid_article_cta"
+                leadOffer="Customer service outsourcing quote"
+                heading="Compare CX providers with your own customer support quote."
+                body="Get a staffing and pricing view for inbound calls, chat, email, SMS, social, or seasonal overflow before you shortlist."
+                primaryLabel="Request Customer Service Pricing"
+                serviceHref="/solutions/customer-service-outsourcing"
+                serviceLabel="Review customer service"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Customer Service Outsourcing Companies</h2>
@@ -475,7 +498,7 @@ export default function Top10CustomerServiceOutsourcingContent() {
                 <strong>Customer service outsourcing in the USA</strong> has matured into a strategic function that shapes customer loyalty, retention, and brand equity. The winners in 2026 are American providers that combine US-based delivery, AI-enabled tooling, omnichannel fluency, and transparent outcome-based pricing — not providers that still compete purely on hourly cost.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation leads our 2026 ranking with its full-service American CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based customer service operations</strong>, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and an omnichannel delivery model tuned for mid-market and enterprise brands. Whether you need <Link href="/services/customer-care-outsourcing" className="text-red font-semibold hover:underline">customer care outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat support</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce CX outsourcing</Link>, Contact Center USA is built for brands that win on customer experience.
+                Global Empire Corporation leads our 2026 ranking with its full-service American CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based customer service operations</strong>, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and an omnichannel delivery model tuned for mid-market and enterprise brands. Whether you need <Link href="/services/customer-care-outsourcing" className="text-red font-semibold hover:underline">customer care outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat support</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce CX outsourcing</Link>, Contact Center USA is built for brands that win on customer experience.
               </p>
 
               {/* CTA */}
@@ -484,9 +507,9 @@ export default function Top10CustomerServiceOutsourcingContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers US-based, omnichannel customer service outsourcing with AI-enabled tooling and outcome-based pricing. Get a free CX consultation today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="customer_service_bottom_cta" leadOffer="Customer service outsourcing quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Customer Service Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -509,7 +532,13 @@ export default function Top10CustomerServiceOutsourcingContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="customer_service_sidebar_form"
+                  leadOffer="Customer service outsourcing quote"
+                  title="Get a Customer Service Quote"
+                  description="Tell us your channels, volume, and coverage needs."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

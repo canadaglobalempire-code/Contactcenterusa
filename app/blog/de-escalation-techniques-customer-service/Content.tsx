@@ -303,7 +303,7 @@ export default function DeEscalationTechniquesContent() {
               {/* How CCUSA Trains */}
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">How Contact Center USA Trains Agents in De-Escalation</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                At <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link>, de-escalation is not a one-time training module&mdash;it is embedded into every aspect of our agent development program. With over 30 years of experience in <Link href="/solutions/customer-service-outsourcing" className="text-red font-semibold hover:underline">customer service outsourcing</Link>, we have developed a multi-layered approach to building de-escalation expertise:
+                At <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link>, de-escalation is not a one-time training module&mdash;it is embedded into every aspect of our agent development program. With 25+ years of experience in <Link href="/solutions/customer-service-outsourcing" className="text-red font-semibold hover:underline">customer service outsourcing</Link>, we have developed a multi-layered approach to building de-escalation expertise:
               </p>
               <ul className="mt-4 space-y-3">
                 {[

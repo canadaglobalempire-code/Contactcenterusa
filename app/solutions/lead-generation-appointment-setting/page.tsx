@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Lead Generation Services USA | Appointment Setting BPO & B2B Lead Gen Outsourcing USA",
+  title: "Lead Generation Appointment Setting | Contact Center USA",
   description:
-    "B2B lead generation services from a 100% US-based appointment setting BPO. Strategic cold calling, BANT qualification, and booked meetings for your sales team at 35% lower cost per lead.",
+    "US-based lead generation appointment setting with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "lead generation services",
     "appointment setting bpo",

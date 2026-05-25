@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "SaaS Technical Support & Technology BPO USA | SaaS Customer Support Outsourcing | Contact Center USA",
+  title: "SaaS Technology Support | Contact Center USA",
   description:
-    "One of the best SaaS technical support and technology BPO USA providers. SaaS customer support outsourcing for startups, scale-ups, and enterprise SaaS platforms.",
+    "US-based saas technology support support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "saas technical support",
     "technology bpo usa",

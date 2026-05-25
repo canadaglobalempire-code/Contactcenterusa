@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Real Estate Call Center & Real Estate BPO Services | Property Management Support | Contact Center USA",
+  title: "Real Estate Call Center | Contact Center USA",
   description:
-    "One of the best real estate call center and real estate BPO services providers in the USA. Property management customer support, lead qualification, showings scheduling, and investor relations.",
+    "US-based real estate call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "real estate call center",
     "real estate bpo services",

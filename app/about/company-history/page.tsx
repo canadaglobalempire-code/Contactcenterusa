@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Company History | Contact Center USA — Founded 1999, 500+ Employees",
+  title: "Company History | Contact Center USA",
   description:
-    "Discover the history of Contact Center USA — founded in 1999, now 500+ employees strong with over 30 years of combined leadership experience in US-based call center outsourcing.",
+    "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.",
   alternates: { canonical: "/about/company-history" },
 };
 

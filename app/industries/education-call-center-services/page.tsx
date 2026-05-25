@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Education Call Center & University BPO Services in USA | Contact Center USA",
+  title: "Education Call Center | Contact Center USA",
   description:
-    "US-based education call center and university BPO services — student support outsourcing, enrollment, financial aid, alumni relations, and LMS help desk for colleges, universities, and EdTech.",
+    "US-based education call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "education call center",
     "university bpo services",

@@ -5,6 +5,9 @@ User-agent: *
 Allow: /
 
 # AI / answer-engine crawlers are explicitly allowed.
+# AI-readable site context:
+# https://contactcenterusa.com/llms.txt
+# https://contactcenterusa.com/ai.txt
 
 User-agent: GPTBot
 Allow: /

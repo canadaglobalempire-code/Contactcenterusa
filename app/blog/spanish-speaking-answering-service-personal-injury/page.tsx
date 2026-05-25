@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Spanish-Speaking Answering Service for Personal Injury Firms 2026",
+  title: "Spanish Answering Service for PI Firms",
   description:
-    "Bilingual 24/7 PI intake that captures Hispanic clients other firms lose. Native Spanish, signed retainers, Litify and Clio integration. ROI math + budget guide inside.",
+    "Read the spanish answering service for pi firms guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "spanish speaking answering service for personal injury",
     "bilingual personal injury intake",

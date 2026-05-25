@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic 100% US-based 24/7 plumbing answering, dispatch, and emergency triage with ServiceTitan and Housecall Pro integration",
     description:
-      "Contact Center USA is the proudly American plumbing answering service that has run 100% US-based operations for 30+ years — every call answered domestically, every dispatcher trained on plumbing vocabulary, every emergency triaged by an American agent who knows the difference between a burst pipe and a slow drip. Purpose-built for residential plumbers, drain specialists, water-heater installers, and commercial plumbing contractors, Contact Center USA covers 24/7 emergency triage, after-hours and weekend dispatch, holiday coverage, and on-call rotation paging — with live work-order creation in ServiceTitan, Housecall Pro, Jobber, FieldEdge, and most major field-service platforms. Spanish bilingual coverage runs 24/7 (critical for TX, FL, AZ, CA, NV plumbers), and every booking ends with an SMS to the customer confirming the technician's name and ETA. Plumbing shops typically recover their entire annual answering-service spend on the first or second captured emergency water-heater or sewer-line job.",
+      "Contact Center USA is the proudly American plumbing answering service that has run 100% US-based operations for 25+ years — every call answered domestically, every dispatcher trained on plumbing vocabulary, every emergency triaged by an American agent who knows the difference between a burst pipe and a slow drip. Purpose-built for residential plumbers, drain specialists, water-heater installers, and commercial plumbing contractors, Contact Center USA covers 24/7 emergency triage, after-hours and weekend dispatch, holiday coverage, and on-call rotation paging — with live work-order creation in ServiceTitan, Housecall Pro, Jobber, FieldEdge, and most major field-service platforms. Spanish bilingual coverage runs 24/7 (critical for TX, FL, AZ, CA, NV plumbers), and every booking ends with an SMS to the customer confirming the technician's name and ETA. Plumbing shops typically recover their entire annual answering-service spend on the first or second captured emergency water-heater or sewer-line job.",
     services: [
       "100% US-based plumbing answering — never offshored",
       "24/7 emergency triage (burst pipe, sewer backup, no water, slow leak)",
@@ -169,11 +169,11 @@ const companies = [
       "SMS booking confirmations with technician name and ETA",
     ],
     industries: "Residential plumbers, drain and sewer specialists, water-heater installers, septic services, commercial plumbing contractors",
-    strengths: "30+ years of US-only operations, deep field-service software integration, plumbing-trained dispatchers, 24/7 bilingual coverage, on-call rotation logic.",
+    strengths: "25+ years of US-only operations, deep field-service software integration, plumbing-trained dispatchers, 24/7 bilingual coverage, on-call rotation logic.",
     weaknesses: "Premium US pricing — recovered after a single captured emergency replacement.",
     pricing: "$0.95-$1.40/minute, $400-$1,200/month tiered plans, or $40-$95 per booked appointment",
     clients: "Multi-truck residential plumbers, regional plumbing chains, drain specialists, water-heater contractors, commercial plumbing groups",
-    highlight: "30+ years of 100% American plumbing answering — every emergency triaged in the US, every dispatch written into your ServiceTitan or Housecall Pro calendar live.",
+    highlight: "25+ years of 100% American plumbing answering — every emergency triaged in the US, every dispatch written into your ServiceTitan or Housecall Pro calendar live.",
   },
   {
     rank: 8,
@@ -548,7 +548,7 @@ export default function Top10PlumbingAnsweringServiceContent() {
                 The <strong>US plumbing answering service industry</strong> has matured well past basic message-taking. The shops that win in 2026 partner with US-based providers that triage emergencies correctly in 60 seconds, write live work orders into ServiceTitan or Housecall Pro before the call ends, page on-call technicians only when warranted, and cover Spanish bilingual 24/7 in the markets where it matters. Every other shop is donating jobs to the next plumber on Google.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American plumbing answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based dispatch operations</strong>, deep integration with ServiceTitan, Housecall Pro, Jobber, and FieldEdge, 24/7 Spanish bilingual coverage, on-call rotation paging, and per-call, per-minute, and per-booked-appointment pricing options. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound plumbing call center services</Link> or you also work property-management and commercial accounts via <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate call center services</Link>, Contact Center USA is built for the plumbing shops that book every emergency.
+                Global Empire Corporation tops our 2026 ranking with its full-service American plumbing answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based dispatch operations</strong>, deep integration with ServiceTitan, Housecall Pro, Jobber, and FieldEdge, 24/7 Spanish bilingual coverage, on-call rotation paging, and per-call, per-minute, and per-booked-appointment pricing options. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound plumbing call center services</Link> or you also work property-management and commercial accounts via <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate call center services</Link>, Contact Center USA is built for the plumbing shops that book every emergency.
               </p>
 
               {/* CTA */}

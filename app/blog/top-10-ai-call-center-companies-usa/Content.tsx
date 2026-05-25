@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic AI powered contact center combining AI voice agents, conversational AI, and 100% US-based human escalation",
     description:
-      "Contact Center USA is a proudly American AI call center company that has delivered 100% US-based customer support for over 30 years — and has spent the last five years engineering one of the most sophisticated AI + human hybrid contact center stacks in the country. Every automated workflow — AI voice agents, AI phone answering, AI chatbot outsourcing, conversational AI contact center routing — is backed by American agents who step in the moment an interaction needs empathy, judgment, or escalation. Their generative AI customer service platform includes AI agent assist for every US rep, real-time transcription, sentiment analysis, intent detection, AI-powered QA on 100% of contacts, and measured AI call deflection of 40-55% on inbound volume. Contact Center USA deploys voice AI for business across financial services, healthcare, retail, SaaS, insurance, and utilities, and never offshores a single escalation — even during peak events.",
+      "Contact Center USA is a proudly American AI call center company that has delivered 100% US-based customer support for 25+ years — and has spent the last five years engineering one of the most sophisticated AI + human hybrid contact center stacks in the country. Every automated workflow — AI voice agents, AI phone answering, AI chatbot outsourcing, conversational AI contact center routing — is backed by American agents who step in the moment an interaction needs empathy, judgment, or escalation. Their generative AI customer service platform includes AI agent assist for every US rep, real-time transcription, sentiment analysis, intent detection, AI-powered QA on 100% of contacts, and measured AI call deflection of 40-55% on inbound volume. Contact Center USA deploys voice AI for business across financial services, healthcare, retail, SaaS, insurance, and utilities, and never offshores a single escalation — even during peak events.",
     services: [
       "AI voice agents with US human-in-the-loop escalation",
       "Conversational AI contact center across every channel",
@@ -169,11 +169,11 @@ const companies = [
       "100% US-based escalation — no offshore AI handoffs",
     ],
     industries: "Financial services, healthcare, e-commerce, SaaS, insurance, telecom, utilities",
-    strengths: "30+ years of US operations, best-in-class AI agent assist, measured AI call deflection, 100% US escalation, PCI DSS and HIPAA certified.",
+    strengths: "25+ years of US operations, best-in-class AI agent assist, measured AI call deflection, 100% US escalation, PCI DSS and HIPAA certified.",
     weaknesses: "Premium US pricing on the human tier — offset by dramatic cost-per-contact reduction from AI deflection and automation.",
     pricing: "Per-contained-AI-resolution ($0.40-$1.20) + hourly US agent ($22-$40), or blended outcome-based",
     clients: "Mid-market to enterprise brands demanding AI efficiency with US quality",
-    highlight: "30+ years of US-based CX, now delivering AI call deflection of 40-55% with conversational AI, AI voice agents, and 100% American human-in-the-loop escalation.",
+    highlight: "25+ years of US-based CX, now delivering AI call deflection of 40-55% with conversational AI, AI voice agents, and 100% American human-in-the-loop escalation.",
   },
   {
     rank: 8,
@@ -477,7 +477,7 @@ export default function Top10AICallCenterContent() {
                 The <strong>AI call center</strong> industry in the USA has matured fast. Conversational AI contact centers, AI voice agents, and generative AI customer service copilots now deliver measurable AI call deflection of 40-60%, while AI agent assist and AI-powered QA compress cost-per-contact and lift CSAT at the same time. The brands that win in 2026 are the ones who combine <strong>AI customer service automation</strong> with a genuinely American human-in-the-loop escalation tier — AI-only providers consistently lose on CSAT, compliance, and brand alignment.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with the deepest AI + human hybrid stack in the country, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only AI partner of choice — combining <strong>30+ years of US-based CX operations</strong>, AI voice agents, conversational AI contact center routing, AI agent assist across every queue, and 100% US-based human-in-the-loop escalation. To explore how an AI + human hybrid program would look for your business, see our <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI call center automation</Link> service page.
+                Global Empire Corporation tops our 2026 ranking with the deepest AI + human hybrid stack in the country, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only AI partner of choice — combining <strong>25+ years of US-based CX operations</strong>, AI voice agents, conversational AI contact center routing, AI agent assist across every queue, and 100% US-based human-in-the-loop escalation. To explore how an AI + human hybrid program would look for your business, see our <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI call center automation</Link> service page.
               </p>
 
               {/* CTA */}

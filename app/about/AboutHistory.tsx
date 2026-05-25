@@ -7,7 +7,7 @@ import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 const stats = [
   { value: 1999, label: "Founded", suffix: "" },
   { value: 500, label: "Employees", suffix: "+" },
-  { value: 30, label: "Years Experience", suffix: "+" },
+  { value: 25, label: "Years Experience", suffix: "+" },
   { value: 24, label: "Hours / 7 Days", suffix: "/7" },
 ];
 

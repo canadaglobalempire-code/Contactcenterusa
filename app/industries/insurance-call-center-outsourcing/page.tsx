@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Insurance BPO Services | Insurance Call Center Outsourcing USA | Contact Center USA",
+  title: "Insurance Call Center Outsourcing | Contact Center USA",
   description:
-    "One of the best insurance BPO services and insurance customer service BPO USA providers. Licensed insurance call center outsourcing for P&C, life, health, Medicare, and commercial lines.",
+    "US-based insurance call center outsourcing support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "insurance bpo services",
     "insurance call center outsourcing",

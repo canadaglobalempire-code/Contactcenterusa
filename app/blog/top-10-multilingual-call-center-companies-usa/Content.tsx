@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, omnichannel multilingual customer support across Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog",
     description:
-      "Contact Center USA is a proudly American multilingual call center company that has delivered 100% US-based bilingual and multilingual customer support for over 30 years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence — in whatever language the customer prefers. Purpose-built for healthcare carriers, national retailers, utilities, financial services firms, and government programs, Contact Center USA handles the full multilingual customer lifecycle in Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog — including Hispanic-market inbound support, dedicated bilingual teams, on-demand over-the-phone interpretation (OPI) across 200+ languages, and culturally-aligned outbound programs. Their infrastructure scales rapidly to absorb Open Enrollment, bilingual disaster response, and seasonal Hispanic-market surges, and every program is supported by real-time CSAT dashboards, AI language detection, and integrations with Salesforce, Zendesk, Genesys, and Five9.",
+      "Contact Center USA is a proudly American multilingual call center company that has delivered 100% US-based bilingual and multilingual customer support for 25+ years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence — in whatever language the customer prefers. Purpose-built for healthcare carriers, national retailers, utilities, financial services firms, and government programs, Contact Center USA handles the full multilingual customer lifecycle in Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog — including Hispanic-market inbound support, dedicated bilingual teams, on-demand over-the-phone interpretation (OPI) across 200+ languages, and culturally-aligned outbound programs. Their infrastructure scales rapidly to absorb Open Enrollment, bilingual disaster response, and seasonal Hispanic-market surges, and every program is supported by real-time CSAT dashboards, AI language detection, and integrations with Salesforce, Zendesk, Genesys, and Five9.",
     services: [
       "100% American workforce — native bilingual & multilingual agents",
       "24/7 US-based Spanish, French, Mandarin, Portuguese, Vietnamese, Tagalog support",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only multilingual service guarantee",
     ],
     industries: "Healthcare, retail, financial services, insurance, utilities, government, telecom, DTC serving Hispanic consumers",
-    strengths: "30+ years of US multilingual operations, native bilingual agents, OPI + dedicated line hybrid, HIPAA / PCI DSS certified, cultural fluency.",
+    strengths: "25+ years of US multilingual operations, native bilingual agents, OPI + dedicated line hybrid, HIPAA / PCI DSS certified, cultural fluency.",
     weaknesses: "Premium US pricing — offset by CSAT, cultural lift, and Hispanic-market retention.",
     pricing: "Hourly ($24-$42 US), per-minute OPI ($0.75-$1.95), or dedicated bilingual FTE ($2,800-$5,800/mo)",
     clients: "National health insurers, Fortune 500 retailers, US banks serving Hispanic markets, state government programs",
-    highlight: "30+ years of 100% American multilingual customer service — never offshored a single contact, across 15+ languages with dedicated Hispanic-market teams.",
+    highlight: "25+ years of 100% American multilingual customer service — never offshored a single contact, across 15+ languages with dedicated Hispanic-market teams.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10MultilingualCallCenterContent() {
                 In this 2026 guide, we rank the <strong>top 10 American multilingual call center companies</strong>, evaluated on native-speaker bench depth, cultural fluency, language-line flexibility (dedicated vs. OPI), agent quality, and client outcomes across Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog. Whether you need <strong>Spanish-first Hispanic-market support</strong>, <strong>bilingual English/Spanish omnichannel CX</strong>, <strong>on-demand interpretation services</strong>, or <strong>global customer service</strong>, this list will help you find the right US-based partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="multilingual_top_inline_cta"
+                leadOffer="Multilingual call center quote"
+                heading="Need Spanish or multilingual support staffed in the US?"
+                body="Share your language mix, hours, and monthly volume. We'll map the right bilingual, multilingual, or OPI model for your customer base."
+                primaryLabel="Get a Multilingual CX Quote"
+                serviceHref="/solutions/multilingual-call-center-services"
+                serviceLabel="See multilingual services"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10MultilingualCallCenterContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-team-meeting.jpg" alt="Multilingual customer service team meeting in the USA" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="multilingual_mid_article_cta"
+                leadOffer="Multilingual call center quote"
+                heading="Compare providers with a real multilingual quote in hand."
+                body="Use the ranking below, then benchmark it against a US-based quote for Spanish, bilingual, multilingual, or OPI coverage."
+                primaryLabel="Request Multilingual Pricing"
+                serviceHref="/solutions/multilingual-call-center-services"
+                serviceLabel="Review service details"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Multilingual Call Center Companies</h2>
@@ -475,7 +498,7 @@ export default function Top10MultilingualCallCenterContent() {
                 The <strong>American multilingual call center industry</strong> is being reshaped by Hispanic-market growth, AI translation, and the rise of Spanish-first CX design. Healthcare carriers, national retailers, utilities, financial services firms, and government programs win when they partner with US-based multilingual outsourcers that offer native-speaker depth, cultural fluency, flexible language-line models, and seamless OPI coverage across 200+ languages.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American multilingual CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based bilingual operations</strong>, dedicated Spanish-market teams, on-demand OPI across 200+ languages, and flexible per-minute and dedicated-FTE pricing. Whether you need <Link href="/solutions/multilingual-call-center-services" className="text-red font-semibold hover:underline">multilingual call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win multicultural America on CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American multilingual CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based bilingual operations</strong>, dedicated Spanish-market teams, on-demand OPI across 200+ languages, and flexible per-minute and dedicated-FTE pricing. Whether you need <Link href="/solutions/multilingual-call-center-services" className="text-red font-semibold hover:underline">multilingual call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win multicultural America on CX.
               </p>
 
               {/* CTA */}
@@ -484,9 +507,9 @@ export default function Top10MultilingualCallCenterContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers US-based, omnichannel multilingual customer service across Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog — plus on-demand OPI interpretation across 200+ languages. Get a free multilingual CX quote today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="multilingual_bottom_cta" leadOffer="Multilingual call center quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Multilingual CX Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -510,7 +533,13 @@ export default function Top10MultilingualCallCenterContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="multilingual_sidebar_form"
+                  leadOffer="Multilingual call center quote"
+                  title="Get a Multilingual CX Quote"
+                  description="Tell us your languages, hours, and volume."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

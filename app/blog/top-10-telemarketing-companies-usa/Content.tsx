@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
-    bestFor: "Patriotic US-only telemarketing with 30+ years of TCPA-compliant outbound excellence",
+    bestFor: "Patriotic US-only telemarketing with 25+ years of TCPA-compliant outbound excellence",
     description:
-      "Contact Center USA is a proudly American telemarketing company that has delivered 100% US-based outbound calling for over 30 years. Every agent is located in the United States, every dial is placed from domestic infrastructure, and every interaction reflects the values of American service and compliance excellence. Purpose-built for brands that demand conversion without complaint risk, Contact Center USA handles the full outbound lifecycle — B2B and B2C lead qualification, cold calling, appointment setting, survey and market research, consumer retention, renewal calling, political and nonprofit outbound, and TCPA-compliant follow-up. Their infrastructure pairs predictive and power dialers with real-time DNC scrubbing, certified TCPA training, and full call recording. Programs integrate natively with Salesforce, HubSpot, Zoho, Five9, Genesys, and modern telephony stacks, with minute-by-minute conversion dashboards and outcome-based pricing available on every engagement.",
+      "Contact Center USA is a proudly American telemarketing company that has delivered 100% US-based outbound calling for 25+ years. Every agent is located in the United States, every dial is placed from domestic infrastructure, and every interaction reflects the values of American service and compliance excellence. Purpose-built for brands that demand conversion without complaint risk, Contact Center USA handles the full outbound lifecycle — B2B and B2C lead qualification, cold calling, appointment setting, survey and market research, consumer retention, renewal calling, political and nonprofit outbound, and TCPA-compliant follow-up. Their infrastructure pairs predictive and power dialers with real-time DNC scrubbing, certified TCPA training, and full call recording. Programs integrate natively with Salesforce, HubSpot, Zoho, Five9, Genesys, and modern telephony stacks, with minute-by-minute conversion dashboards and outcome-based pricing available on every engagement.",
     services: [
       "100% American workforce — no offshore callers",
       "TCPA-compliant B2B and B2C telemarketing",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only telemarketing guarantee",
     ],
     industries: "Insurance, financial services, SaaS, healthcare, home services, nonprofit, political, education",
-    strengths: "30+ years of US telemarketing operations, TCPA and DNC rigor, deep dialer integrations, PCI DSS certified, outcome-based pricing.",
+    strengths: "25+ years of US telemarketing operations, TCPA and DNC rigor, deep dialer integrations, PCI DSS certified, outcome-based pricing.",
     weaknesses: "Premium US pricing — offset by compliance safety, conversion lift, and zero offshore risk.",
     pricing: "Hourly ($25-$45 US), per-lead ($35-$125), per-appointment, or outcome-based",
     clients: "Insurance carriers, mid-market SaaS brands, nonprofits, political organizations, home services",
-    highlight: "30+ years of 100% American telemarketing — TCPA-compliant, DNC-clean, never offshored a single dial.",
+    highlight: "25+ years of 100% American telemarketing — TCPA-compliant, DNC-clean, never offshored a single dial.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10TelemarketingContent() {
                 In this 2026 guide, we rank the <strong>top 10 American telemarketing companies</strong>, evaluated on US-based agent quality, TCPA and DNC compliance rigor, dialer technology, conversion performance, and client outcomes. Whether you run a <strong>B2B SaaS pipeline program</strong>, a <strong>B2C insurance or home-services campaign</strong>, an <strong>annual open enrollment push</strong>, or a <strong>political or nonprofit outbound drive</strong>, this list will help you find the right US-based telemarketing partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="telemarketing_top_inline_cta"
+                leadOffer="Telemarketing campaign quote"
+                heading="Need compliant US-based outbound callers?"
+                body="Share your audience, consent source, call goals, and target volume. We'll outline a TCPA-aware telemarketing campaign and quote range."
+                primaryLabel="Get a Telemarketing Quote"
+                serviceHref="/services/telemarketing-services"
+                serviceLabel="See telemarketing services"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10TelemarketingContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-focus.jpg" alt="US-based telemarketing agent on an outbound call" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="telemarketing_mid_article_cta"
+                leadOffer="Telemarketing campaign quote"
+                heading="Compare telemarketing vendors with compliance and volume priced."
+                body="Request pricing for US-based outbound callers, dialer setup, DNC controls, QA, and outcome-based campaign options."
+                primaryLabel="Request Telemarketing Pricing"
+                serviceHref="/services/telemarketing-services"
+                serviceLabel="Review telemarketing"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Telemarketing Companies</h2>
@@ -475,7 +498,7 @@ export default function Top10TelemarketingContent() {
                 The <strong>American telemarketing industry</strong> is being reshaped by AI dialers, tightening TCPA enforcement, and a consumer base that rewards trust and punishes spam. B2B and B2C brands win when they partner with US-based telemarketing firms that can deliver compliant, conversational, conversion-oriented outbound at a mid-market-friendly price.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American telemarketing practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based telemarketing operations</strong>, rigorous TCPA and DNC compliance, deep Salesforce / HubSpot / Five9 / Genesys integration, and flexible per-lead and outcome-based pricing. Whether you need <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">full-service telemarketing</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, or <Link href="/services/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, Contact Center USA is built for brands that win on the phone without the compliance risk.
+                Global Empire Corporation tops our 2026 ranking with its full-service American telemarketing practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based telemarketing operations</strong>, rigorous TCPA and DNC compliance, deep Salesforce / HubSpot / Five9 / Genesys integration, and flexible per-lead and outcome-based pricing. Whether you need <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">full-service telemarketing</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, or <Link href="/services/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, Contact Center USA is built for brands that win on the phone without the compliance risk.
               </p>
 
               {/* CTA */}
@@ -484,9 +507,9 @@ export default function Top10TelemarketingContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers US-based, TCPA-compliant telemarketing with predictive dialing, real-time DNC scrubbing, and outcome-based pricing. Get a free telemarketing quote today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="telemarketing_bottom_cta" leadOffer="Telemarketing campaign quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Telemarketing Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -510,7 +533,13 @@ export default function Top10TelemarketingContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="telemarketing_sidebar_form"
+                  leadOffer="Telemarketing campaign quote"
+                  title="Get a Telemarketing Quote"
+                  description="Tell us your list, consent source, and call goals."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

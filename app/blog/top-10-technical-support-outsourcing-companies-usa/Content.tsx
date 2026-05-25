@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, multi-tier technical support for SaaS, IT, and device brands",
     description:
-      "Contact Center USA is a proudly American technical support company that has delivered 100% US-based tech CX for over 30 years. Every agent is located in the United States, every ticket is answered domestically, and every escalation reflects the compliance-first values of American service excellence. Purpose-built for SaaS companies, IT help desks, hardware brands, telecom carriers, and enterprise software vendors, Contact Center USA handles the full technical support lifecycle — from first-contact triage and knowledge-base navigation through remote diagnostics, case escalation, and bug-reporting feedback loops to product engineering teams. Their agents are trained on ITIL frameworks, use modern ticketing platforms (Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, Freshdesk), and leverage AI copilots to solve technical issues faster. For software and device brands that compete on product quality, Contact Center USA keeps customers productive with every interaction.",
+      "Contact Center USA is a proudly American technical support company that has delivered 100% US-based tech CX for 25+ years. Every agent is located in the United States, every ticket is answered domestically, and every escalation reflects the compliance-first values of American service excellence. Purpose-built for SaaS companies, IT help desks, hardware brands, telecom carriers, and enterprise software vendors, Contact Center USA handles the full technical support lifecycle — from first-contact triage and knowledge-base navigation through remote diagnostics, case escalation, and bug-reporting feedback loops to product engineering teams. Their agents are trained on ITIL frameworks, use modern ticketing platforms (Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, Freshdesk), and leverage AI copilots to solve technical issues faster. For software and device brands that compete on product quality, Contact Center USA keeps customers productive with every interaction.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based Tier 1-3 technical support",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "SaaS, IT services, telecom, consumer electronics, connected devices, enterprise software, cybersecurity",
-    strengths: "30+ years of US operations, ITIL-trained agents, SOC 2 Type II compliance, deep ticketing platform integrations, AI copilot tooling.",
+    strengths: "25+ years of US operations, ITIL-trained agents, SOC 2 Type II compliance, deep ticketing platform integrations, AI copilot tooling.",
     weaknesses: "Premium US pricing — offset by higher FCR, lower repeat-contact rates, and cleaner compliance posture.",
     pricing: "Hourly ($26-$50 US), per-ticket, or outcome-based",
     clients: "Mid-market SaaS, enterprise software vendors, device manufacturers, MSPs, telecom carriers",
-    highlight: "30+ years of 100% American technical support — never offshored a single ticket, with ITIL-trained agents across all major ticketing platforms.",
+    highlight: "25+ years of 100% American technical support — never offshored a single ticket, with ITIL-trained agents across all major ticketing platforms.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10TechnicalSupportContent() {
                 In this 2026 guide, we rank the <strong>top 10 technical support outsourcing companies in the USA</strong>, evaluated on technical skill depth, platform coverage, CX quality, onshore delivery, and client outcomes. Whether you need <strong>24/7 IT help desk outsourcing</strong>, <strong>SaaS Tier 1-3 technical support</strong>, <strong>device and hardware tech support</strong>, or <strong>cloud and cybersecurity support</strong>, this list will help you find the right American partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="technical_support_top_inline_cta"
+                leadOffer="Technical support outsourcing quote"
+                heading="Need Tier 1-3 technical support coverage?"
+                body="Send your ticket volume, platforms, support tiers, and hours. We'll map a technical support team and quote structure for your product."
+                primaryLabel="Get a Tech Support Quote"
+                serviceHref="/solutions/technical-support-outsourcing"
+                serviceLabel="See technical support"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10TechnicalSupportContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-headset.jpg" alt="Technical support agent in the USA" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="technical_support_mid_article_cta"
+                leadOffer="Technical support outsourcing quote"
+                heading="Benchmark technical support vendors with a tiered quote."
+                body="Request pricing for Tier 1, Tier 2, Tier 3, SaaS, device, or IT help desk coverage before you compare vendors."
+                primaryLabel="Request Tech Support Pricing"
+                serviceHref="/solutions/technical-support-outsourcing"
+                serviceLabel="Review technical support"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Technical Support Outsourcing Companies</h2>
@@ -475,7 +498,7 @@ export default function Top10TechnicalSupportContent() {
                 <strong>American technical support outsourcing</strong> has matured into a strategic function that drives customer retention, NPS, and product adoption for software, device, and IT brands. The winners in 2026 combine US-based technical talent, AI-enabled tooling, deep platform integrations, and outcome-based pricing — the providers that still rely on pure hourly offshore models are losing ground fast.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation leads our 2026 technical support ranking with full-service American operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based operations</strong>, SOC 2 Type II compliance, ITIL-trained agents, and deep integration with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk. Whether you need <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 1-3 technical support</Link>, <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer success support</Link>, or <Link href="/solutions/information-technology-services" className="text-red font-semibold hover:underline">managed IT help desk outsourcing</Link>, Contact Center USA is built for American software, device, and IT brands that compete on product quality.
+                Global Empire Corporation leads our 2026 technical support ranking with full-service American operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, SOC 2 Type II compliance, ITIL-trained agents, and deep integration with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk. Whether you need <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 1-3 technical support</Link>, <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer success support</Link>, or <Link href="/solutions/information-technology-services" className="text-red font-semibold hover:underline">managed IT help desk outsourcing</Link>, Contact Center USA is built for American software, device, and IT brands that compete on product quality.
               </p>
 
               {/* CTA */}
@@ -484,9 +507,9 @@ export default function Top10TechnicalSupportContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers US-based, multi-tier technical support outsourcing with SOC 2 compliance and deep platform integrations. Get a free tech support consultation today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="technical_support_bottom_cta" leadOffer="Technical support outsourcing quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Tech Support Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -509,7 +532,13 @@ export default function Top10TechnicalSupportContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="technical_support_sidebar_form"
+                  leadOffer="Technical support outsourcing quote"
+                  title="Get a Tech Support Quote"
+                  description="Tell us your support tiers, tickets, and platforms."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

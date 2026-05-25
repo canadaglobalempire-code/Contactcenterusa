@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Virtual Remote Support & Remote Customer Support Outsourcing USA | Contact Center USA",
+  title: "Virtual Remote Support | Contact Center USA",
   description:
-    "US-based virtual remote support, remote customer support outsourcing, and virtual support BPO USA. Secure work-from-home agent programs, virtual assistants, and distributed workforce management.",
+    "US-based virtual remote support with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "virtual remote support",
     "remote customer support outsourcing",

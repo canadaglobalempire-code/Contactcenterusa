@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 export default function Content() {
   return (
@@ -54,6 +56,16 @@ export default function Content() {
                 <p>
                   Spoiler: for most US businesses under 100 agents, outsourcing is 30–55% cheaper. For specialized or regulated functions, it&apos;s closer to breakeven. We&apos;ll show you exactly where the line is.
                 </p>
+
+                <InlineLeadCTA
+                  ctaLocation="in_house_vs_outsourced_top_inline_cta"
+                  leadOffer="In-house vs outsourced cost analysis"
+                  heading="Want your own build-vs-buy comparison?"
+                  body="Share your agent count, hours, tools, and current costs. We'll build a side-by-side view of in-house vs outsourced operations."
+                  primaryLabel="Get My Cost Comparison"
+                  serviceHref="/solutions/customer-service-outsourcing"
+                  serviceLabel="See outsourcing options"
+                />
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">The 20-Agent Case Study: Full Cost Breakdown</h2>
                 <p>
@@ -114,6 +126,17 @@ export default function Content() {
                 <div className="my-10 overflow-hidden rounded-2xl">
                   <Image src="/images/hd-agents-pair.jpg" alt="Outsourced call center team" width={800} height={450} className="w-full object-cover" />
                 </div>
+
+                <InlineLeadCTA
+                  eyebrow="Quote checkpoint"
+                  ctaLocation="in_house_vs_outsourced_mid_article_cta"
+                  leadOffer="In-house vs outsourced cost analysis"
+                  heading="Turn this benchmark into a CFO-ready cost model."
+                  body="We'll compare salaries, benefits, QA, software, coverage, and outsourced FTE pricing against your real operation."
+                  primaryLabel="Request Cost Model"
+                  serviceHref="/solutions/customer-service-outsourcing"
+                  serviceLabel="Review outsourcing services"
+                />
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Hidden Costs of In-House That Nobody Tells You</h2>
                 <p>
@@ -200,16 +223,24 @@ export default function Content() {
                   <p className="mt-4 text-white/60 max-w-2xl mx-auto">
                     Share your current operation (or planned build) and we&apos;ll build a line-by-line comparison showing what outsourcing with us would cost vs. your in-house model.
                   </p>
-                  <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-6 py-3 text-sm font-semibold text-white hover:bg-red-dark transition-colors">
+                  <LeadCTALink ctaLocation="in_house_vs_outsourced_bottom_cta" leadOffer="In-house vs outsourced cost analysis" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-6 py-3 text-sm font-semibold text-white hover:bg-red-dark transition-colors">
                     Request My Comparison <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </LeadCTALink>
                 </div>
               </article>
             </div>
 
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-8">
-                <div className="rounded-2xl bg-navy p-6"><HeroContactForm /></div>
+                <div className="rounded-2xl bg-navy p-6">
+                  <HeroContactForm
+                    ctaLocation="in_house_vs_outsourced_sidebar_form"
+                    leadOffer="In-house vs outsourced cost analysis"
+                    title="Get a Cost Comparison"
+                    description="Tell us your current or planned call center size."
+                    submitLabel="Request Comparison"
+                  />
+                </div>
                 <div className="rounded-2xl border border-gray-200 p-6">
                   <h3 className="text-lg font-bold text-navy mb-4">Related Articles</h3>
                   <ul className="space-y-3">

@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 export default function Content() {
   return (
@@ -44,6 +46,16 @@ export default function Content() {
                   Here are the 7 best Teleperformance alternatives in 2026, what each does well, and how to pick the right fit.
                 </p>
 
+                <InlineLeadCTA
+                  ctaLocation="teleperformance_alternatives_top_inline_cta"
+                  leadOffer="Teleperformance alternative quote"
+                  heading="Need a US-based Teleperformance alternative quote?"
+                  body="Share your current program size, channels, and contract goals. We'll compare a flexible US-based model against enterprise BPO terms."
+                  primaryLabel="Get an Alternative Quote"
+                  serviceHref="/solutions/customer-service-outsourcing"
+                  serviceLabel="See customer service"
+                />
+
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Why Mid-Market Buyers Are Leaving Teleperformance</h2>
                 <ul className="space-y-3 my-6">
                   <li><strong>Minimum commitments are too high.</strong> Teleperformance&apos;s sweet spot is 500+ FTE programs. Mid-market buyers with 20–100 FTE needs are often under-served.</li>
@@ -63,7 +75,7 @@ export default function Content() {
                   <strong>Best for:</strong> US-based brands wanting onshore delivery without enterprise bureaucracy.
                 </p>
                 <p>
-                  Contact Center USA delivers 100% US-based agents, 24/7 coverage, and full <Link href="/solutions/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link> with zero minimum-volume lock-ins. Unlike Teleperformance&apos;s global-first model, we staff, train, and QA exclusively in America. 500+ agents, 30+ years of industry experience, 98% CSAT across active programs.
+                  Contact Center USA delivers 100% US-based agents, 24/7 coverage, and full <Link href="/solutions/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link> with zero minimum-volume lock-ins. Unlike Teleperformance&apos;s global-first model, we staff, train, and QA exclusively in America. 500+ agents, 25+ years of industry experience, 98% CSAT across active programs.
                 </p>
                 <p>
                   Pricing: $24–$34/hr for US dedicated FTEs. Month-to-month contracts available.
@@ -121,6 +133,17 @@ export default function Content() {
                   <Image src="/images/agents-working.jpg" alt="BPO outsourcing team" width={800} height={450} className="w-full object-cover" />
                 </div>
 
+                <InlineLeadCTA
+                  eyebrow="Quote checkpoint"
+                  ctaLocation="teleperformance_alternatives_mid_article_cta"
+                  leadOffer="Teleperformance alternative quote"
+                  heading="Compare vendors with a migration quote in hand."
+                  body="Get a line-item quote for onshore agents, flexible terms, and a 60-90 day transition path before you shortlist alternatives."
+                  primaryLabel="Request Migration Pricing"
+                  serviceHref="/solutions/customer-service-outsourcing"
+                  serviceLabel="Review CX outsourcing"
+                />
+
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">How to Pick the Right Teleperformance Alternative</h2>
                 <p>Start with 3 questions:</p>
                 <ol className="space-y-3 my-6 list-decimal pl-6">
@@ -152,7 +175,7 @@ export default function Content() {
                   <li><strong>Minimum commit:</strong> No FTE floor (TP: typically 100+ FTEs).</li>
                   <li><strong>Contract length:</strong> Month-to-month available (TP: typically 3+ years).</li>
                   <li><strong>Account management:</strong> Named senior AM on every account (TP: varies).</li>
-                  <li><strong>Industries:</strong> 30+ years across <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link>, <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>, <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red hover:text-red-dark font-semibold">e-commerce</Link>, <Link href="/industries/saas-technology-support" className="text-red hover:text-red-dark font-semibold">SaaS</Link>, and more.</li>
+                  <li><strong>Industries:</strong> 25+ years across <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link>, <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>, <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red hover:text-red-dark font-semibold">e-commerce</Link>, <Link href="/industries/saas-technology-support" className="text-red hover:text-red-dark font-semibold">SaaS</Link>, and more.</li>
                   <li><strong>Pricing:</strong> Transparent, competitive US rates — typically 15–25% lower than TP&apos;s US delivery pricing.</li>
                 </ul>
 
@@ -173,16 +196,24 @@ export default function Content() {
                   <p className="mt-4 text-white/60 max-w-2xl mx-auto">
                     Tell us about your current TP program (or upcoming RFP) and we&apos;ll send a line-item proposal with US-based delivery, flexible contracts, and a named account lead.
                   </p>
-                  <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-6 py-3 text-sm font-semibold text-white hover:bg-red-dark transition-colors">
+                  <LeadCTALink ctaLocation="teleperformance_alternatives_bottom_cta" leadOffer="Teleperformance alternative quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-6 py-3 text-sm font-semibold text-white hover:bg-red-dark transition-colors">
                     Compare Us to Teleperformance <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </LeadCTALink>
                 </div>
               </article>
             </div>
 
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-8">
-                <div className="rounded-2xl bg-navy p-6"><HeroContactForm /></div>
+                <div className="rounded-2xl bg-navy p-6">
+                  <HeroContactForm
+                    ctaLocation="teleperformance_alternatives_sidebar_form"
+                    leadOffer="Teleperformance alternative quote"
+                    title="Get an Alternative Quote"
+                    description="Tell us your current program, volume, and timeline."
+                    submitLabel="Compare Options"
+                  />
+                </div>
                 <div className="rounded-2xl border border-gray-200 p-6">
                   <h3 className="text-lg font-bold text-navy mb-4">Related Articles</h3>
                   <ul className="space-y-3">

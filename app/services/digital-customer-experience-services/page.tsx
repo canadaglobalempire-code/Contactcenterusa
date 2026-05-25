@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { DigitalCXContent } from "./Content";
 
 export const metadata: Metadata = {
-  title: "Digital CX Services & Digital Customer Experience BPO USA | Contact Center USA",
+  title: "Digital Customer Experience Services | Contact Center USA",
   description:
-    "US-based digital CX services, digital customer experience BPO, and CX transformation outsourcing. Omnichannel digital support including live chat, social media, email, and self-service portals.",
+    "US-based digital customer experience services with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "digital cx services",
     "digital customer experience bpo",

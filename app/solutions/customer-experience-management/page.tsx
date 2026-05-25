@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Customer Experience Management USA | CXM BPO | Contact Center USA",
+  title: "Customer Experience Management | Contact Center USA",
   description:
-    "US-based customer experience management services and CX management outsourcing. CXM BPO USA covering journey mapping, NPS/CSAT programs, voice-of-customer analytics, and omnichannel CX strategy.",
+    "US-based customer experience management with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "customer experience management",
     "cx management outsourcing",

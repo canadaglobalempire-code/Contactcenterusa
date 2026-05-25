@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only 24/7 live chat outsourcing with AI-assisted agents and deep helpdesk integration",
     description:
-      "Contact Center USA is a proudly American live chat outsourcing company that has delivered 100% US-based chat and messaging support for over 30 years. Every chat agent is located in the United States, every conversation is handled domestically, and every interaction reflects the values of American service excellence. Purpose-built for DTC brands, SaaS platforms, healthcare providers, financial services firms, and any business whose customers live on their website, Contact Center USA handles the full chat lifecycle — 24/7 website chat, proactive engagement, chatbot-to-live-agent handoff, chat-to-voice escalation, SMS and messaging-app coverage, and AI-assisted conversation routing. Their infrastructure scales rapidly (2-4x chat capacity within 30 days) to absorb campaign and holiday surges, and every program is supported by real-time CSAT dashboards, AI copilots, and native integrations with Zendesk, Intercom, Drift, LiveChat, Gorgias, Freshdesk, and Kustomer.",
+      "Contact Center USA is a proudly American live chat outsourcing company that has delivered 100% US-based chat and messaging support for 25+ years. Every chat agent is located in the United States, every conversation is handled domestically, and every interaction reflects the values of American service excellence. Purpose-built for DTC brands, SaaS platforms, healthcare providers, financial services firms, and any business whose customers live on their website, Contact Center USA handles the full chat lifecycle — 24/7 website chat, proactive engagement, chatbot-to-live-agent handoff, chat-to-voice escalation, SMS and messaging-app coverage, and AI-assisted conversation routing. Their infrastructure scales rapidly (2-4x chat capacity within 30 days) to absorb campaign and holiday surges, and every program is supported by real-time CSAT dashboards, AI copilots, and native integrations with Zendesk, Intercom, Drift, LiveChat, Gorgias, Freshdesk, and Kustomer.",
     services: [
       "100% American chat workforce — no offshore agents",
       "24/7 US-based live chat on website, SMS, and messaging apps",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "DTC ecommerce, SaaS, fintech, healthcare, insurance, professional services, travel, education",
-    strengths: "30+ years of US operations, 24/7 chat coverage, deep helpdesk and chatbot integrations, rapid scaling, PCI DSS and HIPAA capable.",
+    strengths: "25+ years of US operations, 24/7 chat coverage, deep helpdesk and chatbot integrations, rapid scaling, PCI DSS and HIPAA capable.",
     weaknesses: "Premium US pricing — offset by conversion lift and CSAT gains on high-value chats.",
     pricing: "Per-chat ($1.00-$2.50 US), hourly ($22-$40), or dedicated FTE",
     clients: "Mid-market DTC brands, SaaS platforms, healthcare portals, fintech websites, Shopify Plus merchants",
-    highlight: "30+ years of 100% American live chat outsourcing — 24/7 US-based chat agents, AI-assisted, never offshored.",
+    highlight: "25+ years of 100% American live chat outsourcing — 24/7 US-based chat agents, AI-assisted, never offshored.",
   },
   {
     rank: 8,
@@ -475,7 +475,7 @@ export default function Top10LiveChatContent() {
                 The <strong>American live chat outsourcing industry</strong> is being reshaped by generative AI, 24/7 customer expectations, and the treatment of website chat as a core revenue channel. DTC, SaaS, healthcare, and B2B brands win when they partner with US-based chat outsourcers that can deliver round-the-clock coverage, integrate natively with every modern helpdesk and chatbot platform, and blend AI efficiency with human brand-aligned writing quality.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American live chat practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based CX operations</strong>, rapid scaling, deep Zendesk / Intercom / Drift / Gorgias integration, and flexible per-chat and outcome-based pricing. Whether you need <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, AI-assisted chat support, or chat-to-voice handoff, Contact Center USA is built for the brands that treat chat as a premium, revenue-generating channel.
+                Global Empire Corporation tops our 2026 ranking with its full-service American live chat practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, rapid scaling, deep Zendesk / Intercom / Drift / Gorgias integration, and flexible per-chat and outcome-based pricing. Whether you need <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, AI-assisted chat support, or chat-to-voice handoff, Contact Center USA is built for the brands that treat chat as a premium, revenue-generating channel.
               </p>
 
               {/* CTA */}

@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Healthcare BPO Services | HIPAA Compliant Call Center USA | Contact Center USA",
+  title: "Healthcare Call Center | Contact Center USA",
   description:
-    "One of the best healthcare BPO services providers in the USA. HIPAA compliant call center for hospitals, clinics, pharma, and DME — patient scheduling, triage, insurance verification, and 24/7 nurse hotlines.",
+    "US-based healthcare call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "healthcare bpo services",
     "healthcare call center usa",

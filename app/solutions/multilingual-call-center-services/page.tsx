@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Multilingual Call Center USA | Bilingual BPO USA & Multilingual Customer Support",
+  title: "Multilingual Call Center | Contact Center USA",
   description:
-    "Multilingual call center services from a 100% US-based bilingual BPO. Native Spanish and 20+ languages for multilingual customer support — reach 42M+ Spanish-speaking consumers in the US.",
+    "US-based multilingual call center with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "multilingual call center",
     "bilingual bpo usa",

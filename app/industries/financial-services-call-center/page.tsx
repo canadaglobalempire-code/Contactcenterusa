@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Financial Services Call Center | Fintech BPO USA | Contact Center USA",
+  title: "Financial Services Call Center | Contact Center USA",
   description:
-    "One of the best financial services call center and fintech BPO USA providers. Financial customer support outsourcing for wealth management, lending, payments, fintech, and investment firms.",
+    "US-based financial services call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "financial services call center",
     "fintech bpo usa",

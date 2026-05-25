@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic 100% US-based 24/7 small business answering service with no minimums and SMB-friendly contracts",
     description:
-      "Contact Center USA is the patriotic #1 choice for call center services for small business, combining 30+ years of American-only operations with the most SMB-friendly contracts in the industry. Every call is answered by a 100% US-based agent, every plan is month-to-month with no minimums, and entrepreneurs can launch a professional small business answering service in 48-72 hours with zero setup fees. Their 24/7 answering service for small business covers nights, weekends, holidays, overflow, and peak seasons — never routing a single call offshore. For startup customer support outsourcing, they offer pay-as-you-go per-minute pricing starting as low as $0.89/minute, and every program integrates natively with Shopify, Square, Stripe, QuickBooks, HubSpot, and Google Workspace. Whether you're a solo founder, a Shopify store owner, a local service business, a SaaS startup, or a 5-person professional services firm, Contact Center USA is the affordable call center outsourcing partner built from day one to serve small businesses.",
+      "Contact Center USA is the patriotic #1 choice for call center services for small business, combining 25+ years of American-only operations with the most SMB-friendly contracts in the industry. Every call is answered by a 100% US-based agent, every plan is month-to-month with no minimums, and entrepreneurs can launch a professional small business answering service in 48-72 hours with zero setup fees. Their 24/7 answering service for small business covers nights, weekends, holidays, overflow, and peak seasons — never routing a single call offshore. For startup customer support outsourcing, they offer pay-as-you-go per-minute pricing starting as low as $0.89/minute, and every program integrates natively with Shopify, Square, Stripe, QuickBooks, HubSpot, and Google Workspace. Whether you're a solo founder, a Shopify store owner, a local service business, a SaaS startup, or a 5-person professional services firm, Contact Center USA is the affordable call center outsourcing partner built from day one to serve small businesses.",
     services: [
       "100% US-based small business answering service",
       "24/7 answering service for small business (nights, weekends, holidays)",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only overflow & after-hours coverage",
     ],
     industries: "Solo founders, small business, startups, local services, e-commerce SMBs, SaaS startups, professional services, medical practices, law firms",
-    strengths: "30+ years of US operations, no minimums, no setup fees, 48-72 hour onboarding, true 24/7 coverage, SMB-friendly month-to-month contracts, patriotic US-only agents, native Shopify/Square/Stripe integrations.",
+    strengths: "25+ years of US operations, no minimums, no setup fees, 48-72 hour onboarding, true 24/7 coverage, SMB-friendly month-to-month contracts, patriotic US-only agents, native Shopify/Square/Stripe integrations.",
     weaknesses: "100% US-based — not the cheapest offshore option, but unmatched on quality and brand alignment for small businesses.",
     pricing: "Pay-as-you-go from $0.89/minute, SMB flat-rate plans from $199/mo, no setup fees, no minimums",
     clients: "Solo founders, Shopify small business owners, local service businesses, SaaS startups, boutique law and medical practices, professional services firms",
-    highlight: "30+ years of 100% American small business call center services — no minimums, no setup fees, 24/7 US-based agents, and pay-as-you-go pricing built for entrepreneurs, solo founders, and growing SMBs.",
+    highlight: "25+ years of 100% American small business call center services — no minimums, no setup fees, 24/7 US-based agents, and pay-as-you-go pricing built for entrepreneurs, solo founders, and growing SMBs.",
   },
   {
     rank: 8,
@@ -479,7 +479,7 @@ export default function Top10SmallBusinessCallCenterContent() {
                 The <strong>American small business call center industry</strong> has been transformed by pay-as-you-go pricing, no-minimum contracts, and SMB-first onboarding. Entrepreneurs, solo founders, and growing small businesses now have access to professional <strong>small business answering service</strong> solutions, <strong>24/7 answering service for small business</strong> coverage, and full <strong>outsourced customer service for small business</strong> — all without enterprise contracts, setup fees, or offshore agents.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service SMB-first practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice for small business — combining <strong>30+ years of US-based operations</strong>, month-to-month contracts, no minimums, no setup fees, pay-as-you-go per-minute pricing, and 24/7 coverage. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services for small business</Link>, after-hours overflow, or full startup customer support outsourcing, Contact Center USA is built from day one for entrepreneurs, solo founders, and growing SMBs.
+                Global Empire Corporation tops our 2026 ranking with its full-service SMB-first practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice for small business — combining <strong>25+ years of US-based operations</strong>, month-to-month contracts, no minimums, no setup fees, pay-as-you-go per-minute pricing, and 24/7 coverage. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services for small business</Link>, after-hours overflow, or full startup customer support outsourcing, Contact Center USA is built from day one for entrepreneurs, solo founders, and growing SMBs.
               </p>
 
               {/* CTA */}

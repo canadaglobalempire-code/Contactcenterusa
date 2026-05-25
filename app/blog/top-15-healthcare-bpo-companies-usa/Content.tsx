@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -121,7 +123,7 @@ const companies = [
     hq: "United States",
     website: "https://contactcenterusa.com",
     bestFor: "US-based HIPAA-compliant call center services",
-    description: "Contact Center USA provides fully US-based call center services for healthcare organizations that prioritize quality assurance, HIPAA compliance, and brand protection. With over 30 years of experience, their model is purpose-built for regulated healthcare environments requiring 24/7 patient support, medical billing assistance, and insurance coordination.",
+    description: "Contact Center USA provides fully US-based call center services for healthcare organizations that prioritize quality assurance, HIPAA compliance, and brand protection. With 25+ years of experience, their model is purpose-built for regulated healthcare environments requiring 24/7 patient support, medical billing assistance, and insurance coordination.",
     capabilities: [
       "24/7 HIPAA-compliant patient support",
       "Medical billing & claims assistance",
@@ -131,7 +133,7 @@ const companies = [
       "Nurse triage line support",
     ],
     industries: "Hospitals, health systems, medical practices, insurance carriers, pharma",
-    highlight: "100% US-based agents with 30+ years of healthcare outsourcing experience",
+    highlight: "100% US-based agents with 25+ years of healthcare outsourcing experience",
   },
   {
     rank: 8,
@@ -317,6 +319,16 @@ export default function Top15HealthcareBPOContent() {
                 In this comprehensive guide, we rank the <strong>top 15 healthcare BPO companies in the USA for 2026</strong>, evaluating each <strong>medical BPO provider</strong> on HIPAA compliance, patient experience quality, technology maturity, industry specialization, and operational track record. Whether you need <strong>medical billing outsourcing</strong>, <strong>patient support outsourcing</strong>, <strong>healthcare revenue cycle outsourcing</strong>, or <strong>healthcare customer service outsourcing</strong>, this guide will help you find the right partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="healthcare_top_inline_cta"
+                leadOffer="Healthcare BPO quote"
+                heading="Need HIPAA-compliant patient support or back-office coverage?"
+                body="Tell us your patient volume, hours, and workflow. We'll recommend a US-based healthcare BPO setup with quote-ready staffing options."
+                primaryLabel="Get a Healthcare BPO Quote"
+                serviceHref="/industries/healthcare-call-center-services"
+                serviceLabel="See healthcare services"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -339,6 +351,17 @@ export default function Top15HealthcareBPOContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-headset.jpg" alt="Healthcare call center agent" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="healthcare_mid_article_cta"
+                leadOffer="Healthcare BPO quote"
+                heading="Shortlist healthcare vendors with patient support pricing ready."
+                body="Use this ranking to compare providers, then request a quote for HIPAA-aware patient support, scheduling, billing, or overflow."
+                primaryLabel="Request Healthcare Pricing"
+                serviceHref="/industries/healthcare-call-center-services"
+                serviceLabel="Review healthcare services"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Healthcare BPO Companies</h2>
@@ -468,9 +491,9 @@ export default function Top15HealthcareBPOContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA provides HIPAA-compliant, US-based healthcare BPO services. Get a free consultation today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="healthcare_bottom_cta" leadOffer="Healthcare BPO quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Healthcare BPO Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* Why Healthcare BPO — keyword section */}
@@ -535,7 +558,13 @@ export default function Top15HealthcareBPOContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="healthcare_sidebar_form"
+                  leadOffer="Healthcare BPO quote"
+                  title="Get a Healthcare BPO Quote"
+                  description="Tell us your patient support or back-office needs."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

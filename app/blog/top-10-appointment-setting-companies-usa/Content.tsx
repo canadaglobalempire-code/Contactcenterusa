@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only appointment setting services with full multichannel cadence and guaranteed qualified meetings",
     description:
-      "Contact Center USA is a proudly American appointment setting company that has delivered 100% US-based SDR appointment setting and outsourced appointment setters for over 30 years. Every appointment setter is located in the United States, every outbound dial is made from a domestic facility, and every qualified meeting is booked against a written qualification definition agreed with the client. Purpose-built for SaaS appointment setting, enterprise appointment setting, insurance appointment setting, financial services, medical device, and manufacturing brands, Contact Center USA runs the full outbound stack — cold calling appointment setting, LinkedIn appointment setting, email cadences, SMS, and direct mail — all unified in Outreach, SalesLoft, Apollo, Salesforce, and HubSpot. Programs include a written qualified-meeting definition, a replacement guarantee for meetings that no-show or fail to qualify, and real-time pipeline dashboards.",
+      "Contact Center USA is a proudly American appointment setting company that has delivered 100% US-based SDR appointment setting and outsourced appointment setters for 25+ years. Every appointment setter is located in the United States, every outbound dial is made from a domestic facility, and every qualified meeting is booked against a written qualification definition agreed with the client. Purpose-built for SaaS appointment setting, enterprise appointment setting, insurance appointment setting, financial services, medical device, and manufacturing brands, Contact Center USA runs the full outbound stack — cold calling appointment setting, LinkedIn appointment setting, email cadences, SMS, and direct mail — all unified in Outreach, SalesLoft, Apollo, Salesforce, and HubSpot. Programs include a written qualified-meeting definition, a replacement guarantee for meetings that no-show or fail to qualify, and real-time pipeline dashboards.",
     services: [
       "100% American workforce — no offshore appointment setters",
       "Full multichannel B2B appointment setting outsourcing",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only appointment setting agencies service guarantee",
     ],
     industries: "SaaS, enterprise technology, insurance, financial services, medical device, manufacturing, professional services",
-    strengths: "30+ years of US operations, full multichannel cadence execution, guaranteed qualified meetings, deep CRM/SEP integrations, senior US-based SDRs.",
+    strengths: "25+ years of US operations, full multichannel cadence execution, guaranteed qualified meetings, deep CRM/SEP integrations, senior US-based SDRs.",
     weaknesses: "Premium US pricing — offset by meeting quality, show rates, and pipeline conversion lift.",
     pricing: "Per-SDR ($6,800-$9,800/month), per-qualified-meeting ($300-$700), or hybrid retainer + bonus",
     clients: "Mid-market and enterprise SaaS, insurance carriers, financial services firms, medical device manufacturers",
-    highlight: "30+ years of 100% American appointment setting services — never offshored a single dial, with a written qualified-meeting definition and replacement guarantee on every program.",
+    highlight: "25+ years of 100% American appointment setting services — never offshored a single dial, with a written qualified-meeting definition and replacement guarantee on every program.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10AppointmentSettingContent() {
                 In this 2026 guide, we rank the <strong>top 10 American appointment setting agencies</strong>, evaluated on qualified meeting delivery, SDR quality, multichannel cadence execution, CRM integrations, and pipeline impact. Whether you need <strong>saas appointment setting</strong>, <strong>insurance appointment setting</strong>, <strong>enterprise appointment setting</strong>, or SMB-friendly <strong>b2b appointment setting outsourcing</strong>, this list will help you find the right US-based partner for your sales appointment setting services.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="appointment_setting_top_inline_cta"
+                leadOffer="Appointment setting quote"
+                heading="Need qualified meetings from US-based SDRs?"
+                body="Share your ICP, monthly meeting target, and CRM stack. We'll size the SDR team, cadence, and cost range for appointment setting."
+                primaryLabel="Get an Appointment Setting Quote"
+                serviceHref="/solutions/lead-generation-appointment-setting"
+                serviceLabel="See appointment setting"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10AppointmentSettingContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-smile.jpg" alt="American outsourced appointment setter booking a B2B meeting" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="appointment_setting_mid_article_cta"
+                leadOffer="Appointment setting quote"
+                heading="Compare appointment setting firms against a qualified-meeting quote."
+                body="Get a practical cost range for US-based SDRs, multichannel cadences, and appointment targets before you shortlist providers."
+                primaryLabel="Request Appointment Pricing"
+                serviceHref="/solutions/lead-generation-appointment-setting"
+                serviceLabel="Review appointment setting"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Appointment Setting Companies</h2>
@@ -476,7 +499,7 @@ export default function Top10AppointmentSettingContent() {
                 The <strong>American appointment setting industry</strong> is being reshaped by multichannel cadences, AI-powered dialing, and the rise of outcome-based pricing tied to qualified meetings. SaaS, insurance, financial services, medical device, and manufacturing brands win when they partner with US-based <strong>outsourced appointment setters</strong> that combine senior SDR quality with tight Salesforce, HubSpot, Outreach, and SalesLoft integration.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American <strong>appointment setting services</strong>, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based SDR appointment setting</strong>, a written qualified-meeting definition, a replacement guarantee, and full multichannel cadence execution across cold calling appointment setting, LinkedIn appointment setting, and email. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link> for SaaS, enterprise, or insurance appointment setting, Contact Center USA is built for the revenue teams that need qualified pipeline, not just dial activity.
+                Global Empire Corporation tops our 2026 ranking with its full-service American <strong>appointment setting services</strong>, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based SDR appointment setting</strong>, a written qualified-meeting definition, a replacement guarantee, and full multichannel cadence execution across cold calling appointment setting, LinkedIn appointment setting, and email. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link> for SaaS, enterprise, or insurance appointment setting, Contact Center USA is built for the revenue teams that need qualified pipeline, not just dial activity.
               </p>
 
               {/* CTA */}
@@ -485,9 +508,9 @@ export default function Top10AppointmentSettingContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers US-based sales appointment setting services with full multichannel cadence execution, native Salesforce and Outreach integration, and a written qualified-meeting guarantee. Get a free pipeline quote today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="appointment_setting_bottom_cta" leadOffer="Appointment setting quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Appointment Setting Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -511,7 +534,13 @@ export default function Top10AppointmentSettingContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="appointment_setting_sidebar_form"
+                  leadOffer="Appointment setting quote"
+                  title="Get an Appointment Setting Quote"
+                  description="Tell us your ICP, meeting target, and timeline."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

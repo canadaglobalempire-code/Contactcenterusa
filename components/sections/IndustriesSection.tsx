@@ -119,7 +119,7 @@ export function IndustriesSection() {
             <span className="text-red">Every Industry</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[16px] text-gray-700">
-            Over 30 years of experience across multiple industries. Specialized
+            25+ years of experience across multiple industries. Specialized
             training, compliance protocols, and domain knowledge for every sector.
           </p>
         </motion.div>

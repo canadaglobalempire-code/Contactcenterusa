@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Energy Call Center & Utilities BPO in USA | Contact Center USA",
+  title: "Energy Utilities Call Center | Contact Center USA",
   description:
-    "US-based energy call center and utilities BPO services — utility customer service outsourcing, outage management, billing, smart meter support, and storm-mode surge for electric, gas, and water utilities.",
+    "US-based energy utilities call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "energy call center",
     "utilities bpo",

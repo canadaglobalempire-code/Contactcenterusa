@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 BPO Companies in New York (2026 Rankings)",
+  title: "Top 10 BPO Companies in New York (2026)",
   description:
-    "The 10 best BPO companies in New York for 2026 — ranked for Manhattan, Buffalo, Rochester & Albany call center outsourcing, NYS DFS Part 500 + SHIELD Act compliance, and Wall Street financial services CX.",
+    "Read the top 10 bpo companies in new york guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "BPO companies New York",
     "best BPO companies in New York",

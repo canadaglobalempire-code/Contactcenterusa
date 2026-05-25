@@ -132,7 +132,7 @@ export function AIAutomationContent() {
                 AI automation for call centers uses <strong>artificial intelligence, machine learning, and natural language processing</strong> to handle customer interactions automatically — reducing the workload on human agents while improving speed, accuracy, and customer satisfaction.
               </p>
               <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
-                At Contact Center USA, we combine cutting-edge AI technology with over 30 years of contact center experience. Our AI solutions don&apos;t just deploy chatbots — they create <strong>intelligent, self-improving systems</strong> that learn from every interaction, predict customer needs, and seamlessly hand off complex issues to our US-based agents.
+                At Contact Center USA, we combine cutting-edge AI technology with 25+ years of contact center experience. Our AI solutions don&apos;t just deploy chatbots — they create <strong>intelligent, self-improving systems</strong> that learn from every interaction, predict customer needs, and seamlessly hand off complex issues to our US-based agents.
               </p>
               <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
                 The result? Businesses using our <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">AI-powered omnichannel solutions</Link> typically see a <strong>60% reduction in operational costs</strong>, <strong>3x faster resolution times</strong>, and <strong>15-25% improvement in CSAT scores</strong> — all while maintaining the human touch that customers value.

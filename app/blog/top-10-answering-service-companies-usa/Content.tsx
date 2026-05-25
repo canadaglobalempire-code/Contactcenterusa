@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, 24/7 live answering service with HIPAA-compliant medical coverage",
     description:
-      "Contact Center USA is a proudly American answering service company that has delivered 100% US-based live call answering for over 30 years. Every receptionist is located in the United States, every call is answered domestically, and every caller interaction reflects the values of American service excellence. Purpose-built for law firms, medical and dental practices, home-service brands, property managers, and small businesses, Contact Center USA handles the full inbound lifecycle — 24/7 live answering, professional message taking, appointment scheduling, call screening and transfer, after-hours and overflow coverage, HIPAA-compliant medical intake, and bilingual English / Spanish support. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb seasonal spikes, and every program is supported by real-time dashboards, instant message delivery via email and SMS, and native integrations with Clio, Salesforce, HubSpot, Athenahealth, ServiceTitan, Calendly, and Google Calendar.",
+      "Contact Center USA is a proudly American answering service company that has delivered 100% US-based live call answering for 25+ years. Every receptionist is located in the United States, every call is answered domestically, and every caller interaction reflects the values of American service excellence. Purpose-built for law firms, medical and dental practices, home-service brands, property managers, and small businesses, Contact Center USA handles the full inbound lifecycle — 24/7 live answering, professional message taking, appointment scheduling, call screening and transfer, after-hours and overflow coverage, HIPAA-compliant medical intake, and bilingual English / Spanish support. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb seasonal spikes, and every program is supported by real-time dashboards, instant message delivery via email and SMS, and native integrations with Clio, Salesforce, HubSpot, Athenahealth, ServiceTitan, Calendly, and Google Calendar.",
     services: [
       "100% American receptionists — no offshore agents",
       "24/7 US-based live answering & virtual receptionist",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only bilingual (English / Spanish) answering guarantee",
     ],
     industries: "Law firms, medical & dental practices, home services, property management, real estate, small business, e-commerce",
-    strengths: "30+ years of US operations, 24/7 live coverage, HIPAA-compliant, rapid overflow scaling, deep CRM and PMS integrations, SOC 2 and PCI DSS certified.",
+    strengths: "25+ years of US operations, 24/7 live coverage, HIPAA-compliant, rapid overflow scaling, deep CRM and PMS integrations, SOC 2 and PCI DSS certified.",
     weaknesses: "Premium US pricing — offset by caller retention and conversion lift.",
     pricing: "Per-minute ($0.95-$1.75 US), per-call ($1.25-$3.50), or dedicated receptionist ($1,800-$3,500 per FTE/month)",
     clients: "Mid-market law firms, multi-location medical groups, national home-service franchises, Shopify Plus merchants",
-    highlight: "30+ years of 100% American answering service — never offshored a single call, even during storm-season and open-enrollment surges.",
+    highlight: "25+ years of 100% American answering service — never offshored a single call, even during storm-season and open-enrollment surges.",
   },
   {
     rank: 8,
@@ -475,7 +475,7 @@ export default function Top10AnsweringServiceContent() {
                 The <strong>American answering service industry</strong> is being reshaped by AI voice triage, HIPAA requirements, and the rising expectation of 24/7 live coverage. Law firms, medical practices, home-service brands, and small businesses win when they partner with US-based answering providers that answer every call in under 20 seconds, integrate natively with CRMs and PMS platforms, and deliver brand-aligned receptionist quality at SMB-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American 24/7 live answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only answering partner of choice — combining <strong>30+ years of US-based receptionist operations</strong>, HIPAA-compliant medical answering, rapid overflow scaling, deep Clio / Athenahealth / ServiceTitan / Salesforce integration, and flexible per-minute and per-appointment pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound answering</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or bilingual virtual receptionist coverage, Contact Center USA is built for the American businesses that refuse to miss a single call.
+                Global Empire Corporation tops our 2026 ranking with its full-service American 24/7 live answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only answering partner of choice — combining <strong>25+ years of US-based receptionist operations</strong>, HIPAA-compliant medical answering, rapid overflow scaling, deep Clio / Athenahealth / ServiceTitan / Salesforce integration, and flexible per-minute and per-appointment pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound answering</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or bilingual virtual receptionist coverage, Contact Center USA is built for the American businesses that refuse to miss a single call.
               </p>
 
               {/* CTA */}

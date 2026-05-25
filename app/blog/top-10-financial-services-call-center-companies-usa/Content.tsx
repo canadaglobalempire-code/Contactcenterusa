@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, PCI-DSS & SOC 2 compliant financial services customer support",
     description:
-      "Contact Center USA is a proudly American financial services call center that has delivered 100% US-based customer support for over 30 years. Every agent is located in the United States, every call is answered domestically, and every interaction reflects the values of American service excellence applied to the most regulated industry in BPO. The company was founded on the principle that American banks, credit unions, and fintechs deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their services span 24/7 inbound customer care, fraud verification, dispute resolution, loan servicing, collections, and outbound retention — all supported by PCI DSS, SOC 2 Type II, GLBA, FCRA, TCPA, and HIPAA-aligned infrastructure and 100% call recording.",
+      "Contact Center USA is a proudly American financial services call center that has delivered 100% US-based customer support for 25+ years. Every agent is located in the United States, every call is answered domestically, and every interaction reflects the values of American service excellence applied to the most regulated industry in BPO. The company was founded on the principle that American banks, credit unions, and fintechs deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their services span 24/7 inbound customer care, fraud verification, dispute resolution, loan servicing, collections, and outbound retention — all supported by PCI DSS, SOC 2 Type II, GLBA, FCRA, TCPA, and HIPAA-aligned infrastructure and 100% call recording.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based banking & fintech customer care",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "Banks, credit unions, consumer lenders, credit card issuers, fintech, BNPL, wealth management",
-    strengths: "30+ years of regulated operations, 100% US-based, PCI DSS & SOC 2 Type II, 100% call recording, transparent QA.",
+    strengths: "25+ years of regulated operations, 100% US-based, PCI DSS & SOC 2 Type II, 100% call recording, transparent QA.",
     weaknesses: "Premium US pricing — offset by measurable CSAT lift and compliance-risk savings.",
     pricing: "Hourly ($24-$45 US) or per-outcome; custom enterprise packages",
     clients: "Regional banks, credit unions, consumer lenders, fintech startups, wealth advisors",
-    highlight: "30+ years of 100% American financial services call center operations — never offshored a single call.",
+    highlight: "25+ years of 100% American financial services call center operations — never offshored a single call.",
   },
   {
     rank: 8,
@@ -475,7 +475,7 @@ export default function Top10FinancialServicesContent() {
                 The <strong>financial services call center industry in the USA</strong> is consolidating around American specialists that compete on compliance and CX quality. For banks, credit unions, lenders, and fintechs that cannot afford a single compliance misstep, the US-based specialist model is winning — because total cost of ownership (factoring in complaints, enforcement risk, and customer retention) consistently favors domestic delivery.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American financial CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of regulated financial services operations</strong>, 100% US-based agents, PCI DSS and SOC 2 Type II certification, and deep experience across banking, credit unions, lending, fintech, and wealth management. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound customer support</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound retention programs</Link>, or <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">compliance-grade collections</Link>, Contact Center USA is the partner of choice for compliance-first financial institutions.
+                Global Empire Corporation tops our 2026 ranking with its full-service American financial CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of regulated financial services operations</strong>, 100% US-based agents, PCI DSS and SOC 2 Type II certification, and deep experience across banking, credit unions, lending, fintech, and wealth management. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound customer support</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound retention programs</Link>, or <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">compliance-grade collections</Link>, Contact Center USA is the partner of choice for compliance-first financial institutions.
               </p>
 
               {/* CTA */}

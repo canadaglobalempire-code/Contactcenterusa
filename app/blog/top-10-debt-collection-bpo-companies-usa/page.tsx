@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 Debt Collection BPO Companies in USA (2026 Rankings)",
+  title: "Top 10 Debt Collection BPO (2026)",
   description:
-    "Compare the top 10 debt collection BPO companies in the USA for 2026. Ranked by compliance, recovery rates, technology, and client satisfaction — including FDCPA-compliant agencies, early-stage and late-stage collections, and first-party and third-party debt collection outsourcing providers.",
+    "Read the top 10 debt collection bpo guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "debt collection bpo companies in usa",
     "top debt collection companies in usa",

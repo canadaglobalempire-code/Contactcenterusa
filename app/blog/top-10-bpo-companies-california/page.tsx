@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 BPO Companies in California (2026 Rankings)",
+  title: "Top 10 BPO Companies in California (2026)",
   description:
-    "Top 10 BPO companies in California for 2026 — Los Angeles, San Francisco, San Diego call centers ranked on CIPA two-party recording, CCPA, AB-5, Spanish bilingual.",
+    "Read the top 10 bpo companies in california guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "BPO companies California",
     "best BPO companies in California",

@@ -47,7 +47,7 @@ const nearshoreLocations = [
       "Politically stable democracy with strong rule of law",
       "Highest English proficiency in Central America",
       "Well-educated workforce — 98% literacy rate and strong university system",
-      "Established BPO sector with 30+ years of outsourcing experience",
+      "Established BPO sector with 25+ years of outsourcing experience",
       "Premium nearshore destination — higher quality but slightly higher cost",
       "Strong data protection laws aligned with international standards",
     ],
@@ -507,7 +507,7 @@ export default function NearshoreCallCenterContent() {
               <div className="mt-12 rounded-2xl border-2 border-red/20 bg-red/[0.02] p-8">
                 <h3 className="text-2xl font-bold text-navy">Contact Center USA&apos;s Advantage: 100% US-Based Agents</h3>
                 <p className="mt-4 text-gray-700 leading-relaxed">
-                  At <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link>, we provide a compelling alternative to nearshore outsourcing with our <strong>100% US-based call center services</strong>. With over 30 years of experience serving businesses across healthcare, financial services, technology, and professional services, we deliver the quality and compliance advantages of onshore operations with competitive pricing that often surprises companies exploring nearshore options.
+                  At <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link>, we provide a compelling alternative to nearshore outsourcing with our <strong>100% US-based call center services</strong>. With 25+ years of experience serving businesses across healthcare, financial services, technology, and professional services, we deliver the quality and compliance advantages of onshore operations with competitive pricing that often surprises companies exploring nearshore options.
                 </p>
                 <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                   {[

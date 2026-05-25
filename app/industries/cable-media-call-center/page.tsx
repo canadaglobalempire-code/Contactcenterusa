@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Cable Media BPO & Media Call Center Services in USA | Contact Center USA",
+  title: "Cable Media Call Center | Contact Center USA",
   description:
-    "US-based cable media BPO and media call center services — cable TV customer support, billing, tier-2 tech support, retention, and OTT subscriber care for cable, broadband, and media companies.",
+    "US-based cable media call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "cable media bpo",
     "media call center services",

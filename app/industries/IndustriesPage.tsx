@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Heart, ShoppingCart, Landmark, Building2, Monitor, ShieldCheck, Plane, Truck, GraduationCap, Wallet } from "lucide-react";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const industries = [
   {
     icon: Heart,
     name: "Healthcare",
+    href: "/industries/healthcare-call-center-services",
     color: "bg-rose-100 text-rose-600",
     hoverColor: "group-hover:bg-rose-600 group-hover:text-white",
     bullets: [
@@ -21,6 +23,7 @@ const industries = [
   {
     icon: ShoppingCart,
     name: "Ecommerce & Retail",
+    href: "/industries/ecommerce-customer-service-outsourcing",
     color: "bg-emerald-100 text-emerald-600",
     hoverColor: "group-hover:bg-emerald-600 group-hover:text-white",
     bullets: [
@@ -33,6 +36,7 @@ const industries = [
   {
     icon: Landmark,
     name: "Financial Services",
+    href: "/industries/financial-services-call-center",
     color: "bg-blue-100 text-blue-600",
     hoverColor: "group-hover:bg-blue-600 group-hover:text-white",
     bullets: [
@@ -45,6 +49,7 @@ const industries = [
   {
     icon: Building2,
     name: "Real Estate",
+    href: "/industries/real-estate-call-center-services",
     color: "bg-amber-100 text-amber-600",
     hoverColor: "group-hover:bg-amber-600 group-hover:text-white",
     bullets: [
@@ -57,6 +62,7 @@ const industries = [
   {
     icon: Monitor,
     name: "SaaS & Technology",
+    href: "/industries/saas-technology-support",
     color: "bg-purple-100 text-purple-600",
     hoverColor: "group-hover:bg-purple-600 group-hover:text-white",
     bullets: [
@@ -69,6 +75,7 @@ const industries = [
   {
     icon: ShieldCheck,
     name: "Insurance",
+    href: "/industries/insurance-call-center-outsourcing",
     color: "bg-teal-100 text-teal-600",
     hoverColor: "group-hover:bg-teal-600 group-hover:text-white",
     bullets: [
@@ -81,6 +88,7 @@ const industries = [
   {
     icon: Plane,
     name: "Travel & Hospitality",
+    href: "/industries/travel-hospitality-call-center",
     color: "bg-sky-100 text-sky-600",
     hoverColor: "group-hover:bg-sky-600 group-hover:text-white",
     bullets: [
@@ -93,6 +101,7 @@ const industries = [
   {
     icon: Truck,
     name: "Logistics & Shipping",
+    href: "/industries/logistics-shipping-call-center",
     color: "bg-orange-100 text-orange-600",
     hoverColor: "group-hover:bg-orange-600 group-hover:text-white",
     bullets: [
@@ -105,6 +114,7 @@ const industries = [
   {
     icon: GraduationCap,
     name: "Education",
+    href: "/industries/education-call-center-services",
     color: "bg-indigo-100 text-indigo-600",
     hoverColor: "group-hover:bg-indigo-600 group-hover:text-white",
     bullets: [
@@ -117,6 +127,7 @@ const industries = [
   {
     icon: Wallet,
     name: "Banking & Financial Services",
+    href: "/industries/banking-financial-services-call-center",
     color: "bg-green-100 text-green-600",
     hoverColor: "group-hover:bg-green-600 group-hover:text-white",
     bullets: [
@@ -196,7 +207,7 @@ export default function IndustriesPage() {
                   ))}
                 </ul>
                 <Link
-                  href="/contact"
+                  href={industry.href}
                   className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-red transition-colors hover:text-red-dark"
                 >
                   Learn More
@@ -233,13 +244,14 @@ export default function IndustriesPage() {
               No matter your industry, our specialized teams are ready to
               deliver exceptional customer experiences on your behalf.
             </p>
-            <Link
-              href="/contact"
+            <LeadCTALink
+              ctaLocation="industries_index_bottom_cta"
+              leadOffer="Industry call center quote"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark"
             >
               Get a Free Consultation
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </LeadCTALink>
           </motion.div>
         </div>
       </section>

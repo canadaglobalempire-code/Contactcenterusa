@@ -3,9 +3,9 @@ import { ContactCenterSoftwareContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Contact Center Software Solutions USA | Call Center Software Provider | Contact Center USA",
+  title: "Contact Center Software Solutions | Contact Center USA",
   description:
-    "Contact center software solutions and contact center software BPO services. Call center software provider USA — cloud CCaaS, omnichannel, AI automation, WFM, QA, and analytics.",
+    "US-based contact center software solutions with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "contact center software solutions",
     "contact center software bpo",

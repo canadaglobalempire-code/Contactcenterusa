@@ -1,9 +1,9 @@
 import BlogPage from "./BlogPage";
 
 export const metadata = {
-  title: "Blog | Latest Insights & Industry News",
+  title: "Call Center Outsourcing Blog",
   description:
-    "Stay up to date with the latest call center industry insights, outsourcing tips, and customer service best practices from Contact Center USA.",
+    "Read call center outsourcing guides, provider rankings, pricing advice, and buyer checklists for choosing the right support partner.",
   alternates: { canonical: "/blog" },
 };
 

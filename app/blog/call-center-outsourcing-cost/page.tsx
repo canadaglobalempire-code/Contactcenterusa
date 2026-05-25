@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Call Center Outsourcing Cost: Complete 2026 Guide",
+  title: "Call Center Outsourcing Cost Guide",
   description:
-    "Comprehensive breakdown of call center outsourcing costs in 2026. Compare onshore, nearshore, and offshore pricing models, hidden fees, and ROI calculations to make a data-driven outsourcing decision.",
+    "Read the call center outsourcing cost guide guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/call-center-outsourcing-cost" },
 };
 

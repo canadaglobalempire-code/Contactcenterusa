@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Retail Call Center Services | Retail BPO USA | Retail Customer Service Outsourcing | Contact Center USA",
+  title: "Retail Call Center | Contact Center USA",
   description:
-    "US-based retail call center services and retail BPO USA. Retail customer service outsourcing across order support, returns, retention, and peak season — 97% CSAT and 30% higher AOV.",
+    "US-based retail call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "retail call center services",
     "retail bpo usa",

@@ -348,7 +348,7 @@ export default function InsideSalesOutsourcingContent() {
               {/* Contact Center USA */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Contact Center USA&apos;s Sales Outsourcing Capabilities</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> provides comprehensive <strong>inside sales outsourcing</strong> and <strong>sales outsourcing services</strong> designed for organizations that demand US-based sales professionals, transparent reporting, and measurable results. With over 30 years of experience in customer engagement, Contact Center USA offers:
+                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> provides comprehensive <strong>inside sales outsourcing</strong> and <strong>sales outsourcing services</strong> designed for organizations that demand US-based sales professionals, transparent reporting, and measurable results. With 25+ years of experience in customer engagement, Contact Center USA offers:
               </p>
               <ul className="mt-4 space-y-3">
                 {[

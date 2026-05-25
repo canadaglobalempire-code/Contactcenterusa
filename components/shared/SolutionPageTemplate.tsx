@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { CheckCircle } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { generateServiceSchema } from "@/lib/schema";
@@ -59,6 +60,14 @@ export function SolutionPageTemplate({
   ctaSubtitle,
   seoContent,
 }: SolutionPageTemplateProps) {
+  const pathname = usePathname();
+  const section =
+    pathname.startsWith("/industries/")
+      ? { label: "Industries", href: "/industries" }
+      : pathname.startsWith("/services/")
+        ? { label: "Services", href: "/services" }
+        : { label: "Solutions", href: "/solutions" };
+
   return (
     <>
       <script
@@ -67,7 +76,7 @@ export function SolutionPageTemplate({
           __html: JSON.stringify(generateServiceSchema(
             label,
             subtitle,
-            `https://contactcenterusa.com/solutions/${label.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+            `https://contactcenterusa.com${pathname}`
           )),
         }}
       />
@@ -136,7 +145,7 @@ export function SolutionPageTemplate({
 
       <Breadcrumb items={[
         { label: "Home", href: "/" },
-        { label: "Solutions", href: "/solutions" },
+        { label: section.label, href: section.href },
         { label: label, href: "#" },
       ]} />
 

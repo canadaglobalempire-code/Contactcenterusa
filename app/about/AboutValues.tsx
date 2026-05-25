@@ -37,7 +37,7 @@ const values = [
   {
     icon: Award,
     title: "Experience",
-    desc: "Over 30 years serving some of the largest and most complex organizations worldwide.",
+    desc: "25+ years serving some of the largest and most complex organizations worldwide.",
   },
   {
     icon: Users,

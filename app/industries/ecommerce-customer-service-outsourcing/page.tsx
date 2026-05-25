@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Ecommerce Customer Service & Ecommerce BPO USA | Online Retail Support | Contact Center USA",
+  title: "Ecommerce Customer Service | Contact Center USA",
   description:
-    "One of the best ecommerce customer service and ecommerce BPO USA providers. Online retail customer support for DTC brands, marketplaces, Shopify stores, and omnichannel retailers.",
+    "US-based ecommerce customer service support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "ecommerce customer service",
     "ecommerce bpo usa",

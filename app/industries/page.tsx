@@ -1,9 +1,9 @@
 import IndustriesPage from "./IndustriesPage";
 
 export const metadata = {
-  title: "Industries We Serve | Call Center Solutions by Sector",
+  title: "Industries Served | Contact Center USA",
   description:
-    "Contact Center USA serves healthcare, ecommerce, financial services, real estate, SaaS, insurance, travel, logistics, education, and banking with specialized call center solutions.",
+    "Industries Served from Contact Center USA. Learn services, coverage, industries, and quote options for US-based outsourcing.",
   alternates: { canonical: "/industries" },
 };
 

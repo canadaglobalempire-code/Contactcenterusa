@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, 24/7 omnichannel inbound call center with rapid surge scaling",
     description:
-      "Contact Center USA is a proudly American inbound call center company that has delivered 100% US-based customer support for over 30 years. Every inbound call is answered by an agent located in the United States, every live chat is handled domestically, and every interaction reflects the values of American service excellence. Purpose-built for brands that refuse to offshore customer experience, Contact Center USA handles the full inbound customer lifecycle — 24/7 live agent answering, help desk and technical support, billing and account inquiries, order-taking, reservations, claims intake, and Tier-1 through Tier-2 escalation handling. Their infrastructure scales rapidly (2-4x inbound capacity within 30 days) to absorb product launches, recalls, and open enrollment, and every program is supported by real-time CSAT and FCR dashboards, AI copilots, and native integrations with Salesforce, Zendesk, HubSpot, ServiceNow, and Five9.",
+      "Contact Center USA is a proudly American inbound call center company that has delivered 100% US-based customer support for 25+ years. Every inbound call is answered by an agent located in the United States, every live chat is handled domestically, and every interaction reflects the values of American service excellence. Purpose-built for brands that refuse to offshore customer experience, Contact Center USA handles the full inbound customer lifecycle — 24/7 live agent answering, help desk and technical support, billing and account inquiries, order-taking, reservations, claims intake, and Tier-1 through Tier-2 escalation handling. Their infrastructure scales rapidly (2-4x inbound capacity within 30 days) to absorb product launches, recalls, and open enrollment, and every program is supported by real-time CSAT and FCR dashboards, AI copilots, and native integrations with Salesforce, Zendesk, HubSpot, ServiceNow, and Five9.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based omnichannel inbound support",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only inbound service guarantee",
     ],
     industries: "Retail, healthcare, financial services, utilities, SaaS, insurance, telecom, hospitality",
-    strengths: "30+ years of US operations, omnichannel inbound fluency, rapid surge scaling, industry-leading FCR, HIPAA/PCI DSS certified.",
+    strengths: "25+ years of US operations, omnichannel inbound fluency, rapid surge scaling, industry-leading FCR, HIPAA/PCI DSS certified.",
     weaknesses: "Premium US pricing — offset by FCR lift, retention, and brand alignment.",
     pricing: "Hourly ($22-$40 US), per-contact ($1.50-$4), or blended outcome-based",
     clients: "Mid-market retailers, healthcare payers, SaaS companies, utilities, regional banks",
-    highlight: "30+ years of 100% American inbound customer service — never offshored a single inbound contact, even during the biggest launches and recalls.",
+    highlight: "25+ years of 100% American inbound customer service — never offshored a single inbound contact, even during the biggest launches and recalls.",
   },
   {
     rank: 8,
@@ -478,7 +478,7 @@ export default function Top10InboundCallCenterContent() {
                 The <strong>American inbound call center industry</strong> is being reshaped by AI copilots, conversational IVR, and rising customer expectations for 24/7 US-based live agent coverage. Brands win when they partner with US-based outsourcers that deliver industry-leading FCR, omnichannel inbound fluency, native CRM and help desk integrations, and brand-aligned inbound CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American inbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based inbound operations</strong>, true 24/7 live agent coverage, deep Salesforce / Zendesk / Five9 integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel inbound solutions</Link>, Contact Center USA is built for brands that refuse to compromise on inbound CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American inbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based inbound operations</strong>, true 24/7 live agent coverage, deep Salesforce / Zendesk / Five9 integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel inbound solutions</Link>, Contact Center USA is built for brands that refuse to compromise on inbound CX.
               </p>
 
               {/* CTA */}

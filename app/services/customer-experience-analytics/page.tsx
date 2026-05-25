@@ -3,9 +3,9 @@ import { CXAnalyticsContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "CX Analytics Services USA | Customer Experience Analytics Outsourcing | Contact Center USA",
+  title: "Customer Experience Analytics | Contact Center USA",
   description:
-    "CX analytics services and customer experience analytics outsourcing. Contact center analytics BPO USA — journey analytics, sentiment, speech/text analytics, QA, and NPS/CSAT reporting.",
+    "US-based customer experience analytics with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "cx analytics services",
     "customer experience analytics outsourcing",

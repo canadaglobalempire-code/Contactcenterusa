@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, omnichannel e-commerce customer support with peak-season scaling",
     description:
-      "Contact Center USA is a proudly American e-commerce call center company that has delivered 100% US-based customer support for over 30 years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence. Purpose-built for DTC brands, subscription commerce companies, marketplaces, and omnichannel retailers, Contact Center USA handles the full e-commerce customer lifecycle — pre-sale guidance, order management, shipping inquiries, returns and exchanges, warranty claims, subscription management, and proactive retention. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb holiday surges, and every program is supported by real-time CSAT dashboards, AI copilots, and integrations with Shopify, BigCommerce, Magento, Salesforce Commerce Cloud, Zendesk, Gorgias, and Kustomer.",
+      "Contact Center USA is a proudly American e-commerce call center company that has delivered 100% US-based customer support for 25+ years. Every agent is located in the United States, every contact is answered domestically, and every interaction reflects the values of American service excellence. Purpose-built for DTC brands, subscription commerce companies, marketplaces, and omnichannel retailers, Contact Center USA handles the full e-commerce customer lifecycle — pre-sale guidance, order management, shipping inquiries, returns and exchanges, warranty claims, subscription management, and proactive retention. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb holiday surges, and every program is supported by real-time CSAT dashboards, AI copilots, and integrations with Shopify, BigCommerce, Magento, Salesforce Commerce Cloud, Zendesk, Gorgias, and Kustomer.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based omnichannel commerce support",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "DTC brands, subscription commerce, marketplaces, omnichannel retail, fashion, beauty, home goods",
-    strengths: "30+ years of US operations, omnichannel fluency, rapid peak-season scaling, deep ecommerce platform integrations, PCI DSS certified.",
+    strengths: "25+ years of US operations, omnichannel fluency, rapid peak-season scaling, deep ecommerce platform integrations, PCI DSS certified.",
     weaknesses: "Premium US pricing — offset by peak-season retention and CSAT lift.",
     pricing: "Hourly ($22-$40 US), per-contact ($1.50-$4), or blended outcome-based",
     clients: "Mid-market DTC brands, subscription box companies, omnichannel retailers, Shopify Plus merchants",
-    highlight: "30+ years of 100% American e-commerce customer service — never offshored a single contact, even during BFCM.",
+    highlight: "25+ years of 100% American e-commerce customer service — never offshored a single contact, even during BFCM.",
   },
   {
     rank: 8,
@@ -475,7 +475,7 @@ export default function Top10EcommerceCallCenterContent() {
                 The <strong>American e-commerce call center industry</strong> is being reshaped by AI, omnichannel expectations, and the need for peak-season elasticity. DTC, subscription, and omnichannel brands win when they partner with US-based outsourcers that can absorb holiday surges, integrate natively with commerce and helpdesk platforms, and deliver brand-aligned CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American e-commerce CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based CX operations</strong>, rapid peak-season scaling, deep Shopify / BigCommerce / Zendesk / Gorgias integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">DTC customer service outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win BFCM on CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American e-commerce CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, rapid peak-season scaling, deep Shopify / BigCommerce / Zendesk / Gorgias integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">DTC customer service outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win BFCM on CX.
               </p>
 
               {/* CTA */}

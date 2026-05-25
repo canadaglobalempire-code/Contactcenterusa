@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, TCPA-compliant outbound call center with advanced dialer technology",
     description:
-      "Contact Center USA is a proudly American outbound call center company that has delivered 100% US-based outbound campaigns for over 30 years. Every outbound call is placed by an agent located in the United States, every dialer is operated domestically, and every campaign is fully TCPA-compliant with real-time DNC scrubbing and consent validation. Purpose-built for brands that refuse to offshore outbound sales, Contact Center USA handles the full outbound campaign lifecycle — cold calling, appointment setting, lead qualification, sales development, customer win-back, retention, survey research, and political/non-profit outreach. Their infrastructure scales rapidly (2-4x outbound capacity within 30 days) to absorb launches and campaigns, and every program is supported by advanced predictive and power dialers, AI coaching, real-time conversion dashboards, and native integrations with Salesforce, HubSpot, Five9, and Genesys.",
+      "Contact Center USA is a proudly American outbound call center company that has delivered 100% US-based outbound campaigns for 25+ years. Every outbound call is placed by an agent located in the United States, every dialer is operated domestically, and every campaign is fully TCPA-compliant with real-time DNC scrubbing and consent validation. Purpose-built for brands that refuse to offshore outbound sales, Contact Center USA handles the full outbound campaign lifecycle — cold calling, appointment setting, lead qualification, sales development, customer win-back, retention, survey research, and political/non-profit outreach. Their infrastructure scales rapidly (2-4x outbound capacity within 30 days) to absorb launches and campaigns, and every program is supported by advanced predictive and power dialers, AI coaching, real-time conversion dashboards, and native integrations with Salesforce, HubSpot, Five9, and Genesys.",
     services: [
       "100% American outbound workforce — no offshore agents",
       "TCPA-compliant outbound with real-time DNC scrubbing",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only outbound service guarantee",
     ],
     industries: "B2B SaaS, insurance, financial services, home services, solar, healthcare, non-profit",
-    strengths: "30+ years of US operations, mature TCPA compliance, advanced dialer tech, industry-leading conversion rates, SOC 2 / HIPAA certified.",
+    strengths: "25+ years of US operations, mature TCPA compliance, advanced dialer tech, industry-leading conversion rates, SOC 2 / HIPAA certified.",
     weaknesses: "Premium US pricing — offset by conversion lift, compliance safety, and brand alignment.",
     pricing: "Hourly ($22-$40 US), per-appointment, per-qualified-lead, or blended outcome-based",
     clients: "Mid-market B2B SaaS, insurance carriers, home services retailers, solar installers, healthcare payers",
-    highlight: "30+ years of 100% American outbound — never offshored a single outbound campaign, with zero TCPA violations in program history.",
+    highlight: "25+ years of 100% American outbound — never offshored a single outbound campaign, with zero TCPA violations in program history.",
   },
   {
     rank: 8,
@@ -478,7 +478,7 @@ export default function Top10OutboundCallCenterContent() {
                 The <strong>American outbound call center industry</strong> is being reshaped by AI intent scoring, tightening TCPA enforcement, and the shift to outcome-based pricing. B2B and B2C brands win when they partner with US-based outsourcers that combine mature TCPA compliance, advanced predictive dialers, native CRM and sales engagement integrations, and brand-aligned outbound execution at outcome-based prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American outbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based outbound operations</strong>, zero TCPA violations in program history, advanced dialer technology, and flexible per-appointment and per-qualified-lead pricing. Whether you need <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, <Link href="/services/appointment-setting-services" className="text-red font-semibold hover:underline">appointment setting services</Link>, or <Link href="/services/lead-qualification-services" className="text-red font-semibold hover:underline">lead qualification services</Link>, Contact Center USA is built for brands that refuse to compromise on outbound execution or compliance.
+                Global Empire Corporation tops our 2026 ranking with its full-service American outbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based outbound operations</strong>, zero TCPA violations in program history, advanced dialer technology, and flexible per-appointment and per-qualified-lead pricing. Whether you need <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, <Link href="/services/appointment-setting-services" className="text-red font-semibold hover:underline">appointment setting services</Link>, or <Link href="/services/lead-qualification-services" className="text-red font-semibold hover:underline">lead qualification services</Link>, Contact Center USA is built for brands that refuse to compromise on outbound execution or compliance.
               </p>
 
               {/* CTA */}

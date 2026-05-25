@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 15 BPO Companies in the USA (2026 Rankings)",
+  title: "Top 10 BPO (2026)",
   description:
-    "Discover the top 15 BPO companies in the USA for 2026. Compare the best BPO outsourcing companies in USA including call center services, customer support, back office, lead generation, and business process outsourcing providers ranked by performance and client satisfaction.",
+    "Read the top 10 bpo guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "bpo companies in usa",
     "top bpo companies in usa",

@@ -2,8 +2,30 @@
 
 import { useState } from "react";
 import { ArrowRight, CheckCircle, Lock } from "lucide-react";
+import {
+  appendLeadAttribution,
+  SPLITFORMS_ACCESS_KEY,
+  SPLITFORMS_ENDPOINT,
+  trackLeadEvent,
+} from "@/lib/lead-tracking";
 
-export function HeroContactForm() {
+type HeroContactFormProps = {
+  ctaLocation?: string;
+  description?: string;
+  leadOffer?: string;
+  subject?: string;
+  submitLabel?: string;
+  title?: string;
+};
+
+export function HeroContactForm({
+  ctaLocation = "sidebar_quote_form",
+  description = "We'll respond within 1 working day.",
+  leadOffer = "General call center quote",
+  subject = "Service Page Inquiry — ContactCenterUSA.com",
+  submitLabel = "Get My Free Quote",
+  title = "Get a Free Quote",
+}: HeroContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -13,15 +35,22 @@ export function HeroContactForm() {
     setSubmitting(true);
     setError(null);
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "abaffe957645499b9c3bf360f0bc7661");
+    formData.set("access_key", SPLITFORMS_ACCESS_KEY);
+    appendLeadAttribution(formData, { ctaLocation, leadOffer });
     try {
-      const res = await fetch("https://splitforms.com/api/submit", {
+      const res = await fetch(SPLITFORMS_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,
       });
       const data = await res.json();
       if (res.ok && data.success) {
+        trackLeadEvent("lead_form_submit", {
+          cta_location: formData.get("cta_location")?.toString(),
+          form_name: "hero_contact_form",
+          lead_offer: formData.get("lead_offer")?.toString(),
+          source_page: formData.get("source_page")?.toString(),
+        });
         setSubmitted(true);
       } else {
         setError(data.message || "Something went wrong. Please try again.");
@@ -49,15 +78,17 @@ export function HeroContactForm() {
       onSubmit={handleSubmit}
       className="rounded-2xl bg-white p-6 shadow-xl lg:p-8"
     >
-      <h3 className="text-xl font-bold text-navy">Get a Free Quote</h3>
-      <p className="mt-1 text-sm text-gray-600">
-        We&apos;ll respond within 1 working day.
-      </p>
+      <h3 className="text-xl font-bold text-navy">{title}</h3>
+      <p className="mt-1 text-sm text-gray-600">{description}</p>
       <input
         type="hidden"
         name="subject"
-        value="Service Page Inquiry — ContactCenterUSA.com"
+        value={subject}
       />
+      <input type="hidden" name="source_page" />
+      <input type="hidden" name="cta_location" />
+      <input type="hidden" name="lead_offer" />
+      <input type="hidden" name="submitted_at" />
       <div className="mt-6 space-y-4">
         <input
           name="name"
@@ -104,7 +135,7 @@ export function HeroContactForm() {
         aria-label="Submit contact form"
         className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-red py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-red-dark disabled:opacity-50"
       >
-        {submitting ? "Sending..." : "Get My Free Quote"}
+        {submitting ? "Sending..." : submitLabel}
         {!submitting && <ArrowRight className="h-4 w-4" />}
       </button>
       {error && (

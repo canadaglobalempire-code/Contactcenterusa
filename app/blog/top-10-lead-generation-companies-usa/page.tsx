@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 Lead Generation Companies in USA (2026)",
+  title: "Top 10 Lead Generation (2026)",
   description:
-    "Compare the top 10 lead generation companies in the USA for 2026. Ranked by B2B pipeline performance, SQL/MQL quality, ABM execution, appointment setting, and sales outcomes from US-based lead gen agencies.",
+    "Read the top 10 lead generation guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "lead generation companies usa",
     "top lead generation agencies",

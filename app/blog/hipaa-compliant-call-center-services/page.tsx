@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "HIPAA-Compliant Call Center Services: Complete 2026 Guide",
+  title: "HIPAA-Compliant Call Center Services",
   description:
-    "Everything healthcare leaders need to know about HIPAA-compliant call centers — BAA requirements, safeguards, vendor checklist, cost, and 2026 compliance trends.",
+    "Read the hipaa-compliant call center services guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/hipaa-compliant-call-center-services" },
 };
 

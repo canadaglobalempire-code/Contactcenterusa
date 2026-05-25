@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/seo-config";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const services = [
   { label: "B2B Sales", href: "/services/b2b-sales-outsourcing" },
@@ -66,8 +67,25 @@ const company = [
   { label: "Industries", href: "/about/industries" },
   { label: "Differentiators", href: "/why-us" },
   { label: "Blog", href: "/blog" },
+  { label: "Answers", href: "/answers" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact Us", href: "/contact" },
+];
+
+const buyerGuides = [
+  { label: "Call Center Outsourcing Answers", href: "/answers" },
+  { label: "Multilingual Call Center Companies", href: "/blog/top-10-multilingual-call-center-companies-usa" },
+  { label: "Healthcare BPO Companies", href: "/blog/top-15-healthcare-bpo-companies-usa" },
+  { label: "Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
+  { label: "Insurance BPO Companies", href: "/blog/top-15-insurance-bpo-companies-usa" },
+  { label: "Technical Support Outsourcing", href: "/blog/top-10-technical-support-outsourcing-companies-usa" },
+  { label: "Customer Service Outsourcing", href: "/blog/top-10-customer-service-outsourcing-companies-usa" },
+  { label: "Lead Generation Companies", href: "/blog/top-10-lead-generation-companies-usa" },
+  { label: "Virtual Receptionist Services", href: "/blog/top-10-virtual-receptionist-companies-usa" },
+  { label: "Teleperformance Alternatives", href: "/blog/teleperformance-alternatives" },
+  { label: "Telemarketing Companies", href: "/blog/top-10-telemarketing-companies-usa" },
+  { label: "Call Center Cost Per Hour", href: "/blog/call-center-outsourcing-cost-per-hour-2026" },
+  { label: "In-House vs Outsourced Cost", href: "/blog/in-house-vs-outsourced-call-center" },
 ];
 
 
@@ -88,12 +106,13 @@ export default function Footer() {
             <h3 className="text-navy text-2xl font-bold text-center sm:text-left">
               Ready to transform your customer experience?
             </h3>
-            <Link
-              href="/contact"
+            <LeadCTALink
+              ctaLocation="footer_cta"
+              leadOffer="Footer call center quote"
               className="bg-gradient-to-r from-red to-red-dark text-white px-8 py-3.5 rounded-full font-semibold hover:opacity-90 transition-opacity shrink-0"
             >
               Get Started
-            </Link>
+            </LeadCTALink>
           </div>
         </div>
 
@@ -190,6 +209,24 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* Buyer Guides */}
+        <div className="mt-12 border-t border-gray-100 pt-8">
+          <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-4">
+            Buyer Guides
+          </h3>
+          <div className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-4">
+            {buyerGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="text-sm text-gray-600 transition-colors hover:text-navy"
+              >
+                {guide.label}
+              </Link>
+            ))}
           </div>
         </div>
 

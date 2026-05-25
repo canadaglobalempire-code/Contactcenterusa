@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Automotive Call Center & Auto Industry BPO in USA | Contact Center USA",
+  title: "Automotive Call Center | Contact Center USA",
   description:
-    "US-based automotive call center and auto industry BPO services — dealer BDC, OEM customer care, recall campaigns, warranty claims, and 24/7 automotive customer support outsourcing for dealerships and manufacturers.",
+    "US-based automotive call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "automotive call center",
     "auto industry bpo",

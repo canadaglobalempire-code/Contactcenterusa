@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Work From Home Call Center USA | WFH BPO USA | Remote Agent BPO | Contact Center USA",
+  title: "Work From Home Solutions | Contact Center USA",
   description:
-    "US-based work from home call center and remote agent BPO. WFH BPO USA delivering secure VDI, PCI-DSS/HIPAA-compliant remote infrastructure, and 99.5% uptime for distributed agents.",
+    "US-based work from home solutions with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "work from home call center",
     "remote agent bpo",

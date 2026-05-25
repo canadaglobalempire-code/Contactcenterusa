@@ -14,6 +14,7 @@ import {
   MessagesSquare,
   CheckCircle2,
 } from "lucide-react";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const services = [
   {
@@ -164,13 +165,14 @@ export default function ServicesContent() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href="/contact"
+              <LeadCTALink
+                ctaLocation="services_index_intro_cta"
+                leadOffer="Service consultation quote"
                 className="mt-8 inline-flex items-center gap-2 rounded-lg bg-red px-7 py-3.5 text-[15px] font-semibold text-white shadow-lg shadow-red/25 transition-all hover:bg-red-dark hover:shadow-red/35"
               >
                 Get a Free Consultation
                 <ArrowRight className="h-4 w-4" />
-              </Link>
+              </LeadCTALink>
             </motion.div>
           </div>
         </div>
@@ -296,13 +298,14 @@ export default function ServicesContent() {
               Let our team of US-based experts build the perfect solution for
               your business. Get a free consultation today.
             </p>
-            <Link
-              href="/contact"
+            <LeadCTALink
+              ctaLocation="services_index_bottom_cta"
+              leadOffer="Service consultation quote"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark"
             >
               Get in Touch
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </LeadCTALink>
           </motion.div>
         </div>
       </section>

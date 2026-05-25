@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Austin | Austin BPO",
+  title: "Call Center Services in Austin",
   description:
-    "Call center services Austin — Contact Center USA delivers Austin BPO and Austin TX customer support for Silicon Hills SaaS, tech, and government. 100% US-based. Free quote.",
+    "US-based call center services for Austin businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
   keywords: [
     "call center services austin",
     "austin bpo",

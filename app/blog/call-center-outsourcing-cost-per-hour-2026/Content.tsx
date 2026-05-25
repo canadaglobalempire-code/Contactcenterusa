@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 export default function Content() {
   return (
@@ -63,6 +65,16 @@ export default function Content() {
                   These rates come from active pricing proposals, RFP responses, and quote comparisons across US, Latin American, Asian, and European providers as of Q1 2026. We&apos;ll break down exactly what&apos;s included at each price band, what&apos;s usually extra, and how to benchmark any quote you receive.
                 </p>
 
+                <InlineLeadCTA
+                  ctaLocation="cost_per_hour_top_inline_cta"
+                  leadOffer="Call center pricing quote"
+                  heading="Want an exact quote instead of a benchmark range?"
+                  body="Share your call volume, service type, hours, and agent location preference. We'll return a line-item pricing view for your use case."
+                  primaryLabel="Get My Pricing Quote"
+                  serviceHref="/solutions/inbound-call-center-services"
+                  serviceLabel="See inbound services"
+                />
+
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">The Short Answer: 2026 Call Center Hourly Rates by Region</h2>
                 <ul className="space-y-3 my-6">
                   <li><strong>US onshore (tier-1 metros):</strong> $28–$42 per hour</li>
@@ -97,6 +109,17 @@ export default function Content() {
                 <div className="my-10 overflow-hidden rounded-2xl">
                   <Image src="/images/agents-working.jpg" alt="US-based call center operation" width={800} height={450} className="w-full object-cover" />
                 </div>
+
+                <InlineLeadCTA
+                  eyebrow="Quote checkpoint"
+                  ctaLocation="cost_per_hour_mid_article_cta"
+                  leadOffer="Call center pricing quote"
+                  heading="Benchmark your quote against current US, nearshore, and offshore rates."
+                  body="Send your current proposal or expected volume. We'll help normalize hourly, per-minute, and FTE pricing into one comparison."
+                  primaryLabel="Request Pricing Benchmark"
+                  serviceHref="/solutions/inbound-call-center-services"
+                  serviceLabel="Review inbound services"
+                />
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Nearshore Call Center Rates in 2026</h2>
                 <p>
@@ -218,12 +241,13 @@ export default function Content() {
                   <p className="mt-4 text-white/60 max-w-2xl mx-auto">
                     Skip the generic ranges. Share your call volume and service needs — we&apos;ll send you a line-item proposal with exact hourly, per-minute, and FTE pricing for your use case.
                   </p>
-                  <Link
-                    href="/contact"
+                  <LeadCTALink
+                    ctaLocation="cost_per_hour_bottom_cta"
+                    leadOffer="Call center pricing quote"
                     className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-6 py-3 text-sm font-semibold text-white hover:bg-red-dark transition-colors"
                   >
                     Get My Custom Quote <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </LeadCTALink>
                 </div>
               </article>
             </div>
@@ -232,7 +256,13 @@ export default function Content() {
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-8">
                 <div className="rounded-2xl bg-navy p-6">
-                  <HeroContactForm />
+                  <HeroContactForm
+                    ctaLocation="cost_per_hour_sidebar_form"
+                    leadOffer="Call center pricing quote"
+                    title="Get a Pricing Quote"
+                    description="Tell us your volume, channels, and coverage needs."
+                    submitLabel="Request Pricing"
+                  />
                 </div>
                 <div className="rounded-2xl border border-gray-200 p-6">
                   <h3 className="text-lg font-bold text-navy mb-4">Related Articles</h3>

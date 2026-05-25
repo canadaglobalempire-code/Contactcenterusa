@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
@@ -521,6 +522,54 @@ const blogPosts = [
   },
 ];
 
+const featuredBuyerGuides = [
+  {
+    title: "Call Center Outsourcing Answers",
+    href: "/answers",
+    category: "Answer Hub",
+  },
+  {
+    title: "Multilingual Call Center Quote Guide",
+    href: "/blog/top-10-multilingual-call-center-companies-usa",
+    category: "Multilingual CX",
+  },
+  {
+    title: "Healthcare BPO Quote Guide",
+    href: "/blog/top-15-healthcare-bpo-companies-usa",
+    category: "Healthcare",
+  },
+  {
+    title: "Appointment Setting Quote Guide",
+    href: "/blog/top-10-appointment-setting-companies-usa",
+    category: "Sales",
+  },
+  {
+    title: "Insurance BPO Quote Guide",
+    href: "/blog/top-15-insurance-bpo-companies-usa",
+    category: "Insurance",
+  },
+  {
+    title: "Technical Support Outsourcing Quotes",
+    href: "/blog/top-10-technical-support-outsourcing-companies-usa",
+    category: "Tech Support",
+  },
+  {
+    title: "Customer Service Outsourcing Quotes",
+    href: "/blog/top-10-customer-service-outsourcing-companies-usa",
+    category: "Customer Service",
+  },
+  {
+    title: "Call Center Cost Per Hour",
+    href: "/blog/call-center-outsourcing-cost-per-hour-2026",
+    category: "Pricing",
+  },
+  {
+    title: "In-House vs Outsourced Cost",
+    href: "/blog/in-house-vs-outsourced-call-center",
+    category: "Cost Comparison",
+  },
+];
+
 export default function BlogPage() {
   return (
     <>
@@ -552,6 +601,46 @@ export default function BlogPage() {
               trends, and strategies to elevate your business.
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* High-intent buyer guides */}
+      <section className="bg-gray-50 py-14">
+        <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-red">
+                Buyer Guides
+              </span>
+              <h2 className="mt-2 text-2xl font-bold text-navy">
+                Compare Providers and Request Quotes
+              </h2>
+            </div>
+            <LeadCTALink
+              ctaLocation="blog_buyer_guides_help_cta"
+              leadOffer="Blog buyer guide quote"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-red transition-colors hover:text-red-dark"
+            >
+              Need help choosing?
+              <ArrowRight className="h-4 w-4" />
+            </LeadCTALink>
+          </div>
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredBuyerGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="group rounded-lg border border-gray-200 bg-white p-5 transition-all hover:border-red/30 hover:shadow-md"
+              >
+                <span className="text-xs font-semibold uppercase tracking-wide text-red">
+                  {guide.category}
+                </span>
+                <h3 className="mt-2 text-base font-bold leading-snug text-navy transition-colors group-hover:text-red">
+                  {guide.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

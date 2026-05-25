@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { FAQPageContent } from "./FAQPageContent";
 
 export const metadata: Metadata = {
-  title: "FAQ | Call Center Outsourcing Questions Answered",
+  title: "Call Center Outsourcing FAQ",
   description:
-    "Get answers to common questions about Contact Center USA's call center outsourcing services, pricing, setup process, compliance, and more.",
+    "Answers to common questions about call center outsourcing, pricing, setup, compliance, US-based agents, multilingual support, and quotes.",
   alternates: { canonical: "/faq" },
 };
 

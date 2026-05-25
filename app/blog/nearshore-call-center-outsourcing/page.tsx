@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Nearshore Call Center Outsourcing: Complete Guide for US Businesses",
+  title: "Nearshore Call Center Outsourcing Guide",
   description:
-    "Complete guide to nearshore call center outsourcing for US businesses. Compare nearshore vs offshore outsourcing, top nearshore locations (Mexico, Colombia, Costa Rica, El Salvador), pricing, benefits, and why US-based onshore call centers may be the best choice.",
+    "Read the nearshore call center outsourcing guide guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "nearshore call center",
     "nearshore contact center",

@@ -3,6 +3,7 @@ import { Hero2 } from "@/components/sections/Hero2";
 import { AwardsCarousel } from "@/components/sections/AwardsCarousel";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { BuyerAnswerSection } from "@/components/sections/BuyerAnswerSection";
 import { TechSection } from "@/components/sections/TechSection";
 import { IndustriesSection } from "@/components/sections/IndustriesSection";
 import { SurgeSection } from "@/components/sections/SurgeSection";
@@ -14,8 +15,8 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Contact Center USA | US-Based Call Center Outsourcing Services",
-  description: "Keep America Great by employing Americans. Contact Center USA provides 24/7 US-based call center outsourcing — inbound, outbound, AI automation, and omnichannel solutions. 500+ agents, 30+ years experience, 98% CSAT. Get a free quote today.",
+  title: "US-Based Call Center Outsourcing | Contact Center USA",
+  description: "US-based call center outsourcing for inbound, outbound, customer service, technical support, and lead generation. Request a fast quote today.",
   alternates: { canonical: "/" },
 };
 
@@ -26,6 +27,7 @@ export default function Home() {
       <AwardsCarousel />
       <AboutSection />
       <ServicesSection />
+      <BuyerAnswerSection />
       <TechSection />
       <IndustriesSection />
       <SurgeSection />

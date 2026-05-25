@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic 100% US-based, Texas-delivery omnichannel BPO with bilingual coverage",
     description:
-      "Contact Center USA is the proudly American BPO partner for Texas businesses, with more than 30 years of US-based call center operations and dedicated Texas delivery resources across DFW, Houston, Austin, and San Antonio. Every agent is located in the United States — there is no offshore handoff for Texas clients — and a native Spanish-bilingual workforce serves the state's 11.4M Hispanic residents and cross-border consumer flows. Texas vertical pods cover energy and oil & gas (Houston-aligned), healthcare and HIPAA-regulated workflows (Memorial Hermann, HCA Texas, Texas Health Resources patterns), SaaS and Silicon Hills software (Dell, Oracle Austin alignment), real estate and Texas wholesale investor lead gen, and insurance with full Texas Department of Insurance familiarity. Compliance posture covers federal TCPA, the Texas Telephone Solicitation Act (Business & Commerce Code Chapter 305), the statewide Texas Do-Not-Call registry, the Texas Identity Theft Protection Act 60-day breach notification rule, NMLS for mortgage workflows, HIPAA, and PCI DSS. Programs scale 2-4x for hurricane season, healthcare open enrollment, retail BFCM, and Texas legislative session deadlines.",
+      "Contact Center USA is the proudly American BPO partner for Texas businesses, with more than 25+ years of US-based call center operations and dedicated Texas delivery resources across DFW, Houston, Austin, and San Antonio. Every agent is located in the United States — there is no offshore handoff for Texas clients — and a native Spanish-bilingual workforce serves the state's 11.4M Hispanic residents and cross-border consumer flows. Texas vertical pods cover energy and oil & gas (Houston-aligned), healthcare and HIPAA-regulated workflows (Memorial Hermann, HCA Texas, Texas Health Resources patterns), SaaS and Silicon Hills software (Dell, Oracle Austin alignment), real estate and Texas wholesale investor lead gen, and insurance with full Texas Department of Insurance familiarity. Compliance posture covers federal TCPA, the Texas Telephone Solicitation Act (Business & Commerce Code Chapter 305), the statewide Texas Do-Not-Call registry, the Texas Identity Theft Protection Act 60-day breach notification rule, NMLS for mortgage workflows, HIPAA, and PCI DSS. Programs scale 2-4x for hurricane season, healthcare open enrollment, retail BFCM, and Texas legislative session deadlines.",
     services: [
       "100% US-based agents — Texas delivery from DFW, Houston, Austin, San Antonio",
       "Native English + Spanish bilingual queues",
@@ -169,11 +169,11 @@ const companies = [
       "HIPAA + TDI + PCI DSS certified workflows",
     ],
     industries: "Energy, oil & gas, healthcare, SaaS, real estate, insurance, fintech, telecom, retail, utilities",
-    strengths: "30+ years of US operations, Texas-only delivery option, full bilingual coverage, complete Texas regulatory stack (TCPA + TTSA + ITPA + TDI + NMLS), hurricane-season elasticity.",
+    strengths: "25+ years of US operations, Texas-only delivery option, full bilingual coverage, complete Texas regulatory stack (TCPA + TTSA + ITPA + TDI + NMLS), hurricane-season elasticity.",
     weaknesses: "Premium US pricing — offset by no-state-income-tax Texas labor economics and zero offshore handoff risk.",
     pricing: "Hourly ($16-$24 TX), per-contact ($1.50-$3.50), or blended outcome-based",
     clients: "Texas-headquartered Fortune 500s, Houston energy majors, Austin SaaS scale-ups, DFW financial services, San Antonio insurance carriers",
-    highlight: "30+ years of 100% American CX, with a Texas-only delivery option, native Spanish-bilingual coverage, and the full Texas regulatory stack — TCPA + TTSA + ITPA + TDI + NMLS.",
+    highlight: "25+ years of 100% American CX, with a Texas-only delivery option, native Spanish-bilingual coverage, and the full Texas regulatory stack — TCPA + TTSA + ITPA + TDI + NMLS.",
   },
   {
     rank: 8,
@@ -569,7 +569,7 @@ export default function Top10BPOTexasContent() {
                 The <strong>Texas BPO industry</strong> in 2026 is the most cost-competitive large-scale onshore call center market in the United States. With 23M residents across DFW, Houston, Austin, San Antonio, and Fort Worth, an 11.4M-strong Hispanic population fueling unmatched Spanish-bilingual capacity, no state income tax driving 20-30% wage savings versus CA/NY, and a $2.4T economy generating dense in-state demand, Texas is where serious onshore BPO programs scale.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 Texas ranking on the strength of its DFW + Houston + Austin delivery footprint and full bilingual coverage, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic 100% US-based partner of choice for Texas businesses — combining 30+ years of US-based CX, multi-metro Texas delivery, native Spanish-bilingual queues, and the complete Texas regulatory stack: federal TCPA, the Texas Telephone Solicitation Act (Chapter 305), the Texas Do-Not-Call registry, the Texas Identity Theft Protection Act, NMLS for mortgage workflows, and TDI for insurance. Whether you need <Link href="/call-center-services-dallas" className="text-red font-semibold hover:underline">Dallas call center services</Link>, <Link href="/call-center-services-houston" className="text-red font-semibold hover:underline">Houston call center services</Link>, or <Link href="/call-center-services-austin" className="text-red font-semibold hover:underline">Austin call center services</Link>, Contact Center USA is built for Texas.
+                Global Empire Corporation tops our 2026 Texas ranking on the strength of its DFW + Houston + Austin delivery footprint and full bilingual coverage, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic 100% US-based partner of choice for Texas businesses — combining 25+ years of US-based CX, multi-metro Texas delivery, native Spanish-bilingual queues, and the complete Texas regulatory stack: federal TCPA, the Texas Telephone Solicitation Act (Chapter 305), the Texas Do-Not-Call registry, the Texas Identity Theft Protection Act, NMLS for mortgage workflows, and TDI for insurance. Whether you need <Link href="/call-center-services-dallas" className="text-red font-semibold hover:underline">Dallas call center services</Link>, <Link href="/call-center-services-houston" className="text-red font-semibold hover:underline">Houston call center services</Link>, or <Link href="/call-center-services-austin" className="text-red font-semibold hover:underline">Austin call center services</Link>, Contact Center USA is built for Texas.
               </p>
 
               {/* CTA */}

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import SolutionsContent from "./SolutionsContent";
 
 export const metadata: Metadata = {
-  title: "Solutions | Contact Center USA",
+  title: "Call Center Solutions | Contact Center USA",
   description:
-    "Explore Contact Center USA's full range of US-based call center solutions — from customer service and technical support to lead generation, back office, and multilingual services.",
+    "Call Center Solutions from Contact Center USA. Learn services, coverage, industries, and quote options for US-based outsourcing.",
   alternates: { canonical: "/solutions" },
 };
 

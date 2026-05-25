@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Logistics Call Center & Shipping BPO Services in USA | Contact Center USA",
+  title: "Logistics Shipping Call Center | Contact Center USA",
   description:
-    "US-based logistics call center and shipping BPO services — logistics customer support, 24/7 dispatch, shipment tracking, driver support, and claims for carriers, 3PLs, and supply-chain operators.",
+    "US-based logistics shipping call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "logistics call center",
     "shipping bpo services",

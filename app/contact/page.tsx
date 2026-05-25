@@ -3,9 +3,9 @@ import { ContactHero } from "./ContactHero";
 import { ContactFormSection } from "./ContactFormSection";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get a Free Call Center Outsourcing Quote",
+  title: "Call Center Quote Request | Contact Center USA",
   description:
-    "Contact Center USA — get a free consultation for US-based call center outsourcing services. Speak to our experts today.",
+    "Request a call center outsourcing quote from Contact Center USA. Share your volume, channels, hours, and timeline to get the right support model.",
   alternates: { canonical: "/contact" },
 };
 

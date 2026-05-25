@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 Real Estate Call Center Companies in USA (2026)",
+  title: "Top 10 Real Estate Call Center (2026)",
   description:
-    "Compare the top 10 real estate call center companies in the USA for 2026. Ranked by ISA quality, lead qualification speed, CRM integrations (Follow Up Boss, kvCORE, Salesforce), motivated seller outreach, and realtor satisfaction.",
+    "Read the top 10 real estate call center guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "real estate call center companies",
     "top real estate call center usa",

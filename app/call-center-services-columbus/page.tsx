@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Columbus | Columbus Ohio BPO",
+  title: "Call Center Services in Columbus",
   description:
-    "Call center services Columbus — Contact Center USA provides Columbus Ohio BPO and Columbus call center outsourcing for Nationwide, Progressive, and Midwest insurance and finance. Free quote.",
+    "US-based call center services for Columbus businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
   keywords: [
     "call center services columbus",
     "columbus ohio bpo",

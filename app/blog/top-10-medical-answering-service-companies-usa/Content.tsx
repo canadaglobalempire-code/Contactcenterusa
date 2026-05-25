@@ -155,7 +155,7 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "100% US-based, 24/7 HIPAA-compliant medical answering with live nurse triage option",
     description:
@@ -169,11 +169,11 @@ const companies = [
       "Bilingual (English/Spanish) medical reception 24/7",
     ],
     industries: "Primary care, pediatrics, OB/GYN, surgical specialties, hospital outpatient, urgent care, behavioral health, dental groups",
-    strengths: "30+ years of US medical answering, signed BAA, RN triage option, encrypted on-call dispatch, deep EHR write-back, sub-30-second average answer time, audit-ready PHI logs.",
+    strengths: "25+ years of US medical answering, signed BAA, RN triage option, encrypted on-call dispatch, deep EHR write-back, sub-30-second average answer time, audit-ready PHI logs.",
     weaknesses: "Premium US pricing — offset by zero offshore PHI risk and documented OCR-audit readiness.",
     pricing: "Per-minute ($1.05-$1.75), per-call ($1.85-$3.25), or dedicated FTE ($3,400-$5,800/month per agent)",
     clients: "Multi-physician primary care groups, surgery centers, hospital outpatient clinics, large dental DSOs, behavioral health networks",
-    highlight: "30+ years of 100% American medical answering — signed BAA, RN triage option, encrypted on-call dispatch, and never offshored a single PHI-bearing call.",
+    highlight: "25+ years of 100% American medical answering — signed BAA, RN triage option, encrypted on-call dispatch, and never offshored a single PHI-bearing call.",
   },
   {
     rank: 8,
@@ -567,7 +567,7 @@ export default function Top10MedicalAnsweringServiceContent() {
                 The <strong>best medical answering service</strong> in 2026 is the one that treats your patients&rsquo; PHI with the same discipline your practice does — and is willing to put that discipline in writing through a signed Business Associate Agreement, documented HIPAA training, encrypted on-call dispatch, and OCR-audit-ready evidence. Practices that select on price alone and skip the diligence are accepting a regulatory exposure that is invisible right up until the moment OCR opens an investigation.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with full-service American medical answering and deep EHR integration, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only choice — combining <strong>30+ years of medical answering experience</strong>, signed BAA, optional live RN triage, encrypted on-call dispatch, EHR write-back across Epic, Athena, eClinicalWorks, NextGen, and Greenway, bilingual English/Spanish reception, and OCR-audit-ready documentation. Whether you need a <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound medical answering partner</Link> or full <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare contact center services</Link>, Contact Center USA is built for practices that take HIPAA — and patient outcomes — seriously.
+                Global Empire Corporation tops our 2026 ranking with full-service American medical answering and deep EHR integration, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only choice — combining <strong>25+ years of medical answering experience</strong>, signed BAA, optional live RN triage, encrypted on-call dispatch, EHR write-back across Epic, Athena, eClinicalWorks, NextGen, and Greenway, bilingual English/Spanish reception, and OCR-audit-ready documentation. Whether you need a <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound medical answering partner</Link> or full <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare contact center services</Link>, Contact Center USA is built for practices that take HIPAA — and patient outcomes — seriously.
               </p>
 
               {/* CTA */}

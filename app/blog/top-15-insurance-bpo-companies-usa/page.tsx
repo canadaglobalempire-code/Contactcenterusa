@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 15 Insurance BPO Companies in the USA (2026 Rankings)",
+  title: "Top 15 Insurance BPO (2026)",
   description:
-    "Discover the top insurance BPO companies in the USA for 2026. Compare the best BPO services for insurance companies including claims processing, policy administration, P&C insurance BPO, underwriting support, and insurance customer service outsourcing ranked by compliance, technology, and performance.",
+    "Read the top 15 insurance bpo guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "insurance bpo companies",
     "top insurance bpo companies",

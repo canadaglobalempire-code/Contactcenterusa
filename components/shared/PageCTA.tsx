@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { siteConfig } from "@/lib/seo-config";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 interface PageCTAProps {
   heading?: string;
@@ -48,13 +47,14 @@ export function PageCTA({
             transition={{ duration: 0.5 }}
             className="flex flex-wrap items-center gap-4"
           >
-            <Link
-              href="/contact"
+            <LeadCTALink
+              ctaLocation="page_cta_band"
+              leadOffer="General call center quote"
               className="inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark"
             >
               Get a Free Quote
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </LeadCTALink>
           </motion.div>
         </div>
       </div>

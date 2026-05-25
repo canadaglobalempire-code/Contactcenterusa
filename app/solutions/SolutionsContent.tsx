@@ -17,6 +17,7 @@ import {
   Megaphone,
   CheckCircle2,
 } from "lucide-react";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const solutions = [
   {
@@ -187,13 +188,14 @@ export default function SolutionsContent() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href="/contact"
+              <LeadCTALink
+                ctaLocation="solutions_index_intro_cta"
+                leadOffer="Solution consultation quote"
                 className="mt-8 inline-flex items-center gap-2 rounded-lg bg-red px-7 py-3.5 text-[15px] font-semibold text-white shadow-lg shadow-red/25 transition-all hover:bg-red-dark hover:shadow-red/35"
               >
                 Discuss Your Needs
                 <ArrowRight className="h-4 w-4" />
-              </Link>
+              </LeadCTALink>
             </motion.div>
           </div>
         </div>
@@ -319,13 +321,14 @@ export default function SolutionsContent() {
               No matter your challenge, we have the experience, technology, and
               people to deliver exceptional results.
             </p>
-            <Link
-              href="/contact"
+            <LeadCTALink
+              ctaLocation="solutions_index_bottom_cta"
+              leadOffer="Solution consultation quote"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark"
             >
               Contact Us Today
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </LeadCTALink>
           </motion.div>
         </div>
       </section>

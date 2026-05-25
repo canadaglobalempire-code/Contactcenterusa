@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Government Call Center & Contact Center BPO in USA | Contact Center USA",
+  title: "Government Call Center | Contact Center USA",
   description:
-    "US-based government call center and government contact center BPO services — public sector outsourcing for federal, state, and local agencies with FedRAMP-ready infrastructure, Section 508 accessibility, and 24/7 citizen support.",
+    "US-based government call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "government call center",
     "government contact center bpo",

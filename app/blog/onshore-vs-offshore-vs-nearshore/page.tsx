@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Onshore vs Offshore vs Nearshore: Pros, Cons & Costs",
+  title: "Onshore vs Offshore vs Nearshore Call Centers",
   description:
-    "Compare onshore, offshore, and nearshore call center outsourcing models side by side. Detailed analysis of costs, quality metrics, CSAT scores, and when to choose each delivery model for your business.",
+    "Read the onshore vs offshore vs nearshore call centers guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/onshore-vs-offshore-vs-nearshore" },
 };
 

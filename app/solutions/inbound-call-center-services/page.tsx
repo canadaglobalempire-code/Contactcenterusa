@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Inbound Call Center Services USA | Inbound BPO USA & 24/7 Inbound Support Outsourcing",
+  title: "Inbound Call Center | Contact Center USA",
   description:
-    "Inbound call center services from a 100% US-based BPO. 24/7 inbound support outsourcing, live call answering, order taking, help desk, and appointment scheduling with <15s answer times.",
+    "US-based inbound call center with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "inbound call center services",
     "inbound bpo usa",

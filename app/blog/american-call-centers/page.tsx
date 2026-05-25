@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 15 American Call Centers: Best US-Based Call Center Companies (2026)",
+  title: "Best American Call Centers (2026)",
   description:
-    "Discover the best American call centers and US-based call center companies for 2026. Compare top domestic call center outsourcing providers, onshore call center companies, and American-based call centers ranked by quality, workforce, and performance.",
+    "Read the best american call centers guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "american call centers",
     "american based call centers",

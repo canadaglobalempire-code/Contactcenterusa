@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "IT Services Outsourcing USA | IT Help Desk BPO & Managed IT Services | Contact Center USA",
+  title: "Information Technology Services | Contact Center USA",
   description:
-    "IT services outsourcing from a 100% US-based provider. IT help desk BPO, managed IT services USA, cloud administration, cybersecurity, and 24/7 NOC — SOC 2 & HIPAA-aligned.",
+    "US-based information technology services with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "it services outsourcing",
     "it help desk bpo",

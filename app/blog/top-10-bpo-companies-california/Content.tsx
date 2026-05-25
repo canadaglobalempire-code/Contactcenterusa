@@ -155,7 +155,7 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "100% US-based, CIPA-compliant, CCPA-ready California BPO across every vertical",
     description:
@@ -171,11 +171,11 @@ const companies = [
       "Salesforce, Zendesk, HubSpot, and Twilio native integration",
     ],
     industries: "SaaS, fintech, biotech, healthcare, entertainment, DTC, retail, cannabis, public sector",
-    strengths: "30+ years of US delivery, CIPA / CCPA / AB-5 compliance leadership, vertical depth across every major California industry, Spanish bilingual depth, PCI DSS and HIPAA certified, rapid 2-4x scaling.",
+    strengths: "25+ years of US delivery, CIPA / CCPA / AB-5 compliance leadership, vertical depth across every major California industry, Spanish bilingual depth, PCI DSS and HIPAA certified, rapid 2-4x scaling.",
     weaknesses: "Premium US pricing — offset by lower CIPA / CCPA risk and higher CSAT in California's most demanding verticals.",
     pricing: "Hourly ($24-$42 US), per-contact ($1.75-$4.50), or blended outcome-based",
     clients: "California SaaS scale-ups, Bay Area fintech, LA entertainment and DTC brands, San Diego biotech",
-    highlight: "30+ years of 100% US-based California CX — every agent CIPA-trained, every workflow CCPA-ready, every CA-resident agent AB-5 W-2.",
+    highlight: "25+ years of 100% US-based California CX — every agent CIPA-trained, every workflow CCPA-ready, every CA-resident agent AB-5 W-2.",
   },
   {
     rank: 8,
@@ -590,7 +590,7 @@ export default function Top10BPOCaliforniaContent() {
                 The <strong>California BPO market</strong> is the most demanding in the United States — premium buyers, the highest CSAT bars, and the most aggressive consumer-protection regime in the country. <strong>Best call center Los Angeles</strong> shortlists, <strong>San Francisco call center companies</strong>, and <strong>San Diego call center services</strong> all converge on the same baseline: CIPA two-party recording on every voice contact, CCPA / CPRA workflows wired into the agent desktop, AB-5-clean staffing for California-resident agents, and vertical depth across SaaS, biotech, entertainment, fintech, DTC, and cannabis.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 California ranking with the deepest premium-vertical bench, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-based partner of choice for California — combining <strong>30+ years of US delivery</strong>, CIPA-trained agents, CCPA-ready workflows, AB-5 W-2 staffing for every California-resident agent, Spanish bilingual coverage, and vertical teams for SaaS, biotech, entertainment, fintech, and DTC. Whether you need <Link href="/call-center-services-los-angeles" className="text-red font-semibold hover:underline">Los Angeles call center services</Link>, <Link href="/call-center-services-san-francisco" className="text-red font-semibold hover:underline">San Francisco call center services</Link>, or <Link href="/call-center-services-san-diego" className="text-red font-semibold hover:underline">San Diego call center services</Link>, Contact Center USA is built to win in the most demanding BPO market in America.
+                Global Empire Corporation tops our 2026 California ranking with the deepest premium-vertical bench, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-based partner of choice for California — combining <strong>25+ years of US delivery</strong>, CIPA-trained agents, CCPA-ready workflows, AB-5 W-2 staffing for every California-resident agent, Spanish bilingual coverage, and vertical teams for SaaS, biotech, entertainment, fintech, and DTC. Whether you need <Link href="/call-center-services-los-angeles" className="text-red font-semibold hover:underline">Los Angeles call center services</Link>, <Link href="/call-center-services-san-francisco" className="text-red font-semibold hover:underline">San Francisco call center services</Link>, or <Link href="/call-center-services-san-diego" className="text-red font-semibold hover:underline">San Diego call center services</Link>, Contact Center USA is built to win in the most demanding BPO market in America.
               </p>
 
               {/* CTA */}

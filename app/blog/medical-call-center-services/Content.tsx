@@ -315,7 +315,7 @@ export default function MedicalCallCenterServicesContent() {
               {/* CCUSA Capabilities */}
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Contact Center USA&apos;s Healthcare Capabilities</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> has been providing <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare call center services</Link> for over 30 years, serving hospitals, health systems, medical practices, insurance carriers, and pharmaceutical companies across the United States. Our healthcare capabilities include:
+                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> has been providing <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare call center services</Link> for 25+ years, serving hospitals, health systems, medical practices, insurance carriers, and pharmaceutical companies across the United States. Our healthcare capabilities include:
               </p>
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {[

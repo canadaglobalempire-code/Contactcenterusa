@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Dialer Administration USA | Predictive Dialer Management | Contact Center USA",
+  title: "Dialer ACD Administration | Contact Center USA",
   description:
-    "US-based dialer administration, ACD administration BPO, and predictive dialer management. Certified engineers managing Five9, NICE, Genesys, and Avaya — TCPA-compliant campaigns and intelligent routing.",
+    "US-based dialer acd administration with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "dialer administration",
     "acd administration bpo",

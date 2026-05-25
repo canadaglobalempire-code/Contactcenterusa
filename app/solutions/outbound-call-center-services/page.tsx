@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Outbound Call Center Services USA | Outbound BPO USA | Outbound Sales Outsourcing",
+  title: "Outbound Call Center | Contact Center USA",
   description:
-    "US-based outbound call center services and outbound BPO USA. TCPA-compliant outbound sales outsourcing, telemarketing, win-back, and survey campaigns with 200–400% average ROI.",
+    "US-based outbound call center with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "outbound call center services",
     "outbound bpo usa",

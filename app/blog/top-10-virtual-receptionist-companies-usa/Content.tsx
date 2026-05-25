@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, 24/7 live virtual receptionists with deep CRM and calendar integration",
     description:
-      "Contact Center USA is a proudly American virtual receptionist company that has delivered 100% US-based live call answering for over 30 years. Every receptionist is located in the United States, every call is answered domestically, and every interaction reflects the values of American professional service. Purpose-built for law firms, medical and dental practices, home services contractors, SaaS companies, and professional SMBs, Contact Center USA handles the full front-desk lifecycle — 24/7 live call answering, appointment booking, new client intake, message taking, lead qualification, after-hours coverage, and bilingual English/Spanish reception. Their infrastructure scales rapidly to absorb call surges from marketing campaigns, and every program integrates natively with Clio, MyCase, Practice Panther, Epic, Athena, Jane, Salesforce, HubSpot, Google Calendar, and Microsoft 365 — part of a broader virtual and remote support services practice.",
+      "Contact Center USA is a proudly American virtual receptionist company that has delivered 100% US-based live call answering for 25+ years. Every receptionist is located in the United States, every call is answered domestically, and every interaction reflects the values of American professional service. Purpose-built for law firms, medical and dental practices, home services contractors, SaaS companies, and professional SMBs, Contact Center USA handles the full front-desk lifecycle — 24/7 live call answering, appointment booking, new client intake, message taking, lead qualification, after-hours coverage, and bilingual English/Spanish reception. Their infrastructure scales rapidly to absorb call surges from marketing campaigns, and every program integrates natively with Clio, MyCase, Practice Panther, Epic, Athena, Jane, Salesforce, HubSpot, Google Calendar, and Microsoft 365 — part of a broader virtual and remote support services practice.",
     services: [
       "100% American workforce — no offshore receptionists",
       "24/7/365 US-based live call answering",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "Law firms, medical & dental practices, home services, real estate, SaaS, professional SMBs",
-    strengths: "30+ years of US operations, HIPAA-aware intake, deep legal/medical CRM integration, bilingual English/Spanish, rapid surge scaling.",
+    strengths: "25+ years of US operations, HIPAA-aware intake, deep legal/medical CRM integration, bilingual English/Spanish, rapid surge scaling.",
     weaknesses: "Premium US pricing — offset by lead conversion, retention, and booked-appointment lift.",
     pricing: "Monthly plans ($225-$1,200) or per-minute ($1.75-$2.50)",
     clients: "Mid-market law firms, medical practices, home services companies, SMB professional services",
-    highlight: "30+ years of 100% American virtual reception — never offshored a single call, with HIPAA-aware intake and native legal/medical CRM sync.",
+    highlight: "25+ years of 100% American virtual reception — never offshored a single call, with HIPAA-aware intake and native legal/medical CRM sync.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10VirtualReceptionistContent() {
                 In this 2026 guide, we rank the <strong>top 10 American virtual receptionist companies</strong>, evaluated on live-answer speed, appointment-booking accuracy, CRM and calendar integration, bilingual capability, industry specialization (legal, medical, home services), and client satisfaction. Whether you run a <strong>boutique law firm</strong>, a <strong>medical or dental practice</strong>, a <strong>home services business</strong>, or a <strong>fast-growing SaaS startup</strong>, this list will help you find the right US-based virtual front-desk partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="virtual_receptionist_top_inline_cta"
+                leadOffer="Virtual receptionist quote"
+                heading="Need live receptionists to answer every high-value call?"
+                body="Share your call volume, hours, booking tools, and intake script. We'll recommend a US-based virtual receptionist plan."
+                primaryLabel="Get a Receptionist Quote"
+                serviceHref="/services/virtual-remote-support"
+                serviceLabel="See virtual support"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10VirtualReceptionistContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-management.jpg" alt="Virtual receptionist answering a call in the USA" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="virtual_receptionist_mid_article_cta"
+                leadOffer="Virtual receptionist quote"
+                heading="Compare receptionist providers with your call volume priced."
+                body="Get a practical quote for live answering, appointment booking, bilingual reception, and after-hours coverage."
+                primaryLabel="Request Receptionist Pricing"
+                serviceHref="/services/virtual-remote-support"
+                serviceLabel="Review virtual support"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Virtual Receptionist Companies</h2>
@@ -477,7 +500,7 @@ export default function Top10VirtualReceptionistContent() {
                 The <strong>American virtual receptionist industry</strong> is being reshaped by voice-AI, deep practice-management integration, and SMB demand for 24/7 live coverage at predictable monthly prices. Law firms, medical practices, home services contractors, and SaaS SMBs win when they partner with US-based virtual receptionist providers that integrate natively with their calendar and CRM, speak the language of their callers, and never let a lead hit voicemail.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American virtual receptionist practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based call answering</strong>, HIPAA-aware medical and legal intake, and native Clio, Epic, HubSpot, and Google Calendar integration. Whether you need <Link href="/services/virtual-remote-support" className="text-red font-semibold hover:underline">virtual receptionist services</Link>, <Link href="/services/appointment-setting-services" className="text-red font-semibold hover:underline">appointment setting</Link>, or <Link href="/services/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call answering</Link>, Contact Center USA is built for the SMBs that win on every first impression.
+                Global Empire Corporation tops our 2026 ranking with its full-service American virtual receptionist practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based call answering</strong>, HIPAA-aware medical and legal intake, and native Clio, Epic, HubSpot, and Google Calendar integration. Whether you need <Link href="/services/virtual-remote-support" className="text-red font-semibold hover:underline">virtual receptionist services</Link>, <Link href="/services/appointment-setting-services" className="text-red font-semibold hover:underline">appointment setting</Link>, or <Link href="/services/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call answering</Link>, Contact Center USA is built for the SMBs that win on every first impression.
               </p>
 
               {/* CTA */}
@@ -486,9 +509,9 @@ export default function Top10VirtualReceptionistContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers 24/7 live call answering, appointment booking, and bilingual reception with native Clio, Epic, and HubSpot integration. Get a free virtual receptionist quote today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="virtual_receptionist_bottom_cta" leadOffer="Virtual receptionist quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Virtual Receptionist Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -512,7 +535,13 @@ export default function Top10VirtualReceptionistContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="virtual_receptionist_sidebar_form"
+                  leadOffer="Virtual receptionist quote"
+                  title="Get a Receptionist Quote"
+                  description="Tell us your calls, hours, and booking workflow."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

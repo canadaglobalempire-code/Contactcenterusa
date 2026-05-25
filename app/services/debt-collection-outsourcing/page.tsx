@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Debt Collection Outsourcing BPO in USA | Debt Collection Call Centre | Contact Center USA",
+  title: "Debt Collection Outsourcing | Contact Center USA",
   description:
-    "US-based debt collection BPO and outsourcing services. One of the leading debt collection companies operating a compliant debt collection call centre — FDCPA-certified recovery, skip tracing, and dispute resolution.",
+    "US-based debt collection outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "debt collection bpo",
     "debt collection outsourcing bpo in usa",
@@ -106,7 +106,7 @@ const seoContent: SEOPattern[] = [
     heading: "The trusted debt collection BPO for US businesses that refuse to compromise on recovery or compliance.",
     accent: "refuse to compromise",
     body: [
-      "Contact Center USA is one of the best debt collection BPO companies in the USA — a 100% US-based, FDCPA-compliant debt collection call centre with 30+ years of recovery experience and licensed collectors in all 50 states.",
+      "Contact Center USA is one of the best debt collection BPO companies in the USA — a 100% US-based, FDCPA-compliant debt collection call centre with 25+ years of recovery experience and licensed collectors in all 50 states.",
       "For businesses searching for the best debt collection outsourcing BPO in USA, we deliver higher recovery on aged receivables, lower cost of collection, and a compliance program that has never produced a material regulatory finding.",
     ],
     stats: [

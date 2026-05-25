@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, 24/7 tenant answering with PMS integration and bilingual emergency triage",
     description:
-      "Contact Center USA is a proudly American property management call center company that has delivered 100% US-based tenant support for over 30 years. Every agent is located in the United States, every emergency call is triaged domestically, and every tenant interaction is logged directly inside AppFolio, Buildium, Yardi Voyager, Propertyware, Rent Manager, or ResMan via live API integration. Their property management practice covers the full tenant lifecycle — leasing inquiries and tour scheduling, move-in coordination, work-order intake, emergency maintenance dispatch, rent and ledger questions, lease renewals, move-out coordination, and HOA violation reporting. Bilingual English/Spanish is standard, sub-30-second answer times are guaranteed, and the after-hours / weekend / holiday model means the on-call property manager only gets paged for true emergencies — never a leaky faucet at 2am. They also publish weekly leasing-conversion dashboards (lead-to-tour, tour-to-lease) so property managers can see exactly what their leasing call handling is producing.",
+      "Contact Center USA is a proudly American property management call center company that has delivered 100% US-based tenant support for 25+ years. Every agent is located in the United States, every emergency call is triaged domestically, and every tenant interaction is logged directly inside AppFolio, Buildium, Yardi Voyager, Propertyware, Rent Manager, or ResMan via live API integration. Their property management practice covers the full tenant lifecycle — leasing inquiries and tour scheduling, move-in coordination, work-order intake, emergency maintenance dispatch, rent and ledger questions, lease renewals, move-out coordination, and HOA violation reporting. Bilingual English/Spanish is standard, sub-30-second answer times are guaranteed, and the after-hours / weekend / holiday model means the on-call property manager only gets paged for true emergencies — never a leaky faucet at 2am. They also publish weekly leasing-conversion dashboards (lead-to-tour, tour-to-lease) so property managers can see exactly what their leasing call handling is producing.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based tenant emergency triage",
@@ -169,11 +169,11 @@ const companies = [
       "Weekly leasing-conversion reporting",
     ],
     industries: "Multifamily, SFR, HOA-managed communities, build-to-rent, student housing, senior living, commercial leasing",
-    strengths: "30+ years of US operations, native PMS integrations, sub-30-second answer times, bilingual at scale, true after-hours-only or 24/7 plans.",
+    strengths: "25+ years of US operations, native PMS integrations, sub-30-second answer times, bilingual at scale, true after-hours-only or 24/7 plans.",
     weaknesses: "Premium US pricing — offset by lower turnover, faster emergency response, and higher leasing-conversion rates.",
     pricing: "Per-call ($1.10-$2.40), hourly ($22-$32), or dedicated FTE ($2,500-$4,500/month)",
     clients: "Mid-market multifamily operators, regional property managers, BTR developers, HOA management companies, SFR portfolios",
-    highlight: "30+ years of 100% American property management call handling — never offshored a single tenant emergency, even at 3am on Christmas.",
+    highlight: "25+ years of 100% American property management call handling — never offshored a single tenant emergency, even at 3am on Christmas.",
   },
   {
     rank: 8,
@@ -568,7 +568,7 @@ export default function Top10PropertyManagementCallCenterContent() {
                 The <strong>American property management call center industry</strong> is being reshaped by PropTech-driven self-service, AI maintenance triage, and the build-to-rent boom across the Sun Belt. Property managers win when they partner with US-based providers that integrate natively with AppFolio, Buildium, and Yardi, dispatch true emergencies inside 60 seconds, qualify leasing leads into signed leases, and cover after-hours, weekends, and holidays without ever waking the on-call manager for a leaky faucet.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American property management practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based tenant CX</strong>, native API integrations with every major PMS, sub-30-second answer times, and bilingual English/Spanish coverage at no extra cost. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound tenant call handling</Link> or specialized <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate and property management call center services</Link>, Contact Center USA is built for the property managers who refuse to lose a leasing lead or mishandle an emergency at 3am.
+                Global Empire Corporation tops our 2026 ranking with its full-service American property management practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based tenant CX</strong>, native API integrations with every major PMS, sub-30-second answer times, and bilingual English/Spanish coverage at no extra cost. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound tenant call handling</Link> or specialized <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate and property management call center services</Link>, Contact Center USA is built for the property managers who refuse to lose a leasing lead or mishandle an emergency at 3am.
               </p>
 
               {/* CTA */}

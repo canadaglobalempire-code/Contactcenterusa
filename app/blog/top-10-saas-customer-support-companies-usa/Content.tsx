@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, omnichannel SaaS customer support with Tier 1-3 product expertise and 24/7 coverage",
     description:
-      "Contact Center USA is a proudly American SaaS customer support company that has delivered 100% US-based support for over 30 years. Every agent is located in the United States, every ticket is handled domestically, and every interaction reflects the technical fluency and SaaS expertise that modern software buyers expect. Purpose-built for B2B SaaS, PLG SaaS, enterprise software, and vertical SaaS platforms, Contact Center USA handles the full SaaS customer lifecycle — onboarding and activation, Tier 1 in-app chat, Tier 2 technical troubleshooting, Tier 3 engineering escalation management, customer success and QBRs, expansion and retention outreach, and 24/7 incident and platform-outage response. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb product launches and migration surges, and every program is supported by real-time NPS and CSAT dashboards, AI copilots, customer health scoring, and integrations with Intercom, Zendesk, Front, HubSpot Service Hub, Gainsight, Totango, Jira, and Linear.",
+      "Contact Center USA is a proudly American SaaS customer support company that has delivered 100% US-based support for 25+ years. Every agent is located in the United States, every ticket is handled domestically, and every interaction reflects the technical fluency and SaaS expertise that modern software buyers expect. Purpose-built for B2B SaaS, PLG SaaS, enterprise software, and vertical SaaS platforms, Contact Center USA handles the full SaaS customer lifecycle — onboarding and activation, Tier 1 in-app chat, Tier 2 technical troubleshooting, Tier 3 engineering escalation management, customer success and QBRs, expansion and retention outreach, and 24/7 incident and platform-outage response. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb product launches and migration surges, and every program is supported by real-time NPS and CSAT dashboards, AI copilots, customer health scoring, and integrations with Intercom, Zendesk, Front, HubSpot Service Hub, Gainsight, Totango, Jira, and Linear.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based Tier 1-3 SaaS support",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "B2B SaaS, PLG SaaS, enterprise software, vertical SaaS, fintech SaaS, healthcare SaaS, martech, salestech, devtools",
-    strengths: "30+ years of US operations, deep SaaS product training, tiered support fluency, rapid launch scaling, deep helpdesk integrations, SOC 2 Type II certified.",
+    strengths: "25+ years of US operations, deep SaaS product training, tiered support fluency, rapid launch scaling, deep helpdesk integrations, SOC 2 Type II certified.",
     weaknesses: "Premium US pricing — offset by NPS, NRR, and activation-rate lift.",
     pricing: "Hourly ($25-$45 US), per-ticket ($4-$9), or blended outcome-based (NRR/NPS)",
     clients: "Mid-market B2B SaaS, Series B-D software companies, enterprise SaaS, vertical SaaS platforms, PLG SaaS with enterprise motions",
-    highlight: "30+ years of 100% American SaaS customer support — never offshored a single ticket, with SOC 2 Type II, Tier 1-3 product training, and native helpdesk integration.",
+    highlight: "25+ years of 100% American SaaS customer support — never offshored a single ticket, with SOC 2 Type II, Tier 1-3 product training, and native helpdesk integration.",
   },
   {
     rank: 8,
@@ -475,7 +475,7 @@ export default function Top10SaaSCustomerSupportContent() {
                 The <strong>American SaaS customer support industry</strong> is being reshaped by AI deflection, outcome-based pricing tied to NRR, and the recognition that support and customer success are retention and expansion engines — not cost centers. B2B SaaS, PLG SaaS, and enterprise software companies win when they partner with US-based outsourcers that can deliver Tier 1-3 product fluency, integrate natively with modern helpdesk and CS platforms, and deliver brand-aligned CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American SaaS support practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based CX operations</strong>, Tier 1-3 product fluency, SOC 2 Type II compliance, deep Intercom / Zendesk / Front / Gainsight / Jira integration, and flexible per-ticket and outcome-based pricing tied to NRR and activation. Whether you need <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer support outsourcing</Link>, <Link href="/services/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 2-3 technical support</Link>, or <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">in-app chat support</Link>, Contact Center USA is built for the software companies that compound retention into growth.
+                Global Empire Corporation tops our 2026 ranking with its full-service American SaaS support practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, Tier 1-3 product fluency, SOC 2 Type II compliance, deep Intercom / Zendesk / Front / Gainsight / Jira integration, and flexible per-ticket and outcome-based pricing tied to NRR and activation. Whether you need <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer support outsourcing</Link>, <Link href="/services/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 2-3 technical support</Link>, or <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">in-app chat support</Link>, Contact Center USA is built for the software companies that compound retention into growth.
               </p>
 
               {/* CTA */}

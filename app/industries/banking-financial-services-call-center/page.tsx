@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Banking BPO Services | Banking Call Center Outsourcing USA | Contact Center USA",
+  title: "Banking Financial Services Call Center | Contact Center USA",
   description:
-    "One of the best banking BPO services and financial services call center providers in the USA. Banking call center outsourcing for retail banks, credit unions, wealth management, mortgage, and fintech.",
+    "US-based banking financial services call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "banking bpo services",
     "financial services call center",

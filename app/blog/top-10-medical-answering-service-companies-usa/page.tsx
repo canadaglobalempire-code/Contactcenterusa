@@ -38,9 +38,9 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: "Top 10 Medical Answering Service Companies in USA (2026)",
+  title: "Top 10 Medical Answering Service (2026)",
   description:
-    "Compare the top 10 HIPAA-compliant US-based medical answering service companies for 2026 — ranked by BAA terms, live RN triage, EHR integration, OCR readiness.",
+    "Read the top 10 medical answering service guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "medical answering service",
     "doctor answering service",

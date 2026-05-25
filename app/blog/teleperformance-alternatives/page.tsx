@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Teleperformance Alternatives: 7 Better Options for Mid-Market (2026)",
+  title: "Teleperformance Alternatives (2026)",
   description:
-    "Looking for a Teleperformance alternative in 2026? Compare 7 outsourcing partners that deliver better CX, flexible contracts, and lower cost — ranked for mid-market brands.",
+    "Read the teleperformance alternatives guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/teleperformance-alternatives" },
 };
 

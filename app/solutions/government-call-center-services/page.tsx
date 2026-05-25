@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Government Call Center USA | Government BPO Services & Public Sector Call Center Outsourcing",
+  title: "Government Call Center Services",
   description:
-    "US-based government call center for federal, state, and local agencies. Government BPO services and public sector call center outsourcing with FISMA, FedRAMP-ready, HIPAA, and CJIS-aligned operations.",
+    "US-based government call center with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "government call center",
     "government bpo services",

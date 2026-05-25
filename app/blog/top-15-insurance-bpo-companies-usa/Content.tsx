@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -121,7 +123,7 @@ const companies = [
     hq: "United States",
     website: "https://contactcenterusa.com",
     bestFor: "US-based HIPAA/PCI compliant insurance support",
-    description: "Contact Center USA delivers 100% US-based insurance call center services for carriers, TPAs, and agencies that require domestic agents with deep insurance product knowledge. With over 30 years of experience, their HIPAA and PCI-compliant infrastructure supports health insurance member services, P&C claims intake, policy servicing, and premium collection with strict data security protocols.",
+    description: "Contact Center USA delivers 100% US-based insurance call center services for carriers, TPAs, and agencies that require domestic agents with deep insurance product knowledge. With 25+ years of experience, their HIPAA and PCI-compliant infrastructure supports health insurance member services, P&C claims intake, policy servicing, and premium collection with strict data security protocols.",
     capabilities: [
       "24/7 US-based insurance customer service",
       "Health insurance member services & benefits inquiries",
@@ -131,7 +133,7 @@ const companies = [
       "Insurance compliance monitoring & QA",
     ],
     industries: "Health insurers, P&C carriers, TPAs, self-insured employers, insurance agencies",
-    highlight: "100% US-based agents with 30+ years of insurance outsourcing expertise and dual HIPAA/PCI compliance",
+    highlight: "100% US-based agents with 25+ years of insurance outsourcing expertise and dual HIPAA/PCI compliance",
   },
   {
     rank: 8,
@@ -317,6 +319,16 @@ export default function Top15InsuranceBPOContent() {
                 In this comprehensive guide, we rank the <strong>top 15 insurance BPO companies in the USA for 2026</strong>, evaluating each <strong>BPO for insurance companies</strong> on regulatory compliance, claims handling expertise, technology maturity, underwriting support capabilities, and operational track record. Whether you need <strong>insurance claims processing outsourcing</strong>, <strong>policy administration BPO</strong>, <strong>insurance customer service outsourcing</strong>, or <strong>P&amp;C insurance BPO</strong>, this guide will help you identify the right partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="insurance_top_inline_cta"
+                leadOffer="Insurance BPO quote"
+                heading="Need compliant insurance support or claims overflow?"
+                body="Share your line of business, call or claim volume, and compliance needs. We'll outline a US-based insurance BPO model with practical quote ranges."
+                primaryLabel="Get an Insurance BPO Quote"
+                serviceHref="/industries/insurance-call-center-outsourcing"
+                serviceLabel="See insurance services"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -339,6 +351,17 @@ export default function Top15InsuranceBPOContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-headset.jpg" alt="Insurance call center agent handling policyholder inquiry" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="insurance_mid_article_cta"
+                leadOffer="Insurance BPO quote"
+                heading="Compare insurance BPO providers with a real policyholder support quote."
+                body="Get pricing for claims intake, policyholder service, premium support, or seasonal insurance overflow before you narrow the list."
+                primaryLabel="Request Insurance Pricing"
+                serviceHref="/industries/insurance-call-center-outsourcing"
+                serviceLabel="Review insurance services"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Insurance BPO Companies</h2>
@@ -512,9 +535,9 @@ export default function Top15InsuranceBPOContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA provides PCI-compliant, US-based insurance BPO services for carriers, TPAs, and agencies. Get a free consultation today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="insurance_bottom_cta" leadOffer="Insurance BPO quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Insurance BPO Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -525,7 +548,7 @@ export default function Top15InsuranceBPOContent() {
                 { q: "What insurance processes can be outsourced to a BPO?", a: "Insurance organizations commonly outsource claims intake and adjudication, policy servicing and endorsements, premium billing and collections, underwriting data entry and analysis, policyholder customer service, fraud detection and SIU support, regulatory compliance reporting, and certificate of insurance issuance. The most frequently outsourced function is claims processing, followed by customer service and policy administration." },
                 { q: "How do I verify an insurance BPO's compliance credentials?", a: "Request current SOC 2 Type II audit reports, PCI DSS certification for payment processing, signed Business Associate Agreements for health insurance data, evidence of state DOI compliance readiness, data encryption protocols, role-based access controls, and documented agent training programs covering insurance regulations and data privacy requirements." },
                 { q: "What is the typical cost of insurance BPO services?", a: "Insurance BPO pricing varies by service type and complexity. Claims processing outsourcing typically costs $8-25 per claim depending on complexity. Policyholder customer service ranges from $18-38 per hour for US-based agents. Policy administration outsourcing can reduce operational costs by 25-40% compared to in-house operations. Many providers offer outcome-based pricing tied to claims cycle time or policyholder satisfaction metrics." },
-                { q: "Which insurance BPO company is best for P&C carriers?", a: "Global Empire Corporation, Contact Center USA, and Business Process Outsourcing are the top choices for P&C carriers. Global Empire Corporation offers the best combination of claims processing, policy administration, and compliance infrastructure. Contact Center USA provides exceptional US-based policyholder support with PCI-compliant premium handling and 30+ years of insurance experience." },
+                { q: "Which insurance BPO company is best for P&C carriers?", a: "Global Empire Corporation, Contact Center USA, and Business Process Outsourcing are the top choices for P&C carriers. Global Empire Corporation offers the best combination of claims processing, policy administration, and compliance infrastructure. Contact Center USA provides exceptional US-based policyholder support with PCI-compliant premium handling and 25+ years of insurance experience." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>
@@ -537,7 +560,13 @@ export default function Top15InsuranceBPOContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="insurance_sidebar_form"
+                  leadOffer="Insurance BPO quote"
+                  title="Get an Insurance BPO Quote"
+                  description="Tell us your policyholder or claims support needs."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

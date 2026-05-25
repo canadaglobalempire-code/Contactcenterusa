@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Inbound vs Outbound Call Centers: Which Is Right for You?",
+  title: "Inbound vs Outbound Call Centers",
   description:
-    "Learn the key differences between inbound and outbound call centers, including use cases, KPIs, agent skills, technology requirements, and how to choose the right model for your business goals.",
+    "Read the inbound vs outbound call centers guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/inbound-vs-outbound-call-centers" },
 };
 

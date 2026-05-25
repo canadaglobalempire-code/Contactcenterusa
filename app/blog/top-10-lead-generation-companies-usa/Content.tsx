@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const companies = [
   {
@@ -155,11 +157,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, full-funnel B2B lead generation with SDR-as-a-service and ABM",
     description:
-      "Contact Center USA is a proudly American B2B lead generation company that has delivered 100% US-based demand generation for over 30 years. Every SDR is located in the United States, every prospect conversation happens domestically, and every campaign reflects the values of American sales excellence. Purpose-built for SaaS, technology, professional services, and industrial B2B companies, Contact Center USA handles the full lead-generation lifecycle — ICP definition, list building, multi-channel outreach (phone, email, LinkedIn, SMS), inbound MQL qualification, ABM plays, and sales-ready appointment setting. Their onshore SDR teams average 2-3 years of B2B sales experience, follow sequenced cadences built in Outreach, Salesloft, and HubSpot, and feed directly into clients' Salesforce, HubSpot, and Pipedrive CRMs. Every program is supported by real-time pipeline dashboards, weekly calibration calls, and transparent per-meeting and per-SQL reporting.",
+      "Contact Center USA is a proudly American B2B lead generation company that has delivered 100% US-based demand generation for 25+ years. Every SDR is located in the United States, every prospect conversation happens domestically, and every campaign reflects the values of American sales excellence. Purpose-built for SaaS, technology, professional services, and industrial B2B companies, Contact Center USA handles the full lead-generation lifecycle — ICP definition, list building, multi-channel outreach (phone, email, LinkedIn, SMS), inbound MQL qualification, ABM plays, and sales-ready appointment setting. Their onshore SDR teams average 2-3 years of B2B sales experience, follow sequenced cadences built in Outreach, Salesloft, and HubSpot, and feed directly into clients' Salesforce, HubSpot, and Pipedrive CRMs. Every program is supported by real-time pipeline dashboards, weekly calibration calls, and transparent per-meeting and per-SQL reporting.",
     services: [
       "100% American SDR workforce — no offshore calling",
       "US-based SDR-as-a-service (outbound + inbound)",
@@ -169,11 +171,11 @@ const companies = [
       "Patriotic US-only lead generation guarantee",
     ],
     industries: "SaaS, technology, cybersecurity, professional services, healthcare tech, industrial B2B, financial services",
-    strengths: "30+ years of US operations, full-funnel demand gen, experienced SDRs, deep sales-tech integrations, SOC 2 Type II certified.",
+    strengths: "25+ years of US operations, full-funnel demand gen, experienced SDRs, deep sales-tech integrations, SOC 2 Type II certified.",
     weaknesses: "Premium US pricing — offset by higher SQL conversion, meeting-held rates, and closed-won velocity.",
     pricing: "Per-FTE ($7,500-$12,000/SDR/month US), per-qualified-meeting ($200-$500), or hybrid outcome-based",
     clients: "Mid-market SaaS, cybersecurity vendors, healthcare tech platforms, industrial B2B manufacturers, professional services firms",
-    highlight: "30+ years of 100% American B2B lead generation — never offshored a single SDR conversation, even during scale-up seasons.",
+    highlight: "25+ years of 100% American B2B lead generation — never offshored a single SDR conversation, even during scale-up seasons.",
   },
   {
     rank: 8,
@@ -287,6 +289,16 @@ export default function Top10LeadGenerationContent() {
                 In this 2026 guide, we rank the <strong>top 10 American lead generation companies</strong>, evaluated on SDR quality, multi-channel fluency, sales-tech integrations, pipeline transparency, and client outcomes. Whether you need <strong>SDR-as-a-service</strong>, <strong>ABM execution</strong>, <strong>LinkedIn outreach</strong>, <strong>MQL-to-SQL qualification</strong>, or <strong>sales-ready appointment setting</strong>, this list will help you find the right US-based demand-gen partner.
               </p>
 
+              <InlineLeadCTA
+                ctaLocation="lead_generation_top_inline_cta"
+                leadOffer="B2B lead generation quote"
+                heading="Need US-based SDRs to build qualified pipeline?"
+                body="Tell us your ICP, average contract value, target accounts, and meeting goals. We'll price a lead-gen program around qualified outcomes."
+                primaryLabel="Get a Lead Generation Quote"
+                serviceHref="/solutions/lead-generation-appointment-setting"
+                serviceLabel="See lead generation"
+              />
+
               {/* Key takeaways box */}
               <div className="mt-8 rounded-2xl bg-gray-50 border border-gray-100 p-6">
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
@@ -309,6 +321,17 @@ export default function Top10LeadGenerationContent() {
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-discussion.jpg" alt="B2B lead generation SDR team in the USA" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <InlineLeadCTA
+                eyebrow="Quote checkpoint"
+                ctaLocation="lead_generation_mid_article_cta"
+                leadOffer="B2B lead generation quote"
+                heading="Benchmark lead-gen vendors against a pipeline quote."
+                body="Request pricing for US-based SDRs, ABM plays, outbound calling, and appointment setting tied to your monthly pipeline goal."
+                primaryLabel="Request Lead-Gen Pricing"
+                serviceHref="/solutions/lead-generation-appointment-setting"
+                serviceLabel="Review lead generation"
+              />
 
               {/* How We Ranked */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How We Ranked the Top Lead Generation Companies</h2>
@@ -475,7 +498,7 @@ export default function Top10LeadGenerationContent() {
                 The <strong>American B2B lead generation industry</strong> is being reshaped by intent data, AI-assisted SDR workflows, and the shift to outcome-based pricing. SaaS, technology, professional services, and industrial B2B brands win when they partner with US-based lead-gen companies that can deliver trained domestic SDRs, multi-channel fluency, ABM sophistication, and transparent per-meeting reporting.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-funnel American demand-gen practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based sales-development operations</strong>, experienced domestic SDRs, deep Outreach / Salesloft / HubSpot / Salesforce integration, and flexible per-FTE, per-qualified-meeting, and outcome-based pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, or <Link href="/services/inside-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>, Contact Center USA is built for the B2B teams that win on pipeline.
+                Global Empire Corporation tops our 2026 ranking with its full-funnel American demand-gen practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based sales-development operations</strong>, experienced domestic SDRs, deep Outreach / Salesloft / HubSpot / Salesforce integration, and flexible per-FTE, per-qualified-meeting, and outcome-based pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, or <Link href="/services/inside-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>, Contact Center USA is built for the B2B teams that win on pipeline.
               </p>
 
               {/* CTA */}
@@ -484,9 +507,9 @@ export default function Top10LeadGenerationContent() {
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
                   Contact Center USA delivers US-based B2B lead generation, SDR-as-a-service, ABM execution, and appointment setting with native Outreach, Salesloft, HubSpot, and Salesforce integration. Get a free pipeline quote today.
                 </p>
-                <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
+                <LeadCTALink ctaLocation="lead_generation_bottom_cta" leadOffer="B2B lead generation quote" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free Lead Generation Quote <ArrowRight className="h-4 w-4" />
-                </Link>
+                </LeadCTALink>
               </div>
 
               {/* FAQ */}
@@ -510,7 +533,13 @@ export default function Top10LeadGenerationContent() {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 space-y-6">
-                <HeroContactForm />
+                <HeroContactForm
+                  ctaLocation="lead_generation_sidebar_form"
+                  leadOffer="B2B lead generation quote"
+                  title="Get a Lead Generation Quote"
+                  description="Tell us your ICP, meeting goal, and sales stack."
+                  submitLabel="Request Quote"
+                />
 
                 {/* Related articles */}
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

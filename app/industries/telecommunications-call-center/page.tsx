@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Telecom Call Center & Telecommunications BPO USA | Telecom Customer Service Outsourcing | Contact Center USA",
+  title: "Telecommunications Call Center | Contact Center USA",
   description:
-    "One of the best telecom call center and telecommunications BPO USA providers. Telecom customer service outsourcing for wireless, wireline, broadband, MVNO, cable, and MSO operators.",
+    "US-based telecommunications call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "telecom call center",
     "telecommunications bpo usa",

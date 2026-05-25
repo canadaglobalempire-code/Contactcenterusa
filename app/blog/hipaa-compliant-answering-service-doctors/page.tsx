@@ -37,9 +37,9 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: "HIPAA-Compliant Answering Service for Doctors: BAA, PHI, Triage & Cost (2026)",
+  title: "HIPAA Answering Service for Doctors",
   description:
-    "Practical 2026 buyer guide to HIPAA-compliant answering services for medical practices: BAA must-haves, PHI handling, nurse triage vs message-only, EHR integration, OCR risk, and real pricing.",
+    "Read the hipaa answering service for doctors guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "hipaa compliant answering service for doctors",
     "medical answering service hipaa",

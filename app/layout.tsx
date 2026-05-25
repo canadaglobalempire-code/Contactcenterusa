@@ -4,7 +4,12 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { MobileStickyCTA } from "@/components/shared/MobileStickyCTA";
-import { generateOrganizationSchema, generateLocalBusinessSchema } from "@/lib/schema";
+import {
+  generateLocalBusinessSchema,
+  generateOrganizationSchema,
+  generateServiceCatalogSchema,
+  generateWebSiteSchema,
+} from "@/lib/schema";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -15,7 +20,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://contactcenterusa.com"),
   verification: {
-    google: "Q8nqe1KtPCYANReH_fxQPK1EQsrnSpuUDKga_j0m7cc",
+    google: [
+      "Q8nqe1KtPCYANReH_fxQPK1EQsrnSpuUDKga_j0m7cc",
+      "JSWdLp8JtC2UjSUlethPvkCKwUQtUUWsE6Cfld2YDFQ",
+    ],
   },
   icons: {
     icon: "/favicon.ico",
@@ -26,7 +34,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: "Contact Center USA | US-Based Call Center Outsourcing Services",
-    template: "%s | Contact Center USA",
+    template: "%s",
   },
   description:
     "Looking for reliable US-based call center services? Contact Center USA offers 24/7 inbound & outbound support with dedicated agents. No contracts. Get a free quote today.",
@@ -106,7 +114,19 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateWebSiteSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
             __html: JSON.stringify(generateLocalBusinessSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateServiceCatalogSchema()),
           }}
         />
         <Navbar />

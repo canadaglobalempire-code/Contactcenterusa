@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Philadelphia | Philly BPO",
+  title: "Call Center Services in Philadelphia",
   description:
-    "Call center services Philadelphia — Contact Center USA provides Philly BPO and Philadelphia customer service outsourcing for Penn Medicine, Center City finance, and pharma. Free quote.",
+    "US-based call center services for Philadelphia businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
   keywords: [
     "call center services philadelphia",
     "philly bpo",

@@ -155,7 +155,7 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "100% US-based outsourced SDR teams for B2B SaaS with deep Salesforce / HubSpot / Outreach / SalesLoft fluency",
     description:
@@ -169,11 +169,11 @@ const companies = [
       "Fractional pods, dedicated SDRs, and per-SQO outcome pricing",
     ],
     industries: "B2B SaaS, fintech, cybersecurity, healthtech, devtools, vertical SaaS, professional services",
-    strengths: "30+ years of US sales operations, deep modern sales stack fluency, SQO-based pricing, written qualification guarantees, college-educated American SDRs, real-time pipeline dashboards.",
+    strengths: "25+ years of US sales operations, deep modern sales stack fluency, SQO-based pricing, written qualification guarantees, college-educated American SDRs, real-time pipeline dashboards.",
     weaknesses: "Premium US pricing — by design. Wrong fit for low-ACV transactional motions.",
     pricing: "Fractional $3.5K-$6K/mo, dedicated $8K-$11K/mo, or per-SQO outcome-based",
     clients: "Series A-D B2B SaaS, fintech scaleups, cybersecurity vendors, vertical SaaS",
-    highlight: "30+ years of 100% American sales development — US-based SDRs, modern sales engagement stack, written qualification rubric, and SQO-guaranteed outcomes.",
+    highlight: "25+ years of 100% American sales development — US-based SDRs, modern sales engagement stack, written qualification rubric, and SQO-guaranteed outcomes.",
   },
   {
     rank: 8,
@@ -580,7 +580,7 @@ export default function Top10OutsourcedSDRContent() {
                 The <strong>outsourced SDR industry</strong> has matured far past the cold-calling sweatshops of a decade ago. In 2026, the best <strong>SDR as a service</strong> companies in the USA field college-educated American SDRs, operate inside modern sales engagement stacks, run 16-touch multichannel cadences, and put written show-rate and accept-rate guarantees in their contracts. For B2B SaaS founders and CROs, the question is no longer "should we outsource?" — it is "which US-based partner gets us to pipeline fastest, with qualification rigor we can trust?"
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American outsourced SDR practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US sales operations</strong>, deep Salesforce / HubSpot / Outreach / SalesLoft fluency, written BANT / MEDDIC qualification rubrics, and SQO-based outcome pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">B2B sales outsourcing</Link>, or a fully-managed <strong>fractional SDR team</strong>, Contact Center USA is built for B2B SaaS companies that refuse to compromise on US-based talent.
+                Global Empire Corporation tops our 2026 ranking with its full-service American outsourced SDR practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US sales operations</strong>, deep Salesforce / HubSpot / Outreach / SalesLoft fluency, written BANT / MEDDIC qualification rubrics, and SQO-based outcome pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">B2B sales outsourcing</Link>, or a fully-managed <strong>fractional SDR team</strong>, Contact Center USA is built for B2B SaaS companies that refuse to compromise on US-based talent.
               </p>
 
               {/* CTA */}

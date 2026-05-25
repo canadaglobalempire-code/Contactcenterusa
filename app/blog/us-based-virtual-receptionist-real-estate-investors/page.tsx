@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "US-Based Virtual Receptionist for Real Estate Investors (2026 Guide)",
+  title: "Virtual Receptionist for Real Estate Investors",
   description:
-    "How REI wholesalers and flippers capture every motivated seller call with a US-based virtual receptionist — pre-qualification script, Podio/InvestorFuse integration, pricing.",
+    "Read the virtual receptionist for real estate investors guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "us based virtual receptionist for real estate investors",
     "real estate investor answering service",

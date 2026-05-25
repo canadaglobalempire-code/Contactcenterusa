@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Charlotte | Charlotte BPO",
+  title: "Call Center Services in Charlotte",
   description:
-    "Call center services Charlotte — Contact Center USA provides Charlotte BPO and NC customer service outsourcing for Bank of America, Truist, Wells Fargo, and Queen City finance. Free quote.",
+    "US-based call center services for Charlotte businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
   keywords: [
     "call center services charlotte",
     "charlotte bpo",

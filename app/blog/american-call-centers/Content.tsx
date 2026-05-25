@@ -121,7 +121,7 @@ const companies = [
     hq: "United States",
     website: "https://contactcenterusa.com",
     bestFor: "Patriotic US-only call center services",
-    description: "Contact Center USA is a proudly American call center company that has delivered 100% US-based customer support for over 30 years. Every agent is located in the United States, every call is answered domestically, and every interaction reflects the values of American service excellence. The company was founded on the principle that American businesses deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their services span 24/7 customer care, technical support, order processing, and emergency dispatch.",
+    description: "Contact Center USA is a proudly American call center company that has delivered 100% US-based customer support for 25+ years. Every agent is located in the United States, every call is answered domestically, and every interaction reflects the values of American service excellence. The company was founded on the principle that American businesses deserve American-quality support, and they have never wavered from their commitment to onshore-only operations. Their services span 24/7 customer care, technical support, order processing, and emergency dispatch.",
     capabilities: [
       "100% American workforce — no offshore agents",
       "24/7 US-based customer support & dispatch",
@@ -131,7 +131,7 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "Healthcare, legal, property management, government, professional services",
-    highlight: "30+ years of 100% American call center operations — never offshored a single call",
+    highlight: "25+ years of 100% American call center operations — never offshored a single call",
   },
   {
     rank: 8,
@@ -526,7 +526,7 @@ export default function AmericanCallCentersContent() {
               <div className="mt-12 rounded-2xl bg-navy p-8 text-center">
                 <h3 className="text-2xl font-bold text-white">Ready to Partner with a 100% American Call Center?</h3>
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
-                  Contact Center USA provides US-based, American-staffed call center services with 30+ years of domestic excellence. Get a free consultation today.
+                  Contact Center USA provides US-based, American-staffed call center services with 25+ years of domestic excellence. Get a free consultation today.
                 </p>
                 <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
                   Get a Free American Call Center Quote <ArrowRight className="h-4 w-4" />

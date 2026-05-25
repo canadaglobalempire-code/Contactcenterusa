@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Airlines Call Center & Airline BPO Services in USA | Contact Center USA",
+  title: "Airlines Call Center | Contact Center USA",
   description:
-    "US-based airlines call center and airline BPO services — reservations, irregular operations, loyalty, baggage, and 24/7 airline customer service outsourcing built for passenger airlines and travel partners.",
+    "US-based airlines call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "airlines call center",
     "airline bpo services",

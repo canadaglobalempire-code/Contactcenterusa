@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Telemarketing Services & Telemarketing BPO USA | Contact Center USA",
+  title: "Telemarketing Services | Contact Center USA",
   description:
-    "US-based telemarketing services, telemarketing BPO USA, and outbound telemarketing outsourcing. TCPA-compliant cold calling, lead qualification, market research, and campaign management.",
+    "US-based telemarketing services with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "telemarketing services",
     "telemarketing bpo usa",

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Customer Service Best Practices: 15 Rules for Excellence in 2026",
+  title: "Customer Service Best Practices",
   description:
-    "Master the 15 golden rules of customer service excellence in 2026. Includes empathy statements, the 3-to-11 rule, KPIs, omnichannel strategies, and actionable best practices for customer care teams.",
+    "Read the customer service best practices guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "customer service best practices",
     "customer care best practices",

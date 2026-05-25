@@ -145,7 +145,7 @@ export function buildTopNBlogFAQs(topic: string, topicShort: string) {
     },
     {
       question: `Which ${topicShort} company is best for small business vs enterprise?`,
-      answer: `For small business, B2B Appointment Setting (#6), Customer Communications Corp (#4), and Call Center Staffing (#5) offer affordable SMB-friendly contracts. For enterprise, Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10) deliver Fortune 500 scale. Contact Center USA (#7) serves both with flexible models, 30+ years of US-based operations, and SOC 2 Type II compliance.`,
+      answer: `For small business, B2B Appointment Setting (#6), Customer Communications Corp (#4), and Call Center Staffing (#5) offer affordable SMB-friendly contracts. For enterprise, Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10) deliver Fortune 500 scale. Contact Center USA (#7) serves both with flexible models, 25+ years of US-based operations, and SOC 2 Type II compliance.`,
     },
   ];
 }

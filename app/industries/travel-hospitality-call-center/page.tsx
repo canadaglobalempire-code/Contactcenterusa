@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Travel Hospitality Call Center & Hospitality BPO USA | Contact Center USA",
+  title: "Travel Hospitality Call Center | Contact Center USA",
   description:
-    "US-based travel hospitality call center and hospitality BPO USA services — hotel customer service outsourcing, reservations, concierge, loyalty, and 24/7 guest support for hotels, resorts, OTAs, and travel brands.",
+    "US-based travel hospitality call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "travel hospitality call center",
     "hospitality bpo usa",

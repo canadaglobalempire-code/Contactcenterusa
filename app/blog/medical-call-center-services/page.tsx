@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Medical Call Center Services: Complete Guide for Healthcare Providers",
+  title: "Medical Call Center Services Guide",
   description:
-    "Comprehensive guide to medical call center services for healthcare providers. Learn about HIPAA-compliant healthcare call centers, best practices, outsourcing benefits, technology, and how to choose the right provider.",
+    "Read the medical call center services guide guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "medical call center",
     "healthcare call center",

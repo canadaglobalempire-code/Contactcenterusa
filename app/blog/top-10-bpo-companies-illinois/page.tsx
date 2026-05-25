@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 BPO Companies in Illinois (2026 Rankings)",
+  title: "Top 10 BPO Companies in Illinois (2026)",
   description:
-    "Compare the top 10 BPO companies in Illinois for 2026. Best call center outsourcing partners for Chicago, Naperville, Aurora, Springfield, and Peoria — BIPA, ICRAA, IL-PIPA compliant, insurance + healthcare specialists.",
+    "Read the top 10 bpo companies in illinois guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "BPO companies Illinois",
     "best BPO companies in Illinois",

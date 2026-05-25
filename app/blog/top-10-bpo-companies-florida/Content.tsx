@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only Florida BPO with FTSA mastery, hurricane DR, and bilingual CX",
     description:
-      "Contact Center USA is the patriotic, 100% US-based BPO of choice for Florida buyers who refuse to compromise on FTSA compliance, hurricane resilience, or brand-voice fit. With more than 30 years of US-based contact center operations, the company runs Florida-aligned programs out of geographically distributed US sites, with native Spanish and Haitian Creole desks for Miami-Dade, FTSA-clean outbound dialers tuned to Fla. Stat. § 501.059, FIPA-aligned breach response under Fla. Stat. § 501.171, and a hurricane disaster recovery posture that scales 5-10x within 24 hours of landfall. Programs span Florida property insurance FNOL and claims, AdventHealth and Baptist-class health systems, Royal Caribbean-class cruise lines, Orlando theme-park hospitality, and Miami fintech — all delivered with US-only agents and dedicated brand-aligned teams. Integrations span Salesforce, Guidewire, Epic, Cerner, Zendesk, Genesys, Five9, and Twilio.",
+      "Contact Center USA is the patriotic, 100% US-based BPO of choice for Florida buyers who refuse to compromise on FTSA compliance, hurricane resilience, or brand-voice fit. With more than 25+ years of US-based contact center operations, the company runs Florida-aligned programs out of geographically distributed US sites, with native Spanish and Haitian Creole desks for Miami-Dade, FTSA-clean outbound dialers tuned to Fla. Stat. § 501.059, FIPA-aligned breach response under Fla. Stat. § 501.171, and a hurricane disaster recovery posture that scales 5-10x within 24 hours of landfall. Programs span Florida property insurance FNOL and claims, AdventHealth and Baptist-class health systems, Royal Caribbean-class cruise lines, Orlando theme-park hospitality, and Miami fintech — all delivered with US-only agents and dedicated brand-aligned teams. Integrations span Salesforce, Guidewire, Epic, Cerner, Zendesk, Genesys, Five9, and Twilio.",
     services: [
       "100% US-based agents — never offshored a single Florida contact",
       "FTSA-compliant outbound, consent capture, and DNC scrubbing",
@@ -169,11 +169,11 @@ const companies = [
       "Florida insurance FNOL, claims, healthcare, and cruise-line CX",
     ],
     industries: "Florida property insurance, health insurance, healthcare, hospitality, cruise lines, fintech, real estate",
-    strengths: "30+ years of US operations, FTSA + FIPA compliance, hurricane DR, bilingual depth, deep platform integrations, PCI DSS and HIPAA certified.",
+    strengths: "25+ years of US operations, FTSA + FIPA compliance, hurricane DR, bilingual depth, deep platform integrations, PCI DSS and HIPAA certified.",
     weaknesses: "Premium US pricing relative to Latin American nearshore — offset by FTSA exposure management and storm CSAT lift.",
     pricing: "Hourly ($18-$32), per-contact ($1.50-$4), or blended outcome-based",
     clients: "Florida property insurers, health plans, cruise lines, hospitality brands, Miami fintech firms",
-    highlight: "30+ years of 100% American CX — never offshored a single contact, even during a Cat-5 landfall.",
+    highlight: "25+ years of 100% American CX — never offshored a single contact, even during a Cat-5 landfall.",
   },
   {
     rank: 8,
@@ -565,7 +565,7 @@ export default function Top10BPOFloridaContent() {
                 The <strong>Florida BPO market</strong> is being reshaped by FTSA litigation pressure, the Miami fintech boom, hurricane-driven CX surge demand, and aggressive Latin American nearshore competition. Florida buyers — property insurers, health plans, theme parks, cruise lines, fintech firms, real-estate investors, and retiree-services brands — win when they partner with a BPO that masters the Florida Telephone Solicitation Act, operates a defensible hurricane disaster-recovery plan, fields Miami-Dade-grade Spanish bilingual coverage, and offers a clean nearshore complement to onshore delivery.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 Florida ranking with end-to-end FTSA-compliant, hurricane-ready, bilingual CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice for Florida buyers — combining <strong>30+ years of US-based contact center operations</strong>, deep FTSA mastery, FIPA-aligned data handling, hurricane disaster recovery, native Spanish and Haitian Creole desks, and dedicated brand-aligned teams for property insurance, healthcare, hospitality, cruise lines, and Miami fintech. Whether you need <Link href="/call-center-services-jacksonville" className="text-red font-semibold hover:underline">Jacksonville call center services</Link>, FTSA-clean Miami outbound, or hurricane-ready statewide insurance FNOL, Contact Center USA is built for the brands that can't afford a single Florida misstep.
+                Global Empire Corporation tops our 2026 Florida ranking with end-to-end FTSA-compliant, hurricane-ready, bilingual CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice for Florida buyers — combining <strong>25+ years of US-based contact center operations</strong>, deep FTSA mastery, FIPA-aligned data handling, hurricane disaster recovery, native Spanish and Haitian Creole desks, and dedicated brand-aligned teams for property insurance, healthcare, hospitality, cruise lines, and Miami fintech. Whether you need <Link href="/call-center-services-jacksonville" className="text-red font-semibold hover:underline">Jacksonville call center services</Link>, FTSA-clean Miami outbound, or hurricane-ready statewide insurance FNOL, Contact Center USA is built for the brands that can't afford a single Florida misstep.
               </p>
 
               {/* CTA */}

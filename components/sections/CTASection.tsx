@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin, Clock } from "lucide-react";
-import { siteConfig } from "@/lib/seo-config";
+import { ArrowRight, MapPin, Clock } from "lucide-react";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 export function CTASection() {
   return (
@@ -60,13 +60,14 @@ export function CTASection() {
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Link
-                href="/contact"
+              <LeadCTALink
+                ctaLocation="homepage_cta_section"
+                leadOffer="Homepage call center quote"
                 className="inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark"
               >
                 Get Your Free Quote
                 <ArrowRight className="h-4 w-4" />
-              </Link>
+              </LeadCTALink>
               <Link
                 href="/services"
                 className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-8 py-4 text-[15px] font-semibold text-navy transition-all hover:border-gray-300 hover:bg-gray-50"

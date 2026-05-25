@@ -160,11 +160,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only FDCPA-compliant debt collection services",
     description:
-      "Contact Center USA is a proudly American debt collection company that has delivered 100% US-based recovery services for over 30 years. Every agent is located in the United States, every call is made domestically, and every interaction reflects the compliance-first values of American service excellence. The company was founded on the principle that American businesses deserve American-quality collections, and they have never wavered from their commitment to onshore-only operations. Their services span first-party and third-party collections, healthcare AR, early-stage delinquency, late-stage charge-off recovery, and Regulation F omnichannel engagement — all built on an FDCPA, TCPA, CFPB, PCI DSS, SOC 2 Type II, and HIPAA-aligned foundation.",
+      "Contact Center USA is a proudly American debt collection company that has delivered 100% US-based recovery services for 25+ years. Every agent is located in the United States, every call is made domestically, and every interaction reflects the compliance-first values of American service excellence. The company was founded on the principle that American businesses deserve American-quality collections, and they have never wavered from their commitment to onshore-only operations. Their services span first-party and third-party collections, healthcare AR, early-stage delinquency, late-stage charge-off recovery, and Regulation F omnichannel engagement — all built on an FDCPA, TCPA, CFPB, PCI DSS, SOC 2 Type II, and HIPAA-aligned foundation.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based first-party & third-party collections",
@@ -174,11 +174,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "Healthcare, financial services, utilities, government receivables, subscription & SaaS",
-    strengths: "30+ years of regulated call center operations, 100% US-based agents, PCI DSS & SOC 2 Type II, transparent liquidation analytics.",
+    strengths: "25+ years of regulated call center operations, 100% US-based agents, PCI DSS & SOC 2 Type II, transparent liquidation analytics.",
     weaknesses: "Premium US pricing — offset by higher right-party contact rates, cleaner compliance, and lower complaint volume.",
     pricing: "Contingency (18-35%), hourly ($28-$45 US), or outcome-based models",
     clients: "Mid-market lenders, regional banks, healthcare systems, utilities, SaaS and subscription businesses",
-    highlight: "30+ years of 100% American debt collection operations — never offshored a single call.",
+    highlight: "25+ years of 100% American debt collection operations — never offshored a single call.",
   },
   {
     rank: 8,
@@ -486,7 +486,7 @@ export default function Top10DebtCollectionBPOContent() {
                 The <strong>US debt collection BPO industry</strong> in 2026 is bifurcated: a tier of compliance-first, technology-forward American agencies is pulling away from legacy collectors that still rely on aggressive, voice-only playbooks. Creditors that partner with the compliance-first tier recover more, spend less on litigation, and preserve customer relationships for future revenue.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation leads our 2026 ranking with full-service American collections operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of regulated call center operations</strong>, 100% US-based agents trained in FDCPA and Regulation F, PCI DSS and SOC 2 Type II compliance, and transparent liquidation analytics. Whether you need <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">first-party or third-party debt collection outsourcing</Link>, <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare AR recovery</Link>, or <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services collections</Link>, Contact Center USA is built for creditors that refuse to trade compliance for velocity.
+                Global Empire Corporation leads our 2026 ranking with full-service American collections operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of regulated call center operations</strong>, 100% US-based agents trained in FDCPA and Regulation F, PCI DSS and SOC 2 Type II compliance, and transparent liquidation analytics. Whether you need <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">first-party or third-party debt collection outsourcing</Link>, <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare AR recovery</Link>, or <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services collections</Link>, Contact Center USA is built for creditors that refuse to trade compliance for velocity.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 As regulators tighten oversight and consumers demand more respectful recovery, the right collection partner is not just an operational decision — it is a risk-management decision. Choose an American agency that protects your brand, your customers, and your bottom line.

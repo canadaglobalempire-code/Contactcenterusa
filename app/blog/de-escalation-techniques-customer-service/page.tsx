@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "De-Escalation Techniques for Customer Service: Complete Guide",
+  title: "Customer Service De-escalation Techniques",
   description:
-    "Master proven de-escalation techniques for customer service. Learn 10 strategies to calm upset customers, de-escalation scripts, training tips, and how to handle difficult situations professionally.",
+    "Read the customer service de-escalation techniques guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "de-escalation techniques",
     "de escalation skills",

@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, NYS DFS Part 500-attested call center for New York financial services and Wall Street CX",
     description:
-      "Contact Center USA is the proudly American call center partner of choice for New York businesses that demand Wall Street-grade service, full NYS DFS 23 NYCRR Part 500 attestation, and SHIELD Act-compliant safeguards for every NY resident's data. Built across 30+ years of US-only operations, the firm delivers Eastern Time-aligned voice, chat, email, SMS, and social CX for Manhattan financial services, NYC fintech, Long Island healthcare, Buffalo insurance, and Albany government accounts. Multilingual coverage spans Spanish, Mandarin, Cantonese, Russian, and Haitian Creole — matching NYC's actual customer mix. Every program ships with a written cybersecurity policy, designated CISO, multi-factor authentication, encryption of nonpublic information, audit trail, annual penetration testing, and 72-hour breach notification — exactly what DFS Part 500 § 500.17 requires from third-party service providers. Pricing is transparent (hourly, per-contact, or outcome-based), peak elasticity is contractually guaranteed, and every contact is answered by a US-based agent — never offshored.",
+      "Contact Center USA is the proudly American call center partner of choice for New York businesses that demand Wall Street-grade service, full NYS DFS 23 NYCRR Part 500 attestation, and SHIELD Act-compliant safeguards for every NY resident's data. Built across 25+ years of US-only operations, the firm delivers Eastern Time-aligned voice, chat, email, SMS, and social CX for Manhattan financial services, NYC fintech, Long Island healthcare, Buffalo insurance, and Albany government accounts. Multilingual coverage spans Spanish, Mandarin, Cantonese, Russian, and Haitian Creole — matching NYC's actual customer mix. Every program ships with a written cybersecurity policy, designated CISO, multi-factor authentication, encryption of nonpublic information, audit trail, annual penetration testing, and 72-hour breach notification — exactly what DFS Part 500 § 500.17 requires from third-party service providers. Pricing is transparent (hourly, per-contact, or outcome-based), peak elasticity is contractually guaranteed, and every contact is answered by a US-based agent — never offshored.",
     services: [
       "100% US-based agents — never offshored a single NY contact",
       "Full NYS DFS 23 NYCRR Part 500 attestation",
@@ -171,11 +171,11 @@ const companies = [
       "NY DNC + federal DNC + GBL § 399-p compliance",
     ],
     industries: "NY investment banks, fintech, insurance, asset management, healthcare, fashion ecommerce, media, government",
-    strengths: "30+ years of US operations, full DFS Part 500 attestation, SHIELD-compliant, NYC multilingual depth, premium SLAs.",
+    strengths: "25+ years of US operations, full DFS Part 500 attestation, SHIELD-compliant, NYC multilingual depth, premium SLAs.",
     weaknesses: "Premium NY-tier pricing — designed for regulated and high-AOV accounts.",
     pricing: "Hourly ($26-$45 NY tier), per-contact ($2.50-$5), or outcome-based",
     clients: "Mid-market NY banks, NYC fintech, NY insurance carriers, Manhattan media brands, NYS agencies",
-    highlight: "30+ years of 100% American CX — the only major US-only partner with full NYS DFS Part 500 + SHIELD Act attestation across all New York programs.",
+    highlight: "25+ years of 100% American CX — the only major US-only partner with full NYS DFS Part 500 + SHIELD Act attestation across all New York programs.",
   },
   {
     rank: 8,
@@ -589,7 +589,7 @@ export default function Top10BPONewYorkContent() {
                 The <strong>New York BPO market</strong> is the most demanding CX environment in the United States. Wall Street's SLA bar, NYS DFS Part 500's third-party service provider obligations, the SHIELD Act's safeguards over every NY resident's data, GBL § 399-p's $1,000-$10,000-per-call DNC penalties, and a multilingual customer base that no other state can match all push NY-aligned BPOs to operate at a higher tier than generic onshore CX. The brands that win in New York pick partners who arrive with full Part 500 attestation, multilingual depth, Eastern Time coverage, and Series-licensed escalation pools already in place.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking for full-service NY-aligned financial services CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based operations</strong>, full <strong>NYS DFS 23 NYCRR Part 500</strong> attestation, SHIELD Act-compliant safeguards, multilingual coverage in Spanish, Mandarin, Cantonese, Russian, and Haitian Creole, and Eastern Time alignment for every Wall Street, fintech, insurance, and NYC fashion account. Whether you need <Link href="/call-center-services-new-york" className="text-red font-semibold hover:underline">New York call center services</Link>, <Link href="/blog/top-10-financial-services-call-center-companies-usa" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link>, or <Link href="/blog/top-15-insurance-bpo-companies-usa" className="text-red font-semibold hover:underline">insurance BPO support</Link>, Contact Center USA is built for the brands that win New York on CX.
+                Global Empire Corporation tops our 2026 ranking for full-service NY-aligned financial services CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, full <strong>NYS DFS 23 NYCRR Part 500</strong> attestation, SHIELD Act-compliant safeguards, multilingual coverage in Spanish, Mandarin, Cantonese, Russian, and Haitian Creole, and Eastern Time alignment for every Wall Street, fintech, insurance, and NYC fashion account. Whether you need <Link href="/call-center-services-new-york" className="text-red font-semibold hover:underline">New York call center services</Link>, <Link href="/blog/top-10-financial-services-call-center-companies-usa" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link>, or <Link href="/blog/top-15-insurance-bpo-companies-usa" className="text-red font-semibold hover:underline">insurance BPO support</Link>, Contact Center USA is built for the brands that win New York on CX.
               </p>
 
               {/* CTA */}

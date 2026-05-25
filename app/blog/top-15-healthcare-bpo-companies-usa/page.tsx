@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 15 Healthcare BPO Companies in the USA (2026 Rankings)",
+  title: "Top 15 Healthcare BPO (2026)",
   description:
-    "Discover the best healthcare BPO companies in the USA for 2026. Compare top HIPAA-compliant healthcare call center outsourcing providers, medical billing outsourcing companies, patient support services, and healthcare revenue cycle outsourcing companies ranked by performance, compliance, and technology.",
+    "Read the top 15 healthcare bpo guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "healthcare BPO companies",
     "best healthcare BPO companies in USA",

@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, omnichannel real estate ISA and lead qualification with 5-minute speed-to-lead",
     description:
-      "Contact Center USA is a proudly American real estate call center company that has delivered 100% US-based ISA and lead qualification services for over 30 years. Every agent is located in the United States, every lead is answered domestically, and every interaction reflects the professionalism that American homebuyers and sellers expect. Purpose-built for residential brokerages, real estate teams, iBuyers, investors, and property managers, Contact Center USA handles the full real estate lead lifecycle — inbound buyer and seller inquiries, ISA qualification, motivated seller outreach, showing coordination, transaction coordination support, and 24/7 after-hours answering. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb spring-selling surges, and every program is supported by 5-minute speed-to-lead SLAs, real-time CRM push to Follow Up Boss, kvCORE, Chime, BoomTown, and Salesforce, AI-powered lead scoring, and bilingual English/Spanish coverage.",
+      "Contact Center USA is a proudly American real estate call center company that has delivered 100% US-based ISA and lead qualification services for 25+ years. Every agent is located in the United States, every lead is answered domestically, and every interaction reflects the professionalism that American homebuyers and sellers expect. Purpose-built for residential brokerages, real estate teams, iBuyers, investors, and property managers, Contact Center USA handles the full real estate lead lifecycle — inbound buyer and seller inquiries, ISA qualification, motivated seller outreach, showing coordination, transaction coordination support, and 24/7 after-hours answering. Their infrastructure scales rapidly (2-4x capacity within 30 days) to absorb spring-selling surges, and every program is supported by 5-minute speed-to-lead SLAs, real-time CRM push to Follow Up Boss, kvCORE, Chime, BoomTown, and Salesforce, AI-powered lead scoring, and bilingual English/Spanish coverage.",
     services: [
       "100% American workforce — no offshore agents",
       "24/7 US-based real estate answering and ISA service",
@@ -169,11 +169,11 @@ const companies = [
       "Patriotic US-only service guarantee",
     ],
     industries: "Residential brokerages, real estate teams, iBuyers, real estate investors, property management, new construction, luxury residential",
-    strengths: "30+ years of US operations, MLS-trained ISAs, rapid scaling, deep CRM integrations, 5-minute speed-to-lead SLA, TCPA-compliant outbound, bilingual coverage.",
+    strengths: "25+ years of US operations, MLS-trained ISAs, rapid scaling, deep CRM integrations, 5-minute speed-to-lead SLA, TCPA-compliant outbound, bilingual coverage.",
     weaknesses: "Premium US pricing — offset by higher appointment-set rates and lead-to-close conversion.",
     pricing: "Hourly ($22-$40 US), per-qualified-lead ($18-$55), or blended outcome-based",
     clients: "Mid-market brokerages, top-producing teams, investor networks, property management firms, Follow Up Boss and kvCORE power users",
-    highlight: "30+ years of 100% American real estate lead qualification — never offshored a single lead, backed by a 5-minute speed-to-lead SLA.",
+    highlight: "25+ years of 100% American real estate lead qualification — never offshored a single lead, backed by a 5-minute speed-to-lead SLA.",
   },
   {
     rank: 8,
@@ -475,7 +475,7 @@ export default function Top10RealEstateCallCenterContent() {
                 The <strong>American real estate call center industry</strong> is being reshaped by AI-driven SMS, outcome-based pricing, and the realization that 5-minute speed-to-lead is non-negotiable. Brokerages, teams, iBuyers, and investors win when they partner with US-based outsourcers that can answer every lead in minutes, integrate natively with modern real estate CRMs, and deliver MLS-trained ISAs at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American real estate ISA practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based operations</strong>, a 5-minute speed-to-lead SLA, deep Follow Up Boss / kvCORE / Chime / BoomTown / Salesforce integration, TCPA-compliant motivated seller outreach, and flexible per-qualified-lead pricing. Whether you need <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate lead qualification</Link>, <Link href="/services/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound answering</Link>, or <Link href="/services/outbound-telemarketing" className="text-red font-semibold hover:underline">motivated seller outbound</Link>, Contact Center USA is built for the brokerages and investors that convert more leads.
+                Global Empire Corporation tops our 2026 ranking with its full-service American real estate ISA practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, a 5-minute speed-to-lead SLA, deep Follow Up Boss / kvCORE / Chime / BoomTown / Salesforce integration, TCPA-compliant motivated seller outreach, and flexible per-qualified-lead pricing. Whether you need <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate lead qualification</Link>, <Link href="/services/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound answering</Link>, or <Link href="/services/outbound-telemarketing" className="text-red font-semibold hover:underline">motivated seller outbound</Link>, Contact Center USA is built for the brokerages and investors that convert more leads.
               </p>
 
               {/* CTA */}

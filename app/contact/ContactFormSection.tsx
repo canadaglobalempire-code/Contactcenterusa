@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle, Lock, Phone, Mail, MapPin, Clock } from "lucide-react";
-import { siteConfig } from "@/lib/seo-config";
+import { ArrowRight, CheckCircle, Lock, MapPin, Clock } from "lucide-react";
+import {
+  appendLeadAttribution,
+  SPLITFORMS_ACCESS_KEY,
+  SPLITFORMS_ENDPOINT,
+  trackLeadEvent,
+} from "@/lib/lead-tracking";
 
 const serviceTypes = [
   "Inbound",
@@ -36,16 +41,26 @@ export function ContactFormSection() {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "abaffe957645499b9c3bf360f0bc7661");
+    formData.set("access_key", SPLITFORMS_ACCESS_KEY);
+    appendLeadAttribution(formData, {
+      ctaLocation: "contact_page_form",
+      leadOffer: "General call center quote",
+    });
 
     try {
-      const response = await fetch("https://splitforms.com/api/submit", {
+      const response = await fetch(SPLITFORMS_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,
       });
       const data = await response.json();
       if (response.ok && data.success) {
+        trackLeadEvent("lead_form_submit", {
+          cta_location: formData.get("cta_location")?.toString(),
+          form_name: "contact_page_form",
+          lead_offer: formData.get("lead_offer")?.toString(),
+          source_page: formData.get("source_page")?.toString(),
+        });
         setIsSubmitted(true);
       } else {
         alert("Error: " + (data.message || "Something went wrong. Please try again."));
@@ -91,6 +106,10 @@ export function ContactFormSection() {
             ) : (
               <form onSubmit={handleSubmit} className="mt-8 space-y-6">
                 <input type="hidden" name="subject" value="New Contact Form Submission — ContactCenterUSA.com" />
+                <input type="hidden" name="source_page" />
+                <input type="hidden" name="cta_location" />
+                <input type="hidden" name="lead_offer" />
+                <input type="hidden" name="submitted_at" />
 
                 {/* Name & Company */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">

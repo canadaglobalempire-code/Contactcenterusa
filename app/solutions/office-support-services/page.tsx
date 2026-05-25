@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Office Support Services USA | Office Admin BPO USA | Contact Center USA",
+  title: "Office Support Services | Contact Center USA",
   description:
-    "US-based office support services and administrative outsourcing BPO. Office admin BPO USA delivering virtual receptionist, data entry, document management, and scheduling at 40% less cost with 99.8% accuracy.",
+    "US-based office support services with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [
     "office support services",
     "administrative outsourcing bpo",

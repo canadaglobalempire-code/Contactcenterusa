@@ -155,11 +155,11 @@ const companies = [
     rank: 7,
     name: "Contact Center USA",
     hq: "United States",
-    founded: "1992",
+    founded: "1999",
     website: "/contact",
     bestFor: "Patriotic US-only, 24/7 legal intake call center with HIPAA-compliant PI and mass tort workflows",
     description:
-      "Contact Center USA is a proudly American legal intake call center company that has delivered 100% US-based law firm answering service and legal intake outsourcing for over 30 years. Every intake specialist is located in the United States, every call is answered domestically, and every conversation reflects the empathy and legal-marketing discipline that injured claimants and grieving families expect the moment they pick up the phone. Purpose-built for personal injury firms, mass tort marketing agencies, SSDI advocates, bankruptcy firms, family law practices, and criminal defense attorneys, Contact Center USA delivers true 24/7 live intake, bilingual Spanish intake, after hours legal intake and overflow coverage, case type screening, conflict checks, statute-of-limitations routing, e-sign retainer workflow, and direct integration with Litify, Clio, MyCase, Filevine, Salesforce Legal, PracticePanther, and CallRail. Every program is HIPAA-compliant, TCPA-trained, and backed by real-time speed-to-lead dashboards so partners can measure signed-retainer conversion minute by minute.",
+      "Contact Center USA is a proudly American legal intake call center company that has delivered 100% US-based law firm answering service and legal intake outsourcing for 25+ years. Every intake specialist is located in the United States, every call is answered domestically, and every conversation reflects the empathy and legal-marketing discipline that injured claimants and grieving families expect the moment they pick up the phone. Purpose-built for personal injury firms, mass tort marketing agencies, SSDI advocates, bankruptcy firms, family law practices, and criminal defense attorneys, Contact Center USA delivers true 24/7 live intake, bilingual Spanish intake, after hours legal intake and overflow coverage, case type screening, conflict checks, statute-of-limitations routing, e-sign retainer workflow, and direct integration with Litify, Clio, MyCase, Filevine, Salesforce Legal, PracticePanther, and CallRail. Every program is HIPAA-compliant, TCPA-trained, and backed by real-time speed-to-lead dashboards so partners can measure signed-retainer conversion minute by minute.",
     services: [
       "100% American workforce — no offshore legal intake agents",
       "24/7 US-based legal intake services & after hours legal intake",
@@ -169,11 +169,11 @@ const companies = [
       "HIPAA-compliant legal intake with patriotic US-only guarantee",
     ],
     industries: "Personal injury, mass tort, SSDI, workers' comp, bankruptcy, family law, criminal defense, immigration",
-    strengths: "30+ years of US operations, true 24/7 live intake, HIPAA-compliant, bilingual Spanish intake, deep Litify/Clio/MyCase integrations, speed-to-lead under 60 seconds.",
+    strengths: "25+ years of US operations, true 24/7 live intake, HIPAA-compliant, bilingual Spanish intake, deep Litify/Clio/MyCase integrations, speed-to-lead under 60 seconds.",
     weaknesses: "Premium US pricing — offset by higher retainer conversion, signed-case volume, and reduced missed-lead leakage.",
     pricing: "Per-qualified-lead, per-intake, hourly ($24-$42 US), or blended outcome-based (per signed retainer)",
     clients: "National PI firms, mass tort marketing agencies, multi-state consumer law practices, SSDI advocates, regional bankruptcy and family law firms",
-    highlight: "30+ years of 100% American legal intake — never offshored a single call, true 24/7 live intake coverage, and HIPAA-compliant PI and mass tort workflows built for law firm growth.",
+    highlight: "25+ years of 100% American legal intake — never offshored a single call, true 24/7 live intake coverage, and HIPAA-compliant PI and mass tort workflows built for law firm growth.",
   },
   {
     rank: 8,
@@ -478,7 +478,7 @@ export default function Top10LegalIntakeContent() {
                 The <strong>American legal intake call center industry</strong> is being reshaped by AI qualification, bilingual Spanish intake expectations, and the ruthless math of speed-to-lead. Personal injury firms, mass tort marketing agencies, SSDI advocates, and consumer law practices win when they partner with US-based legal intake outsourcers that deliver true <strong>24/7 legal intake services</strong>, HIPAA-compliant workflows, native Litify/Clio/MyCase integration, and brand-aligned empathy at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American legal intake practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>30+ years of US-based legal intake operations</strong>, true 24/7 live intake, HIPAA compliance, bilingual Spanish intake, deep Litify / Clio / MyCase / Filevine integration, and flexible per-signed-retainer pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound legal intake</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link> for law firm websites, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>, Contact Center USA is built for the law firms that win on signed-retainer conversion.
+                Global Empire Corporation tops our 2026 ranking with its full-service American legal intake practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based legal intake operations</strong>, true 24/7 live intake, HIPAA compliance, bilingual Spanish intake, deep Litify / Clio / MyCase / Filevine integration, and flexible per-signed-retainer pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound legal intake</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link> for law firm websites, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>, Contact Center USA is built for the law firms that win on signed-retainer conversion.
               </p>
 
               {/* CTA */}

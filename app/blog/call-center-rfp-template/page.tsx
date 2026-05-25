@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "How to Write a Call Center RFP (Free Template + Checklist) — 2026",
+  title: "Call Center RFP Template and Checklist",
   description:
-    "Write a call center RFP that gets apples-to-apples vendor proposals. Free 25-section RFP template, scoring rubric, and the exact questions top BPO buyers ask in 2026.",
+    "Read the call center rfp template and checklist guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/call-center-rfp-template" },
 };
 

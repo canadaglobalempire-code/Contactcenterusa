@@ -37,9 +37,9 @@ const FAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: "After-Hours Answering Service for HVAC Companies: Stop Losing $400+ Jobs",
+  title: "After-Hours Answering Service for HVAC",
   description:
-    "How HVAC contractors stop losing $400+ jobs to voicemail after 5pm. Real cost math, ServiceTitan/Housecall Pro/Jobber integrations, triage scripts, pricing.",
+    "Read the after-hours answering service for hvac guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "after hours answering service for hvac companies",
     "24/7 answering service for hvac",

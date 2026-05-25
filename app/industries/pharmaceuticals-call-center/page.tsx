@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Pharmaceutical Call Center USA | Pharma BPO Services | Pharmaceutical Customer Service Outsourcing",
+  title: "Pharmaceuticals Call Center | Contact Center USA",
   description:
-    "US-based pharmaceutical call center and pharma BPO services. FDA-compliant patient support, adverse event reporting, HCP lines, and pharmaceutical customer service outsourcing with HIPAA certification.",
+    "US-based pharmaceuticals call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
   keywords: [
     "pharmaceutical call center",
     "pharma bpo services",

@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services Seattle | Seattle BPO Services",
+  title: "Call Center Services in Seattle",
   description:
-    "Call center services Seattle — Contact Center USA delivers Seattle BPO services and PNW customer service outsourcing for Amazon, Microsoft, Boeing, and Pacific Northwest businesses. Free quote.",
+    "US-based call center services for Seattle businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
   keywords: [
     "call center services seattle",
     "seattle bpo services",

@@ -16,6 +16,12 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { generateFAQSchema } from "@/lib/schema";
+import {
+  appendLeadAttribution,
+  SPLITFORMS_ACCESS_KEY,
+  SPLITFORMS_ENDPOINT,
+  trackLeadEvent,
+} from "@/lib/lead-tracking";
 
 const contactSchema = z.object({
   fullName: z.string().min(2, "Name is required"),
@@ -79,22 +85,32 @@ export function FAQSection() {
 
   const onSubmit = async (data: ContactFormData) => {
     const formData = new FormData();
-    formData.append("access_key", "abaffe957645499b9c3bf360f0bc7661");
+    formData.set("access_key", SPLITFORMS_ACCESS_KEY);
     formData.append("subject", "Homepage FAQ Form Inquiry — ContactCenterUSA.com");
     formData.append("name", data.fullName);
     formData.append("company", data.company);
     formData.append("email", data.email);
     formData.append("phone", data.phone);
     formData.append("message", data.message || "");
+    appendLeadAttribution(formData, {
+      ctaLocation: "homepage_faq_form",
+      leadOffer: "Homepage call center quote",
+    });
 
     try {
-      const response = await fetch("https://splitforms.com/api/submit", {
+      const response = await fetch(SPLITFORMS_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,
       });
       const result = await response.json();
       if (response.ok && result.success) {
+        trackLeadEvent("lead_form_submit", {
+          cta_location: formData.get("cta_location")?.toString(),
+          form_name: "homepage_faq_form",
+          lead_offer: formData.get("lead_offer")?.toString(),
+          source_page: formData.get("source_page")?.toString(),
+        });
         setIsSubmitted(true);
       } else {
         alert("Error: " + (result.message || "Something went wrong. Please try again."));

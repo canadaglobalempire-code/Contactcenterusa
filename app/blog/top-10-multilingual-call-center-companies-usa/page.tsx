@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 Multilingual Call Center Companies in USA (2026)",
+  title: "Top 10 Multilingual Call Center (2026)",
   description:
-    "Compare the top 10 multilingual call center companies in the USA for 2026. Ranked by bilingual Spanish support, multi-language coverage, CAIR compliance, and Hispanic market reach — covering interpretation, global CX, and foreign language outsourcing.",
+    "Read the top 10 multilingual call center guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   keywords: [
     "multilingual call center companies",
     "bilingual call center usa",

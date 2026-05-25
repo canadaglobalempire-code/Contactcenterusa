@@ -94,7 +94,7 @@ export function Hero2() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="mt-6 sm:mt-8 text-xs sm:text-sm font-medium text-white/60 px-2"
           >
-            Over 30 years of experience across multiple industries
+            25+ years of experience across multiple industries
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

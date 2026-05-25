@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Center Services San Antonio | San Antonio BPO",
+  title: "Call Center Services in San Antonio",
   description:
-    "Call center services San Antonio — Contact Center USA provides San Antonio BPO and Texas call center outsourcing with bilingual English/Spanish agents for military, healthcare, and tourism.",
+    "US-based call center services for San Antonio businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
   keywords: [
     "call center services san antonio",
     "san antonio bpo",

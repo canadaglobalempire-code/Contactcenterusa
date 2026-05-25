@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "How to Choose the Right Call Center Outsourcing Partner",
+  title: "How to Choose a Call Center Partner",
   description:
-    "A structured framework for evaluating and selecting the best call center outsourcing partner. Covers key criteria, essential questions, red flags, evaluation checklists, and technology requirements for 2026.",
+    "Read the how to choose a call center partner guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
   alternates: { canonical: "/blog/how-to-choose-call-center-partner" },
 };
 

@@ -1,15 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from "@/components/ui/accordion";
+import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const categories = ["General", "Pricing", "Services", "Compliance", "Getting Started"] as const;
 type Category = (typeof categories)[number];
@@ -24,7 +17,7 @@ const faqData: Record<Category, FAQ[]> = {
     {
       question: "What is Contact Center USA?",
       answer:
-        "Contact Center USA is a premier US-based call center outsourcing company that provides professional customer service, technical support, and sales solutions. We partner with businesses of all sizes to deliver exceptional customer experiences through our team of highly trained, domestic agents. With over 30 years of industry experience, we have built a reputation for reliability, quality, and measurable results.",
+        "Contact Center USA is a premier US-based call center outsourcing company that provides professional customer service, technical support, and sales solutions. We partner with businesses of all sizes to deliver exceptional customer experiences through our team of highly trained, domestic agents. With 25+ years of industry experience, we have built a reputation for reliability, quality, and measurable results.",
     },
     {
       question: "Are your agents really based in the United States?",
@@ -34,7 +27,7 @@ const faqData: Record<Category, FAQ[]> = {
     {
       question: "How long has Contact Center USA been in business?",
       answer:
-        "Contact Center USA has been providing professional call center outsourcing services for over 30 years. Throughout our history, we have served thousands of clients across diverse industries, continuously evolving our technology and training programs to stay ahead of industry trends. Our decades of experience give us deep expertise in handling complex customer interactions efficiently and professionally.",
+        "Contact Center USA has been providing professional call center outsourcing services for 25+ years. Throughout our history, we have served thousands of clients across diverse industries, continuously evolving our technology and training programs to stay ahead of industry trends. Our decades of experience give us deep expertise in handling complex customer interactions efficiently and professionally.",
     },
     {
       question: "What industries do you serve?",
@@ -175,8 +168,6 @@ function generateFAQSchema() {
 }
 
 export function FAQPageContent() {
-  const [activeCategory, setActiveCategory] = useState<Category>("General");
-
   return (
     <>
       <script
@@ -218,56 +209,79 @@ export function FAQPageContent() {
         </div>
       </section>
 
-      {/* Category Tabs + FAQ Accordion */}
+      {/* FAQ Answers */}
       <section className="bg-bg-alt py-20 lg:py-28">
-        <div className="mx-auto max-w-4xl px-5 lg:px-8">
-          {/* Category Tabs */}
+        <div className="mx-auto max-w-[1200px] px-5 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-12 flex flex-wrap justify-center gap-3"
+            className="mb-12 text-center"
           >
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                aria-label={cat}
-                className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all ${
-                  activeCategory === cat
-                    ? "bg-navy text-white shadow-lg"
-                    : "bg-white text-text-muted hover:bg-navy/5 hover:text-navy"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            <span className="text-xs font-semibold uppercase tracking-widest text-red">
+              Buyer Answers
+            </span>
+            <h2 className="mt-3 text-3xl font-bold text-navy">
+              Call Center Outsourcing Questions by Topic
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-700">
+              These answers cover the questions buyers usually ask before
+              requesting a call center outsourcing quote: pricing, services,
+              compliance, staffing, reporting, setup, and contract flexibility.
+            </p>
           </motion.div>
 
-          {/* Accordion */}
-          <motion.div
-            key={activeCategory}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Accordion className="space-y-4">
-              {faqData[activeCategory].map((faq, index) => (
-                <AccordionItem
-                  key={index}
-                  className="rounded-xl border border-border bg-white px-6 shadow-sm"
+          <div className="space-y-12">
+            {categories.map((category) => (
+              <section key={category} aria-labelledby={`faq-${category.toLowerCase().replace(/\s+/g, "-")}`}>
+                <h2
+                  id={`faq-${category.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="text-2xl font-bold text-navy"
                 >
-                  <AccordionTrigger className="py-5 text-base font-semibold text-text-dark">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-text-muted leading-relaxed">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </motion.div>
+                  {category}
+                </h2>
+                <div className="mt-5 grid grid-cols-1 gap-4 lg:grid-cols-2">
+                  {faqData[category].map((faq) => (
+                    <article
+                      key={faq.question}
+                      className="rounded-lg border border-border bg-white p-6 shadow-sm"
+                    >
+                      <h3 className="text-base font-bold leading-snug text-text-dark">
+                        {faq.question}
+                      </h3>
+                      <p className="mt-3 text-sm leading-relaxed text-text-muted">
+                        {faq.answer}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+
+          <div className="mt-14 rounded-lg border border-red/15 bg-white p-7">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <h2 className="text-xl font-bold text-navy">
+                  Need a quote instead of a generic answer?
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-gray-700">
+                  Share your channels, call volume, coverage hours, languages,
+                  and launch timeline so we can recommend the right staffing
+                  model.
+                </p>
+              </div>
+              <LeadCTALink
+                ctaLocation="faq_inline_quote_cta"
+                leadOffer="FAQ call center quote"
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-red px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-red-dark"
+              >
+                Request a Quote
+                <ArrowRight className="h-4 w-4" />
+              </LeadCTALink>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -296,13 +310,14 @@ export function FAQPageContent() {
               the answers you need to make an informed decision about your
               call center outsourcing needs.
             </p>
-            <Link
-              href="/contact"
+            <LeadCTALink
+              ctaLocation="faq_bottom_contact_cta"
+              leadOffer="FAQ bottom call center quote"
               className="mt-8 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark"
             >
               Contact Us
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </LeadCTALink>
           </motion.div>
         </div>
       </section>

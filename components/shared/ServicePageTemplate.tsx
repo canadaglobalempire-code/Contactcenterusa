@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { CheckCircle } from "lucide-react";
 import { generateServiceSchema } from "@/lib/schema";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
@@ -49,6 +50,13 @@ export function ServicePageTemplate({
   seoContent,
 }: ServicePageTemplateProps) {
   const titleParts = title.split(titleHighlight);
+  const pathname = usePathname();
+  const section =
+    pathname.startsWith("/industries/")
+      ? { label: "Industries", href: "/industries" }
+      : pathname.startsWith("/solutions/")
+        ? { label: "Solutions", href: "/solutions" }
+        : { label: "Services", href: "/services" };
 
   return (
     <>
@@ -58,7 +66,7 @@ export function ServicePageTemplate({
           __html: JSON.stringify(generateServiceSchema(
             badge,
             subtitle,
-            `https://contactcenterusa.com/services/${badge.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+            `https://contactcenterusa.com${pathname}`
           )),
         }}
       />
@@ -130,7 +138,7 @@ export function ServicePageTemplate({
 
       <Breadcrumb items={[
         { label: "Home", href: "/" },
-        { label: "Services", href: "/services" },
+        { label: section.label, href: section.href },
         { label: badge, href: "#" },
       ]} />
 
