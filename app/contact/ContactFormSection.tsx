@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, Lock, MapPin, Clock } from "lucide-react";
 import {
   appendLeadAttribution,
-  SPLITFORMS_ACCESS_KEY,
-  SPLITFORMS_ENDPOINT,
+  LEAD_FORM_ENDPOINT,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -46,14 +45,13 @@ export function ContactFormSection() {
     if (website && !/^https?:\/\//i.test(website)) {
       formData.set("website", `https://${website}`);
     }
-    formData.set("access_key", SPLITFORMS_ACCESS_KEY);
     appendLeadAttribution(formData, {
       ctaLocation: "contact_page_form",
       leadOffer: "General call center quote",
     });
 
     try {
-      const response = await fetch(SPLITFORMS_ENDPOINT, {
+      const response = await fetch(LEAD_FORM_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,

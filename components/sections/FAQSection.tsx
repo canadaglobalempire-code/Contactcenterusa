@@ -18,8 +18,7 @@ import {
 import { generateFAQSchema } from "@/lib/schema";
 import {
   appendLeadAttribution,
-  SPLITFORMS_ACCESS_KEY,
-  SPLITFORMS_ENDPOINT,
+  LEAD_FORM_ENDPOINT,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -85,7 +84,6 @@ export function FAQSection() {
 
   const onSubmit = async (data: ContactFormData) => {
     const formData = new FormData();
-    formData.set("access_key", SPLITFORMS_ACCESS_KEY);
     formData.append("subject", "Homepage FAQ Form Inquiry — ContactCenterUSA.com");
     formData.append("name", data.fullName);
     formData.append("company", data.company);
@@ -98,7 +96,7 @@ export function FAQSection() {
     });
 
     try {
-      const response = await fetch(SPLITFORMS_ENDPOINT, {
+      const response = await fetch(LEAD_FORM_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,

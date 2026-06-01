@@ -1,5 +1,4 @@
-export const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
-export const SPLITFORMS_ACCESS_KEY = "abaffe957645499b9c3bf360f0bc7661";
+export const LEAD_FORM_ENDPOINT = "/api/contact";
 
 type LeadEventName = "cta_click" | "lead_form_submit";
 
