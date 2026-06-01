@@ -203,11 +203,10 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Solution Type *
+                      Solution Type
                     </label>
                     <select
                       name="solution_type"
-                      required
                       aria-label="Solution type"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -223,11 +222,10 @@ export function ContactFormSection() {
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Center Services Type *
+                      Call Center Services Type
                     </label>
                     <select
                       name="service_type"
-                      required
                       aria-label="Call center services type"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -239,11 +237,10 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Agent Requirements *
+                      Agent Requirements
                     </label>
                     <select
                       name="agents"
-                      required
                       aria-label="Agent requirements"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -259,11 +256,10 @@ export function ContactFormSection() {
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Volume (Records/month) *
+                      Call Volume (Records/month)
                     </label>
                     <select
                       name="call_volume"
-                      required
                       aria-label="Call volume"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -275,11 +271,10 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Operating Schedule *
+                      Operating Schedule
                     </label>
                     <select
                       name="schedule"
-                      required
                       aria-label="Operating schedule"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
