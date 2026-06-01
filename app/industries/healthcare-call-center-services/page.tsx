@@ -257,17 +257,22 @@ const relatedServices = [
   {
     title: "Inbound Call Center",
     desc: "Professional inbound call handling with custom scripts and routing for healthcare providers.",
-    href: "/services/inbound",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "After-Hours Answering",
     desc: "24/7 live answering services so your patients always reach a real person.",
-    href: "/services/after-hours",
+    href: "/solutions/customer-service-outsourcing",
   },
   {
     title: "Bilingual Support",
     desc: "English and Spanish-speaking agents to serve diverse patient populations.",
-    href: "/services/bilingual",
+    href: "/solutions/multilingual-call-center-services",
+  },
+  {
+    title: "Top 15 Healthcare BPO Companies (2026)",
+    desc: "See our ranked guide to the best healthcare BPO companies in the USA.",
+    href: "/blog/top-15-healthcare-bpo-companies-usa",
   },
 ];
 

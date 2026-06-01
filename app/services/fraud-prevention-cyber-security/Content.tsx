@@ -42,7 +42,7 @@ const industries = [
   { name: "Healthcare", desc: "HIPAA-compliant security operations for healthcare providers — protecting patient data, securing telehealth interactions, and preventing medical identity theft and insurance fraud.", href: "/industries/healthcare-call-center-services" },
   { name: "Insurance", desc: "Claims fraud detection, policy manipulation prevention, and regulatory compliance management for insurance carriers and brokers handling sensitive policyholder information.", href: "/industries/insurance-call-center-outsourcing" },
   { name: "Ecommerce & Retail", desc: "Payment fraud prevention, account takeover protection, and chargebacks reduction for online retailers processing high volumes of card-not-present transactions.", href: "/industries/ecommerce-customer-service-outsourcing" },
-  { name: "Government", desc: "Secure contact center operations for government agencies with FedRAMP-aligned controls, citizen data protection, and compliance with federal security mandates.", href: "/industries/government" },
+  { name: "Government", desc: "Secure contact center operations for government agencies with FedRAMP-aligned controls, citizen data protection, and compliance with federal security mandates.", href: "/industries/government-call-center" },
   { name: "Technology & SaaS", desc: "API security, account protection, and data breach prevention for technology companies managing large volumes of user accounts and sensitive platform data.", href: "/industries/saas-technology-support" },
 ];
 

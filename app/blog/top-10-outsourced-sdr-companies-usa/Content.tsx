@@ -555,7 +555,7 @@ export default function Top10OutsourcedSDRContent() {
                 ))}
               </ul>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                For a complete outbound motion, pair your <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link> program with <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">B2B sales outsourcing</Link> and <Link href="/services/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> for marketing-qualified inbound coverage.
+                For a complete outbound motion, pair your <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link> program with <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">B2B sales outsourcing</Link> and <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> for marketing-qualified inbound coverage.
               </p>
 
               {/* Trends */}

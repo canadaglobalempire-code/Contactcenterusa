@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Dispatch Services",
     desc: "Centralized dispatch coordination for fleets and delivery operations.",
-    href: "/services/dispatch",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "Customer Support",
     desc: "Professional customer support for delivery inquiries and shipment tracking.",
-    href: "/services/inbound",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "After-Hours Answering",
     desc: "24/7 support for drivers, dispatchers, and customers outside business hours.",
-    href: "/services/after-hours",
+    href: "/solutions/customer-service-outsourcing",
   },
 ];
 

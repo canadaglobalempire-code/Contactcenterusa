@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "60-Second Lead Response Service Guide",
+  title: "60-Second Lead Response: Speed-to-Lead Guide (2026)",
   description:
-    "Read the 60-second lead response service guide guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Why responding to leads in 60 seconds wins more deals — speed-to-lead benchmarks, the cost of slow follow-up, and how to hit it. Get a free quote.",
   keywords: [
     "60 second lead response service",
     "5 minute lead response",

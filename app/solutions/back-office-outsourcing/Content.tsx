@@ -41,7 +41,7 @@ const industries = [
   { name: "Healthcare", desc: "Medical records processing, claims data entry, insurance verification, and HIPAA-compliant document management for healthcare providers and payers.", href: "/industries/healthcare-call-center-services" },
   { name: "Financial Services", desc: "Account reconciliation, transaction processing, loan documentation, and audit-ready records management for banks, lenders, and insurance companies.", href: "/industries/financial-services-call-center" },
   { name: "Ecommerce & Retail", desc: "Product catalog management, order processing, returns handling, inventory data updates, and vendor correspondence for online and brick-and-mortar retailers.", href: "/industries/ecommerce-customer-service-outsourcing" },
-  { name: "Legal", desc: "Legal document preparation, case file management, court filing coordination, and privileged correspondence handling with strict chain-of-custody protocols.", href: "/industries/legal" },
+  { name: "Legal", desc: "Legal document preparation, case file management, court filing coordination, and privileged correspondence handling with strict chain-of-custody protocols.", href: "/industries" },
   { name: "Real Estate", desc: "Property listing data entry, lease administration, closing document preparation, and tenant records management for real estate firms and property managers.", href: "/industries/real-estate-call-center-services" },
   { name: "Insurance", desc: "Policy administration, claims intake documentation, underwriting support, and renewal processing with compliance tracking across all fifty states.", href: "/industries/insurance-call-center-outsourcing" },
 ];

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "In-House vs Outsourced Call Center Cost",
+  title: "In-House vs Outsourced Call Center: Cost (2026)",
   description:
-    "Read the in-house vs outsourced call center cost guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "In-house vs outsourced call center: a 2026 cost and ROI breakdown covering staffing, tech, and overhead — so you can decide with real numbers.",
   alternates: { canonical: "/blog/in-house-vs-outsourced-call-center" },
 };
 

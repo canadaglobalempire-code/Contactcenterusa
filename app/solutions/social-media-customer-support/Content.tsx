@@ -39,11 +39,11 @@ const processSteps = [
 
 const industries = [
   { name: "Ecommerce & Retail", desc: "Product complaint resolution, order inquiry responses, review management, and UGC engagement across Instagram, Facebook, and TikTok for DTC and retail brands.", href: "/industries/ecommerce-customer-service-outsourcing" },
-  { name: "Hospitality & Travel", desc: "Real-time guest complaint handling, booking inquiry responses, review management, and destination engagement across TripAdvisor, Google, and social platforms.", href: "/industries/hospitality" },
+  { name: "Hospitality & Travel", desc: "Real-time guest complaint handling, booking inquiry responses, review management, and destination engagement across TripAdvisor, Google, and social platforms.", href: "/industries/travel-hospitality-call-center" },
   { name: "Healthcare", desc: "HIPAA-compliant social media responses, patient review management, health campaign engagement, and appointment inquiry routing for healthcare providers.", href: "/industries/healthcare-call-center-services" },
   { name: "Financial Services", desc: "Compliant social media responses for banks, fintech, and insurance companies — handling account inquiries, fraud reports, and regulatory-sensitive conversations.", href: "/industries/financial-services-call-center" },
   { name: "Technology & SaaS", desc: "Technical support triage via social channels, product feedback collection, community forum management, and developer relations for software companies.", href: "/industries/saas-technology-support" },
-  { name: "Food & Beverage", desc: "Brand engagement, influencer interaction management, complaint resolution, and location-specific social support for restaurant chains and CPG brands.", href: "/industries/restaurant" },
+  { name: "Food & Beverage", desc: "Brand engagement, influencer interaction management, complaint resolution, and location-specific social support for restaurant chains and CPG brands.", href: "/industries/travel-hospitality-call-center" },
 ];
 
 const comparisonData = [

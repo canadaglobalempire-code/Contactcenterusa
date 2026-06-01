@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Onshore vs Offshore vs Nearshore Call Centers",
+  title: "Onshore vs Offshore vs Nearshore Call Centers (2026)",
   description:
-    "Read the onshore vs offshore vs nearshore call centers guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Onshore vs offshore vs nearshore call centers — compare cost, quality, language, and risk in 2026 to pick the right outsourcing model.",
   alternates: { canonical: "/blog/onshore-vs-offshore-vs-nearshore" },
 };
 

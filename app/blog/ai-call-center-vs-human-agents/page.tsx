@@ -4,7 +4,7 @@ import Content from "./Content";
 export const metadata: Metadata = {
   title: "AI Call Center vs Human Agents (2026)",
   description:
-    "Read the ai call center vs human agents guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "AI call center vs human agents in 2026: where each wins on cost, CX, and complexity — plus how to blend them for the best results. See the comparison.",
   alternates: { canonical: "/blog/ai-call-center-vs-human-agents" },
 };
 

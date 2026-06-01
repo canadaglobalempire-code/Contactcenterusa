@@ -38,9 +38,9 @@ const FAQS = [
 ];
 
 export const metadata: Metadata = {
-  title: "Top 10 Outsourced SDR (2026)",
+  title: "Top 10 Outsourced SDR Companies in the USA (2026)",
   description:
-    "Read the top 10 outsourced sdr guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Compare the top 10 outsourced SDR companies in the USA for 2026 — ranked by pipeline quality, booked meetings & pricing. Get a free quote.",
   keywords: [
     "outsourced sdr companies",
     "outsourced sdr",

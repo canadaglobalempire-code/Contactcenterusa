@@ -459,6 +459,7 @@ export default function MultilingualServicesContent() {
               { title: "Customer Service", desc: "Pair multilingual capabilities with comprehensive inbound and outbound customer support for a complete experience.", href: "/solutions/customer-service-outsourcing" },
               { title: "Government Services", desc: "Meet federal language access requirements with compliant, multilingual citizen support from cleared agents.", href: "/solutions/government-call-center-services" },
               { title: "Social Media Support", desc: "Engage diverse audiences on Facebook, Instagram, and X with native-speaking social media agents.", href: "/solutions/social-media-customer-support" },
+              { title: "Top 10 Multilingual Call Center Companies (2026)", desc: "Compare the best multilingual & bilingual call center companies in the USA in our ranked guide.", href: "/blog/top-10-multilingual-call-center-companies-usa" },
             ].map((item, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
                 <Link href={item.href} className="group block rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">

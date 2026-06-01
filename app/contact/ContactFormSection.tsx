@@ -111,6 +111,17 @@ export function ContactFormSection() {
                 <input type="hidden" name="lead_offer" />
                 <input type="hidden" name="submitted_at" />
 
+                {/* Honeypot — hidden from humans; bots fill it and get rejected */}
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="hidden"
+                  style={{ display: "none" }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
+
                 {/* Name & Company */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
@@ -139,18 +150,18 @@ export function ContactFormSection() {
                   </div>
                 </div>
 
-                {/* Email & Phone */}
+                {/* Company Email & Phone */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Email *
+                      Company Email *
                     </label>
                     <input
                       name="email"
                       type="email"
                       required
-                      aria-label="Email address"
-                      placeholder="john@acme.com"
+                      aria-label="Company email"
+                      placeholder="you@company.com"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     />
                   </div>
@@ -169,31 +180,28 @@ export function ContactFormSection() {
                   </div>
                 </div>
 
-
-
-                {/* Service Type & Solution Type */}
+                {/* Website & Solution Type */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Center Services Type
+                      Website *
                     </label>
-                    <select
-                      name="service_type"
-                      aria-label="Call center services type"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
-                    >
-                      <option value="">Select service type</option>
-                      {serviceTypes.map((s) => (
-                        <option key={s} value={s}>{s}</option>
-                      ))}
-                    </select>
+                    <input
+                      name="website"
+                      type="url"
+                      required
+                      aria-label="Company website"
+                      placeholder="https://acme.com"
+                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                    />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Solution Type
+                      Solution Type *
                     </label>
                     <select
                       name="solution_type"
+                      required
                       aria-label="Solution type"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -205,14 +213,31 @@ export function ContactFormSection() {
                   </div>
                 </div>
 
-                {/* Agents & Volume */}
+                {/* Service Type & Agent Requirements */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Agent Requirements
+                      Call Center Services Type *
+                    </label>
+                    <select
+                      name="service_type"
+                      required
+                      aria-label="Call center services type"
+                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                    >
+                      <option value="">Select service type</option>
+                      {serviceTypes.map((s) => (
+                        <option key={s} value={s}>{s}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-navy">
+                      Agent Requirements *
                     </label>
                     <select
                       name="agents"
+                      required
                       aria-label="Agent requirements"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -222,12 +247,17 @@ export function ContactFormSection() {
                       ))}
                     </select>
                   </div>
+                </div>
+
+                {/* Call Volume & Operating Schedule */}
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Volume (Records/month)
+                      Call Volume (Records/month) *
                     </label>
                     <select
                       name="call_volume"
+                      required
                       aria-label="Call volume"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     >
@@ -237,23 +267,22 @@ export function ContactFormSection() {
                       ))}
                     </select>
                   </div>
-                </div>
-
-                {/* Schedule */}
-                <div>
-                  <label className="text-sm font-medium text-navy">
-                    Operating Schedule
-                  </label>
-                  <select
-                    name="schedule"
-                    aria-label="Operating schedule"
-                    className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
-                  >
-                    <option value="">Select schedule</option>
-                    {scheduleOptions.map((s) => (
-                      <option key={s} value={s}>{s}</option>
-                    ))}
-                  </select>
+                  <div>
+                    <label className="text-sm font-medium text-navy">
+                      Operating Schedule *
+                    </label>
+                    <select
+                      name="schedule"
+                      required
+                      aria-label="Operating schedule"
+                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                    >
+                      <option value="">Select schedule</option>
+                      {scheduleOptions.map((s) => (
+                        <option key={s} value={s}>{s}</option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
 
                 {/* Comments */}

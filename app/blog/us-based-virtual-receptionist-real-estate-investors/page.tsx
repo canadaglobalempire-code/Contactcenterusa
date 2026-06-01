@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Virtual Receptionist for Real Estate Investors",
+  title: "Virtual Receptionist for Real Estate Investors (2026)",
   description:
-    "Read the virtual receptionist for real estate investors guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "A US-based virtual receptionist for real estate investors — answer seller leads 24/7, screen calls, and book more deals. Get a free quote.",
   keywords: [
     "us based virtual receptionist for real estate investors",
     "real estate investor answering service",

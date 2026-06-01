@@ -43,7 +43,7 @@ const industries = [
   { name: "Healthcare", desc: "Patient communication across phone, portal, SMS, and email — appointment reminders, prescription refills, telehealth coordination, and post-visit follow-ups in one unified flow.", href: "/industries/healthcare-call-center-services" },
   { name: "Technology & SaaS", desc: "Multi-tier support across in-app chat, email, phone, and community forums. Technical issues start in chat and seamlessly escalate to phone with full diagnostic context preserved.", href: "/industries/saas-technology-support" },
   { name: "Insurance", desc: "Claims support, policy inquiries, and renewal reminders across phone, email, mobile app, and web portal — with unified policyholder profiles and compliant communication records.", href: "/industries/insurance-call-center-outsourcing" },
-  { name: "Travel & Hospitality", desc: "Booking modifications via chat, travel alerts via SMS, concierge services via phone, and review management via social — all connected in a single guest profile.", href: "/industries/hospitality" },
+  { name: "Travel & Hospitality", desc: "Booking modifications via chat, travel alerts via SMS, concierge services via phone, and review management via social — all connected in a single guest profile.", href: "/industries/travel-hospitality-call-center" },
 ];
 
 const comparisonData = [

@@ -38,12 +38,12 @@ const processSteps = [
 ];
 
 const industries = [
-  { name: "Federal Agencies", desc: "Citizen-facing support for federal programs including benefits enrollment, tax assistance, immigration inquiries, and veteran services with cleared personnel.", href: "/industries/government" },
-  { name: "State Government", desc: "State-level hotlines for Medicaid, SNAP, unemployment insurance, DMV support, and public health services with compliance across all fifty states.", href: "/industries/government" },
-  { name: "Local & Municipal", desc: "311 services, utility billing support, permit inquiries, code enforcement reporting, and community services for cities and counties of all sizes.", href: "/industries/government" },
+  { name: "Federal Agencies", desc: "Citizen-facing support for federal programs including benefits enrollment, tax assistance, immigration inquiries, and veteran services with cleared personnel.", href: "/industries/government-call-center" },
+  { name: "State Government", desc: "State-level hotlines for Medicaid, SNAP, unemployment insurance, DMV support, and public health services with compliance across all fifty states.", href: "/industries/government-call-center" },
+  { name: "Local & Municipal", desc: "311 services, utility billing support, permit inquiries, code enforcement reporting, and community services for cities and counties of all sizes.", href: "/industries/government-call-center" },
   { name: "Healthcare (Public)", desc: "Public health hotlines, Medicaid enrollment assistance, vaccine scheduling, and health information campaigns for state and county health departments.", href: "/industries/healthcare-call-center-services" },
   { name: "Education (Public)", desc: "Student enrollment support, financial aid hotlines, school district communication, and parent outreach services for K-12 and higher education systems.", href: "/industries/education-call-center-services" },
-  { name: "Emergency Management", desc: "Disaster response hotlines, evacuation coordination, shelter information, and FEMA assistance support that activates within hours of an emergency declaration.", href: "/industries/government" },
+  { name: "Emergency Management", desc: "Disaster response hotlines, evacuation coordination, shelter information, and FEMA assistance support that activates within hours of an emergency declaration.", href: "/industries/government-call-center" },
 ];
 
 const comparisonData = [

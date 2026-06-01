@@ -5,7 +5,7 @@ import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 export const metadata: Metadata = {
   title: "Top 10 BPO Companies in New York (2026)",
   description:
-    "Read the top 10 bpo companies in new york guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Compare the top 10 BPO companies in New York for 2026 — ranked by service quality, finance/CX expertise, scalability & cost. Find your partner.",
   keywords: [
     "BPO companies New York",
     "best BPO companies in New York",

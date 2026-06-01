@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "How to Choose a Call Center Partner",
+  title: "How to Choose a Call Center Partner (2026)",
   description:
-    "Read the how to choose a call center partner guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "How to choose the right call center partner in 2026 — the criteria, red flags, and questions to ask before you sign. A step-by-step buyer's guide.",
   alternates: { canonical: "/blog/how-to-choose-call-center-partner" },
 };
 

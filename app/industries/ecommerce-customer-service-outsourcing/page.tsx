@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Live Chat Support",
     desc: "Real-time chat agents who convert browsers into buyers on your website.",
-    href: "/services/live-chat",
+    href: "/services/live-chat-outsourcing",
   },
   {
     title: "Outbound Sales",
     desc: "Proactive outreach for cart recovery, upselling, and customer win-back campaigns.",
-    href: "/services/outbound",
+    href: "/solutions/outbound-call-center-services",
   },
   {
     title: "24/7 Customer Support",
     desc: "Round-the-clock support so your customers get help whenever they shop.",
-    href: "/services/24-7-support",
+    href: "/solutions/customer-service-outsourcing",
   },
 ];
 

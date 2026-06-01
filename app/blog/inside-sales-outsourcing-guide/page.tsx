@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Inside Sales Outsourcing Guide",
+  title: "Inside Sales Outsourcing Guide (2026)",
   description:
-    "Read the inside sales outsourcing guide guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Inside sales outsourcing in 2026 — when to outsource SDRs, pricing models, and how to scale pipeline without hiring. A complete buyer's guide.",
   keywords: [
     "inside sales outsourcing",
     "outsourced inside sales",

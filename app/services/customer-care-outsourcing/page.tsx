@@ -3,7 +3,7 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Customer Care Outsourcing | Contact Center USA",
+  title: "Customer Care Outsourcing Services | Contact Center USA",
   description:
     "US-based customer care outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
   keywords: [

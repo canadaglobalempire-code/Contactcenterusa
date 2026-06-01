@@ -571,6 +571,7 @@ export default function Top15HealthcareBPOContent() {
                   <h4 className="font-bold text-navy">Related Articles</h4>
                   <ul className="mt-4 space-y-3">
                     {[
+                      { title: "Top 15 Insurance BPO Companies", href: "/blog/top-15-insurance-bpo-companies-usa" },
                       { title: "Call Center Outsourcing Cost Guide", href: "/blog/call-center-outsourcing-cost" },
                       { title: "Onshore vs Offshore vs Nearshore", href: "/blog/onshore-vs-offshore-vs-nearshore" },
                       { title: "Benefits of US-Based Call Centers", href: "/blog/benefits-us-based-call-center" },

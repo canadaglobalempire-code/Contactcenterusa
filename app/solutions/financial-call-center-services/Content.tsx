@@ -41,7 +41,7 @@ const industries = [
   { name: "Banking & Credit Unions", desc: "Account servicing, loan payment processing, delinquency management, and fraud alert handling for community banks and credit unions.", href: "/industries/financial-services-call-center" },
   { name: "Healthcare Revenue Cycle", desc: "Patient billing support, insurance payment posting, self-pay collections, and payment plan enrollment for hospitals and medical groups.", href: "/industries/healthcare-call-center-services" },
   { name: "Insurance", desc: "Premium payment processing, policy billing inquiries, past-due premium collections, and claims payment support for P&C and life carriers.", href: "/industries/insurance-call-center-outsourcing" },
-  { name: "Utilities & Telecom", desc: "Bill payment processing, delinquent account outreach, disconnect prevention programs, and hardship plan enrollment for utility providers.", href: "/industries/utilities" },
+  { name: "Utilities & Telecom", desc: "Bill payment processing, delinquent account outreach, disconnect prevention programs, and hardship plan enrollment for utility providers.", href: "/industries/energy-utilities-call-center" },
   { name: "Ecommerce & Retail", desc: "Refund processing, chargeback dispute management, subscription billing support, and order payment verification for online retailers.", href: "/industries/ecommerce-customer-service-outsourcing" },
   { name: "SaaS & Technology", desc: "Subscription billing management, failed payment recovery, usage-based invoicing support, and enterprise accounts receivable for software companies.", href: "/industries/saas-technology-support" },
 ];

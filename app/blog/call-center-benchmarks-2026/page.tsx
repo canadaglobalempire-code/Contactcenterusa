@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Call Center Benchmarks for 2026",
+  title: "Call Center Benchmarks & Metrics (2026 Data)",
   description:
-    "Read the call center benchmarks for 2026 guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "2026 call center benchmarks — service level, AHT, FCR, CSAT, and abandonment rates by industry, so you can measure performance against your peers.",
   alternates: { canonical: "/blog/call-center-benchmarks-2026" },
 };
 

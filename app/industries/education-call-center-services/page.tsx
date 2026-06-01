@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Inbound Call Center",
     desc: "Professional inbound support for student and parent inquiries.",
-    href: "/services/inbound",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "Outbound Campaigns",
     desc: "Enrollment outreach, alumni fundraising, and student engagement campaigns.",
-    href: "/services/outbound",
+    href: "/solutions/outbound-call-center-services",
   },
   {
     title: "Help Desk Support",
     desc: "IT and LMS help desk services for students, faculty, and staff.",
-    href: "/services/help-desk",
+    href: "/solutions/technical-support-outsourcing",
   },
 ];
 

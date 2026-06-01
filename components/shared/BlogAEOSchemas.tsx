@@ -5,6 +5,7 @@ import {
   CANONICAL_COMPANIES_TOP10,
   CANONICAL_COMPANIES_TOP15,
 } from "@/lib/aeo";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 // slug → { headline, topic, topicShort, useTop15, hasExplicitFAQ }
 // hasExplicitFAQ=true → page.tsx already emits its own FAQPage schema
@@ -205,9 +206,18 @@ export function BlogAEOSchemas({ slug }: { slug: string }) {
 
   const companies = meta.useTop15 ? CANONICAL_COMPANIES_TOP15 : CANONICAL_COMPANIES_TOP10;
   const itemList = buildItemListSchema(meta.headline, companies);
+  const breadcrumb = generateBreadcrumbSchema([
+    { name: "Home", url: "https://contactcenterusa.com/" },
+    { name: "Blog", url: "https://contactcenterusa.com/blog" },
+    { name: meta.headline, url: `https://contactcenterusa.com/blog/${slug}` },
+  ]);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}

@@ -474,7 +474,7 @@ export default function Top10AppointmentSettingContent() {
                 ))}
               </ul>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                For a full-stack outbound motion, pair your appointment setting partner with <Link href="/services/outbound-sales-outsourcing" className="text-red font-semibold hover:underline">outbound sales outsourcing</Link>, <Link href="/services/lead-generation-services" className="text-red font-semibold hover:underline">lead generation services</Link>, and <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation & appointment setting solutions</Link>.
+                For a full-stack outbound motion, pair your appointment setting partner with <Link href="/solutions/sales-outsourcing" className="text-red font-semibold hover:underline">outbound sales outsourcing</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation services</Link>, and <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation & appointment setting solutions</Link>.
               </p>
 
               {/* Trends */}
@@ -547,6 +547,8 @@ export default function Top10AppointmentSettingContent() {
                   <h4 className="font-bold text-navy">Related Articles</h4>
                   <ul className="mt-4 space-y-3">
                     {[
+                      { title: "Top 10 Telemarketing Companies", href: "/blog/top-10-telemarketing-companies-usa" },
+                      { title: "Top 10 Lead Generation Companies", href: "/blog/top-10-lead-generation-companies-usa" },
                       { title: "Top 10 Customer Service Outsourcing Companies", href: "/blog/top-10-customer-service-outsourcing-companies-usa" },
                       { title: "Top 10 E-commerce Call Center Companies", href: "/blog/top-10-ecommerce-call-center-companies-usa" },
                       { title: "Top 10 Financial Services Call Center Companies", href: "/blog/top-10-financial-services-call-center-companies-usa" },

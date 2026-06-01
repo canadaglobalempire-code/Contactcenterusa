@@ -42,7 +42,7 @@ const industries = [
   { name: "Ecommerce & Retail", desc: "Customer journey analytics across web, mobile, and contact center channels — identifying purchase abandonment drivers and optimizing the path to conversion.", href: "/industries/ecommerce-customer-service-outsourcing" },
   { name: "Insurance", desc: "Claims experience analytics, policyholder satisfaction tracking, and renewal prediction models that reduce churn and improve lifetime customer value.", href: "/industries/insurance-call-center-outsourcing" },
   { name: "Technology & SaaS", desc: "Product adoption analytics, support ticket trend analysis, and churn prediction models that help SaaS companies improve retention and expand accounts.", href: "/industries/saas-technology-support" },
-  { name: "Telecommunications", desc: "Network quality correlation analytics, service recovery tracking, and competitive benchmarking that reduce churn in high-competition telecom markets.", href: "/industries/telecommunications" },
+  { name: "Telecommunications", desc: "Network quality correlation analytics, service recovery tracking, and competitive benchmarking that reduce churn in high-competition telecom markets.", href: "/industries/telecommunications-call-center" },
 ];
 
 const comparisonData = [

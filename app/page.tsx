@@ -15,7 +15,7 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "US-Based Call Center Outsourcing | Contact Center USA",
+  title: "US Call Center Services & Outsourcing | Contact Center USA",
   description: "US-based call center outsourcing for inbound, outbound, customer service, technical support, and lead generation. Request a fast quote today.",
   alternates: { canonical: "/" },
 };

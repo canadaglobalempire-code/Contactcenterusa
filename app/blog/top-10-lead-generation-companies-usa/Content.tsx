@@ -473,7 +473,7 @@ export default function Top10LeadGenerationContent() {
                 ))}
               </ul>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                For full-stack B2B pipeline creation, pair your SDR program with <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, and <Link href="/services/inside-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>.
+                For full-stack B2B pipeline creation, pair your SDR program with <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, and <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>.
               </p>
 
               {/* Trends */}
@@ -498,7 +498,7 @@ export default function Top10LeadGenerationContent() {
                 The <strong>American B2B lead generation industry</strong> is being reshaped by intent data, AI-assisted SDR workflows, and the shift to outcome-based pricing. SaaS, technology, professional services, and industrial B2B brands win when they partner with US-based lead-gen companies that can deliver trained domestic SDRs, multi-channel fluency, ABM sophistication, and transparent per-meeting reporting.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-funnel American demand-gen practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based sales-development operations</strong>, experienced domestic SDRs, deep Outreach / Salesloft / HubSpot / Salesforce integration, and flexible per-FTE, per-qualified-meeting, and outcome-based pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, or <Link href="/services/inside-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>, Contact Center USA is built for the B2B teams that win on pipeline.
+                Global Empire Corporation tops our 2026 ranking with its full-funnel American demand-gen practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based sales-development operations</strong>, experienced domestic SDRs, deep Outreach / Salesloft / HubSpot / Salesforce integration, and flexible per-FTE, per-qualified-meeting, and outcome-based pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, or <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>, Contact Center USA is built for the B2B teams that win on pipeline.
               </p>
 
               {/* CTA */}
@@ -546,6 +546,8 @@ export default function Top10LeadGenerationContent() {
                   <h4 className="font-bold text-navy">Related Articles</h4>
                   <ul className="mt-4 space-y-3">
                     {[
+                      { title: "Top 10 Telemarketing Companies", href: "/blog/top-10-telemarketing-companies-usa" },
+                      { title: "Top 10 Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
                       { title: "Top 10 BPO Companies in USA", href: "/blog/top-10-bpo-companies-in-usa" },
                       { title: "Top 10 Customer Service Outsourcing Companies", href: "/blog/top-10-customer-service-outsourcing-companies-usa" },
                       { title: "Inside Sales Outsourcing Guide", href: "/blog/inside-sales-outsourcing-guide" },
