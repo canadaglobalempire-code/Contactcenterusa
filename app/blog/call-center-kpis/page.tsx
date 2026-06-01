@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Top Call Center KPIs to Track",
+  title: "Top Call Center KPIs & Metrics to Track (2026)",
   description:
-    "Read the top call center kpis to track guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "The call center KPIs that matter in 2026 — from FCR and AHT to CSAT and occupancy — with target ranges and why each one drives performance.",
   alternates: { canonical: "/blog/call-center-kpis" },
 };
 

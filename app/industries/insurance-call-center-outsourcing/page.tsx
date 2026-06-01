@@ -257,17 +257,22 @@ const relatedServices = [
   {
     title: "Inbound Call Center",
     desc: "Professional inbound support for policy inquiries and claims reporting.",
-    href: "/services/inbound",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "Outbound Campaigns",
     desc: "Compliant outbound calling for renewals, retention, and enrollment outreach.",
-    href: "/services/outbound",
+    href: "/solutions/outbound-call-center-services",
   },
   {
     title: "After-Hours Support",
     desc: "24/7 claims reporting and emergency support for policyholders.",
-    href: "/services/after-hours",
+    href: "/solutions/customer-service-outsourcing",
+  },
+  {
+    title: "Top 15 Insurance BPO Companies (2026)",
+    desc: "Compare the best insurance BPO providers in the USA in our ranked buyer's guide.",
+    href: "/blog/top-15-insurance-bpo-companies-usa",
   },
 ];
 

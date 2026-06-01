@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Help Desk Support",
     desc: "Multi-tiered technical help desk services for software and hardware products.",
-    href: "/services/help-desk",
+    href: "/solutions/technical-support-outsourcing",
   },
   {
     title: "Live Chat Support",
     desc: "Real-time chat support for SaaS products with technical troubleshooting capabilities.",
-    href: "/services/live-chat",
+    href: "/services/live-chat-outsourcing",
   },
   {
     title: "Back-Office Support",
     desc: "Ticket triage, QA testing, and administrative support for technology teams.",
-    href: "/services/back-office",
+    href: "/solutions/back-office-outsourcing",
   },
 ];
 

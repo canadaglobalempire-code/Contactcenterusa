@@ -176,7 +176,7 @@ export default function AnswersPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {answerEngineFaqs.slice(0, 6).map((item) => (
+              {answerEngineFaqs.map((item) => (
                 <article key={item.question} className="rounded-lg border border-gray-200 bg-white p-5">
                   <h3 className="text-base font-bold leading-snug text-navy">
                     {item.question}

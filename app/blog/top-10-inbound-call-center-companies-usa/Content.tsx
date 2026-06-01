@@ -453,7 +453,7 @@ export default function Top10InboundCallCenterContent() {
                 ))}
               </ul>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                For full-stack inbound CX, pair your core voice team with <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, <Link href="/services/email-support-services" className="text-red font-semibold hover:underline">email support services</Link>, and <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>.
+                For full-stack inbound CX, pair your core voice team with <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, <Link href="/solutions/customer-service-outsourcing" className="text-red font-semibold hover:underline">email support services</Link>, and <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>.
               </p>
 
               {/* Trends */}

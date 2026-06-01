@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Lead Generation",
     desc: "Proactive outbound calling to generate and qualify new real estate leads.",
-    href: "/services/lead-generation",
+    href: "/solutions/lead-generation-appointment-setting",
   },
   {
     title: "Appointment Setting",
     desc: "Professional appointment scheduling that fills your sales calendar with qualified prospects.",
-    href: "/services/appointment-setting",
+    href: "/solutions/lead-generation-appointment-setting",
   },
   {
     title: "After-Hours Answering",
     desc: "24/7 live answering so you never miss a potential buyer or seller.",
-    href: "/services/after-hours",
+    href: "/solutions/customer-service-outsourcing",
   },
 ];
 

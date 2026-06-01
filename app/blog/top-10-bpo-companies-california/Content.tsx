@@ -443,7 +443,7 @@ export default function Top10BPOCaliforniaContent() {
                 California call center wages run <strong>$20-$28 per hour</strong> for in-state agents — roughly 40-60% above Texas equivalents and meaningfully above the national average. Several factors drive this: California's $16-$20/hr state minimum wage, the $20/hr fast-food minimum that has spilled over into adjacent service jobs, the Bay Area cost of living, and the labor pressure created by AB-5's tighter contractor classification rules.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                California talent concentrates in four metros: <strong>Los Angeles</strong> (the largest pool, with deep entertainment, fintech, and DTC fluency), the <strong>San Francisco / Bay Area</strong> (premium SaaS and AI vertical depth, highest wages), <strong>San Diego</strong> (biotech, defense, and cross-border bilingual programs), and <strong>Sacramento</strong> (state government and public-sector specialization). Most California businesses now run <strong>hybrid models</strong>: a core team of multi-state US-based agents for cost, plus a smaller pool of California-resident agents for premium accounts, regulatory programs, and any customer-facing role where state residency matters. <Link href="/services/inbound-call-center-services" className="text-red font-semibold hover:underline">Inbound call center services</Link> for California brands almost always use this hybrid blend.
+                California talent concentrates in four metros: <strong>Los Angeles</strong> (the largest pool, with deep entertainment, fintech, and DTC fluency), the <strong>San Francisco / Bay Area</strong> (premium SaaS and AI vertical depth, highest wages), <strong>San Diego</strong> (biotech, defense, and cross-border bilingual programs), and <strong>Sacramento</strong> (state government and public-sector specialization). Most California businesses now run <strong>hybrid models</strong>: a core team of multi-state US-based agents for cost, plus a smaller pool of California-resident agents for premium accounts, regulatory programs, and any customer-facing role where state residency matters. <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">Inbound call center services</Link> for California brands almost always use this hybrid blend.
               </p>
 
               {/* SECTION 3 — California compliance */}
@@ -485,7 +485,7 @@ export default function Top10BPOCaliforniaContent() {
 
               <h3 className="mt-6 text-xl font-bold text-navy">SaaS and Tech</h3>
               <p className="mt-2 text-gray-700 leading-relaxed">
-                California is the global capital of SaaS and consumer tech: Apple, Google, Meta, Salesforce, Adobe, Oracle, Intel, NVIDIA, Cisco, eBay, Uber, Airbnb, OpenAI, and thousands of scale-ups. SaaS programs need US-based Tier 1, Tier 2, and developer-grade Tier 3 support, premium chat fluency, and CCPA-aware data handling for every customer interaction. Pair with our <Link href="/services/technical-support-outsourcing" className="text-red font-semibold hover:underline">technical support outsourcing</Link>.
+                California is the global capital of SaaS and consumer tech: Apple, Google, Meta, Salesforce, Adobe, Oracle, Intel, NVIDIA, Cisco, eBay, Uber, Airbnb, OpenAI, and thousands of scale-ups. SaaS programs need US-based Tier 1, Tier 2, and developer-grade Tier 3 support, premium chat fluency, and CCPA-aware data handling for every customer interaction. Pair with our <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">technical support outsourcing</Link>.
               </p>
 
               <h3 className="mt-6 text-xl font-bold text-navy">Entertainment and Media</h3>
@@ -495,7 +495,7 @@ export default function Top10BPOCaliforniaContent() {
 
               <h3 className="mt-6 text-xl font-bold text-navy">Biotech and Healthcare</h3>
               <p className="mt-2 text-gray-700 leading-relaxed">
-                Genentech, Gilead, Amgen, Illumina, Dexcom, Edwards Lifesciences, Kaiser Permanente, Sutter Health, and a deep biotech base across South San Francisco and San Diego. These programs require <Link href="/industries/healthcare-call-center-outsourcing" className="text-red font-semibold hover:underline">HIPAA-compliant healthcare call center outsourcing</Link> stacked on top of CCPA and CIPA — patient access, clinical trial enrollment, prior-auth, and member services.
+                Genentech, Gilead, Amgen, Illumina, Dexcom, Edwards Lifesciences, Kaiser Permanente, Sutter Health, and a deep biotech base across South San Francisco and San Diego. These programs require <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">HIPAA-compliant healthcare call center outsourcing</Link> stacked on top of CCPA and CIPA — patient access, clinical trial enrollment, prior-auth, and member services.
               </p>
 
               <h3 className="mt-6 text-xl font-bold text-navy">Fintech</h3>
@@ -565,7 +565,7 @@ export default function Top10BPOCaliforniaContent() {
                 ))}
               </ul>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Pair your California program with <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link> and <Link href="/services/customer-service-outsourcing" className="text-red font-semibold hover:underline">customer service outsourcing</Link> for full coverage.
+                Pair your California program with <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link> and <Link href="/solutions/customer-service-outsourcing" className="text-red font-semibold hover:underline">customer service outsourcing</Link> for full coverage.
               </p>
 
               {/* Trends */}

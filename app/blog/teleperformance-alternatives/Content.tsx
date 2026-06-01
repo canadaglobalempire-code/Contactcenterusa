@@ -75,7 +75,7 @@ export default function Content() {
                   <strong>Best for:</strong> US-based brands wanting onshore delivery without enterprise bureaucracy.
                 </p>
                 <p>
-                  Contact Center USA delivers 100% US-based agents, 24/7 coverage, and full <Link href="/solutions/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link> with zero minimum-volume lock-ins. Unlike Teleperformance&apos;s global-first model, we staff, train, and QA exclusively in America. 500+ agents, 25+ years of industry experience, 98% CSAT across active programs.
+                  Contact Center USA delivers 100% US-based agents, 24/7 coverage, and full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link> with zero minimum-volume lock-ins. Unlike Teleperformance&apos;s global-first model, we staff, train, and QA exclusively in America. 500+ agents, 25+ years of industry experience, 98% CSAT across active programs.
                 </p>
                 <p>
                   Pricing: $24–$34/hr for US dedicated FTEs. Month-to-month contracts available.

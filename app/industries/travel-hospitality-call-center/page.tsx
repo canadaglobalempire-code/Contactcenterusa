@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Reservation Services",
     desc: "Professional reservation agents who book, modify, and manage travel arrangements.",
-    href: "/services/reservations",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "Multilingual Support",
     desc: "Native-speaking agents serving international travelers in their preferred language.",
-    href: "/services/bilingual",
+    href: "/solutions/multilingual-call-center-services",
   },
   {
     title: "24/7 Customer Support",
     desc: "Round-the-clock support for travelers across every time zone.",
-    href: "/services/24-7-support",
+    href: "/solutions/customer-service-outsourcing",
   },
 ];
 

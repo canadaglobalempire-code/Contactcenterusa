@@ -257,17 +257,17 @@ const relatedServices = [
   {
     title: "Inbound Call Center",
     desc: "Secure inbound call handling for account inquiries and financial support.",
-    href: "/services/inbound",
+    href: "/solutions/inbound-call-center-services",
   },
   {
     title: "Outbound Campaigns",
     desc: "Compliant outbound calling for collections, surveys, and customer outreach.",
-    href: "/services/outbound",
+    href: "/solutions/outbound-call-center-services",
   },
   {
     title: "Back-Office Processing",
     desc: "Document processing, data entry, and administrative support for financial operations.",
-    href: "/services/back-office",
+    href: "/solutions/back-office-outsourcing",
   },
 ];
 

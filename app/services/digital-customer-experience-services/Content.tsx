@@ -42,7 +42,7 @@ const industries = [
   { name: "Technology & SaaS", desc: "Multi-channel technical support, community management, in-app messaging, and self-service documentation for software companies with digital-first customer bases.", href: "/industries/saas-technology-support" },
   { name: "Healthcare", desc: "HIPAA-compliant digital communication including patient portal support, secure messaging, telehealth coordination, and appointment management across digital channels.", href: "/industries/healthcare-call-center-services" },
   { name: "Financial Services", desc: "Secure digital banking support, social media reputation management, mobile app assistance, and compliant email communication for financial institutions.", href: "/industries/financial-services-call-center" },
-  { name: "Hospitality & Travel", desc: "Real-time booking support via chat, social media engagement for reviews and promotions, and mobile concierge services that enhance the traveler experience.", href: "/industries/hospitality" },
+  { name: "Hospitality & Travel", desc: "Real-time booking support via chat, social media engagement for reviews and promotions, and mobile concierge services that enhance the traveler experience.", href: "/industries/travel-hospitality-call-center" },
   { name: "Education", desc: "Student support across chat, email, and social platforms — including enrollment assistance, course inquiries, and digital learning platform help desk services.", href: "/industries/education-call-center-services" },
 ];
 

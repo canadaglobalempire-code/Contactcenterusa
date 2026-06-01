@@ -42,7 +42,7 @@ const industries = [
   { name: "Healthcare", desc: "HIPAA-compliant technical support for EHR systems, medical devices, telehealth platforms, and healthcare IT infrastructure with 24/7 availability.", href: "/industries/healthcare-call-center-services" },
   { name: "Financial Services", desc: "PCI-compliant IT help desk for banking platforms, trading systems, fintech applications, and compliance-critical financial infrastructure.", href: "/industries/financial-services-call-center" },
   { name: "Ecommerce & Retail", desc: "Platform troubleshooting, POS system support, payment gateway issues, inventory system assistance, and storefront technical support for retail brands.", href: "/industries/ecommerce-customer-service-outsourcing" },
-  { name: "Manufacturing", desc: "Industrial IoT device support, ERP system assistance, production line technology troubleshooting, and equipment monitoring for manufacturers.", href: "/industries/manufacturing" },
+  { name: "Manufacturing", desc: "Industrial IoT device support, ERP system assistance, production line technology troubleshooting, and equipment monitoring for manufacturers.", href: "/industries" },
   { name: "Insurance", desc: "Claims platform support, underwriting system assistance, agent portal troubleshooting, and policy management technology support for carriers.", href: "/industries/insurance-call-center-outsourcing" },
 ];
 

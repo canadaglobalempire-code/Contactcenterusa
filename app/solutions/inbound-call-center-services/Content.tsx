@@ -40,10 +40,10 @@ const processSteps = [
 const industries = [
   { name: "Healthcare", desc: "HIPAA-compliant appointment scheduling, patient intake, after-hours nurse triage lines, and prescription refill call handling for clinics and hospitals.", href: "/industries/healthcare-call-center-services" },
   { name: "Ecommerce & Retail", desc: "Order taking, product inquiries, returns and exchanges, loyalty program support, and peak-season overflow during Black Friday and holiday rushes.", href: "/industries/ecommerce-customer-service-outsourcing" },
-  { name: "Legal Services", desc: "Professional intake for new client inquiries, appointment booking, message relay to attorneys, and after-hours emergency call routing for law firms.", href: "/industries/legal" },
+  { name: "Legal Services", desc: "Professional intake for new client inquiries, appointment booking, message relay to attorneys, and after-hours emergency call routing for law firms.", href: "/industries" },
   { name: "Real Estate", desc: "Property inquiry handling, showing scheduling, tenant maintenance requests, and investor communication for property management and real estate firms.", href: "/industries/real-estate-call-center-services" },
   { name: "Financial Services", desc: "Account balance inquiries, transaction support, loan application intake, and PCI-compliant payment processing for banks and credit unions.", href: "/industries/financial-services-call-center" },
-  { name: "Home Services", desc: "Service call dispatching, emergency repair scheduling, estimate requests, and customer follow-up for HVAC, plumbing, electrical, and restoration companies.", href: "/industries/home-services" },
+  { name: "Home Services", desc: "Service call dispatching, emergency repair scheduling, estimate requests, and customer follow-up for HVAC, plumbing, electrical, and restoration companies.", href: "/industries" },
 ];
 
 const comparisonData = [

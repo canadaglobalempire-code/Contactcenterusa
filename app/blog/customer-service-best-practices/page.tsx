@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Customer Service Best Practices",
+  title: "Customer Service Best Practices for 2026",
   description:
-    "Read the customer service best practices guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Proven customer service best practices for 2026 — response time, tone, escalation, and the CX metrics that boost CSAT and loyalty. Put them to work.",
   keywords: [
     "customer service best practices",
     "customer care best practices",

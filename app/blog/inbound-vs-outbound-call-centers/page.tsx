@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Inbound vs Outbound Call Centers",
+  title: "Inbound vs Outbound Call Centers Explained (2026)",
   description:
-    "Read the inbound vs outbound call centers guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Inbound vs outbound call centers — the difference, use cases, and which your business needs. A clear 2026 guide with examples. Get a quote.",
   alternates: { canonical: "/blog/inbound-vs-outbound-call-centers" },
 };
 

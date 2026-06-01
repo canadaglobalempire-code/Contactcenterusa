@@ -42,8 +42,8 @@ const industries = [
   { name: "Financial Services", desc: "Qualified appointment setting for financial advisors, wealth managers, insurance agents, and fintech companies targeting high-value prospects.", href: "/industries/financial-services-call-center" },
   { name: "Healthcare", desc: "Provider outreach, medical device sales support, healthcare IT lead generation, and group practice development for healthcare organizations.", href: "/industries/healthcare-call-center-services" },
   { name: "Real Estate", desc: "Investor lead qualification, commercial tenant prospecting, property management lead generation, and broker appointment setting for real estate firms.", href: "/industries/real-estate-call-center-services" },
-  { name: "Professional Services", desc: "B2B prospect identification, partnership development, consulting engagement pipeline, and event registration campaigns for service firms.", href: "/industries/professional-services" },
-  { name: "Manufacturing", desc: "Distributor outreach, OEM partnership development, equipment sales lead generation, and trade show follow-up campaigns for manufacturers.", href: "/industries/manufacturing" },
+  { name: "Professional Services", desc: "B2B prospect identification, partnership development, consulting engagement pipeline, and event registration campaigns for service firms.", href: "/industries" },
+  { name: "Manufacturing", desc: "Distributor outreach, OEM partnership development, equipment sales lead generation, and trade show follow-up campaigns for manufacturers.", href: "/industries" },
 ];
 
 const comparisonData = [

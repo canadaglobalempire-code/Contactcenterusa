@@ -545,6 +545,8 @@ export default function Top10CustomerServiceOutsourcingContent() {
                   <h4 className="font-bold text-navy">Related Articles</h4>
                   <ul className="mt-4 space-y-3">
                     {[
+                      { title: "Top 10 Multilingual Call Center Companies", href: "/blog/top-10-multilingual-call-center-companies-usa" },
+                      { title: "Top 15 Healthcare BPO Companies", href: "/blog/top-15-healthcare-bpo-companies-usa" },
                       { title: "Top 10 E-commerce Call Center Companies", href: "/blog/top-10-ecommerce-call-center-companies-usa" },
                       { title: "Top 10 Technical Support Outsourcing Companies", href: "/blog/top-10-technical-support-outsourcing-companies-usa" },
                       { title: "Customer Service Best Practices", href: "/blog/customer-service-best-practices" },

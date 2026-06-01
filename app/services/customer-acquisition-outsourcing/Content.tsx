@@ -42,7 +42,7 @@ const industries = [
   { name: "Healthcare", desc: "Patient acquisition, enrollment campaigns, and provider network outreach with HIPAA-compliant processes and healthcare-specific scripting.", href: "/industries/healthcare-call-center-services" },
   { name: "Ecommerce & Retail", desc: "Customer win-back campaigns, subscription acquisition, loyalty program enrollment, and seasonal promotional outreach that drives revenue growth.", href: "/industries/ecommerce-customer-service-outsourcing" },
   { name: "Real Estate", desc: "Buyer and seller lead qualification, open house promotion, investor outreach, and showing scheduling that keeps your pipeline full year-round.", href: "/industries/real-estate-call-center-services" },
-  { name: "Professional Services", desc: "Appointment setting and lead qualification for law firms, consulting agencies, and accounting firms targeting high-value business clients.", href: "/industries/professional-services" },
+  { name: "Professional Services", desc: "Appointment setting and lead qualification for law firms, consulting agencies, and accounting firms targeting high-value business clients.", href: "/industries" },
 ];
 
 const comparisonData = [

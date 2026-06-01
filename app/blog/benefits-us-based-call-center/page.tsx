@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Benefits of US-Based Call Centers",
+  title: "Benefits of US-Based Call Centers (2026)",
   description:
-    "Read the benefits of us-based call centers guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "The benefits of a US-based call center: native-English agents, data security, time-zone coverage, and stronger CX. See if onshore is right for you.",
   alternates: { canonical: "/blog/benefits-us-based-call-center" },
 };
 

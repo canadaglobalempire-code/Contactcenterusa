@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Call Center Cost Per Hour (2026)",
+  title: "Call Center Outsourcing Cost Per Hour (2026 Pricing)",
   description:
-    "Read the call center cost per hour guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "What does call center outsourcing cost per hour in 2026? See US, nearshore & offshore pricing benchmarks by region — plus what drives your rate.",
   alternates: { canonical: "/blog/call-center-outsourcing-cost-per-hour-2026" },
 };
 

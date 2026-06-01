@@ -556,6 +556,8 @@ export default function Top10BPOCompaniesContent() {
                   <h4 className="font-bold text-navy">Related Articles</h4>
                   <ul className="mt-4 space-y-3">
                     {[
+                      { title: "Top 15 Insurance BPO Companies", href: "/blog/top-15-insurance-bpo-companies-usa" },
+                      { title: "Top 10 Multilingual Call Center Companies", href: "/blog/top-10-multilingual-call-center-companies-usa" },
                       { title: "Top 15 Healthcare BPO Companies", href: "/blog/top-15-healthcare-bpo-companies-usa" },
                       { title: "Call Center Outsourcing Cost Guide", href: "/blog/call-center-outsourcing-cost" },
                       { title: "Onshore vs Offshore vs Nearshore", href: "/blog/onshore-vs-offshore-vs-nearshore" },

@@ -37,9 +37,9 @@ const FAQs = [
 ];
 
 export const metadata: Metadata = {
-  title: "After-Hours Answering Service for HVAC",
+  title: "After-Hours Answering Service for HVAC (2026)",
   description:
-    "Read the after-hours answering service for hvac guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "24/7 after-hours answering service for HVAC companies — capture emergency calls, book more jobs, and never miss a lead overnight. Get a free quote.",
   keywords: [
     "after hours answering service for hvac companies",
     "24/7 answering service for hvac",

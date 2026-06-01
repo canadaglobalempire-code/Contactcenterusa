@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 Ecommerce Call Center (2026)",
+  title: "Top 10 Ecommerce Call Center Companies USA (2026)",
   description:
-    "Read the top 10 ecommerce call center guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "Compare the top 10 ecommerce call center companies in the USA for 2026 — ranked by omnichannel CX, peak-season scaling & pricing. Get a quote.",
   keywords: [
     "ecommerce call center companies",
     "top ecommerce call center usa",

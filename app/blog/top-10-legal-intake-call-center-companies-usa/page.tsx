@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 10 Legal Intake Call Center (2026)",
+  title: "Top 10 Legal Intake Call Center Companies (2026)",
   description:
-    "Read the top 10 legal intake call center guide for 2026. Compare options, pricing factors, buyer criteria, and quote next steps.",
+    "The top 10 legal intake call center companies for 2026, ranked by 24/7 intake, conversion & law-firm experience. Compare US providers and get a quote.",
   keywords: [
     "legal intake call center",
     "legal intake outsourcing",
