@@ -41,6 +41,11 @@ export function ContactFormSection() {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
+    // Accept the website with or without a protocol; normalize to a full URL for the lead record.
+    const website = (formData.get("website") ?? "").toString().trim();
+    if (website && !/^https?:\/\//i.test(website)) {
+      formData.set("website", `https://${website}`);
+    }
     formData.set("access_key", SPLITFORMS_ACCESS_KEY);
     appendLeadAttribution(formData, {
       ctaLocation: "contact_page_form",
@@ -188,10 +193,11 @@ export function ContactFormSection() {
                     </label>
                     <input
                       name="website"
-                      type="url"
+                      type="text"
+                      inputMode="url"
                       required
                       aria-label="Company website"
-                      placeholder="https://acme.com"
+                      placeholder="acme.com"
                       className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                     />
                   </div>
