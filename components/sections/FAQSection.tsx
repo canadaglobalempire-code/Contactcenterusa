@@ -18,7 +18,7 @@ import {
 import { generateFAQSchema } from "@/lib/schema";
 import {
   appendLeadAttribution,
-  LEAD_FORM_ENDPOINT,
+  getLeadFormEndpoint,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -96,7 +96,7 @@ export function FAQSection() {
     });
 
     try {
-      const response = await fetch(LEAD_FORM_ENDPOINT, {
+      const response = await fetch(getLeadFormEndpoint(), {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,

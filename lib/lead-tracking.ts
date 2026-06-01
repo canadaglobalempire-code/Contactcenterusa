@@ -1,5 +1,16 @@
 export const LEAD_FORM_ENDPOINT = "/api/contact";
 
+export function getLeadFormEndpoint() {
+  if (
+    typeof window !== "undefined" &&
+    window.location.hostname === "www.contactcenterusa.com"
+  ) {
+    return "https://contactcenterusa.com/api/contact";
+  }
+
+  return LEAD_FORM_ENDPOINT;
+}
+
 type LeadEventName = "cta_click" | "lead_form_submit";
 
 type LeadEventParams = {

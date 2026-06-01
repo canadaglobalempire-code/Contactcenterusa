@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle, Lock } from "lucide-react";
 import {
   appendLeadAttribution,
-  LEAD_FORM_ENDPOINT,
+  getLeadFormEndpoint,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -36,7 +36,7 @@ export function HeroContactForm({
     const formData = new FormData(e.currentTarget);
     appendLeadAttribution(formData, { ctaLocation, leadOffer });
     try {
-      const res = await fetch(LEAD_FORM_ENDPOINT, {
+      const res = await fetch(getLeadFormEndpoint(), {
         method: "POST",
         headers: { Accept: "application/json" },
         body: formData,
