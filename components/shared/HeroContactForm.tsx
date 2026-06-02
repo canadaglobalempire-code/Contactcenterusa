@@ -5,6 +5,8 @@ import { ArrowRight, CheckCircle, Lock } from "lucide-react";
 import {
   appendLeadAttribution,
   getLeadFormEndpoint,
+  SPLITFORMS_ACCESS_KEY,
+  submitLeadForm,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -36,13 +38,8 @@ export function HeroContactForm({
     const formData = new FormData(e.currentTarget);
     appendLeadAttribution(formData, { ctaLocation, leadOffer });
     try {
-      const res = await fetch(getLeadFormEndpoint(), {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
-      });
-      const data = await res.json();
-      if (res.ok && data.success) {
+      const { data, response } = await submitLeadForm(formData);
+      if (response.ok && data.success) {
         trackLeadEvent("lead_form_submit", {
           cta_location: formData.get("cta_location")?.toString(),
           form_name: "hero_contact_form",
@@ -73,11 +70,18 @@ export function HeroContactForm({
 
   return (
     <form
+      action={getLeadFormEndpoint()}
+      method="POST"
       onSubmit={handleSubmit}
       className="rounded-2xl bg-white p-6 shadow-xl lg:p-8"
     >
       <h3 className="text-xl font-bold text-navy">{title}</h3>
       <p className="mt-1 text-sm text-gray-600">{description}</p>
+      <input
+        type="hidden"
+        name="access_key"
+        value={SPLITFORMS_ACCESS_KEY}
+      />
       <input
         type="hidden"
         name="subject"

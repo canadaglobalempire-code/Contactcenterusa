@@ -18,6 +18,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Contact Form Deployment
+
+The lead forms post directly to SplitForms by default:
+
+```bash
+NEXT_PUBLIC_LEAD_FORM_ENDPOINT=https://splitforms.com/api/submit
+NEXT_PUBLIC_SPLITFORMS_ACCESS_KEY=your_splitforms_access_key
+```
+
+The fallback `/api/contact` route is still available if a deployment needs a
+same-origin proxy. If another website or preview domain submits to that API,
+add its exact origin to `CONTACT_FORM_ALLOWED_ORIGINS` as a comma-separated
+list:
+
+```bash
+NEXT_PUBLIC_LEAD_FORM_ENDPOINT=https://contactcenterusa.com/api/contact
+CONTACT_FORM_ALLOWED_ORIGINS=https://preview.example.com,https://www.example.com
+```
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

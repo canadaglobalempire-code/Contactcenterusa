@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, Lock, MapPin, Clock } from "lucide-react";
 import {
   appendLeadAttribution,
-  getLeadFormEndpoint,
+  submitLeadForm,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -31,16 +31,68 @@ const agentOptions = ["5-25", "25-50", "50-100", "100+"];
 const volumeOptions = ["0-5,000", "5,000-20,000", "20,000-100,000", "100,000-500,000", "500,000+"];
 const scheduleOptions = ["24/7", "Monday-Friday", "Weekdays + Saturday", "Custom Schedule"];
 
+const inputClass =
+  "mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
+const selectClass =
+  "mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
+
 export function ContactFormSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<Set<string>>(new Set());
+
+  // Red highlight for any required field the user left blank/unselected.
+  const errorRing = (name: string) =>
+    errors.has(name) ? " !border-red ring-2 ring-red/20" : "";
+
+  // Clear a field's error as soon as it becomes valid.
+  const clearFieldError = (e: React.ChangeEvent<HTMLFormElement>) => {
+    const target = e.target;
+    if (
+      !(target instanceof HTMLInputElement) &&
+      !(target instanceof HTMLSelectElement) &&
+      !(target instanceof HTMLTextAreaElement)
+    ) {
+      return;
+    }
+    if (target.name && errors.has(target.name) && target.checkValidity()) {
+      setErrors((prev) => {
+        const next = new Set(prev);
+        next.delete(target.name);
+        return next;
+      });
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
+
+    // All dropdowns are required (client requirement). If anything is missing,
+    // show it clearly instead of silently doing nothing.
+    if (!form.checkValidity()) {
+      const invalid = new Set<string>();
+      let firstInvalid: HTMLInputElement | HTMLSelectElement | null = null;
+      for (const el of Array.from(form.elements) as (
+        | HTMLInputElement
+        | HTMLSelectElement
+      )[]) {
+        if (el.name && typeof el.checkValidity === "function" && !el.checkValidity()) {
+          invalid.add(el.name);
+          if (!firstInvalid) firstInvalid = el;
+        }
+      }
+      setErrors(invalid);
+      form.reportValidity();
+      firstInvalid?.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+
+    setErrors(new Set());
     setIsSubmitting(true);
 
-    const formData = new FormData(e.currentTarget);
-    // Accept the website with or without a protocol; normalize to a full URL for the lead record.
+    const formData = new FormData(form);
+    // Accept the website with or without a protocol; normalize to a full URL.
     const website = (formData.get("website") ?? "").toString().trim();
     if (website && !/^https?:\/\//i.test(website)) {
       formData.set("website", `https://${website}`);
@@ -51,12 +103,7 @@ export function ContactFormSection() {
     });
 
     try {
-      const response = await fetch(getLeadFormEndpoint(), {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
-      });
-      const data = await response.json();
+      const { data, response } = await submitLeadForm(formData);
       if (response.ok && data.success) {
         trackLeadEvent("lead_form_submit", {
           cta_location: formData.get("cta_location")?.toString(),
@@ -98,45 +145,44 @@ export function ContactFormSection() {
             {isSubmitted ? (
               <div className="mt-12 flex flex-col items-center py-16 text-center">
                 <CheckCircle className="h-16 w-16 text-green-500" />
-                <h3 className="mt-4 text-2xl font-bold text-navy">
-                  Thank You!
-                </h3>
+                <h3 className="mt-4 text-2xl font-bold text-navy">Thank You!</h3>
                 <p className="mt-2 text-gray-700">
                   Your message has been sent. We will contact you within 24
                   hours.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-                <input type="hidden" name="subject" value="New Contact Form Submission — ContactCenterUSA.com" />
-                <input type="hidden" name="source_page" />
-                <input type="hidden" name="cta_location" />
-                <input type="hidden" name="lead_offer" />
-                <input type="hidden" name="submitted_at" />
+              <form
+                noValidate
+                onSubmit={handleSubmit}
+                onChange={clearFieldError}
+                className="mt-8 space-y-6"
+              >
+                {errors.size > 0 && (
+                  <div
+                    role="alert"
+                    className="rounded-xl border border-red/30 bg-red/5 px-4 py-3 text-sm font-medium text-red-dark"
+                  >
+                    Please complete the highlighted required fields below.
+                  </div>
+                )}
 
-                {/* Honeypot — hidden from humans; bots fill it and get rejected */}
                 <input
-                  type="checkbox"
-                  name="botcheck"
-                  className="hidden"
-                  style={{ display: "none" }}
-                  tabIndex={-1}
-                  autoComplete="off"
-                  aria-hidden="true"
+                  type="hidden"
+                  name="subject"
+                  value="New Contact Form Submission — ContactCenterUSA.com"
                 />
 
                 {/* Name & Company */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="text-sm font-medium text-navy">
-                      Name *
-                    </label>
+                    <label className="text-sm font-medium text-navy">Name *</label>
                     <input
                       name="name"
                       required
                       aria-label="Name"
                       placeholder="John Smith"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      className={inputClass + errorRing("name")}
                     />
                   </div>
                   <div>
@@ -148,7 +194,7 @@ export function ContactFormSection() {
                       required
                       aria-label="Company name"
                       placeholder="Acme Inc."
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      className={inputClass + errorRing("company")}
                     />
                   </div>
                 </div>
@@ -165,7 +211,7 @@ export function ContactFormSection() {
                       required
                       aria-label="Company email"
                       placeholder="you@company.com"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      className={inputClass + errorRing("email")}
                     />
                   </div>
                   <div>
@@ -178,7 +224,7 @@ export function ContactFormSection() {
                       required
                       aria-label="Phone number"
                       placeholder="(555) 123-4567"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      className={inputClass + errorRing("phone")}
                     />
                   </div>
                 </div>
@@ -186,9 +232,7 @@ export function ContactFormSection() {
                 {/* Website & Solution Type */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="text-sm font-medium text-navy">
-                      Website *
-                    </label>
+                    <label className="text-sm font-medium text-navy">Website *</label>
                     <input
                       name="website"
                       type="text"
@@ -196,22 +240,24 @@ export function ContactFormSection() {
                       required
                       aria-label="Company website"
                       placeholder="acme.com"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      className={inputClass + errorRing("website")}
                     />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Solution Type *
+                      Solution Type
                     </label>
                     <select
                       name="solution_type"
-                      required
                       aria-label="Solution type"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      defaultValue=""
+                      className={selectClass}
                     >
                       <option value="">Select solution type</option>
                       {solutionTypes.map((s) => (
-                        <option key={s} value={s}>{s}</option>
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -221,33 +267,37 @@ export function ContactFormSection() {
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Center Services Type *
+                      Call Center Services Type
                     </label>
                     <select
                       name="service_type"
-                      required
                       aria-label="Call center services type"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      defaultValue=""
+                      className={selectClass}
                     >
                       <option value="">Select service type</option>
                       {serviceTypes.map((s) => (
-                        <option key={s} value={s}>{s}</option>
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
                       ))}
                     </select>
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Agent Requirements *
+                      Agent Requirements
                     </label>
                     <select
                       name="agents"
-                      required
                       aria-label="Agent requirements"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      defaultValue=""
+                      className={selectClass}
                     >
                       <option value="">Select agent count</option>
                       {agentOptions.map((a) => (
-                        <option key={a} value={a}>{a}</option>
+                        <option key={a} value={a}>
+                          {a}
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -257,33 +307,37 @@ export function ContactFormSection() {
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Volume (Records/month) *
+                      Call Volume (Records/month)
                     </label>
                     <select
                       name="call_volume"
-                      required
                       aria-label="Call volume"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      defaultValue=""
+                      className={selectClass}
                     >
                       <option value="">Select volume</option>
                       {volumeOptions.map((v) => (
-                        <option key={v} value={v}>{v}</option>
+                        <option key={v} value={v}>
+                          {v}
+                        </option>
                       ))}
                     </select>
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Operating Schedule *
+                      Operating Schedule
                     </label>
                     <select
                       name="schedule"
-                      required
                       aria-label="Operating schedule"
-                      className="mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+                      defaultValue=""
+                      className={selectClass}
                     >
                       <option value="">Select schedule</option>
                       {scheduleOptions.map((s) => (
-                        <option key={s} value={s}>{s}</option>
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -332,8 +386,8 @@ export function ContactFormSection() {
               <div className="rounded-2xl bg-navy p-8 text-white">
                 <h3 className="text-xl font-bold">Reach Us Directly</h3>
                 <p className="mt-2 text-white/60 text-sm">
-                  Our team is available to answer your questions and discuss
-                  your needs.
+                  Our team is available to answer your questions and discuss your
+                  needs.
                 </p>
 
                 <div className="mt-8 space-y-5">

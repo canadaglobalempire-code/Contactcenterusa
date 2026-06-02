@@ -19,6 +19,8 @@ import { generateFAQSchema } from "@/lib/schema";
 import {
   appendLeadAttribution,
   getLeadFormEndpoint,
+  SPLITFORMS_ACCESS_KEY,
+  submitLeadForm,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
 
@@ -96,12 +98,7 @@ export function FAQSection() {
     });
 
     try {
-      const response = await fetch(getLeadFormEndpoint(), {
-        method: "POST",
-        headers: { Accept: "application/json" },
-        body: formData,
-      });
-      const result = await response.json();
+      const { data: result, response } = await submitLeadForm(formData);
       if (response.ok && result.success) {
         trackLeadEvent("lead_form_submit", {
           cta_location: formData.get("cta_location")?.toString(),
@@ -190,9 +187,13 @@ export function FAQSection() {
                 </div>
               ) : (
                 <form
+                  action={getLeadFormEndpoint()}
+                  method="POST"
                   onSubmit={handleSubmit(onSubmit)}
                   className="mt-6 space-y-4"
                 >
+                  <input type="hidden" name="access_key" value={SPLITFORMS_ACCESS_KEY} />
+                  <input type="hidden" name="subject" value="Homepage FAQ Form Inquiry — ContactCenterUSA.com" />
                   <div>
                     <Label htmlFor="faq-name" className="text-sm font-medium text-navy">
                       Full Name *

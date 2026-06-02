@@ -1,13 +1,12 @@
-export const LEAD_FORM_ENDPOINT = "/api/contact";
+export const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
+export const SPLITFORMS_ACCESS_KEY =
+  process.env.NEXT_PUBLIC_SPLITFORMS_ACCESS_KEY?.trim() ||
+  "abaffe957645499b9c3bf360f0bc7661";
+
+export const LEAD_FORM_ENDPOINT =
+  process.env.NEXT_PUBLIC_LEAD_FORM_ENDPOINT?.trim() || SPLITFORMS_ENDPOINT;
 
 export function getLeadFormEndpoint() {
-  if (
-    typeof window !== "undefined" &&
-    window.location.hostname === "www.contactcenterusa.com"
-  ) {
-    return "https://contactcenterusa.com/api/contact";
-  }
-
   return LEAD_FORM_ENDPOINT;
 }
 
@@ -77,4 +76,28 @@ export function appendLeadAttribution(
   formData.set("cta_location", ctaLocation);
   formData.set("lead_offer", leadOffer);
   formData.set("submitted_at", new Date().toISOString());
+}
+
+export async function submitLeadForm(formData: FormData) {
+  // Send ALL fields as native browser multipart, directly to SplitForms — the
+  // exact method that stored leads cleanly before (every field in its own
+  // column). Critically:
+  //   - DO NOT set Content-Type: the browser must add its own multipart
+  //     boundary. Hand-built multipart (curl/undici) gets mangled by SplitForms.
+  //   - DO NOT urlencode or send JSON: SplitForms returns success but drops it.
+  //   - DO NOT route through a Node proxy: its re-encoding corrupts the fields.
+  formData.set("access_key", SPLITFORMS_ACCESS_KEY);
+
+  const response = await fetch(getLeadFormEndpoint(), {
+    method: "POST",
+    headers: { Accept: "application/json" },
+    body: formData,
+  });
+
+  const contentType = response.headers.get("content-type") ?? "";
+  const data = contentType.includes("application/json")
+    ? await response.json()
+    : { success: response.ok, message: await response.text() };
+
+  return { data, response };
 }
