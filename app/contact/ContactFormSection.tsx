@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, Lock, MapPin, Clock } from "lucide-react";
 import {
   appendLeadAttribution,
+  getLeadFormEndpoint,
+  SPLITFORMS_ACCESS_KEY,
   submitLeadForm,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
@@ -41,6 +43,12 @@ export function ContactFormSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Set<string>>(new Set());
 
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("submitted") === "1") {
+      setIsSubmitted(true);
+    }
+  }, []);
+
   // Red highlight for any required field the user left blank/unselected.
   const errorRing = (name: string) =>
     errors.has(name) ? " !border-red ring-2 ring-red/20" : "";
@@ -64,12 +72,27 @@ export function ContactFormSection() {
     }
   };
 
+  const markFieldInvalid = (e: React.InvalidEvent<HTMLFormElement>) => {
+    const target = e.target;
+    if (
+      !(target instanceof HTMLInputElement) &&
+      !(target instanceof HTMLSelectElement) &&
+      !(target instanceof HTMLTextAreaElement)
+    ) {
+      return;
+    }
+
+    if (target.name) {
+      setErrors((prev) => new Set(prev).add(target.name));
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
 
-    // All dropdowns are required (client requirement). If anything is missing,
-    // show it clearly instead of silently doing nothing.
+    // If any required field is missing, show it clearly instead of silently
+    // doing nothing.
     if (!form.checkValidity()) {
       const invalid = new Set<string>();
       let firstInvalid: HTMLInputElement | HTMLSelectElement | null = null;
@@ -153,9 +176,12 @@ export function ContactFormSection() {
               </div>
             ) : (
               <form
-                noValidate
+                action={getLeadFormEndpoint()}
+                method="POST"
+                encType="multipart/form-data"
                 onSubmit={handleSubmit}
                 onChange={clearFieldError}
+                onInvalid={markFieldInvalid}
                 className="mt-8 space-y-6"
               >
                 {errors.size > 0 && (
@@ -171,6 +197,25 @@ export function ContactFormSection() {
                   type="hidden"
                   name="subject"
                   value="New Contact Form Submission — ContactCenterUSA.com"
+                />
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value={SPLITFORMS_ACCESS_KEY}
+                />
+                <input type="hidden" name="redirect" value="/contact?submitted=1" />
+                <input type="hidden" name="source_page" />
+                <input type="hidden" name="cta_location" />
+                <input type="hidden" name="lead_offer" />
+                <input type="hidden" name="submitted_at" />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                  style={{ display: "none" }}
                 />
 
                 {/* Name & Company */}
@@ -232,15 +277,14 @@ export function ContactFormSection() {
                 {/* Website & Solution Type */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="text-sm font-medium text-navy">Website *</label>
+                    <label className="text-sm font-medium text-navy">Website</label>
                     <input
                       name="website"
                       type="text"
                       inputMode="url"
-                      required
                       aria-label="Company website"
                       placeholder="acme.com"
-                      className={inputClass + errorRing("website")}
+                      className={inputClass}
                     />
                   </div>
                   <div>
