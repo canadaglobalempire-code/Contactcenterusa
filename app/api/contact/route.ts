@@ -1,6 +1,6 @@
 const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
 const SPLITFORMS_ACCESS_KEY =
-  process.env.SPLITFORMS_ACCESS_KEY ?? "abaffe957645499b9c3bf360f0bc7661";
+  process.env.SPLITFORMS_ACCESS_KEY ?? "0ffd7166ac97420ba6ffc7727d189d07";
 
 const DEFAULT_ALLOWED_ORIGINS = [
   "https://contactcenterusa.com",

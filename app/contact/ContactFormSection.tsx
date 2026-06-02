@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, Lock, MapPin, Clock } from "lucide-react";
 import {
-  appendLeadAttribution,
   getLeadFormEndpoint,
   SPLITFORMS_ACCESS_KEY,
   submitLeadForm,
@@ -37,6 +36,28 @@ const inputClass =
   "mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
 const selectClass =
   "mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
+const securityFieldName = "security_answer";
+const securityQuestion = "2 + 4";
+const securityAnswer = "6";
+
+function appendContactFormAttribution(formData: FormData) {
+  if (typeof window === "undefined") return;
+
+  const searchParams = new URLSearchParams(window.location.search);
+  formData.set(
+    "source_page",
+    searchParams.get("source_page") ?? `${window.location.pathname}${window.location.search}`,
+  );
+  formData.set(
+    "cta_location",
+    searchParams.get("cta_location") ?? "contact_page_form",
+  );
+  formData.set(
+    "lead_offer",
+    searchParams.get("lead_offer") ?? "General call center quote",
+  );
+  formData.set("submitted_at", new Date().toISOString());
+}
 
 export function ContactFormSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -63,6 +84,16 @@ export function ContactFormSection() {
     ) {
       return;
     }
+
+    if (target.name === securityFieldName) {
+      const isCorrect = target.value.trim() === securityAnswer;
+      target.setCustomValidity(
+        isCorrect || !target.value.trim()
+          ? ""
+          : `Please answer ${securityQuestion} correctly.`,
+      );
+    }
+
     if (target.name && errors.has(target.name) && target.checkValidity()) {
       setErrors((prev) => {
         const next = new Set(prev);
@@ -90,15 +121,24 @@ export function ContactFormSection() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
+    const securityInput = form.elements.namedItem(securityFieldName);
+    if (securityInput instanceof HTMLInputElement) {
+      securityInput.setCustomValidity("");
+    }
 
     // If any required field is missing, show it clearly instead of silently
     // doing nothing.
     if (!form.checkValidity()) {
       const invalid = new Set<string>();
-      let firstInvalid: HTMLInputElement | HTMLSelectElement | null = null;
+      let firstInvalid:
+        | HTMLInputElement
+        | HTMLSelectElement
+        | HTMLTextAreaElement
+        | null = null;
       for (const el of Array.from(form.elements) as (
         | HTMLInputElement
         | HTMLSelectElement
+        | HTMLTextAreaElement
       )[]) {
         if (el.name && typeof el.checkValidity === "function" && !el.checkValidity()) {
           invalid.add(el.name);
@@ -111,20 +151,27 @@ export function ContactFormSection() {
       return;
     }
 
+    const formData = new FormData(form);
+    if ((formData.get(securityFieldName) ?? "").toString().trim() !== securityAnswer) {
+      if (securityInput instanceof HTMLInputElement) {
+        securityInput.setCustomValidity(`Please answer ${securityQuestion} correctly.`);
+        setErrors(new Set([securityFieldName]));
+        securityInput.reportValidity();
+        securityInput.scrollIntoView({ behavior: "smooth", block: "center" });
+        securityInput.focus({ preventScroll: true });
+      }
+      return;
+    }
+
     setErrors(new Set());
     setIsSubmitting(true);
 
-    const formData = new FormData(form);
-    // SplitForms reserves "website" as a honeypot-style field, so submit the
-    // user's company URL under a business-specific field name.
-    const businessWebsite = (formData.get("business_website") ?? "").toString().trim();
-    if (businessWebsite && !/^https?:\/\//i.test(businessWebsite)) {
-      formData.set("business_website", `https://${businessWebsite}`);
+    formData.delete(securityFieldName);
+    const companyUrl = (formData.get("company_url") ?? "").toString().trim();
+    if (companyUrl && !/^https?:\/\//i.test(companyUrl)) {
+      formData.set("company_url", `https://${companyUrl}`);
     }
-    appendLeadAttribution(formData, {
-      ctaLocation: "contact_page_form",
-      leadOffer: "General call center quote",
-    });
+    appendContactFormAttribution(formData);
 
     try {
       const { data, response } = await submitLeadForm(formData);
@@ -190,13 +237,13 @@ export function ContactFormSection() {
                     role="alert"
                     className="rounded-xl border border-red/30 bg-red/5 px-4 py-3 text-sm font-medium text-red-dark"
                   >
-                    Please complete the highlighted required fields below.
+                    Please complete the highlighted fields below.
                   </div>
                 )}
 
                 <input
                   type="hidden"
-                  name="subject"
+                  name="form_subject"
                   value="New Contact Form Submission — ContactCenterUSA.com"
                 />
                 <input
@@ -205,30 +252,20 @@ export function ContactFormSection() {
                   value={SPLITFORMS_ACCESS_KEY}
                 />
                 <input type="hidden" name="redirect" value="/contact?submitted=1" />
-                <input type="hidden" name="source_page" />
-                <input type="hidden" name="cta_location" />
-                <input type="hidden" name="lead_offer" />
+                <input type="hidden" name="source_page" value="/contact" />
+                <input type="hidden" name="cta_location" value="contact_page_form" />
+                <input type="hidden" name="lead_offer" value="General call center quote" />
                 <input type="hidden" name="submitted_at" />
-                <input
-                  type="checkbox"
-                  name="botcheck"
-                  tabIndex={-1}
-                  autoComplete="off"
-                  aria-hidden="true"
-                  className="hidden"
-                  style={{ display: "none" }}
-                />
-
                 {/* Name & Company */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">Name *</label>
                     <input
-                      name="name"
+                      name="full_name"
                       required
                       aria-label="Name"
                       placeholder="John Smith"
-                      className={inputClass + errorRing("name")}
+                      className={inputClass + errorRing("full_name")}
                     />
                   </div>
                   <div>
@@ -236,11 +273,11 @@ export function ContactFormSection() {
                       Company Name *
                     </label>
                     <input
-                      name="company"
+                      name="company_name"
                       required
                       aria-label="Company name"
                       placeholder="Acme Inc."
-                      className={inputClass + errorRing("company")}
+                      className={inputClass + errorRing("company_name")}
                     />
                   </div>
                 </div>
@@ -252,12 +289,12 @@ export function ContactFormSection() {
                       Company Email *
                     </label>
                     <input
-                      name="email"
+                      name="work_email"
                       type="email"
                       required
                       aria-label="Company email"
                       placeholder="you@company.com"
-                      className={inputClass + errorRing("email")}
+                      className={inputClass + errorRing("work_email")}
                     />
                   </div>
                   <div>
@@ -265,38 +302,41 @@ export function ContactFormSection() {
                       Phone Number *
                     </label>
                     <input
-                      name="phone"
+                      name="phone_number"
                       type="tel"
                       required
                       aria-label="Phone number"
                       placeholder="(555) 123-4567"
-                      className={inputClass + errorRing("phone")}
+                      className={inputClass + errorRing("phone_number")}
                     />
                   </div>
                 </div>
 
-                {/* Website & Solution Type */}
+                {/* Company URL & Solution Type */}
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="text-sm font-medium text-navy">Website</label>
+                    <label className="text-sm font-medium text-navy">
+                      Company Website
+                    </label>
                     <input
-                      name="business_website"
+                      name="company_url"
                       type="text"
                       inputMode="url"
                       aria-label="Company website"
-                      placeholder="acme.com"
+                      placeholder="company.com"
                       className={inputClass}
                     />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Solution Type
+                      Solution Type *
                     </label>
                     <select
                       name="solution_type"
+                      required
                       aria-label="Solution type"
                       defaultValue=""
-                      className={selectClass}
+                      className={selectClass + errorRing("solution_type")}
                     >
                       <option value="">Select solution type</option>
                       {solutionTypes.map((s) => (
@@ -312,13 +352,14 @@ export function ContactFormSection() {
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Center Services Type
+                      Call Center Services Type *
                     </label>
                     <select
                       name="service_type"
+                      required
                       aria-label="Call center services type"
                       defaultValue=""
-                      className={selectClass}
+                      className={selectClass + errorRing("service_type")}
                     >
                       <option value="">Select service type</option>
                       {serviceTypes.map((s) => (
@@ -330,13 +371,14 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Agent Requirements
+                      Agent Requirements *
                     </label>
                     <select
-                      name="agents"
+                      name="agent_requirement"
+                      required
                       aria-label="Agent requirements"
                       defaultValue=""
-                      className={selectClass}
+                      className={selectClass + errorRing("agent_requirement")}
                     >
                       <option value="">Select agent count</option>
                       {agentOptions.map((a) => (
@@ -352,13 +394,14 @@ export function ContactFormSection() {
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Call Volume (Records/month)
+                      Call Volume (Records/month) *
                     </label>
                     <select
                       name="call_volume"
+                      required
                       aria-label="Call volume"
                       defaultValue=""
-                      className={selectClass}
+                      className={selectClass + errorRing("call_volume")}
                     >
                       <option value="">Select volume</option>
                       {volumeOptions.map((v) => (
@@ -370,13 +413,14 @@ export function ContactFormSection() {
                   </div>
                   <div>
                     <label className="text-sm font-medium text-navy">
-                      Operating Schedule
+                      Operating Schedule *
                     </label>
                     <select
-                      name="schedule"
+                      name="operating_schedule"
+                      required
                       aria-label="Operating schedule"
                       defaultValue=""
-                      className={selectClass}
+                      className={selectClass + errorRing("operating_schedule")}
                     >
                       <option value="">Select schedule</option>
                       {scheduleOptions.map((s) => (
@@ -394,12 +438,32 @@ export function ContactFormSection() {
                     Additional Comments
                   </label>
                   <textarea
-                    name="message"
+                    name="additional_comments"
                     rows={4}
                     placeholder="Tell us about your company, your program, or your requirements..."
                     aria-label="Additional comments"
                     className="mt-1.5 w-full rounded-xl border border-gray-200 p-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
                   />
+                </div>
+
+                {/* Security Check */}
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  <div>
+                    <label className="text-sm font-medium text-navy">
+                      Security Check: {securityQuestion} = ? *
+                    </label>
+                    <input
+                      name={securityFieldName}
+                      type="text"
+                      inputMode="numeric"
+                      pattern="[0-9]*"
+                      required
+                      autoComplete="off"
+                      aria-label={`Security check: ${securityQuestion}`}
+                      placeholder="Enter answer"
+                      className={inputClass + errorRing(securityFieldName)}
+                    />
+                  </div>
                 </div>
 
                 <button

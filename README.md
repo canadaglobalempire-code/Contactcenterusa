@@ -24,7 +24,7 @@ The lead forms post directly to SplitForms by default:
 
 ```bash
 NEXT_PUBLIC_LEAD_FORM_ENDPOINT=https://splitforms.com/api/submit
-NEXT_PUBLIC_SPLITFORMS_ACCESS_KEY=your_splitforms_access_key
+NEXT_PUBLIC_SPLITFORMS_ACCESS_KEY=0ffd7166ac97420ba6ffc7727d189d07
 ```
 
 The fallback `/api/contact` route is still available if a deployment needs a
