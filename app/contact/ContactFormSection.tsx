@@ -115,10 +115,11 @@ export function ContactFormSection() {
     setIsSubmitting(true);
 
     const formData = new FormData(form);
-    // Accept the website with or without a protocol; normalize to a full URL.
-    const website = (formData.get("website") ?? "").toString().trim();
-    if (website && !/^https?:\/\//i.test(website)) {
-      formData.set("website", `https://${website}`);
+    // SplitForms reserves "website" as a honeypot-style field, so submit the
+    // user's company URL under a business-specific field name.
+    const businessWebsite = (formData.get("business_website") ?? "").toString().trim();
+    if (businessWebsite && !/^https?:\/\//i.test(businessWebsite)) {
+      formData.set("business_website", `https://${businessWebsite}`);
     }
     appendLeadAttribution(formData, {
       ctaLocation: "contact_page_form",
@@ -279,7 +280,7 @@ export function ContactFormSection() {
                   <div>
                     <label className="text-sm font-medium text-navy">Website</label>
                     <input
-                      name="website"
+                      name="business_website"
                       type="text"
                       inputMode="url"
                       aria-label="Company website"
