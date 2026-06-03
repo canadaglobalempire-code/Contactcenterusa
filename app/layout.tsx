@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { MobileStickyCTA } from "@/components/shared/MobileStickyCTA";
 import {
-  generateLocalBusinessSchema,
   generateOrganizationSchema,
   generateServiceCatalogSchema,
   generateWebSiteSchema,
@@ -82,29 +82,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZQ3KW3C5SY" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZQ3KW3C5SY"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-ZQ3KW3C5SY');`,
-          }}
-        />
-        {/* Microsoft Clarity */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(c,l,a,r,i,t,y){
+gtag('config', 'G-ZQ3KW3C5SY');`}
+        </Script>
+        <Script id="microsoft-clarity" strategy="lazyOnload">
+          {`(function(c,l,a,r,i,t,y){
 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "wboieqwa8s");`,
-          }}
-        />
-      </head>
-      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+})(window, document, "clarity", "script", "wboieqwa8s");`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -115,12 +110,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(generateWebSiteSchema()),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateLocalBusinessSchema()),
           }}
         />
         <script

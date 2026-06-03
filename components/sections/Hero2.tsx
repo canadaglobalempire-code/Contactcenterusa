@@ -47,11 +47,11 @@ export function Hero2() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="max-w-5xl text-[28px] font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[68px]"
           >
-            Contact Center USA
+            US-Based Call Center
             <br />
-            Keep America Great
+            Services & Outsourcing
             <br />
-            By Employing Americans
+            By American Agents
           </motion.h1>
 
           {/* Subtitle */}
@@ -61,7 +61,7 @@ export function Hero2() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mx-auto mt-5 sm:mt-6 max-w-2xl text-[14px] leading-relaxed text-white/80 sm:text-lg"
           >
-            Have your customers had enough of foreign offshore call center agents? Grow your brand, protect your reputation, and provide customer support with excellence and peace of mind.
+            Contact Center USA helps businesses handle inbound support, outbound calls, customer service, technical support, and lead response with trained US-based teams.
           </motion.p>
 
           {/* CTA Buttons */}

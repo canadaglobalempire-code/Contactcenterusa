@@ -64,7 +64,8 @@ const company = [
   { label: "About Us", href: "/about" },
   { label: "Company History", href: "/about/company-history" },
   { label: "Why Work With Us", href: "/about/why-work-with-us" },
-  { label: "Industries", href: "/about/industries" },
+  { label: "Industries", href: "/industries" },
+  { label: "Locations", href: "/locations" },
   { label: "Differentiators", href: "/why-us" },
   { label: "Blog", href: "/blog" },
   { label: "Answers", href: "/answers" },
@@ -232,9 +233,14 @@ export default function Footer() {
 
         {/* City Pages */}
         <div className="mt-12 border-t border-gray-100 pt-8">
-          <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-4">
-            Locations We Serve
-          </h3>
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <h3 className="text-navy font-semibold text-sm uppercase tracking-wider">
+              Locations We Serve
+            </h3>
+            <Link href="/locations" className="text-sm font-semibold text-red transition-colors hover:text-red-dark">
+              View all locations
+            </Link>
+          </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2">
             {[
               { label: "New York", href: "/call-center-services-new-york" },

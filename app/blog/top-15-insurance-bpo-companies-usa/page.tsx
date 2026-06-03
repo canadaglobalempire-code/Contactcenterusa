@@ -3,9 +3,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "Top 15 Insurance BPO Companies USA (2026)",
+  title: "Best Insurance BPO Companies in USA (2026)",
   description:
-    "The top 15 insurance BPO companies in the USA for 2026, ranked by claims expertise, compliance, technology & CX. Compare providers and request a quote.",
+    "Compare insurance BPO providers by claims support, policyholder CX, compliance workflows, surge coverage, technology, and reporting.",
   keywords: [
     "insurance bpo companies",
     "top insurance bpo companies",

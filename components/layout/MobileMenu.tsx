@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { Mail } from "lucide-react"
 import {
   Sheet,
   SheetContent,
@@ -9,7 +8,6 @@ import {
   SheetTitle,
   SheetFooter,
 } from "@/components/ui/sheet"
-import { siteConfig } from "@/lib/seo-config"
 
 const services = [
   { label: "All Services", href: "/services", description: "View all services" },
@@ -55,7 +53,8 @@ const mainLinks = [
   { label: "About Us", href: "/about" },
   { label: "Company History", href: "/about/company-history" },
   { label: "Why Work With Us", href: "/about/why-work-with-us" },
-  { label: "Industries", href: "/about/industries" },
+  { label: "Industries", href: "/industries" },
+  { label: "Locations", href: "/locations" },
   { label: "Differentiators", href: "/why-us" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },

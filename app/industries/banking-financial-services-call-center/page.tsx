@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Banking Financial Services Call Center | Contact Center USA",
   description:
-    "US-based banking financial services call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+    "US-based banking & financial services call center: customer care, inbound/outbound calls, and back-office support. Request an outsourcing quote.",
   keywords: [
     "banking bpo services",
     "financial services call center",

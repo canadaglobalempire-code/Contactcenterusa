@@ -99,7 +99,7 @@ const testimonials: Record<string, { quote: string; name: string; title: string;
 
 function getFAQs(city: string, state: string) {
   return [
-    { question: `How much do call center services cost in ${city}?`, answer: `Our call center services for ${city} businesses start at competitive per-agent or per-minute rates depending on your volume and requirements. We offer flexible pricing with no long-term contracts, making it easy for ${city} companies of all sizes to get started.` },
+    { question: `What call center service models are available for ${city} businesses?`, answer: `We support dedicated teams, overflow coverage, after-hours answering, inbound customer support, outbound outreach, technical support, and multilingual programs for ${city} businesses. The right model depends on your call volume, channels, hours, compliance needs, and launch timeline.` },
     { question: `Do you have call center agents in ${city}, ${state}?`, answer: `Our agents are distributed across the United States. We serve ${city} businesses with dedicated teams that understand the local market, timezone, and cultural nuances. All agents are 100% US-based.` },
     { question: `What industries do you serve in ${city}?`, answer: `We serve a wide range of industries in ${city}, including finance, healthcare, technology, ecommerce, insurance, and more. Our agents receive industry-specific training to handle each sector's unique needs.` },
     { question: `How quickly can you set up services for my ${city} business?`, answer: `Most ${city} businesses are fully onboarded within 48 hours to 2 weeks. Our streamlined process includes needs assessment, agent training, technology integration, and quality assurance testing.` },
@@ -120,22 +120,19 @@ export function CityPageTemplate({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Contact Center USA",
+            "@type": "Service",
+            name: `Call Center Services in ${city}, ${stateAbbr}`,
             url: `https://contactcenterusa.com/call-center-services-${city.toLowerCase().replace(/\s+/g, '-')}`,
             description: `US-based call center outsourcing services in ${city}, ${stateAbbr}`,
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: city,
-              addressRegion: stateAbbr,
-              addressCountry: "US",
+            serviceType: "Call center outsourcing",
+            provider: {
+              "@type": "Organization",
+              name: "Contact Center USA",
+              url: "https://contactcenterusa.com",
             },
-            telephone: "+1-800-555-0199",
-            openingHoursSpecification: {
-              "@type": "OpeningHoursSpecification",
-              dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-              opens: "00:00",
-              closes: "23:59",
+            areaServed: {
+              "@type": "City",
+              name: `${city}, ${state}`,
             },
           }),
         }}
@@ -175,8 +172,11 @@ export function CityPageTemplate({
 
       <Breadcrumb items={[
         { label: "Home", href: "/" },
-        { label: "Locations", href: "#" },
-        { label: `${city}, ${stateAbbr}`, href: "#" },
+        { label: "Locations", href: "/locations" },
+        {
+          label: `${city}, ${stateAbbr}`,
+          href: `/call-center-services-${city.toLowerCase().replace(/\s+/g, "-")}`,
+        },
       ]} />
 
       {/* STATS BAR */}

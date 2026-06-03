@@ -6,7 +6,7 @@ import { AboutHistory } from "./AboutHistory";
 import { AboutCTA } from "./AboutCTA";
 
 export const metadata: Metadata = {
-  title: "About Contact Center USA",
+  title: "About Contact Center USA | US-Based Call Center Partner",
   description:
     "Learn about Contact Center USA, our US-based call center outsourcing approach, leadership experience, industries served, and customer support values.",
   alternates: { canonical: "/about" },

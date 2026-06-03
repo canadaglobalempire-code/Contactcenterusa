@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { siteConfig } from "@/lib/seo-config";
 import MobileMenu from "@/components/layout/MobileMenu";
 
 const services = [
@@ -164,7 +163,13 @@ export default function Navbar() {
           <nav className="hidden items-center gap-7 lg:flex">
             <Dropdown label="Services" href="/services" items={services} />
             <Dropdown label="Solutions" href="/solutions" items={solutions} />
-            <Dropdown label="Industries" href="/about/industries" items={industries} />
+            <Dropdown label="Industries" href="/industries" items={industries} />
+            <Link
+              href="/locations"
+              className="text-[15px] font-medium text-gray-900 transition-colors hover:text-red"
+            >
+              Locations
+            </Link>
             <Link
               href="/why-us"
               className="text-[15px] font-medium text-gray-900 transition-colors hover:text-red"

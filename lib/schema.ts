@@ -80,7 +80,6 @@ export function generateOrganizationSchema() {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+1-800-555-0199",
       contactType: "sales",
       email: "info@contactcenterusa.com",
       url: "https://contactcenterusa.com/contact",
@@ -168,8 +167,6 @@ export function generateLocalBusinessSchema() {
     name: "Contact Center USA",
     url: "https://contactcenterusa.com",
     image: "https://contactcenterusa.com/images/logo.png",
-    telephone: "+1-800-555-0199",
-    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressCountry: "US",
