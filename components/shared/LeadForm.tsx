@@ -227,7 +227,7 @@ export function LeadForm({
           onSubmit={handleSubmit}
           onChange={clearFieldError}
           onInvalid={markFieldInvalid}
-          className={title || description ? "mt-6 space-y-5" : "space-y-5"}
+          className={`@container ${title || description ? "mt-6 " : ""}space-y-5`}
         >
           {errors.size > 0 && (
             <div
@@ -247,7 +247,7 @@ export function LeadForm({
           <input type="hidden" name="submitted_at" />
 
           {/* Name & Company */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
             <div>
               <label className="text-sm font-medium text-navy">Name *</label>
               <input
@@ -271,7 +271,7 @@ export function LeadForm({
           </div>
 
           {/* Email & Phone */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
             <div>
               <label className="text-sm font-medium text-navy">Company Email *</label>
               <input
@@ -297,7 +297,7 @@ export function LeadForm({
           </div>
 
           {/* Website & Solution Type */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
             <div>
               <label className="text-sm font-medium text-navy">Company Website</label>
               <input
@@ -329,7 +329,7 @@ export function LeadForm({
           </div>
 
           {/* Service Type & Agent Requirements */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
             <div>
               <label className="text-sm font-medium text-navy">
                 Call Center Services Type *
@@ -369,7 +369,7 @@ export function LeadForm({
           </div>
 
           {/* Call Volume & Operating Schedule */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
             <div>
               <label className="text-sm font-medium text-navy">
                 Call Volume (Records/month) *
@@ -421,7 +421,7 @@ export function LeadForm({
           </div>
 
           {/* Security Check */}
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
             <div>
               <label className="text-sm font-medium text-navy">
                 Security Check: {securityQuestion} = ? *
