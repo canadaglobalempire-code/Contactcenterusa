@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Script from "next/script";
 import { ArrowRight, CheckCircle, Lock } from "lucide-react";
 import {
   getLeadFormEndpoint,
@@ -8,6 +9,22 @@ import {
   submitLeadForm,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
+
+declare global {
+  interface Window {
+    grecaptcha?: {
+      render: (el: HTMLElement, opts: { sitekey: string; size?: string }) => number;
+      getResponse: (id?: number) => string;
+      reset: (id?: number) => void;
+    };
+  }
+}
+
+// Public reCAPTCHA v2 site key (safe to ship in the page). The SECRET key is
+// NEVER in client code — it lives only in the SplitForms dashboard, which
+// verifies the token server-side and rejects any submission (e.g. a bot POSTing
+// straight to the API) that doesn't carry a valid token.
+const RECAPTCHA_SITE_KEY = "6LdheAstAAAAAJ1wm8kCj4gF6BzrTXZZQU33xVQp";
 
 const serviceTypes = [
   "Inbound",
@@ -35,10 +52,6 @@ const inputClass =
   "h-11 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
 const selectClass =
   "h-11 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
-
-const securityFieldName = "security_answer";
-const securityQuestion = "2 + 4";
-const securityAnswer = "6";
 
 type LeadFormProps = {
   title?: string;
@@ -68,11 +81,34 @@ export function LeadForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Set<string>>(new Set());
   const [redirectTo, setRedirectTo] = useState("/contact?submitted=1");
+  const recaptchaRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<number | null>(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get("submitted") === "1") setIsSubmitted(true);
     setRedirectTo(`${window.location.pathname}?submitted=1`);
+  }, []);
+
+  // Render the reCAPTCHA widget once the API script is ready. Polling covers
+  // first load, client-side navigation, and the cached-script case.
+  useEffect(() => {
+    let tries = 0;
+    const id = window.setInterval(() => {
+      const g = window.grecaptcha;
+      if (g?.render && recaptchaRef.current && widgetIdRef.current === null) {
+        try {
+          widgetIdRef.current = g.render(recaptchaRef.current, {
+            sitekey: RECAPTCHA_SITE_KEY,
+          });
+        } catch {
+          /* already rendered */
+        }
+        window.clearInterval(id);
+      }
+      if (++tries > 50) window.clearInterval(id);
+    }, 200);
+    return () => window.clearInterval(id);
   }, []);
 
   const errorRing = (name: string) =>
@@ -87,16 +123,6 @@ export function LeadForm({
     ) {
       return;
     }
-
-    if (target.name === securityFieldName) {
-      const isCorrect = target.value.trim() === securityAnswer;
-      target.setCustomValidity(
-        isCorrect || !target.value.trim()
-          ? ""
-          : `Please answer ${securityQuestion} correctly.`,
-      );
-    }
-
     if (target.name && errors.has(target.name) && target.checkValidity()) {
       setErrors((prev) => {
         const next = new Set(prev);
@@ -123,10 +149,6 @@ export function LeadForm({
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const securityInput = form.elements.namedItem(securityFieldName);
-    if (securityInput instanceof HTMLInputElement) {
-      securityInput.setCustomValidity("");
-    }
 
     if (!form.checkValidity()) {
       const invalid = new Set<string>();
@@ -151,22 +173,22 @@ export function LeadForm({
       return;
     }
 
-    const formData = new FormData(form);
-    if ((formData.get(securityFieldName) ?? "").toString().trim() !== securityAnswer) {
-      if (securityInput instanceof HTMLInputElement) {
-        securityInput.setCustomValidity(`Please answer ${securityQuestion} correctly.`);
-        setErrors(new Set([securityFieldName]));
-        securityInput.reportValidity();
-        securityInput.scrollIntoView({ behavior: "smooth", block: "center" });
-        securityInput.focus({ preventScroll: true });
-      }
+    // reCAPTCHA: must be solved. The token is verified by SplitForms (secret
+    // key) — a bot POSTing directly has no valid token and is rejected.
+    const token =
+      window.grecaptcha && widgetIdRef.current !== null
+        ? window.grecaptcha.getResponse(widgetIdRef.current)
+        : "";
+    if (!token) {
+      alert("Please complete the “I'm not a robot” verification.");
       return;
     }
 
     setErrors(new Set());
     setIsSubmitting(true);
 
-    formData.delete(securityFieldName);
+    const formData = new FormData(form);
+    formData.set("g-recaptcha-response", token);
     const companyUrl = (formData.get("company_url") ?? "").toString().trim();
     if (companyUrl && !/^https?:\/\//i.test(companyUrl)) {
       formData.set("company_url", `https://${companyUrl}`);
@@ -194,9 +216,11 @@ export function LeadForm({
         setIsSubmitted(true);
       } else {
         alert("Error: " + (data.message || "Something went wrong. Please try again."));
+        window.grecaptcha?.reset(widgetIdRef.current ?? undefined);
       }
     } catch {
       alert("Something went wrong. Please try again.");
+      window.grecaptcha?.reset(widgetIdRef.current ?? undefined);
     } finally {
       setIsSubmitting(false);
     }
@@ -208,6 +232,10 @@ export function LeadForm({
 
   return (
     <div className={wrapperClass}>
+      <Script
+        src="https://www.google.com/recaptcha/api.js?render=explicit"
+        strategy="afterInteractive"
+      />
       {title && <h3 className="text-xl font-bold text-navy">{title}</h3>}
       {description && <p className="mt-1 text-sm text-gray-600">{description}</p>}
 
@@ -245,6 +273,21 @@ export function LeadForm({
           <input type="hidden" name="cta_location" />
           <input type="hidden" name="lead_offer" />
           <input type="hidden" name="submitted_at" />
+
+          {/*
+            Honeypot — hidden from people, irresistible to bots. It's a checkbox,
+            so a real (unchecked) submission never sends it; a bot that fills the
+            form ticks it and SplitForms (Honeypot: Basic) drops the lead.
+          */}
+          <input
+            type="checkbox"
+            name="botcheck"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="hidden"
+            style={{ display: "none" }}
+          />
 
           {/* Labels hidden — placeholders carry the field names. */}
           {/* Name & Company */}
@@ -384,21 +427,11 @@ export function LeadForm({
             className="w-full rounded-xl border border-gray-200 p-3 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
           />
 
-          {/* Security check — label kept so the math question stays visible */}
-          <label className="flex items-center gap-2 text-sm font-medium text-navy">
-            <span className="whitespace-nowrap">Spam check: {securityQuestion} =</span>
-            <input
-              name={securityFieldName}
-              type="text"
-              inputMode="numeric"
-              pattern="[0-9]*"
-              required
-              autoComplete="off"
-              aria-label={`Security check: ${securityQuestion}`}
-              placeholder="?"
-              className={"h-11 w-20 rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20" + errorRing(securityFieldName)}
-            />
-          </label>
+          {/* reCAPTCHA v2 — token is verified server-side by SplitForms */}
+          <div
+            ref={recaptchaRef}
+            className="origin-top-left scale-[0.85] @[300px]:scale-100"
+          />
 
           <button
             type="submit"
