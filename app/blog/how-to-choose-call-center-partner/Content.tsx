@@ -353,7 +353,7 @@ export default function HowToChooseCallCenterPartnerContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="lg:sticky lg:top-28 space-y-8">
+              <div className="space-y-8">
                 <div className="rounded-2xl bg-navy p-6">
                   <HeroContactForm />
                 </div>

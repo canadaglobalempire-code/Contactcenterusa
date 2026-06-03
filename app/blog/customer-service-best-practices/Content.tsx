@@ -411,7 +411,7 @@ export default function CustomerServiceBestPracticesContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="lg:sticky lg:top-28 space-y-6">
+              <div className="space-y-6">
                 <HeroContactForm />
 
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">

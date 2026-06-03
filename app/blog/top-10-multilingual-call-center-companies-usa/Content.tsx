@@ -532,7 +532,7 @@ export default function Top10MultilingualCallCenterContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="lg:sticky lg:top-28 space-y-6">
+              <div className="space-y-6">
                 <HeroContactForm
                   ctaLocation="multilingual_sidebar_form"
                   leadOffer="Multilingual call center quote"

@@ -105,7 +105,7 @@ export function FAQSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <div className="lg:sticky lg:top-28">
+            <div>
               <LeadForm
                 title="Get a Free Quote"
                 description="We'll respond within 1 working day."

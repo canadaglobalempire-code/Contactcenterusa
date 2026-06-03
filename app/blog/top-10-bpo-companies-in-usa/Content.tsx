@@ -548,7 +548,7 @@ export default function Top10BPOCompaniesContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="lg:sticky lg:top-28 space-y-6">
+              <div className="space-y-6">
                 <HeroContactForm />
 
                 {/* Related articles */}

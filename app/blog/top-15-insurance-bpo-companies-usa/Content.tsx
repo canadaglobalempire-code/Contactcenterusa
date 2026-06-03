@@ -559,7 +559,7 @@ export default function Top15InsuranceBPOContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="lg:sticky lg:top-28 space-y-6">
+              <div className="space-y-6">
                 <HeroContactForm
                   ctaLocation="insurance_sidebar_form"
                   leadOffer="Insurance BPO quote"

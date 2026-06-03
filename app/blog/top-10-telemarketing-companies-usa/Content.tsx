@@ -532,7 +532,7 @@ export default function Top10TelemarketingContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="lg:sticky lg:top-28 space-y-6">
+              <div className="space-y-6">
                 <HeroContactForm
                   ctaLocation="telemarketing_sidebar_form"
                   leadOffer="Telemarketing campaign quote"
