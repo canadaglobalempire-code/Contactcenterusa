@@ -1,14 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
-import { ArrowRight, CheckCircle, Lock } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import {
   Accordion,
   AccordionItem,
@@ -16,23 +8,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { generateFAQSchema } from "@/lib/schema";
-import {
-  appendLeadAttribution,
-  getLeadFormEndpoint,
-  SPLITFORMS_ACCESS_KEY,
-  submitLeadForm,
-  trackLeadEvent,
-} from "@/lib/lead-tracking";
-
-const contactSchema = z.object({
-  fullName: z.string().min(2, "Name is required"),
-  company: z.string().min(2, "Company name is required"),
-  email: z.string().email("Valid email required"),
-  phone: z.string().min(7, "Valid phone number required"),
-  message: z.string().optional(),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+import { LeadForm } from "@/components/shared/LeadForm";
 
 const faqs = [
   {
@@ -75,46 +51,6 @@ const faqs = [
 const faqSchema = generateFAQSchema(faqs);
 
 export function FAQSection() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<ContactFormData>({
-    resolver: zodResolver(contactSchema),
-  });
-
-  const onSubmit = async (data: ContactFormData) => {
-    const formData = new FormData();
-    formData.append("subject", "Homepage FAQ Form Inquiry — ContactCenterUSA.com");
-    formData.append("name", data.fullName);
-    formData.append("company", data.company);
-    formData.append("email", data.email);
-    formData.append("phone", data.phone);
-    formData.append("message", data.message || "");
-    appendLeadAttribution(formData, {
-      ctaLocation: "homepage_faq_form",
-      leadOffer: "Homepage call center quote",
-    });
-
-    try {
-      const { data: result, response } = await submitLeadForm(formData);
-      if (response.ok && result.success) {
-        trackLeadEvent("lead_form_submit", {
-          cta_location: formData.get("cta_location")?.toString(),
-          form_name: "homepage_faq_form",
-          lead_offer: formData.get("lead_offer")?.toString(),
-          source_page: formData.get("source_page")?.toString(),
-        });
-        setIsSubmitted(true);
-      } else {
-        alert("Error: " + (result.message || "Something went wrong. Please try again."));
-      }
-    } catch {
-      alert("Something went wrong. Please try again.");
-    }
-  };
-
   return (
     <section className="bg-gradient-to-b from-white via-red/[0.015] to-white py-28">
       <script
@@ -169,124 +105,16 @@ export function FAQSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <div className="lg:sticky lg:top-28 rounded-2xl border border-gray-100 bg-white p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-navy">Get a Free Quote</h3>
-              <p className="mt-1 text-sm text-gray-600">
-                We&apos;ll respond within 1 working day.
-              </p>
-
-              {isSubmitted ? (
-                <div className="mt-8 flex flex-col items-center py-8 text-center">
-                  <CheckCircle className="h-14 w-14 text-green-500" />
-                  <p className="mt-4 text-lg font-bold text-navy">
-                    Thank you!
-                  </p>
-                  <p className="mt-1 text-sm text-gray-600">
-                    We&apos;ll contact you within 1 working day.
-                  </p>
-                </div>
-              ) : (
-                <form
-                  action={getLeadFormEndpoint()}
-                  method="POST"
-                  onSubmit={handleSubmit(onSubmit)}
-                  className="mt-6 space-y-4"
-                >
-                  <input type="hidden" name="access_key" value={SPLITFORMS_ACCESS_KEY} />
-                  <input type="hidden" name="subject" value="Homepage FAQ Form Inquiry — ContactCenterUSA.com" />
-                  <div>
-                    <Label htmlFor="faq-name" className="text-sm font-medium text-navy">
-                      Full Name *
-                    </Label>
-                    <Input
-                      id="faq-name"
-                      placeholder="John Smith"
-                      className="mt-1.5 h-11 rounded-lg"
-                      {...register("fullName")}
-                    />
-                    {errors.fullName && (
-                      <p className="mt-1 text-xs text-red">
-                        {errors.fullName.message}
-                      </p>
-                    )}
-                  </div>
-                  <div>
-                    <Label htmlFor="faq-company" className="text-sm font-medium text-navy">
-                      Company *
-                    </Label>
-                    <Input
-                      id="faq-company"
-                      placeholder="Acme Inc."
-                      className="mt-1.5 h-11 rounded-lg"
-                      {...register("company")}
-                    />
-                    {errors.company && (
-                      <p className="mt-1 text-xs text-red">
-                        {errors.company.message}
-                      </p>
-                    )}
-                  </div>
-                  <div>
-                    <Label htmlFor="faq-email" className="text-sm font-medium text-navy">
-                      Email *
-                    </Label>
-                    <Input
-                      id="faq-email"
-                      type="email"
-                      placeholder="john@acme.com"
-                      className="mt-1.5 h-11 rounded-lg"
-                      {...register("email")}
-                    />
-                    {errors.email && (
-                      <p className="mt-1 text-xs text-red">
-                        {errors.email.message}
-                      </p>
-                    )}
-                  </div>
-                  <div>
-                    <Label htmlFor="faq-phone" className="text-sm font-medium text-navy">
-                      Phone *
-                    </Label>
-                    <Input
-                      id="faq-phone"
-                      type="tel"
-                      placeholder="(555) 123-4567"
-                      className="mt-1.5 h-11 rounded-lg"
-                      {...register("phone")}
-                    />
-                    {errors.phone && (
-                      <p className="mt-1 text-xs text-red">
-                        {errors.phone.message}
-                      </p>
-                    )}
-                  </div>
-                  <div>
-                    <Label htmlFor="faq-message" className="text-sm font-medium text-navy">
-                      Message
-                    </Label>
-                    <Textarea
-                      id="faq-message"
-                      placeholder="Tell us about your needs..."
-                      className="mt-1.5 min-h-20 rounded-lg"
-                      aria-label="Your requirements"
-                      {...register("message")}
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    aria-label="Submit form"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-red py-3.5 font-semibold text-white transition-all hover:bg-red-dark disabled:opacity-50"
-                  >
-                    {isSubmitting ? "Sending..." : "Get My Free Quote"}
-                    {!isSubmitting && <ArrowRight className="h-4 w-4" />}
-                  </button>
-                  <p className="flex items-center justify-center gap-1.5 text-sm text-gray-600">
-                    <Lock className="h-3 w-3" />
-                    Your information is secure and never shared.
-                  </p>
-                </form>
-              )}
+            <div className="lg:sticky lg:top-28">
+              <LeadForm
+                title="Get a Free Quote"
+                description="We'll respond within 1 working day."
+                subject="Homepage FAQ Form Inquiry — ContactCenterUSA.com"
+                ctaLocation="homepage_faq_form"
+                leadOffer="Homepage call center quote"
+                formName="homepage_faq_form"
+                submitLabel="Get My Free Quote"
+              />
             </div>
           </motion.div>
         </div>
