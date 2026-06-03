@@ -32,9 +32,9 @@ const volumeOptions = ["0-5,000", "5,000-20,000", "20,000-100,000", "100,000-500
 const scheduleOptions = ["24/7", "Monday-Friday", "Weekdays + Saturday", "Custom Schedule"];
 
 const inputClass =
-  "mt-1.5 h-12 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
+  "h-11 w-full rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
 const selectClass =
-  "mt-1.5 h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
+  "h-11 w-full rounded-xl border border-gray-200 bg-white px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20";
 
 const securityFieldName = "security_answer";
 const securityQuestion = "2 + 4";
@@ -203,7 +203,7 @@ export function LeadForm({
   };
 
   const wrapperClass = card
-    ? `rounded-2xl border border-gray-100 bg-white p-6 shadow-xl lg:p-8 ${className}`
+    ? `rounded-2xl border border-gray-100 bg-white p-5 shadow-xl lg:p-6 ${className}`
     : className;
 
   return (
@@ -227,7 +227,7 @@ export function LeadForm({
           onSubmit={handleSubmit}
           onChange={clearFieldError}
           onInvalid={markFieldInvalid}
-          className={`@container ${title || description ? "mt-6 " : ""}space-y-5`}
+          className={`@container ${title || description ? "mt-5 " : ""}space-y-3.5`}
         >
           {errors.size > 0 && (
             <div
@@ -246,205 +246,165 @@ export function LeadForm({
           <input type="hidden" name="lead_offer" />
           <input type="hidden" name="submitted_at" />
 
+          {/* Labels hidden — placeholders carry the field names. */}
           {/* Name & Company */}
-          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-medium text-navy">Name *</label>
-              <input
-                name="full_name"
-                required
-                aria-label="Name"
-                placeholder="John Smith"
-                className={inputClass + errorRing("full_name")}
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy">Company Name *</label>
-              <input
-                name="company_name"
-                required
-                aria-label="Company name"
-                placeholder="Acme Inc."
-                className={inputClass + errorRing("company_name")}
-              />
-            </div>
-          </div>
-
-          {/* Email & Phone */}
-          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-medium text-navy">Company Email *</label>
-              <input
-                name="work_email"
-                type="email"
-                required
-                aria-label="Company email"
-                placeholder="you@company.com"
-                className={inputClass + errorRing("work_email")}
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy">Phone Number *</label>
-              <input
-                name="phone_number"
-                type="tel"
-                required
-                aria-label="Phone number"
-                placeholder="(555) 123-4567"
-                className={inputClass + errorRing("phone_number")}
-              />
-            </div>
-          </div>
-
-          {/* Website & Solution Type */}
-          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-medium text-navy">Company Website</label>
-              <input
-                name="company_url"
-                type="text"
-                inputMode="url"
-                aria-label="Company website"
-                placeholder="company.com"
-                className={inputClass}
-              />
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy">Solution Type *</label>
-              <select
-                name="solution_type"
-                required
-                aria-label="Solution type"
-                defaultValue=""
-                className={selectClass + errorRing("solution_type")}
-              >
-                <option value="">Select solution type</option>
-                {solutionTypes.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* Service Type & Agent Requirements */}
-          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-medium text-navy">
-                Call Center Services Type *
-              </label>
-              <select
-                name="service_type"
-                required
-                aria-label="Call center services type"
-                defaultValue=""
-                className={selectClass + errorRing("service_type")}
-              >
-                <option value="">Select service type</option>
-                {serviceTypes.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy">Agent Requirements *</label>
-              <select
-                name="agent_requirement"
-                required
-                aria-label="Agent requirements"
-                defaultValue=""
-                className={selectClass + errorRing("agent_requirement")}
-              >
-                <option value="">Select agent count</option>
-                {agentOptions.map((a) => (
-                  <option key={a} value={a}>
-                    {a}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* Call Volume & Operating Schedule */}
-          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-medium text-navy">
-                Call Volume (Records/month) *
-              </label>
-              <select
-                name="call_volume"
-                required
-                aria-label="Call volume"
-                defaultValue=""
-                className={selectClass + errorRing("call_volume")}
-              >
-                <option value="">Select volume</option>
-                {volumeOptions.map((v) => (
-                  <option key={v} value={v}>
-                    {v}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="text-sm font-medium text-navy">Operating Schedule *</label>
-              <select
-                name="operating_schedule"
-                required
-                aria-label="Operating schedule"
-                defaultValue=""
-                className={selectClass + errorRing("operating_schedule")}
-              >
-                <option value="">Select schedule</option>
-                {scheduleOptions.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* Comments */}
-          <div>
-            <label className="text-sm font-medium text-navy">Additional Comments</label>
-            <textarea
-              name="additional_comments"
-              rows={4}
-              placeholder="Tell us about your company, your program, or your requirements..."
-              aria-label="Additional comments"
-              className="mt-1.5 w-full rounded-xl border border-gray-200 p-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+          <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
+            <input
+              name="full_name"
+              required
+              aria-label="Name"
+              placeholder="Name *"
+              className={inputClass + errorRing("full_name")}
+            />
+            <input
+              name="company_name"
+              required
+              aria-label="Company name"
+              placeholder="Company name *"
+              className={inputClass + errorRing("company_name")}
             />
           </div>
 
-          {/* Security Check */}
-          <div className="grid grid-cols-1 gap-5 @lg:grid-cols-2">
-            <div>
-              <label className="text-sm font-medium text-navy">
-                Security Check: {securityQuestion} = ? *
-              </label>
-              <input
-                name={securityFieldName}
-                type="text"
-                inputMode="numeric"
-                pattern="[0-9]*"
-                required
-                autoComplete="off"
-                aria-label={`Security check: ${securityQuestion}`}
-                placeholder="Enter answer"
-                className={inputClass + errorRing(securityFieldName)}
-              />
-            </div>
+          {/* Email & Phone */}
+          <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
+            <input
+              name="work_email"
+              type="email"
+              required
+              aria-label="Company email"
+              placeholder="Company email *"
+              className={inputClass + errorRing("work_email")}
+            />
+            <input
+              name="phone_number"
+              type="tel"
+              required
+              aria-label="Phone number"
+              placeholder="Phone number *"
+              className={inputClass + errorRing("phone_number")}
+            />
           </div>
+
+          {/* Website & Solution Type */}
+          <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
+            <input
+              name="company_url"
+              type="text"
+              inputMode="url"
+              aria-label="Company website"
+              placeholder="Company website"
+              className={inputClass}
+            />
+            <select
+              name="solution_type"
+              required
+              aria-label="Solution type"
+              defaultValue=""
+              className={selectClass + errorRing("solution_type")}
+            >
+              <option value="">Solution type *</option>
+              {solutionTypes.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Service Type & Agent Requirements */}
+          <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
+            <select
+              name="service_type"
+              required
+              aria-label="Call center services type"
+              defaultValue=""
+              className={selectClass + errorRing("service_type")}
+            >
+              <option value="">Service type *</option>
+              {serviceTypes.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+            <select
+              name="agent_requirement"
+              required
+              aria-label="Agent requirements"
+              defaultValue=""
+              className={selectClass + errorRing("agent_requirement")}
+            >
+              <option value="">Agent requirements *</option>
+              {agentOptions.map((a) => (
+                <option key={a} value={a}>
+                  {a}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Call Volume & Operating Schedule */}
+          <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
+            <select
+              name="call_volume"
+              required
+              aria-label="Call volume"
+              defaultValue=""
+              className={selectClass + errorRing("call_volume")}
+            >
+              <option value="">Call volume / month *</option>
+              {volumeOptions.map((v) => (
+                <option key={v} value={v}>
+                  {v}
+                </option>
+              ))}
+            </select>
+            <select
+              name="operating_schedule"
+              required
+              aria-label="Operating schedule"
+              defaultValue=""
+              className={selectClass + errorRing("operating_schedule")}
+            >
+              <option value="">Operating schedule *</option>
+              {scheduleOptions.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Comments */}
+          <textarea
+            name="additional_comments"
+            rows={2}
+            placeholder="Additional comments (optional)"
+            aria-label="Additional comments"
+            className="w-full rounded-xl border border-gray-200 p-3 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+          />
+
+          {/* Security check — label kept so the math question stays visible */}
+          <label className="flex items-center gap-2 text-sm font-medium text-navy">
+            <span className="whitespace-nowrap">Spam check: {securityQuestion} =</span>
+            <input
+              name={securityFieldName}
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              required
+              autoComplete="off"
+              aria-label={`Security check: ${securityQuestion}`}
+              placeholder="?"
+              className={"h-11 w-20 rounded-xl border border-gray-200 px-4 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20" + errorRing(securityFieldName)}
+            />
+          </label>
 
           <button
             type="submit"
             disabled={isSubmitting}
             aria-label="Submit form"
-            className="flex w-full items-center justify-center gap-2 rounded-xl bg-red py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark disabled:opacity-50"
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-red py-3.5 text-[15px] font-semibold text-white transition-all hover:bg-red-dark disabled:opacity-50"
           >
             {isSubmitting ? "Sending..." : submitLabel}
             {!isSubmitting && <ArrowRight className="h-4 w-4" />}

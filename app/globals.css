@@ -142,11 +142,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   font-size: 16px;
   line-height: 1.7;
+  /* Decorative absolutely-positioned elements (e.g. -right-6 offset cards) can
+     poke past the viewport edge and cause sideways scrolling. clip prevents the
+     horizontal scroll without creating a scroll container (so sticky still works). */
+  overflow-x: clip;
 }
 
 /* Gradient orb decorations */
