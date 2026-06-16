@@ -73,22 +73,39 @@ const company = [
   { label: "Contact Us", href: "/contact" },
 ];
 
-const buyerGuides = [
-  { label: "Call Center Outsourcing Answers", href: "/answers" },
-  { label: "Multilingual Call Center Companies", href: "/blog/top-10-multilingual-call-center-companies-usa" },
-  { label: "Healthcare BPO Companies", href: "/blog/top-15-healthcare-bpo-companies-usa" },
-  { label: "Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
-  { label: "Insurance BPO Companies", href: "/blog/top-15-insurance-bpo-companies-usa" },
-  { label: "Technical Support Outsourcing", href: "/blog/top-10-technical-support-outsourcing-companies-usa" },
-  { label: "Customer Service Outsourcing", href: "/blog/top-10-customer-service-outsourcing-companies-usa" },
-  { label: "Lead Generation Companies", href: "/blog/top-10-lead-generation-companies-usa" },
-  { label: "Virtual Receptionist Services", href: "/blog/top-10-virtual-receptionist-companies-usa" },
-  { label: "Teleperformance Alternatives", href: "/blog/teleperformance-alternatives" },
-  { label: "Telemarketing Companies", href: "/blog/top-10-telemarketing-companies-usa" },
-  { label: "Call Center Cost Per Hour", href: "/blog/call-center-outsourcing-cost-per-hour-2026" },
-  { label: "In-House vs Outsourced Cost", href: "/blog/in-house-vs-outsourced-call-center" },
+type FooterLink = {
+  label: string;
+  href: string;
+};
+
+const footerSections: { title: string; items: FooterLink[] }[] = [
+  { title: "Services", items: services },
+  { title: "Solutions", items: solutions },
+  { title: "Industries", items: industries },
+  { title: "Company", items: company },
 ];
 
+function FooterLinkColumn({ title, items }: { title: string; items: FooterLink[] }) {
+  return (
+    <section className="min-w-0">
+      <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-navy">
+        {title}
+      </h3>
+      <ul className="space-y-3">
+        {items.map((item) => (
+          <li key={`${title}-${item.href}`}>
+            <Link
+              href={item.href}
+              className="block text-sm leading-snug text-gray-700 transition-colors hover:text-navy"
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
 
 export default function Footer() {
   return (
@@ -118,9 +135,9 @@ export default function Footer() {
         </div>
 
         {/* Columns */}
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(220px,260px)_minmax(0,1fr)] lg:gap-10 xl:gap-14">
           {/* Column 1 — Brand */}
-          <div>
+          <div className="max-w-sm">
             <div className="mb-4">
               <Image
                 src="/images/logo-v6.png"
@@ -136,138 +153,19 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2 — Services */}
-          <div>
-            <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-6">
-              Services
-            </h3>
-            <ul className="space-y-3">
-              {services.map((item, i) => (
-                <li key={`svc-${i}`}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-gray-700 transition-colors hover:text-navy"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3 — Solutions */}
-          <div>
-            <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-6">
-              Solutions
-            </h3>
-            <ul className="space-y-3">
-              {solutions.map((item, i) => (
-                <li key={`sol-${i}`}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-gray-700 transition-colors hover:text-navy"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4 — Industries */}
-          <div>
-            <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-6">
-              Industries
-            </h3>
-            <ul className="space-y-3">
-              {industries.map((item, i) => (
-                <li key={`ind-${i}`}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-gray-700 transition-colors hover:text-navy"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 5 — Company */}
-          <div>
-            <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-6">
-              Company
-            </h3>
-            <ul className="space-y-3">
-              {company.map((item, i) => (
-                <li key={`co-${i}`}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-gray-700 transition-colors hover:text-navy"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Buyer Guides */}
-        <div className="mt-12 border-t border-gray-100 pt-8">
-          <h3 className="text-navy font-semibold text-sm uppercase tracking-wider mb-4">
-            Buyer Guides
-          </h3>
-          <div className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-4">
-            {buyerGuides.map((guide) => (
-              <Link
-                key={guide.href}
-                href={guide.href}
-                className="text-sm text-gray-600 transition-colors hover:text-navy"
-              >
-                {guide.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* City Pages */}
-        <div className="mt-12 border-t border-gray-100 pt-8">
-          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <h3 className="text-navy font-semibold text-sm uppercase tracking-wider">
-              Locations We Serve
-            </h3>
-            <Link href="/locations" className="text-sm font-semibold text-red transition-colors hover:text-red-dark">
-              View all locations
-            </Link>
-          </div>
-          <div className="flex flex-wrap gap-x-4 gap-y-2">
-            {[
-              { label: "New York", href: "/call-center-services-new-york" },
-              { label: "Los Angeles", href: "/call-center-services-los-angeles" },
-              { label: "Chicago", href: "/call-center-services-chicago" },
-              { label: "Houston", href: "/call-center-services-houston" },
-              { label: "Phoenix", href: "/call-center-services-phoenix" },
-              { label: "Philadelphia", href: "/call-center-services-philadelphia" },
-              { label: "San Antonio", href: "/call-center-services-san-antonio" },
-              { label: "San Diego", href: "/call-center-services-san-diego" },
-              { label: "Dallas", href: "/call-center-services-dallas" },
-              { label: "Austin", href: "/call-center-services-austin" },
-              { label: "Jacksonville", href: "/call-center-services-jacksonville" },
-              { label: "Columbus", href: "/call-center-services-columbus" },
-              { label: "Charlotte", href: "/call-center-services-charlotte" },
-              { label: "San Francisco", href: "/call-center-services-san-francisco" },
-              { label: "Seattle", href: "/call-center-services-seattle" },
-            ].map((city) => (
-              <Link key={city.href} href={city.href} className="text-sm text-gray-600 transition-colors hover:text-navy">
-                {city.label}
-              </Link>
+          <div className="grid min-w-0 grid-cols-1 items-start gap-x-8 gap-y-10 sm:grid-cols-2 xl:grid-cols-4">
+            {footerSections.map((section) => (
+              <FooterLinkColumn
+                key={section.title}
+                title={section.title}
+                items={section.items}
+              />
             ))}
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 border-t border-gray-100 pt-8">
+        <div className="mt-12 border-t border-gray-100 pt-8">
           <div className="flex flex-col items-center gap-4 text-center text-sm text-gray-600 md:flex-row md:justify-between md:text-left">
             <p>&copy; 2026 {siteConfig.name}. All rights reserved.</p>
             <p>Proudly Serving Businesses in the USA</p>

@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
@@ -268,7 +265,7 @@ export default function Top10BPOIllinoisContent() {
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> 18 min read</span>
           </div>
           <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-            <Image src="/images/cc-team-huddle.jpg" alt="Top BPO companies in Illinois 2026 — Chicago, Naperville, Springfield" fill className="object-cover" />
+            <Image src="/images/cc-team-huddle.jpg" alt="Top BPO companies in Illinois 2026 — Chicago, Naperville, Springfield" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
           </div>
         </div>
       </section>
@@ -339,12 +336,8 @@ export default function Top10BPOIllinoisContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">The Top 10 BPO Companies in Illinois (2026)</h2>
 
               {companies.map((company, i) => (
-                <motion.div
+                <div
                   key={company.rank}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4 }}
                   className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
@@ -420,7 +413,7 @@ export default function Top10BPOIllinoisContent() {
                       Visit Website <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   )}
-                </motion.div>
+                </div>
               ))}
 
               {/* Mid-article image */}

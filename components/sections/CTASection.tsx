@@ -1,25 +1,20 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MapPin, Clock } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 export function CTASection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-red/[0.02] to-white py-28">
       <div className="gradient-orb-red -top-40 -right-40" />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
-          {/* Left — CTA Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-3"
-          >
+        <div ref={ref} className="grid grid-cols-1 gap-12 lg:grid-cols-5">
+          <div className={`lg:col-span-3 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               Get in Touch
             </span>
@@ -36,7 +31,6 @@ export function CTASection() {
               and let us tell you how we can make a difference.
             </p>
 
-            {/* Contact details */}
             <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-red/10">
@@ -75,27 +69,20 @@ export function CTASection() {
                 Explore Services
               </Link>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right — Video with overlay */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7 }}
-            className="relative lg:col-span-2"
-          >
+          <div className={`relative lg:col-span-2 ${isInView ? "animate-slide-in-right" : "opacity-0"}`}>
             <div className="relative h-full min-h-[400px] overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src="/images/cc-team-huddle.jpg"
                 alt="Your US-based call center team is ready"
                 fill
+                sizes="(max-width: 1024px) 100vw, 66vw"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
 
-              {/* Overlay content */}
               <div className="absolute inset-x-0 bottom-0 p-8">
                 <div className="text-3xl font-bold text-white">
                   Your Team
@@ -108,7 +95,7 @@ export function CTASection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

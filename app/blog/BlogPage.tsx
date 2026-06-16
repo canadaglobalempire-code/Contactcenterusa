@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
@@ -584,10 +581,7 @@ export default function BlogPage() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Our Blog
@@ -600,7 +594,7 @@ export default function BlogPage() {
               Expert perspectives on call center outsourcing, customer service
               trends, and strategies to elevate your business.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -649,12 +643,8 @@ export default function BlogPage() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post, i) => (
-              <motion.div
+              <div
                 key={post.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
               >
                 <Link
                   href={post.href}
@@ -695,7 +685,7 @@ export default function BlogPage() {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

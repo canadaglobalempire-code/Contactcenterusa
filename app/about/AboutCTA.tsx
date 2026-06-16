@@ -1,11 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export function AboutCTA() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
@@ -13,18 +15,14 @@ export function AboutCTA() {
           src="/images/new-flag.jpg"
           alt="American flag background representing US-based contact center services"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-navy/85" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div ref={ref} className={isInView ? "animate-fade-in-up" : "opacity-0"}>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             Ready to Get to Know Our Team?
           </h2>
@@ -39,7 +37,7 @@ export function AboutCTA() {
             Get in Touch
             <ArrowRight className="h-4 w-4" />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Houston Call Center Services | Contact Center USA",
+  title: "Houston Call Center Services | BPO & Answering",
   description:
-    "US-based call center services for Houston businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
+    "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
   keywords: [
     "call center services houston",
     "houston bpo",
@@ -17,6 +17,19 @@ export const metadata: Metadata = {
     "houston contact center",
   ],
   alternates: { canonical: "/call-center-services-houston" },
+  openGraph: {
+    title: "Houston Call Center Services | BPO & Answering",
+    description:
+      "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
+    url: "/call-center-services-houston",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Houston Call Center Services | BPO & Answering",
+    description:
+      "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
+  },
 };
 
 const seoContent: SEOPattern[] = [

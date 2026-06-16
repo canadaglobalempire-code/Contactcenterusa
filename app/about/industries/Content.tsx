@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -216,10 +213,7 @@ export default function Content() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Industries We Serve
@@ -232,18 +226,14 @@ export default function Content() {
               Tailored contact center solutions for 16+ industries, backed by
               decades of expertise and thousands of US-based agents.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Intro */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="mx-auto max-w-3xl text-center"
           >
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">
@@ -256,18 +246,14 @@ export default function Content() {
               regulations, and customer expectations — and we tailor our approach
               to meet them all.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Industries Grid */}
       <section className="bg-gray-50 py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
@@ -276,17 +262,13 @@ export default function Content() {
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">
               16+ Industries <span className="text-red">Served</span>
             </h2>
-          </motion.div>
+          </div>
 
           <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {industries.map((industry, i) => {
               const CardContent = (
-                <motion.div
+                <div
                   key={industry.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.04 }}
                   className="group h-full min-h-[280px] flex flex-col rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red transition-all duration-300 group-hover:bg-red group-hover:text-white">
@@ -311,7 +293,7 @@ export default function Content() {
                       Learn more <ArrowRight className="h-3.5 w-3.5" />
                     </div>
                   )}
-                </motion.div>
+                </div>
               );
 
               if (industry.href) {
@@ -335,16 +317,13 @@ export default function Content() {
             src="/images/new-flag.jpg"
             alt="American flag background representing Contact Center USA industry solutions"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Find Your Industry Solution
@@ -360,7 +339,7 @@ export default function Content() {
               Contact Us Today
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

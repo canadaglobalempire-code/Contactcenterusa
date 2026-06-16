@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import {
   Accordion,
   AccordionItem,
@@ -12,9 +12,9 @@ import { LeadForm } from "@/components/shared/LeadForm";
 
 const faqs = [
   {
-    question: "How much does call center outsourcing cost?",
+    question: "What information do you need to scope a call center program?",
     answer:
-      "Pricing varies based on call volume, service complexity, and hours of coverage needed. Our plans start at competitive per-hour rates with no hidden fees. Contact us for a custom quote tailored to your specific needs.",
+      "A useful scope includes the service type, expected call or ticket volume, hours of coverage, channels, languages, compliance requirements, CRM or software integrations, and desired launch timeline.",
   },
   {
     question: "Are your agents really based in the United States?",
@@ -51,22 +51,17 @@ const faqs = [
 const faqSchema = generateFAQSchema(faqs);
 
 export function FAQSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="bg-gradient-to-b from-white via-red/[0.015] to-white py-28">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }}
       />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
-          {/* Left — FAQ */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className="lg:col-span-3"
-          >
+        <div ref={ref} className="grid grid-cols-1 gap-16 lg:grid-cols-5">
+          <div className={`lg:col-span-3 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               FAQ
             </span>
@@ -95,16 +90,9 @@ export function FAQSection() {
                 ))}
               </Accordion>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right — Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-            className="lg:col-span-2"
-          >
+          <div className={`lg:col-span-2 ${isInView ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.15s" }}>
             <div>
               <LeadForm
                 title="Get a Free Quote"
@@ -116,7 +104,7 @@ export function FAQSection() {
                 submitLabel="Get My Free Quote"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

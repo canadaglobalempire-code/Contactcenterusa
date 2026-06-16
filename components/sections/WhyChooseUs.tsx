@@ -90,6 +90,7 @@ export function WhyChooseUs() {
                 src="/images/call-center-team.jpg"
                 alt="Contact Center USA team"
                 fill
+                sizes="(max-width: 1024px) 100vw, 500px"
                 className="object-cover"
               />
               {/* Gradient overlay */}

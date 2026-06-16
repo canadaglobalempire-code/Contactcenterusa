@@ -1,40 +1,30 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export function PatrioticBanner() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-white py-24">
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-          {/* Left — Flag image — full width of column */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="relative"
-          >
+        <div ref={ref} className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <div className={`relative ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-2xl">
               <Image
                 src="/images/america.jpg"
                 alt="American flag representing US-based call center services"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right — Emotional copy */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
+          <div className={isInView ? "animate-slide-in-right" : "opacity-0"}>
             <div className="mb-6 h-1 w-16 bg-red" />
             <h2 className="text-3xl font-bold leading-[1.15] text-navy sm:text-4xl lg:text-[44px]">
               Proudly American.
@@ -66,7 +56,7 @@ export function PatrioticBanner() {
                 Created and counting
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

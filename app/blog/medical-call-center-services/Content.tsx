@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle } from "lucide-react";
@@ -25,7 +22,7 @@ export default function MedicalCallCenterServicesContent() {
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> 16 min read</span>
           </div>
           <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-            <Image src="/images/cc-agent-headset.jpg" alt="Medical call center agent providing healthcare support" fill className="object-cover" />
+            <Image src="/images/cc-agent-headset.jpg" alt="Medical call center agent providing healthcare support" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
           </div>
         </div>
       </section>
@@ -85,40 +82,40 @@ export default function MedicalCallCenterServicesContent() {
                 Modern <strong>medical call center services</strong> extend far beyond basic phone answering. Here are the core services that healthcare organizations rely on:
               </p>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-8 text-xl font-bold text-navy">Patient Scheduling and Appointment Management</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Patient scheduling is the most common function of a medical call center. Agents manage appointment bookings, cancellations, rescheduling, and waitlist management across multiple providers, locations, and specialties. Advanced call centers integrate directly with the healthcare organization&apos;s EHR (Electronic Health Record) system to access real-time provider availability, reducing double-bookings and no-shows. Effective scheduling operations can <strong>reduce no-show rates by 25-30%</strong> through confirmation calls, automated reminders, and waitlist management.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-8 text-xl font-bold text-navy">Nurse Triage and Clinical Support</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Nurse triage lines are staffed by registered nurses who assess patient symptoms over the phone and provide guidance on the appropriate level of care&mdash;whether that is a same-day appointment, an urgent care visit, an emergency room trip, or at-home care instructions. This service is particularly critical for after-hours support, reducing unnecessary ER visits (which cost an average of $2,200 per visit) and ensuring patients receive timely, appropriate care. Nurse triage services require specialized clinical protocols, physician-approved algorithms, and meticulous documentation.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-8 text-xl font-bold text-navy">Medical Billing and Payment Support</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Billing inquiries are among the highest-volume call types in healthcare. Medical call center agents handle questions about charges, explain EOB (Explanation of Benefits) statements, process payments, set up payment plans, and resolve billing disputes. Agents must understand medical coding basics, insurance terminology, and patient financial assistance programs. Effective billing support <strong>improves collection rates by 15-20%</strong> while maintaining patient satisfaction.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-8 text-xl font-bold text-navy">Insurance Verification and Prior Authorization</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Before a patient visit, call center agents verify insurance eligibility, check coverage details, confirm copay amounts, and initiate prior authorization requests for procedures and specialist referrals. This pre-visit verification process prevents claim denials, reduces surprise billing, and ensures patients understand their financial responsibility before receiving care. Organizations that outsource insurance verification typically see a <strong>40% reduction in claim denials</strong>.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-8 text-xl font-bold text-navy">Prescription Refill Management</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Medical call centers process prescription refill requests, coordinate with pharmacies, and relay messages to prescribing physicians. This service reduces the administrative burden on clinical staff and ensures patients can easily access their medications without unnecessary office visits. Agents must follow strict protocols to verify patient identity, confirm medication details, and document all interactions in the EHR system.
                 </p>
-              </motion.div>
+              </div>
 
               {/* HIPAA Compliance */}
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">HIPAA Compliance Requirements for Medical Call Centers</h2>
@@ -176,61 +173,61 @@ export default function MedicalCallCenterServicesContent() {
                 Whether you operate an in-house <strong>medical call center</strong> or partner with an outsourced provider, these <strong>healthcare call center best practices</strong> will help you deliver exceptional patient experiences while maintaining compliance and operational efficiency.
               </p>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">1. Invest in Healthcare-Specific Agent Training</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Generic customer service training is insufficient for healthcare. Agents need specialized education in medical terminology, HIPAA regulations, patient privacy protocols, empathetic communication for patients in distress, and the specific workflows of the healthcare organization they support. The best medical call centers require 80+ hours of initial training before agents handle live patient calls, followed by ongoing education and competency assessments.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">2. Implement Robust Quality Assurance Programs</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Quality assurance in healthcare call centers must go beyond standard call monitoring. QA programs should evaluate HIPAA compliance on every call, assess clinical accuracy of information provided, monitor empathy and patient communication quality, and track adherence to clinical protocols. Aim to monitor at least 5-10% of all calls, with 100% monitoring on high-risk call types like nurse triage and insurance authorization.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">3. Integrate with EHR and Practice Management Systems</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Call center agents should have real-time access to the healthcare organization&apos;s EHR system to view patient records, check provider schedules, document interactions, and update patient information. Integration with systems like Epic, Cerner, Athenahealth, or eClinicalWorks eliminates manual data entry, reduces errors, and enables agents to provide personalized, informed support. Bi-directional integration ensures that call center interactions are visible to clinical staff during patient visits.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">4. Offer Omnichannel Patient Communication</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Modern patients expect to communicate through their preferred channel&mdash;phone, secure messaging, patient portal chat, email, or SMS. A well-designed <strong>medical contact center</strong> supports all these channels with unified patient records, ensuring that a conversation started via secure message can be seamlessly continued over the phone without the patient repeating information. Omnichannel capabilities improve patient satisfaction scores by an average of 20%.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">5. Prioritize First-Call Resolution</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   In healthcare, unresolved calls can have serious consequences&mdash;a patient who cannot schedule a follow-up appointment, a billing issue that prevents treatment, or an insurance verification delay that cancels a procedure. First-call resolution (FCR) should be a top priority, with agents empowered with the knowledge, tools, and authority to resolve issues on the initial call. Top-performing healthcare call centers achieve <strong>FCR rates of 80% or higher</strong>.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">6. Develop Comprehensive Escalation Protocols</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Healthcare call centers handle a wide range of call types with varying levels of clinical urgency. Clear escalation protocols ensure that urgent clinical concerns are immediately routed to appropriate clinical staff, while routine administrative calls are handled efficiently by general agents. Escalation matrices should define specific criteria for routing calls to nurses, physicians, billing specialists, patient advocates, and administrative leadership.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">7. Measure and Report on Patient Satisfaction</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Patient satisfaction with call center interactions directly influences overall healthcare organization satisfaction scores, including HCAHPS (Hospital Consumer Assessment of Healthcare Providers and Systems) ratings that affect Medicare reimbursement. Implement post-call surveys, track Net Promoter Score (NPS), and correlate call center performance with overall patient satisfaction trends. Share results with clinical leadership to demonstrate the call center&apos;s impact on organizational goals.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">8. Maintain Disaster Recovery and Business Continuity Plans</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Healthcare call centers cannot afford downtime. Patients calling with urgent medical questions, prescription needs, or scheduling emergencies need reliable access 24/7. Robust disaster recovery plans should include redundant telephony infrastructure, geographically distributed agent teams, automatic failover systems, and documented procedures for maintaining operations during power outages, natural disasters, or system failures. Test your DR plans at least quarterly.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technology */}
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Technology Transforming Medical Call Centers</h2>

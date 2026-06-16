@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import { ArrowRight } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
@@ -13,6 +13,8 @@ export function PageCTA({
   heading = "Ready to Get Started?",
   subtitle = "Contact us today for a free consultation. Let us show you how we can transform your customer experience.",
 }: PageCTAProps) {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-navy py-20 lg:py-24">
       <div
@@ -24,28 +26,19 @@ export function PageCTA({
         }}
       />
       <div className="relative z-10 mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
-          {/* Left */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="max-w-2xl text-center lg:text-left"
+        <div ref={ref} className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
+          <div
+            className={`max-w-2xl text-center lg:text-left ${isInView ? "animate-slide-in-left" : "opacity-0"}`}
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               {heading}
             </h2>
             <p className="mt-3 text-white/60">{subtitle}</p>
-          </motion.div>
+          </div>
 
-          {/* Right — CTA buttons */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="flex flex-wrap items-center gap-4"
+          <div
+            className={`flex flex-wrap items-center gap-4 ${isInView ? "animate-slide-in-right" : "opacity-0"}`}
+            style={{ animationDelay: "0.15s" }}
           >
             <LeadCTALink
               ctaLocation="page_cta_band"
@@ -55,7 +48,7 @@ export function PageCTA({
               Get a Free Quote
               <ArrowRight className="h-4 w-4" />
             </LeadCTALink>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

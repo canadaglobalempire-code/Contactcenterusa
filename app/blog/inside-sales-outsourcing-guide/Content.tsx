@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle } from "lucide-react";
@@ -25,7 +22,7 @@ export default function InsideSalesOutsourcingContent() {
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> 14 min read</span>
           </div>
           <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-            <Image src="/images/cc-discussion.jpg" alt="Inside Sales Outsourcing Guide 2026" fill className="object-cover" />
+            <Image src="/images/cc-discussion.jpg" alt="Inside Sales Outsourcing Guide 2026" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
           </div>
         </div>
       </section>
@@ -127,7 +124,7 @@ export default function InsideSalesOutsourcingContent() {
                 Organizations that invest in <strong>inside sales outsourcing</strong> consistently report measurable improvements across cost, speed, and performance metrics. Here are the primary benefits:
               </p>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">1. Significant Cost Savings</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Building an in-house inside sales team is expensive. When you factor in base salaries, commissions, benefits, management overhead, technology licenses, office space, recruiting fees, and training costs, the fully loaded cost per SDR ranges from $75,000 to $120,000 annually. <strong>Sales outsourcing services</strong> typically reduce this cost by 40-60% because outsourcing partners spread infrastructure, management, and technology costs across multiple clients.
@@ -135,35 +132,35 @@ export default function InsideSalesOutsourcingContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Beyond direct cost savings, outsourcing eliminates the hidden costs of sales rep turnover &mdash; which averages 35% annually for SDR roles. Each departed rep costs $30,000-$50,000 in lost productivity, recruiting, and ramp time. An <strong>inside sales outsourcing company</strong> absorbs this risk entirely, maintaining consistent pipeline coverage regardless of individual rep attrition.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">2. Faster Time to Revenue</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Hiring an internal sales team takes 3-6 months from job posting to full productivity. Outsourced inside sales teams can be deployed in 2-4 weeks because the provider already has trained reps, established processes, and technology infrastructure in place. This speed advantage is critical for companies entering new markets, launching new products, or responding to competitive pressure.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">3. Instant Scalability</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Business demand fluctuates. Product launches, seasonal peaks, trade shows, and marketing campaigns create surges in lead volume that fixed-size internal teams cannot handle efficiently. <strong>Outsourced inside sales</strong> provides elastic capacity &mdash; scale up during high-demand periods and scale back when volume normalizes, paying only for the capacity you use. This flexibility is especially valuable for high-growth startups and companies with variable demand cycles.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">4. Access to Specialized Expertise</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The best <strong>inside sales outsourcing companies</strong> bring deep expertise in sales methodology, objection handling, lead qualification frameworks (like BANT, MEDDIC, and CHAMP), and industry-specific selling. Their reps have collectively made millions of calls and emails, giving them pattern recognition and conversational skills that new internal hires simply cannot match. This expertise translates directly into higher conversion rates, better-qualified leads, and more efficient pipeline progression.
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">5. Focus on Core Competencies</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Outsourcing repetitive, high-volume sales activities &mdash; like cold calling, lead qualification, and appointment setting &mdash; frees your internal sales leaders and account executives to focus on what they do best: closing complex deals, managing strategic accounts, and building executive relationships. This division of labor maximizes the ROI of your entire sales organization rather than burdening expensive senior reps with top-of-funnel grunt work.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Types of Services */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Types of Inside Sales Outsourcing Services</h2>

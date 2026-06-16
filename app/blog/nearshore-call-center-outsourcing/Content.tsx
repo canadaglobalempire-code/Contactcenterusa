@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, Globe, DollarSign, Users, MapPin } from "lucide-react";
@@ -123,7 +120,7 @@ export default function NearshoreCallCenterContent() {
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> 15 min read</span>
           </div>
           <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-            <Image src="/images/cc-management.jpg" alt="Nearshore call center outsourcing guide for US businesses" fill className="object-cover" />
+            <Image src="/images/cc-management.jpg" alt="Nearshore call center outsourcing guide for US businesses" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
           </div>
         </div>
       </section>
@@ -211,12 +208,8 @@ export default function NearshoreCallCenterContent() {
               </p>
 
               {nearshoreLocations.map((location, i) => (
-                <motion.div
+                <div
                   key={location.country}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4 }}
                   className="mt-8 rounded-2xl border border-gray-200 p-8"
                 >
                   <div className="flex items-start gap-4">
@@ -243,7 +236,7 @@ export default function NearshoreCallCenterContent() {
                       ))}
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
 
               {/* Nearshore vs Offshore Comparison Table */}
@@ -318,18 +311,14 @@ export default function NearshoreCallCenterContent() {
                     desc: "Nearshore countries in Latin America generally have more favorable trade agreements, data transfer frameworks, and legal alignment with the US compared to offshore destinations in Asia. However, compliance remains more complex than fully onshore operations.",
                   },
                 ].map((benefit, i) => (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.05 }}
                     className="rounded-xl border border-gray-100 bg-white p-5"
                   >
                     <div className="mb-3">{benefit.icon}</div>
                     <h4 className="font-bold text-navy">{benefit.title}</h4>
                     <p className="mt-2 text-sm text-gray-700">{benefit.desc}</p>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 

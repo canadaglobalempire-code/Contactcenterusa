@@ -147,11 +147,9 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           <Link
             href="/contact"
             onClick={() => onOpenChange(false)}
-            className="block w-full"
+            className="block w-full rounded-full bg-gradient-to-r from-[#2E75B6] to-[#3B8DD4] px-6 py-3 text-center text-sm font-semibold text-white shadow-lg transition-all hover:scale-[1.02]"
           >
-            <button className="w-full rounded-full bg-gradient-to-r from-[#2E75B6] to-[#3B8DD4] px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:scale-[1.02]">
-              Get a Free Quote
-            </button>
+            Get a Free Quote
           </Link>
         </SheetFooter>
       </SheetContent>

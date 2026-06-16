@@ -1,5 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
+
+import { useInView } from "@/hooks/useInView";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -15,25 +16,22 @@ interface RelatedServicesProps {
 }
 
 export function RelatedServices({ heading = "Related Services", items }: RelatedServicesProps) {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="bg-gray-50 py-20">
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center text-2xl font-bold text-navy sm:text-3xl"
+        <h2
+          className={`text-center text-2xl font-bold text-navy sm:text-3xl ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
         >
           {heading}
-        </motion.h2>
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        </h2>
+        <div ref={ref} className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
-            <motion.div
+            <div
               key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className={isInView ? "animate-fade-in-up" : "opacity-0"}
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
               <Link
                 href={item.href}
@@ -45,7 +43,7 @@ export function RelatedServices({ heading = "Related Services", items }: Related
                   Learn More <ArrowRight className="h-4 w-4" />
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

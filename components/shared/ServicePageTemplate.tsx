@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { CheckCircle } from "lucide-react";
@@ -77,6 +76,7 @@ export function ServicePageTemplate({
           src={image}
           alt={`${badge} - Contact Center USA`}
           fill
+          sizes="(max-width: 1280px) 100vw, 1280px"
           className="object-cover object-top"
           priority
         />
@@ -88,12 +88,7 @@ export function ServicePageTemplate({
         <div className="relative z-10 mx-auto flex min-h-[70vh] pt-40 max-w-[1536px] items-center px-5 py-28 lg:px-8 lg:py-36">
           <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-5">
             {/* Left — Text (3 cols) */}
-            <motion.div
-              className="lg:col-span-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
+            <div className="lg:col-span-3">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur-sm">
                 {badge}
               </span>
@@ -121,17 +116,12 @@ export function ServicePageTemplate({
                   No Contracts
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Right — Form (2 cols) */}
-            <motion.div
-              className="lg:col-span-2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+            <div className="lg:col-span-2">
               <HeroContactForm />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -147,30 +137,20 @@ export function ServicePageTemplate({
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             {/* Left — Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="relative"
-            >
+            <div className="relative">
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
                 <Image
                   src={image}
                   alt={badge}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
-            </motion.div>
+            </div>
 
             {/* Right — Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Why Choose Us
               </span>
@@ -183,20 +163,13 @@ export function ServicePageTemplate({
 
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {benefits.map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.08 }}
-                    className="flex items-center gap-2.5"
-                  >
+                  <div className="flex items-center gap-2.5">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                     <span className="text-sm text-gray-600">{item}</span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -204,13 +177,7 @@ export function ServicePageTemplate({
       {/* Features Grid */}
       <section className="bg-gray-50 py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               Features
             </span>
@@ -220,18 +187,11 @@ export function ServicePageTemplate({
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">
               Explore the comprehensive features that power our {badge.toLowerCase()} solutions.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-red/20 hover:shadow-lg"
-              >
+              <div className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-red/20 hover:shadow-lg">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red/10">
                   <CheckCircle className="h-6 w-6 text-red" />
                 </div>
@@ -241,7 +201,7 @@ export function ServicePageTemplate({
                 <p className="mt-2 text-sm leading-relaxed text-gray-700">
                   {feature.desc}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

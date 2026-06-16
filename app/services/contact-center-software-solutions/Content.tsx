@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -71,13 +68,13 @@ export function ContactCenterSoftwareContent() {
     <>
       {/* HERO */}
       <section className="relative min-h-[80vh] overflow-hidden">
-        <Image src="/images/cc-agent-blue.jpg" alt="Contact Center Software - Cloud Call Center Platform by Contact Center USA" fill className="object-cover object-top" priority />
+        <Image src="/images/cc-agent-blue.jpg" alt="Contact Center Software - Cloud Call Center Platform by Contact Center USA" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover object-top" priority />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
 
         <div className="relative z-10 mx-auto flex min-h-[80vh] pt-40 max-w-[1536px] items-center px-5 py-28 lg:px-8">
           <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-5">
-            <motion.div className="lg:col-span-3" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <div className="lg:col-span-3">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur-sm">
                 <Cloud className="h-4 w-4" /> Contact Center Software
               </span>
@@ -92,10 +89,10 @@ export function ContactCenterSoftwareContent() {
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> 50+ Integrations</div>
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> No Hardware Required</div>
               </div>
-            </motion.div>
-            <motion.div className="lg:col-span-2" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+            </div>
+            <div className="lg:col-span-2">
               <HeroContactForm />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -123,7 +120,7 @@ export function ContactCenterSoftwareContent() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">What is Contact Center Software?</span>
               <h2 className="mt-5 text-3xl font-bold leading-[1.15] text-navy sm:text-4xl">
                 Why Cloud Call Center <span className="text-red">Software</span> Is the Foundation of Modern CX
@@ -146,17 +143,17 @@ export function ContactCenterSoftwareContent() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
+            <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-                <Image src="/images/cc-team-meeting.jpg" alt="Contact center software platform dashboard" fill className="object-cover" />
+                <Image src="/images/cc-team-meeting.jpg" alt="Contact center software platform dashboard" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               </div>
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
+              <div className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
                 <div className="text-3xl font-bold">50+</div>
                 <div className="text-sm text-white/80">Integrations Ready</div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -164,22 +161,22 @@ export function ContactCenterSoftwareContent() {
       {/* FEATURES */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Platform Features</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Contact Center Software <span className="text-red">Features</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">Every tool your team needs to deliver exceptional customer experiences — integrated, automated, and optimized in one cloud platform.</p>
-          </motion.div>
+          </div>
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => {
               const Icon = feature.icon;
               return (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="group rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div key={i} className="group rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red/10 text-red transition-all group-hover:bg-red group-hover:text-white">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="mt-5 text-lg font-bold text-navy">{feature.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-700">{feature.desc}</p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -189,18 +186,18 @@ export function ContactCenterSoftwareContent() {
       {/* HOW IT WORKS */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Implementation</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">How Our Software <span className="text-red">Implementation</span> Works</h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">From assessment to optimization, our team handles the entire deployment so you can focus on your customers.</p>
-          </motion.div>
+          </div>
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((step, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="relative text-center">
+              <div key={i} className="relative text-center">
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-red text-xl font-bold text-white shadow-lg">{step.step}</div>
                 <h3 className="mt-6 text-lg font-bold text-navy">{step.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-700">{step.desc}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -209,11 +206,11 @@ export function ContactCenterSoftwareContent() {
       {/* COMPARISON TABLE */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Cost Comparison</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Contact Center Software: <span className="text-red">On-Premise vs. Cloud</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">See why businesses are migrating from legacy on-premise systems to Contact Center USA&apos;s cloud platform.</p>
-          </motion.div>
+          </div>
           <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
             <div className="grid grid-cols-3 bg-navy p-4 text-center text-sm font-semibold text-white">
               <div>Feature</div><div>On-Premise</div><div>Contact Center USA</div>
@@ -232,7 +229,7 @@ export function ContactCenterSoftwareContent() {
       {/* CLOUD CONTACT CENTER SOFTWARE */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Cloud Contact Center Software: The Future of Customer Service</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               <strong>Cloud contact center software</strong> has fundamentally reshaped how businesses manage customer interactions. Unlike legacy on-premise systems that demand six-figure hardware investments and dedicated IT teams, <strong>cloud-based contact center software</strong> runs entirely in the cloud — delivering enterprise capabilities through a simple browser-based interface. According to Gartner, over 75% of contact centers will operate on cloud platforms by 2027, driven by the need for flexibility, cost efficiency, and remote workforce enablement.
@@ -243,14 +240,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               Whether you are migrating from an on-premise PBX or launching a new operation from scratch, our <strong>cloud-based contact center software</strong> deploys in as little as four weeks. Pair it with our <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI automation tools</Link> and <Link href="/services/contact-center-software-solutions" className="text-red font-semibold hover:underline">workforce management solutions</Link> for a fully integrated, future-proof customer service platform.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* OMNICHANNEL CONTACT CENTER SOFTWARE */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Omnichannel Contact Center Software for Seamless CX</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               Today&apos;s customers expect to reach your business on their preferred channel — whether that is phone, live chat, email, SMS, or social media. <strong>Omnichannel contact center software</strong> unifies every channel into a single agent workspace, ensuring consistent customer experiences regardless of how or where the conversation starts. Research from Aberdeen Group shows that companies with strong omnichannel strategies retain 89% of their customers, compared to just 33% for companies with weak cross-channel programs.
@@ -261,14 +258,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               Our platform integrates natively with <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel solutions</Link> including voice, webchat, Facebook Messenger, WhatsApp, Instagram, and email — all managed from a single pane of glass. Combined with <Link href="/services/customer-experience-analytics" className="text-red font-semibold hover:underline">CX analytics</Link>, you gain deep insight into channel performance and customer journey optimization.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* AI-POWERED CONTACT CENTER SOFTWARE */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">AI-Powered Contact Center Software &amp; Automation</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               <strong>Contact center AI software</strong> is transforming the way organizations handle customer interactions at scale. From intelligent call routing that matches callers to the most qualified agent, to AI-powered chatbots that resolve up to 40% of inquiries without human intervention, artificial intelligence is driving measurable improvements in efficiency and customer satisfaction. McKinsey reports that AI-enabled contact centers reduce operational costs by 20-30% while improving CSAT scores by 10 or more points.
@@ -279,14 +276,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               Our <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI automation platform</Link> integrates seamlessly with your existing <strong>contact center software</strong>, layering intelligence on top of your current workflows without disrupting operations. Whether you are deploying conversational IVR, automated post-call surveys, or predictive workforce scheduling, our AI tools deliver ROI from day one.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CONTACT CENTER ANALYTICS SOFTWARE */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Contact Center Analytics &amp; Reporting Software</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               <strong>Contact center analytics software</strong> turns raw interaction data into actionable intelligence that drives better business decisions. Real-time dashboards track over 100 KPIs — including average handle time, first-contact resolution, agent occupancy, queue wait times, and customer satisfaction scores — giving supervisors instant visibility into every facet of operations. Organizations that leverage advanced analytics see a 15-25% improvement in operational efficiency, according to Deloitte.
@@ -297,14 +294,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               Pair our analytics engine with <Link href="/services/customer-experience-analytics" className="text-red font-semibold hover:underline">CX analytics consulting</Link> and <Link href="/services/customer-experience-analytics" className="text-red font-semibold hover:underline">quality assurance services</Link> to build a data-driven contact center that continuously improves. Every dashboard, report, and alert is designed to surface the insights your leadership team needs to optimize workforce performance and reduce cost per contact.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CONTACT CENTER QA & WORKFORCE MANAGEMENT */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Contact Center Quality Assurance &amp; Workforce Management</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               <strong>Contact center quality assurance software</strong> and <strong>contact center workforce management software</strong> are essential pillars of any high-performing operation. QA tools enable automated call scoring across 100% of interactions — not just a random sample — using AI to evaluate compliance, script adherence, empathy, and resolution accuracy. This replaces the outdated practice of manually reviewing 2-3% of calls and provides a complete picture of agent performance.
@@ -315,14 +312,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               Contact Center USA combines <strong>quality assurance</strong> scoring, call recording, screen capture, and performance dashboards with full <Link href="/services/contact-center-software-solutions" className="text-red font-semibold hover:underline">workforce management</Link> capabilities — all within a single <strong>contact center software</strong> platform. Supervisors get one unified view for coaching, scheduling, and performance management, eliminating the need for multiple disconnected tools.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* HEALTHCARE CONTACT CENTER SOFTWARE */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Healthcare Contact Center Software Solutions</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               <strong>Healthcare contact center software</strong> must meet the strictest regulatory standards while delivering compassionate, efficient patient communication. Contact Center USA&apos;s platform is built from the ground up for <strong>HIPAA compliance</strong>, with end-to-end encryption, role-based access controls, audit logging, and Business Associate Agreements (BAAs) included as standard. Over 60% of healthcare organizations are now adopting cloud-based contact center solutions to improve patient access and reduce administrative burden.
@@ -333,14 +330,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               From <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">hospital systems and health plans</Link> to dental practices and behavioral health providers, our platform supports the unique workflows of every healthcare segment. Combined with our <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, you get a complete patient communication solution that scales with your organization.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* ENTERPRISE VS SMB CONTACT CENTER SOFTWARE */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Enterprise vs SMB Contact Center Software</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               Choosing the right <strong>contact center software solutions</strong> depends on your organization&apos;s size, complexity, and growth trajectory. <strong>Enterprise contact center software</strong> typically includes advanced features like multi-site management, custom API development, dedicated account engineering, and complex routing logic for thousands of concurrent agents. SMB solutions prioritize simplicity, fast deployment, and predictable per-agent pricing without sacrificing core capabilities like IVR, ACD, and CRM integration.
@@ -351,14 +348,14 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               Whether you are running a 50-seat <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound contact center</Link> or a 5,000-agent <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound operation</Link>, our <strong>best contact center software</strong> platform scales with your business. Explore our <Link href="/services" className="text-red font-semibold hover:underline">full suite of services</Link> to see how each module works together to drive performance at any scale.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CONTACT CENTER SOFTWARE PRICING */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-navy sm:text-4xl">Contact Center Software Pricing &amp; Cost Guide</h2>
             <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
               Understanding <strong>contact center software pricing</strong> is critical to making the right investment. Cloud-based platforms typically follow three models: <strong>per-agent pricing</strong> (ranging from $50 to $200+ per seat per month depending on feature tier), <strong>per-minute or per-interaction pricing</strong> (ideal for variable-volume operations), and <strong>enterprise licensing</strong> with custom rates for large deployments. On-premise systems, by contrast, often require $250K-$1M+ in upfront capital expenditure plus ongoing maintenance, hardware refresh, and IT staffing costs.
@@ -369,27 +366,27 @@ export function ContactCenterSoftwareContent() {
             <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
               The ROI of modern <strong>cloud contact center software</strong> is compelling. Businesses migrating from on-premise systems report 40-60% reductions in total cost of ownership, while simultaneously improving agent productivity and customer satisfaction. <Link href="/contact" className="text-red font-semibold hover:underline">Request a custom quote</Link> to see exact pricing for your operation, or explore our <Link href="/case-studies" className="text-red font-semibold hover:underline">case studies</Link> to see the measurable results our clients achieve.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* INDUSTRIES */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Industries</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Industries That Rely on Our <span className="text-red">Contact Center Software</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">Our cloud platform is configured for the compliance, integration, and performance needs of every major industry.</p>
-          </motion.div>
+          </div>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((ind, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}>
+              <div key={i}>
                 <Link href={ind.href} className="group block rounded-2xl border border-gray-100 bg-white p-7 transition-all hover:-translate-y-1 hover:shadow-xl">
                   <h3 className="text-lg font-bold text-navy">{ind.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-700">{ind.desc}</p>
                   <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red transition-all group-hover:gap-3">Learn More <ArrowRight className="h-4 w-4" /></div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -399,7 +396,7 @@ export function ContactCenterSoftwareContent() {
       <section className="bg-gradient-to-br from-gray-50 to-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Client Success</span>
               <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">What Our Clients <span className="text-red">Say</span></h2>
               <div className="mt-10 flex items-center gap-10">
@@ -414,9 +411,9 @@ export function ContactCenterSoftwareContent() {
                   <div className="mt-1 text-sm text-gray-600">Avg. Efficiency Gain</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
+            <div className="relative">
               <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl bg-gray-50" />
               <div className="relative z-10 rounded-2xl bg-white p-10 shadow-xl">
                 <div className="absolute -top-5 left-8 flex h-12 w-12 items-center justify-center rounded-full bg-red text-2xl font-bold text-white shadow-lg">&ldquo;</div>
@@ -432,7 +429,7 @@ export function ContactCenterSoftwareContent() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -440,22 +437,22 @@ export function ContactCenterSoftwareContent() {
       {/* RELATED SERVICES */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center text-3xl font-bold text-navy sm:text-4xl">
+          <h2 className="text-center text-3xl font-bold text-navy sm:text-4xl">
             Related <span className="text-red">Services</span>
-          </motion.h2>
+          </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
               { title: "A.I. Automation", desc: "Enhance your software platform with intelligent chatbots, virtual assistants, and automated workflows that reduce agent workload.", href: "/services/ai-call-center-automation" },
               { title: "CX Analytics", desc: "Unlock deeper insights from your contact center data with advanced analytics, sentiment analysis, and predictive modeling.", href: "/services/customer-experience-analytics" },
               { title: "Omnichannel Solutions", desc: "Extend your software across every channel — voice, chat, email, SMS, and social — in one unified platform.", href: "/services/omnichannel-contact-center-solutions" },
             ].map((item, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
+              <div key={i}>
                 <Link href={item.href} className="group block rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <h3 className="text-lg font-bold text-navy">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-700">{item.desc}</p>
                   <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red transition-all group-hover:gap-3">Learn More <ArrowRight className="h-4 w-4" /></div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -469,15 +466,15 @@ export function ContactCenterSoftwareContent() {
         <div className="pointer-events-none absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="max-w-2xl text-center lg:text-left">
+            <div className="max-w-2xl text-center lg:text-left">
               <h2 className="text-3xl font-bold text-white sm:text-4xl">Ready to Upgrade Your Contact Center Software?</h2>
               <p className="mt-3 text-white/60">Discover how our cloud platform can streamline operations and boost agent productivity by 40%.</p>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex flex-wrap items-center gap-4">
+            </div>
+            <div className="flex flex-wrap items-center gap-4">
               <Link href="/contact" className="inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark">
                 Get a Free Demo <ArrowRight className="h-4 w-4" />
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

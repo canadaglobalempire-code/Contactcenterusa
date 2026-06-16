@@ -1,42 +1,58 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, FileText, Globe2, ShieldCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, Globe2, ShieldCheck } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 import {
   AI_CONTEXT_UPDATED_AT,
   SITE_BASE_URL,
   answerEngineFaqs,
+  priorityIndustryLinks,
   priorityBuyerGuideLinks,
   priorityServiceLinks,
 } from "@/lib/ai-context";
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
 
+const ogTitle = "Call Center Outsourcing Answers | Contact Center USA";
+const ogDescription =
+  "Clear answers for buyers comparing call center outsourcing, BPO services, US-based support, multilingual coverage, and quote options.";
+
 export const metadata: Metadata = {
-  title: "Call Center Outsourcing Answers",
+  title: "Call Center Outsourcing Answers & Buyer Guides",
   description:
-    "Fast answers about call center outsourcing pricing, services, provider selection, US-based support, multilingual coverage, and quote requests.",
+    "Fast answers about call center services, contact center outsourcing, provider selection, US-based support, multilingual coverage, pricing, and quotes.",
   alternates: { canonical: "/answers" },
   openGraph: {
-    title: "Call Center Outsourcing Answers | Contact Center USA",
-    description:
-      "Clear answers for buyers comparing call center outsourcing, BPO services, pricing, multilingual support, and quote options.",
+    title: ogTitle,
+    description: ogDescription,
     url: "/answers",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: ogTitle,
+    description: ogDescription,
   },
 };
 
 const answerHubSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": `${SITE_BASE_URL}/answers#webpage`,
   name: "Call Center Outsourcing Answers",
   description:
-    "Fast answers about call center outsourcing pricing, services, provider selection, US-based support, multilingual coverage, and quote requests.",
+    "Fast answers about call center outsourcing services, provider selection, US-based support, multilingual coverage, and quote requests.",
   url: `${SITE_BASE_URL}/answers`,
   dateModified: AI_CONTEXT_UPDATED_AT,
   inLanguage: "en-US",
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${SITE_BASE_URL}/#website`,
+    url: SITE_BASE_URL,
+  },
   publisher: {
     "@type": "Organization",
+    "@id": `${SITE_BASE_URL}/#organization`,
     name: "Contact Center USA",
     url: SITE_BASE_URL,
   },
@@ -75,20 +91,48 @@ const quoteInputs = [
   "Desired launch timeline",
 ];
 
+const quickAnswerPaths = [
+  {
+    question: "I need people to answer calls, chats, or emails.",
+    answer: "Start with inbound call center services or customer service outsourcing.",
+    href: "/solutions/inbound-call-center-services",
+  },
+  {
+    question: "I need customer care that improves retention.",
+    answer: "Start with customer care outsourcing or customer service outsourcing.",
+    href: "/services/customer-care-outsourcing",
+  },
+  {
+    question: "I need outbound sales, leads, or appointments.",
+    answer: "Start with lead generation and appointment setting.",
+    href: "/solutions/lead-generation-appointment-setting",
+  },
+  {
+    question: "I need Spanish or multilingual support.",
+    answer: "Start with multilingual call center services.",
+    href: "/solutions/multilingual-call-center-services",
+  },
+  {
+    question: "I need a vendor shortlist before I request pricing.",
+    answer: "Start with the buyer guides for top providers by category.",
+    href: "/blog/top-10-customer-service-outsourcing-companies-usa",
+  },
+];
+
 export default function AnswersPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(answerHubSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(answerHubSchema).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }}
       />
 
       <section className="bg-navy pt-32 pb-16 text-white lg:pt-40 lg:pb-20">
@@ -98,12 +142,12 @@ export default function AnswersPage() {
               Answer Hub
             </span>
             <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-              Call Center Outsourcing Answers
+              Call Center Outsourcing Answers for Buyers
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
-              Clear, buyer-focused answers about pricing, provider selection,
-              service types, US-based support, multilingual coverage, and what
-              to include when requesting a call center quote.
+              Clear answers about call center services, contact center outsourcing,
+              provider selection, US-based support, multilingual coverage, pricing,
+              and what to include when requesting a call center quote.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <LeadCTALink
@@ -115,11 +159,11 @@ export default function AnswersPage() {
                 <ArrowRight className="h-4 w-4" />
               </LeadCTALink>
               <Link
-                href="/blog/call-center-outsourcing-cost-per-hour-2026"
+                href="/locations"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
               >
-                See Cost Guide
-                <FileText className="h-4 w-4" />
+                View Locations
+                <Globe2 className="h-4 w-4" />
               </Link>
             </div>
           </div>
@@ -131,6 +175,7 @@ export default function AnswersPage() {
                 alt="Contact center agent supporting a customer by phone"
                 fill
                 sizes="(min-width: 1024px) 420px, 100vw"
+                priority
                 className="object-cover"
               />
             </div>
@@ -160,6 +205,42 @@ export default function AnswersPage() {
         </div>
       </section>
 
+      <section className="bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-red">
+                Quick Answer
+              </span>
+              <h2 className="mt-3 text-3xl font-bold text-navy">
+                Where Should I Start?
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-gray-700">
+                If you landed here from a broad search like call center services,
+                call center outsourcing, or contact center services, use the path
+                below to jump to the right page.
+              </p>
+            </div>
+            <div className="divide-y divide-gray-200 rounded-lg border border-gray-200 bg-white">
+              {quickAnswerPaths.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group grid gap-2 p-5 transition-colors hover:bg-red/[0.03] sm:grid-cols-[0.95fr_1fr] sm:gap-5"
+                >
+                  <h3 className="text-base font-bold text-navy group-hover:text-red">
+                    {item.question}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-gray-700">
+                    {item.answer}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.95fr_1.05fr]">
@@ -172,7 +253,7 @@ export default function AnswersPage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-gray-700">
                 Use these answers to decide what to outsource, what to compare,
-                and what information to send when asking for pricing.
+                and what information to send when requesting a quote.
               </p>
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -228,7 +309,7 @@ export default function AnswersPage() {
 
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-red">
                 Service Pages
@@ -238,6 +319,31 @@ export default function AnswersPage() {
               </h2>
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {priorityServiceLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group rounded-lg border border-gray-200 p-5 transition-colors hover:border-red/40"
+                  >
+                    <h3 className="text-base font-bold text-navy group-hover:text-red">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-700">
+                      {item.summary}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-red">
+                Industry Pages
+              </span>
+              <h2 className="mt-3 text-3xl font-bold text-navy">
+                Find Your Industry Context
+              </h2>
+              <div className="mt-8 grid grid-cols-1 gap-3">
+                {priorityIndustryLinks.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}

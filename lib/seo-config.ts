@@ -1,8 +1,6 @@
 export const siteConfig = {
   name: "Contact Center USA",
   url: "https://contactcenterusa.com",
-  phone: "1-800-555-0199",
-  phoneHref: "tel:+18005550199",
   email: "info@contactcenterusa.com",
   description:
     "US-based call center outsourcing services for businesses across the United States and Canada.",
@@ -13,5 +11,41 @@ export const siteConfig = {
     zip: "",
     country: "United States",
   },
-  hours: "Monday - Friday, 8AM - 8PM EST | 24/7 Emergency Support",
+  hours: "24/7 US-Based Support",
 };
+
+export function pageMeta(title: string, description: string, url: string) {
+  return {
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website" as const,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: ["/opengraph-image"],
+    },
+  };
+}
+
+export function articleMeta(title: string, description: string, url: string) {
+  return {
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "article" as const,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title,
+      description,
+      images: ["/opengraph-image"],
+    },
+  };
+}

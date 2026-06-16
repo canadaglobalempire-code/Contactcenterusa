@@ -1,12 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Building2, MapPin, Shield, Users } from "lucide-react";
+import { SITE_BASE_URL } from "@/lib/ai-context";
+import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema";
+
+const title = "US Call Center Service Locations | Contact Center USA";
+const description =
+  "Find US-based call center outsourcing service areas by city, including New York, Los Angeles, Chicago, Houston, Dallas, Phoenix, Seattle, and more.";
 
 export const metadata: Metadata = {
-  title: "US Call Center Service Locations | Contact Center USA",
-  description:
-    "Find US-based call center outsourcing service areas by city, including New York, Los Angeles, Chicago, Houston, Dallas, Phoenix, Seattle, and more.",
+  title,
+  description,
   alternates: { canonical: "/locations" },
+  openGraph: {
+    title,
+    description,
+    url: "/locations",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 const cities = [
@@ -45,9 +61,33 @@ const proofPoints = [
   },
 ];
 
+const locationCollectionSchema = generateCollectionPageSchema({
+  name: title,
+  description,
+  url: `${SITE_BASE_URL}/locations`,
+  items: cities.map((item) => ({
+    name: `${item.city} Call Center Services`,
+    description: `US-based call center service-area guidance for ${item.city}, ${item.state} businesses focused on ${item.focus}.`,
+    url: `${SITE_BASE_URL}${item.href}`,
+  })),
+});
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: SITE_BASE_URL },
+  { name: "Locations", url: `${SITE_BASE_URL}/locations` },
+]);
+
 export default function LocationsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationCollectionSchema).replace(/</g, "\\u003c") }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }}
+      />
       <section className="bg-navy pt-40 pb-20">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="max-w-3xl">

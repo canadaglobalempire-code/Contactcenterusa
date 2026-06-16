@@ -30,6 +30,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/services/fraud-prevention-and-cyber-security",
+        destination: "/services/fraud-prevention-cyber-security",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.contactcenterusa.com" }],
         destination: "https://contactcenterusa.com/:path*",

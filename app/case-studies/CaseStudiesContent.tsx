@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -72,10 +69,7 @@ export function CaseStudiesContent() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Case Studies
@@ -88,7 +82,7 @@ export function CaseStudiesContent() {
               customer experience and achieved measurable results with Contact
               Center USA.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -97,12 +91,8 @@ export function CaseStudiesContent() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2">
             {caseStudies.map((study, index) => (
-              <motion.div
+              <div
                 key={study.industry}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link
                   href="/contact"
@@ -156,7 +146,7 @@ export function CaseStudiesContent() {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -173,11 +163,7 @@ export function CaseStudiesContent() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Ready to Become Our Next Success Story?
@@ -194,7 +180,7 @@ export function CaseStudiesContent() {
               Get Started Today
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

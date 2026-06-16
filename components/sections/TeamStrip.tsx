@@ -64,6 +64,7 @@ export function TeamStrip() {
                   src={src}
                   alt="Team member"
                   fill
+                  sizes="280px"
                   className="object-cover object-top transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity hover:opacity-100" />
@@ -101,6 +102,7 @@ export function TeamStrip() {
                     src={src}
                     alt="Team member"
                     fill
+                    sizes="280px"
                     className="object-cover object-top transition-transform duration-500 hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity hover:opacity-100" />

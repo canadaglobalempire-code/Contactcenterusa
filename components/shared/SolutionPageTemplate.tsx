@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { CheckCircle } from "lucide-react";
@@ -87,6 +86,7 @@ export function SolutionPageTemplate({
           src={heroImage}
           alt={`${label} - Contact Center USA`}
           fill
+          sizes="(max-width: 1280px) 100vw, 1280px"
           className="object-cover object-top"
           priority
         />
@@ -98,12 +98,7 @@ export function SolutionPageTemplate({
         <div className="relative z-10 mx-auto flex min-h-[70vh] pt-40 max-w-[1536px] items-center px-5 py-28 lg:px-8 lg:py-36">
           <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-5">
             {/* Left — Text (3 cols) */}
-            <motion.div
-              className="lg:col-span-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
+            <div className="lg:col-span-3">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur-sm">
                 {label}
               </span>
@@ -129,16 +124,11 @@ export function SolutionPageTemplate({
                   No Contracts
                 </div>
               </div>
-            </motion.div>
+            </div>
             {/* Right — Form (2 cols) */}
-            <motion.div
-              className="lg:col-span-2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+            <div className="lg:col-span-2">
               <HeroContactForm />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -153,13 +143,7 @@ export function SolutionPageTemplate({
       <section className="relative overflow-hidden bg-gradient-to-b from-white via-red/[0.02] to-white py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="relative"
-            >
+            <div className="relative">
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
                 <Image
                   src={heroImage}
@@ -170,14 +154,9 @@ export function SolutionPageTemplate({
                 />
                 <div className="absolute inset-0 bg-black/10" />
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 {label}
               </span>
@@ -192,7 +171,7 @@ export function SolutionPageTemplate({
                   {introText2}
                 </p>
               )}
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -200,33 +179,20 @@ export function SolutionPageTemplate({
       {/* Features Grid */}
       <section className="bg-bg-alt py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-12 text-center"
-          >
+          <div className="mb-12 text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-red">
               What We Offer
             </span>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
               Our {label} Capabilities
             </h2>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => {
               const Icon = feature.icon;
               return (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="group rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg"
-                >
+                <div className="group rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red transition-colors group-hover:bg-red group-hover:text-white">
                     <Icon className="h-6 w-6" />
                   </div>
@@ -234,7 +200,7 @@ export function SolutionPageTemplate({
                   <p className="mt-2 text-[15px] leading-relaxed text-gray-700">
                     {feature.description}
                   </p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -245,12 +211,7 @@ export function SolutionPageTemplate({
       <section className="py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Why Choose Us
               </span>
@@ -265,28 +226,15 @@ export function SolutionPageTemplate({
 
               <div className="mt-8 grid grid-cols-1 gap-3">
                 {benefits.map((benefit, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.08 }}
-                    className="flex items-center gap-2.5"
-                  >
+                  <div className="flex items-center gap-2.5">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                     <span className="text-sm text-gray-600">{benefit}</span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="relative"
-            >
+            <div className="relative">
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
                 <Image
                   src={heroImage}
@@ -297,7 +245,7 @@ export function SolutionPageTemplate({
                 />
                 <div className="absolute inset-0 bg-navy/20" />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

@@ -1,8 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 
 export function ContactHero() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-navy py-28 lg:py-36">
       <div
@@ -14,11 +16,7 @@ export function ContactHero() {
         }}
       />
       <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div ref={ref} className={isInView ? "animate-fade-in-up" : "opacity-0"}>
           <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
             Contact Us
           </span>
@@ -29,7 +27,7 @@ export function ContactHero() {
             Ready to talk business? Let us discuss your needs and create a
             customized solution for your company.
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

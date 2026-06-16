@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle } from "lucide-react";
@@ -48,7 +45,7 @@ export default function CustomerServiceBestPracticesContent() {
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> 15 min read</span>
           </div>
           <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-            <Image src="/images/cc-agent-smile.jpg" alt="Customer Service Best Practices 2026" fill className="object-cover" />
+            <Image src="/images/cc-agent-smile.jpg" alt="Customer Service Best Practices 2026" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
           </div>
         </div>
       </section>
@@ -121,7 +118,7 @@ export default function CustomerServiceBestPracticesContent() {
               </p>
 
               {/* Rule 1 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-8 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-8 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">1. First Response Time Matters</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Speed is the single most important factor in customer satisfaction. Research shows that 82% of customers rate an &quot;immediate&quot; response (under 10 minutes) as important or very important when they have a service question. For phone support, customers expect to connect with a live agent within 60 seconds. For live chat, the expectation is under 30 seconds. For email, the benchmark has shifted from 24 hours to 4 hours.
@@ -129,10 +126,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Reducing first response time is not just about customer satisfaction &mdash; it directly impacts resolution rates and cost. Studies show that issues resolved on first contact cost 2-3x less than those requiring follow-up, and that the probability of resolving a customer issue drops by 50% with each subsequent interaction. Invest in workforce management tools, predictive staffing models, and intelligent routing to ensure every customer reaches the right agent quickly.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 2 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">2. Use Empathy Statements</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   <strong>Empathy statements for customer service</strong> are powerful phrases that acknowledge a customer&apos;s emotions, validate their experience, and demonstrate genuine care. Using empathy statements reduces escalation rates by up to 50% and increases first-call resolution because customers feel heard and are more willing to collaborate on solutions.
@@ -140,10 +137,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The key to effective empathy is authenticity. Scripted, robotic empathy (&quot;I understand your frustration&quot; repeated mechanically) can backfire. Train your agents to listen carefully, mirror the customer&apos;s emotional state, and respond with genuine, personalized empathy. The 20 empathy statements later in this guide provide a foundation that agents can adapt to each unique situation.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 3 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">3. Practice Active Listening</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Active listening goes beyond hearing words &mdash; it means fully concentrating on what the customer is saying, understanding the context and emotions behind their message, and responding in a way that demonstrates comprehension. Active listening involves acknowledging key points (&quot;So what I am hearing is...&quot;), asking clarifying questions, and avoiding interruptions.
@@ -151,10 +148,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Agents who practice active listening resolve issues 40% faster because they correctly identify the root cause on the first attempt rather than solving the wrong problem. Train agents to take notes during calls, summarize the customer&apos;s issue back to them before proposing a solution, and ask &quot;Is there anything else I can help with?&quot; to ensure nothing is missed.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 4 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">4. Personalize Every Interaction</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   71% of consumers expect personalized interactions, and 76% get frustrated when they do not receive them. Personalization in customer service means using the customer&apos;s name, referencing their purchase history, acknowledging their tenure as a customer, and tailoring solutions to their specific situation rather than offering generic responses.
@@ -162,10 +159,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Modern CRM and <Link href="/services/customer-experience-analytics" className="text-red font-semibold hover:underline">customer experience analytics</Link> tools make personalization scalable. Agents should have a unified view of the customer&apos;s history, preferences, and previous interactions before they even say hello. This eliminates the frustrating experience of customers having to repeat their story to every new agent they speak with.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 5 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-red/30 bg-red/[0.02] p-8">
+              <div className="mt-6 rounded-2xl border border-red/30 bg-red/[0.02] p-8">
                 <h3 className="text-xl font-bold text-navy">5. The 3-to-11 Rule of Customer Service</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The <strong>3-to-11 rule of customer service</strong> (also known as the 3/11 rule) states that a happy customer will tell 3 people about their positive experience, while an unhappy customer will tell 11 people about their negative experience. In the age of social media and online reviews, those numbers are exponentially larger &mdash; a single viral complaint can reach millions.
@@ -173,10 +170,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   This asymmetry means that preventing negative experiences is mathematically more impactful than creating positive ones. Every complaint, delay, or unresolved issue creates a multiplier effect that damages your brand far more than a single positive interaction helps it. The practical implication: invest disproportionately in complaint resolution, escalation management, and service recovery. A customer whose problem is resolved quickly and empathetically becomes 70% more likely to do business with you again than a customer who never had a problem at all.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 6 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">6. Empower Agents to Make Decisions</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Nothing frustrates a customer more than hearing &quot;Let me transfer you to my supervisor&quot; or &quot;I do not have the authority to do that.&quot; Empowered agents who can issue refunds, apply credits, override policies within guidelines, and make real-time decisions resolve issues 30% faster and generate 25% higher customer satisfaction scores.
@@ -184,10 +181,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Create clear empowerment guidelines that define what agents can do without approval (e.g., refunds under $100, free shipping upgrades, account credits) and train them to use good judgment within those boundaries. The Ritz-Carlton famously empowers every employee to spend up to $2,000 per guest to resolve issues &mdash; and their customer loyalty reflects that philosophy. You do not need a $2,000 budget, but giving agents meaningful authority transforms the service experience.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 7 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">7. Use Omnichannel Support</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Customers expect to reach you on their preferred channel &mdash; phone, email, live chat, SMS, social media, or self-service &mdash; and they expect a seamless experience when switching between channels. True omnichannel support means that when a customer starts a conversation on chat and then calls in, the phone agent has full context of the chat interaction without the customer having to repeat anything.
@@ -195,10 +192,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Companies with strong omnichannel customer engagement retain 89% of their customers, compared to 33% for companies with weak omnichannel strategies. Implementing <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">omnichannel inbound support</Link> requires unified agent desktops, integrated CRM systems, consistent knowledge bases across channels, and trained agents who can deliver the same quality regardless of communication medium.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 8 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">8. Follow Up After Resolution</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Most customer service teams consider an issue closed once the immediate problem is resolved. But a simple follow-up within 24-48 hours (&quot;Hi [Name], I wanted to check that everything is still working well after our conversation yesterday&quot;) increases customer loyalty by 32% and provides valuable feedback that prevents future issues. Follow-ups transform a transactional interaction into a relationship-building moment.
@@ -206,10 +203,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Automate follow-up surveys and check-ins using your CRM or customer engagement platform, but ensure that agents also make personalized follow-up calls for complex or high-impact issues. This practice turns detractors into promoters and demonstrates that your company cares about long-term satisfaction, not just ticket closure.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 9 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">9. Measure and Track KPIs</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   You cannot improve what you do not measure. The most effective customer service organizations track a balanced scorecard of metrics that covers efficiency (handle time, first response time), quality (CSAT, NPS, quality scores), effectiveness (first-contact resolution, escalation rate), and business impact (retention rate, customer lifetime value). Avoid the trap of optimizing for a single metric &mdash; reducing handle time without maintaining quality, for example, can destroy customer satisfaction.
@@ -217,10 +214,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Establish real-time dashboards that give agents, supervisors, and executives visibility into key metrics. Use daily huddles to review performance, celebrate wins, and address emerging issues before they become systemic problems. The best service organizations treat data as a coaching tool, not a punishment mechanism.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 10 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">10. Invest in Agent Training</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Customer service quality is only as good as the agents delivering it. Yet most companies spend less than 20 hours per year on ongoing agent training after the initial onboarding period. High-performing service organizations invest 40-60 hours annually in continuous training covering product knowledge, soft skills, new tools, compliance updates, and advanced problem-solving techniques.
@@ -228,10 +225,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Effective training programs combine classroom instruction, e-learning modules, role-playing exercises, call shadowing, and real-time coaching. Use conversation intelligence tools to identify specific skill gaps for each agent and create personalized development plans. Agents who feel invested in and supported deliver measurably better service and stay in their roles 2x longer.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 11 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">11. Use AI to Augment Human Agents</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   AI in customer service is not about replacing human agents &mdash; it is about making them faster, smarter, and more effective. AI-powered tools can handle routine inquiries through chatbots, provide real-time knowledge suggestions during calls, automatically summarize conversations, detect customer sentiment, and route complex issues to the best-qualified agent.
@@ -239,10 +236,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Organizations that implement AI-augmented customer service report 40% more interactions handled per agent, 25% reduction in average handle time, and 15% improvement in CSAT scores. The key is deploying AI as a copilot for human agents rather than as a replacement. Customers still want to talk to humans for complex or emotional issues &mdash; but AI ensures those humans have the context, knowledge, and tools to deliver exceptional service.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 12 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">12. Handle Complaints as Opportunities</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Complaints are not problems &mdash; they are gifts. For every customer who complains, 26 remain silent and simply leave. When a customer takes the time to tell you what went wrong, they are giving you the opportunity to fix the issue, save the relationship, and improve your processes. Research shows that customers whose complaints are resolved quickly and empathetically have a 70% repurchase rate &mdash; higher than customers who never had a problem.
@@ -250,10 +247,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Create a structured complaint handling process: acknowledge the issue, apologize sincerely, take ownership, resolve the problem, and follow up. Train agents to view complaints through the lens of the <strong>3-to-11 rule</strong> &mdash; every resolved complaint prevents 11 negative word-of-mouth conversations and creates a loyal advocate.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 13 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">13. Build a Knowledge Base</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   A comprehensive, well-organized knowledge base serves two critical purposes: it empowers customers to find answers through self-service (reducing contact volume by 20-40%), and it gives agents instant access to accurate, up-to-date information during interactions (reducing handle time by 15-25%). Gartner reports that 70% of customers use self-service channels at some point in their resolution journey.
@@ -261,10 +258,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Invest in a knowledge management platform that is searchable, regularly updated, and accessible across all channels. Use AI to surface relevant articles based on the customer&apos;s question or the agent&apos;s current interaction context. Review analytics to identify the most searched topics and ensure those articles are comprehensive, clear, and easy to follow.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 14 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">14. Create Service Level Agreements</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Service level agreements (SLAs) set clear expectations for response times, resolution times, and quality standards across all support channels. Without SLAs, service quality varies based on individual agent motivation, shift timing, and workload &mdash; leading to inconsistent customer experiences. Well-defined SLAs create accountability, enable performance tracking, and give customers confidence in your service commitment.
@@ -272,10 +269,10 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Common SLA benchmarks for 2026 include: phone answer time under 60 seconds (80% of calls), live chat response under 30 seconds, email response within 4 hours, social media response within 1 hour, and first-contact resolution rate above 75%. Monitor SLA adherence in real-time and set up automated alerts when performance falls below thresholds.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Rule 15 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-6 rounded-2xl border border-gray-200 p-8">
+              <div className="mt-6 rounded-2xl border border-gray-200 p-8">
                 <h3 className="text-xl font-bold text-navy">15. Celebrate and Reward Great Service</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Customer service is emotionally demanding work. Agents deal with frustrated, angry, and sometimes hostile customers every day. Recognizing and rewarding agents who deliver exceptional service is essential for morale, retention, and sustained performance. Studies show that recognized employees are 2.7x more likely to be highly engaged and deliver better customer outcomes.
@@ -283,7 +280,7 @@ export default function CustomerServiceBestPracticesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Implement a multi-layered recognition program that includes real-time peer shoutouts, weekly performance awards, monthly top performer celebrations, and annual service excellence awards. Tie recognition to specific customer outcomes (high CSAT, positive customer feedback, creative problem-solving) rather than just productivity metrics. When agents feel valued and appreciated, they pass that positive energy directly to your customers.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Empathy Statements */}
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">20 Empathy Statements for Customer Service</h2>

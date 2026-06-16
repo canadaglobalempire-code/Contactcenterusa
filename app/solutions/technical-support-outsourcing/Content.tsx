@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -72,13 +69,13 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
     <>
       {/* HERO — Image bg + form */}
       <section className="relative min-h-[80vh] overflow-hidden">
-        <Image src="/images/cc-agent-night.jpg" alt="Technical Support Outsourcing USA - Contact Center USA" fill className="object-cover object-center" priority />
+        <Image src="/images/cc-agent-night.jpg" alt="Technical Support Outsourcing USA - Contact Center USA" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover object-center" priority />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" />
 
         <div className="relative z-10 mx-auto flex min-h-[80vh] pt-40 max-w-[1536px] items-center px-5 py-28 lg:px-8">
           <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-5">
-            <motion.div className="lg:col-span-3" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <div className="lg:col-span-3">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur-sm">
                 <Wrench className="h-4 w-4" /> Technical Support Outsourcing
               </span>
@@ -93,10 +90,10 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> 50% Lower Cost Per Ticket</div>
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> No Long-Term Contracts</div>
               </div>
-            </motion.div>
-            <motion.div className="lg:col-span-2" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+            </div>
+            <div className="lg:col-span-2">
               <HeroContactForm />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -124,7 +121,7 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">What is Technical Support Outsourcing?</span>
               <h2 className="mt-5 text-3xl font-bold leading-[1.15] text-navy sm:text-4xl">
                 Resolve Issues Faster, <span className="text-red">Retain</span> More Customers
@@ -147,17 +144,17 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
+            <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-                <Image src="/images/cc-agent-monitor.jpg" alt="Technical support specialists at Contact Center USA" fill className="object-cover" />
+                <Image src="/images/cc-agent-monitor.jpg" alt="Technical support specialists at Contact Center USA" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               </div>
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
+              <div className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
                 <div className="text-3xl font-bold">82%</div>
                 <div className="text-sm text-white/80">First-Call Resolution</div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -165,22 +162,22 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       {/* FEATURES — 6 cards */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Our Capabilities</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Technical Support <span className="text-red">Solutions</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">From help desk basics to advanced engineering escalations, our technical support covers the full spectrum of your technology needs.</p>
-          </motion.div>
+          </div>
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => {
               const Icon = feature.icon;
               return (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="group rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div key={i} className="group rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red/10 text-red transition-all group-hover:bg-red group-hover:text-white">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="mt-5 text-lg font-bold text-navy">{feature.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-700">{feature.desc}</p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -190,18 +187,18 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       {/* HOW IT WORKS — 4 steps */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Our Process</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">How Technical Support Outsourcing <span className="text-red">Works</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">From assessment to continuous improvement, we build a technical support program that resolves issues faster and costs less.</p>
-          </motion.div>
+          </div>
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {processSteps.map((step, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="relative text-center">
+              <div key={i} className="relative text-center">
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-red text-xl font-bold text-white shadow-lg">{step.step}</div>
                 <h3 className="mt-6 text-lg font-bold text-navy">{step.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-700">{step.desc}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -210,11 +207,11 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       {/* COMPARISON TABLE */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Cost Comparison</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Technical Support: <span className="text-red">In-House vs. Outsourced</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">See why technology companies choose outsourced technical support over hiring and managing in-house tech teams.</p>
-          </motion.div>
+          </div>
           <div className="mx-auto mt-12 max-w-4xl overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
             <div className="grid grid-cols-3 bg-navy p-4 text-center text-sm font-semibold text-white">
               <div>Feature</div><div>In-House</div><div>Contact Center USA</div>
@@ -233,20 +230,20 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       {/* INDUSTRIES THAT BENEFIT */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Industries</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Industries That Rely on <span className="text-red">Technical Support Outsourcing</span></h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-700">Our technical support solutions are built for the complexity, compliance requirements, and product-specific needs of every major industry.</p>
-          </motion.div>
+          </div>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((ind, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}>
+              <div key={i}>
                 <Link href={ind.href} className="group block rounded-2xl border border-gray-100 bg-white p-7 transition-all hover:-translate-y-1 hover:shadow-xl">
                   <h3 className="text-lg font-bold text-navy">{ind.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-700">{ind.desc}</p>
                   <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red transition-all group-hover:gap-3">Learn More <ArrowRight className="h-4 w-4" /></div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -256,7 +253,7 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       <section className="bg-gradient-to-br from-gray-50 to-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Client Success</span>
               <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">What Our Clients <span className="text-red">Say</span></h2>
               <div className="mt-10 flex items-center gap-10">
@@ -271,9 +268,9 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
                   <div className="mt-1 text-sm text-gray-600">Lower Cost Per Ticket</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
+            <div className="relative">
               <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl bg-gray-50" />
               <div className="relative z-10 rounded-2xl bg-white p-10 shadow-xl">
                 <div className="absolute -top-5 left-8 flex h-12 w-12 items-center justify-center rounded-full bg-red text-2xl font-bold text-white shadow-lg">&ldquo;</div>
@@ -289,7 +286,7 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -297,22 +294,22 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
       {/* RELATED SERVICES */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center text-3xl font-bold text-navy sm:text-4xl">
+          <h2 className="text-center text-3xl font-bold text-navy sm:text-4xl">
             Related <span className="text-red">Services</span>
-          </motion.h2>
+          </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
               { title: "Customer Service", desc: "Complement technical support with general customer service for non-technical inquiries, account management, and retention programs.", href: "/solutions/customer-service-outsourcing" },
               { title: "AI Automation", desc: "Add intelligent chatbots and automated troubleshooting to deflect common tickets and accelerate resolution for known issues.", href: "/services/ai-call-center-automation" },
               { title: "Inbound Services", desc: "Professional call answering and help desk support as the front door to your technical support operation.", href: "/solutions/inbound-call-center-services" },
             ].map((item, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
+              <div key={i}>
                 <Link href={item.href} className="group block rounded-2xl border border-gray-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <h3 className="text-lg font-bold text-navy">{item.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-gray-700">{item.desc}</p>
                   <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-red transition-all group-hover:gap-3">Learn More <ArrowRight className="h-4 w-4" /></div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -329,15 +326,15 @@ export default function TechnicalSupportContent({ seoContent }: { seoContent?: S
         <div className="pointer-events-none absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="max-w-2xl text-center lg:text-left">
+            <div className="max-w-2xl text-center lg:text-left">
               <h2 className="text-3xl font-bold text-white sm:text-4xl">Ready to Upgrade Your Technical Support?</h2>
               <p className="mt-3 text-white/60">See how outsourced technical support can cut costs by 50% and improve resolution rates for your business.</p>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex flex-wrap items-center gap-4">
+            </div>
+            <div className="flex flex-wrap items-center gap-4">
               <Link href="/contact" className="inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white transition-all hover:bg-red-dark">
                 Get a Free Quote <ArrowRight className="h-4 w-4" />
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -106,19 +106,14 @@ const services = [
 ];
 
 export function ServicesSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-red/[0.03] py-28">
       <div className="gradient-orb-red -top-40 -right-40" />
       <div className="gradient-orb-blue -bottom-40 -left-40" />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
+        <div className={isInView ? "animate-fade-in-up" : "opacity-0"}>
           <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
             Our Services
           </span>
@@ -131,23 +126,19 @@ export function ServicesSection() {
             From text responses to social media, we take customer service to the
             next level.
           </p>
-        </motion.div>
+        </div>
 
-        {/* 3x3 Grid — all services with images */}
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div ref={ref} className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
-            <motion.div
+            <div
               key={service.title}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.06 }}
+              className={isInView ? "animate-fade-in-up" : "opacity-0"}
+              style={{ animationDelay: `${i * 0.06}s` }}
             >
               <Link
                 href={service.href}
                 className="group block h-full overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
               >
-                {/* Image */}
                 <div className="relative h-[220px] overflow-hidden">
                   <Image
                     src={service.image}
@@ -157,12 +148,10 @@ export function ServicesSection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
-                  {/* Icon badge */}
                   <div className="absolute bottom-4 left-5 flex h-11 w-11 items-center justify-center rounded-xl bg-white text-red shadow-md">
                     <service.icon className="h-5 w-5" />
                   </div>
                 </div>
-                {/* Content */}
                 <div className="p-6">
                   <h3 className="text-lg font-bold text-navy">
                     {service.title}
@@ -176,18 +165,11 @@ export function ServicesSection() {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mt-16 text-center"
-        >
+        <div className={`mt-16 text-center ${isInView ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
           <p className="text-gray-700">
             Not sure which service is right for you?
           </p>
@@ -198,7 +180,7 @@ export function ServicesSection() {
             Talk to a Specialist
             <ArrowRight className="h-4 w-4" />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

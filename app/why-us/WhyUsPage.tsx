@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -101,10 +98,7 @@ export default function WhyUsPage() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Why Contact Center USA
@@ -118,7 +112,7 @@ export default function WhyUsPage() {
               over three decades of experience to deliver customer service that
               truly makes a difference.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -127,11 +121,7 @@ export default function WhyUsPage() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             {/* Left - Video */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
               className="relative"
             >
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
@@ -147,24 +137,16 @@ export default function WhyUsPage() {
                 </video>
                 <div className="absolute inset-0 bg-black/20" />
               </div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+              <div
                 className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl"
               >
                 <div className="text-3xl font-bold">30+</div>
                 <div className="text-sm text-white/80">Years of Excellence</div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* Right - Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Our Difference
@@ -187,20 +169,16 @@ export default function WhyUsPage() {
               </p>
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {advantages.map((item, i) => (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.08 }}
                     className="flex items-center gap-2.5"
                   >
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                     <span className="text-sm text-gray-600">{item}</span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -216,11 +194,7 @@ export default function WhyUsPage() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
@@ -234,16 +208,12 @@ export default function WhyUsPage() {
               These principles define who we are and how we serve every client,
               every day.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-16 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
             {values.map((value, i) => (
-              <motion.div
+              <div
                 key={value.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.06 }}
                 className="group rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
               >
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-red/20 text-red transition-all duration-300 group-hover:bg-red group-hover:text-white">
@@ -255,7 +225,7 @@ export default function WhyUsPage() {
                 <p className="mt-2 text-sm leading-relaxed text-white/50">
                   {value.desc}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -265,11 +235,7 @@ export default function WhyUsPage() {
       <section className="bg-white py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Infrastructure
@@ -285,26 +251,18 @@ export default function WhyUsPage() {
               </p>
               <div className="mt-8 space-y-3">
                 {infraCapabilities.map((item, i) => (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.06 }}
                     className="flex items-center gap-2.5"
                   >
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                     <span className="text-sm text-gray-600">{item}</span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
               className="relative"
             >
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
@@ -312,10 +270,11 @@ export default function WhyUsPage() {
                   src="/images/hd-office-team.jpg"
                   alt="Contact Center USA office with enterprise-grade technology and call center infrastructure"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -325,12 +284,8 @@ export default function WhyUsPage() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
             {stats.map((stat, i) => (
-              <motion.div
+              <div
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
                 className="text-center"
               >
                 <div className="text-4xl font-bold text-navy sm:text-5xl">
@@ -340,7 +295,7 @@ export default function WhyUsPage() {
                 <div className="mt-2 text-sm font-medium text-gray-700">
                   {stat.label}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -353,16 +308,13 @@ export default function WhyUsPage() {
             src="/images/new-flag.jpg"
             alt="American flag background representing 100% US-based contact center outsourcing services"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Ready to Experience the Difference?
@@ -379,7 +331,7 @@ export default function WhyUsPage() {
               Get in Touch
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

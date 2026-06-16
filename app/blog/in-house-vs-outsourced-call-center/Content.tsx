@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
@@ -19,10 +16,7 @@ export default function Content() {
           >
             <ArrowLeft className="h-4 w-4" /> Back to Blog
           </Link>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+          <div
           >
             <span className="inline-block rounded-full bg-red px-3 py-1 text-xs font-semibold text-white mb-4">
               COST COMPARISON
@@ -39,9 +33,9 @@ export default function Content() {
               </span>
             </div>
             <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-              <Image src="/images/cc-management.jpg" alt="Call center management comparison" fill className="object-cover" />
+              <Image src="/images/cc-management.jpg" alt="Call center management comparison" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

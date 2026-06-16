@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
@@ -188,10 +185,7 @@ export function FAQPageContent() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               FAQ
@@ -205,18 +199,14 @@ export function FAQPageContent() {
               services. Can&apos;t find the answer you&apos;re looking for?
               Reach out to our team.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* FAQ Answers */}
       <section className="bg-bg-alt py-20 lg:py-28">
         <div className="mx-auto max-w-[1200px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="mb-12 text-center"
           >
             <span className="text-xs font-semibold uppercase tracking-widest text-red">
@@ -230,7 +220,7 @@ export function FAQPageContent() {
               requesting a call center outsourcing quote: pricing, services,
               compliance, staffing, reporting, setup, and contract flexibility.
             </p>
-          </motion.div>
+          </div>
 
           <div className="space-y-12">
             {categories.map((category) => (
@@ -296,11 +286,7 @@ export function FAQPageContent() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Still Have Questions?
@@ -318,7 +304,7 @@ export function FAQPageContent() {
               Contact Us
               <ArrowRight className="h-4 w-4" />
             </LeadCTALink>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

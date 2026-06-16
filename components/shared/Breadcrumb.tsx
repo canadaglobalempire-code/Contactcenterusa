@@ -24,7 +24,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateBreadcrumbSchema(schemaItems)),
+          __html: JSON.stringify(generateBreadcrumbSchema(schemaItems)).replace(/</g, "\\u003c"),
         }}
       />
       <nav className="bg-gray-50 py-3" aria-label="Breadcrumb">

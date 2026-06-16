@@ -177,6 +177,7 @@ export function SurgeSection() {
                   src={surges[active].image}
                   alt={`Call center agents supporting ${surges[active].label} surge demand`}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />

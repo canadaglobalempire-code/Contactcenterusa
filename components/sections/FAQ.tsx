@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, Mail, Clock } from "lucide-react";
+import { Mail, Clock } from "lucide-react";
 import {
   Accordion,
   AccordionItem,
@@ -13,9 +13,9 @@ import { generateFAQSchema } from "@/lib/schema";
 
 const faqs = [
   {
-    question: "How much does call center outsourcing cost?",
+    question: "What information do you need to scope a call center program?",
     answer:
-      "Pricing varies based on call volume, service complexity, and hours of coverage needed. Our plans start at competitive per-hour rates with no hidden fees. Contact us for a custom quote tailored to your specific needs.",
+      "A useful scope includes the service type, expected call or ticket volume, hours of coverage, channels, languages, compliance requirements, CRM or software integrations, and desired launch timeline.",
   },
   {
     question: "Are your agents really based in the United States?",
@@ -56,7 +56,7 @@ export default function FAQ() {
     <section className="bg-white py-24">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }}
       />
       <div className="max-w-[1536px] mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
@@ -100,10 +100,6 @@ export default function FAQ() {
                 </p>
 
                 <div className="mt-8 space-y-4">
-                  <a
-                    className="flex items-center gap-3 text-xl font-semibold"
-                  >
-                  </a>
 
                   <a
                     href={`mailto:${siteConfig.email}`}

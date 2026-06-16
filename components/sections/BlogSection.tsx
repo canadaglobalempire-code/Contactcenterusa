@@ -1,52 +1,76 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 
 const posts = [
   {
-    title: "Call Center Outsourcing Cost: Complete 2026 Guide",
+    title: "Call Center Outsourcing Cost Per Hour: 2026 Rates",
     excerpt:
-      "Everything you need to know about pricing models, hidden fees, and how to get the best value from your outsourcing partner.",
+      "See US, nearshore, and offshore hourly benchmarks, hidden fees, and pricing models before you request a quote.",
     image: "/images/hero-agent-2.jpg",
-    category: "Industry Guide",
-    readTime: "8 min read",
-    href: "/blog",
+    category: "Pricing Guide",
+    readTime: "14 min read",
+    href: "/blog/call-center-outsourcing-cost-per-hour-2026",
   },
   {
-    title: "Onshore vs. Offshore vs. Nearshore: Pros, Cons & Costs",
+    title: "Teleperformance Competitors & Alternatives",
     excerpt:
-      "A detailed comparison to help you decide which outsourcing model is right for your business and your customers.",
+      "Compare companies like Teleperformance for US-based CX, flexible contracts, migration planning, and service quality.",
     image: "/images/agents-row.jpg",
     category: "Comparison",
-    readTime: "6 min read",
-    href: "/blog",
+    readTime: "12 min read",
+    href: "/blog/teleperformance-alternatives",
   },
   {
-    title: "How AI is Transforming the Call Center Industry in 2026",
+    title: "HVAC & Home Services Call Center Companies",
     excerpt:
-      "From intelligent routing to sentiment analysis — how artificial intelligence is reshaping customer service.",
+      "Compare HVAC, plumbing, electrical, roofing, locksmith, and home services call center partners for 2026.",
     image: "/images/agent-focused.jpg",
-    category: "Technology",
-    readTime: "5 min read",
-    href: "/blog",
+    category: "Industry Ranking",
+    readTime: "18 min read",
+    href: "/blog/top-10-hvac-home-services-call-center-companies-usa",
+  },
+  {
+    title: "Customer Service Outsourcing Companies",
+    excerpt:
+      "Compare US-based customer service outsourcing providers for omnichannel support, live chat, email, and seasonal CX coverage.",
+    image: "/images/cc-agent-smile.jpg",
+    category: "CX Ranking",
+    readTime: "18 min read",
+    href: "/blog/top-10-customer-service-outsourcing-companies-usa",
+  },
+  {
+    title: "Healthcare BPO Companies USA",
+    excerpt:
+      "Compare healthcare BPO providers for HIPAA-aware patient support, scheduling, billing support, and overflow workflows.",
+    image: "/images/cc-team-meeting.jpg",
+    category: "Healthcare",
+    readTime: "18 min read",
+    href: "/blog/top-15-healthcare-bpo-companies-usa",
+  },
+  {
+    title: "Appointment Setting Companies USA",
+    excerpt:
+      "Compare appointment setting agencies for B2B meetings, outsourced SDRs, cold calling, LinkedIn outreach, and qualified-meeting pricing.",
+    image: "/images/cc-discussion.jpg",
+    category: "Sales Pipeline",
+    readTime: "18 min read",
+    href: "/blog/top-10-appointment-setting-companies-usa",
   },
 ];
 
 export function BlogSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-tl from-gray-50 via-white to-red/[0.02] py-28">
       <div className="gradient-orb-blue -bottom-40 -right-40" />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className={isInView ? "animate-fade-in-up" : "opacity-0"}>
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               Our Blog
             </span>
@@ -57,7 +81,7 @@ export function BlogSection() {
               Expert advice, industry trends, and actionable tips for
               businesses looking to optimize their customer support.
             </p>
-          </motion.div>
+          </div>
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 text-sm font-semibold text-navy transition-all hover:border-gray-300 hover:bg-gray-50"
@@ -67,14 +91,12 @@ export function BlogSection() {
           </Link>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div ref={ref} className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           {posts.map((post, i) => (
-            <motion.div
+            <div
               key={post.title}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className={isInView ? "animate-fade-in-up" : "opacity-0"}
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
               <Link
                 href={post.href}
@@ -85,6 +107,7 @@ export function BlogSection() {
                     src={post.image}
                     alt={`Blog post image for ${post.title}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
@@ -110,7 +133,7 @@ export function BlogSection() {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

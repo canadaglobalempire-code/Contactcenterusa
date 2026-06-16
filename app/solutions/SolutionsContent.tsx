@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -113,10 +110,7 @@ export default function SolutionsContent() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Our Solutions
@@ -129,7 +123,7 @@ export default function SolutionsContent() {
               From customer service to technical support, our US-based teams
               deliver the expertise and scalability your business demands.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -137,11 +131,7 @@ export default function SolutionsContent() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+            <div
               className="relative overflow-hidden rounded-2xl shadow-2xl"
             >
               <Image
@@ -151,13 +141,9 @@ export default function SolutionsContent() {
                 height={600}
                 className="aspect-[4/3] w-full object-cover"
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+            <div
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Flexible & Scalable
@@ -196,7 +182,7 @@ export default function SolutionsContent() {
                 Discuss Your Needs
                 <ArrowRight className="h-4 w-4" />
               </LeadCTALink>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -204,11 +190,7 @@ export default function SolutionsContent() {
       {/* Solutions Grid */}
       <section className="bg-gray-50 py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
@@ -222,18 +204,14 @@ export default function SolutionsContent() {
               Explore our comprehensive suite of contact center solutions, each
               staffed by trained US-based professionals.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {solutions.map((solution, i) => {
               const Icon = solution.icon;
               return (
-                <motion.div
+                <div
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.06 }}
                 >
                   <Link
                     href={solution.href}
@@ -264,7 +242,7 @@ export default function SolutionsContent() {
                       </div>
                     </div>
                   </Link>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -276,12 +254,8 @@ export default function SolutionsContent() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {stats.map((stat, i) => (
-              <motion.div
+              <div
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="text-center"
               >
                 <div className="text-3xl font-bold text-white sm:text-4xl">
@@ -290,7 +264,7 @@ export default function SolutionsContent() {
                 <div className="mt-2 text-sm font-medium text-white/60">
                   {stat.label}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -308,11 +282,7 @@ export default function SolutionsContent() {
           <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Find the Right Solution for Your Business
@@ -329,7 +299,7 @@ export default function SolutionsContent() {
               Contact Us Today
               <ArrowRight className="h-4 w-4" />
             </LeadCTALink>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

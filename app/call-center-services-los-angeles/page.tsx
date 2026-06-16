@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Los Angeles Call Center Services | Contact Center USA",
+  title: "Los Angeles Call Center Services | BPO & Answering",
   description:
-    "US-based call center services for Los Angeles businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
+    "Compare Los Angeles call center services for inbound support, outbound calls, answering service, bilingual agents, customer care, and fast BPO quotes.",
   keywords: [
     "call center services los angeles",
     "la bpo services",
@@ -17,6 +17,19 @@ export const metadata: Metadata = {
     "la contact center",
   ],
   alternates: { canonical: "/call-center-services-los-angeles" },
+  openGraph: {
+    title: "Los Angeles Call Center Services | BPO & Answering",
+    description:
+      "Compare Los Angeles call center services for inbound support, outbound calls, answering service, bilingual agents, customer care, and fast BPO quotes.",
+    url: "/call-center-services-los-angeles",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Los Angeles Call Center Services | BPO & Answering",
+    description:
+      "Compare Los Angeles call center services for inbound support, outbound calls, answering service, bilingual agents, customer care, and fast BPO quotes.",
+  },
 };
 
 const seoContent: SEOPattern[] = [

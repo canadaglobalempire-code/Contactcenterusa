@@ -19,8 +19,8 @@ export function BuyerAnswerSection() {
               Clear Answers Before You Request a Call Center Quote
             </h2>
             <p className="mt-5 text-base leading-relaxed text-gray-700">
-              Compare service types, pricing factors, and quote requirements
-              before choosing an outsourced support partner.
+              Compare service types, provider fit, and quote requirements before
+              choosing an outsourced support partner.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <LeadCTALink

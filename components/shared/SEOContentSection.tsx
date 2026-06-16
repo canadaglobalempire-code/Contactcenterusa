@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, X } from "lucide-react";
@@ -125,14 +124,9 @@ export type SEOPattern =
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 14 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.5, delay }}
-    >
+    <div>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -196,19 +190,12 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
             {data.stats && (
               <div className="grid grid-cols-1 gap-8 lg:mt-6">
                 {data.stats.map((s, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.15 + i * 0.08 }}
-                    className="border-l-2 border-red pl-6"
-                  >
+                  <div className="border-l-2 border-red pl-6">
                     <div className="text-[44px] font-bold leading-[0.95] tracking-[-0.02em] text-white lg:text-[52px]">
                       {s.stat}
                     </div>
                     <div className="mt-2 text-[14.5px] text-white/65">{s.label}</div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             )}
@@ -273,14 +260,7 @@ function ComparisonBlock({ data }: { data: ComparisonPattern }) {
 
             {/* Rows */}
             {data.rows.map((row, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 4 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.25, delay: i * 0.03 }}
-                className="grid grid-cols-[1fr_1fr_1fr] items-start divide-x divide-gray-200 border-b border-gray-100 last:border-b-0"
-              >
+              <div className="grid grid-cols-[1fr_1fr_1fr] items-start divide-x divide-gray-200 border-b border-gray-100 last:border-b-0">
                 <div className="px-6 py-5 text-[15.5px] font-semibold tracking-tight text-navy">
                   {row.label}
                 </div>
@@ -307,7 +287,7 @@ function ComparisonBlock({ data }: { data: ComparisonPattern }) {
                   )}
                   <span className="font-medium">{row.right}</span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </FadeIn>
@@ -352,14 +332,7 @@ function FlowBlock({ data }: { data: FlowPattern }) {
             />
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-4">
               {data.steps.map((step, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 14 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="relative"
-                >
+                <div className="relative">
                   <div className="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_2px_8px_rgba(15,23,42,0.06)] ring-1 ring-gray-200 lg:mx-0">
                     <span className="text-[14px] font-bold tabular-nums text-navy">
                       {String(i + 1).padStart(2, "0")}
@@ -373,7 +346,7 @@ function FlowBlock({ data }: { data: FlowPattern }) {
                       {step.body}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -411,14 +384,7 @@ function FeaturedIndustriesBlock({ data }: { data: FeaturedIndustriesPattern }) 
           {data.items.map((item, i) => {
             const Icon = item.icon ? ICON_MAP[item.icon] : null;
             return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: i * 0.05 }}
-                className="relative bg-white p-7 lg:p-8"
-              >
+              <div className="relative bg-white p-7 lg:p-8">
                 {Icon && (
                   <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-navy text-white">
                     <Icon className="h-5 w-5" strokeWidth={1.75} />
@@ -433,7 +399,7 @@ function FeaturedIndustriesBlock({ data }: { data: FeaturedIndustriesPattern }) 
                   {item.title}
                 </h3>
                 <p className="mt-2 text-[14.5px] leading-[1.65] text-gray-600">{item.body}</p>
-              </motion.div>
+              </div>
             );
           })}
         </div>

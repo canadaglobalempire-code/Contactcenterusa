@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Seattle Call Center Services | Contact Center USA";
+const description =
+  "US-based call center services for Seattle businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
 export const metadata: Metadata = {
-  title: "Seattle Call Center Services | Contact Center USA",
-  description:
-    "US-based call center services for Seattle businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
+  title,
+  description,
   keywords: [
     "call center services seattle",
     "seattle bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "washington state bpo",
   ],
   alternates: { canonical: "/call-center-services-seattle" },
+  ...pageMeta(title, description, "/call-center-services-seattle"),
 };
 
 const seoContent: SEOPattern[] = [

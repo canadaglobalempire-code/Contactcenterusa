@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -121,10 +118,7 @@ export default function Content() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Why Work With Us
@@ -137,7 +131,7 @@ export default function Content() {
               Built on integrity, trust, security, and an unwavering commitment
               to customer service — here is why leading brands choose us.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -152,11 +146,7 @@ export default function Content() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
@@ -169,16 +159,12 @@ export default function Content() {
               These principles define who we are and how we serve every client,
               every day.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {coreValues.map((value, i) => (
-              <motion.div
+              <div
                 key={value.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.08 }}
                 className="group rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
               >
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-red/20 text-red transition-all duration-300 group-hover:bg-red group-hover:text-white">
@@ -190,7 +176,7 @@ export default function Content() {
                 <p className="mt-3 text-sm leading-relaxed text-white/50">
                   {value.description}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -199,11 +185,7 @@ export default function Content() {
       {/* Competitive Advantages */}
       <section className="bg-gray-50 py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
@@ -216,16 +198,12 @@ export default function Content() {
               Eight key advantages that set Contact Center USA apart from every
               other provider.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((item, i) => (
-              <motion.div
+              <div
                 key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.06 }}
                 className="group rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red transition-all duration-300 group-hover:bg-red group-hover:text-white">
@@ -237,7 +215,7 @@ export default function Content() {
                 <p className="mt-2 text-sm leading-relaxed text-gray-700">
                   {item.description}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -248,11 +226,7 @@ export default function Content() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             {/* Left — Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Our Agents
@@ -277,23 +251,20 @@ export default function Content() {
                 deliver the kind of service that turns first-time callers into
                 lifelong customers.
               </p>
-            </motion.div>
+            </div>
 
             {/* Right — Image */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
               className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl"
             >
               <Image
                 src="/images/cc-agent-blue.jpg"
                 alt="Professional US-based contact center agent providing excellent customer service"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -303,27 +274,20 @@ export default function Content() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             {/* Left — Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
               className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl"
             >
               <Image
                 src="/images/cc-office-wide.jpg"
                 alt="Contact Center USA enterprise-grade office infrastructure with redundant systems"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
-            </motion.div>
+            </div>
 
             {/* Right — Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Infrastructure
@@ -338,20 +302,16 @@ export default function Content() {
               </p>
               <ul className="mt-8 space-y-4">
                 {infraItems.map((item, i) => (
-                  <motion.li
+                  <li
                     key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: i * 0.08 }}
                     className="flex items-center gap-3 text-sm text-gray-700"
                   >
                     <div className="h-2 w-2 flex-shrink-0 rounded-full bg-red" />
                     {item}
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -361,11 +321,7 @@ export default function Content() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Multilingual */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+            <div
               className="rounded-2xl bg-navy p-10"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red/20 text-red">
@@ -380,14 +336,10 @@ export default function Content() {
                 customer feels heard and understood, regardless of their
                 preferred language.
               </p>
-            </motion.div>
+            </div>
 
             {/* 24/7 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+            <div
               className="rounded-2xl bg-navy p-10"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red/20 text-red">
@@ -402,7 +354,7 @@ export default function Content() {
                 day of the year — including holidays, weekends, and after-hours
                 — so you never miss a call.
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -414,16 +366,13 @@ export default function Content() {
             src="/images/new-flag.jpg"
             alt="American flag background showcasing commitment to US-based call center outsourcing"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Ready to Experience the Difference?
@@ -439,7 +388,7 @@ export default function Content() {
               Get in Touch
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

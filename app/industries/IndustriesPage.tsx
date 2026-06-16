@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Heart, ShoppingCart, Landmark, Building2, Monitor, ShieldCheck, Plane, Truck, GraduationCap, Wallet } from "lucide-react";
@@ -153,10 +150,7 @@ export default function IndustriesPage() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Industries We Serve
@@ -170,7 +164,7 @@ export default function IndustriesPage() {
               unique challenges of your industry and deliver tailored solutions
               that drive results.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -179,12 +173,8 @@ export default function IndustriesPage() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {industries.map((industry, i) => (
-              <motion.div
+              <div
                 key={industry.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
                 className="group flex h-full min-h-[280px] flex-col rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-200"
               >
                 <div
@@ -213,7 +203,7 @@ export default function IndustriesPage() {
                   Learn More
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -226,16 +216,13 @@ export default function IndustriesPage() {
             src="/images/new-flag.jpg"
             alt="American flag background representing US-based call center services across multiple industries"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Ready to Partner With Industry Experts?
@@ -252,7 +239,7 @@ export default function IndustriesPage() {
               Get a Free Consultation
               <ArrowRight className="h-4 w-4" />
             </LeadCTALink>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

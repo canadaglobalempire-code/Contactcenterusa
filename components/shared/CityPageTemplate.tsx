@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -147,7 +146,7 @@ export function CityPageTemplate({
 
         <div className="relative z-10 mx-auto flex min-h-[85vh] max-w-[1536px] items-center px-5 py-28 lg:px-8">
           <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-5">
-            <motion.div className="lg:col-span-3" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+            <div className="lg:col-span-3">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white backdrop-blur-sm">
                 <MapPin className="h-4 w-4" /> {city}, {stateAbbr}
               </span>
@@ -162,10 +161,10 @@ export function CityPageTemplate({
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> 24/7 Support</div>
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> No Contracts</div>
               </div>
-            </motion.div>
-            <motion.div className="lg:col-span-2" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+            </div>
+            <div className="lg:col-span-2">
               <HeroContactForm />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -207,17 +206,17 @@ export function CityPageTemplate({
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="relative">
+            <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-                <Image src="/images/hd-agents-pair.jpg" alt={`Call center team serving ${city}`} fill className="object-cover" />
+                <Image src="/images/hd-agents-pair.jpg" alt={`Call center team serving ${city}`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               </div>
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
+              <div className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
                 <div className="text-3xl font-bold">30+</div>
                 <div className="text-sm text-white/80">Years Experience</div>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Why {city}
               </span>
@@ -239,7 +238,7 @@ export function CityPageTemplate({
                   <div className="text-sm text-gray-600">Businesses</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -247,15 +246,15 @@ export function CityPageTemplate({
       {/* SERVICES — Cards with icons */}
       <section className="bg-gradient-to-br from-gray-50 via-white to-red/[0.02] py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Our Services</span>
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Services Available in <span className="text-red">{city}</span></h2>
-          </motion.div>
+          </div>
           <div className="mt-14 grid grid-cols-2 gap-5 lg:grid-cols-4">
             {services.map((service, i) => {
               const Icon = service.icon;
               return (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}>
+                <div>
                   <Link href={service.href} className="group block rounded-2xl border border-gray-100 bg-white p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                     <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-red/10 text-red transition-all group-hover:bg-red group-hover:text-white">
                       <Icon className="h-6 w-6" />
@@ -263,7 +262,7 @@ export function CityPageTemplate({
                     <h3 className="mt-4 text-sm font-bold text-navy">{service.title}</h3>
                     <p className="mt-1 text-sm text-gray-600">{service.desc}</p>
                   </Link>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -274,7 +273,7 @@ export function CityPageTemplate({
       <section className="bg-white py-24">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+            <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Industries</span>
               <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Industries We Serve in <span className="text-red">{city}</span></h2>
               <p className="mt-4 text-gray-700">Specialized call center solutions with industry-specific training, compliance, and best practices for {city}&apos;s most important sectors.</p>
@@ -288,10 +287,10 @@ export function CityPageTemplate({
                   );
                 })}
               </div>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-              <Image src="/images/hd-agents-row.jpg" alt={`Industries served in ${city}`} fill className="object-cover" />
-            </motion.div>
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
+              <Image src="/images/hd-agents-row.jpg" alt={`Industries served in ${city}`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -300,9 +299,9 @@ export function CityPageTemplate({
       <section className="bg-navy py-24">
         <div className="pointer-events-none absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+          <div className="text-center">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Why {city} Businesses Choose <span className="text-red">Contact Center USA</span></h2>
-          </motion.div>
+          </div>
           <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               { icon: Clock, title: "Timezone-Aligned", desc: `Agents work in sync with ${city}'s business hours with 24/7 coverage available.` },
@@ -312,11 +311,11 @@ export function CityPageTemplate({
             ].map((benefit, i) => {
               const Icon = benefit.icon;
               return (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="rounded-2xl bg-white/5 p-7 backdrop-blur-sm transition-all hover:bg-white/10">
+                <div className="rounded-2xl bg-white/5 p-7 backdrop-blur-sm transition-all hover:bg-white/10">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red/20 text-red"><Icon className="h-6 w-6" /></div>
                   <h3 className="mt-5 text-lg font-bold text-white">{benefit.title}</h3>
                   <p className="mt-2 text-sm text-white/50">{benefit.desc}</p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -329,7 +328,7 @@ export function CityPageTemplate({
           <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
             <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
               {/* Left — Header + Stats */}
-              <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+              <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">Testimonials</span>
                 <h2 className="mt-5 text-3xl font-bold leading-[1.15] text-navy sm:text-4xl">
                   What {city} Clients <span className="text-red">Say About Us</span>
@@ -351,10 +350,10 @@ export function CityPageTemplate({
                     <div className="mt-1 text-sm text-gray-600">Verified Reviews</div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Right — Testimonial Card */}
-              <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="relative">
+              <div className="relative">
                 <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl bg-gray-50" />
                 <div className="relative z-10 rounded-2xl bg-white p-10 shadow-xl">
                   <div className="absolute -top-5 left-8 flex h-12 w-12 items-center justify-center rounded-full bg-red text-2xl font-bold text-white shadow-lg">&ldquo;</div>
@@ -370,7 +369,7 @@ export function CityPageTemplate({
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
@@ -388,7 +387,7 @@ export function CityPageTemplate({
         </video>
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Ready to Transform Your {city} Business?</h2>
             <p className="mx-auto mt-4 max-w-xl text-white/60">Get a free consultation and discover how Contact Center USA can help your {city} business deliver exceptional customer experiences.</p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -396,7 +395,7 @@ export function CityPageTemplate({
                 Get a Free Quote <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

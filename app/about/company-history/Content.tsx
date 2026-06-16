@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -78,10 +75,7 @@ export default function Content() {
           }}
         />
         <div className="relative mx-auto max-w-[1536px] px-5 text-center lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
               Company History
@@ -95,18 +89,14 @@ export default function Content() {
               the milestones that shaped Contact Center USA into the trusted
               partner businesses rely on.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Timeline */}
       <section className="relative overflow-hidden bg-gradient-to-b from-white via-red/[0.015] to-white py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
@@ -119,7 +109,7 @@ export default function Content() {
               Over two decades of growth, innovation, and commitment to
               exceptional customer service.
             </p>
-          </motion.div>
+          </div>
 
           <div className="relative mt-16">
             {/* Vertical dashed line */}
@@ -128,12 +118,8 @@ export default function Content() {
 
             <div className="space-y-12 lg:space-y-16">
               {milestones.map((milestone, i) => (
-                <motion.div
+                <div
                   key={i}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="relative flex items-start gap-8 lg:items-center"
                 >
                   {/* Mobile & Desktop layout */}
@@ -203,7 +189,7 @@ export default function Content() {
                       </p>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -215,11 +201,7 @@ export default function Content() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             {/* Left — Video */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
               className="relative"
             >
               <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
@@ -235,14 +217,10 @@ export default function Content() {
                 </video>
                 <div className="absolute inset-0 bg-black/20" />
               </div>
-            </motion.div>
+            </div>
 
             {/* Right — Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
                 Our Mission
@@ -268,7 +246,7 @@ export default function Content() {
                 customer experiences that build loyalty, drive revenue, and set
                 brands apart from the competition.
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -276,11 +254,7 @@ export default function Content() {
       {/* Stats Bar */}
       <section className="bg-navy py-16">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="grid grid-cols-2 gap-8 lg:grid-cols-4"
           >
             {stats.map((stat) => (
@@ -291,18 +265,14 @@ export default function Content() {
                 <div className="mt-2 text-sm text-white/60">{stat.label}</div>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Industries */}
       <section className="bg-gray-50 py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="text-center"
           >
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
@@ -315,20 +285,16 @@ export default function Content() {
               Our experience spans across the most demanding industries in the
               world.
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-12 flex flex-wrap justify-center gap-3">
             {industries.map((industry, i) => (
-              <motion.span
+              <span
                 key={industry}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
                 className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-navy shadow-sm transition-all hover:bg-red hover:text-white"
               >
                 {industry}
-              </motion.span>
+              </span>
             ))}
           </div>
         </div>
@@ -341,16 +307,13 @@ export default function Content() {
             src="/images/new-flag.jpg"
             alt="American flag background symbolizing domestic US-based contact center operations"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-navy/85" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1536px] px-5 py-20 text-center lg:px-8 lg:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
           >
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
               Ready to Be Part of Our Story?
@@ -366,7 +329,7 @@ export default function Content() {
               Get in Touch
               <ArrowRight className="h-4 w-4" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>

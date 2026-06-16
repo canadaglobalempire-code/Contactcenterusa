@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { useInView } from "@/hooks/useInView";
 import { CheckCircle } from "lucide-react";
 
 const capabilities = [
@@ -14,20 +13,15 @@ const capabilities = [
 ];
 
 export function AboutMission() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-red/[0.02] to-white py-28">
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          {/* Left — Video */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="relative"
-          >
+        <div ref={ref} className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+          <div className={`relative ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <div className="relative min-h-[400px] overflow-hidden rounded-2xl shadow-2xl lg:min-h-[500px]">
-              <video
+              <video preload="metadata"
                 autoPlay
                 muted
                 loop
@@ -39,25 +33,13 @@ export function AboutMission() {
               </video>
               <div className="absolute inset-0 bg-black/20" />
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl"
-            >
+            <div className={`absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl ${isInView ? "animate-scale-in" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
               <div className="text-3xl font-bold">500+</div>
               <div className="text-sm text-white/80">Employees Nationwide</div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          {/* Right — Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
+          <div className={isInView ? "animate-slide-in-right" : "opacity-0"}>
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               Our Mission
             </span>
@@ -79,20 +61,17 @@ export function AboutMission() {
 
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {capabilities.map((item, i) => (
-                <motion.div
+                <div
                   key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: i * 0.08 }}
-                  className="flex items-center gap-2.5"
+                  className={`flex items-center gap-2.5 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
+                  style={{ animationDelay: `${i * 0.08}s` }}
                 >
                   <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                   <span className="text-sm text-gray-600">{item}</span>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

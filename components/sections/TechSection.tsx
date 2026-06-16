@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import {
   Bot,
   BrainCircuit,
@@ -32,17 +32,13 @@ const technologies = [
 ];
 
 export function TechSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-bl from-white via-red/[0.02] to-gray-50 py-28">
       <div className="gradient-orb-blue -top-20 -left-40" />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
+        <div className={isInView ? "animate-fade-in-up" : "opacity-0"}>
           <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
             Technology & AI
           </span>
@@ -53,17 +49,14 @@ export function TechSection() {
             We combine human expertise with cutting-edge AI and automation
             to deliver faster, smarter, and more efficient customer experiences.
           </p>
-        </motion.div>
+        </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div ref={ref} className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {technologies.map((tech, i) => (
-            <motion.div
+            <div
               key={tech.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.05 }}
-              className="group flex items-center gap-4 rounded-xl border border-gray-100 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-red/20 hover:shadow-lg"
+              className={`group flex items-center gap-4 rounded-xl border border-gray-100 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-red/20 hover:shadow-lg ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
+              style={{ animationDelay: `${i * 0.05}s` }}
             >
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-navy/5 text-navy transition-all duration-300 group-hover:bg-red group-hover:text-white">
                 <tech.icon className="h-5 w-5" />
@@ -72,7 +65,7 @@ export function TechSection() {
                 <div className="text-sm font-bold text-navy">{tech.label}</div>
                 <div className="text-sm text-gray-600">{tech.desc}</div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

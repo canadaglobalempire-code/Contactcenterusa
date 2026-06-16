@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
 import Link from "next/link";
 import { SectionHeader } from "@/components/shared/SectionHeader";
@@ -33,6 +33,8 @@ const team = [
 ];
 
 export function TeamPreview() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="bg-bg-alt py-24">
       <div className="max-w-[1536px] mx-auto px-4 sm:px-6">
@@ -42,24 +44,21 @@ export function TeamPreview() {
           subtitle="A senior team with decades of combined contact center experience."
         />
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, i) => (
-            <motion.div
+            <div
               key={member.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group"
+              className={`bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 300px"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* Hover overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                   <div className="absolute bottom-0 left-0 right-0 translate-y-4 p-5 text-sm text-white transition-transform duration-500 group-hover:translate-y-0">
                     {member.bio}
@@ -71,17 +70,13 @@ export function TeamPreview() {
                 <div className="text-navy font-bold">{member.name}</div>
                 <div className="text-text-muted text-sm">{member.title}</div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        {/* Company story */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-16 text-center max-w-3xl mx-auto"
+        <div
+          className={`mt-16 text-center max-w-3xl mx-auto ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={{ animationDelay: "0.4s" }}
         >
           <p className="text-text-muted text-lg leading-relaxed">
             Founded with a simple mission: deliver enterprise-quality call center
@@ -97,7 +92,7 @@ export function TeamPreview() {
           >
             Learn More About Us &rarr;
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

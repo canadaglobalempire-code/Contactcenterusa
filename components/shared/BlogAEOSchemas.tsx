@@ -216,11 +216,11 @@ export function BlogAEOSchemas({ slug }: { slug: string }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, "\\u003c") }}
       />
       {!meta.hasExplicitFAQ && (
         <script
@@ -228,7 +228,7 @@ export function BlogAEOSchemas({ slug }: { slug: string }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(
               buildFAQPageSchema(buildTopNBlogFAQs(meta.topic, meta.topicShort))
-            ),
+            ).replace(/</g, "\\u003c"),
           }}
         />
       )}

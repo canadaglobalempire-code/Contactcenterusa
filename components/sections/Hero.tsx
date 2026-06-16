@@ -159,6 +159,7 @@ export function Hero() {
                       src="/images/agent-smiling.jpg"
                       alt="Call center agent smiling"
                       fill
+                      sizes="(max-width: 1280px) 100vw, 370px"
                       className="object-cover"
                       priority
                     />
@@ -172,6 +173,7 @@ export function Hero() {
                       src="/images/about-us.jpg"
                       alt="Professional agent with headset"
                       fill
+                      sizes="(max-width: 1280px) 100vw, 250px"
                       className="object-cover"
                     />
                   </div>
@@ -196,6 +198,7 @@ export function Hero() {
                       src="/images/hero-agent-3.jpg"
                       alt="Diverse team of agents"
                       fill
+                      sizes="(max-width: 1280px) 100vw, 220px"
                       className="object-cover"
                     />
                   </div>
@@ -208,6 +211,7 @@ export function Hero() {
                       src="/images/call-center-team.jpg"
                       alt="Call center team working"
                       fill
+                      sizes="(max-width: 1280px) 100vw, 310px"
                       className="object-cover"
                     />
                   </div>

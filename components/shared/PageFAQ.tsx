@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import {
@@ -10,7 +10,6 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { generateFAQSchema } from "@/lib/schema";
-import { siteConfig } from "@/lib/seo-config";
 
 interface PageFAQProps {
   heading?: string;
@@ -22,23 +21,17 @@ export function PageFAQ({
   faqs,
 }: PageFAQProps) {
   const faqSchema = generateFAQSchema(faqs);
+  const { ref, isInView } = useInView(0.1);
 
   return (
     <section className="bg-white py-24">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c") }}
       />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
-          {/* Left — FAQ */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-3"
-          >
+        <div ref={ref} className="grid grid-cols-1 gap-16 lg:grid-cols-5">
+          <div className={`lg:col-span-3 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               FAQ
             </span>
@@ -64,15 +57,11 @@ export function PageFAQ({
                 ))}
               </Accordion>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right — Sticky help card */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-2"
+          <div
+            className={`lg:col-span-2 ${isInView ? "animate-slide-in-right" : "opacity-0"}`}
+            style={{ animationDelay: "0.15s" }}
           >
             <div className="lg:sticky lg:top-28 space-y-6">
               <div className="rounded-2xl bg-navy p-8 text-white">
@@ -111,7 +100,7 @@ export function PageFAQ({
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

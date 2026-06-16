@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 
 interface SectionHeaderProps {
   label?: string;
@@ -17,13 +17,12 @@ export function SectionHeader({
   centered = true,
   light = false,
 }: SectionHeaderProps) {
+  const { ref, isInView } = useInView(0.1);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.5 }}
-      className={`mb-12 ${centered ? "text-center" : ""}`}
+    <div
+      ref={ref}
+      className={`mb-12 ${centered ? "text-center" : ""} ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
     >
       {label && (
         <span
@@ -50,6 +49,6 @@ export function SectionHeader({
           {subtitle}
         </p>
       )}
-    </motion.div>
+    </div>
   );
 }

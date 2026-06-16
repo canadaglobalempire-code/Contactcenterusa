@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "San Diego Call Center Services | Contact Center USA";
+const description =
+  "US-based call center services for San Diego businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
 export const metadata: Metadata = {
-  title: "San Diego Call Center Services | Contact Center USA",
-  description:
-    "US-based call center services for San Diego businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
+  title,
+  description,
   keywords: [
     "call center services san diego",
     "san diego bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "socal biotech call center",
   ],
   alternates: { canonical: "/call-center-services-san-diego" },
+  ...pageMeta(title, description, "/call-center-services-san-diego"),
 };
 
 const seoContent: SEOPattern[] = [

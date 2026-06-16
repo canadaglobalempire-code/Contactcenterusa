@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -100,17 +100,13 @@ const industries = [
 ];
 
 export function IndustriesSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-tr from-white via-red/[0.015] to-white py-28">
       <div className="gradient-orb-red -bottom-40 -right-40" />
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
+        <div className={isInView ? "animate-fade-in-up" : "opacity-0"}>
           <span className="inline-flex items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
             Industries We Serve
           </span>
@@ -122,16 +118,14 @@ export function IndustriesSection() {
             25+ years of experience across multiple industries. Specialized
             training, compliance protocols, and domain knowledge for every sector.
           </p>
-        </motion.div>
+        </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+        <div ref={ref} className="mt-16 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
           {industries.map((industry, i) => (
-            <motion.div
+            <div
               key={industry.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.05 }}
+              className={isInView ? "animate-fade-in-up" : "opacity-0"}
+              style={{ animationDelay: `${i * 0.05}s` }}
             >
               <Link
                 href={industry.href}
@@ -156,9 +150,9 @@ export function IndustriesSection() {
                 >
                   <industry.icon className="h-6 w-6" />
                 </div>
-                <h4 className="mt-4 text-sm font-bold text-navy">
+                <h3 className="mt-4 text-sm font-bold text-navy">
                   {industry.label}
-                </h4>
+                </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-gray-600">
                   {industry.desc}
                 </p>
@@ -167,7 +161,7 @@ export function IndustriesSection() {
                   <ArrowRight className="h-3 w-3" />
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

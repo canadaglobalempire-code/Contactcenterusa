@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Dallas Call Center Services | Contact Center USA",
+  title: "Dallas Call Center Services | BPO & Answering",
   description:
-    "US-based call center services for Dallas businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
+    "Compare Dallas call center services for inbound support, outbound calls, answering service, bilingual agents, financial services, and fast BPO quotes.",
   keywords: [
     "call center services dallas",
     "dallas bpo services",
@@ -17,6 +17,19 @@ export const metadata: Metadata = {
     "dallas customer support",
   ],
   alternates: { canonical: "/call-center-services-dallas" },
+  openGraph: {
+    title: "Dallas Call Center Services | BPO & Answering",
+    description:
+      "Compare Dallas call center services for inbound support, outbound calls, answering service, bilingual agents, financial services, and fast BPO quotes.",
+    url: "/call-center-services-dallas",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dallas Call Center Services | BPO & Answering",
+    description:
+      "Compare Dallas call center services for inbound support, outbound calls, answering service, bilingual agents, financial services, and fast BPO quotes.",
+  },
 };
 
 const seoContent: SEOPattern[] = [

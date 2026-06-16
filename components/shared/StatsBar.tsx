@@ -1,5 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
+
+import { useInView } from "@/hooks/useInView";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 
 interface Stat {
@@ -15,13 +16,12 @@ interface StatsBarProps {
 }
 
 export function StatsBar({ stats }: StatsBarProps) {
+  const { ref, isInView } = useInView(0.1);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="mx-auto max-w-[1536px] px-5 lg:px-8"
+    <div
+      ref={ref}
+      className={`mx-auto max-w-[1536px] px-5 lg:px-8 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
     >
       <div className="grid grid-cols-2 gap-6 rounded-2xl bg-gray-50 p-8 lg:grid-cols-4">
         {stats.map((stat) => (
@@ -38,6 +38,6 @@ export function StatsBar({ stats }: StatsBarProps) {
           </div>
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }

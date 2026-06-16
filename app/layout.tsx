@@ -19,6 +19,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://contactcenterusa.com"),
+  applicationName: "Contact Center USA",
+  creator: "Contact Center USA",
+  publisher: "Contact Center USA",
+  category: "Call Center Outsourcing",
   verification: {
     google: [
       "Q8nqe1KtPCYANReH_fxQPK1EQsrnSpuUDKga_j0m7cc",
@@ -50,16 +54,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://contactcenterusa.com",
     siteName: "Contact Center USA",
     title: "Contact Center USA | US-Based Call Center Outsourcing Services",
     description:
       "Looking for reliable US-based call center services? Contact Center USA offers 24/7 inbound & outbound support with dedicated agents. No contracts. Get a free quote today.",
     images: [
       {
-        url: "/images/logo-v3.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Contact Center USA",
+        alt: "Contact Center USA - US-based call center outsourcing services",
       },
     ],
   },
@@ -68,10 +73,23 @@ export const metadata: Metadata = {
     title: "Contact Center USA | US-Based Call Center Outsourcing Services",
     description:
       "Looking for reliable US-based call center services? Contact Center USA offers 24/7 inbound & outbound support with dedicated agents. No contracts. Get a free quote today.",
+    images: [
+      {
+        url: "/twitter-image",
+        alt: "Contact Center USA - US-based call center outsourcing services",
+      },
+    ],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -81,7 +99,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en-US" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PJDXM78DK3"
@@ -103,19 +121,19 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateOrganizationSchema()),
+            __html: JSON.stringify(generateOrganizationSchema()).replace(/</g, "\\u003c"),
           }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateWebSiteSchema()),
+            __html: JSON.stringify(generateWebSiteSchema()).replace(/</g, "\\u003c"),
           }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateServiceCatalogSchema()),
+            __html: JSON.stringify(generateServiceCatalogSchema()).replace(/</g, "\\u003c"),
           }}
         />
         <Navbar />

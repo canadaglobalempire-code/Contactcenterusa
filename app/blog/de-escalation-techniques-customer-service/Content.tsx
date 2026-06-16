@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle } from "lucide-react";
@@ -25,7 +22,7 @@ export default function DeEscalationTechniquesContent() {
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> 14 min read</span>
           </div>
           <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
-            <Image src="/images/cc-team-collab.jpg" alt="De-escalation techniques for customer service teams" fill className="object-cover" />
+            <Image src="/images/cc-team-collab.jpg" alt="De-escalation techniques for customer service teams" fill sizes="(max-width: 1280px) 100vw, 1280px" className="object-cover" />
           </div>
         </div>
       </section>
@@ -86,7 +83,7 @@ export default function DeEscalationTechniquesContent() {
               </p>
 
               {/* Technique 1 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">1. Active Listening Without Interrupting</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The single most powerful de-escalation technique is genuine active listening. When a customer is upset, their primary need is to feel heard. Interrupting&mdash;even to offer a solution&mdash;signals that you are not truly listening and can intensify their frustration.
@@ -97,10 +94,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Studies show that customers who feel truly heard are <strong>4.6 times more likely to feel satisfied</strong> with the interaction, even if the outcome is not exactly what they wanted. Listening is not passive&mdash;it is the foundation of every successful de-escalation.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 2 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">2. Using Empathy Statements</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Empathy is the ability to understand and share the feelings of another person. In customer service, <strong>empathy statements</strong> explicitly communicate that you understand the customer&apos;s frustration and that their feelings are valid. This is not about agreeing that the company made a mistake&mdash;it is about acknowledging the emotional impact of the situation.
@@ -111,10 +108,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The key is authenticity. Customers can detect scripted or insincere empathy immediately, and it often makes things worse. Train agents to genuinely consider the customer&apos;s perspective before responding. When empathy is real, it can defuse even the most heated interactions within seconds.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 3 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">3. Staying Calm and Controlling Your Tone</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   When a customer is yelling, the natural human response is to mirror their energy&mdash;speaking faster, louder, or more defensively. This is exactly what you must not do. <strong>Staying calm</strong> is a deliberate skill that requires practice and self-awareness.
@@ -125,10 +122,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Practical tips: slow your speaking pace by about 20%, lower your volume slightly, breathe deeply between sentences, and avoid taking the customer&apos;s anger personally. Remember that the customer is upset about the situation, not about you as an individual.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 4 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">4. Acknowledging the Customer&apos;s Feelings</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Acknowledgment goes beyond empathy. While empathy says &quot;I understand how you feel,&quot; acknowledgment says &quot;Your feelings are valid and reasonable given the circumstances.&quot; This distinction matters because many upset customers fear they will be dismissed as unreasonable or overreacting.
@@ -139,10 +136,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Acknowledgment also prevents the common trap of jumping straight to a solution. Customers need to feel validated before they are ready to hear solutions. Skipping this step often results in the customer rejecting perfectly good solutions simply because they do not feel their complaint was properly received.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 5 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">5. Asking Clarifying Questions</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Once the customer has expressed their frustration and you have acknowledged their feelings, asking clarifying questions serves two purposes. First, it ensures you fully understand the problem so you can provide the right solution. Second, it shifts the customer from emotional expression to logical thinking&mdash;a natural de-escalation mechanism.
@@ -153,10 +150,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Avoid questions that sound accusatory or that imply the customer did something wrong, such as &quot;Did you read the instructions?&quot; or &quot;Are you sure you followed the correct process?&quot; Even well-intentioned troubleshooting questions can re-escalate a situation if they feel like blame-shifting.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 6 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">6. Offering Solutions, Not Excuses</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   After listening, empathizing, and understanding the problem, the customer wants one thing: a solution. This is where many agents stumble by offering explanations or excuses instead. Saying &quot;Our system was down&quot; or &quot;That department is really backed up&quot; may be factually accurate, but it does nothing to solve the customer&apos;s problem.
@@ -167,10 +164,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   When a full resolution is not immediately possible, be transparent about what you can and cannot do. &quot;I cannot reverse the charge today, but I can escalate this to our billing team and they will contact you within 24 hours with a resolution.&quot; Honesty paired with a concrete plan is far more effective than vague promises.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 7 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">7. Setting Boundaries Professionally</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   De-escalation does not mean accepting abuse. There is a clear difference between a frustrated customer expressing anger about a situation and a customer who is being verbally abusive, making threats, or using discriminatory language. Agents must know where the line is and have the authority to set boundaries.
@@ -181,10 +178,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Having clear organizational policies around acceptable behavior protects agents from emotional harm and actually improves outcomes. Agents who feel empowered to set boundaries experience <strong>40% less burnout</strong> and handle escalated calls more effectively than agents who feel they must tolerate any behavior.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 8 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">8. Using Positive Language</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The words you choose have a direct impact on how the customer perceives the interaction. <strong>Positive language</strong> focuses on what you can do rather than what you cannot. It reframes limitations as opportunities and keeps the conversation forward-looking.
@@ -195,10 +192,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Positive language does not mean being dishonest or making promises you cannot keep. It means framing reality in a way that keeps the customer focused on the path forward rather than dwelling on the problem. This subtle shift in language can reduce call escalations by <strong>up to 25%</strong>.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 9 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">9. Knowing When to Escalate</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Ironically, one of the most important de-escalation skills is knowing when to stop trying to de-escalate and instead pass the call to a supervisor or specialized team. Some situations genuinely require a higher authority&mdash;whether due to the complexity of the issue, the customer&apos;s emotional state, or the agent&apos;s authorization limits.
@@ -209,10 +206,10 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   When escalating, never frame it as giving up. Instead, say: &quot;I want to make sure you get the best possible outcome, so I am going to connect you with my supervisor who has more options available to resolve this.&quot; This positions escalation as an upgrade in service, not a failure.
                 </p>
-              </motion.div>
+              </div>
 
               {/* Technique 10 */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
+              <div>
                 <h3 className="mt-10 text-xl font-bold text-navy">10. Following Up After Resolution</h3>
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   The de-escalation process does not end when the call ends. Following up with a customer after resolving their issue is one of the most impactful things you can do to turn a negative experience into long-term loyalty. A brief follow-up email or call that says &quot;I wanted to make sure everything was resolved to your satisfaction&quot; demonstrates that the company genuinely cares.
@@ -223,7 +220,7 @@ export default function DeEscalationTechniquesContent() {
                 <p className="mt-3 text-gray-700 leading-relaxed">
                   Use your <Link href="/services/customer-experience-analytics" className="text-red font-semibold hover:underline">customer experience analytics</Link> platform to track follow-up outcomes and identify trends. Are certain issues generating repeated escalations? Are specific products or services driving disproportionate complaints? This data is invaluable for preventing future escalations at the source.
                 </p>
-              </motion.div>
+              </div>
 
               {/* De-Escalation Training */}
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">De-Escalation Training for Call Center Agents</h2>

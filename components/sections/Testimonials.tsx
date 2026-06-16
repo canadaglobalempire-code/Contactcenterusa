@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import { Star } from "lucide-react";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 
@@ -32,6 +32,8 @@ const testimonials = [
 ];
 
 export function Testimonials() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="bg-white py-24">
       <div className="max-w-[1536px] mx-auto px-4 sm:px-6">
@@ -41,22 +43,17 @@ export function Testimonials() {
           subtitle="Real results from real businesses we've helped transform."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
-            <motion.div
+            <div
               key={t.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-white rounded-2xl p-8 relative border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300"
+              className={`bg-white rounded-2xl p-8 relative border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
+              style={{ animationDelay: `${i * 0.15}s` }}
             >
-              {/* Decorative quote mark */}
               <div className="absolute top-6 right-8 text-6xl leading-none text-blue/10 font-serif select-none">
                 &rdquo;
               </div>
 
-              {/* Star rating */}
               <div className="flex gap-0.5 mb-4">
                 {Array.from({ length: 5 }).map((_, idx) => (
                   <Star
@@ -66,12 +63,10 @@ export function Testimonials() {
                 ))}
               </div>
 
-              {/* Quote */}
               <p className="text-text-dark text-[15px] leading-relaxed">
                 {t.quote}
               </p>
 
-              {/* Author */}
               <div className="mt-6 pt-6 border-t border-gray-100 flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue to-cyan-400 text-white font-bold flex items-center justify-center text-sm">
                   {t.initials}
@@ -83,11 +78,10 @@ export function Testimonials() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        {/* Trust badge */}
         <div className="text-center mt-12">
           <p className="text-text-muted text-sm inline-flex items-center gap-1.5">
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />

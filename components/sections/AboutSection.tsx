@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -19,29 +19,20 @@ const highlights = [
 
 
 export function AboutSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-red/[0.02] to-white py-28">
-      {/* Decorative bg elements */}
       <div className="pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-red/[0.02] blur-3xl" />
       <div className="pointer-events-none absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-navy/[0.02] blur-3xl" />
 
       <div className="relative mx-auto max-w-[1536px] px-5 lg:px-8">
-        {/* Top: Split — Image left, Content right */}
-        <div className="grid grid-cols-1 items-stretch gap-16 lg:grid-cols-2 lg:gap-20">
-          {/* Left — Image composition — full height */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7 }}
-            className="relative min-h-[500px] lg:min-h-0"
-          >
-            {/* Background decorative shape */}
+        <div ref={ref} className="grid grid-cols-1 items-stretch gap-16 lg:grid-cols-2 lg:gap-20">
+          <div className={`relative min-h-[500px] lg:min-h-0 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <div className="absolute -left-6 -top-6 h-full w-full rounded-3xl bg-gray-50" />
 
-            {/* Video — fills full height */}
             <div className="relative z-10 h-full min-h-[450px] overflow-hidden rounded-2xl shadow-2xl">
-              <video
+              <video preload="metadata"
                 autoPlay
                 muted
                 loop
@@ -51,20 +42,11 @@ export function AboutSection() {
               >
                 <source src="/images/video-3.mp4" type="video/mp4" />
               </video>
-              {/* Cinematic overlay */}
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent" />
             </div>
 
-
-            {/* Floating stats card — top right */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="absolute -right-4 top-6 z-20 rounded-2xl bg-white px-6 py-5 shadow-xl lg:-right-10"
-            >
+            <div className={`absolute -right-4 top-6 z-20 rounded-2xl bg-white px-6 py-5 shadow-xl lg:-right-10 ${isInView ? "animate-scale-in" : "opacity-0"}`} style={{ animationDelay: "0.3s" }}>
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red/10">
                   <Users className="h-6 w-6 text-red" />
@@ -76,31 +58,17 @@ export function AboutSection() {
                   <div className="text-sm text-gray-600">Trained Agents</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            {/* Floating experience badge — bottom left */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="absolute -left-4 bottom-12 z-20 rounded-2xl bg-red px-6 py-5 text-white shadow-xl lg:-left-8"
-            >
+            <div className={`absolute -left-4 bottom-12 z-20 rounded-2xl bg-red px-6 py-5 text-white shadow-xl lg:-left-8 ${isInView ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.4s" }}>
               <div className="text-3xl font-bold">
                 <AnimatedCounter target={30} suffix="+" />
               </div>
               <div className="text-sm text-white/80">Years of Experience</div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          {/* Right — Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7 }}
-            className="flex flex-col justify-center"
-          >
+          <div className={`flex flex-col justify-center ${isInView ? "animate-slide-in-right" : "opacity-0"}`}>
             <span className="inline-flex w-fit items-center gap-2 rounded-full bg-red/10 px-4 py-1.5 text-sm font-semibold text-red">
               <Headphones className="h-4 w-4" />
               Who We Are
@@ -120,24 +88,19 @@ export function AboutSection() {
               customer service to the next level.
             </p>
 
-            {/* Checkmark highlights */}
             <div className="mt-8 space-y-3">
               {highlights.map((item, i) => (
-                <motion.div
+                <div
                   key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.1 * i }}
-                  className="flex items-center gap-3"
+                  className={`flex items-center gap-3 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
+                  style={{ animationDelay: `${0.1 * i}s` }}
                 >
                   <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                   <span className="text-[15px] text-gray-600">{item}</span>
-                </motion.div>
+                </div>
               ))}
             </div>
 
-            {/* Stats strip */}
             <div className="mt-10 flex items-center rounded-2xl bg-gray-50 p-6">
               <div className="flex-1 text-center">
                 <div className="text-2xl font-bold text-navy sm:text-3xl">
@@ -180,7 +143,7 @@ export function AboutSection() {
                 Learn More
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
 
       </div>

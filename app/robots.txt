@@ -8,6 +8,8 @@ Allow: /
 # AI-readable site context:
 # https://contactcenterusa.com/llms.txt
 # https://contactcenterusa.com/ai.txt
+# https://contactcenterusa.com/answers
+# https://contactcenterusa.com/locations
 
 User-agent: GPTBot
 Allow: /
@@ -73,3 +75,5 @@ User-agent: MistralAI-User
 Allow: /
 
 Sitemap: https://contactcenterusa.com/sitemap.xml
+
+# IndexNow key: https://contactcenterusa.com/f24d42f76285421eabb8f3688346fb95.txt

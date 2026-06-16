@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
 import { Shield, Award, Star } from "lucide-react";
 
@@ -14,15 +14,12 @@ const certifications = [
 ];
 
 export function SocialProofBar() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-[1536px] mx-auto px-4 sm:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6 }}
-        >
+        <div ref={ref} className={isInView ? "animate-fade-in-up" : "opacity-0"}>
           <p className="text-center text-sm font-semibold uppercase tracking-widest text-text-muted mb-10">
             Trusted by Industry Leaders
           </p>
@@ -41,7 +38,6 @@ export function SocialProofBar() {
             ))}
           </div>
 
-          {/* Team photo strip */}
           <div className="mt-12 flex items-center justify-center gap-3">
             {[
               "/images/hero-agent-1.jpg",
@@ -51,14 +47,14 @@ export function SocialProofBar() {
               "/images/agent-smiling.jpg",
             ].map((src, i) => (
               <div key={i} className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-white shadow-md" style={{ marginLeft: i > 0 ? "-8px" : "0" }}>
-                <Image src={src} alt={`Contact Center USA team member ${i + 1}`} fill className="object-cover" />
+                <Image src={src} alt={`Contact Center USA team member ${i + 1}`} fill sizes="56px" className="object-cover" />
               </div>
             ))}
             <span className="ml-2 text-sm font-medium text-text-muted">
               500+ trained agents ready to serve
             </span>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

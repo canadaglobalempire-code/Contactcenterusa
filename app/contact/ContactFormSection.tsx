@@ -1,22 +1,17 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useInView } from "@/hooks/useInView";
 import { MapPin, Clock } from "lucide-react";
 import { LeadForm } from "@/components/shared/LeadForm";
 
 export function ContactFormSection() {
+  const { ref, isInView } = useInView(0.1);
+
   return (
     <section className="bg-gradient-to-b from-white via-red/[0.015] to-white py-28">
       <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
-          {/* Left — Form */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="lg:col-span-2"
-          >
+        <div ref={ref} className="grid grid-cols-1 gap-16 lg:grid-cols-3">
+          <div className={`lg:col-span-2 ${isInView ? "animate-slide-in-left" : "opacity-0"}`}>
             <h2 className="text-2xl font-bold text-navy">
               Tell Us About Your Needs
             </h2>
@@ -33,15 +28,9 @@ export function ContactFormSection() {
               formName="contact_page_form"
               submitLabel="Submit Inquiry"
             />
-          </motion.div>
+          </div>
 
-          {/* Right — Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className={`lg:col-span-1 ${isInView ? "animate-slide-in-right" : "opacity-0"}`} style={{ animationDelay: "0.15s" }}>
             <div className="lg:sticky lg:top-28 space-y-6">
               <div className="rounded-2xl bg-navy p-8 text-white">
                 <h3 className="text-xl font-bold">Reach Us Directly</h3>
@@ -73,7 +62,6 @@ export function ContactFormSection() {
                 </div>
               </div>
 
-              {/* Quick stats */}
               <div className="rounded-2xl border border-gray-100 bg-white p-6">
                 <div className="grid grid-cols-2 gap-6 text-center">
                   <div>
@@ -95,7 +83,7 @@ export function ContactFormSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

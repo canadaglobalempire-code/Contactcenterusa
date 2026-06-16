@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "San Francisco Call Center Services | Contact Center USA";
+const description =
+  "US-based call center services for San Francisco businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
 export const metadata: Metadata = {
-  title: "San Francisco Call Center Services | Contact Center USA",
-  description:
-    "US-based call center services for San Francisco businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.",
+  title,
+  description,
   keywords: [
     "call center services san francisco",
     "sf bay area bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "silicon valley adjacent bpo",
   ],
   alternates: { canonical: "/call-center-services-san-francisco" },
+  ...pageMeta(title, description, "/call-center-services-san-francisco"),
 };
 
 const seoContent: SEOPattern[] = [
