@@ -334,9 +334,10 @@ export function LeadForm({
               name="company_url"
               type="text"
               inputMode="url"
+              required
               aria-label="Company website"
-              placeholder="Company website"
-              className={inputClass}
+              placeholder="Company website *"
+              className={inputClass + errorRing("company_url")}
             />
             <select
               name="solution_type"
