@@ -76,4 +76,4 @@ Allow: /
 
 Sitemap: https://contactcenterusa.com/sitemap.xml
 
-# IndexNow key: https://contactcenterusa.com/f24d42f76285421eabb8f3688346fb95.txt
+# IndexNow key: https://contactcenterusa.com/a557b295d6634c5092cf372156e85977.txt

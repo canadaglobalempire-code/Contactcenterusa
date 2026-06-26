@@ -1,4 +1,4 @@
-const INDEXNOW_KEY = "f24d42f76285421eabb8f3688346fb95";
+const INDEXNOW_KEY = "a557b295d6634c5092cf372156e85977";
 const INDEXNOW_HOST = "contactcenterusa.com";
 const INDEXNOW_KEY_LOCATION = `https://contactcenterusa.com/${INDEXNOW_KEY}.txt`;
 
