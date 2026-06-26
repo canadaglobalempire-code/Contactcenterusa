@@ -98,7 +98,6 @@ export function generateOrganizationSchema() {
     logo: LOGO_URL,
     description:
       "US-based call center outsourcing services for businesses across the United States and Canada.",
-    email: "info@contactcenterusa.com",
     mainEntityOfPage: SITE_BASE_URL,
     foundingDate: "1999",
     numberOfEmployees: {
@@ -142,8 +141,6 @@ export function generateOrganizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
-      telephone: "+1-888-444-8844",
-      email: "info@contactcenterusa.com",
       url: `${SITE_BASE_URL}/contact`,
       availableLanguage: ["English", "Spanish"],
       areaServed: [

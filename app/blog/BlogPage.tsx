@@ -5,6 +5,87 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "What Is a Contact Center? Definition, Types & How It Works (2026)",
+    excerpt:
+      "A plain-English guide to contact centers vs call centers — the channels they handle, the main types (inbound, outbound, blended, omnichannel), and when outsourcing makes sense.",
+    category: "Contact Center Basics",
+    readTime: "9 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/what-is-a-contact-center",
+  },
+  {
+    title: "What Is BPO in Collections? First-Party vs Third-Party Debt Collection",
+    excerpt:
+      "How outsourced debt collection works — the difference between first-party and third-party collections, FDCPA compliance, contingency pricing, and when to outsource accounts receivable.",
+    category: "Debt Collection BPO",
+    readTime: "10 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/what-is-bpo-collections",
+  },
+  {
+    title: "How Much Does It Cost to Outsource Customer Service? (2026 Pricing)",
+    excerpt:
+      "2026 customer service outsourcing pricing by model — per hour, per agent, per resolution — for US, nearshore, and offshore support, plus what drives the price up or down.",
+    category: "Pricing Guide",
+    readTime: "10 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/cost-to-outsource-customer-service",
+  },
+  {
+    title: "Dedicated vs Shared Call Center Agents: Which Model Fits You?",
+    excerpt:
+      "Dedicated vs shared call center agents compared on cost, quality, and control — when to choose each, the blended model, and how the choice changes your pricing.",
+    category: "Outsourcing Models",
+    readTime: "9 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/dedicated-vs-shared-call-center-agents",
+  },
+  {
+    title: "Answering Service vs Virtual Receptionist vs Call Center: The Difference",
+    excerpt:
+      "What each model does, how they differ, what they cost, and which is right for your business — a plain-English buyer's guide to picking the right level of phone coverage.",
+    category: "Outsourcing Models",
+    readTime: "8 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/answering-service-vs-virtual-receptionist-vs-call-center",
+  },
+  {
+    title: "Teleperformance vs TTEC: Full 2026 Comparison",
+    excerpt:
+      "Teleperformance vs TTEC compared for 2026 — scale, delivery location, pricing, verticals, technology, and contract flexibility. See which BPO fits enterprise vs mid-market, plus a US-based alternative.",
+    category: "Competitor Comparison",
+    readTime: "10 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/teleperformance-vs-ttec",
+  },
+  {
+    title: "Concentrix Alternatives: 7 Better Options for Mid-Market (2026)",
+    excerpt:
+      "Compare the best Concentrix alternatives in 2026 for US-based support, flexible contracts, and mid-market fit — ranked across delivery, minimums, and CX quality.",
+    category: "Competitor Comparison",
+    readTime: "11 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/concentrix-alternatives",
+  },
+  {
+    title: "TTEC Alternatives: 7 Better Options for Mid-Market (2026)",
+    excerpt:
+      "Compare the best TTEC alternatives in 2026 for US-based support, flexible contracts, and lower cost — ranked across delivery, minimums, and CX quality.",
+    category: "Competitor Comparison",
+    readTime: "11 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/ttec-alternatives",
+  },
+  {
+    title: "Alorica Alternatives: 7 Better Options for US-Based CX (2026)",
+    excerpt:
+      "Compare the best Alorica alternatives in 2026 for 100% US-based support, flexible contracts, and mid-market fit — ranked across delivery, minimums, and CX quality.",
+    category: "Competitor Comparison",
+    readTime: "11 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/alorica-alternatives",
+  },
+  {
     title: "Top 10 BPO Companies in Texas (2026 Rankings)",
     excerpt:
       "Compare the top 10 BPO companies in Texas. Dallas, Houston, Austin, San Antonio coverage with Spanish-bilingual agents, energy/SaaS/healthcare expertise, and TTSA-compliant operations.",

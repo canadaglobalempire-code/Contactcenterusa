@@ -178,7 +178,7 @@ export default function Content() {
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Frequently Asked Questions</h2>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Who is Teleperformance&apos;s biggest competitor?</h3>
-                <p>Concentrix, globally. Alorica and TTEC are the closest US-focused peers. See our <Link href="/blog/top-10-bpo-companies-in-usa" className="text-red hover:text-red-dark font-semibold">top 10 BPO companies in the USA</Link> list for more.</p>
+                <p><Link href="/blog/concentrix-alternatives" className="text-red hover:text-red-dark font-semibold">Concentrix</Link>, globally. <Link href="/blog/alorica-alternatives" className="text-red hover:text-red-dark font-semibold">Alorica</Link> and <Link href="/blog/ttec-alternatives" className="text-red hover:text-red-dark font-semibold">TTEC</Link> are the closest US-focused peers — see our <Link href="/blog/teleperformance-vs-ttec" className="text-red hover:text-red-dark font-semibold">Teleperformance vs TTEC comparison</Link> and the <Link href="/blog/top-10-bpo-companies-in-usa" className="text-red hover:text-red-dark font-semibold">top 10 BPO companies in the USA</Link> list for more.</p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Is Teleperformance cheaper than alternatives?</h3>
                 <p>For 500+ FTE offshore programs, yes. For US-based or under-100-FTE programs, most alternatives on this list are cheaper and faster.</p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">How long does it take to switch from Teleperformance to another provider?</h3>
@@ -214,10 +214,11 @@ export default function Content() {
                 <div className="rounded-2xl border border-gray-200 p-6">
                   <h3 className="text-lg font-bold text-navy mb-4">Related Articles</h3>
                   <ul className="space-y-3">
+                    <li><Link href="/blog/concentrix-alternatives" className="text-sm text-gray-600 hover:text-red transition-colors">Concentrix Alternatives</Link></li>
+                    <li><Link href="/blog/ttec-alternatives" className="text-sm text-gray-600 hover:text-red transition-colors">TTEC Alternatives</Link></li>
+                    <li><Link href="/blog/teleperformance-vs-ttec" className="text-sm text-gray-600 hover:text-red transition-colors">Teleperformance vs TTEC</Link></li>
                     <li><Link href="/blog/top-10-bpo-companies-in-usa" className="text-sm text-gray-600 hover:text-red transition-colors">Top 10 BPO Companies in USA</Link></li>
-                    <li><Link href="/blog/american-call-centers" className="text-sm text-gray-600 hover:text-red transition-colors">Top US-Based Call Center Companies</Link></li>
                     <li><Link href="/blog/call-center-rfp-template" className="text-sm text-gray-600 hover:text-red transition-colors">How to Write a Call Center RFP</Link></li>
-                    <li><Link href="/blog/how-to-choose-call-center-partner" className="text-sm text-gray-600 hover:text-red transition-colors">How to Choose a Call Center Partner</Link></li>
                   </ul>
                 </div>
               </div>

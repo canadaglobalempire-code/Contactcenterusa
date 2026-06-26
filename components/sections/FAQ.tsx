@@ -102,11 +102,11 @@ export default function FAQ() {
                 <div className="mt-8 space-y-4">
 
                   <a
-                    href={`mailto:${siteConfig.email}`}
+                    href="/contact"
                     className="flex items-center gap-3"
                   >
                     <Mail className="size-5" />
-                    {siteConfig.email}
+                    Contact our team
                   </a>
 
                   <div className="flex items-center gap-3 text-sm text-blue-200/80">

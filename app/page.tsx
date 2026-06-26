@@ -15,10 +15,11 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "US Call Center Services | Outsourcing & BPO Quotes",
+  title: "Contact Center USA | US-Based Call Center Services",
   description:
-    "Compare US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response. Get a fast quote.",
+    "Contact Center USA provides US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response. Get a fast quote.",
   keywords: [
+    "contact center usa",
     "call center services",
     "contact center services",
     "call center outsourcing",
@@ -30,17 +31,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "US Call Center Services | Outsourcing & BPO Quotes",
+    title: "Contact Center USA | US-Based Call Center Services",
     description:
-      "Compare US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response.",
+      "US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response.",
     url: "/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "US Call Center Services | Outsourcing & BPO Quotes",
+    title: "Contact Center USA | US-Based Call Center Services",
     description:
-      "Compare US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response.",
+      "US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response.",
   },
 };
 
