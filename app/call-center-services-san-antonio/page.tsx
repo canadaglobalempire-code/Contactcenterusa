@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "San Antonio Call Center Services | Contact Center USA";
+const title = "BPO Companies in San Antonio | Call Center Services TX";
 const description =
   "US-based call center services for San Antonio businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function SanAntonioPage() {
       industries={["military", "healthcare", "tourism", "tech", "energy"]}
       population="1.5M"
       businesses="150K+"
+      statePage="texas"
       seoContent={seoContent}
     />
   );

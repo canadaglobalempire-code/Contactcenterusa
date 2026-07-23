@@ -38,6 +38,8 @@ interface CityPageTemplateProps {
   population: string;
   businesses: string;
   seoContent?: SEOPattern[];
+  /** Slug of the parent state page, e.g. "arizona". Adds an up-link when present. */
+  statePage?: string;
 }
 
 const services = [
@@ -107,7 +109,7 @@ function getFAQs(city: string, state: string) {
 }
 
 export function CityPageTemplate({
-  city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent,
+  city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent, statePage,
 }: CityPageTemplateProps) {
   const testimonial = testimonials[city];
   const faqs = getFAQs(city, state);
@@ -151,10 +153,10 @@ export function CityPageTemplate({
                 <MapPin className="h-4 w-4" /> {city}, {stateAbbr}
               </span>
               <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[56px]">
-                Call Center Services in <span className="text-red">{city}</span>
+                BPO Companies in <span className="text-red">{city}</span>
               </h1>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/80">
-                100% US-based call center outsourcing for {city} businesses. 24/7 support, AI automation, and omnichannel solutions.
+                100% US-based call center and BPO services for {city} businesses. 24/7 support, AI automation, and omnichannel solutions.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-6">
                 <div className="flex items-center gap-2 text-sm text-white/60"><CheckCircle className="h-4 w-4 text-red" /> 100% US-Based</div>
@@ -172,11 +174,25 @@ export function CityPageTemplate({
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Locations", href: "/locations" },
+        ...(statePage ? [{ label: state, href: `/locations/${statePage}` }] : []),
         {
           label: `${city}, ${stateAbbr}`,
           href: `/call-center-services-${city.toLowerCase().replace(/\s+/g, "-")}`,
         },
       ]} />
+
+      {statePage && (
+        <section className="bg-gray-50 py-5">
+          <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
+            <p className="text-sm text-gray-700">
+              Comparing providers across the state?{" "}
+              <Link href={`/locations/${statePage}`} className="font-semibold text-red hover:underline">
+                See all BPO companies in {state} &rarr;
+              </Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* STATS BAR */}
       <section className="bg-navy py-12">
@@ -251,10 +267,10 @@ export function CityPageTemplate({
             <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">Services Available in <span className="text-red">{city}</span></h2>
           </div>
           <div className="mt-14 grid grid-cols-2 gap-5 lg:grid-cols-4">
-            {services.map((service, i) => {
+            {services.map((service) => {
               const Icon = service.icon;
               return (
-                <div>
+                <div key={service.title}>
                   <Link href={service.href} className="group block rounded-2xl border border-gray-100 bg-white p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                     <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-red/10 text-red transition-all group-hover:bg-red group-hover:text-white">
                       <Icon className="h-6 w-6" />
@@ -308,10 +324,10 @@ export function CityPageTemplate({
               { icon: Users, title: "Cultural Familiarity", desc: `Agents trained on ${city}'s unique market dynamics and regional expectations.` },
               { icon: Shield, title: "Full Compliance", desc: `HIPAA, PCI-DSS, TCPA, and ${stateAbbr} state regulations fully covered.` },
               { icon: TrendingUp, title: "Scale on Demand", desc: `From startup to enterprise — scale up or down with no contracts.` },
-            ].map((benefit, i) => {
+            ].map((benefit) => {
               const Icon = benefit.icon;
               return (
-                <div className="rounded-2xl bg-white/5 p-7 backdrop-blur-sm transition-all hover:bg-white/10">
+                <div key={benefit.title} className="rounded-2xl bg-white/5 p-7 backdrop-blur-sm transition-all hover:bg-white/10">
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-red/20 text-red"><Icon className="h-6 w-6" /></div>
                   <h3 className="mt-5 text-lg font-bold text-white">{benefit.title}</h3>
                   <p className="mt-2 text-sm text-white/50">{benefit.desc}</p>

@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "San Francisco Call Center Services | Contact Center USA";
+const title = "BPO Companies in San Francisco | Call Center Services CA";
 const description =
   "US-based call center services for San Francisco businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function SanFranciscoPage() {
       industries={["tech", "SaaS", "finance", "biotech", "ecommerce"]}
       population="870K"
       businesses="150K+"
+      statePage="california"
       seoContent={seoContent}
     />
   );

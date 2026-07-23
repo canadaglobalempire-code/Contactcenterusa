@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Philadelphia Call Center Services | Contact Center USA";
+const title = "BPO Companies in Philadelphia | Call Center Services PA";
 const description =
   "US-based call center services for Philadelphia businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function PhiladelphiaPage() {
       industries={["healthcare", "education", "finance", "pharma", "tech"]}
       population="1.6M"
       businesses="200K+"
+      statePage="pennsylvania"
       seoContent={seoContent}
     />
   );

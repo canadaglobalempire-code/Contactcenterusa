@@ -73,6 +73,24 @@ const company = [
   { label: "Contact Us", href: "/contact" },
 ];
 
+const locationStates = [
+  { label: "Arizona", href: "/locations/arizona" },
+  { label: "California", href: "/locations/california" },
+  { label: "Colorado", href: "/locations/colorado" },
+  { label: "Florida", href: "/locations/florida" },
+  { label: "Georgia", href: "/locations/georgia" },
+  { label: "Illinois", href: "/locations/illinois" },
+  { label: "Nevada", href: "/locations/nevada" },
+  { label: "New York", href: "/locations/new-york" },
+  { label: "North Carolina", href: "/locations/north-carolina" },
+  { label: "Ohio", href: "/locations/ohio" },
+  { label: "Pennsylvania", href: "/locations/pennsylvania" },
+  { label: "Tennessee", href: "/locations/tennessee" },
+  { label: "Texas", href: "/locations/texas" },
+  { label: "Utah", href: "/locations/utah" },
+  { label: "Washington", href: "/locations/washington" },
+];
+
 type FooterLink = {
   label: string;
   href: string;
@@ -162,6 +180,33 @@ export default function Footer() {
               />
             ))}
           </div>
+        </div>
+
+        {/* Locations by state — sitewide internal linking */}
+        <div className="mt-12 border-t border-gray-100 pt-8">
+          <h3 className="mb-5 text-sm font-semibold uppercase tracking-wider text-navy">
+            BPO Services by State
+          </h3>
+          <ul className="flex flex-wrap gap-x-6 gap-y-3">
+            {locationStates.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-gray-700 transition-colors hover:text-navy"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/locations"
+                className="text-sm font-semibold text-red transition-colors hover:text-red-dark"
+              >
+                All locations &rarr;
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Bottom bar */}

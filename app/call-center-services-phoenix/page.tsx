@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Phoenix Call Center Services | Contact Center USA";
+const title = "BPO Companies in Phoenix | Call Center Services AZ";
 const description =
   "US-based call center services for Phoenix businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function PhoenixPage() {
       industries={["tech", "healthcare", "real estate", "finance", "education"]}
       population="1.6M"
       businesses="200K+"
+      statePage="arizona"
       seoContent={seoContent}
     />
   );

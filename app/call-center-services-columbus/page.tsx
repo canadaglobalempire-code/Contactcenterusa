@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Columbus Call Center Services | Contact Center USA";
+const title = "BPO Companies in Columbus | Call Center Services OH";
 const description =
   "US-based call center services for Columbus businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function ColumbusPage() {
       industries={["insurance", "finance", "tech", "healthcare", "education"]}
       population="900K"
       businesses="100K+"
+      statePage="ohio"
       seoContent={seoContent}
     />
   );

@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Seattle Call Center Services | Contact Center USA";
+const title = "BPO Companies in Seattle | Call Center Services WA";
 const description =
   "US-based call center services for Seattle businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function SeattlePage() {
       industries={["tech", "ecommerce", "aerospace", "healthcare", "logistics"]}
       population="750K"
       businesses="120K+"
+      statePage="washington"
       seoContent={seoContent}
     />
   );

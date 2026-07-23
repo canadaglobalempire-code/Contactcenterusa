@@ -4,9 +4,9 @@ import { ArrowRight, Building2, MapPin, Shield, Users } from "lucide-react";
 import { SITE_BASE_URL } from "@/lib/ai-context";
 import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema";
 
-const title = "US Call Center Service Locations | Contact Center USA";
+const title = "BPO Companies by State & City | Contact Center USA";
 const description =
-  "Find US-based call center outsourcing service areas by city, including New York, Los Angeles, Chicago, Houston, Dallas, Phoenix, Seattle, and more.";
+  "Find US-based BPO and call center outsourcing by state and city — Arizona, Georgia, Ohio, Tennessee, Texas, Florida, and every major US metro.";
 
 export const metadata: Metadata = {
   title,
@@ -43,6 +43,24 @@ const cities = [
   { city: "Seattle", state: "Washington", href: "/call-center-services-seattle", focus: "ecommerce, cloud, aerospace" },
 ];
 
+const states = [
+  { state: "Arizona", href: "/locations/arizona", focus: "Phoenix contact center corridor, healthcare, SaaS, bilingual support" },
+  { state: "California", href: "/locations/california", focus: "Bay Area SaaS, LA media, San Diego biotech, ecommerce at scale" },
+  { state: "Colorado", href: "/locations/colorado", focus: "Denver–Boulder tech, aerospace, outdoor and consumer brands" },
+  { state: "Florida", href: "/locations/florida", focus: "Insurance catastrophe claims, Medicare support, hurricane-resilient continuity" },
+  { state: "Georgia", href: "/locations/georgia", focus: "Atlanta payments and fintech, Savannah logistics, healthcare" },
+  { state: "Illinois", href: "/locations/illinois", focus: "Chicago freight and logistics, insurance, financial services, manufacturing" },
+  { state: "Nevada", href: "/locations/nevada", focus: "Las Vegas hospitality and gaming, 24/7 guest support, Reno logistics" },
+  { state: "New York", href: "/locations/new-york", focus: "Wall Street financial services, media, healthcare, examinable programs" },
+  { state: "North Carolina", href: "/locations/north-carolina", focus: "Charlotte banking, Research Triangle technical support" },
+  { state: "Ohio", href: "/locations/ohio", focus: "Insurance claims and policyholder servicing, healthcare, back office" },
+  { state: "Pennsylvania", href: "/locations/pennsylvania", focus: "Philadelphia healthcare and education, Pittsburgh tech, insurance" },
+  { state: "Tennessee", href: "/locations/tennessee", focus: "Nashville healthcare BPO, Memphis logistics, revenue cycle support" },
+  { state: "Texas", href: "/locations/texas", focus: "Dallas finance, Houston energy, Austin SaaS, bilingual multi-metro scale" },
+  { state: "Utah", href: "/locations/utah", focus: "Wasatch Front outbound and inside sales, Silicon Slopes SaaS support" },
+  { state: "Washington", href: "/locations/washington", focus: "Seattle cloud and ecommerce, developer support, aerospace" },
+];
+
 const proofPoints = [
   {
     icon: Users,
@@ -65,11 +83,18 @@ const locationCollectionSchema = generateCollectionPageSchema({
   name: title,
   description,
   url: `${SITE_BASE_URL}/locations`,
-  items: cities.map((item) => ({
-    name: `${item.city} Call Center Services`,
-    description: `US-based call center service-area guidance for ${item.city}, ${item.state} businesses focused on ${item.focus}.`,
-    url: `${SITE_BASE_URL}${item.href}`,
-  })),
+  items: [
+    ...states.map((item) => ({
+      name: `BPO Companies in ${item.state}`,
+      description: `US-based BPO and call center outsourcing for ${item.state} businesses, covering ${item.focus}.`,
+      url: `${SITE_BASE_URL}${item.href}`,
+    })),
+    ...cities.map((item) => ({
+      name: `${item.city} Call Center Services`,
+      description: `US-based call center service-area guidance for ${item.city}, ${item.state} businesses focused on ${item.focus}.`,
+      url: `${SITE_BASE_URL}${item.href}`,
+    })),
+  ],
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([
@@ -96,7 +121,7 @@ export default function LocationsPage() {
               Locations We Serve
             </span>
             <h1 className="mt-6 text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
-              US Call Center Services by City
+              BPO Companies by State &amp; City
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/70">
               Contact Center USA serves businesses across major US markets with domestic inbound support,
@@ -121,6 +146,40 @@ export default function LocationsPage() {
                 </div>
               );
             })}
+          </div>
+
+          <div className="mt-16">
+            <div className="max-w-3xl">
+              <span className="text-sm font-semibold uppercase tracking-wider text-red">
+                State Coverage
+              </span>
+              <h2 className="mt-3 text-3xl font-bold text-navy sm:text-4xl">
+                BPO Companies by State
+              </h2>
+              <p className="mt-4 text-gray-700">
+                State pages cover the industries that concentrate in each market, the metros we
+                support, timezone and compliance considerations, and answers to the questions buyers
+                ask when comparing BPO providers.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {states.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group rounded-lg border border-gray-100 bg-gray-50 p-5 transition-all hover:border-red/30 hover:bg-white hover:shadow-md"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-lg font-bold text-navy group-hover:text-red">
+                      {item.state}
+                    </h3>
+                    <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-gray-400 transition-transform group-hover:translate-x-1 group-hover:text-red" />
+                  </div>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-700">{item.focus}.</p>
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div className="mt-16">

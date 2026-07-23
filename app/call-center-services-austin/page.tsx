@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Austin Call Center Services | Contact Center USA";
+const title = "BPO Companies in Austin | Call Center Services TX";
 const description =
   "US-based call center services for Austin businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function AustinPage() {
       industries={["tech", "SaaS", "education", "healthcare", "government"]}
       population="1.0M"
       businesses="150K+"
+      statePage="texas"
       seoContent={seoContent}
     />
   );

@@ -5,6 +5,150 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "Top 10 BPO Companies in Arizona (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Arizona, plus Arizona's one-party recording consent rules, the Phoenix contact center corridor, and how to choose.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-arizona",
+  },
+  {
+    title: "Top 10 BPO Companies in Colorado (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Colorado, plus Mountain-time coverage advantages, Denver–Boulder tech support, and recording consent rules.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-colorado",
+  },
+  {
+    title: "Top 10 BPO Companies in Georgia (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Georgia, plus Atlanta's Transaction Alley payments compliance, Savannah logistics, and consent rules.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-georgia",
+  },
+  {
+    title: "Top 10 BPO Companies in Nevada (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Nevada, plus the state's all-party phone recording rule, 24/7 hospitality coverage, and how to choose.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-nevada",
+  },
+  {
+    title: "Top 10 BPO Companies in North Carolina (2026)",
+    excerpt:
+      "The top 10 BPO companies serving North Carolina, plus Charlotte banking examination readiness, Research Triangle tech support, and consent rules.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-north-carolina",
+  },
+  {
+    title: "Top 10 BPO Companies in Ohio (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Ohio, plus the state's insurance-heavy back-office market, FNOL accuracy standards, and recording consent rules.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-ohio",
+  },
+  {
+    title: "Top 10 BPO Companies in Pennsylvania (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Pennsylvania, plus the state's strict all-party consent law, Philadelphia healthcare, and Pittsburgh tech.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-pennsylvania",
+  },
+  {
+    title: "Top 10 BPO Companies in Tennessee (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Tennessee, plus Nashville healthcare BPO, Memphis logistics, HIPAA requirements, and recording consent rules.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-tennessee",
+  },
+  {
+    title: "Top 10 BPO Companies in Utah (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Utah, plus the Wasatch Front outbound market, TCPA compliance, Silicon Slopes support, and consent rules.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-utah",
+  },
+  {
+    title: "Top 10 BPO Companies in Washington (2026)",
+    excerpt:
+      "The top 10 BPO companies serving Washington, plus the state's strict all-party consent law, Seattle cloud and developer support, and how to choose.",
+    category: "Industry Rankings",
+    readTime: "9 min read",
+    image: "/images/america.jpg",
+    href: "/blog/top-10-bpo-companies-washington",
+  },
+  {
+    title: "Healthcare BPO Companies in Tennessee: Buyer's Guide (2026)",
+    excerpt:
+      "Top 10 healthcare BPO providers serving Tennessee, plus how Nashville organizations evaluate HIPAA readiness, patient access workflows, and revenue cycle support.",
+    category: "Healthcare BPO",
+    readTime: "10 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/healthcare-bpo-companies-tennessee",
+  },
+  {
+    title: "Healthcare BPO Companies in Texas: Buyer's Guide (2026)",
+    excerpt:
+      "Top 10 healthcare BPO providers serving Texas, plus bilingual patient access requirements, multi-metro scale, and hurricane continuity planning.",
+    category: "Healthcare BPO",
+    readTime: "10 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/healthcare-bpo-companies-texas",
+  },
+  {
+    title: "Healthcare BPO Companies in Florida: Buyer's Guide (2026)",
+    excerpt:
+      "Top 10 healthcare BPO providers serving Florida, plus Medicare-weighted call handling, seasonal population swings, and hurricane continuity.",
+    category: "Healthcare BPO",
+    readTime: "10 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/healthcare-bpo-companies-florida",
+  },
+  {
+    title: "Insurance BPO Companies in Ohio: Buyer's Guide (2026)",
+    excerpt:
+      "Top 10 insurance BPO providers serving Ohio, plus FNOL accuracy standards, catastrophe surge capacity, and back-office integration.",
+    category: "Insurance BPO",
+    readTime: "10 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/insurance-bpo-companies-ohio",
+  },
+  {
+    title: "Insurance BPO Companies in Texas: Buyer's Guide (2026)",
+    excerpt:
+      "Top 10 insurance BPO providers serving Texas, plus hurricane and hail catastrophe surge, bilingual claims intake, and FNOL accuracy.",
+    category: "Insurance BPO",
+    readTime: "10 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/insurance-bpo-companies-texas",
+  },
+  {
+    title: "Financial Services Call Centers in North Carolina (2026 Guide)",
+    excerpt:
+      "Top 10 providers serving North Carolina financial institutions, plus examination readiness, fraud and dispute handling, and PCI-DSS scope reduction.",
+    category: "Financial Services",
+    readTime: "9 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/financial-services-call-center-north-carolina",
+  },
+  {
     title: "What Is a Contact Center? Definition, Types & How It Works (2026)",
     excerpt:
       "A plain-English guide to contact centers vs call centers — the channels they handle, the main types (inbound, outbound, blended, omnichannel), and when outsourcing makes sense.",

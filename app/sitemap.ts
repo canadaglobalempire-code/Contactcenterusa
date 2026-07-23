@@ -64,6 +64,7 @@ function getPriority(route: string) {
   if (["/services", "/solutions", "/industries", "/blog"].includes(route)) return 0.9;
   if (route.startsWith("/services/") || route.startsWith("/solutions/")) return 0.85;
   if (route.startsWith("/industries/")) return 0.8;
+  if (route.startsWith("/locations/")) return 0.8;
   if (route.startsWith("/call-center-services-")) return 0.75;
   if (route.startsWith("/blog/")) return 0.7;
   if (["/about", "/why-us", "/case-studies", "/faq"].includes(route)) return 0.65;
@@ -97,6 +98,7 @@ function getImages(route: string) {
   if (route === "/industries") return [`${baseUrl}/images/new-flag.jpg`];
   if (route === "/blog") return [`${baseUrl}/images/cc-team-meeting.jpg`];
   if (route.startsWith("/blog/")) return [`${baseUrl}/images/cc-agent-headset.jpg`];
+  if (route.startsWith("/locations/")) return [`${baseUrl}/images/america.jpg`];
   if (route.startsWith("/call-center-services-")) return [`${baseUrl}/images/america.jpg`];
   if (route.startsWith("/services/") || route.startsWith("/solutions/")) {
     return [`${baseUrl}/images/cc-agent-monitor.jpg`];

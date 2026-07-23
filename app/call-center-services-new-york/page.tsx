@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "New York Call Center Services | Contact Center USA";
+const title = "BPO Companies in New York | Call Center Services NY";
 const description =
   "US-based call center services for New York City businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function NewYorkPage() {
       industries={["finance", "tech", "media", "healthcare", "retail"]}
       population="8.3M"
       businesses="1M+"
+      statePage="new-york"
       seoContent={seoContent}
     />
   );

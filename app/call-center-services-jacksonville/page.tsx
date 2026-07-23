@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Jacksonville Call Center Services | Contact Center USA";
+const title = "BPO Companies in Jacksonville | Call Center Services FL";
 const description =
   "US-based call center services for Jacksonville businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -189,6 +189,7 @@ export default function JacksonvillePage() {
       industries={["finance", "logistics", "healthcare", "insurance", "military"]}
       population="950K"
       businesses="100K+"
+      statePage="florida"
       seoContent={seoContent}
     />
   );

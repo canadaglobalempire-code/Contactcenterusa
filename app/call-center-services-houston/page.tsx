@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Houston Call Center Services | BPO & Answering",
+  title: "BPO Companies in Houston | Call Center Services TX",
   description:
     "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/call-center-services-houston" },
   openGraph: {
-    title: "Houston Call Center Services | BPO & Answering",
+    title: "BPO Companies in Houston | Call Center Services TX",
     description:
       "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
     url: "/call-center-services-houston",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Houston Call Center Services | BPO & Answering",
+    title: "BPO Companies in Houston | Call Center Services TX",
     description:
       "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
   },
@@ -197,6 +197,7 @@ export default function HoustonPage() {
       industries={["energy", "healthcare", "aerospace", "logistics", "tech"]}
       population="2.3M"
       businesses="300K+"
+      statePage="texas"
       seoContent={seoContent}
     />
   );
