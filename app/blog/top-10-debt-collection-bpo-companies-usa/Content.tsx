@@ -453,6 +453,9 @@ export default function Top10DebtCollectionBPOContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 For regulated industries, always pair collections outsourcing with the right <Link href="/solutions/financial-call-center-services" className="text-red font-semibold hover:underline">financial call center infrastructure</Link> and <Link href="/services/fraud-prevention-cyber-security" className="text-red font-semibold hover:underline">fraud prevention controls</Link> to maintain a clean compliance posture end-to-end.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Most recoverable value sits in the early-delinquency window. Our <Link href="/industries/debt-collection-call-center" className="text-red font-semibold hover:underline">debt collection call center</Link> page covers first-party recovery in your own brand's name, payment arrangement negotiation inside the authority you grant, and FDCPA and Regulation F aware call handling.
+              </p>
 
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Debt Collection BPO Trends for 2026</h2>

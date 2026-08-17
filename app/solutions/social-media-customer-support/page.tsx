@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Social Media Customer Support | Contact Center USA",
+  title: "Social Media Customer Support | Brand Coverage",
   description:
-    "US-based social media customer support with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Social media customer support with US-based agents. Monitored coverage, brand-voice replies and escalation before issues go public. Get a quote.",
   keywords: [
     "social media customer support",
     "social support bpo usa",

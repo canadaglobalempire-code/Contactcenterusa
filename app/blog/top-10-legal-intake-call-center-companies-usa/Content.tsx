@@ -448,6 +448,9 @@ export default function Top10LegalIntakeContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 For full-stack intake coverage, pair your legal intake program with <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, and <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                If you are ready to scope a program rather than compare vendors, our <Link href="/industries/legal-intake-call-center" className="text-red font-semibold hover:underline">legal intake call center</Link> page details 24/7 live screening, retainer delivery and e-sign follow-up, and intake written directly into Litify, Filevine, Clio, and Smart Advocate.
+              </p>
 
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Legal Intake Trends for 2026</h2>

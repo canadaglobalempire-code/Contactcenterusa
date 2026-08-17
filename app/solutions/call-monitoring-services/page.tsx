@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Call Monitoring Services | Contact Center USA",
+  title: "Call Monitoring Services | QA Scoring & Coaching",
   description:
-    "US-based call monitoring services with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Call monitoring and QA services with calibrated scorecards, agent coaching and compliance review across your queues. Request a free quote.",
   keywords: [
     "call monitoring services",
     "call quality monitoring bpo",

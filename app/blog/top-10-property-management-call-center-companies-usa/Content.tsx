@@ -538,6 +538,9 @@ export default function Top10PropertyManagementCallCenterContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 For full-stack property management CX, pair your call center with <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> and <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate call center services</Link>.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Our own <Link href="/industries/property-management-call-center" className="text-red font-semibold hover:underline">property management call center</Link> handles 24/7 emergency maintenance triage, work order creation in AppFolio, Buildium, and Yardi, and leasing enquiries booked straight onto your tour calendar.
+              </p>
 
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Property Management CX Trends for 2026</h2>

@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Debt Collection Outsourcing | Contact Center USA",
+  title: "Debt Collection Outsourcing | FDCPA-Aware US Agents",
   description:
-    "US-based debt collection outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsourced debt collection with US-based agents. First-party recovery, payment arrangements and FDCPA and Regulation F aware handling. Get a quote.",
   keywords: [
     "debt collection bpo",
     "debt collection outsourcing bpo in usa",

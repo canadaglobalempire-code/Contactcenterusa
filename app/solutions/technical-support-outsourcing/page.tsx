@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Technical Support Outsourcing | Contact Center USA",
+  title: "Technical Support Outsourcing | US-Based Tier 1-3 Desk",
   description:
-    "US-based technical support outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsourced technical support with US-based Tier 1, 2 and 3 engineers. 24/7 help desk, ticket triage and escalation management. Request a free quote.",
   keywords: [
     "technical support outsourcing",
     "tech support bpo usa",

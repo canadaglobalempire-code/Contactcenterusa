@@ -54,21 +54,46 @@ const aboutLinks = [
 
 const industries = [
   { label: "Airlines", href: "/industries/airlines-call-center" },
+  { label: "Auto Dealership BDC", href: "/industries/auto-dealership-bdc" },
   { label: "Automotive", href: "/industries/automotive-call-center-services" },
   { label: "Banking & Financial Services", href: "/industries/banking-financial-services-call-center" },
   { label: "Cable & Media", href: "/industries/cable-media-call-center" },
+  { label: "Debt Collection", href: "/industries/debt-collection-call-center" },
+  { label: "Dental", href: "/industries/dental-call-center" },
   { label: "E-commerce", href: "/industries/ecommerce-customer-service-outsourcing" },
   { label: "Education", href: "/industries/education-call-center-services" },
   { label: "Energy & Utilities", href: "/industries/energy-utilities-call-center" },
+  { label: "Event Ticketing", href: "/industries/event-ticketing-call-center" },
+  { label: "Fitness & Gyms", href: "/industries/fitness-gym-call-center" },
+  { label: "Franchise Networks", href: "/industries/franchise-call-center" },
+  { label: "Funeral Homes", href: "/industries/funeral-home-answering-service" },
+  { label: "Gaming & Esports", href: "/industries/gaming-esports-support" },
   { label: "Government", href: "/industries/government-call-center" },
   { label: "Healthcare", href: "/industries/healthcare-call-center-services" },
+  { label: "Home Services", href: "/industries/home-services-call-center" },
   { label: "Insurance", href: "/industries/insurance-call-center-outsourcing" },
+  { label: "Legal Intake", href: "/industries/legal-intake-call-center" },
   { label: "Logistics", href: "/industries/logistics-shipping-call-center" },
+  { label: "Med Spa & Aesthetics", href: "/industries/med-spa-aesthetics-call-center" },
+  { label: "Medical Billing & RCM", href: "/industries/medical-billing-rcm" },
+  { label: "Mortgage & Lending", href: "/industries/mortgage-call-center" },
+  { label: "Moving & Storage", href: "/industries/moving-storage-call-center" },
+  { label: "Music & Entertainment", href: "/industries/music-entertainment-call-center" },
+  { label: "Nonprofit", href: "/industries/nonprofit-call-center" },
+  { label: "Pharmaceuticals", href: "/industries/pharmaceuticals-call-center" },
+  { label: "Property Management", href: "/industries/property-management-call-center" },
   { label: "Real Estate", href: "/industries/real-estate-call-center-services" },
+  { label: "Restaurants", href: "/industries/restaurant-call-center" },
   { label: "Retail", href: "/industries/retail-call-center-services" },
+  { label: "Solar & Home Improvement", href: "/industries/solar-home-improvement-call-center" },
+  { label: "Spanish & Bilingual", href: "/industries/spanish-call-center-services" },
+  { label: "Sports & Venues", href: "/industries/sports-venue-call-center" },
+  { label: "Staffing & Recruiting", href: "/industries/staffing-recruiting-call-center" },
   { label: "Technology", href: "/industries/saas-technology-support" },
   { label: "Telecommunications", href: "/industries/telecommunications-call-center" },
   { label: "Travel & Hospitality", href: "/industries/travel-hospitality-call-center" },
+  { label: "Veterinary", href: "/industries/veterinary-call-center" },
+  { label: "Virtual Receptionist", href: "/industries/virtual-receptionist-services" },
 ];
 
 function Dropdown({
@@ -101,7 +126,20 @@ function Dropdown({
 
       {open && (
         <div className={`absolute top-full pt-4 ${items.length > 10 ? "left-1/2 -translate-x-1/2" : "left-0"}`}>
-          <div className={`rounded-xl border border-gray-100 bg-white p-3 shadow-2xl ${items.length > 10 ? "w-[480px] grid grid-cols-2 gap-1" : "min-w-[230px]"}`}>
+          {/*
+            Column count scales with list length. The industries menu passed 24
+            items once the vertical build-out landed, and a 2-column list that
+            long runs off the bottom of the viewport.
+          */}
+          <div
+            className={`rounded-xl border border-gray-100 bg-white p-3 shadow-2xl ${
+              items.length > 24
+                ? "w-[720px] grid grid-cols-3 gap-1 max-h-[70vh] overflow-y-auto"
+                : items.length > 10
+                  ? "w-[480px] grid grid-cols-2 gap-1"
+                  : "min-w-[230px]"
+            }`}
+          >
             {items.map((item) => (
               <Link
                 key={item.href + item.label}

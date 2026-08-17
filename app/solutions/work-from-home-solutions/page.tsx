@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Work From Home Solutions | Contact Center USA",
+  title: "Work From Home Solutions | Remote US Agent Teams",
   description:
-    "US-based work from home solutions with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Work-from-home contact center solutions with vetted remote US agents, secure endpoints and the same QA standards as on-site. Get a free quote.",
   keywords: [
     "work from home call center",
     "remote agent bpo",

@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Content Moderation Services | Contact Center USA",
+  title: "Content Moderation Services | US-Based Trust & Safety",
   description:
-    "US-based content moderation services with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "US-based content moderation for UGC platforms and marketplaces. Policy enforcement, escalation review and 24/7 trust and safety coverage. Get a quote.",
   keywords: [
     "content moderation services",
     "content moderation outsourcing",

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Financial Call Center | Contact Center USA",
+  title: "Financial Call Center Services | Secure US Agents",
   description:
-    "US-based financial call center with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Financial call center services with US-based agents. Account servicing, payments, fraud alerts and compliance-aware handling. Request a quote.",
   keywords: [
     "financial call center services",
     "financial services bpo usa",

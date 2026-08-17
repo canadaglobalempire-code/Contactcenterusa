@@ -3,9 +3,9 @@ import { CustomerAcquisitionContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Customer Acquisition Outsourcing | Contact Center USA",
+  title: "Customer Acquisition Outsourcing | US-Based Teams",
   description:
-    "US-based customer acquisition outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsourced customer acquisition with US-based agents. Lead qualification, conversion calling and onboarding built to your funnel. Get a free quote.",
   keywords: [
     "customer acquisition outsourcing",
     "lead generation bpo",

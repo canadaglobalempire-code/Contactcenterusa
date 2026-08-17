@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Customer Care Outsourcing Services | Contact Center USA",
+  title: "Customer Care Outsourcing | 24/7 US-Based Support Teams",
   description:
-    "US-based customer care outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsource customer care to 100% US-based agents. 24/7 omnichannel support across phone, chat, email and social, scaled to your volume. Get a free quote.",
   keywords: [
     "customer care outsourcing",
     "customer care bpo usa",

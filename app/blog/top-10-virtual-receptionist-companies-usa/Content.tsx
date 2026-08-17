@@ -470,6 +470,9 @@ export default function Top10VirtualReceptionistContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 For full-stack front-office coverage, pair your virtual reception with <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">appointment setting services</Link>, and <Link href="/services/virtual-remote-support" className="text-red font-semibold hover:underline">virtual and remote support</Link>.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                If you would rather scope a program than compare vendors, our <Link href="/industries/virtual-receptionist-services" className="text-red font-semibold hover:underline">US-based virtual receptionist services</Link> page covers live answering in your company name, appointment booking into your own calendar, and after-hours and overflow coverage options.
+              </p>
 
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Virtual Receptionist Trends for 2026</h2>

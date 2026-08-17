@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Back Office Outsourcing | Contact Center USA",
+  title: "Back Office Outsourcing | Data Entry & Processing",
   description:
-    "US-based back office outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Back office outsourcing for data entry, order processing, claims and case management. US-based teams with documented QA. Request a free quote.",
   keywords: [
     "back office outsourcing",
     "back office bpo usa",

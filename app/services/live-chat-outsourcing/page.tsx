@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Live Chat Outsourcing | Contact Center USA",
+  title: "US-Based Live Chat Outsourcing | 24/7 Chat Agents",
   description:
-    "US-based live chat outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsource live chat to US-based agents. 24/7 coverage, proactive engagement that cuts cart abandonment, and real-time CRM integration. Get a free quote.",
   keywords: [
     "live chat outsourcing",
     "live chat support bpo",

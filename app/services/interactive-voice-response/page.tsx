@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Interactive Voice Response | Contact Center USA",
+  title: "Interactive Voice Response | IVR Design & Management",
   description:
-    "US-based interactive voice response with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "IVR design, build and ongoing management. Call flow mapping, self-service containment and clean escalation to live US agents. Request a free quote.",
   keywords: [
     "ivr services",
     "interactive voice response outsourcing",

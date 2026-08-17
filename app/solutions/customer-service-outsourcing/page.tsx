@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Customer Service Outsourcing | Contact Center USA",
+  title: "Customer Service Outsourcing | 100% US-Based Agents",
   description:
-    "US-based customer service outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsource customer service to trained US-based agents. Omnichannel coverage, flexible scaling, and no offshore routing. Request a free quote today.",
   keywords: [
     "customer service outsourcing",
     "customer service bpo usa",

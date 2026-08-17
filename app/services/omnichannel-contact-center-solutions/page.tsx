@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { OmnichannelContent } from "./Content";
 
 export const metadata: Metadata = {
-  title: "Omnichannel Contact Center Solutions | Contact Center USA",
+  title: "Omnichannel Contact Center Solutions | US-Based Agents",
   description:
-    "US-based omnichannel contact center solutions with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Unify phone, chat, email, SMS and social into one connected queue with US-based agents and a single shared customer history. Request a free quote.",
   keywords: [
     "omnichannel contact center",
     "omnichannel cx bpo",

@@ -538,6 +538,9 @@ export default function Top10MortgageCallCenterContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 For full-stack mortgage CX, pair your contact center with <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link> and <Link href="/solutions/financial-call-center-services" className="text-red font-semibold hover:underline">financial call center services</Link>.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                For the program itself rather than the ranking, see our <Link href="/industries/mortgage-call-center" className="text-red font-semibold hover:underline">mortgage call center services</Link> page — speed-to-lead borrower response, pre-qualification against your criteria, conditions chase, and servicing coverage.
+              </p>
 
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Mortgage CX Trends for 2026</h2>

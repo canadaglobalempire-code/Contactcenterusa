@@ -78,10 +78,15 @@ export function appendLeadAttribution(
   formData.set("submitted_at", new Date().toISOString());
 }
 
-// SplitForms only stores the three standard fields — name, email, message —
-// for this form; every other field is silently dropped. So we fold all the
-// extra fields into a readable message body and send SplitForms exactly the
-// three fields it keeps.
+// LEGACY FALLBACK — only runs for a form that posts bare `name`/`email`
+// fields. Every form on the site renders <LeadForm>, which emits namespaced
+// fields (full_name, work_email, ...), so submitLeadForm always takes the
+// namespaced branch below instead.
+//
+// Do not "fix" the namespaced branch to route through here: SplitForms stores
+// the full custom field set (the dashboard shows Call Volume, Service Type,
+// Solution Type, Source Page and CTA Location as their own columns). Collapsing
+// them back into a message blob would lose that structure.
 const FIELD_LABELS: Record<string, string> = {
   company: "Company",
   phone: "Phone",

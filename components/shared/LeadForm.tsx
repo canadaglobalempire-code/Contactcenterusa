@@ -81,6 +81,7 @@ export function LeadForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Set<string>>(new Set());
   const [redirectTo, setRedirectTo] = useState("/contact?submitted=1");
+  const [captchaError, setCaptchaError] = useState("");
   const recaptchaRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<number | null>(null);
 
@@ -92,6 +93,12 @@ export function LeadForm({
 
   // Render the reCAPTCHA widget once the API script is ready. Polling covers
   // first load, client-side navigation, and the cached-script case.
+  //
+  // The poll runs for ~60s (was 10s). On a slow mobile connection Google's
+  // script routinely takes longer than 10s, and if the widget never rendered
+  // the old code still demanded a token on submit — leaving a real buyer
+  // staring at "complete the verification" with no checkbox on the page and no
+  // way to send the form. See the fail-open branch in handleSubmit.
   useEffect(() => {
     let tries = 0;
     const id = window.setInterval(() => {
@@ -106,10 +113,22 @@ export function LeadForm({
         }
         window.clearInterval(id);
       }
-      if (++tries > 50) window.clearInterval(id);
+      if (++tries > 300) window.clearInterval(id);
     }, 200);
     return () => window.clearInterval(id);
   }, []);
+
+  // Only reset a widget we actually rendered. `reset(undefined)` targets the
+  // first widget on the page, which throws when none exists.
+  const resetCaptcha = () => {
+    if (widgetIdRef.current !== null) {
+      try {
+        window.grecaptcha?.reset(widgetIdRef.current);
+      } catch {
+        /* widget went away — nothing to reset */
+      }
+    }
+  };
 
   const errorRing = (name: string) =>
     errors.has(name) ? " !border-red ring-2 ring-red/20" : "";
@@ -173,22 +192,32 @@ export function LeadForm({
       return;
     }
 
-    // reCAPTCHA: must be solved. The token is verified by SplitForms (secret
-    // key) — a bot POSTing directly has no valid token and is rejected.
-    const token =
-      window.grecaptcha && widgetIdRef.current !== null
-        ? window.grecaptcha.getResponse(widgetIdRef.current)
-        : "";
-    if (!token) {
-      alert("Please complete the “I'm not a robot” verification.");
-      return;
+    // reCAPTCHA. Two cases, deliberately handled differently:
+    //
+    //  1. The widget rendered -> the visitor must tick it. Blocking here is
+    //     correct: the checkbox is on screen and they can act on the message.
+    //  2. The widget never rendered (script slow, blocked, or unreachable) ->
+    //     FAIL OPEN and submit without a token. Blocking here just silently
+    //     destroys a real lead, because there is nothing on the page for the
+    //     visitor to complete. The honeypot below still runs and SplitForms
+    //     still screens server-side, so this trades a little spam risk for
+    //     leads we were otherwise losing outright.
+    let token = "";
+    if (widgetIdRef.current !== null && window.grecaptcha) {
+      token = window.grecaptcha.getResponse(widgetIdRef.current);
+      if (!token) {
+        setCaptchaError("Please complete the “I'm not a robot” check above.");
+        recaptchaRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
     }
 
+    setCaptchaError("");
     setErrors(new Set());
     setIsSubmitting(true);
 
     const formData = new FormData(form);
-    formData.set("g-recaptcha-response", token);
+    if (token) formData.set("g-recaptcha-response", token);
     const companyUrl = (formData.get("company_url") ?? "").toString().trim();
     if (companyUrl && !/^https?:\/\//i.test(companyUrl)) {
       formData.set("company_url", `https://${companyUrl}`);
@@ -215,12 +244,16 @@ export function LeadForm({
         });
         setIsSubmitted(true);
       } else {
-        alert("Error: " + (data.message || "Something went wrong. Please try again."));
-        window.grecaptcha?.reset(widgetIdRef.current ?? undefined);
+        setCaptchaError(
+          data.message || "Something went wrong. Please try again, or email us directly.",
+        );
+        resetCaptcha();
       }
     } catch {
-      alert("Something went wrong. Please try again.");
-      window.grecaptcha?.reset(widgetIdRef.current ?? undefined);
+      setCaptchaError(
+        "Something went wrong. Please try again, or email us directly.",
+      );
+      resetCaptcha();
     } finally {
       setIsSubmitting(false);
     }
@@ -433,6 +466,15 @@ export function LeadForm({
             ref={recaptchaRef}
             className="origin-top-left scale-[0.85] @[300px]:scale-100"
           />
+
+          {captchaError && (
+            <div
+              role="alert"
+              className="rounded-xl border border-red/30 bg-red/5 px-4 py-3 text-sm font-medium text-red-dark"
+            >
+              {captchaError}
+            </div>
+          )}
 
           <button
             type="submit"

@@ -439,6 +439,9 @@ export default function Top10PlumbingAnsweringServiceContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 The screening questions matter more than the script. A trained agent asks <em>"Is water actively flooding right now?"</em> and <em>"Is this a burst pipe?"</em> and <em>"Are you on a septic system?"</em> — three questions that decide the bucket and prevent both the false-emergency 2 AM page and the missed-emergency next-day callback.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Our own <Link href="/industries/home-services-call-center" className="text-red font-semibold hover:underline">home services call center</Link> runs exactly this triage for plumbing, HVAC, electrical, and roofing contractors — 24/7 live answering with booking straight into ServiceTitan, Housecall Pro, Jobber, and FieldEdge.
+              </p>
 
               {/* UNIQUE SECTION 2 — ServiceTitan, Housecall Pro, Jobber, FieldEdge integration */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">ServiceTitan, Housecall Pro, Jobber, FieldEdge for Plumbers: What Integration Actually Means</h2>

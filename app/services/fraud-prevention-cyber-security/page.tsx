@@ -3,9 +3,9 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { FraudPreventionContent } from "./Content";
 
 export const metadata: Metadata = {
-  title: "Fraud Prevention Cyber Security | Contact Center USA",
+  title: "Fraud Prevention & Cyber Security | Order Verification",
   description:
-    "US-based fraud prevention cyber security with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Fraud prevention and order verification with US-based analysts. Chargeback representment, risk screening and dispute support. Request a quote.",
   keywords: [
     "fraud prevention bpo",
     "call center fraud prevention",

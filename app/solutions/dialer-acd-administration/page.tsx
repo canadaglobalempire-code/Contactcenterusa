@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Dialer ACD Administration | Contact Center USA",
+  title: "Dialer & ACD Administration | Routing & Campaigns",
   description:
-    "US-based dialer acd administration with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Dialer and ACD administration: campaign build, list strategy, skills-based routing and pacing tuned for contact rate. Request a free quote.",
   keywords: [
     "dialer administration",
     "acd administration bpo",

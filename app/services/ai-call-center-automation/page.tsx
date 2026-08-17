@@ -3,9 +3,9 @@ import { AIAutomationContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "AI Call Center Automation | Contact Center USA",
+  title: "AI Call Center Automation | Voice AI & Human Agents",
   description:
-    "US-based ai call center automation with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "AI call center automation paired with US-based human agents. Voice AI, intelligent routing and automated deflection with live escalation. Get a quote.",
   keywords: [
     "ai call center automation",
     "ai contact center bpo",

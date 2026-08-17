@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "B2C Sales Outsourcing | Contact Center USA",
+  title: "B2C Sales Outsourcing | US-Based Inside Sales Teams",
   description:
-    "US-based b2c sales outsourcing with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Outsource B2C sales to US-based agents. Inbound conversion, outbound campaigns and warm follow-up built around your offer. Request a free quote.",
   keywords: [
     "b2c sales outsourcing",
     "outbound sales bpo usa",

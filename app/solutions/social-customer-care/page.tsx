@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Social Customer Care | Contact Center USA",
+  title: "Social Customer Care | US-Based Social Support Team",
   description:
-    "US-based social customer care with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "US-based social customer care across X, Facebook, Instagram and TikTok. Monitored coverage, brand-voice replies and escalation handling. Get a quote.",
   keywords: [
     "social customer care",
     "social media customer service bpo",

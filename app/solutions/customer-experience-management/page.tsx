@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Customer Experience Management | Contact Center USA",
+  title: "Customer Experience Management | End-to-End CX",
   description:
-    "US-based customer experience management with trained agents, flexible coverage, reporting, and fast onboarding. Request a quote from Contact Center USA.",
+    "Customer experience management across every channel: journey mapping, agent enablement and measurement tied to CSAT and retention. Get a quote.",
   keywords: [
     "customer experience management",
     "cx management outsourcing",

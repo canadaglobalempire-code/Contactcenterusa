@@ -468,6 +468,9 @@ export default function Top10MultilingualCallCenterContent() {
               <p className="mt-4 text-gray-700 leading-relaxed">
                 For full-stack multilingual CX, pair your multilingual contact center with <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, and <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>.
               </p>
+              <p className="mt-4 text-gray-700 leading-relaxed">
+                Most US multilingual demand is Spanish demand. Our <Link href="/industries/spanish-call-center-services" className="text-red font-semibold hover:underline">Spanish call center services</Link> page covers native bilingual agents, true single-number routing, and why staffing bilingual agents usually beats a per-minute interpretation line.
+              </p>
 
               {/* Trends */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Multilingual CX Trends for 2026</h2>
