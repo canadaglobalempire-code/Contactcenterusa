@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Texas | Call Center Outsourcing TX";
+const title = "Texas Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Texas for inbound support, outbound sales, bilingual claims, and back office across Dallas, Houston, Austin, and San Antonio. Free quote.";
+  "Get US-based call center and BPO services in Texas for inbound support, outbound sales, bilingual claims, and back office across major Texas metros.";
 
 export const metadata: Metadata = {
   title,

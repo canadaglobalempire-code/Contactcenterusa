@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "BPO Companies in Phoenix | Call Center Services AZ";
+const title = "Phoenix Call Center & BPO Services | US-Based Teams";
 const description =
   "US-based call center services for Phoenix businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 

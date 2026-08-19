@@ -4,9 +4,9 @@ import { ArrowRight, Building2, MapPin, Shield, Users } from "lucide-react";
 import { SITE_BASE_URL } from "@/lib/ai-context";
 import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema";
 
-const title = "BPO Companies by State & City | Contact Center USA";
+const title = "US Call Center & BPO Service Areas | Contact Center USA";
 const description =
-  "Find US-based BPO and call center outsourcing by state and city — Arizona, Georgia, Ohio, Tennessee, Texas, Florida, and every major US metro.";
+  "US-based call center and BPO service coverage across all 50 states, with local guidance for major markets, industries, time zones, and compliance needs.";
 
 export const metadata: Metadata = {
   title,
@@ -79,13 +79,36 @@ const proofPoints = [
   },
 ];
 
+const nationwideCoverage = [
+  {
+    region: "Northeast",
+    states: "Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, Vermont, New Jersey, New York, and Pennsylvania",
+    markets: "Boston, New York City, Philadelphia, Pittsburgh, Newark, Providence, and Hartford",
+  },
+  {
+    region: "South",
+    states: "Delaware, Florida, Georgia, Maryland, North Carolina, South Carolina, Virginia, Washington DC, West Virginia, Alabama, Kentucky, Mississippi, Tennessee, Arkansas, Louisiana, Oklahoma, and Texas",
+    markets: "Atlanta, Austin, Charlotte, Dallas, Houston, Jacksonville, Miami, Nashville, Orlando, San Antonio, Tampa, and Washington DC",
+  },
+  {
+    region: "Midwest",
+    states: "Indiana, Illinois, Michigan, Ohio, Wisconsin, Iowa, Kansas, Minnesota, Missouri, Nebraska, North Dakota, and South Dakota",
+    markets: "Chicago, Cincinnati, Cleveland, Columbus, Detroit, Indianapolis, Kansas City, Milwaukee, Minneapolis, Omaha, and St. Louis",
+  },
+  {
+    region: "West",
+    states: "Arizona, Colorado, Idaho, Montana, Nevada, New Mexico, Utah, Wyoming, Alaska, California, Hawaii, Oregon, and Washington",
+    markets: "Denver, Las Vegas, Los Angeles, Phoenix, Portland, Salt Lake City, San Diego, San Francisco, and Seattle",
+  },
+];
+
 const locationCollectionSchema = generateCollectionPageSchema({
   name: title,
   description,
   url: `${SITE_BASE_URL}/locations`,
   items: [
     ...states.map((item) => ({
-      name: `BPO Companies in ${item.state}`,
+      name: `Call Center and BPO Services in ${item.state}`,
       description: `US-based BPO and call center outsourcing for ${item.state} businesses, covering ${item.focus}.`,
       url: `${SITE_BASE_URL}${item.href}`,
     })),
@@ -121,10 +144,10 @@ export default function LocationsPage() {
               Locations We Serve
             </span>
             <h1 className="mt-6 text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
-              BPO Companies by State &amp; City
+              US Call Center &amp; BPO Service Areas
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/70">
-              Contact Center USA serves businesses across major US markets with domestic inbound support,
+              Contact Center USA supports businesses in all 50 states with domestic inbound support,
               outbound calling, technical support, lead response, multilingual service, and omnichannel CX teams.
             </p>
           </div>
@@ -148,18 +171,36 @@ export default function LocationsPage() {
             })}
           </div>
 
+          <div className="mt-16 rounded-2xl bg-gray-50 p-7 sm:p-10">
+            <span className="text-sm font-semibold uppercase tracking-wider text-red">Nationwide Coverage</span>
+            <h2 className="mt-3 text-3xl font-bold text-navy sm:text-4xl">Call Center Coverage Across All 50 States</h2>
+            <p className="mt-4 max-w-4xl leading-relaxed text-gray-700">
+              Yes. Contact Center USA can run US-based call center and BPO programs for businesses in every state.
+              The locations below are service areas, not claims of a physical branch office, and dedicated local pages
+              are published only where we have useful market-specific guidance.
+            </p>
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+              {nationwideCoverage.map((item) => (
+                <div key={item.region} className="rounded-xl border border-gray-100 bg-white p-6">
+                  <h3 className="text-xl font-bold text-navy">{item.region}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-700">{item.states}.</p>
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600"><strong>Major markets:</strong> {item.markets}.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-16">
             <div className="max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-wider text-red">
                 State Coverage
               </span>
               <h2 className="mt-3 text-3xl font-bold text-navy sm:text-4xl">
-                BPO Companies by State
+                Call Center &amp; BPO Services by State
               </h2>
               <p className="mt-4 text-gray-700">
                 State pages cover the industries that concentrate in each market, the metros we
-                support, timezone and compliance considerations, and answers to the questions buyers
-                ask when comparing BPO providers.
+                support, timezone and compliance considerations, and service options for regional buyers.
               </p>
             </div>
 

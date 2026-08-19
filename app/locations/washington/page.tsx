@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Washington | Call Center Outsourcing WA";
+const title = "Washington Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Washington for cloud and SaaS support, ecommerce, aerospace, and technical help desk across Seattle. US-based teams. Free quote.";
+  "Get US-based call center and BPO services in Washington for cloud and SaaS support, ecommerce, aerospace, and technical help desk across Seattle.";
 
 export const metadata: Metadata = {
   title,

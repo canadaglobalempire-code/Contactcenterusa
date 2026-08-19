@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "BPO Companies in Los Angeles | Call Center Services CA",
+  title: "Los Angeles Call Center & BPO Services | US-Based Teams",
   description:
-    "Compare Los Angeles call center services for inbound support, outbound calls, answering service, bilingual agents, customer care, and fast BPO quotes.",
+    "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.",
   keywords: [
     "call center services los angeles",
     "la bpo services",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/call-center-services-los-angeles" },
   openGraph: {
-    title: "BPO Companies in Los Angeles | Call Center Services CA",
+    title: "Los Angeles Call Center & BPO Services | US-Based Teams",
     description:
-      "Compare Los Angeles call center services for inbound support, outbound calls, answering service, bilingual agents, customer care, and fast BPO quotes.",
+      "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.",
     url: "/call-center-services-los-angeles",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BPO Companies in Los Angeles | Call Center Services CA",
+    title: "Los Angeles Call Center & BPO Services | US-Based Teams",
     description:
-      "Compare Los Angeles call center services for inbound support, outbound calls, answering service, bilingual agents, customer care, and fast BPO quotes.",
+      "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.",
   },
 };
 

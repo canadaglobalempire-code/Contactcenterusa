@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Utah | Call Center Outsourcing UT";
+const title = "Utah Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Utah for outbound sales, SaaS support, inside sales, and back office. US-based teams on Mountain time. Free quote.";
+  "Get US-based call center and BPO services in Utah for outbound sales, SaaS support, inside sales, and back office on Mountain time. Free quote.";
 
 export const metadata: Metadata = {
   title,

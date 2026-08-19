@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Georgia | Call Center Outsourcing GA";
+const title = "Georgia Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Georgia for inbound support, outbound sales, fintech servicing, and back office. US-based teams on Eastern time. Free quote.";
+  "Get US-based call center and BPO services in Georgia for inbound support, outbound sales, fintech servicing, and back office. Free quote.";
 
 export const metadata: Metadata = {
   title,

@@ -86,7 +86,7 @@ export function PageFAQ({
                     <div className="mt-1 text-sm text-gray-600">US Agents</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-navy">30+</div>
+                    <div className="text-2xl font-bold text-navy">25+</div>
                     <div className="mt-1 text-sm text-gray-600">Years Exp.</div>
                   </div>
                   <div>

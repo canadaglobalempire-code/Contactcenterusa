@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in New York | Call Center Outsourcing NY";
+const title = "New York State Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in New York for financial services, media, healthcare, and 24/7 support. Compliance-ready US-based teams on Eastern time. Free quote.";
+  "Get US-based call center and BPO services in New York for financial services, media, healthcare, and 24/7 support. Free quote.";
 
 export const metadata: Metadata = {
   title,

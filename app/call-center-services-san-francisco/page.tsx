@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "BPO Companies in San Francisco | Call Center Services CA";
+const title = "San Francisco Call Center & BPO Services | US-Based Teams";
 const description =
   "US-based call center services for San Francisco businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 

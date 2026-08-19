@@ -84,7 +84,7 @@ const BLOG_TOPIC_MAP: Record<
     topicShort: "lead generation",
   },
   "top-10-live-chat-outsourcing-companies-usa": {
-    headline: "Top 10 Live Chat Outsourcing Companies in USA (2026)",
+    headline: "10 Best US-Based Live Chat Outsourcing Companies (2026)",
     topic: "live chat outsourcing",
     topicShort: "live chat",
   },
@@ -134,7 +134,7 @@ const BLOG_TOPIC_MAP: Record<
     topicShort: "AI call center",
   },
   "top-10-appointment-setting-companies-usa": {
-    headline: "Top 10 Appointment Setting Companies in USA (2026)",
+    headline: "10 Best Appointment Setting Companies (2026 Pricing)",
     topic: "B2B appointment setting outsourcing",
     topicShort: "appointment setting",
   },
@@ -157,7 +157,7 @@ const BLOG_TOPIC_MAP: Record<
     hasExplicitFAQ: true,
   },
   "top-10-plumbing-answering-service-companies-usa": {
-    headline: "Top 10 Plumbing Answering Service Companies in USA (2026)",
+    headline: "10 Best Plumbing Answering Services (2026 Pricing)",
     topic: "plumbing answering service",
     topicShort: "plumbing answering",
     hasExplicitFAQ: true,

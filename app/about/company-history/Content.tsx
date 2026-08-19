@@ -44,7 +44,7 @@ const milestones = [
 const stats = [
   { label: "Founded", value: "1999" },
   { label: "Employees", value: "500+" },
-  { label: "Years Experience", value: "30+" },
+  { label: "Years Experience", value: "25+" },
   { label: "Availability", value: "24/7/365" },
 ];
 

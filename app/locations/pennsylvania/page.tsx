@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Pennsylvania | Call Center Outsourcing PA";
+const title = "Pennsylvania Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Pennsylvania for healthcare, education, financial services, and back office across Philadelphia and Pittsburgh. US-based teams. Free quote.";
+  "Get US-based call center and BPO services in Pennsylvania for healthcare, education, financial services, and back office across Philadelphia and Pittsburgh.";
 
 export const metadata: Metadata = {
   title,

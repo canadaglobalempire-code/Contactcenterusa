@@ -140,7 +140,7 @@ export default function WhyUsPage() {
               <div
                 className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl"
               >
-                <div className="text-3xl font-bold">30+</div>
+                <div className="text-3xl font-bold">25+</div>
                 <div className="text-sm text-white/80">Years of Excellence</div>
               </div>
             </div>

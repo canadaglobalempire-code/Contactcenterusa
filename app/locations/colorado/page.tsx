@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Colorado | Call Center Outsourcing CO";
+const title = "Colorado Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Colorado for SaaS support, aerospace, healthcare, and outdoor retail. US-based teams on Mountain time. Free quote.";
+  "Get US-based call center and BPO services in Colorado for SaaS support, aerospace, healthcare, and outdoor retail on Mountain time. Free quote.";
 
 export const metadata: Metadata = {
   title,

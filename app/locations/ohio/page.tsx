@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Ohio | Insurance Call Center Outsourcing OH";
+const title = "Ohio Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Ohio for insurance claims intake, policyholder servicing, healthcare, and back office. US-based teams. Free quote.";
+  "Get US-based call center and BPO services in Ohio for insurance claims intake, policyholder servicing, healthcare, and back office. Free quote.";
 
 export const metadata: Metadata = {
   title,

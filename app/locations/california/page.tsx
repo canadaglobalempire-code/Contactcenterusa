@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in California | Call Center Outsourcing CA";
+const title = "California Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in California for SaaS support, entertainment, biotech, and ecommerce across LA, San Diego, and the Bay Area. US-based teams. Free quote.";
+  "Get US-based call center and BPO services in California for SaaS support, entertainment, biotech, and ecommerce across LA, San Diego, and the Bay Area.";
 
 export const metadata: Metadata = {
   title,

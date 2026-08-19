@@ -15,9 +15,9 @@ import { BlogSection } from "@/components/sections/BlogSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Contact Center USA | US-Based Call Center Services",
+  title: "Contact Center USA | US-Based Call Center & BPO Services",
   description:
-    "Contact Center USA provides US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response. Get a fast quote.",
+    "US-based call center and BPO services for inbound support, outbound sales, customer care, technical support, live chat, and lead response. Get a fast quote.",
   keywords: [
     "contact center usa",
     "call center services",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Contact Center USA | US-Based Call Center Services",
+    title: "Contact Center USA | US-Based Call Center & BPO Services",
     description:
       "US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response.",
     url: "/",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Center USA | US-Based Call Center Services",
+    title: "Contact Center USA | US-Based Call Center & BPO Services",
     description:
       "US-based call center services for inbound support, outbound sales, customer care, technical support, live chat, and lead response.",
   },

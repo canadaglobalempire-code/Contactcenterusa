@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "BPO Companies in Houston | Call Center Services TX",
+  title: "Houston Call Center & BPO Services | US-Based Teams",
   description:
-    "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
+    "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
   keywords: [
     "call center services houston",
     "houston bpo",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/call-center-services-houston" },
   openGraph: {
-    title: "BPO Companies in Houston | Call Center Services TX",
+    title: "Houston Call Center & BPO Services | US-Based Teams",
     description:
-      "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
+      "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
     url: "/call-center-services-houston",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BPO Companies in Houston | Call Center Services TX",
+    title: "Houston Call Center & BPO Services | US-Based Teams",
     description:
-      "Compare Houston call center services for inbound support, outbound calls, answering service, bilingual agents, energy, healthcare, and fast BPO quotes.",
+      "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
   },
 };
 

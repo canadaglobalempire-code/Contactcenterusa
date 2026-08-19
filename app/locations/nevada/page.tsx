@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Nevada | Call Center Outsourcing NV";
+const title = "Nevada Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Nevada for hospitality reservations, 24/7 guest support, gaming, and logistics. US-based teams. Free quote.";
+  "Get US-based call center and BPO services in Nevada for hospitality reservations, 24/7 guest support, gaming, and logistics. Free quote.";
 
 export const metadata: Metadata = {
   title,

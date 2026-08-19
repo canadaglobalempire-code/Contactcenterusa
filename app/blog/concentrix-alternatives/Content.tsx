@@ -18,7 +18,7 @@ export default function Content() {
               COMPETITOR COMPARISON
             </span>
             <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Concentrix Alternatives: 7 Better Options for Mid-Market (2026)
+              7 Best Concentrix Alternatives &amp; Competitors (2026)
             </h1>
             <div className="mt-4 flex items-center gap-4 text-sm text-white/50">
               <span className="flex items-center gap-1"><Calendar className="h-4 w-4" /> June 2026</span>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Illinois | Call Center Outsourcing IL";
+const title = "Illinois Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Illinois for logistics, insurance, financial services, and manufacturing support across Chicago. US-based teams. Free quote.";
+  "Get US-based call center and BPO services in Illinois for logistics, insurance, financial services, and manufacturing support across Chicago.";
 
 export const metadata: Metadata = {
   title,

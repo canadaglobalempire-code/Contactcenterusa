@@ -153,7 +153,7 @@ export function CityPageTemplate({
                 <MapPin className="h-4 w-4" /> {city}, {stateAbbr}
               </span>
               <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[56px]">
-                BPO Companies in <span className="text-red">{city}</span>
+                Call Center &amp; BPO Services in <span className="text-red">{city}</span>
               </h1>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/80">
                 100% US-based call center and BPO services for {city} businesses. 24/7 support, AI automation, and omnichannel solutions.
@@ -187,7 +187,7 @@ export function CityPageTemplate({
             <p className="text-sm text-gray-700">
               Comparing providers across the state?{" "}
               <Link href={`/locations/${statePage}`} className="font-semibold text-red hover:underline">
-                See all BPO companies in {state} &rarr;
+                See call center and BPO services across {state} &rarr;
               </Link>
             </p>
           </div>
@@ -227,7 +227,7 @@ export function CityPageTemplate({
                 <Image src="/images/hd-agents-pair.jpg" alt={`Call center team serving ${city}`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 rounded-2xl bg-red px-6 py-5 text-white shadow-xl">
-                <div className="text-3xl font-bold">30+</div>
+                <div className="text-3xl font-bold">25+</div>
                 <div className="text-sm text-white/80">Years Experience</div>
               </div>
             </div>

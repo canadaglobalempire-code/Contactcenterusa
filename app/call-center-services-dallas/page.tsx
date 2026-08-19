@@ -3,9 +3,9 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "BPO Companies in Dallas | Call Center Services TX",
+  title: "Dallas Call Center & BPO Services | US-Based Teams",
   description:
-    "Compare Dallas call center services for inbound support, outbound calls, answering service, bilingual agents, financial services, and fast BPO quotes.",
+    "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
   keywords: [
     "call center services dallas",
     "dallas bpo services",
@@ -18,17 +18,17 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/call-center-services-dallas" },
   openGraph: {
-    title: "BPO Companies in Dallas | Call Center Services TX",
+    title: "Dallas Call Center & BPO Services | US-Based Teams",
     description:
-      "Compare Dallas call center services for inbound support, outbound calls, answering service, bilingual agents, financial services, and fast BPO quotes.",
+      "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
     url: "/call-center-services-dallas",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BPO Companies in Dallas | Call Center Services TX",
+    title: "Dallas Call Center & BPO Services | US-Based Teams",
     description:
-      "Compare Dallas call center services for inbound support, outbound calls, answering service, bilingual agents, financial services, and fast BPO quotes.",
+      "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
   },
 };
 

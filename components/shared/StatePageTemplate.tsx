@@ -113,7 +113,7 @@ export function StatePageTemplate({
                 <MapPin className="h-4 w-4" /> {state}
               </span>
               <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[56px]">
-                BPO Companies in <span className="text-red">{state}</span>
+                Call Center &amp; BPO Services in <span className="text-red">{state}</span>
               </h1>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/80">
                 US-based call center and BPO services for {state} businesses — inbound support,

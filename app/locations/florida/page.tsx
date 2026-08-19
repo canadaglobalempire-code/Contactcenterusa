@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
-const title = "BPO Companies in Florida | Call Center Outsourcing FL";
+const title = "Florida Call Center & BPO Services | US-Based Teams";
 const description =
-  "Compare BPO companies in Florida for insurance claims, Medicare support, hospitality, and bilingual service. Hurricane-resilient US-based teams. Free quote.";
+  "Get US-based call center and BPO services in Florida for insurance claims, Medicare support, hospitality, and bilingual service. Free quote.";
 
 export const metadata: Metadata = {
   title,

@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "BPO Companies in New York | Call Center Services NY";
+const title = "New York Call Center & BPO Services | US-Based Teams";
 const description =
   "US-based call center services for New York City businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 

@@ -36,19 +36,20 @@ const companies = [
 ];
 
 export const metadata: Metadata = {
-  title: "7 Concentrix Alternatives for Mid-Market CX (2026)",
+  title: "7 Best Concentrix Alternatives & Competitors (2026)",
   description:
-    "Compare the best Concentrix alternatives in 2026 for US-based support, flexible contracts, and mid-market fit. See how 7 outsourcing partners stack up on delivery, minimums, and CX quality.",
+    "Compare 7 Concentrix alternatives and competitors for US-based delivery, flexible contracts, program fit, and CX quality. Updated for 2026.",
   alternates: { canonical: "/blog/concentrix-alternatives" },
 };
 
 export default function Page() {
   const schemas = generateBlogAEOSchema({
     slug: "concentrix-alternatives",
-    headline: "Concentrix Alternatives: 7 Better Options for Mid-Market (2026)",
+    headline: "7 Best Concentrix Alternatives & Competitors (2026)",
     description:
-      "Looking for a Concentrix alternative in 2026? Compare 7 outsourcing partners by CX quality, delivery location, contract flexibility, and mid-market fit.",
+      "Compare 7 Concentrix alternatives and competitors by CX quality, delivery location, contract flexibility, and mid-market fit.",
     datePublished: "2026-06-26",
+    dateModified: "2026-08-19",
     keywords: ["concentrix alternatives", "concentrix competitors", "companies like concentrix", "call center outsourcing"],
     faqs,
     companies,

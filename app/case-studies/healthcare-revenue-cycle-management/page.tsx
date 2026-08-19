@@ -213,7 +213,7 @@ export default function HealthcareRevenueCyclePage() {
               </Link>
               , and{" "}
               <Link
-                href="/services/back-office-outsourcing"
+                href="/solutions/back-office-outsourcing"
                 className="font-medium text-red underline decoration-red/30 underline-offset-4 hover:decoration-red"
               >
                 back-office support

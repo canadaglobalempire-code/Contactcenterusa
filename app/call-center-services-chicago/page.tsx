@@ -3,7 +3,7 @@ import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "BPO Companies in Chicago | Call Center Services IL";
+const title = "Chicago Call Center & BPO Services | US-Based Teams";
 const description =
   "US-based call center services for Chicago businesses. Get inbound, outbound, customer support, and multilingual coverage with a fast BPO quote.";
 
@@ -36,7 +36,7 @@ const seoContent: SEOPattern[] = [
     ],
     stats: [
       { stat: "CT", label: "Central-time-aligned coverage built for Chicago business hours" },
-      { stat: "30+ yrs", label: "Experience supporting Midwest financial and logistics firms" },
+      { stat: "25+ yrs", label: "Experience supporting Midwest financial and logistics firms" },
       { stat: "24/7", label: "Follow-the-sun coverage for Chicagoland operations" },
     ],
   },
