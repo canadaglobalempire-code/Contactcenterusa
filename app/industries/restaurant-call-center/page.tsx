@@ -279,7 +279,7 @@ export default function RestaurantCallCenterPage() {
       description="Restaurant phones ring hardest exactly when the floor is busiest, and the two calls that ring out most — a Saturday reservation and a catering enquiry — are the two worth the most. We take overflow only, so your host keeps every call they can answer, booking live in OpenTable, Resy, SevenRooms, or Tock and routing qualified catering enquiries to your events team the same day."
       features={features}
       benefits={benefits}
-      image="/images/cc-agent-smiling.jpg"
+      image="/images/cc-agent-smile.jpg"
       stats={stats}
       faqs={faqs}
       relatedServices={relatedServices}

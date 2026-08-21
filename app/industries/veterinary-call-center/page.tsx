@@ -226,7 +226,7 @@ const seoContent: SEOPattern[] = [
     pattern: "split-image",
     eyebrow: "Why Us",
     heading: "Why Veterinary Phone Coverage Is a Structural Problem",
-    image: "/images/cc-agent-smiling.jpg",
+    image: "/images/cc-agent-smile.jpg",
     imagePosition: "right",
     body: [
       "In most businesses a missed call means someone was busy. In a veterinary clinic it means the person who answers the phone is currently holding an animal that does not want to be held. No amount of training or scheduling software changes that.",

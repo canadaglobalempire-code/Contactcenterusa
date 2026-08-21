@@ -279,7 +279,7 @@ export default function FuneralHomePage() {
       description="A death call cannot reach voicemail. Families calling at three in the morning have usually never made this call before and need a person who answers calmly, knows what to ask, and can tell them what happens next. Our agents are trained specifically for death care: they answer in your firm's name around the clock, capture complete removal detail, work your on-call escalation order live, and handle pre-need enquiries during the hours nobody is at the office."
       features={features}
       benefits={benefits}
-      image="/images/cc-agent-focused.jpg"
+      image="/images/cc-agent-focus.jpg"
       stats={stats}
       faqs={faqs}
       relatedServices={relatedServices}
