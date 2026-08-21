@@ -5,6 +5,60 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "After Hours Answering Service: 2026 Costs & Coverage",
+    excerpt:
+      "What US after-hours coverage costs across all four pricing models, how evening, overnight and 24/7 packages differ, and how a good provider triages a 2 AM call.",
+    category: "Buyer's Guide",
+    readTime: "14 min read",
+    image: "/images/cc-agent-night.jpg",
+    href: "/blog/after-hours-answering-service",
+  },
+  {
+    title: "24 Hour Answering Service: How to Verify It's Real",
+    excerpt:
+      "Most 24/7 services are not truly staffed at 3 AM. A six-step audit to run before you sign, plus the holiday and SLA clauses that separate real coverage from marketing.",
+    category: "Buyer's Guide",
+    readTime: "13 min read",
+    image: "/images/cc-office-wide.jpg",
+    href: "/blog/24-hour-answering-service",
+  },
+  {
+    title: "Property Management Answering Service (2026 Guide)",
+    excerpt:
+      "Four-tier maintenance emergency triage, vendor dispatch spend caps, Fair Housing exposure on leasing calls, and live work order writes into AppFolio, Buildium and Yardi.",
+    category: "Buyer's Guide",
+    readTime: "15 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/property-management-answering-service",
+  },
+  {
+    title: "Real Estate Answering Service: Speed-to-Lead in 2026",
+    excerpt:
+      "Why portal leads go to whoever answers first, the six fields a real qualification script captures, and live showing booking into Follow Up Boss, kvCORE and BoomTown.",
+    category: "Buyer's Guide",
+    readTime: "14 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/real-estate-answering-service",
+  },
+  {
+    title: "Answering Service for Contractors: 2026 Costs & ROI",
+    excerpt:
+      "Contractors miss calls during the working day, not after hours. The eight fields an estimate request must capture, why agents must never quote, and storm surge coverage.",
+    category: "Buyer's Guide",
+    readTime: "14 min read",
+    image: "/images/cc-man-headset.jpg",
+    href: "/blog/answering-service-for-contractors",
+  },
+  {
+    title: "Answering Service Appointment Scheduling (2026 Guide)",
+    excerpt:
+      "The difference between a message and a booking, why real-time two-way calendar sync prevents double-booking, and the reminder sequence that cuts no-shows.",
+    category: "Buyer's Guide",
+    readTime: "13 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/answering-service-appointment-scheduling",
+  },
+  {
     title: "Top 10 BPO Companies in Arizona (2026)",
     excerpt:
       "The top 10 BPO companies serving Arizona, plus Arizona's one-party recording consent rules, the Phoenix contact center corridor, and how to choose.",
