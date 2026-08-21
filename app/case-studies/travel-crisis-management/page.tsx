@@ -50,6 +50,9 @@ const articleSchema = {
       url: "https://contactcenterusa.com/images/logo-v6.png",
     },
   },
+  image: "https://contactcenterusa.com/images/case-study-ecommerce.jpg",
+  isAccessibleForFree: true,
+  inLanguage: "en-US",
   datePublished: "2026-04-01",
   dateModified: "2026-04-01",
   mainEntityOfPage: {

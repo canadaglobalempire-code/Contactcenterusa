@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -28,17 +29,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Nearshore Call Center Outsourcing: Complete Guide for US Businesses",
-            description: "Complete guide to nearshore call center outsourcing for US businesses. Compare nearshore locations, pricing, benefits, and learn why many companies are choosing US-based onshore call centers.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-04",
-            dateModified: "2026-04-14",
-            url: "https://contactcenterusa.com/blog/nearshore-call-center-outsourcing",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/nearshore-call-center-outsourcing",
+              headline: "Nearshore Call Center Outsourcing: Complete Guide for US Businesses",
+              description: "Complete guide to nearshore call center outsourcing for US businesses. Compare nearshore locations, pricing, benefits, and learn why many companies are choosing US-based onshore call centers.",
+              datePublished: "2026-04-04",
+              dateModified: "2026-04-14",
+              image: "https://contactcenterusa.com/images/cc-management.jpg",
+            })),
         }}
       />
       <Content />

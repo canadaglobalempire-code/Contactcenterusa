@@ -446,6 +446,11 @@ export function generateBlogAEOSchema(opts: {
     image,
     url,
     inLanguage: "en-US",
+    isAccessibleForFree: true,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".prose > p:first-of-type"],
+    },
     ...(opts.keywords ? { keywords: opts.keywords.join(", ") } : {}),
   };
 

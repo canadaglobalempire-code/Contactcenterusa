@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -14,16 +15,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "HIPAA-Compliant Call Center Services: Complete 2026 Guide",
-            description: "Everything healthcare leaders need to know about HIPAA-compliant call centers — BAA requirements, safeguards, vendor checklist, cost, and 2026 compliance trends.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-23",
-            url: "https://contactcenterusa.com/blog/hipaa-compliant-call-center-services",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/hipaa-compliant-call-center-services",
+              headline: "HIPAA-Compliant Call Center Services: Complete 2026 Guide",
+              description: "Everything healthcare leaders need to know about HIPAA-compliant call centers — BAA requirements, safeguards, vendor checklist, cost, and 2026 compliance trends.",
+              datePublished: "2026-04-23",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <Content />

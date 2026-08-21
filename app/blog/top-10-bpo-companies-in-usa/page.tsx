@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -29,17 +30,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 15 BPO Companies in the USA (2026 Rankings)",
-            description: "Comprehensive ranking of the best BPO companies in the USA for 2026, evaluated by service quality, scalability, technology, compliance, vertical expertise, and client satisfaction.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-08",
-            dateModified: "2026-04-14",
-            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-in-usa",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-bpo-companies-in-usa",
+              headline: "Top 15 BPO Companies in the USA (2026 Rankings)",
+              description: "Comprehensive ranking of the best BPO companies in the USA for 2026, evaluated by service quality, scalability, technology, compliance, vertical expertise, and client satisfaction.",
+              datePublished: "2026-04-08",
+              dateModified: "2026-04-14",
+              image: "https://contactcenterusa.com/images/cc-management.jpg",
+            })),
         }}
       />
       <BlogAEOSchemas slug="top-10-bpo-companies-in-usa" />

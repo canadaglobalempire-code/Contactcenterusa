@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -64,28 +65,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 BPO Companies in New York (2026 Rankings)",
-            description:
-              "Comprehensive 2026 ranking of the top 10 BPO companies in New York — evaluated on Manhattan, Buffalo, Rochester, and Albany delivery, Wall Street financial services experience, multilingual coverage, and NYS DFS 23 NYCRR Part 500 + SHIELD Act compliance.",
-            image: "https://contactcenterusa.com/images/cc-management.jpg",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-new-york",
-            contentLocation: {
-              "@type": "Place",
-              name: "New York",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "NY",
-                addressCountry: "US",
-              },
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-bpo-companies-new-york",
+              headline: "Top 10 BPO Companies in New York (2026 Rankings)",
+              description: "Comprehensive 2026 ranking of the top 10 BPO companies in New York — evaluated on Manhattan, Buffalo, Rochester, and Albany delivery, Wall Street financial services experience, multilingual coverage, and NYS DFS 23 NYCRR Part 500 + SHIELD Act compliance.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-management.jpg",
+            })),
         }}
       />
       <script

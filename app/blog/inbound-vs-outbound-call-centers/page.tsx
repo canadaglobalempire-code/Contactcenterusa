@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -14,16 +15,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Inbound vs Outbound Call Centers: Which Is Right for You?",
-            description: "Learn the key differences between inbound and outbound call centers, including use cases, KPIs, agent skills, technology requirements, and how to choose the right model for your business goals.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-01",
-            url: "https://contactcenterusa.com/blog/inbound-vs-outbound-call-centers",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/inbound-vs-outbound-call-centers",
+              headline: "Inbound vs Outbound Call Centers: Which Is Right for You?",
+              description: "Learn the key differences between inbound and outbound call centers, including use cases, KPIs, agent skills, technology requirements, and how to choose the right model for your business goals.",
+              datePublished: "2026-04-01",
+              image: "https://contactcenterusa.com/images/hd-agents-pair.jpg",
+            })),
         }}
       />
       <Content />

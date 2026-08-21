@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,18 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "After Hours Answering Service: 2026 Costs & Coverage",
-            description:
-              "How a US-based after hours answering service works, what night and weekend coverage costs per minute and per call, and how to choose a provider that books appointments instead of taking messages.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-08-20",
-            dateModified: "2026-08-20",
-            url: "https://contactcenterusa.com/blog/after-hours-answering-service",
-          }).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/after-hours-answering-service",
+              headline: "After Hours Answering Service: 2026 Costs & Coverage",
+              description: "How a US-based after hours answering service works, what night and weekend coverage costs per minute and per call, and how to choose a provider that books appointments instead of taking messages.",
+              datePublished: "2026-08-20",
+              dateModified: "2026-08-20",
+              image: "https://contactcenterusa.com/images/cc-agent-night.jpg",
+            })).replace(/</g, "\\u003c"),
         }}
       />
       <script

@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -29,18 +30,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 Inbound Call Center Companies in USA (2026)",
-            description:
-              "Comprehensive ranking of the best inbound call center companies in the USA for 2026, evaluated by 24/7 live agent coverage, FCR, CSAT, omnichannel inbound capability, and client satisfaction.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-19",
-            dateModified: "2026-04-19",
-            url: "https://contactcenterusa.com/blog/top-10-inbound-call-center-companies-usa",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-inbound-call-center-companies-usa",
+              headline: "Top 10 Inbound Call Center Companies in USA (2026)",
+              description: "Comprehensive ranking of the best inbound call center companies in the USA for 2026, evaluated by 24/7 live agent coverage, FCR, CSAT, omnichannel inbound capability, and client satisfaction.",
+              datePublished: "2026-04-19",
+              dateModified: "2026-04-19",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <BlogAEOSchemas slug="top-10-inbound-call-center-companies-usa" />

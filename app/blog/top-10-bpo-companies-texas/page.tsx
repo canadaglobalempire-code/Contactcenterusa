@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -64,28 +65,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 BPO Companies in Texas (2026 Rankings)",
-            description:
-              "Comprehensive 2026 ranking of the top 10 BPO companies in Texas — evaluated on Dallas, Houston, Austin, and San Antonio delivery, Spanish-bilingual coverage, vertical depth in energy, healthcare, SaaS, real estate, and insurance, and Texas-specific TCPA + TTSA compliance.",
-            image: "https://contactcenterusa.com/images/cc-team-meeting.jpg",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-texas",
-            contentLocation: {
-              "@type": "Place",
-              name: "Texas",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "TX",
-                addressCountry: "US",
-              },
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-bpo-companies-texas",
+              headline: "Top 10 BPO Companies in Texas (2026 Rankings)",
+              description: "Comprehensive 2026 ranking of the top 10 BPO companies in Texas — evaluated on Dallas, Houston, Austin, and San Antonio delivery, Spanish-bilingual coverage, vertical depth in energy, healthcare, SaaS, real estate, and insurance, and Texas-specific TCPA + TTSA compliance.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-team-meeting.jpg",
+            })),
         }}
       />
       <script

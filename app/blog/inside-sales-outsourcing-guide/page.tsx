@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -26,18 +27,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Inside Sales Outsourcing: Complete Guide for 2026",
-            description:
-              "Comprehensive guide to inside sales outsourcing covering models, pricing, benefits, KPIs, and how to choose the right inside sales outsourcing company.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-07",
-            dateModified: "2026-04-07",
-            url: "https://contactcenterusa.com/blog/inside-sales-outsourcing-guide",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/inside-sales-outsourcing-guide",
+              headline: "Inside Sales Outsourcing: Complete Guide for 2026",
+              description: "Comprehensive guide to inside sales outsourcing covering models, pricing, benefits, KPIs, and how to choose the right inside sales outsourcing company.",
+              datePublished: "2026-04-07",
+              dateModified: "2026-04-07",
+              image: "https://contactcenterusa.com/images/cc-discussion.jpg",
+            })),
         }}
       />
       <Content />

@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,18 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Property Management Answering Service (2026 Guide)",
-            description:
-              "How a US-based property management answering service handles maintenance emergencies, lockouts, leasing calls and Fair Housing compliance, with 2026 pricing and property software integration.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-08-20",
-            dateModified: "2026-08-20",
-            url: "https://contactcenterusa.com/blog/property-management-answering-service",
-          }).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/property-management-answering-service",
+              headline: "Property Management Answering Service (2026 Guide)",
+              description: "How a US-based property management answering service handles maintenance emergencies, lockouts, leasing calls and Fair Housing compliance, with 2026 pricing and property software integration.",
+              datePublished: "2026-08-20",
+              dateModified: "2026-08-20",
+              image: "https://contactcenterusa.com/images/cc-woman-typing.jpg",
+            })).replace(/</g, "\\u003c"),
         }}
       />
       <script

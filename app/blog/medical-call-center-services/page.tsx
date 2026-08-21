@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -28,17 +29,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Medical Call Center Services: Complete Guide for Healthcare Providers",
-            description: "Comprehensive guide to medical call center services for healthcare providers. Learn about HIPAA-compliant healthcare call centers, best practices, outsourcing benefits, technology, and how to choose the right provider.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-09",
-            dateModified: "2026-04-09",
-            url: "https://contactcenterusa.com/blog/medical-call-center-services",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/medical-call-center-services",
+              headline: "Medical Call Center Services: Complete Guide for Healthcare Providers",
+              description: "Comprehensive guide to medical call center services for healthcare providers. Learn about HIPAA-compliant healthcare call centers, best practices, outsourcing benefits, technology, and how to choose the right provider.",
+              datePublished: "2026-04-09",
+              dateModified: "2026-04-09",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <Content />

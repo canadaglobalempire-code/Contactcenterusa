@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -64,18 +65,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 Plumbing Answering Service Companies in USA (2026)",
-            description:
-              "Comprehensive ranking of the best US plumbing answering service companies for 2026, evaluated by emergency triage skill, dispatch software integration, after-hours coverage, bilingual support, and per-job ROI for residential and commercial plumbers.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-08-19",
-            url: "https://contactcenterusa.com/blog/top-10-plumbing-answering-service-companies-usa",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-plumbing-answering-service-companies-usa",
+              headline: "Top 10 Plumbing Answering Service Companies in USA (2026)",
+              description: "Comprehensive ranking of the best US plumbing answering service companies for 2026, evaluated by emergency triage skill, dispatch software integration, after-hours coverage, bilingual support, and per-job ROI for residential and commercial plumbers.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-08-19",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <script

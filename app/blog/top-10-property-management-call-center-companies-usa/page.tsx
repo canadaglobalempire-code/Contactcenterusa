@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -66,18 +67,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 Property Management Call Center Companies in USA (2026)",
-            description:
-              "Comprehensive 2026 ranking of the best property management call center companies in the USA — evaluated on PMS integrations, tenant emergency triage, leasing conversion, bilingual coverage, and after-hours availability.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/top-10-property-management-call-center-companies-usa",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-property-management-call-center-companies-usa",
+              headline: "Top 10 Property Management Call Center Companies in USA (2026)",
+              description: "Comprehensive 2026 ranking of the best property management call center companies in the USA — evaluated on PMS integrations, tenant emergency triage, leasing conversion, bilingual coverage, and after-hours availability.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <script

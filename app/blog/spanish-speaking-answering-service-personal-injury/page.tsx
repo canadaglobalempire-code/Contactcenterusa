@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -65,40 +66,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "Spanish-Speaking Answering Service for Personal Injury Firms: Capture Hispanic Clients 24/7",
-            description:
-              "Deep buyer guide for PI firms: bilingual intake economics, native Spanish vs translated, conflict checks, retainer signing in Spanish, Litify/Clio integration, and ROI per signed case.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/spanish-speaking-answering-service-personal-injury",
-            image: "https://contactcenterusa.com/images/cc-discussion.jpg",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://contactcenterusa.com/blog/spanish-speaking-answering-service-personal-injury",
-            },
-            about: {
-              "@type": "LegalService",
-              name: "Contact Center USA Bilingual Legal Intake",
-              provider: {
-                "@type": "Organization",
-                name: "Contact Center USA",
-                url: "https://contactcenterusa.com",
-              },
-              areaServed: {
-                "@type": "Country",
-                name: "United States",
-              },
-              serviceType:
-                "Spanish-Speaking Personal Injury Answering & Intake Service",
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/spanish-speaking-answering-service-personal-injury",
+              headline: "Spanish-Speaking Answering Service for Personal Injury Firms: Capture Hispanic Clients 24/7",
+              description: "Deep buyer guide for PI firms: bilingual intake economics, native Spanish vs translated, conflict checks, retainer signing in Spanish, Litify/Clio integration, and ROI per signed case.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-discussion.jpg",
+            })),
         }}
       />
       <script

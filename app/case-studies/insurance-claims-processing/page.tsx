@@ -50,6 +50,9 @@ const articleSchema = {
       url: "https://contactcenterusa.com/images/logo-v6.png",
     },
   },
+  image: "https://contactcenterusa.com/images/case-study-financial.jpg",
+  isAccessibleForFree: true,
+  inLanguage: "en-US",
   datePublished: "2026-03-20",
   dateModified: "2026-03-20",
   mainEntityOfPage: {

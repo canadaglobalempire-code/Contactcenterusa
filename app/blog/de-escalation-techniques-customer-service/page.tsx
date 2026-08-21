@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -28,17 +29,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "De-Escalation Techniques for Customer Service: Complete Guide",
-            description: "Master proven de-escalation techniques for customer service. Learn 10 strategies to calm upset customers, de-escalation scripts, training tips, and how to handle difficult situations professionally.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-11",
-            dateModified: "2026-04-11",
-            url: "https://contactcenterusa.com/blog/de-escalation-techniques-customer-service",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/de-escalation-techniques-customer-service",
+              headline: "De-Escalation Techniques for Customer Service: Complete Guide",
+              description: "Master proven de-escalation techniques for customer service. Learn 10 strategies to calm upset customers, de-escalation scripts, training tips, and how to handle difficult situations professionally.",
+              datePublished: "2026-04-11",
+              dateModified: "2026-04-11",
+              image: "https://contactcenterusa.com/images/cc-team-collab.jpg",
+            })),
         }}
       />
       <Content />

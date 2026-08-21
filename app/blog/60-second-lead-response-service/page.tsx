@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -74,27 +75,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "60-Second Lead Response Service: How to Capture Every Sales Lead in Under a Minute",
-            description:
-              "How a 60-second lead response service captures every inbound lead, the MIT 5-minute rule, ROI math, vendor checklist, pricing, and 5–15 day implementation playbook.",
-            image: "https://contactcenterusa.com/images/cc-agent-focus.jpg",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://contactcenterusa.com/blog/60-second-lead-response-service",
-            },
-            url: "https://contactcenterusa.com/blog/60-second-lead-response-service",
-            keywords:
-              "60 second lead response service, 5 minute lead response, speed to lead, fastest lead response service, instant lead response, lead response time, first call advantage",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/60-second-lead-response-service",
+              headline: "60-Second Lead Response Service: How to Capture Every Sales Lead in Under a Minute",
+              description: "How a 60-second lead response service captures every inbound lead, the MIT 5-minute rule, ROI math, vendor checklist, pricing, and 5–15 day implementation playbook.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-agent-focus.jpg",
+            })),
         }}
       />
       <script

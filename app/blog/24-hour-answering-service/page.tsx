@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,18 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "24 Hour Answering Service: How to Verify It's Real",
-            description:
-              "How to test whether a 24/7 answering service is genuinely staffed overnight, what true 24 hour live coverage costs in 2026, and the holiday and SLA clauses that matter.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-08-20",
-            dateModified: "2026-08-20",
-            url: "https://contactcenterusa.com/blog/24-hour-answering-service",
-          }).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/24-hour-answering-service",
+              headline: "24 Hour Answering Service: How to Verify It's Real",
+              description: "How to test whether a 24/7 answering service is genuinely staffed overnight, what true 24 hour live coverage costs in 2026, and the holiday and SLA clauses that matter.",
+              datePublished: "2026-08-20",
+              dateModified: "2026-08-20",
+              image: "https://contactcenterusa.com/images/cc-agent-night.jpg",
+            })).replace(/</g, "\\u003c"),
         }}
       />
       <script

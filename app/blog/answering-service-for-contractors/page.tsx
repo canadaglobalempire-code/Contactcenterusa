@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,18 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Answering Service for Contractors: 2026 Costs & ROI",
-            description:
-              "Why contractors miss inbound calls from the job site, what a US-based contractor answering service costs, and how estimate capture works with JobNimbus, Buildertrend and Jobber.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-08-20",
-            dateModified: "2026-08-20",
-            url: "https://contactcenterusa.com/blog/answering-service-for-contractors",
-          }).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/answering-service-for-contractors",
+              headline: "Answering Service for Contractors: 2026 Costs & ROI",
+              description: "Why contractors miss inbound calls from the job site, what a US-based contractor answering service costs, and how estimate capture works with JobNimbus, Buildertrend and Jobber.",
+              datePublished: "2026-08-20",
+              dateModified: "2026-08-20",
+              image: "https://contactcenterusa.com/images/cc-man-headset.jpg",
+            })).replace(/</g, "\\u003c"),
         }}
       />
       <script

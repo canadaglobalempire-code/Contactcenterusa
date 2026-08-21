@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,19 +64,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "After-Hours Answering Service for HVAC Companies: How to Stop Losing $400+ Jobs After 5pm",
-            description:
-              "How HVAC contractors stop losing $400+ jobs to voicemail after 5pm. Real cost math, ServiceTitan/Housecall Pro/Jobber integrations, triage scripts, pricing.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
-            url: "https://contactcenterusa.com/blog/after-hours-answering-service-hvac-companies",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/after-hours-answering-service-hvac-companies",
+              headline: "After-Hours Answering Service for HVAC Companies: How to Stop Losing $400+ Jobs After 5pm",
+              description: "How HVAC contractors stop losing $400+ jobs to voicemail after 5pm. Real cost math, ServiceTitan/Housecall Pro/Jobber integrations, triage scripts, pricing.",
+              datePublished: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <script

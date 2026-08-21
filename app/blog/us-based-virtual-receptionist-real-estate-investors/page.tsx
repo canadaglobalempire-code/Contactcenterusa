@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,20 +64,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "US-Based Virtual Receptionist for Real Estate Investors: Capture Every Motivated Seller Lead",
-            description:
-              "How REI wholesalers and flippers capture every motivated seller call with a US-based virtual receptionist — pre-qualification script, Podio/InvestorFuse integration, pricing.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/us-based-virtual-receptionist-real-estate-investors",
-            image:
-              "https://contactcenterusa.com/images/cc-discussion.jpg",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/us-based-virtual-receptionist-real-estate-investors",
+              headline: "US-Based Virtual Receptionist for Real Estate Investors: Capture Every Motivated Seller Lead",
+              description: "How REI wholesalers and flippers capture every motivated seller call with a US-based virtual receptionist — pre-qualification script, Podio/InvestorFuse integration, pricing.",
+              datePublished: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-discussion.jpg",
+            })),
         }}
       />
       <script

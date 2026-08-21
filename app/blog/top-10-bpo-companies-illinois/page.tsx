@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -66,27 +67,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 BPO Companies in Illinois (2026 Rankings)",
-            description:
-              "Comprehensive 2026 ranking of the best BPO and call center outsourcing companies serving Illinois — evaluated on BIPA (740 ILCS 14) biometric consent, ICRAA collections licensing, IL-PIPA breach readiness, insurance and healthcare vertical depth, Chicago Central Time alignment, and Spanish + Polish multilingual coverage for Chicago, Naperville, Aurora, Joliet, Rockford, Springfield, and Peoria.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-illinois",
-            contentLocation: {
-              "@type": "Place",
-              name: "Illinois",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "IL",
-                addressCountry: "US",
-              },
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-bpo-companies-illinois",
+              headline: "Top 10 BPO Companies in Illinois (2026 Rankings)",
+              description: "Comprehensive 2026 ranking of the best BPO and call center outsourcing companies serving Illinois — evaluated on BIPA (740 ILCS 14) biometric consent, ICRAA collections licensing, IL-PIPA breach readiness, insurance and healthcare vertical depth, Chicago Central Time alignment, and Spanish + Polish multilingual coverage for Chicago, Naperville, Aurora, Joliet, Rockford, Springfield, and Peoria.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-team-huddle.jpg",
+            })),
         }}
       />
       <script

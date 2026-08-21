@@ -50,6 +50,9 @@ const articleSchema = {
       url: "https://contactcenterusa.com/images/logo-v6.png",
     },
   },
+  image: "https://contactcenterusa.com/images/case-study-technology.jpg",
+  isAccessibleForFree: true,
+  inLanguage: "en-US",
   datePublished: "2026-03-05",
   dateModified: "2026-03-05",
   mainEntityOfPage: {

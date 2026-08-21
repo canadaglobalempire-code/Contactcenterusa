@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -14,16 +15,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Onshore vs Offshore vs Nearshore: Pros, Cons & Costs",
-            description: "Compare onshore, offshore, and nearshore call center outsourcing models side by side. Detailed analysis of costs, quality metrics, CSAT scores, and when to choose each delivery model for your business.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-01",
-            url: "https://contactcenterusa.com/blog/onshore-vs-offshore-vs-nearshore",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/onshore-vs-offshore-vs-nearshore",
+              headline: "Onshore vs Offshore vs Nearshore: Pros, Cons & Costs",
+              description: "Compare onshore, offshore, and nearshore call center outsourcing models side by side. Detailed analysis of costs, quality metrics, CSAT scores, and when to choose each delivery model for your business.",
+              datePublished: "2026-04-01",
+              image: "https://contactcenterusa.com/images/america.jpg",
+            })),
         }}
       />
       <Content />

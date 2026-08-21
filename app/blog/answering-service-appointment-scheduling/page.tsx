@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,18 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Answering Service Appointment Scheduling (2026 Guide)",
-            description:
-              "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-08-20",
-            dateModified: "2026-08-20",
-            url: "https://contactcenterusa.com/blog/answering-service-appointment-scheduling",
-          }).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/answering-service-appointment-scheduling",
+              headline: "Answering Service Appointment Scheduling (2026 Guide)",
+              description: "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking.",
+              datePublished: "2026-08-20",
+              dateModified: "2026-08-20",
+              image: "https://contactcenterusa.com/images/cc-woman-headset.jpg",
+            })).replace(/</g, "\\u003c"),
         }}
       />
       <script

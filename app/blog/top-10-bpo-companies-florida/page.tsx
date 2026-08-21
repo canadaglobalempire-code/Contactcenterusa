@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -66,27 +67,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 BPO Companies in Florida (2026 Rankings)",
-            description:
-              "Comprehensive 2026 ranking of the best BPO and call center outsourcing companies serving Florida — evaluated on FTSA (Florida Telephone Solicitation Act) compliance, FIPA breach-notification readiness, hurricane disaster-recovery infrastructure, premium vertical experience (insurance, tourism, healthcare, fintech, cruise lines), and Spanish bilingual coverage for Miami, Orlando, Tampa, Jacksonville, and Fort Lauderdale.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-florida",
-            contentLocation: {
-              "@type": "Place",
-              name: "Florida",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "FL",
-                addressCountry: "US",
-              },
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-bpo-companies-florida",
+              headline: "Top 10 BPO Companies in Florida (2026 Rankings)",
+              description: "Comprehensive 2026 ranking of the best BPO and call center outsourcing companies serving Florida — evaluated on FTSA (Florida Telephone Solicitation Act) compliance, FIPA breach-notification readiness, hurricane disaster-recovery infrastructure, premium vertical experience (insurance, tourism, healthcare, fintech, cruise lines), and Spanish bilingual coverage for Miami, Orlando, Tampa, Jacksonville, and Fort Lauderdale.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-discussion.jpg",
+            })),
         }}
       />
       <script

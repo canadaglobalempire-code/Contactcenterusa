@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
@@ -66,27 +67,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Top 10 BPO Companies in California (2026 Rankings)",
-            description:
-              "Comprehensive 2026 ranking of the best BPO and call center outsourcing companies serving California — evaluated on CIPA two-party recording compliance, CCPA / CPRA data handling, AB-5 employee classification, premium vertical experience (SaaS, biotech, entertainment, fintech), and Spanish bilingual coverage for Los Angeles, San Francisco, San Diego, San Jose, and Sacramento.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/top-10-bpo-companies-california",
-            contentLocation: {
-              "@type": "Place",
-              name: "California",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "CA",
-                addressCountry: "US",
-              },
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/top-10-bpo-companies-california",
+              headline: "Top 10 BPO Companies in California (2026 Rankings)",
+              description: "Comprehensive 2026 ranking of the best BPO and call center outsourcing companies serving California — evaluated on CIPA two-party recording compliance, CCPA / CPRA data handling, AB-5 employee classification, premium vertical experience (SaaS, biotech, entertainment, fintech), and Spanish bilingual coverage for Los Angeles, San Francisco, San Diego, San Jose, and Sacramento.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-management.jpg",
+            })),
         }}
       />
       <script

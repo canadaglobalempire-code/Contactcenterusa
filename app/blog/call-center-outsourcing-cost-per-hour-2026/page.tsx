@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -14,18 +15,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "Call Center Outsourcing Cost Per Hour in 2026 (Real Pricing by Country)",
-            description:
-              "How much does call center outsourcing cost per hour in 2026? Real rates for US, nearshore, and offshore providers, by service type, seniority, and pricing model.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-23",
-            url: "https://contactcenterusa.com/blog/call-center-outsourcing-cost-per-hour-2026",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/call-center-outsourcing-cost-per-hour-2026",
+              headline: "Call Center Outsourcing Cost Per Hour in 2026 (Real Pricing by Country)",
+              description: "How much does call center outsourcing cost per hour in 2026? Real rates for US, nearshore, and offshore providers, by service type, seniority, and pricing model.",
+              datePublished: "2026-04-23",
+              image: "https://contactcenterusa.com/images/hd-agents-working.jpg",
+            })),
         }}
       />
       <Content />

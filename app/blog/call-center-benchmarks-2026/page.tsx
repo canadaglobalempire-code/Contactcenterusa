@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -14,16 +15,13 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "2026 Call Center Benchmarks: AHT, CSAT, FCR & More by Industry",
-            description: "2026 call center benchmarks for every metric that matters — AHT, CSAT, FCR, NPS, abandon rate, occupancy, attrition — broken down by industry and channel.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-23",
-            url: "https://contactcenterusa.com/blog/call-center-benchmarks-2026",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/call-center-benchmarks-2026",
+              headline: "2026 Call Center Benchmarks: AHT, CSAT, FCR & More by Industry",
+              description: "2026 call center benchmarks for every metric that matters — AHT, CSAT, FCR, NPS, abandon rate, occupancy, attrition — broken down by industry and channel.",
+              datePublished: "2026-04-23",
+              image: "https://contactcenterusa.com/images/cc-agent-focus.jpg",
+            })),
         }}
       />
       <Content />

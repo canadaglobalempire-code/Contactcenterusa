@@ -100,16 +100,16 @@ export function buildAEOBlogPostingSchema(opts: {
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/images/logo-v6.png`,
-        width: 1200,
-        height: 630,
       },
     },
     datePublished: publishDate,
     dateModified: modifyDate,
-    image: opts.image || `${baseUrl}/images/logo-v6.png`,
+    // A logo is a poor Article image and Google may decline the rich result
+    // for one. Fall back to a real editorial photo, never the wordmark.
+    image: opts.image || `${baseUrl}/images/cc-agent-headset.jpg`,
     url: opts.url,
     inLanguage: "en-US",
-    isFamilyFriendly: true,
+    isAccessibleForFree: true,
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector: ["h1", "h2", ".prose > p:first-of-type"],

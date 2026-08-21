@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,18 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "Real Estate Answering Service: Speed-to-Lead in 2026",
-            description:
-              "How a US-based real estate answering service captures portal leads in under five minutes, books showings live, and routes into Follow Up Boss, kvCORE and BoomTown.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-08-20",
-            dateModified: "2026-08-20",
-            url: "https://contactcenterusa.com/blog/real-estate-answering-service",
-          }).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/real-estate-answering-service",
+              headline: "Real Estate Answering Service: Speed-to-Lead in 2026",
+              description: "How a US-based real estate answering service captures portal leads in under five minutes, books showings live, and routes into Follow Up Boss, kvCORE and BoomTown.",
+              datePublished: "2026-08-20",
+              dateModified: "2026-08-20",
+              image: "https://contactcenterusa.com/images/cc-agent-smile.jpg",
+            })).replace(/</g, "\\u003c"),
         }}
       />
       <script

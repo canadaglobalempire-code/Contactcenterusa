@@ -50,8 +50,11 @@ const articleSchema = {
       url: "https://contactcenterusa.com/images/logo-v6.png",
     },
   },
+  image: "https://contactcenterusa.com/images/case-study-healthcare.jpg",
   datePublished: "2026-01-15",
   dateModified: "2026-01-15",
+  isAccessibleForFree: true,
+  inLanguage: "en-US",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": `https://contactcenterusa.com/case-studies/${slug}`,

@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -63,27 +64,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: "HIPAA-Compliant Answering Service for Doctors: BAA, PHI, Triage & Cost (2026 Guide)",
-            description:
-              "Practical 2026 buyer guide to HIPAA-compliant answering services for medical practices: BAA must-haves, PHI handling, nurse triage vs message-only, EHR integration, OCR risk, and real pricing.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-29",
-            dateModified: "2026-04-29",
-            url: "https://contactcenterusa.com/blog/hipaa-compliant-answering-service-doctors",
-            image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": "https://contactcenterusa.com/blog/hipaa-compliant-answering-service-doctors",
-            },
-            about: {
-              "@type": "MedicalBusiness",
-              name: "Medical Practice Answering Service",
-            },
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/hipaa-compliant-answering-service-doctors",
+              headline: "HIPAA-Compliant Answering Service for Doctors: BAA, PHI, Triage & Cost (2026 Guide)",
+              description: "Practical 2026 buyer guide to HIPAA-compliant answering services for medical practices: BAA must-haves, PHI handling, nurse triage vs message-only, EHR integration, OCR risk, and real pricing.",
+              datePublished: "2026-04-29",
+              dateModified: "2026-04-29",
+              image: "https://contactcenterusa.com/images/cc-agent-headset.jpg",
+            })),
         }}
       />
       <script

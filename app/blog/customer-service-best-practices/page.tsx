@@ -1,3 +1,4 @@
+import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 
@@ -26,19 +27,14 @@ export default function Page() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline:
-              "Customer Service Best Practices: 15 Rules for Excellence in 2026",
-            description:
-              "Comprehensive guide to customer service best practices covering 15 golden rules, empathy statements, KPIs, and strategies for delivering exceptional customer care in 2026.",
-            author: { "@type": "Organization", name: "Contact Center USA" },
-            publisher: { "@type": "Organization", name: "Contact Center USA" },
-            datePublished: "2026-04-06",
-            dateModified: "2026-04-06",
-            url: "https://contactcenterusa.com/blog/customer-service-best-practices",
-          }),
+          __html: JSON.stringify(buildAEOBlogPostingSchema({
+              url: "https://contactcenterusa.com/blog/customer-service-best-practices",
+              headline: "Customer Service Best Practices: 15 Rules for Excellence in 2026",
+              description: "Comprehensive guide to customer service best practices covering 15 golden rules, empathy statements, KPIs, and strategies for delivering exceptional customer care in 2026.",
+              datePublished: "2026-04-06",
+              dateModified: "2026-04-06",
+              image: "https://contactcenterusa.com/images/cc-agent-smile.jpg",
+            })),
         }}
       />
       <Content />

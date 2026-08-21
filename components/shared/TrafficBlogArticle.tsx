@@ -39,6 +39,11 @@ function blogPostingSchema(post: TrafficBlogPost) {
     image: `${SITE_URL}${post.image}`,
     url,
     inLanguage: "en-US",
+    isAccessibleForFree: true,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".prose > p:first-of-type"],
+    },
     articleSection: post.category,
     keywords: post.keywords.join(", "),
   };
