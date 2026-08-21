@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, AlertTriangle } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { AnsweringServiceCalculator } from "@/components/shared/AnsweringServiceCalculator";
 
 type Faq = { q: string; a: string };
 
@@ -151,6 +152,8 @@ export default function VirtualReceptionistPricingContent({ faqs }: { faqs: Faq[
               <div className="my-10 overflow-hidden rounded-2xl">
                 <Image src="/images/cc-agent-monitor.jpg" alt="Comparing virtual receptionist plans and overage terms" width={800} height={450} className="w-full object-cover" />
               </div>
+
+              <AnsweringServiceCalculator />
 
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">The Overage Trap</h2>
               <div className="mt-6 rounded-2xl border border-red/30 bg-red/[0.02] p-6">

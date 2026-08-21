@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, AlertTriangle, MapPin } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { AnsweringServiceCalculator } from "@/components/shared/AnsweringServiceCalculator";
 
 type Faq = { q: string; a: string };
 
@@ -165,6 +166,8 @@ export default function AnsweringServiceNearMeContent({ faqs }: { faqs: Faq[] })
                 and Southeast this is a practical question rather than a hypothetical one, and it is worth asking directly: do you
                 operate from more than one location?
               </p>
+
+              <AnsweringServiceCalculator />
 
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Eight Questions That Work on Any Provider</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">

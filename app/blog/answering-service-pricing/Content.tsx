@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, AlertTriangle } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { AnsweringServiceCalculator } from "@/components/shared/AnsweringServiceCalculator";
 
 type Faq = { q: string; a: string };
 
@@ -179,6 +180,8 @@ export default function AnsweringServicePricingContent({ faqs }: { faqs: Faq[] }
                   </tbody>
                 </table>
               </div>
+
+              <AnsweringServiceCalculator />
 
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Cost Per Captured Job</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
