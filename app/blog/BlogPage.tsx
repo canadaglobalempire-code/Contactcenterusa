@@ -5,6 +5,96 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "Answering Service in Chicago: 2026 Buyer's Guide",
+    excerpt:
+      "Illinois all-party recording rules, weather-driven emergency volume, and why Cook, DuPage, Lake and Will are not one territory.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-office-wide.jpg",
+    href: "/blog/answering-service-chicago",
+  },
+  {
+    title: "Answering Service in Los Angeles: 2026 Buyer's Guide",
+    excerpt:
+      "Why an English-only line discards volume here, CCPA deletion obligations, and the travel-time problem that breaks LA scheduling.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-diverse-team.jpg",
+    href: "/blog/answering-service-los-angeles",
+  },
+  {
+    title: "Answering Service in Dallas: 2026 Buyer's Guide",
+    excerpt:
+      "Hail season turns surge capacity into the most valuable clause in the contract. Plus TCPA limits on outbound follow-up.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-team-meeting.jpg",
+    href: "/blog/answering-service-dallas",
+  },
+  {
+    title: "Answering Service in Atlanta: 2026 Buyer's Guide",
+    excerpt:
+      "Sprawl makes travel time the defining constraint, and bilingual coverage is still a competitive opening rather than a necessity.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-team-collab.jpg",
+    href: "/blog/answering-service-atlanta",
+  },
+  {
+    title: "Answering Service in Houston: 2026 Buyer's Guide",
+    excerpt:
+      "Two markets in one metro — residential trades and 24-hour industrial ops — plus hurricane-season continuity.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/answering-service-houston",
+  },
+  {
+    title: "Answering Service in Phoenix: 2026 Buyer's Guide",
+    excerpt:
+      "The clearest HVAC market in the country, and the daylight-saving quirk that books appointments an hour out for half the year.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-agent-night.jpg",
+    href: "/blog/answering-service-phoenix",
+  },
+  {
+    title: "Answering Service in Miami: 2026 Buyer's Guide",
+    excerpt:
+      "A genuinely bilingual market where dialect matters, plus Florida all-party consent and hurricane continuity.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-woman-headset.jpg",
+    href: "/blog/answering-service-miami",
+  },
+  {
+    title: "Answering Service in Tampa: 2026 Buyer's Guide",
+    excerpt:
+      "Storm-cycle roofing demand and a longer average handle time that can make per-minute pricing the wrong choice.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/answering-service-tampa",
+  },
+  {
+    title: "Answering Service in Denver: 2026 Buyer's Guide",
+    excerpt:
+      "Weather-driven demand at both ends of the year, and why mountain addresses need a conditions check before booking.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-team-huddle.jpg",
+    href: "/blog/answering-service-denver",
+  },
+  {
+    title: "Answering Service in San Antonio: 2026 Buyer's Guide",
+    excerpt:
+      "A Spanish-first market where a bilingual night rota is the baseline, and how to test whether a provider actually staffs one.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-man-headset.jpg",
+    href: "/blog/answering-service-san-antonio",
+  },
+  {
     title: "Answering Service for Small Business: 2026 Costs",
     excerpt:
       "What US coverage actually costs, the honest comparison against hiring a receptionist, and the scripting that decides whether callers can tell.",

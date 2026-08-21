@@ -190,6 +190,7 @@ export default function ChicagoPage() {
       population="2.7M"
       businesses="400K+"
       statePage="illinois"
+      answeringPost="answering-service-chicago"
       seoContent={seoContent}
     />
   );

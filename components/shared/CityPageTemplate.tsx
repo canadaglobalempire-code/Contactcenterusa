@@ -38,6 +38,12 @@ interface CityPageTemplateProps {
   seoContent?: SEOPattern[];
   /** Slug of the parent state page, e.g. "arizona". Adds an up-link when present. */
   statePage?: string;
+  /**
+   * Slug of this metro's answering-service guide, e.g. "answering-service-chicago".
+   * City-level answering-service terms carry real commercial demand at KD 4-10,
+   * so the two pages are worth linking in both directions.
+   */
+  answeringPost?: string;
 }
 
 const services = [
@@ -107,7 +113,7 @@ function getFAQs(city: string, state: string) {
 }
 
 export function CityPageTemplate({
-  city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent, statePage,
+  city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent, statePage, answeringPost,
 }: CityPageTemplateProps) {
   const testimonial = testimonials[city];
   const faqs = getFAQs(city, state);
@@ -179,15 +185,25 @@ export function CityPageTemplate({
         },
       ]} />
 
-      {statePage && (
+      {(statePage || answeringPost) && (
         <section className="bg-gray-50 py-5">
-          <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
-            <p className="text-sm text-gray-700">
-              Comparing providers across the state?{" "}
-              <Link href={`/locations/${statePage}`} className="font-semibold text-red hover:underline">
-                See call center and BPO services across {state} &rarr;
-              </Link>
-            </p>
+          <div className="mx-auto max-w-[1536px] px-5 lg:px-8 space-y-2">
+            {statePage && (
+              <p className="text-sm text-gray-700">
+                Comparing providers across the state?{" "}
+                <Link href={`/locations/${statePage}`} className="font-semibold text-red hover:underline">
+                  See call center and BPO services across {state} &rarr;
+                </Link>
+              </p>
+            )}
+            {answeringPost && (
+              <p className="text-sm text-gray-700">
+                Just need the phones covered after hours?{" "}
+                <Link href={`/blog/${answeringPost}`} className="font-semibold text-red hover:underline">
+                  Read the {city} answering service buyer&apos;s guide &rarr;
+                </Link>
+              </p>
+            )}
           </div>
         </section>
       )}
