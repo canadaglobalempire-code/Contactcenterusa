@@ -18,6 +18,21 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    // webp only, and a 30-day variant TTL. Next's default minimumCacheTTL is 4h,
+    // so every optimized variant was being RE-ENCODED several times a day — CPU,
+    // disk churn and inode turnover for artwork that never changes for a given
+    // URL. avif is deliberately absent: it encodes ~5-10x slower on this shared
+    // CPU and doubles the cached variant count.
+    formats: ["image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 30,
+  },
+
+  // Rendered pages and fetch entries go to the on-disk cache ONLY. The
+  // default also keeps a 50MB in-process copy — 50MB of resident memory
+  // per app on a memory-bound plan, thrown away on every OOM recycle.
+  cacheMaxMemorySize: 0,
+
   poweredByHeader: false,
   async headers() {
     return [
