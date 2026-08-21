@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Heart, ShoppingCart, Landmark, Building2, Monitor, ShieldCheck, Plane, Truck, GraduationCap, Wallet, Wrench, Scale, Ticket, Music, PhoneCall, Languages, Home, Building, Receipt, Trophy, Gamepad2, Stethoscope, PawPrint, FileText, UtensilsCrossed, Dumbbell, Sun, Users, HeartHandshake, Package, Sparkles, Car, Network, Flower2 } from "lucide-react";
+import { ArrowRight, Heart, ShoppingCart, Landmark, Building2, Monitor, ShieldCheck, Plane, Truck, GraduationCap, Wallet, Wrench, Scale, Ticket, Music, PhoneCall, Languages, Home, Building, Receipt, Trophy, Gamepad2, Stethoscope, PawPrint, FileText, UtensilsCrossed, Dumbbell, Sun, Users, HeartHandshake, Package, Sparkles, Car, Network, Flower2, PlaneTakeoff, CarFront, Tv, Zap, Landmark as Gov, Pill, Store, RadioTower } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const industries = [
@@ -446,6 +446,110 @@ const industries = [
       "Pre-need enquiry handling",
     ],
   },
+  {
+    icon: PlaneTakeoff,
+    name: "Airlines",
+    href: "/industries/airlines-call-center",
+    color: "bg-sky-100 text-sky-600",
+    hoverColor: "group-hover:bg-sky-600 group-hover:text-white",
+    bullets: [
+      "Booking changes & rebooking",
+      "Irregular operations surge cover",
+      "Baggage claim intake",
+      "Loyalty programme support",
+    ],
+  },
+  {
+    icon: CarFront,
+    name: "Automotive",
+    href: "/industries/automotive-call-center-services",
+    color: "bg-slate-100 text-slate-600",
+    hoverColor: "group-hover:bg-slate-600 group-hover:text-white",
+    bullets: [
+      "Service appointment booking",
+      "Parts & warranty enquiries",
+      "Recall notification campaigns",
+      "Roadside assistance intake",
+    ],
+  },
+  {
+    icon: Tv,
+    name: "Cable & Media",
+    href: "/industries/cable-media-call-center",
+    color: "bg-violet-100 text-violet-600",
+    hoverColor: "group-hover:bg-violet-600 group-hover:text-white",
+    bullets: [
+      "Subscription & billing support",
+      "Outage reporting & triage",
+      "Win-back and retention offers",
+      "Technical setup walkthroughs",
+    ],
+  },
+  {
+    icon: Zap,
+    name: "Energy & Utilities",
+    href: "/industries/energy-utilities-call-center",
+    color: "bg-amber-100 text-amber-600",
+    hoverColor: "group-hover:bg-amber-600 group-hover:text-white",
+    bullets: [
+      "Outage and emergency reporting",
+      "Meter reading & billing queries",
+      "Service start, stop and transfer",
+      "Storm-event surge capacity",
+    ],
+  },
+  {
+    icon: Gov,
+    name: "Government",
+    href: "/industries/government-call-center",
+    color: "bg-indigo-100 text-indigo-600",
+    hoverColor: "group-hover:bg-indigo-600 group-hover:text-white",
+    bullets: [
+      "Citizen enquiry lines",
+      "Programme eligibility screening",
+      "Multilingual public access",
+      "Section 508 accessible support",
+    ],
+  },
+  {
+    icon: Pill,
+    name: "Pharmaceuticals",
+    href: "/industries/pharmaceuticals-call-center",
+    color: "bg-teal-100 text-teal-600",
+    hoverColor: "group-hover:bg-teal-600 group-hover:text-white",
+    bullets: [
+      "Medical information lines",
+      "Adverse event intake & routing",
+      "Patient support programmes",
+      "Pharmacovigilance documentation",
+    ],
+  },
+  {
+    icon: Store,
+    name: "Retail",
+    href: "/industries/retail-call-center-services",
+    color: "bg-orange-100 text-orange-600",
+    hoverColor: "group-hover:bg-orange-600 group-hover:text-white",
+    bullets: [
+      "Order status & store locator",
+      "Returns and exchange handling",
+      "Loyalty and gift card support",
+      "Holiday peak surge staffing",
+    ],
+  },
+  {
+    icon: RadioTower,
+    name: "Telecommunications",
+    href: "/industries/telecommunications-call-center",
+    color: "bg-cyan-100 text-cyan-600",
+    hoverColor: "group-hover:bg-cyan-600 group-hover:text-white",
+    bullets: [
+      "Activation & porting support",
+      "Tier-1 technical troubleshooting",
+      "Plan upgrades and retention",
+      "Billing dispute resolution",
+    ],
+  },
 ];
 
 export default function IndustriesPage() {
@@ -484,7 +588,7 @@ export default function IndustriesPage() {
       <section className="bg-white py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {industries.map((industry, i) => (
+            {industries.map((industry) => (
               <div
                 key={industry.name}
                 className="group flex h-full min-h-[280px] flex-col rounded-2xl border border-gray-100 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-200"

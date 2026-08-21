@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   PhoneIncoming,
   ShoppingBag,
   Headset,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: PhoneIncoming, title: "Live Call Answering", desc: "Every inbound call is answered by a trained, US-based professional within seconds — no voicemail, no IVR mazes, no missed opportunities. Your callers speak to a real person, every time." },

@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Mortgage Call Center Services | Lending BPO & Loan Support",
   description:
-    "US-based mortgage call center services for lenders, brokers, and servicers. Lead speed-to-contact, borrower support, document chase, and servicing calls. Get a quote.",
+    "US-based mortgage call center services for lenders, brokers, and servicers. Lead speed-to-contact, borrower support, document chase, and servicing calls.",
   keywords: [
     "mortgage call center",
     "mortgage call center services",

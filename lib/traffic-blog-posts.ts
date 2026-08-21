@@ -32,7 +32,7 @@ export type TrafficBlogPost = {
 export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   "what-is-a-contact-center": {
     slug: "what-is-a-contact-center",
-    title: "What Is a Contact Center? Definition, Types & How It Works (2026)",
+    title: "What Is a Contact Center? Definition, Types & Uses",
     h1: "What Is a Contact Center? Contact Center vs Call Center, Explained",
     description:
       "What is a contact center? A plain-English guide to contact centers vs call centers, the channels they handle, the main types, and when outsourcing makes sense.",
@@ -141,10 +141,10 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "what-is-bpo-collections": {
     slug: "what-is-bpo-collections",
-    title: "What Is BPO in Collections? First-Party vs Third-Party Debt Collection",
+    title: "What Is BPO in Collections? First vs Third-Party",
     h1: "What Is BPO Collections? First-Party vs Third-Party, Explained",
     description:
-      "What is BPO collections? Learn how outsourced debt collection works, the difference between first-party and third-party collections, FDCPA compliance, pricing, and when to outsource.",
+      "What is BPO collections? Learn how outsourced debt collection works, the difference between first-party and third-party collections, FDCPA compliance.",
     category: "Debt Collection BPO",
     readTime: "10 min read",
     datePublished: "2026-06-26",
@@ -253,10 +253,10 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "cost-to-outsource-customer-service": {
     slug: "cost-to-outsource-customer-service",
-    title: "How Much Does It Cost to Outsource Customer Service? (2026 Pricing)",
+    title: "How Much Does It Cost to Outsource Customer Service?",
     h1: "How Much Does It Cost to Outsource Customer Service in 2026?",
     description:
-      "How much does it cost to outsource customer service? 2026 pricing by model — per hour, per agent, per resolution — for US, nearshore, and offshore support, plus what drives the price.",
+      "How much does it cost to outsource customer service? 2026 pricing by model — per hour, per agent, per resolution — for US, nearshore, and offshore support.",
     category: "Pricing Guide",
     readTime: "10 min read",
     datePublished: "2026-06-26",
@@ -361,10 +361,10 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "dedicated-vs-shared-call-center-agents": {
     slug: "dedicated-vs-shared-call-center-agents",
-    title: "Dedicated vs Shared Call Center Agents: Which Model Fits You?",
+    title: "Dedicated vs Shared Call Center Agents: Which Fits?",
     h1: "Dedicated vs Shared Call Center Agents: Cost, Quality & When to Use Each",
     description:
-      "Dedicated vs shared call center agents compared on cost, quality, and control. Learn when to choose dedicated agents, shared agents, or a blended model — and how each affects pricing.",
+      "Dedicated vs shared call center agents compared on cost, quality, and control. Learn when to choose dedicated agents, shared agents, or a blended model — and.",
     category: "Outsourcing Models",
     readTime: "9 min read",
     datePublished: "2026-06-26",
@@ -467,10 +467,10 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "answering-service-vs-virtual-receptionist-vs-call-center": {
     slug: "answering-service-vs-virtual-receptionist-vs-call-center",
-    title: "Answering Service vs Virtual Receptionist vs Call Center: The Difference",
+    title: "Answering Service vs Virtual Receptionist vs Call Center",
     h1: "Answering Service vs Virtual Receptionist vs Call Center: What's the Difference?",
     description:
-      "Answering service vs virtual receptionist vs call center — what each one does, how they differ, what they cost, and which is right for your business. A plain-English buyer's guide.",
+      "Answering service vs virtual receptionist vs call center — what each one does, how they differ, what they cost, and which is right for your business.",
     category: "Outsourcing Models",
     readTime: "8 min read",
     datePublished: "2026-06-26",
@@ -911,7 +911,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     title: "Home Services Call Center Outsourcing Guide (2026)",
     h1: "Home Services Call Center Outsourcing for HVAC, Plumbing, Roofing, and Contractors",
     description:
-      "Guide to home services call center outsourcing for HVAC, plumbing, electrical, roofing, restoration, emergency dispatch, appointment booking, and after-hours calls.",
+      "Guide to home services call center outsourcing for HVAC, plumbing, electrical, roofing, restoration, emergency dispatch, appointment booking, and after-hours.",
     category: "Home Services",
     readTime: "12 min read",
     datePublished: "2026-06-16",

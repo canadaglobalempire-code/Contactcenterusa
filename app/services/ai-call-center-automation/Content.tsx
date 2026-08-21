@@ -10,12 +10,10 @@ import {
   Clock,
   Database,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Bot, title: "Intelligent Chatbots", desc: "Deploy AI chatbots that understand natural language, resolve common inquiries instantly, and seamlessly escalate complex issues to live US-based agents with full context." },

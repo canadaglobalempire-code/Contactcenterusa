@@ -253,7 +253,7 @@ export default function SolutionsContent() {
       <section className="bg-navy py-16">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
-            {stats.map((stat, i) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="text-center"

@@ -288,7 +288,7 @@ export default function Content() {
           </div>
 
           <div className="mt-12 flex flex-wrap justify-center gap-3">
-            {industries.map((industry, i) => (
+            {industries.map((industry) => (
               <span
                 key={industry}
                 className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-navy shadow-sm transition-all hover:bg-red hover:text-white"

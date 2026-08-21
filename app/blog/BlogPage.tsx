@@ -194,7 +194,7 @@ const blogPosts = [
     href: "/blog/insurance-bpo-companies-texas",
   },
   {
-    title: "Financial Services Call Centers in North Carolina (2026 Guide)",
+    title: "Financial Services Call Centers in North Carolina",
     excerpt:
       "Top 10 providers serving North Carolina financial institutions, plus examination readiness, fraud and dispute handling, and PCI-DSS scope reduction.",
     category: "Financial Services",
@@ -203,7 +203,7 @@ const blogPosts = [
     href: "/blog/financial-services-call-center-north-carolina",
   },
   {
-    title: "What Is a Contact Center? Definition, Types & How It Works (2026)",
+    title: "What Is a Contact Center? Definition, Types & Uses",
     excerpt:
       "A plain-English guide to contact centers vs call centers — the channels they handle, the main types (inbound, outbound, blended, omnichannel), and when outsourcing makes sense.",
     category: "Contact Center Basics",
@@ -212,7 +212,7 @@ const blogPosts = [
     href: "/blog/what-is-a-contact-center",
   },
   {
-    title: "What Is BPO in Collections? First-Party vs Third-Party Debt Collection",
+    title: "What Is BPO in Collections? First vs Third-Party",
     excerpt:
       "How outsourced debt collection works — the difference between first-party and third-party collections, FDCPA compliance, contingency pricing, and when to outsource accounts receivable.",
     category: "Debt Collection BPO",
@@ -221,7 +221,7 @@ const blogPosts = [
     href: "/blog/what-is-bpo-collections",
   },
   {
-    title: "How Much Does It Cost to Outsource Customer Service? (2026 Pricing)",
+    title: "How Much Does It Cost to Outsource Customer Service?",
     excerpt:
       "2026 customer service outsourcing pricing by model — per hour, per agent, per resolution — for US, nearshore, and offshore support, plus what drives the price up or down.",
     category: "Pricing Guide",
@@ -230,7 +230,7 @@ const blogPosts = [
     href: "/blog/cost-to-outsource-customer-service",
   },
   {
-    title: "Dedicated vs Shared Call Center Agents: Which Model Fits You?",
+    title: "Dedicated vs Shared Call Center Agents: Which Fits?",
     excerpt:
       "Dedicated vs shared call center agents compared on cost, quality, and control — when to choose each, the blended model, and how the choice changes your pricing.",
     category: "Outsourcing Models",
@@ -239,7 +239,7 @@ const blogPosts = [
     href: "/blog/dedicated-vs-shared-call-center-agents",
   },
   {
-    title: "Answering Service vs Virtual Receptionist vs Call Center: The Difference",
+    title: "Answering Service vs Virtual Receptionist vs Call Center",
     excerpt:
       "What each model does, how they differ, what they cost, and which is right for your business — a plain-English buyer's guide to picking the right level of phone coverage.",
     category: "Outsourcing Models",
@@ -250,7 +250,7 @@ const blogPosts = [
   {
     title: "Teleperformance vs TTEC: Full 2026 Comparison",
     excerpt:
-      "Teleperformance vs TTEC compared for 2026 — scale, delivery location, pricing, verticals, technology, and contract flexibility. See which BPO fits enterprise vs mid-market, plus a US-based alternative.",
+      "Teleperformance vs TTEC compared for 2026 — scale, delivery location, pricing, verticals, technology, and contract flexibility.",
     category: "Competitor Comparison",
     readTime: "10 min read",
     image: "/images/cc-team-huddle.jpg",
@@ -921,7 +921,7 @@ export default function BlogPage() {
       <section className="bg-white py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map((post, i) => (
+            {blogPosts.map((post) => (
               <div
                 key={post.title}
               >

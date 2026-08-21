@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Content from "./Content";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Answering Service Appointment Scheduling (2026 Guide)",
   description:
-    "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking pricing.",
+    "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking.",
   keywords: [
     "answering service appointment scheduling",
     "appointment scheduling answering service",
@@ -69,7 +68,7 @@ export default function Page() {
             "@type": "BlogPosting",
             headline: "Answering Service Appointment Scheduling (2026 Guide)",
             description:
-              "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking pricing.",
+              "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking.",
             author: { "@type": "Organization", name: "Contact Center USA" },
             publisher: { "@type": "Organization", name: "Contact Center USA" },
             datePublished: "2026-08-20",
@@ -90,21 +89,6 @@ export default function Page() {
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateBreadcrumbSchema([
-              { name: "Home", url: "https://contactcenterusa.com/" },
-              { name: "Blog", url: "https://contactcenterusa.com/blog" },
-              {
-                name: "Answering Service Appointment Scheduling",
-                url: "https://contactcenterusa.com/blog/answering-service-appointment-scheduling",
-              },
-            ])
-          ).replace(/</g, "\\u003c"),
         }}
       />
       <Content faqs={FAQS} />

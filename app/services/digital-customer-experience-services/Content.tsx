@@ -10,13 +10,11 @@ import {
   Share2,
   BookOpen,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Globe, title: "Digital Transformation", desc: "End-to-end strategy and execution to modernize your customer touchpoints, migrate legacy systems, and build seamless digital experiences that meet today's customer expectations across every platform." },

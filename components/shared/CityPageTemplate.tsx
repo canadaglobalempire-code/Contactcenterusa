@@ -10,7 +10,6 @@ import {
   Clock,
   Shield,
   TrendingUp,
-  Headphones,
   ArrowRight,
   Phone,
   PhoneIncoming,
@@ -24,7 +23,6 @@ import {
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
-import { siteConfig } from "@/lib/seo-config";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 

@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   DollarSign,
   CreditCard,
   Receipt,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: CreditCard, title: "Payment Processing", desc: "Secure, PCI-compliant payment handling across phone, online, and IVR channels with real-time transaction verification, tokenization, and fraud screening for every payment." },

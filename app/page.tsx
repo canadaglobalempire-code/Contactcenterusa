@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateOrganizationSchema } from "@/lib/schema";
 import { Hero2 } from "@/components/sections/Hero2";
 import { AwardsCarousel } from "@/components/sections/AwardsCarousel";
 import { AboutSection } from "@/components/sections/AboutSection";
@@ -48,6 +49,16 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      {/* The rated Organization node lives here only. The site-wide layout
+          emits the same @id WITHOUT aggregateRating - see lib/schema.ts. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateOrganizationSchema({ withRating: true })
+          ).replace(/</g, "\\u003c"),
+        }}
+      />
       <Hero2 />
       <AwardsCarousel />
       <AboutSection />

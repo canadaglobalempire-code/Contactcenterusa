@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, CheckCircle, Clock } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 import type { TrafficBlogPost, TrafficBlogSection } from "@/lib/traffic-blog-posts";
 
 const SITE_URL = "https://contactcenterusa.com";
@@ -90,12 +89,6 @@ function BlogTable({ table }: { table: NonNullable<TrafficBlogSection["table"]> 
 }
 
 export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
-  const breadcrumb = generateBreadcrumbSchema([
-    { name: "Home", url: `${SITE_URL}/` },
-    { name: "Blog", url: `${SITE_URL}/blog` },
-    { name: post.h1, url: `${SITE_URL}/blog/${post.slug}` },
-  ]);
-
   return (
     <>
       <script
@@ -105,10 +98,6 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema(post)) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }}
       />
 
       <section className="relative overflow-hidden bg-navy pt-36 pb-20 lg:pt-40 lg:pb-28">

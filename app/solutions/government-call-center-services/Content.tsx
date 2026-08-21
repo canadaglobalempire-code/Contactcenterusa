@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   Landmark,
   Users,
   ClipboardCheck,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: HeadphonesIcon, title: "Citizen Support Hotlines", desc: "Dedicated hotlines staffed by US-based agents trained to assist citizens with inquiries, applications, benefits, and service requests with patience, clarity, and professionalism." },

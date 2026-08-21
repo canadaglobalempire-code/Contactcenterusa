@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo-config";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
 
 const title =
-  "Insurance Claims Processing Automation | Case Study | Contact Center USA";
+  "Insurance Claims Processing | Case Study";
 const description =
   "How a regional insurance carrier cut claims processing time by 60% and improved customer satisfaction by 22 points with specialized call center support.";
 const slug = "insurance-claims-processing";
@@ -59,27 +58,9 @@ const articleSchema = {
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://contactcenterusa.com" },
-  { name: "Case Studies", url: "https://contactcenterusa.com/case-studies" },
-  {
-    name: "Insurance Claims Processing Automation",
-    url: `https://contactcenterusa.com/case-studies/${slug}`,
-  },
-]);
-
 export default function InsuranceClaimsProcessingPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c"
-          ),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

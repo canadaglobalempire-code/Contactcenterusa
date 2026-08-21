@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Content from "./Content";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Answering Service for Contractors: 2026 Costs & ROI",
   description:
-    "Why contractors miss most inbound calls from the job site, what a US-based contractor answering service costs, and how estimate capture works with JobNimbus, Buildertrend and Jobber.",
+    "Why contractors miss most inbound calls from the job site, what a US-based contractor answering service costs, and how estimate capture works with JobNimbus.",
   keywords: [
     "answering service for contractors",
     "contractor answering service",
@@ -90,21 +89,6 @@ export default function Page() {
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateBreadcrumbSchema([
-              { name: "Home", url: "https://contactcenterusa.com/" },
-              { name: "Blog", url: "https://contactcenterusa.com/blog" },
-              {
-                name: "Answering Service for Contractors",
-                url: "https://contactcenterusa.com/blog/answering-service-for-contractors",
-              },
-            ])
-          ).replace(/</g, "\\u003c"),
         }}
       />
       <Content faqs={FAQS} />

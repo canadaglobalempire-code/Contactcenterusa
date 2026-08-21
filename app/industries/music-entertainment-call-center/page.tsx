@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Music & Entertainment Call Center | Fan Support Outsourcing",
   description:
-    "US-based call center for music labels, streaming platforms, artist fan clubs, and merch brands. Fan support, membership servicing, merch and tour support. Get a quote.",
+    "US-based call center for music labels, streaming platforms, artist fan clubs, and merch brands. Fan support, membership servicing, merch and tour support.",
   keywords: [
     "music industry call center",
     "entertainment bpo",

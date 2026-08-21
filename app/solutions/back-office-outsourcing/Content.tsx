@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   FileText,
   Mail,
   ClipboardList,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Database, title: "Data Entry & Processing", desc: "High-volume, high-accuracy data entry outsourcing with multi-layer quality checks that maintain 99.5%+ accuracy rates across every project — from medical records to financial data." },

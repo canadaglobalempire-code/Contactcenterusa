@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo-config";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
 
 const title =
-  "E-Commerce Holiday Support Scaling | Case Study | Contact Center USA";
+  "E-Commerce Holiday Support Scaling | Case Study";
 const description =
   "How a mid-size e-commerce retailer scaled from 50 to 400 agents in 3 weeks for Black Friday, achieving 98.5% CSAT during peak season.";
 const slug = "ecommerce-holiday-scaling";
@@ -59,27 +58,9 @@ const articleSchema = {
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://contactcenterusa.com" },
-  { name: "Case Studies", url: "https://contactcenterusa.com/case-studies" },
-  {
-    name: "E-Commerce Holiday Support Scaling",
-    url: `https://contactcenterusa.com/case-studies/${slug}`,
-  },
-]);
-
 export default function EcommerceHolidayScalingPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c"
-          ),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   Megaphone,
   Target,
   CalendarPlus,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Megaphone, title: "Strategic Cold Calling", desc: "Targeted outbound calling campaigns executed by skilled communicators who engage decision-makers, create genuine interest, and open doors for your sales team — not just dial-for-dollars volume." },

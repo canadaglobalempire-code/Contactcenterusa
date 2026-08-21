@@ -28,7 +28,7 @@ const faqs = [
 export const metadata: Metadata = {
   title: "Teleperformance vs TTEC: Full 2026 Comparison",
   description:
-    "Teleperformance vs TTEC compared for 2026 — scale, delivery location, pricing, verticals, technology, and contract flexibility. See which BPO fits enterprise vs mid-market, plus a US-based alternative.",
+    "Teleperformance vs TTEC for 2026 — scale, delivery location, pricing, verticals and contract flexibility, plus which fits enterprise vs mid-market.",
   alternates: { canonical: "/blog/teleperformance-vs-ttec" },
 };
 

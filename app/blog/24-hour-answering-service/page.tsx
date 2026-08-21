@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Content from "./Content";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "24 Hour Answering Service: How to Verify It's Real",
   description:
-    "Most 24/7 answering services are not truly staffed at 3 AM. How to test a provider before you sign, what genuine 24 hour live coverage costs in 2026, and the holiday clause that matters.",
+    "Most 24/7 answering services are not truly staffed at 3 AM. How to test a provider before you sign, what genuine 24 hour live coverage costs in 2026, and the.",
   keywords: [
     "24 hour answering service",
     "24 7 answering service",
@@ -90,21 +89,6 @@ export default function Page() {
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateBreadcrumbSchema([
-              { name: "Home", url: "https://contactcenterusa.com/" },
-              { name: "Blog", url: "https://contactcenterusa.com/blog" },
-              {
-                name: "24 Hour Answering Service",
-                url: "https://contactcenterusa.com/blog/24-hour-answering-service",
-              },
-            ])
-          ).replace(/</g, "\\u003c"),
         }}
       />
       <Content faqs={FAQS} />

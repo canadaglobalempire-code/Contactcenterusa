@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo-config";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
 
 const title =
-  "SaaS Customer Retention Strategy | Case Study | Contact Center USA";
+  "SaaS Customer Retention Strategy | Case Study";
 const description =
   "How a B2B SaaS company reduced churn by 28% and increased NPS from 32 to 67 with proactive customer success support.";
 const slug = "saas-customer-retention";
@@ -59,27 +58,9 @@ const articleSchema = {
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://contactcenterusa.com" },
-  { name: "Case Studies", url: "https://contactcenterusa.com/case-studies" },
-  {
-    name: "SaaS Customer Retention Strategy",
-    url: `https://contactcenterusa.com/case-studies/${slug}`,
-  },
-]);
-
 export default function SaasCustomerRetentionPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c"
-          ),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

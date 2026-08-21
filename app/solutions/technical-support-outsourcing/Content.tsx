@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   Monitor,
   Wrench,
   Laptop,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Headset, title: "Tier 1-3 Technical Support", desc: "Structured escalation tiers from basic troubleshooting to advanced engineering — ensuring every technical issue reaches the right expert at the right time for fast resolution." },

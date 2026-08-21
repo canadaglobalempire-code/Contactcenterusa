@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Dental Call Center | Dental Answering & Scheduling Service",
   description:
-    "US-based dental call center for practices and DSOs. New patient calls, recall and reactivation, insurance verification, and after-hours emergencies. Get a quote.",
+    "US-based dental call center for practices and DSOs. New patient calls, recall and reactivation, insurance verification, and after-hours emergencies.",
   keywords: [
     "dental call center",
     "dental answering service",

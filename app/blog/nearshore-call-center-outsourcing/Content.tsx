@@ -207,7 +207,7 @@ export default function NearshoreCallCenterContent() {
                 Not all <strong>nearshore call center</strong> destinations are created equal. Each country offers a different mix of cost, talent quality, bilingual capabilities, infrastructure maturity, and political stability. Here are the top five <strong>nearshore outsourcing</strong> locations for US businesses in 2026:
               </p>
 
-              {nearshoreLocations.map((location, i) => (
+              {nearshoreLocations.map((location) => (
                 <div
                   key={location.country}
                   className="mt-8 rounded-2xl border border-gray-200 p-8"

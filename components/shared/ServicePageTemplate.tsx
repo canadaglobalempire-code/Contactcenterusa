@@ -163,7 +163,7 @@ export function ServicePageTemplate({
 
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {benefits.map((item, i) => (
-                  <div className="flex items-center gap-2.5">
+                  <div key={i} className="flex items-center gap-2.5">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                     <span className="text-sm text-gray-600">{item}</span>
                   </div>
@@ -191,7 +191,7 @@ export function ServicePageTemplate({
 
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => (
-              <div className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-red/20 hover:shadow-lg">
+              <div key={i} className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:border-red/20 hover:shadow-lg">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red/10">
                   <CheckCircle className="h-6 w-6 text-red" />
                 </div>

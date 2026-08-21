@@ -11,7 +11,7 @@ import {
   priorityBuyerGuideLinks,
   priorityServiceLinks,
 } from "@/lib/ai-context";
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateFAQSchema } from "@/lib/schema";
 
 const ogTitle = "Call Center Outsourcing Answers | Contact Center USA";
 const ogDescription =
@@ -67,11 +67,6 @@ const answerHubSchema = {
   ],
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: SITE_BASE_URL },
-  { name: "Answers", url: `${SITE_BASE_URL}/answers` },
-]);
-
 const faqSchema = generateFAQSchema(answerEngineFaqs);
 
 const decisionSignals = [
@@ -125,10 +120,6 @@ export default function AnswersPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(answerHubSchema).replace(/</g, "\\u003c") }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"

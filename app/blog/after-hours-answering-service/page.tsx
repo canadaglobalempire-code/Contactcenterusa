@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Content from "./Content";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "After Hours Answering Service: 2026 Costs & Coverage",
   description:
-    "How a US-based after hours answering service works, what 24/7 night and weekend coverage costs per minute and per call, and how to pick a provider that books instead of just taking messages.",
+    "How a US-based after hours answering service works, what 24/7 night and weekend coverage costs per minute and per call, and how to pick a provider that books.",
   keywords: [
     "after hours answering service",
     "after hours phone answering service",
@@ -90,21 +89,6 @@ export default function Page() {
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateBreadcrumbSchema([
-              { name: "Home", url: "https://contactcenterusa.com/" },
-              { name: "Blog", url: "https://contactcenterusa.com/blog" },
-              {
-                name: "After Hours Answering Service",
-                url: "https://contactcenterusa.com/blog/after-hours-answering-service",
-              },
-            ])
-          ).replace(/</g, "\\u003c"),
         }}
       />
       <Content faqs={FAQS} />

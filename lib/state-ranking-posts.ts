@@ -255,7 +255,7 @@ function buildPost(seed: StateSeed): TrafficBlogPost {
     slug,
     title: `Top 10 BPO Companies in ${state} (2026)`,
     h1: `Top 10 BPO Companies in ${state}`,
-    description: `Compare the top 10 BPO companies in ${state} for 2026 — ranked for US-based support, compliance, and CX. Plus ${state} recording-consent rules and how to choose. Free quote.`,
+    description: `The top 10 BPO companies in ${state} for 2026, ranked for US-based support, compliance and CX — plus ${state} call-recording consent rules.`,
     category: "Industry Rankings",
     readTime: "9 min read",
     datePublished: "2026-07-23",

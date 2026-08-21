@@ -10,13 +10,11 @@ import {
   AlertTriangle,
   FileCheck,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Fingerprint, title: "Identity Verification", desc: "Multi-factor authentication and advanced identity proofing that verifies customers in real time using voice biometrics, knowledge-based authentication, and device fingerprinting — without adding friction to the experience." },

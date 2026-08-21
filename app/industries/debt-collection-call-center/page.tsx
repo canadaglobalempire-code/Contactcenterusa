@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Debt Collection Call Center | ARM & Accounts Receivable BPO",
   description:
-    "US-based debt collection call center and accounts receivable management BPO. FDCPA-aware first-party and early-stage recovery, payment arrangements, and skip tracing support.",
+    "US-based debt collection call center and accounts receivable management BPO. FDCPA-aware first-party and early-stage recovery, payment arrangements, and skip.",
   keywords: [
     "debt collection call center",
     "accounts receivable management bpo",

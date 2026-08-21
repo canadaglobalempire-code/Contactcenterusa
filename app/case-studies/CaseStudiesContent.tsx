@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 interface CaseStudy {
@@ -8,6 +7,7 @@ interface CaseStudy {
   excerpt: string;
   metric: string;
   metricLabel: string;
+  href: string;
   image: string;
   color: string;
 }
@@ -15,43 +15,58 @@ interface CaseStudy {
 const caseStudies: CaseStudy[] = [
   {
     industry: "Healthcare",
-    title: "How a Healthcare Provider Reduced Call Wait Times by 65%",
+    title: "Healthcare Revenue Cycle Management: Reducing Claim Denials by 34%",
     excerpt:
-      "A multi-location healthcare provider was struggling with long hold times and missed patient calls. By partnering with Contact Center USA, they deployed HIPAA-compliant agents trained in medical terminology and appointment scheduling, dramatically improving patient access and satisfaction.",
-    metric: "65%",
-    metricLabel: "Reduction in Wait Times",
+      "A mid-size hospital network was losing revenue to denied claims and slow patient billing. HIPAA-compliant agents trained on payer rules and medical terminology cut the denial rate by 34% and accelerated the billing cycle.",
+    metric: "34%",
+    metricLabel: "Fewer Claim Denials",
     image: "/images/case-study-healthcare.jpg",
     color: "bg-emerald-100 text-emerald-700",
+    href: "/case-studies/healthcare-revenue-cycle-management",
   },
   {
-    industry: "Ecommerce",
-    title: "Scaling Customer Support for a $50M Ecommerce Brand",
+    industry: "Insurance",
+    title: "Cutting Claims Processing Time by 60% for a Regional Insurance Carrier",
     excerpt:
-      "A fast-growing ecommerce brand needed to scale customer support during peak seasons without sacrificing quality. Contact Center USA provided flexible, dedicated agents who handled order inquiries, returns, and product questions, helping the brand maintain a 98% customer satisfaction rate.",
-    metric: "98%",
-    metricLabel: "Customer Satisfaction",
-    image: "/images/case-study-ecommerce.jpg",
-    color: "bg-blue-100 text-blue-700",
-  },
-  {
-    industry: "Financial Services",
-    title: "Achieving 99.9% Compliance in Financial Services",
-    excerpt:
-      "A financial services firm required strict PCI DSS and regulatory compliance for every customer interaction. Contact Center USA implemented rigorous compliance protocols, specialized agent training, and real-time quality monitoring to achieve near-perfect compliance rates across all channels.",
-    metric: "99.9%",
-    metricLabel: "Compliance Rate",
+      "A regional carrier needed faster first notice of loss handling without sacrificing accuracy. Specialized claims intake agents cut processing time by 60% and lifted customer satisfaction by 22 points.",
+    metric: "60%",
+    metricLabel: "Faster Claims Processing",
     image: "/images/case-study-financial.jpg",
-    color: "bg-amber-100 text-amber-700",
+    color: "bg-blue-100 text-blue-700",
+    href: "/case-studies/insurance-claims-processing",
   },
   {
-    industry: "Technology",
-    title: "Supporting 100K+ Users for a SaaS Platform",
+    industry: "E-commerce",
+    title: "Scaling from 50 to 400 Agents in 3 Weeks for Black Friday",
     excerpt:
-      "A rapidly growing SaaS platform needed a scalable support solution for their expanding user base. Contact Center USA built a dedicated technical support team that handled tier-1 and tier-2 support tickets, reducing resolution times and improving NPS scores across the board.",
-    metric: "100K+",
-    metricLabel: "Users Supported",
+      "A mid-size retailer needed eight times its normal capacity for peak season with no drop in quality. We scaled from 50 to 400 trained agents in three weeks and held 98.5% CSAT through Black Friday.",
+    metric: "8x",
+    metricLabel: "Peak Season Scale",
+    image: "/images/case-study-ecommerce.jpg",
+    color: "bg-orange-100 text-orange-700",
+    href: "/case-studies/ecommerce-holiday-scaling",
+  },
+  {
+    industry: "SaaS & Technology",
+    title: "Reducing Churn by 28% with Proactive Customer Success Support",
+    excerpt:
+      "A B2B SaaS company was losing accounts before renewal. A proactive customer success programme reduced churn by 28% and moved NPS from 32 to 67 inside two quarters.",
+    metric: "28%",
+    metricLabel: "Churn Reduction",
     image: "/images/case-study-technology.jpg",
-    color: "bg-purple-100 text-purple-700",
+    color: "bg-violet-100 text-violet-700",
+    href: "/case-studies/saas-customer-retention",
+  },
+  {
+    industry: "Travel & Hospitality",
+    title: "Processing 50,000+ Rebookings During a Global Travel Disruption",
+    excerpt:
+      "When a global disruption grounded flights, a travel management company faced an unprecedented rebooking surge. Our team processed over 50,000 rebookings at a 96% resolution rate and a 4-minute average handle time.",
+    metric: "50K+",
+    metricLabel: "Rebookings Handled",
+    image: "/images/case-study-ecommerce.jpg",
+    color: "bg-sky-100 text-sky-700",
+    href: "/case-studies/travel-crisis-management",
   },
 ];
 
@@ -90,12 +105,12 @@ export function CaseStudiesContent() {
       <section className="bg-bg-alt py-20 lg:py-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2">
-            {caseStudies.map((study, index) => (
+            {caseStudies.map((study) => (
               <div
                 key={study.industry}
               >
                 <Link
-                  href="/contact"
+                  href={study.href}
                   className="group block h-full overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-all hover:shadow-lg"
                 >
                   {/* Image */}

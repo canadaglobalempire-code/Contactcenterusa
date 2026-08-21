@@ -10,13 +10,11 @@ import {
   Route,
   PieChart,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Layers, title: "Unified Communications", desc: "A single platform that brings voice, live chat, email, SMS, social media, and video into one agent desktop — eliminating tool-switching and giving agents complete customer context for every interaction." },

@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Franchise Call Center | Central Intake & Territory Routing",
   description:
-    "US-based call center for franchise networks. Central lead intake, territory routing to franchisees, brand-consistent handling, and network-wide reporting. Get a quote.",
+    "US-based call center for franchise networks. Central lead intake, territory routing to franchisees, brand-consistent handling, and network-wide reporting.",
   keywords: [
     "franchise call center",
     "franchise lead routing",

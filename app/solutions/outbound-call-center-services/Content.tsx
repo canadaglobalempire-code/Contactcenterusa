@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   PhoneOutgoing,
   ClipboardList,
   RefreshCw,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: PhoneOutgoing, title: "Strategic Telemarketing", desc: "B2B and B2C telemarketing campaigns built on proven scripts, targeted list segmentation, and skilled communicators who generate genuine interest — not just dial counts." },

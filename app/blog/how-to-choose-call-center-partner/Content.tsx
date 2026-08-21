@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 
 export default function HowToChooseCallCenterPartnerContent() {

@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Staffing & Recruiting Call Center | Candidate Screening BPO",
   description:
-    "US-based call center for staffing agencies and recruiters. Candidate screening, shift filling, redeployment calls, and 24/7 branch after-hours coverage. Get a quote.",
+    "US-based call center for staffing agencies and recruiters. Candidate screening, shift filling, redeployment calls, and 24/7 branch after-hours coverage.",
   keywords: [
     "staffing agency call center",
     "recruiting bpo services",

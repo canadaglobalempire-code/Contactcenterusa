@@ -192,7 +192,7 @@ export function SolutionPageTemplate({
             {features.map((feature, i) => {
               const Icon = feature.icon;
               return (
-                <div className="group rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
+                <div key={i} className="group rounded-2xl border border-gray-100 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red transition-colors group-hover:bg-red group-hover:text-white">
                     <Icon className="h-6 w-6" />
                   </div>
@@ -226,7 +226,7 @@ export function SolutionPageTemplate({
 
               <div className="mt-8 grid grid-cols-1 gap-3">
                 {benefits.map((benefit, i) => (
-                  <div className="flex items-center gap-2.5">
+                  <div key={i} className="flex items-center gap-2.5">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red" />
                     <span className="text-sm text-gray-600">{benefit}</span>
                   </div>

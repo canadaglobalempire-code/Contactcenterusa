@@ -122,7 +122,7 @@ export type SEOPattern =
    Primitives
    ============================================================ */
 
-function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+function FadeIn({ children}: { children: React.ReactNode; delay?: number }) {
   return (
     <div>
       {children}
@@ -190,7 +190,7 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
             {data.stats && (
               <div className="grid grid-cols-1 gap-8 lg:mt-6">
                 {data.stats.map((s, i) => (
-                  <div className="border-l-2 border-red pl-6">
+                  <div key={i} className="border-l-2 border-red pl-6">
                     <div className="text-[44px] font-bold leading-[0.95] tracking-[-0.02em] text-white lg:text-[52px]">
                       {s.stat}
                     </div>
@@ -260,7 +260,7 @@ function ComparisonBlock({ data }: { data: ComparisonPattern }) {
 
             {/* Rows */}
             {data.rows.map((row, i) => (
-              <div className="grid grid-cols-[1fr_1fr_1fr] items-start divide-x divide-gray-200 border-b border-gray-100 last:border-b-0">
+              <div key={i} className="grid grid-cols-[1fr_1fr_1fr] items-start divide-x divide-gray-200 border-b border-gray-100 last:border-b-0">
                 <div className="px-6 py-5 text-[15.5px] font-semibold tracking-tight text-navy">
                   {row.label}
                 </div>
@@ -332,7 +332,7 @@ function FlowBlock({ data }: { data: FlowPattern }) {
             />
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-4">
               {data.steps.map((step, i) => (
-                <div className="relative">
+                <div key={i} className="relative">
                   <div className="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_2px_8px_rgba(15,23,42,0.06)] ring-1 ring-gray-200 lg:mx-0">
                     <span className="text-[14px] font-bold tabular-nums text-navy">
                       {String(i + 1).padStart(2, "0")}
@@ -384,7 +384,7 @@ function FeaturedIndustriesBlock({ data }: { data: FeaturedIndustriesPattern }) 
           {data.items.map((item, i) => {
             const Icon = item.icon ? ICON_MAP[item.icon] : null;
             return (
-              <div className="relative bg-white p-7 lg:p-8">
+              <div key={i} className="relative bg-white p-7 lg:p-8">
                 {Icon && (
                   <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-navy text-white">
                     <Icon className="h-5 w-5" strokeWidth={1.75} />

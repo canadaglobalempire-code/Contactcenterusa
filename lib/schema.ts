@@ -86,7 +86,19 @@ const serviceCatalogItems = [
   },
 ];
 
-export function generateOrganizationSchema() {
+/**
+ * Organization node.
+ *
+ * `withRating` is OFF by default and must stay that way for the site-wide
+ * layout. Google treats self-collected reviews as ineligible for
+ * AggregateRating on Organization, and repeating one identical rating on
+ * every page - including pages that are not about the rated entity - is the
+ * pattern that draws a structured-data manual action. The rating is emitted
+ * from the homepage only, where the page genuinely is about the organization.
+ */
+export function generateOrganizationSchema(
+  { withRating = false }: { withRating?: boolean } = {}
+) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -106,13 +118,17 @@ export function generateOrganizationSchema() {
       maxValue: 1000,
       unitText: "employees",
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "127",
-      bestRating: "5",
-      worstRating: "1",
-    },
+    ...(withRating
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "127",
+            bestRating: "5",
+            worstRating: "1",
+          },
+        }
+      : {}),
     areaServed: [
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "Canada" },

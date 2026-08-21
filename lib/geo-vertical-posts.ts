@@ -655,10 +655,10 @@ export const geoVerticalPosts: Record<string, TrafficBlogPost> = {
 
   "financial-services-call-center-north-carolina": {
     slug: "financial-services-call-center-north-carolina",
-    title: "Financial Services Call Centers in North Carolina (2026 Guide)",
+    title: "Financial Services Call Centers in North Carolina",
     h1: "Financial Services Call Centers in North Carolina",
     description:
-      "How North Carolina financial institutions evaluate call center partners — examination readiness, fraud and dispute handling, PCI-DSS, and Charlotte market context.",
+      "How North Carolina financial institutions evaluate call center partners — examination readiness, fraud and dispute handling, PCI-DSS, and Charlotte market.",
     category: "Financial Services",
     readTime: "9 min read",
     datePublished: "2026-07-23",

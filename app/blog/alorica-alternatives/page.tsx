@@ -38,7 +38,7 @@ const companies = [
 export const metadata: Metadata = {
   title: "7 Alorica Alternatives for US-Based CX (2026)",
   description:
-    "Compare the best Alorica alternatives in 2026 for 100% US-based support, flexible contracts, and mid-market fit. See how 7 outsourcing partners compare on delivery, minimums, and CX quality.",
+    "Compare the best Alorica alternatives in 2026 for 100% US-based support, flexible contracts, and mid-market fit.",
   alternates: { canonical: "/blog/alorica-alternatives" },
 };
 

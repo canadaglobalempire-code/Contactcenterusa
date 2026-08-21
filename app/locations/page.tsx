@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Building2, MapPin, Shield, Users } from "lucide-react";
 import { SITE_BASE_URL } from "@/lib/ai-context";
-import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema";
+import { generateCollectionPageSchema } from "@/lib/schema";
 
 const title = "US Call Center & BPO Service Areas | Contact Center USA";
 const description =
@@ -120,21 +120,12 @@ const locationCollectionSchema = generateCollectionPageSchema({
   ],
 });
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: SITE_BASE_URL },
-  { name: "Locations", url: `${SITE_BASE_URL}/locations` },
-]);
-
 export default function LocationsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(locationCollectionSchema).replace(/</g, "\\u003c") }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema).replace(/</g, "\\u003c") }}
       />
       <section className="bg-navy pt-40 pb-20">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">

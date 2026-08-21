@@ -31,7 +31,7 @@ export function ServicePageWrapper({
           </div>
           <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {howItWorks.map((step, i) => (
-              <div className="relative text-center">
+              <div key={i} className="relative text-center">
                 <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red text-xl font-bold text-white">{step.step}</div>
                 <h3 className="mt-5 text-lg font-bold text-navy">{step.title}</h3>
                 <p className="mt-2 text-sm text-gray-700">{step.desc}</p>
@@ -50,7 +50,7 @@ export function ServicePageWrapper({
           </div>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((ind, i) => (
-              <div>
+              <div key={i}>
                 <Link href={ind.href} className="group block rounded-2xl border border-gray-100 bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl">
                   <h3 className="text-lg font-bold text-navy">{ind.name}</h3>
                   <p className="mt-2 text-sm text-gray-700">{ind.desc}</p>

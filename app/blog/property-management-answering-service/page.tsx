@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Content from "./Content";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Property Management Answering Service (2026 Guide)",
   description:
-    "How a US-based property management answering service handles maintenance emergencies, lockouts, leasing calls and Fair Housing compliance — with 2026 pricing and AppFolio, Buildium and Yardi integration.",
+    "How a US-based property management answering service handles maintenance emergencies, lockouts, leasing calls and Fair Housing compliance — with 2026 pricing.",
   keywords: [
     "property management answering service",
     "answering service for property management companies",
@@ -90,21 +89,6 @@ export default function Page() {
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateBreadcrumbSchema([
-              { name: "Home", url: "https://contactcenterusa.com/" },
-              { name: "Blog", url: "https://contactcenterusa.com/blog" },
-              {
-                name: "Property Management Answering Service",
-                url: "https://contactcenterusa.com/blog/property-management-answering-service",
-              },
-            ])
-          ).replace(/</g, "\\u003c"),
         }}
       />
       <Content faqs={FAQS} />

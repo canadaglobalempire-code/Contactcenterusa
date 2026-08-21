@@ -162,7 +162,7 @@ export default function Content() {
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {coreValues.map((value, i) => (
+            {coreValues.map((value) => (
               <div
                 key={value.title}
                 className="group rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
@@ -201,7 +201,7 @@ export default function Content() {
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {advantages.map((item, i) => (
+            {advantages.map((item) => (
               <div
                 key={item.title}
                 className="group rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"

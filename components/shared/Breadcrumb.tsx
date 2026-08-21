@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 interface BreadcrumbItem {
   label: string;
@@ -14,19 +13,8 @@ interface BreadcrumbProps {
 }
 
 export function Breadcrumb({ items }: BreadcrumbProps) {
-  const schemaItems = items.map((item) => ({
-    name: item.label,
-    url: `https://contactcenterusa.com${item.href}`,
-  }));
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateBreadcrumbSchema(schemaItems)).replace(/</g, "\\u003c"),
-        }}
-      />
       <nav className="bg-gray-50 py-3" aria-label="Breadcrumb">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <ol className="flex items-center gap-1.5 text-sm">

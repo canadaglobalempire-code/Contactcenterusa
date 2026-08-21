@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   Share2,
   MessageCircle,
   Users,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Eye, title: "24/7 Social Monitoring", desc: "Real-time monitoring of brand mentions, hashtags, competitor activity, and industry conversations across Facebook, X, Instagram, LinkedIn, TikTok, and Reddit — so nothing slips through the cracks." },

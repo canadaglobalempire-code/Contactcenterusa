@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Medical Billing & RCM Support | Patient Balance Calls",
   description:
-    "US-based revenue cycle support for providers and billing companies. Patient balance calls, insurance follow-up, denial management, and prior authorization. Get a quote.",
+    "US-based revenue cycle support for providers and billing companies. Patient balance calls, insurance follow-up, denial management, and prior authorization.",
   keywords: [
     "medical billing call center",
     "revenue cycle management outsourcing",

@@ -3,9 +3,9 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
-  title: "Home Services Call Center | HVAC & Plumbing Answering Service",
+  title: "Home Services Call Center | HVAC & Plumbing",
   description:
-    "US-based home services call center for HVAC, plumbing, electrical, and roofing contractors. 24/7 answering, emergency dispatch, and booked-job capture. Get a quote.",
+    "US-based home services call center for HVAC, plumbing, electrical, and roofing contractors. 24/7 answering, emergency dispatch, and booked-job capture.",
   keywords: [
     "home services call center",
     "hvac answering service",

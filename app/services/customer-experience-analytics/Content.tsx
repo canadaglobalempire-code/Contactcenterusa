@@ -10,12 +10,10 @@ import {
   Gauge,
   TrendingUp,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: LineChart, title: "Customer Journey Mapping", desc: "Visualize and analyze every touchpoint in the customer journey — from first contact to resolution — to identify friction points, drop-off moments, and opportunities to improve satisfaction scores." },

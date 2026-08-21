@@ -10,12 +10,10 @@ import {
   TrendingUp,
   BarChart3,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Target, title: "Lead Generation", desc: "Multi-channel prospecting strategies that identify and qualify high-intent leads using data-driven targeting, building a robust pipeline for your sales team to close faster and more consistently." },

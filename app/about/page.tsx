@@ -19,7 +19,6 @@ import {
   Award,
   Lock,
   BadgeCheck,
-  CheckCircle2,
 } from "lucide-react";
 import { pageMeta } from "@/lib/seo-config";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
@@ -277,7 +276,11 @@ export default function AboutPage() {
                 Today, Contact Center USA holds the industry&apos;s most demanding certifications: we are SOC 2 Type II certified, fully HIPAA compliant, PCI DSS Level 1 certified, and ISO 27001 certified. These aren&apos;t just badges on our website — they represent a culture of compliance and security that permeates every level of our organization, from our onboarding processes to our daily operations.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                We serve over 300 active client accounts across healthcare, insurance, banking, e-commerce, retail, SaaS, travel, and automotive industries. Our agents undergo rigorous training programs — typically four weeks or more — before they take their first live call. We develop custom scripts, brand voice guidelines, and product knowledge bases for every client, ensuring that when a customer calls your company, they feel like they&apos;re talking to your company.
+                We serve over 300 active client accounts across our{" "}
+                <Link href="/about/industries" className="font-semibold text-red hover:text-red-dark">
+                  full range of industry sectors
+                </Link>{" "}
+                &mdash; healthcare, insurance, banking, e-commerce, retail, SaaS, travel, and automotive among them. Our agents undergo rigorous training programs — typically four weeks or more — before they take their first live call. We develop custom scripts, brand voice guidelines, and product knowledge bases for every client, ensuring that when a customer calls your company, they feel like they&apos;re talking to your company.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
                 Explore our{" "}

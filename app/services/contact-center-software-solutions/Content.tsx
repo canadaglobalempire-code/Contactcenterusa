@@ -10,12 +10,10 @@ import {
   Shield,
   BarChart3,
   Star,
-  Phone,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Cloud, title: "Cloud-Based Platform", desc: "Fully hosted infrastructure that scales on demand, eliminates hardware costs, and provides 99.99% uptime with redundant data centers across the United States. No servers to manage, no updates to install." },

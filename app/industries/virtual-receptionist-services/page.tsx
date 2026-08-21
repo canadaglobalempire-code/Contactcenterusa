@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "US-Based Virtual Receptionist Services | Live Call Answering",
   description:
-    "Live US-based virtual receptionist services for small businesses and professional firms. Every call answered, appointments booked, calls screened and routed. Get a quote.",
+    "Live US-based virtual receptionist services for small businesses and professional firms. Every call answered, appointments booked, calls screened and routed.",
   keywords: [
     "virtual receptionist services",
     "virtual receptionist companies",

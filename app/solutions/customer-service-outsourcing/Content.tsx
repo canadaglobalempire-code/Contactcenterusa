@@ -4,7 +4,6 @@ import {
   ArrowRight,
   CheckCircle,
   Star,
-  Phone,
   Headphones,
   MessageSquare,
   UserCheck,
@@ -16,7 +15,6 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
-import { siteConfig } from "@/lib/seo-config";
 
 const features = [
   { icon: Headphones, title: "Inbound Customer Support", desc: "Professionally trained US-based agents answering every call with empathy, deep product knowledge, and a commitment to resolving issues on the first contact — no transfers, no runaround." },

@@ -211,7 +211,7 @@ export default function WhyUsPage() {
           </div>
 
           <div className="mt-16 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
-            {values.map((value, i) => (
+            {values.map((value) => (
               <div
                 key={value.title}
                 className="group rounded-2xl bg-white/5 p-6 text-center backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
@@ -283,7 +283,7 @@ export default function WhyUsPage() {
       <section className="bg-gray-50 py-20">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
-            {stats.map((stat, i) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="text-center"

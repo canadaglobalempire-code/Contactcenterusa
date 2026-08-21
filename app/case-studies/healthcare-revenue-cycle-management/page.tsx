@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo-config";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
 
 const title =
-  "Healthcare Revenue Cycle Management | Case Study | Contact Center USA";
+  "Healthcare Revenue Cycle Management | Case Study";
 const description =
   "How a mid-size hospital network reduced claim denial rates by 34% and accelerated patient billing with our HIPAA-compliant call center solution.";
 const slug = "healthcare-revenue-cycle-management";
@@ -59,27 +58,9 @@ const articleSchema = {
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://contactcenterusa.com" },
-  { name: "Case Studies", url: "https://contactcenterusa.com/case-studies" },
-  {
-    name: "Healthcare Revenue Cycle Management",
-    url: `https://contactcenterusa.com/case-studies/${slug}`,
-  },
-]);
-
 export default function HealthcareRevenueCyclePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c"
-          ),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

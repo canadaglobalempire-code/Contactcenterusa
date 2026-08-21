@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo-config";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
 
 const title =
-  "Travel Crisis Management & Support | Case Study | Contact Center USA";
+  "Travel Crisis Management & Support | Case Study";
 const description =
   "How a travel management company handled 50,000+ rebookings during a global disruption with 96% resolution rate and 4-minute average handle time.";
 const slug = "travel-crisis-management";
@@ -59,27 +58,9 @@ const articleSchema = {
   },
 };
 
-const breadcrumbSchema = generateBreadcrumbSchema([
-  { name: "Home", url: "https://contactcenterusa.com" },
-  { name: "Case Studies", url: "https://contactcenterusa.com/case-studies" },
-  {
-    name: "Travel Crisis Management & Support",
-    url: `https://contactcenterusa.com/case-studies/${slug}`,
-  },
-]);
-
 export default function TravelCrisisManagementPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c"
-          ),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

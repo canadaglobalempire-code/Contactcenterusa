@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { AutoBreadcrumbSchema } from "@/components/shared/AutoBreadcrumbSchema";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { MobileStickyCTA } from "@/components/shared/MobileStickyCTA";
 import {
   generateOrganizationSchema,
-  generateServiceCatalogSchema,
   generateWebSiteSchema,
 } from "@/lib/schema";
 
@@ -130,12 +130,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             __html: JSON.stringify(generateWebSiteSchema()).replace(/</g, "\\u003c"),
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateServiceCatalogSchema()).replace(/</g, "\\u003c"),
-          }}
-        />
+        <AutoBreadcrumbSchema />
         <Navbar />
         <main className="flex-1 pb-[72px] lg:pb-0">{children}</main>
         <Footer />

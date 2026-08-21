@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Solar & Home Improvement Call Center | Appointment Setting",
   description:
-    "US-based call center for solar, roofing, windows, and remodeling companies. Lead qualification, in-home appointment setting, and install coordination. Get a quote.",
+    "US-based call center for solar, roofing, windows, and remodeling companies. Lead qualification, in-home appointment setting, and install coordination.",
   keywords: [
     "solar call center",
     "solar appointment setting",

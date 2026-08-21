@@ -5,7 +5,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 export const metadata: Metadata = {
   title: "Gaming & Esports Player Support | Game Studio BPO",
   description:
-    "US-based player support for game studios and esports platforms. Launch-day surge, account recovery, purchase disputes, and trust & safety moderation. Get a quote.",
+    "US-based player support for game studios and esports platforms. Launch-day surge, account recovery, purchase disputes, and trust & safety moderation.",
   keywords: [
     "gaming player support outsourcing",
     "game studio customer support",

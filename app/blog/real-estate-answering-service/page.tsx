@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Content from "./Content";
-import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Real Estate Answering Service: Speed-to-Lead in 2026",
   description:
-    "How a US-based real estate answering service captures Zillow and portal leads in under five minutes, books showings live, and routes to Follow Up Boss, kvCORE and BoomTown — with 2026 pricing.",
+    "How a US-based real estate answering service captures Zillow and portal leads in under five minutes, books showings live, and routes to Follow Up Boss, kvCORE.",
   keywords: [
     "real estate answering service",
     "answering service for realtors",
@@ -90,21 +89,6 @@ export default function Page() {
               acceptedAnswer: { "@type": "Answer", text: f.a },
             })),
           }).replace(/</g, "\\u003c"),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateBreadcrumbSchema([
-              { name: "Home", url: "https://contactcenterusa.com/" },
-              { name: "Blog", url: "https://contactcenterusa.com/blog" },
-              {
-                name: "Real Estate Answering Service",
-                url: "https://contactcenterusa.com/blog/real-estate-answering-service",
-              },
-            ])
-          ).replace(/</g, "\\u003c"),
         }}
       />
       <Content faqs={FAQS} />
