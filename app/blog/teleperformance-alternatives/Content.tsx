@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
+import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
 
 export default function Content() {
   return (
@@ -140,6 +141,9 @@ export default function Content() {
                   serviceHref="/solutions/customer-service-outsourcing"
                   serviceLabel="Review CX outsourcing"
                 />
+
+                <ProviderFitSelector />
+
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">How to Pick the Right Teleperformance Alternative</h2>
                 <p>Start with 3 questions:</p>

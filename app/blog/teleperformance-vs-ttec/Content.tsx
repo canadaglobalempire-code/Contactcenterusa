@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
+import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
 
 export default function Content() {
   return (
@@ -83,6 +84,9 @@ export default function Content() {
                 <p>
                   Teleperformance is roughly eight times TTEC&apos;s headcount. If your program needs thousands of agents across many languages and time zones, Teleperformance&apos;s footprint is unmatched. TTEC delivers globally too, but its center of gravity is digital CX and a stronger US onshore presence. For buyers who specifically want onshore-only US delivery, neither is purpose-built — that&apos;s where a US-based specialist comes in.
                 </p>
+
+                <ProviderFitSelector />
+
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Pricing</h2>
                 <p>

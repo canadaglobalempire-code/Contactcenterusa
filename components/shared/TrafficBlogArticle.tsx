@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, CheckCircle, Clock } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
+import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
 import type { TrafficBlogPost, TrafficBlogSection } from "@/lib/traffic-blog-posts";
 
 const SITE_URL = "https://contactcenterusa.com";
@@ -175,8 +176,9 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
               </p>
             </div>
 
-            {post.sections.map((section) => (
+            {post.sections.map((section, sectionIndex) => (
               <section key={section.heading}>
+                {post.showFitSelector && sectionIndex === 2 && <ProviderFitSelector />}
                 <h2>{section.heading}</h2>
                 {section.paragraphs?.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>

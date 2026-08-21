@@ -27,6 +27,13 @@ export type TrafficBlogPost = {
   related: { label: string; href: string }[];
   ctaLocation: string;
   leadOffer: string;
+  /**
+   * Renders the interactive fit selector mid-article. Set on comparison posts,
+   * which rank on page one but convert almost nothing because an AI Overview
+   * can summarise a comparison inline — a decision run against the reader's own
+   * situation is the part it cannot reproduce.
+   */
+  showFitSelector?: boolean;
 };
 
 export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
@@ -464,6 +471,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     ],
     ctaLocation: "dedicated_vs_shared_agents_blog_cta",
     leadOffer: "Call center staffing quote",
+    showFitSelector: true,
   },
   "answering-service-vs-virtual-receptionist-vs-call-center": {
     slug: "answering-service-vs-virtual-receptionist-vs-call-center",
@@ -564,6 +572,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     ],
     ctaLocation: "answering_vs_receptionist_vs_callcenter_blog_cta",
     leadOffer: "Answering and reception quote",
+    showFitSelector: true,
   },
   "us-based-answering-service": {
     slug: "us-based-answering-service",

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
 
 export default function OnshoreVsOffshoreVsNearshoreContent() {
   return (
@@ -107,6 +108,8 @@ export default function OnshoreVsOffshoreVsNearshoreContent() {
                 </p>
 
                 {/* H2: What is Nearshore */}
+                <ProviderFitSelector />
+
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">
                   What Is Nearshore Call Center Outsourcing?
                 </h2>

@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, Calendar, ArrowRight } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { InlineLeadCTA } from "@/components/shared/InlineLeadCTA";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
+import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
 
 export default function Content() {
   return (
@@ -143,6 +144,9 @@ export default function Content() {
                   <li><strong>PTO + sick coverage.</strong> To maintain 20 working agents, you need ~22 on payroll.</li>
                   <li><strong>Management bandwidth.</strong> Your COO spending 10 hours/week on call center ops is $25,000+ of opportunity cost annually.</li>
                 </ul>
+
+                <ProviderFitSelector />
+
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">When In-House Actually Makes Sense</h2>
                 <p>
