@@ -302,6 +302,7 @@ function buildPost(seed: CitySeed): TrafficBlogPost {
   const consent = seed.allPartyConsent ? "all-party" : "one-party";
 
   const related: { label: string; href: string }[] = [
+    { label: "Answering Service Near Me", href: "/blog/answering-service-near-me" },
     { label: "Answering Service Pricing", href: "/blog/answering-service-pricing" },
     { label: "After Hours Answering Service", href: "/blog/after-hours-answering-service" },
     { label: "24 Hour Answering Service", href: "/blog/24-hour-answering-service" },

@@ -5,6 +5,15 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "Answering Service Near Me: Does Location Matter?",
+    excerpt:
+      "The four things being local genuinely buys you, why the map pack tells you less than it seems, and the one test that works on any provider.",
+    category: "Buyer's Guide",
+    readTime: "12 min read",
+    image: "/images/america.jpg",
+    href: "/blog/answering-service-near-me",
+  },
+  {
     title: "Answering Service in Chicago: 2026 Buyer's Guide",
     excerpt:
       "Illinois all-party recording rules, weather-driven emergency volume, and why Cook, DuPage, Lake and Will are not one territory.",
