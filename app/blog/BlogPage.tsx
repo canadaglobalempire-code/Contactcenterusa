@@ -5,6 +5,60 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "Answering Service for Small Business: 2026 Costs",
+    excerpt:
+      "What US coverage actually costs, the honest comparison against hiring a receptionist, and the scripting that decides whether callers can tell.",
+    category: "Buyer's Guide",
+    readTime: "14 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/answering-service-for-small-business",
+  },
+  {
+    title: "Answering Service Pricing: What It Really Costs",
+    excerpt:
+      "The four pricing models, real 2026 rates, the seven fees that inflate a quote, and why the billing increment can swing an invoice 40% at the same headline rate.",
+    category: "Pricing Guide",
+    readTime: "14 min read",
+    image: "/images/cc-agent-writing.jpg",
+    href: "/blog/answering-service-pricing",
+  },
+  {
+    title: "Bilingual Answering Service: Native vs Translated",
+    excerpt:
+      "Why a Spanish menu option is not bilingual coverage, what fluent staffing costs, and the one Saturday-evening test that settles which you are being sold.",
+    category: "Multilingual CX",
+    readTime: "13 min read",
+    image: "/images/cc-diverse-team.jpg",
+    href: "/blog/bilingual-answering-service",
+  },
+  {
+    title: "Medical Office Answering Service (2026 Guide)",
+    excerpt:
+      "Front-desk overflow versus on-call paging, the line between administrative and clinical triage, HIPAA obligations, and insurance verification at booking.",
+    category: "Healthcare",
+    readTime: "15 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/medical-office-answering-service",
+  },
+  {
+    title: "Lawyer Answering Service: Intake, Conflicts, UPL",
+    excerpt:
+      "How firms run 24/7 intake without crossing into legal advice, where the conflict screen belongs, and what a complete matter record contains.",
+    category: "Legal Intake",
+    readTime: "15 min read",
+    image: "/images/cc-man-headset.jpg",
+    href: "/blog/lawyer-answering-service",
+  },
+  {
+    title: "Dental Answering Service: New Patients & Emergencies",
+    excerpt:
+      "Why the highest-value call arrives at the busiest moment, dentist-written emergency tiers, benefit verification, and why recall pays back fastest.",
+    category: "Healthcare",
+    readTime: "13 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/dental-answering-service",
+  },
+  {
     title: "After Hours Answering Service: 2026 Costs & Coverage",
     excerpt:
       "What US after-hours coverage costs across all four pricing models, how evening, overnight and 24/7 packages differ, and how a good provider triages a 2 AM call.",

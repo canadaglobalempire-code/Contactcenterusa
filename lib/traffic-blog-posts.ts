@@ -364,7 +364,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     title: "Dedicated vs Shared Call Center Agents: Which Fits?",
     h1: "Dedicated vs Shared Call Center Agents: Cost, Quality & When to Use Each",
     description:
-      "Dedicated vs shared call center agents compared on cost, quality, and control. Learn when to choose dedicated agents, shared agents, or a blended model — and.",
+      "Dedicated vs shared call center agents compared on cost, quality, and control. Learn when to choose dedicated agents, shared agents, or a blended model.",
     category: "Outsourcing Models",
     readTime: "9 min read",
     datePublished: "2026-06-26",
