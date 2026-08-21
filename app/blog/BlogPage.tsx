@@ -5,6 +5,51 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "Virtual Receptionist Pricing: 2026 Cost Breakdown",
+    excerpt:
+      "Real plan tiers, why overage runs 2-3x the in-tier rate, and the honest test for whether a cheaper answering service already solves your problem.",
+    category: "Pricing Guide",
+    readTime: "12 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/virtual-receptionist-pricing",
+  },
+  {
+    title: "Automated Answering Service: When AI Works",
+    excerpt:
+      "Where automation genuinely beats a live agent, where it quietly loses you the job, and the metric that hides the damage behind a 100% answer rate.",
+    category: "AI & Automation",
+    readTime: "12 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/automated-answering-service",
+  },
+  {
+    title: "Answering Service in Las Vegas: 2026 Buyer's Guide",
+    excerpt:
+      "A genuinely 24-hour metro, short-term rental call patterns, and Nevada's all-party phone recording rule that catches national providers out.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-agent-night.jpg",
+    href: "/blog/answering-service-las-vegas",
+  },
+  {
+    title: "Answering Service in San Diego: 2026 Buyer's Guide",
+    excerpt:
+      "Border-adjacent bilingual demand, coast-to-inland drive times, and scripting for a large active-duty and veteran caller base.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-woman-headset.jpg",
+    href: "/blog/answering-service-san-diego",
+  },
+  {
+    title: "Answering Service in Portland: 2026 Buyer's Guide",
+    excerpt:
+      "An older housing stock changes the call mix, sustained rain replaces freeze spikes, and Oregon's recording rule is stricter than neighbouring states.",
+    category: "Buyer's Guide",
+    readTime: "9 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/answering-service-portland",
+  },
+  {
     title: "Answering Service Near Me: Does Location Matter?",
     excerpt:
       "The four things being local genuinely buys you, why the map pack tells you less than it seems, and the one test that works on any provider.",

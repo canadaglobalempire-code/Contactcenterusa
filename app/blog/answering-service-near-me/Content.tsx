@@ -39,6 +39,9 @@ const cities = [
   { city: "Tampa", slug: "tampa", note: "Longer handle times" },
   { city: "Denver", slug: "denver", note: "Mountain access checks" },
   { city: "San Antonio", slug: "san-antonio", note: "Spanish-first night rota" },
+  { city: "Las Vegas", slug: "las-vegas", note: "24-hour metro, all-party consent" },
+  { city: "San Diego", slug: "san-diego", note: "Bilingual demand, drive times" },
+  { city: "Portland", slug: "portland", note: "Older housing stock, Oregon rules" },
 ];
 
 const askAnyone = [

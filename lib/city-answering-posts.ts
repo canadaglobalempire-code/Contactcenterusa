@@ -286,6 +286,78 @@ const SEEDS: CitySeed[] = [
     statePage: "/locations/texas",
     volume: 70,
   },
+  {
+    slug: "answering-service-las-vegas",
+    city: "Las Vegas",
+    state: "Nevada",
+    stateAbbr: "NV",
+    allPartyConsent: true,
+    timezone: "Pacific",
+    industries:
+      "hospitality and short-term rentals, HVAC and pool service, medical and med-spa practices, legal intake, and a large 24-hour service economy",
+    localContext: [
+      "Las Vegas runs on a genuinely 24-hour clock in a way almost no other US metro does. A call at 4 AM here is not an outlier to be triaged apologetically — it is a shift change, a guest issue, or a contractor starting early to beat the heat.",
+      "Short-term rental management is also unusually large, which produces a distinct call type: lockouts, unit issues and guest complaints that need an answer immediately because a review is being written in real time.",
+    ],
+    wrinkle: {
+      heading: "Nevada requires all-party consent for phone calls",
+      body: [
+        "Nevada is an outlier worth knowing: state law has been read to require the consent of all parties to record a telephone conversation, even though in-person recording follows a one-party rule. For an answering service that means a recorded-line disclosure at the top of every call.",
+        "Ask any provider whether they hold a Nevada-specific script. A vendor applying a blanket one-party assumption because Nevada is 'mostly one-party' has misread the distinction that actually applies to phones.",
+      ],
+    },
+    image: "/images/cc-agent-night.jpg",
+    statePage: "/locations/nevada",
+    volume: 210,
+  },
+  {
+    slug: "answering-service-san-diego",
+    city: "San Diego",
+    state: "California",
+    stateAbbr: "CA",
+    allPartyConsent: true,
+    timezone: "Pacific",
+    industries:
+      "home services, biotech and life sciences, military-adjacent healthcare, property management, hospitality, and cross-border business with Tijuana",
+    localContext: [
+      "San Diego's proximity to the border makes bilingual coverage a baseline requirement rather than a regional nicety, and a meaningful share of inbound service calls are Spanish-first at every hour.",
+      "The metro also stretches from the coast to inland valleys with very different drive times, so a booking system that measures straight-line distance rather than actual travel will schedule a technician from La Jolla to El Cajon and lose the afternoon.",
+    ],
+    wrinkle: {
+      heading: "California all-party consent, plus a large military population",
+      body: [
+        "California's all-party consent rule applies, so a recorded-line disclosure opens every call and your provider needs a documented path for callers who decline.",
+        "The local wrinkle is scheduling. A large active-duty and veteran population means callers on deployment cycles, irregular shifts and TRICARE coverage questions. Scripts that assume a standard nine-to-five caller will misfire here more often than elsewhere.",
+      ],
+    },
+    image: "/images/cc-woman-headset.jpg",
+    cityPage: "/call-center-services-san-diego",
+    statePage: "/locations/california",
+    volume: 110,
+  },
+  {
+    slug: "answering-service-portland",
+    city: "Portland",
+    state: "Oregon",
+    stateAbbr: "OR",
+    allPartyConsent: true,
+    timezone: "Pacific",
+    industries:
+      "home services and HVAC, healthcare and dental practices, trades serving an older housing stock, property management, and outdoor and recreation businesses",
+    localContext: [
+      "Portland's housing stock is old by West Coast standards, which changes the call mix. Plumbing, electrical and roofing calls here more often involve original fixtures, knob-and-tube wiring or moss-damaged roofs, and callers frequently describe symptoms rather than systems.",
+      "Winter demand is driven by sustained rain rather than freeze events, so the emergency pattern is water intrusion spread across months rather than a burst-pipe spike over a weekend. Coverage is worth having continuously rather than seasonally.",
+    ],
+    wrinkle: {
+      heading: "Oregon's recording rule is unusual for in-person conversations",
+      body: [
+        "Oregon requires all participants to consent to recording a telephone conversation, so the disclosure is mandatory. Oregon also has an unusual in-person rule requiring that everyone be specifically informed a recording is being made.",
+        "For an answering service the practical consequence is simple — every call opens with the disclosure — but it is worth confirming your provider treats Oregon as all-party rather than lumping it in with neighbouring Washington, which follows the same principle, or with Idaho, which does not.",
+      ],
+    },
+    image: "/images/cc-agent-focus.jpg",
+    volume: 90,
+  },
 ];
 
 /* ------------------------------------------------------------------ */
