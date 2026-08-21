@@ -248,6 +248,8 @@ export default function AnsweringServiceForSmallBusinessContent({ faqs }: { faqs
                       { title: "After Hours Answering Service", href: "/blog/after-hours-answering-service" },
                       { title: "Bilingual Answering Service", href: "/blog/bilingual-answering-service" },
                       { title: "Answering Service Appointment Scheduling", href: "/blog/answering-service-appointment-scheduling" },
+                      { title: "Top 10 Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
+                      { title: "Call Center Benchmarks 2026", href: "/blog/call-center-benchmarks-2026" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">

@@ -254,6 +254,7 @@ export default function AnsweringServicePricingContent({ faqs }: { faqs: Faq[] }
                       { title: "24 Hour Answering Service", href: "/blog/24-hour-answering-service" },
                       { title: "Call Center Outsourcing Cost Per Hour", href: "/blog/call-center-outsourcing-cost-per-hour-2026" },
                       { title: "Top 10 Answering Service Companies in USA", href: "/blog/top-10-answering-service-companies-usa" },
+                      { title: "Call Center Benchmarks 2026", href: "/blog/call-center-benchmarks-2026" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">

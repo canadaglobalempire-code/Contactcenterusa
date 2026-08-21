@@ -273,6 +273,7 @@ export default function MedicalOfficeAnsweringServiceContent({ faqs }: { faqs: F
                       { title: "Dental Answering Service", href: "/blog/dental-answering-service" },
                       { title: "Answering Service Appointment Scheduling", href: "/blog/answering-service-appointment-scheduling" },
                       { title: "24 Hour Answering Service", href: "/blog/24-hour-answering-service" },
+                      { title: "Top 10 Mortgage Call Center Companies", href: "/blog/top-10-mortgage-call-center-companies-usa" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">

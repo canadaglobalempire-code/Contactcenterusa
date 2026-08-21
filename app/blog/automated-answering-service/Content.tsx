@@ -238,6 +238,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
                       { title: "Virtual Receptionist Pricing", href: "/blog/virtual-receptionist-pricing" },
                       { title: "Answering Service Pricing", href: "/blog/answering-service-pricing" },
                       { title: "24 Hour Answering Service", href: "/blog/24-hour-answering-service" },
+                      { title: "Top 10 Telemarketing Companies", href: "/blog/top-10-telemarketing-companies-usa" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">

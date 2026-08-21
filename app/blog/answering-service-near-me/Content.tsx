@@ -260,6 +260,8 @@ export default function AnsweringServiceNearMeContent({ faqs }: { faqs: Faq[] })
                       { title: "After Hours Answering Service", href: "/blog/after-hours-answering-service" },
                       { title: "Answering Service for Small Business", href: "/blog/answering-service-for-small-business" },
                       { title: "Top 10 Answering Service Companies in USA", href: "/blog/top-10-answering-service-companies-usa" },
+                      { title: "Top 10 Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
+                      { title: "Call Center Benchmarks 2026", href: "/blog/call-center-benchmarks-2026" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">

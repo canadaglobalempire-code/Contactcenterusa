@@ -39,6 +39,8 @@ type CitySeed = {
   /** Existing internal destinations for this metro, if any. */
   cityPage?: string;
   statePage?: string;
+  /** Slug of the `top-10-bpo-companies-{state}` post, when the state has one. */
+  stateRankingSlug?: string;
   volume: number;
 };
 
@@ -66,6 +68,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-office-wide.jpg",
     cityPage: "/call-center-services-chicago",
     statePage: "/locations/illinois",
+    stateRankingSlug: "top-10-bpo-companies-illinois",
     volume: 210,
   },
   {
@@ -91,6 +94,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-diverse-team.jpg",
     cityPage: "/call-center-services-los-angeles",
     statePage: "/locations/california",
+    stateRankingSlug: "top-10-bpo-companies-california",
     volume: 210,
   },
   {
@@ -116,6 +120,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-team-meeting.jpg",
     cityPage: "/call-center-services-dallas",
     statePage: "/locations/texas",
+    stateRankingSlug: "top-10-bpo-companies-texas",
     volume: 210,
   },
   {
@@ -139,6 +144,7 @@ const SEEDS: CitySeed[] = [
       ],
     },
     image: "/images/cc-team-collab.jpg",
+    stateRankingSlug: "top-10-bpo-companies-georgia",
     volume: 210,
   },
   {
@@ -164,6 +170,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-agent-headset.jpg",
     cityPage: "/call-center-services-houston",
     statePage: "/locations/texas",
+    stateRankingSlug: "top-10-bpo-companies-texas",
     volume: 170,
   },
   {
@@ -189,6 +196,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-agent-night.jpg",
     cityPage: "/call-center-services-phoenix",
     statePage: "/locations/arizona",
+    stateRankingSlug: "top-10-bpo-companies-arizona",
     volume: 170,
   },
   {
@@ -212,6 +220,7 @@ const SEEDS: CitySeed[] = [
       ],
     },
     image: "/images/cc-woman-headset.jpg",
+    stateRankingSlug: "top-10-bpo-companies-florida",
     volume: 140,
   },
   {
@@ -235,6 +244,7 @@ const SEEDS: CitySeed[] = [
       ],
     },
     image: "/images/cc-agent-smile.jpg",
+    stateRankingSlug: "top-10-bpo-companies-florida",
     volume: 110,
   },
   {
@@ -259,6 +269,7 @@ const SEEDS: CitySeed[] = [
     },
     image: "/images/cc-team-huddle.jpg",
     statePage: "/locations/colorado",
+    stateRankingSlug: "top-10-bpo-companies-colorado",
     volume: 90,
   },
   {
@@ -284,6 +295,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-man-headset.jpg",
     cityPage: "/call-center-services-san-antonio",
     statePage: "/locations/texas",
+    stateRankingSlug: "top-10-bpo-companies-texas",
     volume: 70,
   },
   {
@@ -308,6 +320,7 @@ const SEEDS: CitySeed[] = [
     },
     image: "/images/cc-agent-night.jpg",
     statePage: "/locations/nevada",
+    stateRankingSlug: "top-10-bpo-companies-nevada",
     volume: 210,
   },
   {
@@ -333,6 +346,7 @@ const SEEDS: CitySeed[] = [
     image: "/images/cc-woman-headset.jpg",
     cityPage: "/call-center-services-san-diego",
     statePage: "/locations/california",
+    stateRankingSlug: "top-10-bpo-companies-california",
     volume: 110,
   },
   {
@@ -381,6 +395,29 @@ function buildPost(seed: CitySeed): TrafficBlogPost {
   ];
   if (seed.cityPage) related.unshift({ label: `Call Center Services in ${city}`, href: seed.cityPage });
   if (seed.statePage) related.push({ label: `${state} Call Center Services`, href: seed.statePage });
+  // Route equity to the state ranking post when one exists. These sit at
+  // position 9-12 in GSC with only 2-4 internal links each — closer to page one
+  // than anything else on the site and starved of internal links.
+  if (seed.stateRankingSlug) {
+    related.push({ label: `Top 10 BPO Companies in ${state}`, href: `/blog/${seed.stateRankingSlug}` });
+  }
+
+  // Vertical cross-links, driven by the metro's own industry mix rather than
+  // applied uniformly. These targets rank at position 10-21 in GSC with very
+  // few internal links, so a contextually-earned link is worth more to them
+  // than to anything already sitting in the footer on all 240 pages.
+  const mix = seed.industries.toLowerCase();
+  const verticalLinks: [string, string, string][] = [
+    ["legal", "Top 10 Legal Intake Call Center Companies", "/blog/top-10-legal-intake-call-center-companies-usa"],
+    ["property management", "Top 10 Property Management Call Centers", "/blog/top-10-property-management-call-center-companies-usa"],
+    ["medical", "Top 10 Medical Answering Service Companies", "/blog/top-10-medical-answering-service-companies-usa"],
+    ["hvac", "Top 10 HVAC & Home Services Call Centers", "/blog/top-10-hvac-home-services-call-center-companies-usa"],
+  ];
+  for (const [needle, label, href] of verticalLinks) {
+    if (mix.includes(needle) && !related.some((r) => r.href === href)) {
+      related.push({ label, href });
+    }
+  }
 
   return {
     slug: seed.slug,

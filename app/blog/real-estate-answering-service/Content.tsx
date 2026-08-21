@@ -331,6 +331,8 @@ export default function RealEstateAnsweringServiceContent({ faqs }: { faqs: Faq[
                       { title: "Property Management Answering Service", href: "/blog/property-management-answering-service" },
                       { title: "Answering Service Appointment Scheduling", href: "/blog/answering-service-appointment-scheduling" },
                       { title: "After Hours Answering Service", href: "/blog/after-hours-answering-service" },
+                      { title: "Top 10 Mortgage Call Center Companies", href: "/blog/top-10-mortgage-call-center-companies-usa" },
+                      { title: "Top 10 Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
                     ].map((article, i) => (
                       <li key={i}>
                         <Link href={article.href} className="text-sm text-gray-700 hover:text-red transition-colors">

@@ -217,6 +217,7 @@ export default function DentalAnsweringServiceContent({ faqs }: { faqs: Faq[] })
                       { title: "Answering Service Appointment Scheduling", href: "/blog/answering-service-appointment-scheduling" },
                       { title: "Answering Service for Small Business", href: "/blog/answering-service-for-small-business" },
                       { title: "Answering Service Pricing", href: "/blog/answering-service-pricing" },
+                      { title: "Top 10 Appointment Setting Companies", href: "/blog/top-10-appointment-setting-companies-usa" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">

@@ -337,6 +337,7 @@ export default function AnsweringServiceForContractorsContent({ faqs }: { faqs: 
                       { title: "After Hours Answering Service", href: "/blog/after-hours-answering-service" },
                       { title: "Answering Service Appointment Scheduling", href: "/blog/answering-service-appointment-scheduling" },
                       { title: "24 Hour Answering Service", href: "/blog/24-hour-answering-service" },
+                      { title: "After-Hours Answering for HVAC Companies", href: "/blog/after-hours-answering-service-hvac-companies" },
                     ].map((article, i) => (
                       <li key={i}>
                         <Link href={article.href} className="text-sm text-gray-700 hover:text-red transition-colors">

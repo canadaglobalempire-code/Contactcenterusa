@@ -361,6 +361,7 @@ export default function AnsweringServiceAppointmentSchedulingContent({ faqs }: {
                       { title: "After Hours Answering Service", href: "/blog/after-hours-answering-service" },
                       { title: "Real Estate Answering Service", href: "/blog/real-estate-answering-service" },
                       { title: "24 Hour Answering Service", href: "/blog/24-hour-answering-service" },
+                      { title: "Call Center Benchmarks 2026", href: "/blog/call-center-benchmarks-2026" },
                     ].map((article, i) => (
                       <li key={i}>
                         <Link href={article.href} className="text-sm text-gray-700 hover:text-red transition-colors">

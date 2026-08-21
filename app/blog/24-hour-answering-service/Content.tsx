@@ -325,6 +325,8 @@ export default function TwentyFourHourAnsweringServiceContent({ faqs }: { faqs: 
                       { title: "Property Management Answering Service", href: "/blog/property-management-answering-service" },
                       { title: "Answering Service for Contractors", href: "/blog/answering-service-for-contractors" },
                       { title: "Answering Service Appointment Scheduling", href: "/blog/answering-service-appointment-scheduling" },
+                      { title: "Top 10 Plumbing Answering Services", href: "/blog/top-10-plumbing-answering-service-companies-usa" },
+                      { title: "Call Center Benchmarks 2026", href: "/blog/call-center-benchmarks-2026" },
                     ].map((article, i) => (
                       <li key={i}>
                         <Link href={article.href} className="text-sm text-gray-700 hover:text-red transition-colors">

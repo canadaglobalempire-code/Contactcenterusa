@@ -261,6 +261,7 @@ export default function VirtualReceptionistPricingContent({ faqs }: { faqs: Faq[
                       { title: "Answering Service vs Virtual Receptionist vs Call Center", href: "/blog/answering-service-vs-virtual-receptionist-vs-call-center" },
                       { title: "Answering Service for Small Business", href: "/blog/answering-service-for-small-business" },
                       { title: "Automated Answering Service", href: "/blog/automated-answering-service" },
+                      { title: "Call Center Benchmarks 2026", href: "/blog/call-center-benchmarks-2026" },
                     ].map((a, i) => (
                       <li key={i}>
                         <Link href={a.href} className="text-sm text-gray-700 hover:text-red transition-colors">
