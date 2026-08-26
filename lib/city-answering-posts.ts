@@ -1793,6 +1793,24 @@ function buildPost(seed: CitySeed): TrafficBlogPost {
     ],
     sections: [
       {
+        heading: `Answering service in ${city}: quick facts`,
+        paragraphs: [
+          `The short version for ${city} buyers: expect to pay $250-$700 per month for US-based coverage, require a ${consent}-consent recording script for ${state}, and judge providers on the shift bands where this metro actually calls — not on a blended daily average. The table below is the one-glance summary; everything under it is the detail.`,
+        ],
+        table: {
+          headers: ["Factor", `What it looks like in ${city}`],
+          rows: [
+            ["Recording consent rule", `${state}: ${consent === "all-party" ? "all-party consent — a disclosure must open every call" : "one-party consent — disclosure by policy, not statute"}`],
+            ["Timezone to staff", `${timezone} time`],
+            ["Peak demand windows", seed.clock.rows.slice(0, 2).map((r) => r[0]).join("; ")],
+            ["Seasonal peak", `${seed.season.rows[0][0]} — ${seed.season.rows[0][1].split(".")[0].toLowerCase()}`],
+            ["Language priority", seed.language.heading],
+            ["Typical monthly cost", "$250 - $700 (evening/weekend from ~$150; full 24/7 $600 - $1,500)"],
+            ["Local test call", seed.testNote.replace(/^In this market, /, "").replace(/^./, (c) => c.toUpperCase())],
+          ],
+        },
+      },
+      {
         heading: `Why ${city} businesses miss calls`,
         paragraphs: seed.localContext,
       },

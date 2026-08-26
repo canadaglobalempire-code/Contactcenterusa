@@ -8,6 +8,12 @@ import type { TrafficBlogPost, TrafficBlogSection } from "@/lib/traffic-blog-pos
 
 const SITE_URL = "https://contactcenterusa.com";
 
+function formatDate(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  return `${months[m - 1]} ${d}, ${y}`;
+}
+
 function jsonLd(data: unknown) {
   return JSON.stringify(data).replace(/</g, "\\u003c");
 }
@@ -67,7 +73,7 @@ function faqSchema(post: TrafficBlogPost) {
 
 function BlogTable({ table }: { table: NonNullable<TrafficBlogSection["table"]> }) {
   return (
-    <div className="not-prose my-8 overflow-hidden rounded-2xl border border-gray-200 bg-white">
+    <div className="not-prose my-8 overflow-x-auto rounded-2xl border border-gray-200 bg-white">
       <table className="w-full text-left text-sm">
         <thead className="bg-gray-50 text-navy">
           <tr>
@@ -127,7 +133,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
               <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/70">
                 {post.category}
               </span>
-              <h1 className="mt-6 text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
+              <h1 className="mt-6 text-3xl font-bold leading-[1.12] text-white sm:text-4xl lg:text-[44px]">
                 {post.h1}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
@@ -136,7 +142,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
               <div className="mt-6 flex flex-wrap items-center gap-5 text-sm text-white/55">
                 <span className="inline-flex items-center gap-2">
                   <Calendar className="h-4 w-4 text-red" />
-                  Updated June 16, 2026
+                  Updated {formatDate(post.dateModified)}
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <Clock className="h-4 w-4 text-red" />
@@ -166,34 +172,35 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
               <p key={paragraph}>{paragraph}</p>
             ))}
 
-            <div className="not-prose my-8 rounded-2xl border border-red/10 bg-red/5 p-6">
-              <h2 className="text-xl font-bold text-navy">Quick buyer answer</h2>
-              <p className="mt-3 text-gray-700">
-                If you need more calls answered, start with a focused pilot:
-                one service line, one script, one escalation path, and one
-                weekly QA scorecard. That gives you a measurable win before
-                expanding into full customer support outsourcing.
-              </p>
-            </div>
 
             {post.sections.map((section, sectionIndex) => (
               <section key={section.heading}>
                 {post.showFitSelector && sectionIndex === 2 && <ProviderFitSelector />}
-                <h2>{section.heading}</h2>
+                <h2 className="not-prose mt-12 text-2xl font-bold text-navy sm:text-3xl">
+                  {section.heading}
+                </h2>
                 {section.paragraphs?.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
                 {section.bullets && (
-                  <ul>
+                  <ul className="not-prose mt-4 space-y-3">
                     {section.bullets.map((item) => (
-                      <li key={item}>{item}</li>
+                      <li key={item} className="flex items-start gap-3">
+                        <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-red" />
+                        <span className="text-gray-700">{item}</span>
+                      </li>
                     ))}
                   </ul>
                 )}
                 {section.ordered && (
-                  <ol>
-                    {section.ordered.map((item) => (
-                      <li key={item}>{item}</li>
+                  <ol className="not-prose mt-4 space-y-3">
+                    {section.ordered.map((item, i) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-red/10 text-xs font-bold tabular-nums text-red">
+                          {i + 1}
+                        </span>
+                        <span className="text-gray-700">{item}</span>
+                      </li>
                     ))}
                   </ol>
                 )}
@@ -249,7 +256,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
 
           <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
             <div className="rounded-2xl border border-gray-100 bg-gray-50 p-6">
-              <h3 className="font-bold text-navy">Related SEO guides</h3>
+              <h3 className="font-bold text-navy">Related Articles</h3>
               <div className="mt-4 space-y-3">
                 {post.related.map((item) => (
                   <Link
@@ -264,7 +271,12 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
               </div>
             </div>
             <div className="rounded-2xl bg-navy p-5">
-              <HeroContactForm />
+              <HeroContactForm
+                ctaLocation={`${post.slug.replace(/-/g, "_")}_sidebar_form`}
+                leadOffer={post.leadOffer}
+                title="Get a Free Quote"
+                description="Tell us your call volume, hours, and timeline."
+              />
             </div>
           </aside>
         </div>
