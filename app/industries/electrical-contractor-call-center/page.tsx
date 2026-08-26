@@ -80,6 +80,21 @@ const faqs = [
     answer:
       "Yes. Our agents log directly into ServiceTitan, Housecall Pro, Jobber, or FieldEdge to see technician availability, place appointments on the dispatch board, and input detailed job notes.",
   },
+  {
+    question: "How do agents know whether an electrical call is an emergency?",
+    answer:
+      "They work from a triage script agreed with you at onboarding rather than their own judgement. Certain symptoms — a burning smell at the panel, visible sparking, repeated breaker trips with heat, a downed line — trigger an immediate stop-and-dispatch with scripted safety guidance read verbatim, never improvised. Everything else books as service work against your calendar. The script also defines what agents must never do, such as advise a caller to open a panel or reset equipment. You review and approve every word of it before the first call is taken.",
+  },
+  {
+    question: "How do you handle high-ticket project enquiries like panel upgrades and EV chargers?",
+    answer:
+      "As sales-qualified intake rather than message-taking, because these are the most valuable calls an electrical contractor receives. Agents capture the property type and age, the service size if known, what is driving the project, and the caller's timeline — then book directly into your estimator's calendar while the caller is on the line. A homeowner researching an EV charger at 7 PM is calling more than one contractor that evening; the one whose estimator slot is confirmed before the call ends is usually the one who wins the job.",
+  },
+  {
+    question: "What happens to our calls during a storm surge?",
+    answer:
+      "The surge is absorbed by a distributed US agent network rather than a single office, so answer speed holds while volume multiplies. Storm and grid events concentrate a month of electrical calls into a day or two, and they are exactly the calls with the highest urgency and the highest revenue attached. We agree surge handling at onboarding: how outage calls are triaged against hazard calls, what gets dispatched versus queued, and how your on-call rotation is protected from being flooded with non-emergencies at 2 AM.",
+  },
 ];
 
 const seoSections: SEOPattern[] = [
@@ -96,6 +111,40 @@ const seoSections: SEOPattern[] = [
       { stat: "<3 Rings", label: "Average answer speed on all emergency calls" },
       { stat: "ServiceTitan", label: "Direct dispatch calendar synchronization" },
       { stat: "Month-to-Month", label: "Flexible agreements with no long-term commitments" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "When electrical calls arrive",
+    heading: "The electrical call clock is urgency-sorted, and voicemail sorts it wrong",
+    image: "/images/cc-agent-night.jpg",
+    imagePosition: "right",
+    body: [
+      "Electrical demand splits into two very different streams. Emergencies — sparking panels, burning smells, storm damage, full outages — arrive at any hour and carry genuine safety weight: the caller is frightened, will not leave a voicemail, and dials the next contractor within about twenty seconds of not reaching a person. Project calls — panel upgrades, EV chargers, generator installs — arrive in the evening after homeowners finish work, and they are the highest-ticket enquiries an electrical contractor receives.",
+      "Both streams lose to an unanswered phone, but they lose differently. The emergency goes to whoever answers first. The panel-upgrade enquiry, worth several thousand dollars, quietly books a competitor's estimator while your office phone rings out at 6:40 PM. The economics of live answering in this trade are driven by the second stream at least as much as the first.",
+    ],
+    bullets: [
+      "Emergency calls need triage in the first sentence: hazard now, or service soon",
+      "Weekday 5 PM - 9 PM is where high-ticket project enquiries concentrate",
+      "Storm and grid events cluster a month of calls into 48 hours",
+      "EV charger and panel-upgrade demand is rising and estimate-driven — qualification decides revenue",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Safety and liability",
+    heading: "Electrical intake carries liability that other trades do not",
+    image: "/images/cc-management.jpg",
+    imagePosition: "left",
+    body: [
+      "A plumbing message taken badly costs a job. An electrical message taken badly can cost far more, because some electrical symptoms are emergencies whether or not the caller realises it. A burning smell from a panel, repeated breaker trips with warmth at the panel face, flickering across the whole house — these need an agent who recognises the hazard, tells the caller the safe next step, and escalates immediately rather than booking a next-available slot.",
+      "Our agents work from an electrical-specific triage script agreed with you at onboarding: which symptoms trigger a stop-and-dispatch, which safety instructions may be read verbatim, and which must never be improvised. That script — not answer speed — is the real difference between a general answering service and an electrical dispatch operation. Every escalation is timestamped, so if a caller later claims they reported a hazard earlier, your records answer the question.",
+    ],
+    bullets: [
+      "Hazard symptoms trigger immediate dispatch, never a next-day booking",
+      "Safety guidance is scripted and read verbatim — agents never improvise electrical advice",
+      "Timestamped escalation records protect you if response timing is later disputed",
+      "Commercial accounts get contract-aware handling: SLAs, site access and authorised requesters",
     ],
   },
   {

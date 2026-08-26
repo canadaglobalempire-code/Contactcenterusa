@@ -108,6 +108,53 @@ function readRouteSource(dir: string): string {
 }
 
 /**
+ * Content dates for blog routes whose page.tsx is a thin shell around a
+ * lib/ data module. The route source carries no date of its own — it does
+ * `const post = trafficBlogPosts["slug"]` — so scanning only the route dir
+ * (the original behaviour) left every data-driven post without a lastmod,
+ * which meant a full rewrite of the post shipped no update signal at all.
+ *
+ * Per-file strategy keeps the honesty rule from the header intact:
+ * - traffic-blog-posts.ts declares dateModified per entry, so it is parsed
+ *   per entry and each slug gets its own date.
+ * - The generated files (city-answering, state-ranking, geo-vertical) apply
+ *   one dateModified to every post they build, and that is genuinely true —
+ *   a change to their shared builder changes every page it renders.
+ */
+let slugDates: Map<string, string> | null = null;
+
+function libSlugDates(): Map<string, string> {
+  if (slugDates) return slugDates;
+  const map = new Map<string, string>();
+  const libDir = join(process.cwd(), "lib");
+
+  // Per-entry: "slug": { ... dateModified: "YYYY-MM-DD" ... }
+  const perEntry = readFileSync(join(libDir, "traffic-blog-posts.ts"), "utf8");
+  const blocks = perEntry.split(/^  "([a-z0-9-]+)": \{$/m);
+  for (let i = 1; i < blocks.length - 1; i += 2) {
+    const dates: string[] = [];
+    for (const m of blocks[i + 1].matchAll(DATE_RE)) {
+      if (ISO_DATE.test(m[1])) dates.push(m[1]);
+    }
+    const latest = dates.sort().at(-1);
+    if (latest) map.set(blocks[i], latest);
+  }
+
+  // Whole-file: every slug built by the file shares its builder's date.
+  for (const file of ["city-answering-posts.ts", "state-ranking-posts.ts", "geo-vertical-posts.ts"]) {
+    const src = readFileSync(join(libDir, file), "utf8");
+    const date = contentDate(src);
+    if (!date) continue;
+    for (const m of src.matchAll(/\bslug: "([a-z0-9-]+)"/g)) {
+      if (!map.has(m[1])) map.set(m[1], date);
+    }
+  }
+
+  slugDates = map;
+  return map;
+}
+
+/**
  * The most recent declared content date for a route, or undefined.
  * Deliberately never falls back to file mtime — see the note at the top.
  */
@@ -153,9 +200,11 @@ function buildAll(): Map<string, SitemapEntry[]> {
 
   for (const { route, dir } of collectPageRoutes(appDir)) {
     const blob = readRouteSource(dir);
+    // Data-driven blog routes carry their date in lib/, not in the route dir.
+    const slug = route.startsWith("/blog/") ? route.slice("/blog/".length) : null;
     const entry: SitemapEntry = {
       loc: route === "/" ? `${BASE_URL}/` : `${BASE_URL}${route}`,
-      lastmod: contentDate(blob),
+      lastmod: contentDate(blob) ?? (slug ? libSlugDates().get(slug) : undefined),
       images: pageImages(blob),
     };
     const section = SECTIONS.find((s) => s.match(route))!;

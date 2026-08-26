@@ -47,7 +47,7 @@ function providerRankingSection(heading: string, intro: string[]): TrafficBlogSe
 export const geoVerticalPosts: Record<string, TrafficBlogPost> = {
   "healthcare-bpo-companies-tennessee": {
     slug: "healthcare-bpo-companies-tennessee",
-    title: "Healthcare BPO Companies in Tennessee: Buyer's Guide (2026)",
+    title: "Healthcare BPO Companies in Tennessee (2026)",
     h1: "Healthcare BPO in Tennessee: How to Choose a Partner",
     description:
       "How Tennessee healthcare organizations evaluate BPO partners — HIPAA readiness, patient access workflows, revenue cycle support, and Nashville market context.",
@@ -188,7 +188,7 @@ export const geoVerticalPosts: Record<string, TrafficBlogPost> = {
 
   "healthcare-bpo-companies-texas": {
     slug: "healthcare-bpo-companies-texas",
-    title: "Healthcare BPO Companies in Texas: Buyer's Guide (2026)",
+    title: "Healthcare BPO Companies in Texas (2026)",
     h1: "Healthcare BPO in Texas: How to Choose a Partner",
     description:
       "How Texas healthcare organizations evaluate BPO partners — HIPAA readiness, bilingual patient access, border-region coverage, and multi-metro scale.",
@@ -305,7 +305,7 @@ export const geoVerticalPosts: Record<string, TrafficBlogPost> = {
 
   "healthcare-bpo-companies-florida": {
     slug: "healthcare-bpo-companies-florida",
-    title: "Healthcare BPO Companies in Florida: Buyer's Guide (2026)",
+    title: "Healthcare BPO Companies in Florida (2026)",
     h1: "Healthcare BPO in Florida: How to Choose a Partner",
     description:
       "How Florida healthcare organizations evaluate BPO partners — Medicare-heavy patient mix, seasonal population swings, hurricane continuity, and HIPAA readiness.",

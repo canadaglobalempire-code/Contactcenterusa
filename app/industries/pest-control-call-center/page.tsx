@@ -81,6 +81,21 @@ const faqs = [
     answer:
       "Yes. We train agents on customized sales scripts that highlight the benefits and warranty protection of recurring quarterly or bi-monthly plans, dramatically boosting your recurring monthly revenue (RMR).",
   },
+  {
+    question: "How fast do pest control calls need to be answered to convert?",
+    answer:
+      "Faster than almost any other trade, because the caller's behaviour is different. Someone who has just found roaches in their kitchen or a wasp nest by the back door is calling down a search-results list and stops at the first live human who says someone can come. There is no consideration phase to win them back in — a voicemail or a long hold simply passes the job to the next listing. We answer live around the clock and report answer speed by shift band, because the evening and weekend bands are where residential pest volume actually concentrates.",
+  },
+  {
+    question: "Can you handle termite season and autumn rodent surges?",
+    answer:
+      "Yes, and both are planned as known seasonal events rather than absorbed as overflow. Termite swarm season compresses the year's highest-value enquiries into a few weeks, spring drives ant and roach volume, and the first cold snap of autumn produces a rodent surge that holds for weeks. We staff against the seasonal curve for your region and cross-train agents so capacity moves onto your queue within a shift when a surge starts, rather than after a week of missed calls.",
+  },
+  {
+    question: "How do you handle commercial pest accounts differently?",
+    answer:
+      "Commercial callers — restaurants, hotels, food processors, property managers — are usually calling with a deadline attached: a failed inspection, an upcoming audit, a tenant complaint that carries habitability exposure. Agents capture the compliance context at intake, flag time-critical situations for priority dispatch, and log the documentation trail commercial clients need. Account-specific handling rules — authorised requesters, site access, service windows — are held per account so a franchise or multi-site client is handled correctly at every location.",
+  },
 ];
 
 const seoSections: SEOPattern[] = [
@@ -97,6 +112,40 @@ const seoSections: SEOPattern[] = [
       { stat: "<3 Rings", label: "Instant response on all inbound pest inquiries" },
       { stat: "FieldRoutes / PestPac", label: "Live route scheduling and account creation" },
       { stat: "Recurring RMR", label: "Trained upsell scripts for ongoing service agreements" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "When pest calls arrive",
+    heading: "Pest control demand is seasonal, emotional, and decided on the first call",
+    image: "/images/cc-agent-smile.jpg",
+    imagePosition: "right",
+    body: [
+      "Pest calls carry more emotion than almost any other home-services category. The caller has just seen something in their kitchen, their child's bedroom, or their restaurant's dining room, and they are not comparison shopping — they are calling down a list until a human answers and tells them someone can come. Speed of answer converts here at a rate most trades never see, and a voicemail converts at close to zero.",
+      "The demand curve is also sharply seasonal, and it differs by pest. Termite swarm season produces a concentrated burst of the highest-value enquiries of the year. Ant and roach volume climbs with spring warmth. Rodent calls surge in autumn as temperatures fall, and bed bug calls follow travel seasons. A staffing plan built on the annual average is understaffed for every one of those peaks.",
+    ],
+    bullets: [
+      "First-answer wins: pest callers dial down a list and stop at the first live voice",
+      "Termite season concentrates the year's highest-value enquiries into weeks",
+      "Autumn rodent surge and spring ant season need planned, not overflow, capacity",
+      "Commercial accounts — restaurants, hotels, property managers — call with compliance deadlines attached",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Plans over one-offs",
+    heading: "The recurring-plan conversation is where pest revenue is actually made",
+    image: "/images/cc-team-collab.jpg",
+    imagePosition: "left",
+    body: [
+      "A one-time treatment books a job. A quarterly plan books an annuity, and the difference between a pest company that grows and one that treads water is almost entirely the rate at which first calls convert to recurring service. That conversion happens on the phone, in the first conversation, while the caller's urgency is at its peak — not in a follow-up email a week after the technician has left.",
+      "Our agents are trained on the plan conversation specifically: positioning the recurring option against the one-time price while the problem is live, explaining what the plan covers by season, and booking the initial service with the plan attached. We report plan-attach rate alongside answer speed, because for this vertical it is the number that decides what the phone line is worth.",
+    ],
+    bullets: [
+      "Plan-attach rate reported monthly — the metric that actually grows a pest business",
+      "Agents trained on seasonal plan positioning, not just price quoting",
+      "Commercial intake captures compliance context: health inspections, audit dates, documentation needs",
+      "Bilingual intake staffed on evenings and weekends, where residential pest calls concentrate",
     ],
   },
   {

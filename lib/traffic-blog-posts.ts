@@ -1430,7 +1430,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "how-to-switch-call-center-providers": {
     slug: "how-to-switch-call-center-providers",
-    title: "How to Switch Call Center Providers: 7-Step Migration Checklist",
+    title: "How to Switch Call Center Providers: 7 Steps",
     h1: "How to Switch Call Center Providers Without Customer Downtime",
     description:
       "Step-by-step guide to switching call center outsourcing vendors. Learn how to migrate telephony, audit scripts, train agents, and ensure zero downtime.",
@@ -1729,7 +1729,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "inbound-vs-outbound-call-center": {
     slug: "inbound-vs-outbound-call-center",
-    title: "Inbound vs Outbound Call Center: Key Differences & Costs (2026)",
+    title: "Inbound vs Outbound Call Center: Differences",
     h1: "Inbound vs Outbound Call Center: Which Model Does Your Business Need?",
     description:
       "Inbound vs outbound call centers explained. Compare service differences, agent skill sets, technology, pricing models, and hybrid contact center strategies.",
@@ -2094,7 +2094,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "how-much-does-an-answering-service-cost-per-month": {
     slug: "how-much-does-an-answering-service-cost-per-month",
-    title: "How Much Does an Answering Service Cost Per Month? (2026 Guide)",
+    title: "Answering Service Cost Per Month (2026 Guide)",
     h1: "How Much Does an Answering Service Cost Per Month? 2026 Price Breakdown",
     description:
       "Complete 2026 pricing guide for answering services. Compare per-minute, per-call, and dedicated agent costs, hidden fees, and ROI calculations.",
@@ -2224,7 +2224,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "after-hours-call-center-best-practices": {
     slug: "after-hours-call-center-best-practices",
-    title: "After-Hours Call Center Best Practices: Setup, Scripts & Protocols",
+    title: "After-Hours Call Center Best Practices (2026)",
     h1: "After-Hours Call Center Setup: Best Practices & Escalation Protocols",
     description:
       "Best practices for after-hours call center coverage. Learn how to set up on-call escalation trees, emergency triage scripts, and 24/7 SLA standards.",

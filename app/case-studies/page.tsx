@@ -34,6 +34,23 @@ const seoSections: SEOPattern[] = [
       { title: "Measure against their scorecard", body: "Quality was scored on criteria the client defined and calibrated with us, not on a generic template that flatters the vendor." },
     ],
   },
+  {
+    pattern: "split-image",
+    eyebrow: "What the numbers translate to",
+    heading: "The metrics in these studies, and what moves them",
+    image: "/images/cc-agent-writing.jpg",
+    imagePosition: "right",
+    body: [
+      "Every result on this page reduces to one of four levers, and knowing which lever a provider pulled tells you whether the result transfers to your situation. Answer speed and abandonment move when staffing is matched to the hour-by-hour demand curve instead of a daily average — the cheapest gain available and the most common one. First-contact resolution moves when agents get system access and product depth, which costs training time. Conversion and booking rates move when agents can complete the transaction live rather than take a message. And cost per contact moves when the pricing model is matched to the call pattern.",
+      "When you evaluate any provider — us included — ask which lever produced the headline number, and whether that lever exists in your program. A retention gain built on live calendar booking will not transfer to a program that only takes messages; an abandonment fix built on staffing-curve alignment transfers to almost anything.",
+    ],
+    bullets: [
+      "Staffing-to-curve alignment: the most transferable gain, and usually the first one taken",
+      "System access and training depth: what first-contact resolution actually costs",
+      "Live transaction completion: the lever behind every booking and conversion result",
+      "Pricing-model fit: per-minute, per-call or dedicated, matched to your call length",
+    ],
+  },
 ];
 
 export default function CaseStudiesPage() {

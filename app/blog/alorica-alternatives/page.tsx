@@ -38,7 +38,7 @@ const companies = [
 export const metadata: Metadata = {
   title: "7 Alorica Alternatives for US-Based CX (2026)",
   description:
-    "Compare the best Alorica alternatives in 2026 for 100% US-based support, flexible contracts, and mid-market fit.",
+    "Compare the 7 best Alorica alternatives for 2026 — 100% US-based delivery, no enterprise minimums, month-to-month contracts, and a 60-90 day switching plan.",
   alternates: { canonical: "/blog/alorica-alternatives" },
 };
 

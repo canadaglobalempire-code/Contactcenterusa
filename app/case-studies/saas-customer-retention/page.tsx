@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle, ChevronRight } from "lucide-react";
 const title =
   "SaaS Customer Retention Strategy | Case Study";
 const description =
-  "How a B2B SaaS company reduced churn by 28% and increased NPS from 32 to 67 with proactive customer success support.";
+  "How a B2B SaaS company cut churn 28% and lifted NPS from 32 to 67 with proactive US-based customer success support — the baseline, the fix, and the trade-offs.";
 const slug = "saas-customer-retention";
 
 export const metadata: Metadata = {

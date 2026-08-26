@@ -38,7 +38,7 @@ const companies = [
 export const metadata: Metadata = {
   title: "7 TTEC Alternatives for Mid-Market CX (2026)",
   description:
-    "Compare the best TTEC alternatives in 2026 for US-based support, flexible contracts, and lower cost.",
+    "Compare the 7 best TTEC alternatives for 2026 — delivery-first US providers without the consulting overhead, plus how to unpick a bundled TTEC engagement.",
   alternates: { canonical: "/blog/ttec-alternatives" },
 };
 

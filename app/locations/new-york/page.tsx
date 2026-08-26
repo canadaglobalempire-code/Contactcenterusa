@@ -126,6 +126,7 @@ export default function NewYorkPage() {
   return (
     <StatePageTemplate
       state="New York"
+      h1Prefix="Call Center & BPO Services Across the State of"
       stateAbbr="NY"
       slug="new-york"
       timezone="Eastern Time"

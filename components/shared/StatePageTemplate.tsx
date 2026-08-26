@@ -31,6 +31,8 @@ export interface StateMetro {
 }
 
 interface StatePageTemplateProps {
+  /** H1 lead-in. NY overrides it because the city page shares the same name. */
+  h1Prefix?: string;
   state: string;
   stateAbbr: string;
   slug: string;
@@ -70,6 +72,7 @@ export function StatePageTemplate({
   faqs,
   seoContent,
   relatedPost,
+  h1Prefix = "Call Center & BPO Services in",
 }: StatePageTemplateProps) {
   const url = `https://contactcenterusa.com/locations/${slug}`;
 
@@ -113,7 +116,7 @@ export function StatePageTemplate({
                 <MapPin className="h-4 w-4" /> {state}
               </span>
               <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[56px]">
-                Call Center &amp; BPO Services in <span className="text-red">{state}</span>
+                {h1Prefix} <span className="text-red">{state}</span>
               </h1>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/80">
                 US-based call center and BPO services for {state} businesses — inbound support,
