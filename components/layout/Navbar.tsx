@@ -53,57 +53,40 @@ const aboutLinks = [
 ];
 
 const industries = [
+  // Kept deliberately to the same 16 sectors as the footer, in the same order,
+  // so the two menus read as one system. 16 renders as two even columns of 8.
+  // The other 25 vertical pages are reachable from /industries (View All) and
+  // from contextual links, which carry more weight than a 41-row mega-menu
+  // nobody could scan.
   { label: "Airlines", href: "/industries/airlines-call-center" },
-  { label: "Auto Dealership BDC", href: "/industries/auto-dealership-bdc" },
   { label: "Automotive", href: "/industries/automotive-call-center-services" },
   { label: "Banking & Financial Services", href: "/industries/banking-financial-services-call-center" },
   { label: "Cable & Media", href: "/industries/cable-media-call-center" },
-  { label: "Debt Collection", href: "/industries/debt-collection-call-center" },
-  { label: "Dental", href: "/industries/dental-call-center" },
   { label: "E-commerce", href: "/industries/ecommerce-customer-service-outsourcing" },
   { label: "Education", href: "/industries/education-call-center-services" },
   { label: "Energy & Utilities", href: "/industries/energy-utilities-call-center" },
-  { label: "Event Ticketing", href: "/industries/event-ticketing-call-center" },
-  { label: "Fitness & Gyms", href: "/industries/fitness-gym-call-center" },
-  { label: "Franchise Networks", href: "/industries/franchise-call-center" },
-  { label: "Funeral Homes", href: "/industries/funeral-home-answering-service" },
-  { label: "Gaming & Esports", href: "/industries/gaming-esports-support" },
   { label: "Government", href: "/industries/government-call-center" },
   { label: "Healthcare", href: "/industries/healthcare-call-center-services" },
-  { label: "Home Services", href: "/industries/home-services-call-center" },
   { label: "Insurance", href: "/industries/insurance-call-center-outsourcing" },
-  { label: "Legal Intake", href: "/industries/legal-intake-call-center" },
   { label: "Logistics", href: "/industries/logistics-shipping-call-center" },
-  { label: "Med Spa & Aesthetics", href: "/industries/med-spa-aesthetics-call-center" },
-  { label: "Medical Billing & RCM", href: "/industries/medical-billing-rcm" },
-  { label: "Mortgage & Lending", href: "/industries/mortgage-call-center" },
-  { label: "Moving & Storage", href: "/industries/moving-storage-call-center" },
-  { label: "Music & Entertainment", href: "/industries/music-entertainment-call-center" },
-  { label: "Nonprofit", href: "/industries/nonprofit-call-center" },
-  { label: "Pharmaceuticals", href: "/industries/pharmaceuticals-call-center" },
-  { label: "Property Management", href: "/industries/property-management-call-center" },
   { label: "Real Estate", href: "/industries/real-estate-call-center-services" },
-  { label: "Restaurants", href: "/industries/restaurant-call-center" },
   { label: "Retail", href: "/industries/retail-call-center-services" },
-  { label: "Solar & Home Improvement", href: "/industries/solar-home-improvement-call-center" },
-  { label: "Spanish & Bilingual", href: "/industries/spanish-call-center-services" },
-  { label: "Sports & Venues", href: "/industries/sports-venue-call-center" },
-  { label: "Staffing & Recruiting", href: "/industries/staffing-recruiting-call-center" },
   { label: "Technology", href: "/industries/saas-technology-support" },
   { label: "Telecommunications", href: "/industries/telecommunications-call-center" },
   { label: "Travel & Hospitality", href: "/industries/travel-hospitality-call-center" },
-  { label: "Veterinary", href: "/industries/veterinary-call-center" },
-  { label: "Virtual Receptionist", href: "/industries/virtual-receptionist-services" },
 ];
 
 function Dropdown({
   label,
   href,
   items,
+  viewAllHref,
 }: {
   label: string;
   href: string;
   items: { label: string; href: string }[];
+  /** Optional trailing row linking to the full listing (used by Industries). */
+  viewAllHref?: string;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -149,6 +132,14 @@ function Dropdown({
                 {item.label}
               </Link>
             ))}
+            {viewAllHref && (
+              <Link
+                href={viewAllHref}
+                className="col-span-full mt-1 block rounded-lg border-t border-gray-100 px-4 py-2.5 text-[14px] font-semibold text-red transition-colors hover:bg-gray-50"
+              >
+                View All Industries &rarr;
+              </Link>
+            )}
           </div>
         </div>
       )}
@@ -201,7 +192,7 @@ export default function Navbar() {
           <nav className="hidden items-center gap-7 lg:flex">
             <Dropdown label="Services" href="/services" items={services} />
             <Dropdown label="Solutions" href="/solutions" items={solutions} />
-            <Dropdown label="Industries" href="/industries" items={industries} />
+            <Dropdown label="Industries" href="/industries" items={industries} viewAllHref="/industries" />
             <Link
               href="/locations"
               className="text-[15px] font-medium text-gray-900 transition-colors hover:text-red"

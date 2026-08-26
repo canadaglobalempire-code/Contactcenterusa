@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { TrafficBlogArticle } from "@/components/shared/TrafficBlogArticle";
+import { StateRankingArticle } from "@/components/shared/StateRankingArticle";
 import { stateRankingPosts } from "@/lib/state-ranking-posts";
 
 const post = stateRankingPosts["top-10-bpo-companies-washington"];
@@ -25,5 +25,34 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <TrafficBlogArticle post={post} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Place",
+            name: "Washington",
+            address: { "@type": "PostalAddress", addressRegion: "WA", addressCountry: "US" },
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: post.faqs.map((f) => ({
+              "@type": "Question",
+              name: f.question,
+              acceptedAnswer: { "@type": "Answer", text: f.answer },
+            })),
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+      <StateRankingArticle slug="top-10-bpo-companies-washington" />
+    </>
+  );
 }

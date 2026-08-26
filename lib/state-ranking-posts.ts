@@ -1148,6 +1148,101 @@ const SEEDS: StateSeed[] = [
 
 /* ------------------------------------------------------------------ */
 
+/**
+ * Card enrichment for the NY-style ranked company cards. Shared across states —
+ * these are the same ten companies on every page; what varies per state is the
+ * fit line composed from the seed in buildRankingPage().
+ */
+export const CARD_META: Record<number, {
+  founded: string;
+  strengths: string;
+  weaknesses: string;
+  pricing: string;
+  clients: string;
+  highlight: string;
+}> = {
+  1: {
+    founded: "1998",
+    strengths: "Full-service breadth, regulated-industry depth (HIPAA, PCI-DSS, SOC 2), rapid onboarding with real-time reporting.",
+    weaknesses: "Premium positioning — built for compliance-heavy programs, not the cheapest seat on the market.",
+    pricing: "Hourly, per-contact, or outcome-based by program",
+    clients: "Mid-market insurers, healthcare networks, financial services firms, professional services",
+    highlight: "The #1 pick for full-service programs where compliance evidence and program flexibility matter more than rate.",
+  },
+  2: {
+    founded: "1999",
+    strengths: "Consultative C-suite conversations, mature ABM targeting, deep CRM integration.",
+    weaknesses: "Outbound B2B specialist — not built for high-volume inbound consumer service.",
+    pricing: "Hourly or per-engagement",
+    clients: "SaaS vendors, manufacturers, logistics firms, consultancies",
+    highlight: "The strongest pure-play B2B appointment setting bench on this list.",
+  },
+  3: {
+    founded: "2010",
+    strengths: "Real-estate-trained calling pods, high-volume outreach discipline, structured CRM handoffs.",
+    weaknesses: "Narrow specialisation — real estate acquisition calling is the product.",
+    pricing: "Per-hour or per-qualified-lead",
+    clients: "Real estate investors, wholesaling teams, asset funds",
+    highlight: "Purpose-built for motivated-seller prospecting at scale.",
+  },
+  4: {
+    founded: "1995",
+    strengths: "Brand-voice discipline across omnichannel queues, unified agent view, steady mid-market delivery.",
+    weaknesses: "Mid-tier scale — not sized for Fortune 100 volumes.",
+    pricing: "Per-contact or hourly",
+    clients: "DTC brands, subscription businesses, regional retailers",
+    highlight: "Omnichannel support that keeps a consistent brand voice across every channel.",
+  },
+  5: {
+    founded: "2005",
+    strengths: "Speed of deployment, pre-vetted agent pools, seasonal and surge elasticity.",
+    weaknesses: "Staffing-led model — program design and QA depth are lighter than full-service peers.",
+    pricing: "Per-agent staffing rates, temporary or permanent",
+    clients: "Retailers, insurers, healthcare systems with seasonal peaks",
+    highlight: "The fastest route from signed agreement to staffed seats on this list.",
+  },
+  6: {
+    founded: "2008",
+    strengths: "SMB-friendly minimums, straightforward pipeline programs, transparent pricing.",
+    weaknesses: "Less enterprise depth than the top-tier outbound specialists.",
+    pricing: "Monthly program packages",
+    clients: "Small and mid-sized B2B service firms",
+    highlight: "Outbound pipeline building sized and priced for smaller B2B teams.",
+  },
+  7: {
+    founded: "1999",
+    strengths: "100% US-based delivery, month-to-month terms with no volume floors, named senior account management, shift-band reporting.",
+    weaknesses: "Domestic-only model — programs chasing the lowest offshore rate should look elsewhere.",
+    pricing: "Per-minute, per-call, or dedicated-team monthly",
+    clients: "Healthcare practices, trades and home services, insurers, ecommerce and SaaS brands",
+    highlight: "The US-only partner of choice when compliance simplicity and account attention decide the shortlist.",
+  },
+  8: {
+    founded: "2001",
+    strengths: "North American enterprise scale, cross-border delivery, multi-site redundancy.",
+    weaknesses: "Enterprise shape — smaller programs get less attention than flagship accounts.",
+    pricing: "Enterprise contracts, hourly or per-contact",
+    clients: "Enterprise brands with US and Canadian footprints",
+    highlight: "Cross-border North American coverage with genuine multi-site continuity.",
+  },
+  9: {
+    founded: "2003",
+    strengths: "Digital CX transformation, journey mapping, analytics-led programme design.",
+    weaknesses: "Consulting-led engagements take longer to stand up than delivery-first peers.",
+    pricing: "Project plus managed-service retainers",
+    clients: "Mid-market brands modernising their support stack",
+    highlight: "The analytics-and-transformation option for buyers redesigning CX, not just staffing it.",
+  },
+  10: {
+    founded: "2006",
+    strengths: "Hybrid human-plus-automation workflows, IT-enabled processing, cost-efficient scaled delivery.",
+    weaknesses: "Automation-first approach suits transactional work better than high-touch service.",
+    pricing: "Per-transaction or hybrid workflow pricing",
+    clients: "B2B firms with high-volume transactional processes",
+    highlight: "The efficiency play — automation-assisted delivery for transactional volume.",
+  },
+};
+
 function buildPost(seed: StateSeed): TrafficBlogPost {
   const { slug, state, abbr } = seed;
   const consentLabel =
@@ -1309,3 +1404,11 @@ function buildPost(seed: StateSeed): TrafficBlogPost {
 export const stateRankingPosts: Record<string, TrafficBlogPost> = Object.fromEntries(
   SEEDS.map((seed) => [seed.slug, buildPost(seed)]),
 );
+
+/** Raw seeds, keyed by slug, for the NY-style ranking article renderer. */
+export const stateRankingSeeds: Record<string, StateSeed> = Object.fromEntries(
+  SEEDS.map((seed) => [seed.slug, seed]),
+);
+
+export type { StateSeed };
+export { PROVIDER_PROFILES };

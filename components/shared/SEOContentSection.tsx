@@ -150,7 +150,7 @@ function renderHeading(heading: string, accent?: string) {
 function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
   const paras = Array.isArray(data.body) ? data.body : [data.body];
   return (
-    <section className="relative overflow-hidden bg-navy py-28">
+    <section className="relative overflow-hidden bg-navy py-20">
       {/* Subtle grid pattern */}
       <div
         aria-hidden
@@ -177,10 +177,10 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
                   {data.eyebrow}
                 </div>
               )}
-              <h2 className="mt-6 text-[44px] font-bold leading-[1.08] tracking-[-0.02em] text-white sm:text-[60px] lg:text-[72px]">
+              <h2 className="mt-6 text-[32px] font-bold leading-[1.12] tracking-[-0.02em] text-white sm:text-[40px] lg:text-[48px]" style={{ textWrap: "balance" }}>
                 {renderHeading(data.heading, data.accent)}
               </h2>
-              <div className="mt-8 max-w-[640px] space-y-5 text-[17px] leading-[1.75] text-white/70 lg:text-[18px]">
+              <div className="mt-6 max-w-[640px] space-y-4 text-[16px] leading-[1.75] text-white/70 lg:text-[17px]">
                 {paras.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -188,13 +188,13 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
             </div>
 
             {data.stats && (
-              <div className="grid grid-cols-1 gap-8 lg:mt-6">
+              <div className="flex flex-col justify-center gap-6 lg:gap-7">
                 {data.stats.map((s, i) => (
-                  <div key={i} className="border-l-2 border-red pl-6">
-                    <div className="text-[44px] font-bold leading-[0.95] tracking-[-0.02em] text-white lg:text-[52px]">
+                  <div key={i} className="border-l-2 border-red pl-5">
+                    <div className="text-[30px] font-bold leading-[1] tracking-[-0.02em] text-white lg:text-[36px]">
                       {s.stat}
                     </div>
-                    <div className="mt-2 text-[14.5px] text-white/65">{s.label}</div>
+                    <div className="mt-1.5 max-w-[300px] text-[13.5px] leading-[1.55] text-white/65">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -332,13 +332,13 @@ function FlowBlock({ data }: { data: FlowPattern }) {
             />
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 lg:gap-4">
               {data.steps.map((step, i) => (
-                <div key={i} className="relative">
+                <div key={i} className="relative flex flex-col">
                   <div className="relative z-10 mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_2px_8px_rgba(15,23,42,0.06)] ring-1 ring-gray-200 lg:mx-0">
                     <span className="text-[14px] font-bold tabular-nums text-navy">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
-                  <div className="mt-6 rounded-xl border border-gray-200 bg-white p-6">
+                  <div className="mt-6 flex-1 rounded-xl border border-gray-200 bg-white p-6">
                     <h3 className="text-[16px] font-semibold leading-[1.3] tracking-tight text-navy">
                       {step.title}
                     </h3>
@@ -416,13 +416,14 @@ function SplitImageBlock({ data }: { data: SplitImagePattern }) {
   const imageLeft = data.imagePosition !== "right";
   const paras = Array.isArray(data.body) ? data.body : [data.body];
   return (
-    <section className="bg-gray-50 py-28">
+    <section className="bg-gray-50 py-20">
       <div className="mx-auto max-w-[1200px] px-5 lg:px-8">
         <FadeIn>
-          <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-20">
-            {/* Image with offset accent */}
-            <div className={imageLeft ? "lg:order-1" : "lg:order-2"}>
-              <div className="relative">
+          <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:items-stretch lg:gap-20">
+            {/* Image with offset accent — stretches to the text column's height
+                on desktop so the two sides always read as one balanced row. */}
+            <div className={`lg:self-stretch ${imageLeft ? "lg:order-1" : "lg:order-2"}`}>
+              <div className="relative lg:h-full">
                 {/* Offset background accent block */}
                 <div
                   aria-hidden
@@ -431,7 +432,7 @@ function SplitImageBlock({ data }: { data: SplitImagePattern }) {
                   }`}
                   style={{ transform: imageLeft ? "translate(-16px, 16px)" : "translate(16px, 16px)" }}
                 />
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100 shadow-xl">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100 shadow-xl lg:aspect-auto lg:h-full lg:min-h-[380px]">
                   <Image
                     src={data.image}
                     alt={data.heading}
@@ -484,7 +485,7 @@ function SplitImageBlock({ data }: { data: SplitImagePattern }) {
 
 function DarkCtaBlock({ data }: { data: DarkCtaPattern }) {
   return (
-    <section className="relative overflow-hidden bg-navy py-24">
+    <section className="relative overflow-hidden bg-navy py-16">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.08]"
@@ -507,14 +508,14 @@ function DarkCtaBlock({ data }: { data: DarkCtaPattern }) {
               {data.eyebrow}
             </div>
           )}
-          <h2 className="mt-6 text-[34px] font-bold leading-[1.12] tracking-[-0.015em] text-white sm:text-[48px]">
+          <h2 className="mt-5 text-[26px] font-bold leading-[1.15] tracking-[-0.015em] text-white sm:text-[34px]" style={{ textWrap: "balance" }}>
             {renderHeading(data.heading, data.accent)}
           </h2>
-          <p className="mx-auto mt-6 max-w-[680px] text-[17px] leading-[1.75] text-white/75">
+          <p className="mx-auto mt-4 max-w-[640px] text-[15.5px] leading-[1.7] text-white/75">
             {data.body}
           </p>
           {data.ctaLabel && data.ctaHref && (
-            <div className="mt-10">
+            <div className="mt-7">
               <Link
                 href={data.ctaHref}
                 className="inline-flex items-center gap-2 rounded-full bg-red px-7 py-3.5 text-[15px] font-semibold text-white transition-colors hover:bg-red-dark"
