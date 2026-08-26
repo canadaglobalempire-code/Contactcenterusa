@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 export const metadata: Metadata = {
   title: "Los Angeles Call Center & BPO Services | US-Based Teams",
@@ -199,7 +200,8 @@ export default function LosAngelesPage() {
       businesses="500K+"
       statePage="california"
       answeringPost="answering-service-los-angeles"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["los-angeles"].seo]}
+      faqs={cityExtras["los-angeles"].faqs}
     />
   );
 }

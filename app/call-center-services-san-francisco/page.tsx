@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "San Francisco Call Center & BPO Services | US-Based Teams";
 const description =
@@ -190,7 +191,8 @@ export default function SanFranciscoPage() {
       population="870K"
       businesses="150K+"
       statePage="california"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["san-francisco"].seo]}
+      faqs={cityExtras["san-francisco"].faqs}
     />
   );
 }

@@ -87,20 +87,40 @@ export function Hero2() {
             </Link>
           </motion.div>
 
-          {/* Trust line */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          {/* Trust badges row */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="mt-6 sm:mt-8 text-xs sm:text-sm font-medium text-white/60 px-2"
+            className="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 px-2 max-w-4xl text-xs sm:text-sm font-medium text-white/90"
           >
-            25+ years of experience across multiple industries
-          </motion.p>
+            <div className="flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 sm:px-3.5 py-1.5 border border-white/15 shadow-sm">
+              <span className="text-sm">🇺🇸</span>
+              <span>100% US-Based Agents</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 sm:px-3.5 py-1.5 border border-white/15 shadow-sm">
+              <span className="text-emerald-400">✓</span>
+              <span>HIPAA &amp; PCI-DSS Compliant</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 sm:px-3.5 py-1.5 border border-white/15 shadow-sm">
+              <span className="text-amber-400">⚡</span>
+              <span>24/7/365 Live Coverage</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 sm:px-3.5 py-1.5 border border-white/15 shadow-sm">
+              <span className="text-blue-400">📄</span>
+              <span>No Long-Term Contracts</span>
+            </div>
+            <div className="flex items-center gap-1.5 rounded-full bg-white/10 backdrop-blur-md px-3 sm:px-3.5 py-1.5 border border-white/15 shadow-sm">
+              <span className="text-amber-400">★</span>
+              <span>4.9/5 Rating (127+ Reviews)</span>
+            </div>
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-2 text-base sm:text-lg font-bold text-white"
+            className="mt-6 text-base sm:text-lg font-bold text-white tracking-wide"
           >
             Boots on the Ground. Deals on the Line.
           </motion.p>

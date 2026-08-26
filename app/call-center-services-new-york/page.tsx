@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "New York Call Center & BPO Services | US-Based Teams";
 const description =
@@ -190,7 +191,8 @@ export default function NewYorkPage() {
       population="8.3M"
       businesses="1M+"
       statePage="new-york"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["new-york"].seo]}
+      faqs={cityExtras["new-york"].faqs}
     />
   );
 }

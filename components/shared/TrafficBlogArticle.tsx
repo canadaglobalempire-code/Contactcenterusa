@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Calendar, CheckCircle, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, CheckCircle, Clock, HelpCircle } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
@@ -218,13 +218,33 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
               </LeadCTALink>
             </div>
 
-            <h2>FAQ</h2>
-            {post.faqs.map((faq) => (
-              <div key={faq.question}>
-                <h3>{faq.question}</h3>
-                <p>{faq.answer}</p>
+            <div className="not-prose mt-12 border-t border-gray-200 pt-10">
+              <div className="mb-6 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-red">
+                <HelpCircle className="h-4 w-4" />
+                Frequently Asked Questions
               </div>
-            ))}
+              <h2 className="text-2xl font-bold text-navy sm:text-3xl">
+                Got Questions? Here Are The Facts.
+              </h2>
+              <div className="mt-8 space-y-4">
+                {post.faqs.map((faq) => (
+                  <div
+                    key={faq.question}
+                    className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 hover:shadow-md"
+                  >
+                    <h3 className="flex items-start gap-3 text-lg font-bold text-navy">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red/10 text-xs font-bold text-red">
+                        Q
+                      </span>
+                      <span>{faq.question}</span>
+                    </h3>
+                    <p className="mt-3 pl-9 text-sm leading-relaxed text-gray-700 sm:text-base">
+                      {faq.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </article>
 
           <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">

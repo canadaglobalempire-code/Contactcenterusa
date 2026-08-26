@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "San Diego Call Center & BPO Services | US-Based Teams";
 const description =
@@ -190,7 +191,8 @@ export default function SanDiegoPage() {
       population="1.4M"
       businesses="150K+"
       statePage="california"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["san-diego"].seo]}
+      faqs={cityExtras["san-diego"].faqs}
     />
   );
 }

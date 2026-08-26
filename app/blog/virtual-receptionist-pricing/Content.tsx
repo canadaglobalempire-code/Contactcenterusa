@@ -153,8 +153,6 @@ export default function VirtualReceptionistPricingContent({ faqs }: { faqs: Faq[
                 <Image src="/images/cc-agent-monitor.jpg" alt="Comparing virtual receptionist plans and overage terms" width={800} height={450} className="w-full object-cover" />
               </div>
 
-              <AnsweringServiceCalculator />
-
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">The Overage Trap</h2>
               <div className="mt-6 rounded-2xl border border-red/30 bg-red/[0.02] p-6">
                 <div className="flex items-start gap-3">

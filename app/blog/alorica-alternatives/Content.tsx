@@ -69,34 +69,34 @@ export default function Content() {
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">The 7 Best Alorica Alternatives in 2026</h2>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">1. Contact Center USA</h3>
-                <p><strong>Best for:</strong> Brands that want 100% onshore US delivery and flexible terms.</p>
+                <p><strong>Best for:</strong> Programs that left Alorica specifically because delivery moved offshore.</p>
                 <p>
-                  Contact Center USA staffs, trains, and QAs every agent in America — no nearshore or offshore handoffs — with 24/7 coverage and full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link>. No minimum-volume lock-ins, month-to-month options, and a named senior account manager on every program.
+                  This is the direct answer to the most common reason buyers shop away from Alorica. Every agent is staffed, trained, and QA&apos;d in the United States — there is no nearshore or offshore tier to be quietly migrated into six months after signing. Coverage runs 24/7 with full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link>, there is no FTE floor, month-to-month terms are available, and a named senior account manager sits on every program rather than a pooled service desk.
                 </p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">2. Concentrix</h3>
-                <p><strong>Best for:</strong> Enterprise-scale CX with strong digital delivery.</p>
-                <p>The largest pure-play CX provider — a like-for-like peer at the top of the market. See our <Link href="/blog/concentrix-alternatives" className="text-red hover:text-red-dark font-semibold">Concentrix alternatives guide</Link>.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">2. Working Solutions</h3>
+                <p><strong>Best for:</strong> The other genuinely onshore option, at a premium.</p>
+                <p>If your objection to Alorica is delivery location rather than price, Working Solutions is the other US-only answer on this list. Curated, degree-holding US work-from-home agents at premium rates — strong for high-ticket sales and complex support where agent quality outweighs cost per hour. Expect to pay more per seat than Alorica quoted you, and to get a materially different conversation on the phone.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">3. TTEC</h3>
-                <p><strong>Best for:</strong> Digital-first CX in high-trust verticals.</p>
-                <p>Strong CX consulting + delivery for healthcare, financial services, and government. See our <Link href="/blog/ttec-alternatives" className="text-red hover:text-red-dark font-semibold">TTEC alternatives guide</Link>.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">3. Concentrix</h3>
+                <p><strong>Best for:</strong> Buyers who actually need Alorica&apos;s scale but want stronger digital delivery.</p>
+                <p>The largest pure-play CX provider and a genuine like-for-like peer at the top of the market. If you are leaving Alorica over digital capability or platform depth rather than delivery location, this is the closest swap. If you are leaving over minimums or account attention, you will find the same constraints here. See our <Link href="/blog/concentrix-alternatives" className="text-red hover:text-red-dark font-semibold">Concentrix alternatives guide</Link>.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">4. Foundever</h3>
-                <p><strong>Best for:</strong> Global multilingual support with a strong nearshore footprint.</p>
-                <p>Formerly Sitel Group — 170,000+ agents, 45 languages, strong EU and LATAM delivery.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">4. TTEC</h3>
+                <p><strong>Best for:</strong> Regulated programs where a blended delivery footprint complicates compliance.</p>
+                <p>Alorica&apos;s mix of onshore, nearshore and offshore delivery is efficient, but it adds work to any program operating under HIPAA, PCI-DSS or government data-residency expectations, because controls have to hold across every site. TTEC&apos;s consulting-plus-delivery model is built for exactly those high-trust verticals — healthcare, financial services and government. It costs more. See our <Link href="/blog/ttec-alternatives" className="text-red hover:text-red-dark font-semibold">TTEC alternatives guide</Link>.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. Helpware</h3>
-                <p><strong>Best for:</strong> DTC, SaaS, and marketplace brands wanting flexible contracts.</p>
-                <p>Nimble CX outsourcer with modern CCaaS integrations and nearshore + offshore delivery.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. Foundever</h3>
+                <p><strong>Best for:</strong> Keeping a nearshore model but widening language coverage.</p>
+                <p>Formerly Sitel Group, with 170,000+ agents and 45 languages. If nearshore delivery was never your objection to Alorica and the real gap was language breadth or European coverage, Foundever addresses that directly while keeping a comparable cost structure.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">6. Working Solutions</h3>
-                <p><strong>Best for:</strong> 100% US work-from-home with elite agent talent.</p>
-                <p>Curated, degree-holding US WFH agents at premium rates — strong for high-ticket sales and complex support.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">6. Helpware</h3>
+                <p><strong>Best for:</strong> Programs too small for Alorica&apos;s enterprise minimums.</p>
+                <p>A recurring reason mid-market buyers shop away from Alorica is simply that they sit at the bottom of its client list and are serviced accordingly. Helpware is built for that segment — nimble, modern CCaaS integrations, flexible contracts, nearshore and offshore delivery, and a program size where you are a significant account rather than a rounding error.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">7. TaskUs</h3>
-                <p><strong>Best for:</strong> High-growth digital brands, trust &amp; safety, and content moderation.</p>
-                <p>Fast-scaling tech and marketplace specialist with strong digital CX and content moderation practices.</p>
+                <p><strong>Best for:</strong> Trust and safety and content moderation, which is not Alorica&apos;s core.</p>
+                <p>If what you actually need is content moderation, trust and safety, or support for a high-growth digital marketplace, this is specialist work rather than general CX and Alorica is not the natural home for it. TaskUs built its practice around exactly this.</p>
 
                 <div className="my-10 overflow-hidden rounded-2xl">
                   <Image src="/images/agents-working.jpg" alt="BPO outsourcing team" width={800} height={450} className="w-full object-cover" />
@@ -117,11 +117,28 @@ export default function Content() {
 
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">How to Pick the Right Alorica Alternative</h2>
+                <p>
+                  Start from the reason you are leaving rather than from a vendor list. Buyers move away from Alorica for four distinct reasons, and each one points at a different shortlist — picking on scale or price alone is how programs end up switching twice.
+                </p>
                 <ol className="space-y-3 my-6 list-decimal pl-6">
-                  <li><strong>Where do you need agents?</strong> Onshore US → Contact Center USA, Working Solutions. Nearshore → Foundever. Offshore → Helpware, TaskUs.</li>
-                  <li><strong>How big is your program?</strong> 5–150 FTEs → Contact Center USA, Helpware. 100–500 → TTEC. 500+ → Concentrix, Foundever.</li>
-                  <li><strong>What&apos;s your vertical?</strong> Healthcare/financial → TTEC. E-commerce/SaaS → Helpware, Contact Center USA. Multilingual → Foundever.</li>
+                  <li><strong>Leaving because delivery moved offshore?</strong> Only two options on this list are genuinely onshore-only: Contact Center USA and Working Solutions. Everyone else runs a blended footprint, which means you would be solving the problem you already have.</li>
+                  <li><strong>Leaving because of minimums or account attention?</strong> Contact Center USA and Helpware. Moving to Concentrix or TTEC replaces one set of enterprise minimums with another.</li>
+                  <li><strong>Leaving because of compliance friction across sites?</strong> TTEC for regulated verticals, or Contact Center USA if single-country delivery is what actually resolves it.</li>
+                  <li><strong>Leaving because the work is specialist?</strong> TaskUs for trust and safety or content moderation; Foundever if the gap is language coverage rather than delivery model.</li>
                 </ol>
+                <p>
+                  Size still matters as a filter after that: 5–150 FTEs suits Contact Center USA or Helpware, 100–500 suits TTEC, and 500+ realistically means Concentrix or Foundever.
+                </p>
+
+                <h2 className="text-2xl font-bold text-navy mt-12 mb-4">What switching away from Alorica actually involves</h2>
+                <p>
+                  Migrations from a large blended-delivery provider have a predictable shape, and the parts that go wrong are rarely the parts buyers plan for. Three things are worth settling before you sign anything.
+                </p>
+                <ul className="space-y-3 my-6">
+                  <li><strong>Knowledge transfer is the real risk, not telephony.</strong> Routing and numbers move in an afternoon. What does not move is the undocumented knowledge sitting with tenured agents — the workarounds, the exceptions, the accounts that need handling differently. Ask your outgoing provider for call recordings and QA scorecards from your own program before notice is served, because access to them is rarely as easy afterwards.</li>
+                  <li><strong>Check what the contract says about data return.</strong> Enterprise agreements vary widely on what happens to recordings, transcripts and CRM records at termination, and on how long you have to retrieve them. If your program is regulated, that retention question is yours to answer to a regulator, not your vendor&apos;s.</li>
+                  <li><strong>Run parallel, and run it long enough to hit a peak.</strong> Thirty days of parallel running that never encounters a Monday morning surge or a seasonal spike has not tested anything. If your volume is seasonal, cut over after a peak rather than before one.</li>
+                </ul>
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Why Contact Center USA vs Alorica</h2>
                 <ul className="space-y-3 my-6">

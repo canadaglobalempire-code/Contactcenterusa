@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "Philadelphia Call Center & BPO Services | US-Based Teams";
 const description =
@@ -190,7 +191,8 @@ export default function PhiladelphiaPage() {
       population="1.6M"
       businesses="200K+"
       statePage="pennsylvania"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["philadelphia"].seo]}
+      faqs={cityExtras["philadelphia"].faqs}
     />
   );
 }

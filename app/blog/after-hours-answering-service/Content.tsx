@@ -314,8 +314,6 @@ export default function AfterHoursAnsweringServiceContent({ faqs }: { faqs: Faq[
               </div>
 
               {/* Triage */}
-              <AnsweringServiceCalculator />
-
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">How a Good Provider Triages a 2 AM Call</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 Escalation discipline is what your on-call staff will judge the service on. Wake them for everything and they will

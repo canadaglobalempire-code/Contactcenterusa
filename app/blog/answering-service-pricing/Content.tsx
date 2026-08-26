@@ -181,8 +181,6 @@ export default function AnsweringServicePricingContent({ faqs }: { faqs: Faq[] }
                 </table>
               </div>
 
-              <AnsweringServiceCalculator />
-
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Cost Per Captured Job</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 Rate per minute measures what you pay. Cost per captured job measures what you get. They routinely disagree, and

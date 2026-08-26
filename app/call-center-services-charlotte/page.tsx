@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "Charlotte Call Center & BPO Services | US-Based Teams";
 const description =
@@ -190,7 +191,8 @@ export default function CharlottePage() {
       population="880K"
       businesses="100K+"
       statePage="north-carolina"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["charlotte"].seo]}
+      faqs={cityExtras["charlotte"].faqs}
     />
   );
 }

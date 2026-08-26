@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 export const metadata: Metadata = {
   title: "Dallas Call Center & BPO Services | US-Based Teams",
@@ -199,7 +200,8 @@ export default function DallasPage() {
       businesses="200K+"
       statePage="texas"
       answeringPost="answering-service-dallas"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["dallas"].seo]}
+      faqs={cityExtras["dallas"].faqs}
     />
   );
 }

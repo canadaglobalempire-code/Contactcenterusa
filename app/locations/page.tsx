@@ -41,6 +41,16 @@ const cities = [
   { city: "Charlotte", state: "North Carolina", href: "/call-center-services-charlotte", focus: "banking, fintech, healthcare" },
   { city: "San Francisco", state: "California", href: "/call-center-services-san-francisco", focus: "SaaS, AI, technology support" },
   { city: "Seattle", state: "Washington", href: "/call-center-services-seattle", focus: "ecommerce, cloud, aerospace" },
+  { city: "Miami", state: "Florida", href: "/call-center-services-miami", focus: "bilingual support, real estate, hospitality" },
+  { city: "Atlanta", state: "Georgia", href: "/call-center-services-atlanta", focus: "fintech, logistics, healthcare" },
+  { city: "Denver", state: "Colorado", href: "/call-center-services-denver", focus: "SaaS, aerospace, cleantech" },
+  { city: "Las Vegas", state: "Nevada", href: "/call-center-services-las-vegas", focus: "hospitality, entertainment, 24/7 care" },
+  { city: "Tampa", state: "Florida", href: "/call-center-services-tampa", focus: "healthcare BPO, insurance, financial" },
+  { city: "Boston", state: "Massachusetts", href: "/call-center-services-boston", focus: "biotech, higher education, healthcare" },
+  { city: "Nashville", state: "Tennessee", href: "/call-center-services-nashville", focus: "healthcare BPO, music, logistics" },
+  { city: "Orlando", state: "Florida", href: "/call-center-services-orlando", focus: "tourism, defense, healthcare" },
+  { city: "Portland", state: "Oregon", href: "/call-center-services-portland", focus: "ecommerce, technology, green energy" },
+  { city: "Salt Lake City", state: "Utah", href: "/call-center-services-salt-lake-city", focus: "Silicon Slopes SaaS, inside sales, finance" },
 ];
 
 const states = [

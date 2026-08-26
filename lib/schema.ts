@@ -84,6 +84,54 @@ const serviceCatalogItems = [
     description: "Insurance support for claims intake, policyholder service, renewals, and overflow programs.",
     serviceType: "Insurance call center outsourcing",
   },
+  {
+    name: "HVAC Answering Service & Call Center",
+    url: `${SITE_BASE_URL}/industries/hvac-call-center-services`,
+    description: "24/7 HVAC emergency dispatch, ServiceTitan integration, and seasonal surge call handling.",
+    serviceType: "HVAC answering service",
+  },
+  {
+    name: "Plumbing Answering Service & Call Center",
+    url: `${SITE_BASE_URL}/industries/plumbing-call-center-services`,
+    description: "24/7 plumbing emergency leak dispatch, water heater lead qualification, and calendar booking.",
+    serviceType: "Plumbing answering service",
+  },
+  {
+    name: "Roofing Contractor Call Center",
+    url: `${SITE_BASE_URL}/industries/roofing-call-center-services`,
+    description: "24/7 storm damage intake, AccuLynx inspection scheduling, and 60-second digital lead response.",
+    serviceType: "Roofing call center outsourcing",
+  },
+  {
+    name: "Urgent Care & Medical Clinic Call Center",
+    url: `${SITE_BASE_URL}/industries/urgent-care-call-center-services`,
+    description: "HIPAA-compliant patient appointment scheduling, insurance verification, and 24/7 triage dispatch.",
+    serviceType: "Urgent care call center outsourcing",
+  },
+  {
+    name: "CPA & Accounting Firm Answering Service",
+    url: `${SITE_BASE_URL}/industries/accounting-cpa-call-center`,
+    description: "Tax season surge absorption, client intake, and TaxDome appointment scheduling.",
+    serviceType: "Accounting firm answering service",
+  },
+  {
+    name: "Electrical Contractor Call Center & 24/7 Dispatch",
+    url: `${SITE_BASE_URL}/industries/electrical-contractor-call-center`,
+    description: "24/7 electrical emergency outage dispatch, ServiceTitan calendar booking, and commercial intake.",
+    serviceType: "Electrical contractor answering service",
+  },
+  {
+    name: "Pest Control Answering Service & Call Center",
+    url: `${SITE_BASE_URL}/industries/pest-control-call-center`,
+    description: "24/7 pest emergency lead intake, FieldRoutes and PestPac scheduling, and recurring plan upsells.",
+    serviceType: "Pest control answering service",
+  },
+  {
+    name: "Solar Lead Qualification & Appointment Setting",
+    url: `${SITE_BASE_URL}/industries/solar-lead-generation-call-center`,
+    description: "Sub-60-second speed-to-lead response, utility bill pre-checks, and CRM calendar booking.",
+    serviceType: "Solar lead qualification call center",
+  },
 ];
 
 /**

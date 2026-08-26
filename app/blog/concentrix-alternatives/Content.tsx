@@ -69,46 +69,34 @@ export default function Content() {
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">The 7 Best Concentrix Alternatives in 2026</h2>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">1. Contact Center USA</h3>
-                <p><strong>Best for:</strong> US brands wanting 100% onshore delivery without enterprise bureaucracy.</p>
+                <p><strong>Best for:</strong> Programs that were too small to matter inside the largest CX provider in the world.</p>
                 <p>
-                  Contact Center USA delivers 100% US-based agents, 24/7 coverage, and full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link> with no minimum-volume lock-ins. Unlike Concentrix&apos;s global-first network, every agent is staffed, trained, and QA&apos;d in America. Best fit for 5–150 FTE programs that want a named senior account manager and month-to-month flexibility.
+                  Concentrix&apos;s scale is genuine and so is its consequence: a 40-seat programme sits a long way down a client list measured in the hundreds of thousands of agents, and service attention follows the revenue. Contact Center USA is deliberately the opposite shape — US-based agents staffed and QA&apos;d domestically, full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link>, no FTE floor, month-to-month terms, and a named senior account manager who knows your programme by name rather than by number.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">2. TTEC</h3>
-                <p><strong>Best for:</strong> Digital-first CX in high-trust verticals.</p>
-                <p>
-                  TTEC pairs CX consulting with delivery and is one of the strongest options for healthcare, financial services, and government programs. Premium pricing, but strong strategy depth. See our <Link href="/blog/teleperformance-vs-ttec" className="text-red hover:text-red-dark font-semibold">Teleperformance vs TTEC comparison</Link> for how it stacks up.
-                </p>
+                <p><strong>Best for:</strong> Buyers who want consulting depth alongside delivery.</p>
+                <p>Where Concentrix leads with delivery capability at scale, TTEC leads with strategy and platform work — Genesys, Microsoft and AWS implementation bundled with agents. If your dissatisfaction is that Concentrix executes what you specify but does not help you decide what to specify, this is the swap. It is premium-priced. See our <Link href="/blog/ttec-alternatives" className="text-red hover:text-red-dark font-semibold">TTEC alternatives guide</Link>.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">3. Alorica</h3>
-                <p><strong>Best for:</strong> Mid-to-large US brands wanting a nearshore + onshore blend.</p>
-                <p>
-                  US-headquartered with strong nearshore delivery (Mexico, Jamaica, Dominican Republic) and 100,000+ agents. A better mid-market fit than Concentrix, though still enterprise-leaning. See our <Link href="/blog/alorica-alternatives" className="text-red hover:text-red-dark font-semibold">Alorica alternatives guide</Link>.
-                </p>
+                <p><strong>Best for:</strong> Comparable scale from a US-headquartered provider.</p>
+                <p>One of the larger US-headquartered outsourcers, with a strong nearshore footprint across Mexico, Jamaica and the Dominican Republic. A reasonable like-for-like at the top of the market if the objection to Concentrix is commercial rather than structural — though enterprise minimums and blended delivery persist. See our <Link href="/blog/alorica-alternatives" className="text-red hover:text-red-dark font-semibold">Alorica alternatives guide</Link>.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">4. Foundever</h3>
-                <p><strong>Best for:</strong> Global multilingual support with a strong nearshore footprint.</p>
-                <p>
-                  Formerly Sitel Group, Foundever runs 170,000+ agents across 45 languages with strong EU and LATAM delivery and better mid-market flexibility than Concentrix.
-                </p>
+                <p><strong>Best for:</strong> European and Latin American coverage specifically.</p>
+                <p>Formerly Sitel Group — 170,000+ agents and 45 languages, with delivery strength in Europe and Latin America. Following Concentrix&apos;s absorption of Webhelp its European footprint is substantial too, so this is a real comparison rather than an obvious gap: shortlist both on named-site coverage for the specific regions you serve.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. TaskUs</h3>
-                <p><strong>Best for:</strong> High-growth digital brands, trust &amp; safety, and content moderation.</p>
-                <p>
-                  TaskUs built its reputation with fast-scaling tech and marketplace clients. Strong at digital CX, trust &amp; safety, and content moderation, with nearshore and offshore delivery.
-                </p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. Working Solutions</h3>
+                <p><strong>Best for:</strong> 100% US work-from-home with elite agent talent.</p>
+                <p>Curated, degree-holding US work-from-home agents at premium rates, strong for high-ticket sales and complex support. This is the option when the complaint about Concentrix is agent calibre on your specific programme rather than the provider&apos;s capability in the abstract.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">6. Helpware</h3>
-                <p><strong>Best for:</strong> DTC, SaaS, and marketplace brands wanting flexible contracts.</p>
-                <p>
-                  Nimbler than Concentrix, with native integrations into modern CCaaS platforms and nearshore (LATAM) plus offshore (Philippines) delivery.
-                </p>
+                <p><strong>Best for:</strong> DTC, SaaS and marketplace brands wanting flexible contracts.</p>
+                <p>Nimble CX outsourcer with modern CCaaS integrations and nearshore plus offshore delivery. Built for the programme size where Concentrix&apos;s commercial minimums stop making sense, with contract flexibility a provider of that scale cannot realistically offer.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">7. Working Solutions</h3>
-                <p><strong>Best for:</strong> 100% US work-from-home with elite agent talent.</p>
-                <p>
-                  A different model: curated, degree-holding US WFH agents at premium rates. Ideal for high-ticket sales and complex support.
-                </p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">7. TaskUs</h3>
+                <p><strong>Best for:</strong> High-growth digital brands, trust and safety, and content moderation.</p>
+                <p>Fast-scaling technology and marketplace specialist with a genuine trust-and-safety practice. Concentrix does this work; TaskUs is organised around it, which shows in how quickly a moderation programme can be stood up and how the QA framework is built.</p>
 
                 <div className="my-10 overflow-hidden rounded-2xl">
                   <Image src="/images/agents-working.jpg" alt="BPO outsourcing team" width={800} height={450} className="w-full object-cover" />
@@ -129,11 +117,28 @@ export default function Content() {
 
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">How to Pick the Right Concentrix Alternative</h2>
+                <p>
+                  Concentrix is the largest pure-play CX provider in the world, and almost every complaint about it traces back to that fact rather than to capability. Work out which consequence of scale is actually affecting you before you shortlist.
+                </p>
                 <ol className="space-y-3 my-6 list-decimal pl-6">
-                  <li><strong>Where do you need agents?</strong> Onshore US → Contact Center USA, Working Solutions. Nearshore → Alorica, Foundever. Offshore → Helpware, TaskUs.</li>
-                  <li><strong>How big is your program?</strong> 5–150 FTEs → Contact Center USA, Helpware, Working Solutions. 100–500 → Alorica, TTEC. 500+ → Foundever.</li>
-                  <li><strong>What&apos;s your vertical?</strong> Healthcare/financial → TTEC. E-commerce/SaaS → Helpware, Contact Center USA, TaskUs. Multilingual → Foundever.</li>
+                  <li><strong>Leaving because your program gets no attention?</strong> Contact Center USA or Helpware. Moving to Alorica or Foundever puts you near the bottom of a comparably large client list.</li>
+                  <li><strong>Leaving because you need advisory as well as delivery?</strong> TTEC is the only option on this list built that way, and you will pay for it.</li>
+                  <li><strong>Leaving because you want onshore-only US delivery?</strong> Contact Center USA or Working Solutions. Every other provider here runs a blended global footprint.</li>
+                  <li><strong>Leaving because of contract rigidity?</strong> Contact Center USA or Helpware, both of which will write month-to-month or short-commit terms that a provider of Concentrix&apos;s size structurally cannot.</li>
                 </ol>
+                <p>
+                  Then filter by size: 5–150 FTEs suits Contact Center USA or Helpware, 100–500 suits TTEC, and above 500 you are realistically choosing between Concentrix, Alorica and Foundever anyway.
+                </p>
+
+                <h2 className="text-2xl font-bold text-navy mt-12 mb-4">What switching away from Concentrix actually involves</h2>
+                <p>
+                  Leaving a provider of this scale is more procedural than technical, and the friction tends to come from process rather than from anything going wrong.
+                </p>
+                <ul className="space-y-3 my-6">
+                  <li><strong>Notice periods and true-up clauses.</strong> Enterprise agreements frequently carry volume commitments with reconciliation at termination. Read what happens if your volumes fall during the transition, because running down a programme while standing up its replacement is exactly the scenario those clauses were written for.</li>
+                  <li><strong>Your data is spread across more systems than you think.</strong> At scale, recordings, QA, workforce management and knowledge-base content often live in different platforms with different retention settings. Ask for a written inventory of what exists, where, and how long you have to retrieve it after notice.</li>
+                  <li><strong>Multi-site programmes migrate unevenly.</strong> If your work is delivered from several countries, expect the sites to hand over at different speeds and quality levels. Sequence the cutover by site rather than treating it as one event, and keep the strongest site running longest.</li>
+                </ul>
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Why Contact Center USA vs Concentrix</h2>
                 <ul className="space-y-3 my-6">

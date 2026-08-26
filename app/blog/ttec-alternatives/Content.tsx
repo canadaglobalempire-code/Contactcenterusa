@@ -69,38 +69,34 @@ export default function Content() {
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">The 7 Best TTEC Alternatives in 2026</h2>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">1. Contact Center USA</h3>
-                <p><strong>Best for:</strong> US brands wanting onshore delivery and flexible terms — without a consulting engagement.</p>
+                <p><strong>Best for:</strong> Buyers who want the delivery without the consulting engagement attached to it.</p>
                 <p>
-                  Contact Center USA delivers 100% US-based agents, 24/7 coverage, and full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link> with no minimum-volume lock-ins and month-to-month options. Ideal for 5–150 FTE programs across <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link>, <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>, e-commerce, and SaaS.
+                  The most common reason a mid-market brand shops away from TTEC is that it needed agents on the phones next quarter and was sold a transformation programme instead. Contact Center USA is delivery-first: US-based agents staffed, trained and QA&apos;d domestically, full <Link href="/services/omnichannel-contact-center-solutions" className="text-red hover:text-red-dark font-semibold">omnichannel service</Link>, no FTE floor, month-to-month terms available, and a named senior account manager rather than an engagement team. You are buying a working queue, not a roadmap.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">2. Concentrix</h3>
-                <p><strong>Best for:</strong> Enterprise-scale CX with strong digital and platform delivery.</p>
-                <p>
-                  The largest pure-play CX provider, with deep platform and analytics capabilities. A like-for-like TTEC peer at the top of the market. See our <Link href="/blog/concentrix-alternatives" className="text-red hover:text-red-dark font-semibold">Concentrix alternatives guide</Link>.
-                </p>
+                <p><strong>Best for:</strong> Comparable enterprise scale with a lighter consulting overlay.</p>
+                <p>The largest pure-play CX provider, and the closest like-for-like swap if you genuinely need TTEC-scale capability but want the commercial conversation weighted toward delivery rather than advisory work. The enterprise minimums and process weight largely come with it. See our <Link href="/blog/concentrix-alternatives" className="text-red hover:text-red-dark font-semibold">Concentrix alternatives guide</Link>.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">3. Alorica</h3>
-                <p><strong>Best for:</strong> Mid-to-large US brands wanting a nearshore + onshore blend.</p>
-                <p>
-                  US-headquartered with strong nearshore delivery and 100,000+ agents. More flexible on mid-market programs than TTEC. See our <Link href="/blog/alorica-alternatives" className="text-red hover:text-red-dark font-semibold">Alorica alternatives guide</Link>.
-                </p>
+                <p><strong>Best for:</strong> Cutting cost where nearshore delivery is acceptable.</p>
+                <p>If price is the specific objection to TTEC, Alorica is the usual answer: US-headquartered, very large, with a substantial nearshore footprint across Mexico, Jamaica and the Dominican Republic that brings the rate down materially. The trade is delivery location — if your program needs onshore-only agents, this solves the wrong problem. See our <Link href="/blog/alorica-alternatives" className="text-red hover:text-red-dark font-semibold">Alorica alternatives guide</Link>.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">4. Foundever</h3>
-                <p><strong>Best for:</strong> Global multilingual support with a strong nearshore footprint.</p>
-                <p>Formerly Sitel Group — 170,000+ agents, 45 languages, strong EU and LATAM delivery.</p>
+                <p><strong>Best for:</strong> Multilingual coverage without TTEC&apos;s premium.</p>
+                <p>Formerly Sitel Group — 170,000+ agents and 45 languages with strong European and Latin American delivery. Where TTEC prices language coverage as part of a bundled engagement, Foundever sells it as capacity, which is usually the cheaper structure if languages are the requirement.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. Helpware</h3>
-                <p><strong>Best for:</strong> DTC, SaaS, and marketplace brands wanting flexible contracts.</p>
-                <p>Nimble CX outsourcer with modern CCaaS integrations and nearshore + offshore delivery.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. Working Solutions</h3>
+                <p><strong>Best for:</strong> Premium US agents, without the platform and consulting bundle.</p>
+                <p>Curated, degree-holding US work-from-home agents at premium rates. This is the option for buyers who valued TTEC&apos;s agent quality but not the surrounding engagement — you keep the calibre of conversation and drop the consulting line items.</p>
 
-                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">6. Working Solutions</h3>
-                <p><strong>Best for:</strong> 100% US work-from-home with elite agent talent.</p>
-                <p>Curated, degree-holding US WFH agents at premium rates — strong for high-ticket sales and complex support.</p>
+                <h3 className="text-xl font-semibold text-navy mt-8 mb-3">6. Helpware</h3>
+                <p><strong>Best for:</strong> Mid-market programs TTEC&apos;s minimums do not accommodate.</p>
+                <p>Nimble CX outsourcer with modern CCaaS integrations and nearshore plus offshore delivery. If the sticking point with TTEC was an enterprise minimum that your programme cannot justify, this is a segment built for exactly that size of buyer.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">7. TaskUs</h3>
-                <p><strong>Best for:</strong> High-growth digital brands, trust &amp; safety, and content moderation.</p>
-                <p>Fast-scaling tech and marketplace specialist with strong digital CX and content moderation practices.</p>
+                <p><strong>Best for:</strong> High-growth digital brands, trust and safety, and content moderation.</p>
+                <p>Fast-scaling specialist for technology and marketplace clients, with a genuine trust-and-safety and content-moderation practice. Different shape of company from TTEC entirely — better suited to a digital-native brand than to a regulated enterprise transformation.</p>
 
                 <div className="my-10 overflow-hidden rounded-2xl">
                   <Image src="/images/agents-working.jpg" alt="BPO outsourcing team" width={800} height={450} className="w-full object-cover" />
@@ -121,11 +117,28 @@ export default function Content() {
 
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">How to Pick the Right TTEC Alternative</h2>
+                <p>
+                  TTEC is not a provider people leave because it does the work badly. Buyers move for structural reasons — price, shape of engagement, or minimum size — and each of those points somewhere different.
+                </p>
                 <ol className="space-y-3 my-6 list-decimal pl-6">
-                  <li><strong>Do you need consulting, or just delivery?</strong> Transformation → TTEC, Concentrix. Reliable agents on flexible terms → Contact Center USA, Helpware.</li>
-                  <li><strong>Where do you need agents?</strong> Onshore US → Contact Center USA, Working Solutions. Nearshore → Alorica, Foundever.</li>
-                  <li><strong>How big is your program?</strong> 5–150 FTEs → Contact Center USA, Helpware. 100–500 → Alorica. 500+ → Concentrix, Foundever.</li>
+                  <li><strong>Leaving over price?</strong> Alorica or Foundever will move the rate meaningfully, both by using nearshore capacity. If onshore-only delivery is non-negotiable, the saving is smaller and the answer is Contact Center USA rather than a global provider.</li>
+                  <li><strong>Leaving over the consulting-led engagement model?</strong> Contact Center USA or Working Solutions. Both sell delivery rather than transformation, which shortens the sales cycle from months to weeks.</li>
+                  <li><strong>Leaving because your program is too small?</strong> Contact Center USA or Helpware. Concentrix will reproduce the minimums you are trying to escape.</li>
+                  <li><strong>Leaving because the work is specialist?</strong> TaskUs for trust and safety or moderation; Foundever if language breadth is the real gap.</li>
                 </ol>
+                <p>
+                  One caution specific to TTEC: if you bought the platform work as well as the agents — Genesys, Microsoft or AWS implementation sitting inside the same contract — separate those two decisions before you shop. Replacing a delivery partner is straightforward; unpicking a platform engagement at the same time is not.
+                </p>
+
+                <h2 className="text-2xl font-bold text-navy mt-12 mb-4">What switching away from TTEC actually involves</h2>
+                <p>
+                  The migration risk here is different from a pure delivery provider, because TTEC engagements frequently entangle three things that were bought together and now have to be separated.
+                </p>
+                <ul className="space-y-3 my-6">
+                  <li><strong>Separate the platform from the people.</strong> If the CCaaS implementation, the integrations and the agents all sit in one agreement, establish first which of them you actually own and which travel with the vendor. Buyers regularly discover mid-migration that a routing configuration or a reporting layer they assumed was theirs is not.</li>
+                  <li><strong>Consulting deliverables are not knowledge transfer.</strong> A journey map or a CX strategy document is not the same as the operational detail your new provider needs — call drivers, exception handling, the accounts that get treated differently. Ask for QA scorecards and recordings from your own program specifically.</li>
+                  <li><strong>Budget for a shorter, cheaper replacement.</strong> Most programs leaving TTEC are replacing a bundled engagement with delivery alone, which means the like-for-like comparison flatters the new vendor. Decide separately whether you still need the advisory work, and from whom, rather than assuming it disappears without consequence.</li>
+                </ul>
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Why Contact Center USA vs TTEC</h2>
                 <ul className="space-y-3 my-6">

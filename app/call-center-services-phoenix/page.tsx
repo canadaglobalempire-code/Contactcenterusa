@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "Phoenix Call Center & BPO Services | US-Based Teams";
 const description =
@@ -191,7 +192,8 @@ export default function PhoenixPage() {
       businesses="200K+"
       statePage="arizona"
       answeringPost="answering-service-phoenix"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["phoenix"].seo]}
+      faqs={cityExtras["phoenix"].faqs}
     />
   );
 }

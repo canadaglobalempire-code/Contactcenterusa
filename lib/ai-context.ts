@@ -139,6 +139,56 @@ export const priorityLocationLinks: PriorityLink[] = [
     href: "/call-center-services-houston",
     summary: "Service-area guidance for Houston businesses that need US-based customer communication support.",
   },
+  {
+    title: "Miami Call Center Services",
+    href: "/call-center-services-miami",
+    summary: "Bilingual English and Spanish customer support and answering services for Miami businesses.",
+  },
+  {
+    title: "Atlanta Call Center Services",
+    href: "/call-center-services-atlanta",
+    summary: "Eastern-time-aligned customer care, fintech support, and BPO services for Atlanta enterprises.",
+  },
+  {
+    title: "Denver Call Center Services",
+    href: "/call-center-services-denver",
+    summary: "Mountain-time technical support, SaaS customer care, and BPO services for Denver & Colorado.",
+  },
+  {
+    title: "Las Vegas Call Center Services",
+    href: "/call-center-services-las-vegas",
+    summary: "24/7/365 hospitality answering, guest reservations, and emergency dispatch for Las Vegas businesses.",
+  },
+  {
+    title: "Tampa Call Center Services",
+    href: "/call-center-services-tampa",
+    summary: "Healthcare BPO, insurance claims intake, and customer support for Tampa Bay organizations.",
+  },
+  {
+    title: "Boston Call Center Services",
+    href: "/call-center-services-boston",
+    summary: "Biotech information lines, higher education support, and customer care for Greater Boston.",
+  },
+  {
+    title: "Nashville Call Center Services",
+    href: "/call-center-services-nashville",
+    summary: "Healthcare patient scheduling, entertainment customer support, and BPO services for Nashville.",
+  },
+  {
+    title: "Orlando Call Center Services",
+    href: "/call-center-services-orlando",
+    summary: "24/7 tourism answering, guest care, and healthcare support for Central Florida businesses.",
+  },
+  {
+    title: "Portland Call Center Services",
+    href: "/call-center-services-portland",
+    summary: "Pacific Northwest customer care, e-commerce support, and technical help desk for Portland.",
+  },
+  {
+    title: "Salt Lake City Call Center Services",
+    href: "/call-center-services-salt-lake-city",
+    summary: "Silicon Slopes SaaS support, inside sales development, and BPO services for Utah.",
+  },
 ];
 
 export const priorityBuyerGuideLinks: PriorityLink[] = [
@@ -146,6 +196,31 @@ export const priorityBuyerGuideLinks: PriorityLink[] = [
     title: "Call Center Outsourcing Answers",
     href: "/answers",
     summary: "Fast answers about service types, provider selection, quote readiness, and next steps.",
+  },
+  {
+    title: "Ruby Receptionists Alternatives",
+    href: "/blog/ruby-receptionists-alternatives",
+    summary: "Compare top Ruby alternatives for US-based answering, dedicated agent pods, and scalable pricing.",
+  },
+  {
+    title: "AnswerConnect Alternatives",
+    href: "/blog/answerconnect-alternatives",
+    summary: "Compare 24/7 live answering alternatives for small businesses, contractors, and medical practices.",
+  },
+  {
+    title: "Call Center SLA Standards & Benchmarks",
+    href: "/blog/call-center-sla-best-practices",
+    summary: "Complete guide to call center SLAs, industry benchmarks (ASA, FCR, Abandonment), and contract terms.",
+  },
+  {
+    title: "How to Switch Call Center Providers",
+    href: "/blog/how-to-switch-call-center-providers",
+    summary: "Step-by-step checklist to migrate to a new call center vendor with zero customer downtime.",
+  },
+  {
+    title: "Inbound vs Outbound Call Center",
+    href: "/blog/inbound-vs-outbound-call-center",
+    summary: "Key differences, costs, technology stacks, and blended contact center strategies explained.",
   },
   {
     title: "Multilingual Call Center Companies",

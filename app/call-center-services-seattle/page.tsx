@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "Seattle Call Center & BPO Services | US-Based Teams";
 const description =
@@ -190,7 +191,8 @@ export default function SeattlePage() {
       population="750K"
       businesses="120K+"
       statePage="washington"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["seattle"].seo]}
+      faqs={cityExtras["seattle"].faqs}
     />
   );
 }

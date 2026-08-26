@@ -44,6 +44,12 @@ interface CityPageTemplateProps {
    * so the two pages are worth linking in both directions.
    */
   answeringPost?: string;
+  /**
+   * City-specific FAQs. Falls back to the generic set when absent — but every
+   * metro should supply its own, because five interpolated questions repeated
+   * across 25 city pages is duplicate content, not an FAQ.
+   */
+  faqs?: { question: string; answer: string }[];
 }
 
 const services = [
@@ -100,6 +106,16 @@ const testimonials: Record<string, { quote: string; name: string; title: string;
   "Charlotte": { quote: "In banking, trust is everything. Contact Center USA delivers the professionalism and security our customers deserve on every call.", name: "Michelle F.", title: "Head of Customer Experience", company: "A Charlotte Banking Institution", initials: "MF" },
   "San Francisco": { quote: "Their AI-augmented support perfectly complements our tech-forward approach. We scaled from 50 to 500 daily interactions without missing a beat.", name: "Alex C.", title: "CTO", company: "A San Francisco Tech Company", initials: "AC" },
   "Seattle": { quote: "Contact Center USA matches the innovation mindset we value here in Seattle. Their omnichannel solution has been a game-changer for us.", name: "Rachel B.", title: "Director of Operations", company: "A Seattle Ecommerce Company", initials: "RB" },
+  "Miami": { quote: "Bilingual English and Spanish coverage was non-negotiable for our Miami operations. Contact Center USA delivered flawless 24/7 customer care and dispatch from day one.", name: "Elena R.", title: "VP of Customer Experience", company: "A South Florida Hospitality & Real Estate Firm", initials: "ER" },
+  "Atlanta": { quote: "Their team seamlessly integrated with our Salesforce CRM and handles our high inbound call volume with southern hospitality and exceptional professionalism.", name: "Marcus T.", title: "Director of Operations", company: "An Atlanta Financial Technology Provider", initials: "MT" },
+  "Denver": { quote: "Scaling our technical support in Mountain Time was a major challenge until we partnered with Contact Center USA. Highly recommended for fast-growing companies.", name: "Greg S.", title: "Head of Support", company: "A Denver SaaS & CleanTech Enterprise", initials: "GS" },
+  "Las Vegas": { quote: "In a 24/7 entertainment and hospitality hub, after-hours responsiveness is everything. Contact Center USA keeps our guests and clients satisfied around the clock.", name: "Anthony V.", title: "General Manager", company: "A Las Vegas Entertainment & Hospitality Group", initials: "AV" },
+  "Tampa": { quote: "HIPAA compliance and patient empathy are top priorities for us. Contact Center USA has reduced our patient hold times while maintaining 100% compliance.", name: "Diane K.", title: "Chief Operating Officer", company: "A Tampa Bay Healthcare Network", initials: "DK" },
+  "Boston": { quote: "Their agents handle complex biotech and financial inquiries with remarkable accuracy and professionalism. A trusted extension of our Massachusetts team.", name: "Dr. Jonathan H.", title: "Director of Medical Information", company: "A Boston Life Sciences Company", initials: "JH" },
+  "Nashville": { quote: "From patient scheduling to urgent provider dispatch, Contact Center USA provides the reliable, warm customer service our healthcare clients demand.", name: "Cynthia P.", title: "VP of Client Services", company: "A Nashville Healthcare Management Group", initials: "CP" },
+  "Orlando": { quote: "Seasonal guest and ticket surges used to overwhelm our in-house staff. Contact Center USA provides elastic, high-touch support whenever we need it.", name: "Brandon W.", title: "Director of Guest Relations", company: "A Central Florida Tourism & Attractions Operator", initials: "BW" },
+  "Portland": { quote: "Our Pacific Northwest customers appreciate friendly, thoughtful support. Contact Center USA provides high-quality US agents with zero long-term lock-in.", name: "Chloe M.", title: "Customer Success Lead", company: "A Portland E-commerce Brand", initials: "CM" },
+  "Salt Lake City": { quote: "As a fast-growing Silicon Slopes tech company, we needed a BPO partner that could scale rapidly without sacrificing quality, security, or culture.", name: "Tyler B.", title: "VP of Operations", company: "A Utah Technology Platform", initials: "TB" },
 };
 
 function getFAQs(city: string, state: string) {
@@ -114,9 +130,10 @@ function getFAQs(city: string, state: string) {
 
 export function CityPageTemplate({
   city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent, statePage, answeringPost,
+  faqs: faqsProp,
 }: CityPageTemplateProps) {
   const testimonial = testimonials[city];
-  const faqs = getFAQs(city, state);
+  const faqs = faqsProp && faqsProp.length ? faqsProp : getFAQs(city, state);
 
   return (
     <>

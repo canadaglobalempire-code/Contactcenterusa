@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Heart, ShoppingCart, Landmark, Building2, Monitor, ShieldCheck, Plane, Truck, GraduationCap, Wallet, Wrench, Scale, Ticket, Music, PhoneCall, Languages, Home, Building, Receipt, Trophy, Gamepad2, Stethoscope, PawPrint, FileText, UtensilsCrossed, Dumbbell, Sun, Users, HeartHandshake, Package, Sparkles, Car, Network, Flower2, PlaneTakeoff, CarFront, Tv, Zap, Landmark as Gov, Pill, Store, RadioTower } from "lucide-react";
+import { ArrowRight, Heart, ShoppingCart, Landmark, Building2, Monitor, ShieldCheck, Plane, Truck, GraduationCap, Wallet, Wrench, Scale, Ticket, Music, PhoneCall, Languages, Home, Building, Receipt, Trophy, Gamepad2, Stethoscope, PawPrint, FileText, UtensilsCrossed, Dumbbell, Sun, Users, HeartHandshake, Package, Sparkles, Car, Network, Flower2, PlaneTakeoff, CarFront, Tv, Zap, Landmark as Gov, Pill, Store, RadioTower, Bug } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const industries = [
@@ -548,6 +548,110 @@ const industries = [
       "Tier-1 technical troubleshooting",
       "Plan upgrades and retention",
       "Billing dispute resolution",
+    ],
+  },
+  {
+    icon: Zap,
+    name: "HVAC & Air Conditioning",
+    href: "/industries/hvac-call-center-services",
+    color: "bg-amber-100 text-amber-600",
+    hoverColor: "group-hover:bg-amber-600 group-hover:text-white",
+    bullets: [
+      "24/7 emergency heating & cooling dispatch",
+      "Direct ServiceTitan & Housecall Pro booking",
+      "Seasonal summer & winter surge capture",
+      "Maintenance agreement renewal outreach",
+    ],
+  },
+  {
+    icon: Wrench,
+    name: "Plumbing & Drain Services",
+    href: "/industries/plumbing-call-center-services",
+    color: "bg-blue-100 text-blue-600",
+    hoverColor: "group-hover:bg-blue-600 group-hover:text-white",
+    bullets: [
+      "24/7 live emergency leak & sewer dispatch",
+      "Water heater replacement lead qualification",
+      "Direct dispatch board calendar booking",
+      "On-call technician phone & SMS escalation",
+    ],
+  },
+  {
+    icon: Home,
+    name: "Roofing & Storm Restoration",
+    href: "/industries/roofing-call-center-services",
+    color: "bg-red/10 text-red",
+    hoverColor: "group-hover:bg-red group-hover:text-white",
+    bullets: [
+      "24/7 storm damage and hail catastrophe intake",
+      "AccuLynx & JobNimbus inspection scheduling",
+      "Sub-60-second inbound digital lead response",
+      "High-ticket replacement lead qualification",
+    ],
+  },
+  {
+    icon: Stethoscope,
+    name: "Urgent Care & Outpatient Clinics",
+    href: "/industries/urgent-care-call-center-services",
+    color: "bg-rose-100 text-rose-600",
+    hoverColor: "group-hover:bg-rose-600 group-hover:text-white",
+    bullets: [
+      "100% HIPAA-compliant patient scheduling",
+      "Real-time insurance eligibility & pre-auth",
+      "Experity & AthenaHealth EHR integration",
+      "After-hours physician triage dispatch",
+    ],
+  },
+  {
+    icon: Receipt,
+    name: "CPA & Accounting Practices",
+    href: "/industries/accounting-cpa-call-center",
+    color: "bg-emerald-100 text-emerald-600",
+    hoverColor: "group-hover:bg-emerald-600 group-hover:text-white",
+    bullets: [
+      "Q1 & tax extension deadline surge absorption",
+      "Client fee & entity screening qualification",
+      "TaxDome, Canopy & Calendly booking",
+      "Secure document and return status intake",
+    ],
+  },
+  {
+    icon: Zap,
+    name: "Electrical Contractors & Outage Dispatch",
+    href: "/industries/electrical-contractor-call-center",
+    color: "bg-amber-100 text-amber-600",
+    hoverColor: "group-hover:bg-amber-600 group-hover:text-white",
+    bullets: [
+      "24/7 emergency outage & sparking hazard dispatch",
+      "ServiceTitan & Housecall Pro dispatch board sync",
+      "EV charger & panel upgrade qualification",
+      "Commercial facility repair intake",
+    ],
+  },
+  {
+    icon: Bug,
+    name: "Pest Control & Extermination",
+    href: "/industries/pest-control-call-center",
+    color: "bg-teal-100 text-teal-600",
+    hoverColor: "group-hover:bg-teal-600 group-hover:text-white",
+    bullets: [
+      "Instant inbound lead response & inspection booking",
+      "FieldRoutes & PestPac live route calendar sync",
+      "Recurring quarterly plan upselling",
+      "Spring & summer seasonal surge management",
+    ],
+  },
+  {
+    icon: Sun,
+    name: "Solar Lead Qualification & SDR",
+    href: "/industries/solar-lead-generation-call-center",
+    color: "bg-yellow-100 text-yellow-600",
+    hoverColor: "group-hover:bg-yellow-600 group-hover:text-white",
+    bullets: [
+      "Sub-60-second speed-to-lead response",
+      "Utility bill ($150+) & roof suitability pre-check",
+      "Direct Salesforce & HubSpot rep calendar booking",
+      "Multi-touch reminder cadence to maximize sit rate",
     ],
   },
 ];

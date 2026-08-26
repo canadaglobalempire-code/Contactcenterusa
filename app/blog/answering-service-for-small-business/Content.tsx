@@ -144,8 +144,6 @@ export default function AnsweringServiceForSmallBusinessContent({ faqs }: { faqs
               </div>
 
               {/* Vs hiring */}
-              <AnsweringServiceCalculator />
-
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Against Hiring a Receptionist</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 This comparison is usually presented as one-sided. It is not — an in-house person genuinely wins on some rows, and

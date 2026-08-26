@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "San Antonio Call Center & BPO Services | US-Based Teams";
 const description =
@@ -191,7 +192,8 @@ export default function SanAntonioPage() {
       businesses="150K+"
       statePage="texas"
       answeringPost="answering-service-san-antonio"
-      seoContent={seoContent}
+      seoContent={[...seoContent, ...cityExtras["san-antonio"].seo]}
+      faqs={cityExtras["san-antonio"].faqs}
     />
   );
 }
