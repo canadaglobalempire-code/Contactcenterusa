@@ -314,7 +314,7 @@ export default function TwentyFourHourAnsweringServiceContent({ faqs }: { faqs: 
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="space-y-6">
+              <div className="space-y-6 lg:sticky lg:top-28">
                 <HeroContactForm />
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">
                   <h4 className="font-bold text-navy">Related Articles</h4>

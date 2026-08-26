@@ -525,7 +525,7 @@ export default function Top10LeadGenerationContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="space-y-6">
+              <div className="space-y-6 lg:sticky lg:top-28">
                 <HeroContactForm
                   ctaLocation="lead_generation_sidebar_form"
                   leadOffer="B2B lead generation quote"

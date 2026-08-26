@@ -335,7 +335,7 @@ export default function InboundVsOutboundCallCentersContent() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="space-y-8">
+              <div className="space-y-8 lg:sticky lg:top-28">
                 <div className="rounded-2xl bg-navy p-6">
                   <HeroContactForm />
                 </div>

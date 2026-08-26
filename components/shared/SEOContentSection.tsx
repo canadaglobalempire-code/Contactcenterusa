@@ -150,37 +150,24 @@ function renderHeading(heading: string, accent?: string) {
 function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
   const paras = Array.isArray(data.body) ? data.body : [data.body];
   return (
-    <section className="relative overflow-hidden bg-navy py-20">
-      {/* Subtle grid pattern */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
-          backgroundSize: "56px 56px",
-        }}
-      />
-      {/* Red glow */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-red/20 blur-[120px]"
-      />
-
-      <div className="relative mx-auto max-w-[1200px] px-5 lg:px-8">
+    <section className="border-y border-gray-100 bg-white py-14 lg:py-16">
+      <div className="mx-auto max-w-[1200px] px-5 lg:px-8">
         <FadeIn>
-          <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.3fr_1fr] lg:gap-20">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
             <div>
               {data.eyebrow && (
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm">
+                <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-red">
                   <span className="h-1.5 w-1.5 rounded-full bg-red" />
                   {data.eyebrow}
                 </div>
               )}
-              <h2 className="mt-6 text-[32px] font-bold leading-[1.12] tracking-[-0.02em] text-white sm:text-[40px] lg:text-[48px]" style={{ textWrap: "balance" }}>
+              <h2
+                className="mt-3 text-[24px] font-bold leading-[1.2] tracking-[-0.015em] text-navy sm:text-[30px]"
+                style={{ textWrap: "balance" }}
+              >
                 {renderHeading(data.heading, data.accent)}
               </h2>
-              <div className="mt-6 max-w-[640px] space-y-4 text-[16px] leading-[1.75] text-white/70 lg:text-[17px]">
+              <div className="mt-4 max-w-[620px] space-y-3 text-[15.5px] leading-[1.7] text-gray-700">
                 {paras.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -188,13 +175,13 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
             </div>
 
             {data.stats && (
-              <div className="flex flex-col justify-center gap-6 lg:gap-7">
+              <div className="flex flex-row flex-wrap content-center items-start gap-x-10 gap-y-6 lg:flex-col lg:justify-center lg:gap-6">
                 {data.stats.map((s, i) => (
-                  <div key={i} className="border-l-2 border-red pl-5">
-                    <div className="text-[30px] font-bold leading-[1] tracking-[-0.02em] text-white lg:text-[36px]">
+                  <div key={i} className="min-w-[140px] border-l-2 border-red pl-4">
+                    <div className="text-[22px] font-bold leading-none tracking-[-0.01em] text-navy sm:text-[26px]">
                       {s.stat}
                     </div>
-                    <div className="mt-1.5 max-w-[300px] text-[13.5px] leading-[1.55] text-white/65">{s.label}</div>
+                    <div className="mt-1.5 max-w-[260px] text-[13px] leading-[1.5] text-gray-500">{s.label}</div>
                   </div>
                 ))}
               </div>

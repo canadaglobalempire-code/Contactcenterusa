@@ -223,7 +223,7 @@ export default function Content() {
             </div>
 
             <div className="lg:col-span-1">
-              <div className="space-y-8">
+              <div className="space-y-8 lg:sticky lg:top-28">
                 <div className="rounded-2xl bg-navy p-6"><HeroContactForm /></div>
                 <div className="rounded-2xl border border-gray-200 p-6">
                   <h3 className="text-lg font-bold text-navy mb-4">Related Articles</h3>

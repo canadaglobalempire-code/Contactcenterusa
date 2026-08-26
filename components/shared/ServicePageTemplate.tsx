@@ -92,17 +92,32 @@ export function ServicePageTemplate({
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur-sm">
                 {badge}
               </span>
-              <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[56px]">
+              <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[52px]">
                 {titleParts[0]}
-                <span className="text-red">{titleHighlight}</span>
+                <span className="text-[#F87171]">{titleHighlight}</span>
                 {titleParts[1] || ""}
               </h1>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/70">
                 {subtitle}
               </p>
 
+              {/* Description — fills the column against the tall form */}
+              <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-white/60">
+                {description}
+              </p>
+
+              {/* Top features as hero checklist */}
+              <ul className="mt-7 max-w-xl space-y-3">
+                {features.slice(0, 4).map((f, i) => (
+                  <li key={i} className="flex items-start gap-3 text-[15px] text-white/85">
+                    <CheckCircle className="mt-0.5 h-4.5 w-4.5 flex-shrink-0 text-red" />
+                    <span>{f.title}</span>
+                  </li>
+                ))}
+              </ul>
+
               {/* Trust badges */}
-              <div className="mt-8 flex flex-wrap items-center gap-6">
+              <div className="mt-8 flex flex-wrap items-center gap-6 border-t border-white/10 pt-6">
                 <div className="flex items-center gap-2 text-sm text-white/50">
                   <CheckCircle className="h-4 w-4 text-red" />
                   100% US-Based
@@ -114,6 +129,10 @@ export function ServicePageTemplate({
                 <div className="flex items-center gap-2 text-sm text-white/50">
                   <CheckCircle className="h-4 w-4 text-red" />
                   No Contracts
+                </div>
+                <div className="flex items-center gap-2 text-sm text-white/50">
+                  <CheckCircle className="h-4 w-4 text-red" />
+                  Month-to-Month Terms
                 </div>
               </div>
             </div>

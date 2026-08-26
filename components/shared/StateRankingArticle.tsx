@@ -71,7 +71,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
             <span className="flex items-center gap-1"><Calendar className="h-4 w-4" /> Updated August 26, 2026</span>
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> {post.readTime}</span>
           </div>
-          <div className="relative mt-10 aspect-[21/9] overflow-hidden rounded-2xl">
+          <div className="relative mt-10 aspect-[21/8] max-h-[480px] w-full overflow-hidden rounded-2xl">
             <Image
               src={post.image}
               alt={post.imageAlt}
@@ -205,13 +205,13 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 </div>
               ))}
 
-              <div className="my-10 overflow-hidden rounded-2xl">
+              <div className="relative my-10 aspect-[16/8] overflow-hidden rounded-2xl">
                 <Image
                   src="/images/cc-team-collab.jpg"
                   alt={`BPO agent team supporting ${state} businesses`}
-                  width={800}
-                  height={450}
-                  className="w-full object-cover"
+                  fill
+                  sizes="(min-width: 1024px) 800px, 100vw"
+                  className="object-cover"
                 />
               </div>
 
@@ -389,7 +389,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="space-y-6">
+              <div className="space-y-6 lg:sticky lg:top-28">
                 <HeroContactForm
                   ctaLocation={`${slug.replace(/-/g, "_")}_sidebar_form`}
                   leadOffer={`${state} BPO quote`}

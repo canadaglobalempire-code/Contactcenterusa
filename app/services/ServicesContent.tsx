@@ -15,7 +15,7 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const services = [
   {
-    title: "A.I. Automation",
+    title: "AI Automation",
     desc: "Leverage intelligent chatbots, virtual assistants, and machine learning to automate workflows and deliver 24/7 customer support.",
     href: "/services/ai-call-center-automation",
     icon: Bot,
@@ -62,6 +62,20 @@ const services = [
     href: "/services/omnichannel-contact-center-solutions",
     icon: MessagesSquare,
     image: "/images/cc-diverse-team.jpg",
+  },
+  {
+    title: "Customer Care Outsourcing",
+    desc: "Dedicated US-based agents handling inbound support, account servicing, and retention with your brand voice, 24/7/365.",
+    href: "/services/customer-care-outsourcing",
+    icon: Users,
+    image: "/images/cc-agent-smile.jpg",
+  },
+  {
+    title: "Live Chat Outsourcing",
+    desc: "Real-time website chat staffed by trained US agents — capture leads, resolve issues, and convert visitors around the clock.",
+    href: "/services/live-chat-outsourcing",
+    icon: MessagesSquare,
+    image: "/images/cc-agent-headset.jpg",
   },
 ];
 

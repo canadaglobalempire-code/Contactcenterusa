@@ -1719,6 +1719,35 @@ function buildPost(seed: CitySeed): TrafficBlogPost {
     related.push({ label: `Top 10 BPO Companies in ${state}`, href: `/blog/${seed.stateRankingSlug}` });
   }
 
+  // Nearby-metro cross-links. Each guide links its two regional neighbours,
+  // which is the cheapest internal-linking win available: the pages share a
+  // searcher profile, and the links are contextually earned rather than
+  // footer boilerplate.
+  const NEIGHBORS: Record<string, [string, string]> = {
+    "answering-service-chicago": ["answering-service-denver", "answering-service-atlanta"],
+    "answering-service-los-angeles": ["answering-service-san-diego", "answering-service-las-vegas"],
+    "answering-service-dallas": ["answering-service-houston", "answering-service-san-antonio"],
+    "answering-service-atlanta": ["answering-service-miami", "answering-service-tampa"],
+    "answering-service-houston": ["answering-service-dallas", "answering-service-san-antonio"],
+    "answering-service-phoenix": ["answering-service-las-vegas", "answering-service-denver"],
+    "answering-service-miami": ["answering-service-tampa", "answering-service-atlanta"],
+    "answering-service-tampa": ["answering-service-miami", "answering-service-atlanta"],
+    "answering-service-denver": ["answering-service-phoenix", "answering-service-chicago"],
+    "answering-service-san-antonio": ["answering-service-houston", "answering-service-dallas"],
+    "answering-service-las-vegas": ["answering-service-phoenix", "answering-service-los-angeles"],
+    "answering-service-san-diego": ["answering-service-los-angeles", "answering-service-phoenix"],
+    "answering-service-portland": ["answering-service-denver", "answering-service-san-diego"],
+  };
+  const cityName = (slug: string) =>
+    slug
+      .replace("answering-service-", "")
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
+  for (const n of NEIGHBORS[seed.slug] ?? []) {
+    related.push({ label: `Answering Service in ${cityName(n)}`, href: `/blog/${n}` });
+  }
+
   // Vertical cross-links, driven by the metro's own industry mix rather than
   // applied uniformly. These targets rank at position 10-21 in GSC with very
   // few internal links, so a contextually-earned link is worth more to them

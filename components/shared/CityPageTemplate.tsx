@@ -174,7 +174,7 @@ export function CityPageTemplate({
                 <MapPin className="h-4 w-4" /> {city}, {stateAbbr}
               </span>
               <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-[1.08] text-white sm:text-5xl lg:text-[56px]">
-                Call Center &amp; BPO Services in <span className="text-red">{city}</span>
+                Call Center &amp; BPO Services in <span className="text-[#F87171]">{city}</span>
               </h1>
               <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/80">
                 100% US-based call center and BPO services for {city} businesses. 24/7 support, AI automation, and omnichannel solutions.
