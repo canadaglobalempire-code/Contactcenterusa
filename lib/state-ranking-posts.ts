@@ -49,6 +49,21 @@ type StateSeed = {
   costContext: string[];
   /** Which of the ten providers actually fit this state's dominant sectors. */
   providerFit: string;
+  /**
+   * Per-provider, per-state read, keyed by the provider's rank.
+   *
+   * The ten provider profiles in PROVIDER_PROFILES are national and render
+   * identically on every state page — 1,551 words repeated verbatim across ten
+   * URLs, and 62% of each page's duplication. Worse for the reader: someone who
+   * opens "Top 10 BPO Companies in Arizona" and scrolls to the rankings finds
+   * 1,551 words that never say "Arizona" once.
+   *
+   * These notes are the state layer on top of that national profile. They are
+   * fit analysis — this provider's documented capabilities read against this
+   * state's documented conditions — never invented claims about a third party's
+   * offices, headcount or clients. Cost stays relative; no currency figures.
+   */
+  providerNotes?: Record<number, string>;
   /** Genuinely state-specific FAQs, in addition to the shared set. */
   extraFaqs: { question: string; answer: string }[];
   locationHref: string;
@@ -300,6 +315,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "For Arizona programs the practical shortlist usually narrows quickly by sector: Global Empire Corporation and Contact Center USA for full-service healthcare and financial-services support where HIPAA and PCI discipline are non-negotiable, Intelemark and B2B Appointment Setting for the outbound demand generation the Tempe–Chandler technology corridor tends to buy, and Call Center Staffing where the requirement is scaled seasonal capacity for the winter resort and property market.",
+    providerNotes: {
+      1:
+        "Arizona's fast-growing retiree population keeps healthcare administration, insurance and Medicare-adjacent volume the steadiest demand in the state, which is where this breadth earns its place. The absence of seat minimums matters more here than in most states, because Arizona programs are typically mid-market rather than enterprise-scale. Ask to see the Arizona one-party disclosure they actually deploy, rather than a national all-party script applied as blanket policy.",
+      2:
+        "The Tempe-Chandler semiconductor and software corridor is the natural buyer for consultative outbound in this state, and it is a technical sale rather than a volume one — the conversation has to survive contact with an engineering-literate prospect. The Arizona-specific thing to test is calling-window logic: with no daylight saving, a platform assuming a standard Mountain offset runs an hour out for roughly half the year, which puts TCPA compliance at risk on every outbound dial.",
+      3:
+        "Phoenix carries some of the highest investor and wholesaling activity in the country, so the specialisation lines up with real local demand rather than being a generic fit. The seasonal-resident cycle is what changes the playbook here: owner reachability shifts noticeably between the October-to-April months and high summer, and a calling cadence built for a year-round market will quietly under-perform in July and August.",
+      4:
+        "Scottsdale's financial-services, insurance and premium consumer brands are the closest fit, and that segment values brand-voice discipline over raw scale. Mid-tier sizing is not a limitation in Arizona, where most programs are mid-market rather than Fortune 100. The thing to confirm is coverage of the winter peak, when resort, property and utility queues all rise together as the seasonal population arrives.",
+      5:
+        "This is the strongest structural fit on the list for Arizona specifically. The state has a genuinely bimodal demand curve — seasonal residents arrive in October and leave in April — producing resort, property and utility swings few states match. Recruiting follows the same curve, so a 48-to-72-hour deployment claim is considerably more credible in November than in July. Test it against a summer ramp, not a winter one.",
+      6:
+        "Arizona's SMB base in professional services and the commercial trades is the fit, and low minimums suit a market where programs routinely start small and grow into the winter season. The same daylight-saving caveat applies to any outbound work sited here: ask them to produce a call log and a calling-window report from both March and November before you sign anything.",
+      7:
+        "Domestic delivery is the point in Arizona for healthcare and financial-services work, where HIPAA and PCI discipline are non-negotiable and the state's retiree growth keeps that volume steady year on year. Month-to-month terms fit the seasonal curve unusually well here — Arizona programs frequently need to flex down in May rather than carry winter capacity through a summer where the volume simply is not there.",
+      8:
+        "Multi-site redundancy is the relevant strength in Arizona, but for the opposite of the usual reason: this state is more often the backup site than the primary one, because it carries almost no hurricane, earthquake or tornado exposure. If you are placing Arizona as a continuity site, the questions worth asking are generator capacity and remote-agent failover for monsoon microbursts and summer grid load — not natural-disaster risk, which is close to the lowest in the country.",
+      9:
+        "Journey and escalation design suits the Tempe-Chandler technology corridor, where support is ticket-driven and escalates into engineering rather than following a script — a different hire and a different program shape from scaled consumer voice in the West Valley. The trade-off is timing: consulting-led engagements stand up slowly, and in Arizona a slow ramp that lands in high summer hits the hardest hiring window of the year.",
+      10:
+        "Automation-weighted delivery fits Arizona's high-volume transactional queues — utility, property and seasonal service work — considerably better than high-touch account servicing. The technical caution is the one that catches every automated program in this state: fixed-offset time handling. Predictive dialing and scheduled callbacks are precisely where a daylight-saving assumption stops being a curiosity and becomes a compliance finding.",
+    },
     extraFaqs: [
       {
         question: "Why do so many call centers operate in Phoenix?",
@@ -391,6 +428,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Colorado shortlists tend to be driven by the technical requirement rather than by scale: Contact Center USA and Global Empire Corporation where a program needs Tier 2 and Tier 3 depth alongside HIPAA or SOC 2 discipline, Intelemark and B2B Appointment Setting for the consultative outbound work the Denver–Boulder software base buys, and Call Center Staffing where the need is flexible seasonal capacity for resort and outdoor-retail peaks.",
+    providerNotes: {
+      1:
+        "Colorado is not a rate play and this profile is not priced like one, so the fit is honest. The relevant depth here is Tier 2 and Tier 3 alongside SOC 2 and HIPAA discipline, because Front Range programs are usually technical and regulated at the same time. Ask how they staff around the hail and blizzard exposure that can close I-25 and I-70 in the same week.",
+      2:
+        "Boulder and the Denver technology corridor are the natural buyers for consultative outbound here, and the prospect on the other end is technically fluent enough that a scripted pitch dies quickly. Colorado wage pressure comes from technology employers rather than from contact centers, so judge this engagement on conversation quality and pipeline, not on dials per hour.",
+      3:
+        "Front Range property has drawn sustained investor activity, so the specialisation has a real market in Colorado. The practical constraint is cost: this is a state where scaled outbound is expensive to staff locally, so confirm whether the calling pods working your Colorado list actually sit here or elsewhere, and whether that matters for your list quality.",
+      4:
+        "Colorado buyers skew toward brand-conscious technology and outdoor consumer companies, which is exactly where brand-voice discipline earns its keep. Aurora is worth naming in the conversation: it holds the state deepest multilingual pool, including languages well beyond Spanish, and a mid-market omnichannel program can use that far more cheaply than recruiting the same coverage in Denver.",
+      5:
+        "Colorado travel and outdoor retail run hard seasonal peaks, which is the case for surge staffing here. The caution is that rapid deployment in this state runs into a labor market where technology employers set the wage floor, so a 48-to-72-hour fill is more plausible in Pueblo or Fort Collins than in Boulder. Ask which market they would actually recruit from.",
+      6:
+        "Colorado has a dense base of small technology and professional-services firms that buy outbound in small increments, which suits low minimums. As with any outbound program sited in Mountain time, ask to see the calling-window logic against Central and Eastern prospects, since most Colorado outbound is calling east rather than west.",
+      7:
+        "Domestic delivery matters in Colorado for healthcare and financial-services programs, and month-to-month terms suit a market where technology clients change scope frequently. The Colorado-specific question is continuity: hail is the most active in the country here and blizzards can close both interstates at once, so ask how remote-agent failover works when the Front Range is snowed in.",
+      8:
+        "Multi-site redundancy is the argument that matters most in Colorado, because the state weather exposure is disruptive rather than catastrophic and therefore recurring. Aurora multilingual depth also lines up with a cross-border, multi-language delivery model. If your program is mid-market rather than enterprise, confirm in writing what account attention actually looks like.",
+      9:
+        "Journey design and analytics suit the Denver and Boulder SaaS base, where support is ticket-driven and escalates into engineering. The trade-off is standing-up time, and Colorado has a specific version of that problem: technology-driven wage competition makes hiring slow, so a consulting-led ramp plus a tight labor market can stretch a launch well past plan.",
+      10:
+        "Automation-weighted delivery is a reasonable answer to Colorado cost structure, since this is a state where scaled human capacity is expensive. It fits transactional ecommerce and utility work better than technical support, which is what much of the Front Range actually needs. Be clear which of the two you are buying before you price it.",
+    },
     extraFaqs: [
       {
         question: "Why do national programs anchor coverage in Colorado?",
@@ -482,6 +541,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Georgia shortlists are usually decided on compliance evidence rather than price: Global Empire Corporation and Contact Center USA where a program sits inside PCI-DSS or HIPAA scope and needs documented controls, Customer Communications Corp and Call Center Communications for the exception-driven logistics and freight support the Savannah and Atlanta corridors generate, and Intelemark where the requirement is consultative B2B outbound into the state's payments and technology base.",
+    providerNotes: {
+      1:
+        "Atlanta is a payments centre, so PCI-DSS scope is the usual reason a Georgia shortlist forms at all, and documented controls matter more here than seat price. The state also carries deep healthcare-administration experience, which pairs with the claims and patient-support side of this profile. Ask for the evidence pack rather than the capability list.",
+      2:
+        "Georgia B2B demand concentrates in Atlanta logistics, fintech and professional services, which are consultative sales with long cycles rather than volume plays. Eastern time is an operational advantage worth using: a Georgia-based outbound team covers the entire domestic business day from a cost base well below the Northeast.",
+      3:
+        "Metro Atlanta has been one of the more active investor and wholesaling markets in the Southeast, so the specialisation maps onto real Georgia volume. Note that Georgia is one-party consent but a national list will include all-party states, so the recording disclosure needs to be set by the callee location rather than by where the pod sits.",
+      4:
+        "Atlanta consumer and healthcare brands are the natural fit, and the state deep customer-service workforce supports the brand-voice discipline this model depends on. Growing Spanish availability along the Buford Highway corridor and through Gwinnett County is worth asking about specifically, since it is stronger than most buyers assume.",
+      5:
+        "Georgia has two distinct surge drivers: coastal tourism around Savannah and the retail and logistics peak that runs through Atlanta every fourth quarter. Both are predictable, which is when staffing-led models work best. Confirm how the pre-vetted pool is held through hurricane season, when coastal availability is the least reliable.",
+      6:
+        "Georgia has a large SMB base in commercial services and logistics that buys outbound in small increments, which suits low minimums. Eastern time means a Georgia program reaches the full domestic day without paying Northeast rates, and that is the practical reason to site SMB outbound here rather than further west.",
+      7:
+        "Domestic delivery matters in Georgia for the payments and healthcare work that dominates the state, where PCI and HIPAA evidence is the gate. Month-to-month terms suit the fourth-quarter retail curve, letting a program flex up for peak without carrying that capacity into a quiet spring.",
+      8:
+        "Enterprise scale and multi-site delivery answer the split-climate problem this state actually has: Savannah and the coast face genuine hurricane risk and evacuation orders, while metro Atlanta risk is winter ice. Those two failures do not happen together, which makes an in-state two-site design unusually effective here.",
+      9:
+        "Journey mapping suits the Atlanta airline, payments and consumer brands that already measure customer experience closely and have the data to work from. The trade-off is speed, and Georgia gives you an alternative: the workforce here carries directly relevant sector experience, so a delivery-first ramp is often faster than a design-led one.",
+      10:
+        "Automation-weighted delivery fits Georgia logistics and distribution volume, which is transactional, high-frequency and well suited to hybrid workflows. It fits the state regulated payments and healthcare work far less well, since those queues need judgement and an auditable human decision at the point of escalation.",
+    },
     extraFaqs: [
       {
         question: "Why is PCI-DSS such a big issue for Georgia call centers?",
@@ -573,6 +654,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Nevada shortlists usually turn on whether the program is genuinely 24-hour: Contact Center USA and Global Empire Corporation where round-the-clock guest support and service recovery are the requirement and the all-party recording rule must be handled correctly, Customer Communications Corp for the order and exception support the Reno–Sparks corridor generates, and Call Center Staffing where convention-week and seasonal surge capacity is the deciding factor.",
+    providerNotes: {
+      1:
+        "Nevada is an all-party consent state, so the disclosure is not optional and it has to be evidenced rather than asserted. That is the first question to put to any full-service provider here. Beyond it, the fit is the 24-hour guest-support and service-recovery work that Las Vegas generates continuously, which is exactly the kind of regulated, always-on program this profile is built for.",
+      2:
+        "Nevada B2B demand is thinner than its consumer volume and concentrates around Reno logistics and distribution rather than Las Vegas hospitality. The consent rule is what changes the outbound playbook here: all-party means the disclosure opens the call, and a national one-party script creates real exposure the moment it is used on a Nevada number.",
+      3:
+        "Las Vegas and Reno have both drawn heavy investor activity, so there is genuine Nevada volume for this specialisation. All-party consent is the operational catch: high-volume cold outreach is precisely where a national script gets applied by default, and Nevada is one of the states where that is a liability rather than a technicality.",
+      4:
+        "Hospitality brands live or die on voice and tone, which makes brand-voice discipline more than a nice-to-have in this state. Las Vegas also offers something rare: a genuinely 24-hour labor pool, so overnight omnichannel coverage does not carry the premium or the attrition it does almost everywhere else.",
+      5:
+        "This is the strongest fit on the list for Nevada. Convention calendars, event on-sales and resort seasonality produce sharp, schedulable surges, and Las Vegas is one of the few US markets where overnight and weekend capacity can actually be filled at short notice. Test the deployment claim against a convention week rather than a quiet one.",
+      6:
+        "Nevada SMB outbound is a smaller market than the state consumer volume suggests, and it sits mostly in Reno. Low minimums fit that scale. The non-negotiable is the all-party disclosure: ask to hear a recorded Nevada call opening before you sign, not a description of one.",
+      7:
+        "Round-the-clock domestic coverage is the Nevada requirement, and this is a state where 24/7 costs less to staff than almost anywhere else because the hospitality economy already works those hours. Pair that with a documented Nevada all-party script and month-to-month terms that flex with the convention calendar.",
+      8:
+        "Enterprise multilingual delivery lines up with Las Vegas visitor mix, and the market has both strong Spanish availability and one of the larger Filipino-American workforces in the country. Southern Nevada also carries limited seismic risk, unlike Reno, which is worth knowing if you are choosing between the two metros for a primary site.",
+      9:
+        "Journey work suits resort and gaming operators who already track guest experience across a long, multi-touch stay. The consulting-led timeline is the risk in a market this seasonal: a slow standup that misses the convention or winter season waits a full year for the next comparable peak.",
+      10:
+        "Automation fits Nevada high-volume transactional queues such as reservations, confirmations and routine service requests. Apply it carefully to outbound: automated dialing in an all-party state is where consent handling most often breaks, because the disclosure has to be delivered reliably on every connect rather than most of them.",
+    },
     extraFaqs: [
       {
         question: "Does Nevada require all-party consent to record calls?",
@@ -664,6 +767,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "North Carolina divides its shortlists cleanly by which market you are buying into: Global Empire Corporation and Contact Center USA for Charlotte-style financial and healthcare programs where retrievable recordings and documented QA are non-negotiable, Customer Communications Corp for Piedmont Triad logistics and order-management work, and Intelemark or B2B Appointment Setting for consultative outbound into the Research Triangle's technology and life sciences base.",
+    providerNotes: {
+      1:
+        "Charlotte is one of the largest banking centres in the country and its agents have worked inside examination-grade environments, which is the specific reason a regulated full-service model fits here. Retrievable recordings and documented QA are the gate for that work. The state also carries real healthcare-administration depth around Winston-Salem at a secondary-market rate.",
+      2:
+        "Research Triangle technology and life-sciences firms are the consultative B2B buyers in this state, and Durham and Raleigh supply candidates who can hold a technical conversation. Eastern time covers the whole domestic day from a cost base well under the Northeast, which is much of why outbound gets sited here.",
+      3:
+        "Charlotte and Raleigh have both seen sustained investor activity, so the specialisation has a real North Carolina market. Greensboro and the Triad are worth raising as the calling base: materially lower cost for work that does not require sector expertise, which is exactly what high-volume seller outreach is.",
+      4:
+        "The fit is Charlotte and Raleigh mid-market brands rather than enterprise volume, and mid-tier sizing is not a limitation in a state whose programs are mostly that size. Growing Spanish availability across Charlotte and the Triad is worth confirming, since it is thinner here than in Texas or the Southwest.",
+      5:
+        "North Carolina surge demand is driven by coastal tourism around Wilmington and by fourth-quarter logistics through Greensboro. Wilmington is the caveat: it faces direct hurricane exposure and evacuation orders, so a pre-vetted pool concentrated on the coast is least available exactly when a storm-driven volume spike arrives.",
+      6:
+        "The state has a broad SMB base across the Triad and Triangle that buys outbound in small increments, which suits low minimums and a straightforward pipeline program. Eastern time coverage at Piedmont rates is the structural reason to place this work in North Carolina rather than further north.",
+      7:
+        "Domestic delivery is the requirement for Charlotte financial-services and Winston-Salem healthcare work, where documented controls decide the shortlist. Month-to-month terms matter more here than most buyers expect, because a coastal hurricane can force an unplanned capacity shift at very short notice.",
+      8:
+        "Multi-site redundancy answers North Carolina unusually varied risk profile directly: the coast faces hurricanes and evacuation, the Piedmont faces winter ice, and the mountains face something different again. Those failures are geographically independent, so a distributed design inside this one state is genuinely useful rather than theoretical.",
+      9:
+        "Journey and analytics work suits the Research Triangle technology base, where support is ticketed and escalates into engineering. The slower consulting-led standup is more tolerable here than in seasonal markets, because North Carolina demand is comparatively steady across the year outside the coast.",
+      10:
+        "Automation-weighted delivery fits Greensboro and Charlotte logistics and back-office volume, which is transactional and rules-driven. It fits Charlotte banking work considerably less well, where the examination-grade documentation that makes this state attractive depends on an auditable human decision.",
+    },
     extraFaqs: [
       {
         question: "What makes Charlotte different from other US call center markets?",
@@ -756,6 +881,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Ohio shortlists are usually settled on back-office rigour rather than voice presence: Global Empire Corporation and Contact Center USA where claims intake, policy servicing and documented accuracy-weighted QA are the requirement, Business Process Outsourcing and Customer Communications Corp for scaled processing and order-management work, and Call Center Communications where the program needs multi-site redundancy inside a single timezone.",
+    providerNotes: {
+      1:
+        "Ohio is an insurance and healthcare-administration state, and claims intake with policy servicing is the centre of this profile rather than an adjacent capability. Columbus and Cleveland both supply agents who have done this work before. The relevant question is accuracy-weighted QA, because in claims the error rate matters far more than the handle time.",
+      2:
+        "Ohio B2B demand sits in manufacturing, logistics and the insurance supply chain rather than in technology, so the consultative approach fits but the target list looks different from a coastal one. Eastern time covers the full domestic day at among the lowest cost structures of any Eastern-time state, which is the practical argument for siting outbound here.",
+      3:
+        "Ohio investor activity is steadier and lower-priced than the Sun Belt markets, which changes the economics of high-volume outreach rather than removing them. Cleveland and Toledo offer a low cost base for scaled calling, and attrition is typically lower here than in high-competition coastal metros, which matters for a model built on calling discipline.",
+      4:
+        "Cincinnati consumer-goods and retail brands are the natural fit, and that market has genuine brand and consumer-support experience. Mid-tier scale suits Ohio well, where most programs are mid-market. Cincinnati also offers good bilingual availability, which is worth confirming for an omnichannel queue.",
+      5:
+        "Ohio surge demand is dominated by insurance open enrolment, which is the most predictable annual peak in the country and the ideal case for a staffing-led model. Columbus insurance cluster means the pre-vetted pool can plausibly carry real policy-servicing experience rather than generic voice capability. Ask whether it does.",
+      6:
+        "Ohio has a very large SMB base across manufacturing, trades and professional services, and low minimums suit a market where programs start small. The cost structure is among the lowest in Eastern time, so an SMB outbound program placed here gets full domestic-day coverage without paying for it.",
+      7:
+        "Domestic delivery is the requirement for Ohio claims, policy servicing and healthcare administration, where documented accuracy is the deliverable. The state also has one of the lowest natural-catastrophe profiles in the country, which is why it appears so often as a disaster-recovery site rather than a primary one.",
+      8:
+        "Enterprise scale and multi-site redundancy have a specific Ohio angle: this state is frequently chosen as the recovery site for programs whose primary floor sits somewhere more exposed. No hurricane risk, negligible seismic risk, and tornado frequency well below the plains states. If that is why you are here, ask about failover testing rather than headcount.",
+      9:
+        "Journey and analytics work fits Ohio insurance and healthcare administrators, who hold long customer relationships and plenty of data. The consulting-led timeline is comparatively low-risk in this state because demand is steady rather than seasonal, apart from open enrolment, which is fixed and easy to plan a launch around.",
+      10:
+        "Automation-weighted delivery is a strong match for Ohio back-office volume: claims data entry, record verification and order support are rules-driven and high-frequency. Keep the human path for exception handling, because the experienced claims workforce is the actual reason to run this work in Ohio at all.",
+    },
     extraFaqs: [
       {
         question: "Why is Ohio a popular state for insurance BPO?",
@@ -847,6 +994,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Pennsylvania shortlists are usually decided on whether the provider can evidence all-party consent handling: Global Empire Corporation and Contact Center USA for the healthcare patient-access and insurance work that dominates the state and requires both a BAA and a documented Pennsylvania disclosure, Customer Communications Corp for Lehigh Valley distribution and order support, and Intelemark where the requirement is consultative outbound into the Pittsburgh technology base.",
+    providerNotes: {
+      1:
+        "Pennsylvania is an all-party consent state, so the disclosure has to be documented and demonstrable, not inherited from a national script. On top of that, this is one of the largest healthcare-administration workforces in the country, so a program here typically needs both a signed BAA and an evidenced Pennsylvania consent process. Ask for both in the same conversation.",
+      2:
+        "Pittsburgh supplies genuinely technical candidates from Carnegie Mellon and the University of Pittsburgh, which makes consultative outbound into robotics, software and advanced manufacturing viable from inside the state. All-party consent is the operational constraint on every outbound dial here, and it is the first thing to test rather than the last.",
+      3:
+        "Pennsylvania property markets are steadier and less speculative than the Sun Belt, so outreach volumes convert differently. The larger issue is consent: all-party rules apply to high-volume cold calling exactly as they do to anything else, and this is the model most likely to be running a national one-party script by default.",
+      4:
+        "Philadelphia patient-access and student-services queues are the natural fit, and both are brand-sensitive in a way that rewards tone discipline. Mid-tier scale suits the state well. The Lehigh Valley and Scranton are worth raising as delivery locations: Eastern-time coverage at close to Midwest rates.",
+      5:
+        "Pennsylvania surge demand is concentrated in healthcare open enrolment and Lehigh Valley distribution peaks, both predictable enough to staff against. Scranton and Wilkes-Barre offer among the most affordable Eastern-time labor in the Northeast, which is where a rapid-deployment model can actually deliver on cost as well as speed.",
+      6:
+        "Pennsylvania SMB demand is broad and geographically spread rather than concentrated in one metro, which suits low minimums and simple pipeline programs. The all-party recording rule applies regardless of program size, so ask a small-minimum provider how their disclosure is handled before you treat the low entry point as the deciding factor.",
+      7:
+        "Domestic delivery plus a documented all-party script is close to a hard requirement in Pennsylvania, particularly for the healthcare patient-access work that dominates the state. Month-to-month terms fit a market where cost varies enormously by region, letting a program move between Philadelphia and Scranton delivery without renegotiating a multi-year commitment.",
+      8:
+        "Enterprise multi-site delivery fits Pennsylvania because the state is effectively several labor markets with very different cost bases in one Eastern time zone. Catastrophe exposure is low across all of them, which makes this a reasonable primary site rather than only a backup. Confirm what account attention looks like if your program is mid-sized.",
+      9:
+        "Journey design suits Philadelphia and Pittsburgh health systems, which run long, multi-touch patient relationships and already measure them. The slower consulting-led ramp is workable here given steady year-round demand, but the all-party consent design has to be settled at the start rather than retrofitted after the journey work is done.",
+      10:
+        "Automation fits Pennsylvania insurance back-office and logistics processing, which is rules-driven and high-volume. Automated outbound is the part to scrutinise: in an all-party state the disclosure must be delivered reliably on every single connect, and automation is where that guarantee most often quietly fails.",
+    },
     extraFaqs: [
       {
         question: "What does Pennsylvania's all-party consent law require from a call center?",
@@ -938,6 +1107,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Tennessee shortlists are almost always driven by healthcare capability: Global Empire Corporation and Contact Center USA for patient access and revenue cycle programs requiring a signed BAA and evidenced HIPAA controls, Business Process Outsourcing for scaled billing and back-office processing, and Customer Communications Corp or Call Center Communications for the overnight exception handling the Memphis cargo hub generates.",
+    providerNotes: {
+      1:
+        "Nashville is the healthcare management and revenue-cycle capital of the country, and patient access with revenue cycle is exactly where this profile is strongest. A signed BAA and evidenced HIPAA controls are the entry requirement rather than a differentiator. The depth of local experience means you should expect the provider to hire people who have done this work, not train them.",
+      2:
+        "Tennessee B2B demand concentrates in healthcare technology and logistics rather than general software, which shapes the target list. The state spans Central and Eastern time, so a single Tennessee outbound team can cover the Eastern business day and most of Central without a shift change, which is genuinely useful for a multi-region calling program.",
+      3:
+        "Nashville has been among the faster-growing investor markets in the Southeast, so the specialisation has real local volume. Memphis is the more interesting operational note: the cargo economy means genuine overnight availability, which is unusual for outbound work and can extend a calling day well beyond normal hours if the list justifies it.",
+      4:
+        "Nashville healthcare brands and Memphis logistics operators are the fit, both of which care about tone in different ways. Mid-tier scale suits Tennessee. Chattanooga is worth raising specifically: its municipal fibre network gives remote agents unusually reliable connectivity, which matters for a distributed omnichannel queue.",
+      5:
+        "Tennessee surge demand comes from healthcare open enrolment and from Memphis peak-season cargo volume, both predictable. Memphis is the strongest argument for this model in the state, because overnight capacity can genuinely be filled there at short notice. Murfreesboro adds part-time student availability for flexible daytime cover.",
+      6:
+        "Tennessee SMB outbound is a real market across Nashville and Knoxville, and low minimums suit programs that start small. The two-timezone split is the thing to check: ask how calling windows are enforced for a list that spans Central and Eastern prospects, since Tennessee itself sits in both.",
+      7:
+        "Domestic delivery is the requirement for Nashville patient-access and revenue-cycle work, where a BAA and documented controls decide the shortlist. No state income tax on wages supports retention at a given rate, which in practice means lower attrition on your program and less re-training than the same spend buys elsewhere.",
+      8:
+        "Enterprise scale suits Memphis logistics and cross-border freight support, and the multilingual capability lines up with the air-cargo economy international footprint. Tennessee two time zones also give a single-state redundancy option that most states cannot offer without crossing a regional boundary.",
+      9:
+        "Journey and analytics work fits Nashville revenue-cycle operators, who already measure the patient financial journey in detail and have unusually good data to work from. The consulting-led timeline is the cost, and in a market with this much ready-made local expertise a delivery-first alternative is often faster to value.",
+      10:
+        "Automation-weighted delivery is a strong fit for medical billing and revenue-cycle processing, which is high-volume, rules-driven and already partly automated across the Nashville market. Keep humans on payer follow-up and patient financial conversations, which is where the state real expertise sits and where automation performs worst.",
+    },
     extraFaqs: [
       {
         question: "Why is Nashville a center for healthcare BPO?",
@@ -1029,6 +1220,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Utah shortlists are usually settled on outbound capability and language coverage: Intelemark and B2B Appointment Setting for the consultative B2B outbound the Wasatch Front is built around, B2B Telemarketing for high-volume demand generation with evidenced TCPA controls, and Contact Center USA or Global Empire Corporation where a program needs multilingual inbound support delivered by US-based agents rather than an offshore site.",
+    providerNotes: {
+      1:
+        "Utah is a technology and B2B sales market first, so full-service breadth is a partial fit rather than the obvious one. Where it does land is financial services along the Wasatch Front and the compliance discipline that comes with it. The state real distinguishing asset is language: the deepest non-Spanish multilingual pool in the country, spanning dozens of languages.",
+      2:
+        "This is the strongest fit on the list for Utah. Provo, Orem and the Silicon Slopes corridor have a long-established inside-sales culture, and the workforce is genuinely comfortable with consultative outbound rather than merely trained for it. Combined with exceptional second-language availability, Utah supports international B2B outbound that most US markets simply cannot staff.",
+      3:
+        "Utah property markets are tight and comparatively low-inventory, which makes seller outreach harder work than in the Sun Belt. The state calling talent is real, but it is expensive relative to its historic position: Silicon Slopes has pulled wages up and Utah now sits mid-range on cost rather than at the value end.",
+      4:
+        "Salt Lake City offers the broadest multilingual availability in the state and strength across both inbound and outbound, which suits an omnichannel model. Mid-tier scale fits Utah program sizes well. The youngest median age in the country also means strong part-time and flexible-shift supply for queues that peak unevenly.",
+      5:
+        "Utah ecommerce and SaaS renewal cycles create real seasonal peaks, and the state youngest-in-the-nation median age gives unusually good part-time and flexible-shift availability to staff against them. Ogden and Logan are the cost-effective recruiting markets; Lehi and Draper are not, and a deployment promise should name which one it depends on.",
+      6:
+        "Utah has a dense base of small technology and services firms that buy outbound in small increments, and the inside-sales culture means even SMB-priced programs draw on genuinely experienced callers. Low minimums fit that market. Ask about TCPA controls specifically, since this is a state with a lot of outbound running through it.",
+      7:
+        "Domestic delivery fits Utah financial-services and SaaS support work, and month-to-month terms suit technology clients whose scope changes quarterly. The Utah-specific continuity question is seismic: the Wasatch fault runs directly beneath the state population centre, so ask how a program fails over if the Front is affected rather than assuming it will not be.",
+      8:
+        "Multilingual capability is where this model meets Utah most directly, because the state language depth goes far beyond the English, French and Spanish that most enterprise providers offer. If your program needs coverage in languages outside the usual three, Utah is one of the few US markets that can genuinely staff it.",
+      9:
+        "Journey and analytics work suits the Silicon Slopes SaaS base, where customer success is a measured discipline rather than a support function. The consulting-led standup is slower, and Utah rising wage base means a long ramp also costs more than it did a few years ago. Price the delay, not just the engagement.",
+      10:
+        "Automation-weighted delivery suits Utah ecommerce and transactional financial processing. Treat outbound automation carefully here: the state competitive advantage is consultative human conversation and language depth, and automating the calling layer discards the specific thing that makes Utah worth using in the first place.",
+    },
     extraFaqs: [
       {
         question: "Why does Utah have such a deep multilingual talent pool?",
@@ -1120,6 +1333,28 @@ const SEEDS: StateSeed[] = [
     ],
     providerFit:
       "Washington shortlists turn on two questions — can the provider evidence all-party consent handling, and can they staff technical depth: Contact Center USA and Global Empire Corporation where a program needs Tier 2 and Tier 3 support alongside documented Washington consent and My Health My Data controls, Customer Communications Corp for port and freight exception handling across the Puget Sound corridor, and Intelemark for consultative B2B outbound into the region's technology and aerospace base.",
+    providerNotes: {
+      1:
+        "Washington is an all-party consent state and also has its own health-data statute, so a program here needs consent handling and health-data handling evidenced separately. Puget Sound supplies the strongest technical support talent in Pacific time at the highest wages on the West Coast, so full-service breadth is worth buying here only when the program genuinely needs Tier 2 and Tier 3 depth.",
+      2:
+        "Seattle and Bellevue enterprise software companies are the consultative B2B buyers, and the prospects are technical enough that a generic pitch will not survive the first call. All-party consent applies to every outbound dial, and Washington is a state where a national one-party script is a genuine liability rather than a paperwork detail.",
+      3:
+        "Washington property markets are expensive and low-turnover, which makes investor outreach a narrower proposition than in the Sun Belt. All-party consent is the harder constraint: high-volume cold calling is where a national script gets applied by default, and this is one of the states where that assumption creates real exposure.",
+      4:
+        "Seattle ecommerce and consumer-technology brands care about voice and consistency, which fits brand-voice discipline. Mid-tier scale is workable, but Puget Sound is among the most expensive places in the country to run a contact center. Spokane is the alternative worth raising: Pacific-time coverage at a fraction of the west-side cost.",
+      5:
+        "Washington surge demand is driven by ecommerce peak season, which is sharp and entirely predictable. Rapid deployment is far more credible in Spokane and the Tri-Cities than in Seattle, where wage expectations are the highest on the West Coast. Ask which market the pre-vetted pool actually sits in before treating the speed claim as real.",
+      6:
+        "Washington SMB outbound is thinner than the state technology profile suggests and sits mostly outside Puget Sound. Low minimums fit that. The all-party rule applies at every program size, so ask a small-minimum provider to demonstrate the Washington disclosure rather than describe it.",
+      7:
+        "Domestic delivery plus documented all-party consent handling is close to a hard requirement in this state, and Washington health-data rules add a second layer for anything touching patient information. Month-to-month terms suit technology clients who change scope frequently and who should not be locked into Puget Sound rates for years.",
+      8:
+        "Multi-site redundancy is the argument that matters most in Washington, and for a serious reason: the Cascadia subduction zone is a low-frequency but very high-impact risk to the entire Puget Sound corridor. Any provider running a primary floor on the west side should be able to describe failover to somewhere that is not also on that fault.",
+      9:
+        "Journey and analytics work fits Seattle and Bellevue cloud and ecommerce operators better than almost any market in the country, because they already instrument everything and have the data to support it. The consulting-led ramp is slower, and in the highest-wage market on the West Coast a long standup is an expensive way to begin.",
+      10:
+        "Automation-weighted delivery is a rational response to Puget Sound cost, since human capacity here is the most expensive on the West Coast. It suits transactional ecommerce volume. It does not suit the technical support that is the actual reason to site a program in Washington, and it interacts badly with all-party consent on any automated outbound.",
+    },
     extraFaqs: [
       {
         question: "What is the My Health My Data Act and why does it matter for call centers?",

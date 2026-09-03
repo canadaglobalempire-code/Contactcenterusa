@@ -263,6 +263,16 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
+                  {/* The state layer. Everything above this line is the national
+                      profile and is identical on all ten state pages; this is the
+                      part that answers the question in the title. */}
+                  {seed.providerNotes?.[company.rank] && (
+                    <div className="mt-3 rounded-xl border-l-2 border-red bg-red/[0.03] p-4 text-sm">
+                      <strong className="text-navy">What this means in {state}:</strong>{" "}
+                      <span className="text-gray-700">{seed.providerNotes[company.rank]}</span>
+                    </div>
+                  )}
+
                   {company.rank === 7 ? (
                     <Link href="/contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline">
                       Get a Free {state} Quote <ArrowRight className="h-3.5 w-3.5" />
