@@ -60,13 +60,21 @@ const industries = [
   { label: "Travel & Hospitality", href: "/industries/travel-hospitality-call-center" },
 ];
 
+// Sixteen entries, matching services/solutions/industries, so the four link
+// columns end at the same baseline instead of leaving Company six rows short.
 const company = [
   { label: "About Us", href: "/about" },
   { label: "Company History", href: "/about/company-history" },
   { label: "Why Work With Us", href: "/about/why-work-with-us" },
   { label: "Industry Experience", href: "/about/industries" },
-  { label: "Locations", href: "/locations" },
   { label: "Why Choose Us", href: "/why-us" },
+  { label: "Locations", href: "/locations" },
+  { label: "Case Studies", href: "/case-studies" },
+  { label: "Healthcare Case Study", href: "/case-studies/healthcare-revenue-cycle-management" },
+  { label: "E-commerce Case Study", href: "/case-studies/ecommerce-holiday-scaling" },
+  { label: "Insurance Case Study", href: "/case-studies/insurance-claims-processing" },
+  { label: "SaaS Case Study", href: "/case-studies/saas-customer-retention" },
+  { label: "Travel Case Study", href: "/case-studies/travel-crisis-management" },
   { label: "Blog", href: "/blog" },
   { label: "Answers", href: "/answers" },
   { label: "FAQ", href: "/faq" },
@@ -93,10 +101,16 @@ export default function Footer() {
   return (
     <footer className="relative w-full pt-16 pb-10 overflow-hidden">
       {/* America background image — blended */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.06]"
-        style={{ backgroundImage: "url(/images/america.jpg)" }}
-      />
+      <div className="absolute inset-0 opacity-[0.06]">
+        <Image
+          src="/images/america.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          quality={35}
+          className="object-cover"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white" />
 
       <div className="relative mx-auto max-w-[1536px] px-6">
@@ -124,8 +138,9 @@ export default function Footer() {
               <Image
                 src="/images/logo-v6.png"
                 alt="Contact Center USA"
-                width={200}
-                height={42}
+                width={300}
+                height={200}
+                sizes="240px"
                 className="h-[160px] w-auto"
               />
             </div>

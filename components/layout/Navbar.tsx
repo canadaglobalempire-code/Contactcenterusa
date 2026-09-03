@@ -163,17 +163,17 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed left-0 right-0 z-50 transition-[top,padding] duration-500 ${
           scrolled
             ? "top-0 px-0"
             : "top-5 px-4 lg:px-8"
         }`}
       >
         <div
-          className={`mx-auto flex h-[100px] max-w-[1300px] items-center justify-between transition-all duration-500 ${
+          className={`mx-auto flex h-[100px] max-w-[1300px] items-center justify-between transition-[background-color,box-shadow,border-radius,padding] duration-500 ${
             scrolled
               ? "rounded-none bg-white px-5 shadow-md lg:px-8"
-              : "rounded-2xl bg-white/95 px-5 shadow-lg backdrop-blur-sm lg:px-8"
+              : "rounded-2xl bg-white/95 px-5 shadow-lg lg:px-8"
           }`}
         >
           {/* Logo */}
@@ -181,8 +181,9 @@ export default function Navbar() {
             <Image
               src="/images/logo-v6.png"
               alt="Contact Center USA"
-              width={220}
-              height={100}
+              width={180}
+              height={120}
+              sizes="120px"
               className="h-[80px] w-auto"
               priority
             />

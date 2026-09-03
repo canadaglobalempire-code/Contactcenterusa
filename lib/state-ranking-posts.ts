@@ -14,7 +14,7 @@ import { TOP_PROVIDERS } from "@/lib/geo-vertical-posts";
  * for the five hand-written originals it was modelled on. Two changes fix that:
  * the ten shared provider profiles are now condensed (the full write-ups live on
  * /blog/top-10-bpo-companies-in-usa, which is linked from every page), and each
- * seed carries its own labour market, regulatory position beyond consent, metro
+ * seed carries its own labor market, regulatory position beyond consent, metro
  * breakdown, industry analysis, continuity risk, cost context and FAQs.
  *
  * Each post is anchored in that state's real call-recording consent law, which
@@ -39,7 +39,7 @@ type StateSeed = {
   industries: { name: string; href: string; note: string }[];
   /** Why those industries outsource here specifically. */
   industryDetail: string[];
-  /** The contact-centre labour market in this state. */
+  /** The contact-center labor market in this state. */
   labor: { heading: string; body: string[]; bullets?: string[] };
   /** Regulatory obligations beyond the consent rule. */
   regulatory: { heading: string; body: string[] };
@@ -248,12 +248,12 @@ const SEEDS: StateSeed[] = [
     ],
     metros: "Phoenix, Tucson, Tempe, Chandler, Mesa, Scottsdale, and Flagstaff",
     metroRows: [
-      ["Phoenix", "The metro's operational centre and the largest single talent pool in the state", "Deep general customer-service experience; the default location for large programs"],
+      ["Phoenix", "The metro's operational center and the largest single talent pool in the state", "Deep general customer-service experience; the default location for large programs"],
       ["Tempe & Chandler", "Technology corridor serving software, semiconductor and fintech clients", "Technically literate agents; strong Tier 2 and Tier 3 support capability"],
       ["Scottsdale", "Financial services, insurance and premium consumer brands", "Higher-tenure agents suited to high-value account servicing"],
-      ["Mesa & Gilbert", "Residential labour pool feeding Phoenix programs, heavily remote since 2020", "Large, stable, cost-effective; strong for scaled voice and chat"],
+      ["Mesa & Gilbert", "Residential labor pool feeding Phoenix programs, heavily remote since 2020", "Large, stable, cost-effective; strong for scaled voice and chat"],
       ["Tucson", "Lower-cost secondary market with strong bilingual availability", "University of Arizona pipeline; substantially Spanish-capable workforce"],
-      ["Flagstaff", "Small northern market, Northern Arizona University pipeline", "Limited scale, but useful for specialised or seasonal overflow"],
+      ["Flagstaff", "Small northern market, Northern Arizona University pipeline", "Limited scale, but useful for specialized or seasonal overflow"],
     ],
     industries: [
       { name: "Healthcare", href: "/industries/healthcare-call-center-services", note: "Patient scheduling and HIPAA-compliant intake for Arizona health systems." },
@@ -267,16 +267,16 @@ const SEEDS: StateSeed[] = [
       "Resort and hospitality support is the third pillar and the most seasonal. Arizona's resort corridor runs at capacity through the mild months, and reservation, concierge and guest-services volume follows that curve closely rather than spreading across the year.",
     ],
     labor: {
-      heading: "The Arizona contact centre labour market",
+      heading: "The Arizona contact center labor market",
       body: [
-        "Phoenix has been a recognised contact centre market for three decades, which means the workforce here has an unusual amount of transferable experience. Agents move between programs, and a provider recruiting in this metro is generally hiring people who have worked a queue before rather than training from zero.",
+        "Phoenix has been a recognized contact center market for three decades, which means the workforce here has an unusual amount of transferable experience. Agents move between programs, and a provider recruiting in this metro is generally hiring people who have worked a queue before rather than training from zero.",
         "The supply side is anchored by Arizona State University, one of the largest universities in the country by enrolment, and by the Maricopa County Community College District, among the largest community-college systems in the United States. Between them they produce a steady flow of part-time-capable, English-fluent candidates in a metro with a low cost of living relative to the coasts.",
       ],
       bullets: [
         "Strong bilingual Spanish availability across the Phoenix and Tucson markets.",
         "High remote and hybrid adoption since 2020, which widens the practical hiring radius well beyond the Valley.",
-        "Direct wage competition from distribution and fulfilment centres, which sets an effective floor on agent pay.",
-        "Seasonal labour availability improves October through April as the winter population arrives.",
+        "Direct wage competition from distribution and fulfilment centers, which sets an effective floor on agent pay.",
+        "Seasonal labor availability improves October through April as the winter population arrives.",
       ],
     },
     regulatory: {
@@ -302,9 +302,9 @@ const SEEDS: StateSeed[] = [
       "For Arizona programs the practical shortlist usually narrows quickly by sector: Global Empire Corporation and Contact Center USA for full-service healthcare and financial-services support where HIPAA and PCI discipline are non-negotiable, Intelemark and B2B Appointment Setting for the outbound demand generation the Tempe–Chandler technology corridor tends to buy, and Call Center Staffing where the requirement is scaled seasonal capacity for the winter resort and property market.",
     extraFaqs: [
       {
-        question: "Why do so many call centres operate in Phoenix?",
+        question: "Why do so many call centers operate in Phoenix?",
         answer:
-          "Three reasons, and they compound. Phoenix has hosted contact centre operations since the 1990s, so the workforce carries genuine transferable queue experience rather than needing to be trained from zero. The cost of living sits well below the coastal metros while the labour pool — anchored by Arizona State University and one of the largest community-college systems in the country — remains deep. And Arizona has almost no hurricane, earthquake or tornado exposure, which makes it one of the safest places in the United States to site a floor that cannot go dark. Buyers frequently place their primary operation elsewhere and their continuity site here for exactly that last reason.",
+          "Three reasons, and they compound. Phoenix has hosted contact center operations since the 1990s, so the workforce carries genuine transferable queue experience rather than needing to be trained from zero. The cost of living sits well below the coastal metros while the labor pool — anchored by Arizona State University and one of the largest community-college systems in the country — remains deep. And Arizona has almost no hurricane, earthquake or tornado exposure, which makes it one of the safest places in the United States to site a floor that cannot go dark. Buyers frequently place their primary operation elsewhere and their continuity site here for exactly that last reason.",
       },
       {
         question: "How does Arizona's lack of daylight saving time affect an outsourced program?",
@@ -312,12 +312,12 @@ const SEEDS: StateSeed[] = [
           "It is an advantage operationally and a hazard technically. The advantage is that an Arizona floor naturally covers the Pacific business day in summer and shifts toward Mountain and Central coverage in winter without anyone changing shift, which is genuinely useful for a multi-timezone program. The hazard is that any platform assuming a standard Mountain-time offset will be an hour out for roughly half the year, which corrupts calling-window compliance under the TCPA and distorts service-level reporting. Ask the provider to demonstrate a booking and an SLA report from both March and November before you sign.",
       },
       {
-        question: "Is Arizona a good state for bilingual Spanish call centre support?",
+        question: "Is Arizona a good state for bilingual Spanish call center support?",
         answer:
           "Yes, and Tucson in particular is stronger for it than most buyers expect. The Phoenix metro has broad Spanish availability across the workforce, and Tucson's proximity to the border combined with the University of Arizona pipeline produces a workforce with high functional bilingual capability at a lower cost point than Phoenix. The question worth asking any provider is not whether Spanish is available but what proportion of the overnight and weekend rota is bilingual, because that is where coverage most often thins.",
       },
       {
-        question: "Does Arizona have a state consumer privacy law that affects call centres?",
+        question: "Does Arizona have a state consumer privacy law that affects call centers?",
         answer:
           "Arizona has not enacted a comprehensive consumer privacy statute comparable to those in California, Colorado or Utah, so data handled by an Arizona program falls mainly under federal and sectoral rules — HIPAA, GLBA, PCI-DSS — plus Arizona's data-breach notification requirements. This is the fastest-moving area of state law in the country, so confirm the current position rather than relying on it. What does apply regardless is the TCPA for any outbound calling, and the privacy law of whichever state your customer is sitting in, which is frequently stricter than Arizona's.",
       },
@@ -335,15 +335,15 @@ const SEEDS: StateSeed[] = [
     economy: [
       "Colorado's Mountain-time position lets a single extended shift reach both coasts, which is why nationwide programs often anchor coverage on the Front Range. The Denver–Boulder technology corridor, the Colorado Springs aerospace and defense cluster, and a large outdoor recreation industry push support demand toward technical, product-literate work.",
       "That timezone advantage is more consequential than it first appears. A floor running 7 AM to 8 PM Mountain covers the Eastern business day from mid-morning through the evening and the Pacific business day from before it opens until well after it closes — a single shift pattern delivering something close to national coverage without paying an overnight premium.",
-      "The trade-off is cost. Colorado is not a low-cost state. Front Range wages are pulled upward by a dense technology employer base competing for the same articulate, computer-literate candidates a contact centre wants, and by a cost of living that has risen sharply. Buyers who choose Colorado are generally buying capability and coverage hours rather than rate.",
+      "The trade-off is cost. Colorado is not a low-cost state. Front Range wages are pulled upward by a dense technology employer base competing for the same articulate, computer-literate candidates a contact center wants, and by a cost of living that has risen sharply. Buyers who choose Colorado are generally buying capability and coverage hours rather than rate.",
     ],
     metros: "Denver, Boulder, Colorado Springs, Fort Collins, and Aurora",
     metroRows: [
-      ["Denver", "The state's operational centre and largest talent pool", "Broad experience across voice, chat and back office; the default site for scaled programs"],
+      ["Denver", "The state's operational center and largest talent pool", "Broad experience across voice, chat and back office; the default site for scaled programs"],
       ["Boulder", "Technology and software, closely tied to the university", "Highly educated, technically fluent, expensive; suited to Tier 2 and Tier 3 work"],
       ["Colorado Springs", "Aerospace, defense and government-adjacent services", "Large veteran and security-cleared-adjacent workforce; strong for regulated programs"],
       ["Fort Collins", "Colorado State University market with a lower cost base than Denver", "Good part-time availability; useful for flexible and seasonal capacity"],
-      ["Aurora", "Denver's largest suburb and its most diverse labour pool", "Strong multilingual availability, including languages beyond Spanish"],
+      ["Aurora", "Denver's largest suburb and its most diverse labor pool", "Strong multilingual availability, including languages beyond Spanish"],
       ["Pueblo", "Southern Colorado's lower-cost secondary market", "Meaningfully cheaper than the Front Range; smaller but stable supply"],
     ],
     industries: [
@@ -358,7 +358,7 @@ const SEEDS: StateSeed[] = [
       "Healthcare and resort hospitality provide the counterweight: steady, scheduling-led volume with clear seasonal peaks, and in the resort case a winter demand curve that runs opposite to most of the country's.",
     ],
     labor: {
-      heading: "The Colorado contact centre labour market",
+      heading: "The Colorado contact center labor market",
       body: [
         "Colorado has one of the most highly educated workforces in the United States by share of residents holding a bachelor's degree, which is both the reason to hire here and the reason it costs more. The candidate pool is articulate, comfortable with software, and capable of technical support work — and it is being competed for by a very large technology employer base.",
         "The university pipeline is unusually strong for a state of this size. The University of Colorado system, Colorado State University and the Colorado School of Mines together produce a steady flow of candidates, and Front Range campuses support strong part-time availability for flexible scheduling.",
@@ -374,7 +374,7 @@ const SEEDS: StateSeed[] = [
       heading: "The Colorado Privacy Act changes what a vendor must be able to do",
       body: [
         "Colorado was among the first states to enact a comprehensive consumer privacy statute. The Colorado Privacy Act gives residents rights to access, correct, delete and opt out of the sale or targeted-advertising use of their personal data, and it requires businesses to honour universal opt-out signals — a browser-level or device-level mechanism rather than only a form on a website.",
-        "For an outsourced contact centre program the practical consequences are concrete. Your provider needs to be able to locate every record tied to an individual, including call recordings rather than only CRM entries; to action a deletion within the statutory window; and to operate under a written processor agreement containing the terms the Act requires. A one-page order form is not that agreement.",
+        "For an outsourced contact center program the practical consequences are concrete. Your provider needs to be able to locate every record tied to an individual, including call recordings rather than only CRM entries; to action a deletion within the statutory window; and to operate under a written processor agreement containing the terms the Act requires. A one-page order form is not that agreement.",
         "Colorado's one-party consent rule keeps the recording question simple, but it is the least interesting part of compliance here. The questions worth asking a provider are about data subject request handling and audio deletion, not about disclosure scripts.",
       ],
     },
@@ -398,17 +398,17 @@ const SEEDS: StateSeed[] = [
           "Because Mountain time reaches both coasts in a single shift. A Colorado floor staffed 7 AM to 8 PM local covers the Eastern business day from mid-morning through the evening and the Pacific business day from before offices open until well after they close. For a national program that would otherwise need two sites or an overnight premium to achieve the same coverage, one Front Range shift pattern does it — which frequently offsets Colorado's higher wage base entirely. It is the clearest example in the country of a timezone being a commercial asset rather than a constraint.",
       },
       {
-        question: "What does the Colorado Privacy Act require from an outsourced call centre?",
+        question: "What does the Colorado Privacy Act require from an outsourced call center?",
         answer:
           "Three things that a standard vendor agreement often does not cover. First, the ability to find every record associated with an individual on request — including call recordings, not just the CRM contact — and to delete them within the statutory window. Second, a written processor agreement containing the specific terms the Act requires, which a one-page order form will not satisfy. Third, the ability to honour universal opt-out signals rather than only a manual request form. Ask a prospective provider to walk through an actual deletion request end to end; the ones who have done it will describe the audio step without being prompted.",
       },
       {
-        question: "Is Colorado expensive for contact centre outsourcing?",
+        question: "Is Colorado expensive for contact center outsourcing?",
         answer:
           "Yes, relative to the Southeast and Midwest, and buyers should be clear-eyed that Colorado is a capability decision rather than a rate decision. Front Range wages are pushed up by a dense technology employer base competing for the same articulate, software-literate candidates a support program wants, and by a cost of living that has risen sharply. What you get for the premium is a highly educated workforce genuinely capable of Tier 2 and Tier 3 work, plus the timezone advantage. Programs that need scaled, script-driven consumer voice work will usually find better economics elsewhere.",
       },
       {
-        question: "How exposed is a Colorado call centre to weather disruption?",
+        question: "How exposed is a Colorado call center to weather disruption?",
         answer:
           "More than buyers expect, but the exposure is largely solved. The Front Range sits in the country's most active hail corridor, blizzards can close I-25 and I-70 at the same time, and wildfire has reached suburban areas inside the Denver metro. All of those can stop staff reaching a building. What makes it manageable is Colorado's unusually high remote-work adoption — a provider whose local capacity is remote or hybrid by default keeps answering through a closed highway. The question to ask is what proportion of the team on your program is site-dependent, not whether a continuity plan exists.",
       },
@@ -430,7 +430,7 @@ const SEEDS: StateSeed[] = [
     ],
     metros: "Atlanta, Savannah, Augusta, Columbus, Macon, and Athens",
     metroRows: [
-      ["Atlanta", "The Southeast's commercial centre and the state's dominant talent pool", "Very deep customer-service workforce; strong payments and healthcare administration experience"],
+      ["Atlanta", "The Southeast's commercial center and the state's dominant talent pool", "Very deep customer-service workforce; strong payments and healthcare administration experience"],
       ["Savannah", "Port and logistics, plus a growing tourism economy", "Logistics-literate agents; useful for exception handling and freight support"],
       ["Augusta", "Cybersecurity and defense, anchored by a large federal presence", "Security-conscious workforce; suited to programs with elevated data-handling requirements"],
       ["Columbus", "Financial services and insurance back office with a military-adjacent population", "Stable, lower-cost supply; strong for regulated back-office work"],
@@ -449,10 +449,10 @@ const SEEDS: StateSeed[] = [
       "Healthcare administration and insurance claims round out the market, and both draw on the same broad Atlanta administrative workforce. What they add is regulatory weight: HIPAA in one direction, state insurance regulation in the other, and in both cases a requirement for documented training and retrievable records rather than simply competent conversation.",
     ],
     labor: {
-      heading: "The Georgia contact centre labour market",
+      heading: "The Georgia contact center labor market",
       body: [
         "Metro Atlanta has one of the largest and most experienced customer-service workforces in the Southeast, built up over decades of corporate headquarters, payments processing and airline operations. A provider hiring here is drawing from a pool where prior queue experience is common rather than exceptional.",
-        "The education pipeline is unusually broad. Georgia State University is among the largest universities in the country by enrolment, Georgia Tech and the University of Georgia supply technical and analytical candidates, and metro Atlanta's cluster of historically Black colleges and universities adds a further concentrated source of graduates into the local labour market.",
+        "The education pipeline is unusually broad. Georgia State University is among the largest universities in the country by enrolment, Georgia Tech and the University of Georgia supply technical and analytical candidates, and metro Atlanta's cluster of historically Black colleges and universities adds a further concentrated source of graduates into the local labor market.",
       ],
       bullets: [
         "Cost structure well below the Northeast while remaining in Eastern time — the state's core commercial argument.",
@@ -484,7 +484,7 @@ const SEEDS: StateSeed[] = [
       "Georgia shortlists are usually decided on compliance evidence rather than price: Global Empire Corporation and Contact Center USA where a program sits inside PCI-DSS or HIPAA scope and needs documented controls, Customer Communications Corp and Call Center Communications for the exception-driven logistics and freight support the Savannah and Atlanta corridors generate, and Intelemark where the requirement is consultative B2B outbound into the state's payments and technology base.",
     extraFaqs: [
       {
-        question: "Why is PCI-DSS such a big issue for Georgia call centres?",
+        question: "Why is PCI-DSS such a big issue for Georgia call centers?",
         answer:
           "Because of where the work comes from. Metro Atlanta processes a very large share of US card transactions — the region is known as Transaction Alley — so a disproportionate number of Georgia programs involve merchant support, disputes, chargebacks or payment troubleshooting. All of that sits inside PCI-DSS scope, which imposes specific operational controls rather than general good practice: automatic pause-and-resume on call recording while a card number is spoken, masked card data in the agent desktop, controlled screen and clipboard access, and auditable evidence of each. Ask a provider to demonstrate pause-and-resume on a live call rather than accepting a compliance certificate.",
       },
@@ -499,7 +499,7 @@ const SEEDS: StateSeed[] = [
           "Georgia has not enacted a comprehensive consumer privacy statute comparable to California's or Colorado's, so a Georgia program's data obligations generally follow the customer's home state rather than Georgia's — which frequently means the stricter standard applies anyway. Georgia's own breach notification requirements do apply, as do its telemarketing and no-call provisions for outbound sales calls made into the state, alongside the federal TCPA. Because state privacy law is the fastest-moving area of US regulation right now, confirm the current position with counsel rather than relying on this.",
       },
       {
-        question: "How do Georgia call centres handle hurricane and ice storm continuity?",
+        question: "How do Georgia call centers handle hurricane and ice storm continuity?",
         answer:
           "The two risks sit in different parts of the state and need different answers. Savannah and the coast face genuine hurricane exposure with evacuation orders that can close a site for days. Metro Atlanta rarely sees hurricanes but is uniquely vulnerable to winter ice, because the region carries very little snow-clearing capacity and a two-day freezing-rain event effectively shuts the metro down. The practical protection is knowing where your program physically sits and what the documented failover is — providers running capacity across both regions, or running Georgia capacity remotely, are substantially less exposed than a single-site operation in either.",
       },
@@ -516,12 +516,12 @@ const SEEDS: StateSeed[] = [
       "Nevada effectively requires all-party consent for telephone recording. While Nevada's statute (N.R.S. 200.620) reads as one-party for in-person conversations, the Nevada Supreme Court has held that telephone calls require the consent of all parties. Any provider recording Nevada calls must deliver an all-party disclosure and log consent — a real compliance point given the state's high call volumes.",
     economy: [
       "Nevada runs a genuine 24/7 economy. Las Vegas hospitality, gaming, and entertainment generate guest-facing contact around the clock, so overnight coverage is a baseline requirement rather than a premium. Reno adds a logistics and distribution corridor serving West Coast markets with more conventional volume patterns.",
-      "The hospitality base gives Nevada a labour advantage that is easy to overlook. A workforce built around resorts and casinos is a workforce already trained in guest service under pressure — de-escalation, service recovery, and holding a courteous conversation with an unhappy customer at three in the morning. Those are precisely the skills a contact centre spends months teaching, and in Nevada a substantial share of candidates arrive with them.",
+      "The hospitality base gives Nevada a labor advantage that is easy to overlook. A workforce built around resorts and casinos is a workforce already trained in guest service under pressure — de-escalation, service recovery, and holding a courteous conversation with an unhappy customer at three in the morning. Those are precisely the skills a contact center spends months teaching, and in Nevada a substantial share of candidates arrive with them.",
       "Nevada also has no state income tax, which has driven sustained in-migration from California and made recruitment easier than the state's population size alone would suggest. For West Coast programs that need Pacific-time coverage without Californian cost structures, Reno in particular has become a common answer.",
     ],
     metros: "Las Vegas, Reno, Henderson, North Las Vegas, and Carson City",
     metroRows: [
-      ["Las Vegas", "The state's dominant market and a genuinely 24-hour labour pool", "Hospitality-trained; unusually strong overnight availability and service-recovery skill"],
+      ["Las Vegas", "The state's dominant market and a genuinely 24-hour labor pool", "Hospitality-trained; unusually strong overnight availability and service-recovery skill"],
       ["Reno", "Logistics, distribution and a growing technology presence", "More conventional shift patterns; strong for West Coast business-hours coverage"],
       ["Henderson", "Suburban Las Vegas with a more office-oriented workforce", "Higher-tenure candidates; suited to account servicing and back office"],
       ["North Las Vegas", "Industrial and warehousing base", "Cost-effective supply with strong shift-work tolerance"],
@@ -535,15 +535,15 @@ const SEEDS: StateSeed[] = [
       { name: "Logistics & Shipping", href: "/industries/logistics-shipping-call-center", note: "Tracking and exception handling for the Reno–Sparks distribution corridor." },
     ],
     industryDetail: [
-      "Hospitality support is the defining Nevada program type and it is unlike most contact centre work. Guest-facing calls carry immediate reputational consequence — an unresolved issue becomes a public review within hours — which changes what good looks like. Speed of answer matters more than handle time, resolution authority matters more than script adherence, and the ability to recover a bad experience is the core competency.",
+      "Hospitality support is the defining Nevada program type and it is unlike most contact center work. Guest-facing calls carry immediate reputational consequence — an unresolved issue becomes a public review within hours — which changes what good looks like. Speed of answer matters more than handle time, resolution authority matters more than script adherence, and the ability to recover a bad experience is the core competency.",
       "The Reno–Sparks distribution corridor produces the state's second cluster, and it behaves like logistics support anywhere: order status, delivery exceptions, returns, and the seasonal spike that arrives with the fourth quarter. Its advantage is Pacific-time positioning at a cost well below California's.",
       "Healthcare is the quieter third sector. Nevada's population has grown quickly and its healthcare infrastructure has expanded with it, generating steady scheduling, intake and patient-access volume that is far more conventional than the state's hospitality reputation suggests.",
     ],
     labor: {
-      heading: "The Nevada contact centre labour market",
+      heading: "The Nevada contact center labor market",
       body: [
         "Nevada's workforce is unusually comfortable with non-standard hours. In most markets staffing an overnight rota means paying a premium and accepting higher attrition; in Las Vegas, shift work is the norm across a large part of the economy, and candidates who prefer nights are genuinely available rather than reluctantly recruited.",
-        "The service-skills advantage is real and specific. Resort and gaming employment trains people in guest interaction, complaint handling and de-escalation, and that experience transfers directly to a contact centre queue. Providers recruiting in Las Vegas are frequently hiring for attitude and training for systems rather than the other way round.",
+        "The service-skills advantage is real and specific. Resort and gaming employment trains people in guest interaction, complaint handling and de-escalation, and that experience transfers directly to a contact center queue. Providers recruiting in Las Vegas are frequently hiring for attitude and training for systems rather than the other way round.",
       ],
       bullets: [
         "Genuine overnight availability without the premium and attrition seen in most markets.",
@@ -568,7 +568,7 @@ const SEEDS: StateSeed[] = [
       ],
     },
     costContext: [
-      "Nevada sits below California and Washington and roughly level with Arizona on cost, with the important qualification that overnight coverage costs less here in practice because the labour supply for it genuinely exists. For a program that needs staffed nights, the effective rate advantage is larger than the headline comparison suggests.",
+      "Nevada sits below California and Washington and roughly level with Arizona on cost, with the important qualification that overnight coverage costs less here in practice because the labor supply for it genuinely exists. For a program that needs staffed nights, the effective rate advantage is larger than the headline comparison suggests.",
       "Reno and Las Vegas price differently. Reno's distribution-corridor workforce is oriented toward conventional business hours and competes with warehouse wages; Las Vegas is where the round-the-clock advantage lives. Programs should choose the metro on shift pattern rather than on rate alone.",
     ],
     providerFit:
@@ -580,9 +580,9 @@ const SEEDS: StateSeed[] = [
           "For telephone calls, yes — and this is the single most commonly misapplied recording rule in the country. Nevada's statute reads as one-party, and most compliance summary charts list the state that way, but the Nevada Supreme Court has held that recording a telephone conversation requires the consent of all parties. Any provider handling Nevada calls needs an all-party disclosure at the top of every call, logged consent, and a documented path for callers who decline. Ask to see the Nevada-specific script itself; a vendor relying on a chart rather than the case law has misread the rule that actually applies to phones.",
       },
       {
-        question: "Why is Las Vegas good for 24/7 call centre coverage?",
+        question: "Why is Las Vegas good for 24/7 call center coverage?",
         answer:
-          "Because the labour supply for overnight work genuinely exists here, which is not true in most markets. In a typical metro, staffing nights means paying a shift premium and accepting elevated attrition from people who would rather work days. In Las Vegas a large share of the economy already runs around the clock, so candidates who prefer or accept night work are readily available. On top of that, resort and gaming employment trains people in guest service, complaint handling and de-escalation — the exact skills an overnight support queue needs. The effective cost of a staffed night shift is therefore lower here than the headline rate comparison suggests.",
+          "Because the labor supply for overnight work genuinely exists here, which is not true in most markets. In a typical metro, staffing nights means paying a shift premium and accepting elevated attrition from people who would rather work days. In Las Vegas a large share of the economy already runs around the clock, so candidates who prefer or accept night work are readily available. On top of that, resort and gaming employment trains people in guest service, complaint handling and de-escalation — the exact skills an overnight support queue needs. The effective cost of a staffed night shift is therefore lower here than the headline rate comparison suggests.",
       },
       {
         question: "Should a Nevada program be placed in Las Vegas or Reno?",
@@ -608,14 +608,14 @@ const SEEDS: StateSeed[] = [
     economy: [
       "North Carolina is two outsourcing markets. Charlotte is among the largest US banking centers, generating compliance-heavy account servicing, fraud, and dispute work. The Research Triangle — Raleigh, Durham, Chapel Hill — is a technology and life sciences cluster whose demand runs toward Tier 2–3 technical support.",
       "Those two markets buy very differently. Charlotte programs are judged on auditability: can you produce the recording, the QA score and the access log when an examiner asks. Triangle programs are judged on resolution: can the agent solve the problem without escalating. A provider strong at one is not automatically strong at the other, and the single most common mistake buyers make here is assuming a state-level shortlist covers both.",
-      "Underneath both sits the state's community college system, one of the largest in the country, which has quietly become North Carolina's most important labour-market asset. It has repeatedly retrained a workforce out of textiles, furniture and tobacco and into services, and it is the reason secondary markets like Greensboro and Winston-Salem can supply capable agents at a rate the two headline metros cannot match.",
+      "Underneath both sits the state's community college system, one of the largest in the country, which has quietly become North Carolina's most important labor-market asset. It has repeatedly retrained a workforce out of textiles, furniture and tobacco and into services, and it is the reason secondary markets like Greensboro and Winston-Salem can supply capable agents at a rate the two headline metros cannot match.",
     ],
     metros: "Charlotte, Raleigh, Durham, Greensboro, Winston-Salem, and Wilmington",
     metroRows: [
-      ["Charlotte", "One of the largest banking centres in the United States", "Financial-services experienced; comfortable with examination-grade documentation"],
+      ["Charlotte", "One of the largest banking centers in the United States", "Financial-services experienced; comfortable with examination-grade documentation"],
       ["Raleigh", "State capital and the commercial anchor of the Research Triangle", "Broad, well-educated pool; strong for technical and account-management work"],
       ["Durham", "Life sciences and technology, anchored by Duke and Research Triangle Park", "Technically literate; suited to Tier 2 and Tier 3 support"],
-      ["Greensboro", "Piedmont Triad logistics and distribution centre", "Lower cost than Charlotte or Raleigh; strong logistics familiarity"],
+      ["Greensboro", "Piedmont Triad logistics and distribution center", "Lower cost than Charlotte or Raleigh; strong logistics familiarity"],
       ["Winston-Salem", "Healthcare and advanced manufacturing", "Healthcare-administration experience at a secondary-market rate"],
       ["Wilmington", "Coastal market with film production and a growing services base", "Smaller pool; useful for flexible capacity, with genuine hurricane exposure"],
     ],
@@ -631,9 +631,9 @@ const SEEDS: StateSeed[] = [
       "The Piedmont Triad's logistics base supplies the third pattern: exception-driven, seasonal, and well suited to a lower-cost secondary market where the work does not require Charlotte or Raleigh capability.",
     ],
     labor: {
-      heading: "The North Carolina contact centre labour market",
+      heading: "The North Carolina contact center labor market",
       body: [
-        "North Carolina's defining labour asset is its community college system, which is among the largest in the United States and has spent decades retraining workers out of declining industries into services. The practical result is that secondary markets across the state supply candidates who are trainable, stable and considerably cheaper than the two headline metros.",
+        "North Carolina's defining labor asset is its community college system, which is among the largest in the United States and has spent decades retraining workers out of declining industries into services. The practical result is that secondary markets across the state supply candidates who are trainable, stable and considerably cheaper than the two headline metros.",
         "The university pipeline in the Triangle is exceptionally strong for the region's size — Duke, the University of North Carolina at Chapel Hill and North Carolina State together produce a concentration of technically capable graduates that few comparable markets can match, which is precisely why the Triangle commands a premium for Tier 2 and Tier 3 work.",
       ],
       bullets: [
@@ -666,9 +666,9 @@ const SEEDS: StateSeed[] = [
       "North Carolina divides its shortlists cleanly by which market you are buying into: Global Empire Corporation and Contact Center USA for Charlotte-style financial and healthcare programs where retrievable recordings and documented QA are non-negotiable, Customer Communications Corp for Piedmont Triad logistics and order-management work, and Intelemark or B2B Appointment Setting for consultative outbound into the Research Triangle's technology and life sciences base.",
     extraFaqs: [
       {
-        question: "What makes Charlotte different from other US call centre markets?",
+        question: "What makes Charlotte different from other US call center markets?",
         answer:
-          "The supervisory environment that comes with the banking sector, and it reaches outsourced vendors rather than stopping at the bank. Charlotte is among the largest banking centres in the country, so a substantial share of local programs handle account servicing, fraud and disputes under continuous examination assumptions. That imposes concrete operational requirements: every call retrievable for a defined retention period, QA scored against documented criteria rather than manager judgement, and logged, reviewable access to customer financial data. The workforce here has worked inside that environment, which is the real reason Charlotte commands a premium over the state's secondary markets.",
+          "The supervisory environment that comes with the banking sector, and it reaches outsourced vendors rather than stopping at the bank. Charlotte is among the largest banking centers in the country, so a substantial share of local programs handle account servicing, fraud and disputes under continuous examination assumptions. That imposes concrete operational requirements: every call retrievable for a defined retention period, QA scored against documented criteria rather than manager judgement, and logged, reviewable access to customer financial data. The workforce here has worked inside that environment, which is the real reason Charlotte commands a premium over the state's secondary markets.",
       },
       {
         question: "Should I place a program in Charlotte, the Triangle, or a smaller NC market?",
@@ -683,7 +683,7 @@ const SEEDS: StateSeed[] = [
       {
         question: "Why is North Carolina's community college system relevant to outsourcing?",
         answer:
-          "Because it is the reason the state's secondary markets can supply capable agents at rates the headline metros cannot match. North Carolina operates one of the largest community college systems in the country, and it has spent decades deliberately retraining workers out of textiles, furniture and tobacco into services. That produces a trainable, stable workforce in places like Greensboro, Winston-Salem and Fayetteville, where cost of living is low and turnover is lower than in a competitive metro. For programs that do not specifically need Charlotte's banking experience or the Triangle's technical depth, it is the most efficient labour market in the state.",
+          "Because it is the reason the state's secondary markets can supply capable agents at rates the headline metros cannot match. North Carolina operates one of the largest community college systems in the country, and it has spent decades deliberately retraining workers out of textiles, furniture and tobacco into services. That produces a trainable, stable workforce in places like Greensboro, Winston-Salem and Fayetteville, where cost of living is low and turnover is lower than in a competitive metro. For programs that do not specifically need Charlotte's banking experience or the Triangle's technical depth, it is the most efficient labor market in the state.",
       },
     ],
     locationHref: "/locations/north-carolina",
@@ -720,10 +720,10 @@ const SEEDS: StateSeed[] = [
     industryDetail: [
       "Insurance is Ohio's signature category and it changes what a good agent looks like. First notice of loss is a data-capture task performed under emotional pressure: the caller has just had an accident, a fire or a theft, and the agent must extract accurate, complete, structured information from someone who is not calm. An error here does not cost a minute of handle time — it creates a claim that has to be reworked, disputed or reopened, at a cost that dwarfs anything saved on the call.",
       "That is why Ohio programs are usually scored on accuracy rather than speed. Quality assurance here weights completeness and correctness of captured data far above adherence or handle time, and the retention requirements attached to claims records are longer and stricter than a general customer-service program would ever need.",
-      "Healthcare patient access and central Ohio's large distribution base supply the other two pillars. Both are volume businesses that reward consistency, and both benefit from the same cost-competitive, low-attrition labour market that makes the state attractive for insurance back office.",
+      "Healthcare patient access and central Ohio's large distribution base supply the other two pillars. Both are volume businesses that reward consistency, and both benefit from the same cost-competitive, low-attrition labor market that makes the state attractive for insurance back office.",
     ],
     labor: {
-      heading: "The Ohio contact centre labour market",
+      heading: "The Ohio contact center labor market",
       body: [
         "Ohio offers one of the better cost-to-capability ratios in the United States. The cost of living across all three major metros sits well below the coasts, wage expectations follow, and the workforce carries substantial existing experience in insurance, healthcare administration and back-office processing rather than needing to be built from scratch.",
         "The pipeline is broad. Ohio State University is among the largest universities in the country by enrolment, and the state operates an extensive network of regional public universities and community colleges across all six major metros — which means every market on the list can supply candidates rather than depending on a single campus.",
@@ -738,8 +738,8 @@ const SEEDS: StateSeed[] = [
     regulatory: {
       heading: "The Ohio Data Protection Act is a genuine differentiator",
       body: [
-        "Ohio took an unusual approach to data security law. Rather than prescribing requirements, the Ohio Data Protection Act offers a legal safe harbour: an entity that implements and maintains a recognised cybersecurity framework — such as the NIST Cybersecurity Framework, ISO 27001 or the CIS Controls — can raise that as an affirmative defence to a tort claim arising from a data breach.",
-        "For a buyer this is worth asking about directly, because it gives providers operating in Ohio a concrete incentive to hold a recognised framework rather than a self-declared security posture. A provider who can name the framework they map to, and produce the assessment behind it, is meaningfully better positioned than one who cannot.",
+        "Ohio took an unusual approach to data security law. Rather than prescribing requirements, the Ohio Data Protection Act offers a legal safe harbour: an entity that implements and maintains a recognized cybersecurity framework — such as the NIST Cybersecurity Framework, ISO 27001 or the CIS Controls — can raise that as an affirmative defense to a tort claim arising from a data breach.",
+        "For a buyer this is worth asking about directly, because it gives providers operating in Ohio a concrete incentive to hold a recognized framework rather than a self-declared security posture. A provider who can name the framework they map to, and produce the assessment behind it, is meaningfully better positioned than one who cannot.",
         "Insurance work brings its own regulatory weight independent of privacy law. State insurance regulation governs how claims information is handled and retained, and any program touching first notice of loss should be able to demonstrate retention periods, retrieval capability and documented QA criteria. Ohio's one-party consent rule, meanwhile, keeps the recording question itself simple.",
       ],
     },
@@ -765,7 +765,7 @@ const SEEDS: StateSeed[] = [
       {
         question: "What is the Ohio Data Protection Act and does it affect outsourcing?",
         answer:
-          "It is an unusual piece of legislation that offers a legal safe harbour rather than imposing requirements. An organisation that implements and maintains a recognised cybersecurity framework — NIST CSF, ISO 27001, the CIS Controls and others qualify — can raise that as an affirmative defence against tort claims arising from a data breach. For a buyer this is a useful question to put to any provider with Ohio operations, because it gives them a concrete incentive to hold a real framework. A provider who can name the framework they map to and produce the assessment behind it is in a materially better position than one describing a self-declared security posture.",
+          "It is an unusual piece of legislation that offers a legal safe harbour rather than imposing requirements. An organization that implements and maintains a recognized cybersecurity framework — NIST CSF, ISO 27001, the CIS Controls and others qualify — can raise that as an affirmative defense against tort claims arising from a data breach. For a buyer this is a useful question to put to any provider with Ohio operations, because it gives them a concrete incentive to hold a real framework. A provider who can name the framework they map to and produce the assessment behind it is in a materially better position than one describing a self-declared security posture.",
       },
       {
         question: "Why do companies use Ohio as a disaster recovery site?",
@@ -798,8 +798,8 @@ const SEEDS: StateSeed[] = [
       ["Philadelphia", "Healthcare, higher education and financial services", "Very large pool with deep patient-access and student-services experience"],
       ["Pittsburgh", "Robotics, technology, healthcare and advanced manufacturing", "Technically literate; Carnegie Mellon and Pitt supply strong Tier 2 and Tier 3 candidates"],
       ["Allentown & Bethlehem", "The Lehigh Valley distribution corridor", "Logistics-experienced workforce at a cost well below Philadelphia"],
-      ["Harrisburg", "State government seat and central Pennsylvania services centre", "Administratively experienced; stable, cost-effective supply"],
-      ["Scranton & Wilkes-Barre", "Northeastern Pennsylvania's lower-cost secondary market", "Among the most affordable Eastern-time labour in the Northeast"],
+      ["Harrisburg", "State government seat and central Pennsylvania services center", "Administratively experienced; stable, cost-effective supply"],
+      ["Scranton & Wilkes-Barre", "Northeastern Pennsylvania's lower-cost secondary market", "Among the most affordable Eastern-time labor in the Northeast"],
       ["Erie", "Manufacturing and insurance on the lake", "Small but stable pool; notable insurance back-office experience"],
     ],
     industries: [
@@ -814,10 +814,10 @@ const SEEDS: StateSeed[] = [
       "The Lehigh Valley supplies the third pattern. East Coast distribution runs on exceptions and peaks hard in the fourth quarter, and the corridor's workforce is already familiar with the vocabulary — which makes it a strong, considerably cheaper alternative to placing that work in Philadelphia.",
     ],
     labor: {
-      heading: "The Pennsylvania contact centre labour market",
+      heading: "The Pennsylvania contact center labor market",
       body: [
         "Pennsylvania has one of the highest densities of colleges and universities of any state, which gives it an unusually broad candidate pipeline spread across many markets rather than concentrated in one. Philadelphia and Pittsburgh both draw on large, well-educated pools, and the state's regional public universities support the secondary markets.",
-        "The most useful feature for a buyer is the internal cost spread. Philadelphia is a genuinely expensive market; Scranton, Wilkes-Barre, Erie and Harrisburg are among the most affordable Eastern-time labour markets in the Northeast. That range inside one state and one timezone gives programs real flexibility to match cost to complexity.",
+        "The most useful feature for a buyer is the internal cost spread. Philadelphia is a genuinely expensive market; Scranton, Wilkes-Barre, Erie and Harrisburg are among the most affordable Eastern-time labor markets in the Northeast. That range inside one state and one timezone gives programs real flexibility to match cost to complexity.",
       ],
       bullets: [
         "Very large healthcare-administration workforce, particularly around Philadelphia and Pittsburgh.",
@@ -849,19 +849,19 @@ const SEEDS: StateSeed[] = [
       "Pennsylvania shortlists are usually decided on whether the provider can evidence all-party consent handling: Global Empire Corporation and Contact Center USA for the healthcare patient-access and insurance work that dominates the state and requires both a BAA and a documented Pennsylvania disclosure, Customer Communications Corp for Lehigh Valley distribution and order support, and Intelemark where the requirement is consultative outbound into the Pittsburgh technology base.",
     extraFaqs: [
       {
-        question: "What does Pennsylvania's all-party consent law require from a call centre?",
+        question: "What does Pennsylvania's all-party consent law require from a call center?",
         answer:
           "A clear disclosure at the start of every call before recording begins, a logged record that consent was given, and a documented process for callers who decline — including whether the call continues unrecorded or ends. Pennsylvania's Wiretapping and Electronic Surveillance Control Act is stricter than most state recording laws because violations carry criminal as well as civil exposure, which places it in a different risk category from states where the downside is a damages claim. Ask any provider to produce the Pennsylvania script in writing. A vendor running one national script written for a one-party state is creating criminal exposure on your behalf, not just their own.",
       },
       {
         question: "Why is Philadelphia described as an 'eds and meds' outsourcing market?",
         answer:
-          "Because its two dominant employers — hospital systems and universities — shape the support demand almost entirely. Philadelphia is one of the largest healthcare and higher-education centres on the East Coast, and those institutions generate enormous, steady volumes of scheduling, patient access, referrals, billing, enrolment and student services contact. What makes it a distinct market rather than just a large one is that essentially all of that volume touches regulated information: protected health information under HIPAA on the medical side, student records under FERPA on the education side. It is not a market where a provider can learn the compliance requirements on the job.",
+          "Because its two dominant employers — hospital systems and universities — shape the support demand almost entirely. Philadelphia is one of the largest healthcare and higher-education centers on the East Coast, and those institutions generate enormous, steady volumes of scheduling, patient access, referrals, billing, enrolment and student services contact. What makes it a distinct market rather than just a large one is that essentially all of that volume touches regulated information: protected health information under HIPAA on the medical side, student records under FERPA on the education side. It is not a market where a provider can learn the compliance requirements on the job.",
       },
       {
         question: "Is Pennsylvania expensive for outsourced customer support?",
         answer:
-          "It depends entirely which Pennsylvania you mean, and that range is the state's main advantage. Philadelphia prices like the Northeast metro it is, and Pittsburgh commands a premium for technical work. But Scranton, Wilkes-Barre, Harrisburg and Erie are among the most affordable Eastern-time labour markets in the Northeast, pricing close to the Midwest while sitting within a few hours of New York and Washington. A program can place regulated healthcare work where the experience genuinely exists and scaled general support in a secondary market, without leaving the state or crossing a timezone.",
+          "It depends entirely which Pennsylvania you mean, and that range is the state's main advantage. Philadelphia prices like the Northeast metro it is, and Pittsburgh commands a premium for technical work. But Scranton, Wilkes-Barre, Harrisburg and Erie are among the most affordable Eastern-time labor markets in the Northeast, pricing close to the Midwest while sitting within a few hours of New York and Washington. A program can place regulated healthcare work where the experience genuinely exists and scaled general support in a secondary market, without leaving the state or crossing a timezone.",
       },
       {
         question: "Does Pittsburgh have a technical support talent pool?",
@@ -887,7 +887,7 @@ const SEEDS: StateSeed[] = [
     metros: "Nashville, Memphis, Knoxville, Chattanooga, and Clarksville",
     metroRows: [
       ["Nashville", "Healthcare management and revenue cycle capital of the United States", "Exceptional depth in patient access, revenue cycle and payer interaction"],
-      ["Memphis", "Global air-cargo hub and distribution centre", "Logistics-literate with genuine overnight availability; strong exception handling"],
+      ["Memphis", "Global air-cargo hub and distribution center", "Logistics-literate with genuine overnight availability; strong exception handling"],
       ["Knoxville", "University of Tennessee market adjacent to the Oak Ridge research corridor", "Good technical and analytical candidates at a secondary-market rate"],
       ["Chattanooga", "Manufacturing and a notably strong municipal fibre network", "Reliable connectivity for remote agents; cost-effective supply"],
       ["Clarksville", "Military-adjacent market near a major Army installation", "Disciplined workforce; strong military-spouse availability for flexible schedules"],
@@ -900,12 +900,12 @@ const SEEDS: StateSeed[] = [
       { name: "Insurance", href: "/industries/insurance-call-center-outsourcing", note: "Claims intake and policyholder servicing for Tennessee carriers." },
     ],
     industryDetail: [
-      "Revenue cycle work is what distinguishes Tennessee from other healthcare markets. Patient access, eligibility verification, prior authorisation, denial follow-up and payer interaction all require a specific vocabulary and a working understanding of how claims move — knowledge that takes months to build and is readily available in the Nashville labour market because so much of the industry is headquartered there.",
+      "Revenue cycle work is what distinguishes Tennessee from other healthcare markets. Patient access, eligibility verification, prior authorisation, denial follow-up and payer interaction all require a specific vocabulary and a working understanding of how claims move — knowledge that takes months to build and is readily available in the Nashville labor market because so much of the industry is headquartered there.",
       "The compliance weight that comes with it is unavoidable. Essentially every call in a Tennessee healthcare program touches protected health information, so a signed business associate agreement, role-based access controls, documented agent training and audited monitoring are baseline requirements rather than differentiators. What varies between providers is whether they can evidence all four.",
       "Memphis logistics runs on an entirely different rhythm. Air-cargo exception handling peaks in the small hours, and the value of the agent is in resolving a problem — a missed connection, a customs hold, a failed delivery — rather than following a script. It is one of the few markets in the country where overnight staffing is straightforward rather than expensive.",
     ],
     labor: {
-      heading: "The Tennessee contact centre labour market",
+      heading: "The Tennessee contact center labor market",
       body: [
         "Tennessee combines low cost with genuinely relevant experience, which is an unusual pairing. The state levies no income tax on wages, the cost of living sits well below the national average, and Nashville in particular offers a depth of healthcare-administration experience that most low-cost markets simply cannot supply.",
         "The pipeline is spread rather than concentrated. Vanderbilt and the University of Tennessee anchor the two largest markets, Middle Tennessee State University feeds the Nashville pool, and the state's community college network supports the secondary markets — which means capacity can be built in more than one metro without leaving the state.",
@@ -921,7 +921,7 @@ const SEEDS: StateSeed[] = [
       heading: "HIPAA is the binding constraint, and Tennessee now has a privacy act too",
       body: [
         "In a state whose signature outsourcing category is healthcare administration, the recording consent rule is close to irrelevant and HIPAA is everything. Any Tennessee program handling patient access or revenue cycle work needs a signed business associate agreement in place before the first call, role-based access so agents see only the protected health information their task requires, documented and repeated training, and audited monitoring of access.",
-        "Tennessee has also enacted a comprehensive consumer privacy statute, the Tennessee Information Protection Act, which gives residents access, correction, deletion and opt-out rights over their personal data. It is notable for including an affirmative defence tied to maintaining a written privacy program conforming to the NIST Privacy Framework — a safe-harbour approach closer to Ohio's than to California's. Confirm the current position with counsel, as state privacy law continues to move quickly.",
+        "Tennessee has also enacted a comprehensive consumer privacy statute, the Tennessee Information Protection Act, which gives residents access, correction, deletion and opt-out rights over their personal data. It is notable for including an affirmative defense tied to maintaining a written privacy program conforming to the NIST Privacy Framework — a safe-harbour approach closer to Ohio's than to California's. Confirm the current position with counsel, as state privacy law continues to move quickly.",
         "The practical questions for a provider are therefore about evidence rather than intent: produce the BAA, show the access log, show the training records, and describe how a deletion request is executed including call audio.",
       ],
     },
@@ -940,7 +940,7 @@ const SEEDS: StateSeed[] = [
       "Tennessee shortlists are almost always driven by healthcare capability: Global Empire Corporation and Contact Center USA for patient access and revenue cycle programs requiring a signed BAA and evidenced HIPAA controls, Business Process Outsourcing for scaled billing and back-office processing, and Customer Communications Corp or Call Center Communications for the overnight exception handling the Memphis cargo hub generates.",
     extraFaqs: [
       {
-        question: "Why is Nashville a centre for healthcare BPO?",
+        question: "Why is Nashville a center for healthcare BPO?",
         answer:
           "Because Nashville is where the healthcare industry is administered rather than only delivered. The metro hosts an unusually dense cluster of hospital operators, physician group managers, revenue cycle firms and health IT vendors, which means the local workforce has genuine experience in patient access, eligibility verification, prior authorisation, denial follow-up and payer interaction. That is knowledge which takes months to build and which most low-cost markets cannot supply at all. For a buyer whose program is revenue cycle rather than general customer service, Nashville offers a depth of relevant experience matched by very few other US markets.",
       },
@@ -950,14 +950,14 @@ const SEEDS: StateSeed[] = [
           "It is an advantage if handled deliberately and a recurring nuisance if not. Nashville and Memphis sit in Central time while Knoxville and Chattanooga sit in Eastern, which means a provider can build a program covering both zones inside a single state — genuinely useful for extending coverage hours without a second site in another region. The failure mode is a platform that assumes one state-wide offset, which corrupts appointment times, calling-window compliance under the TCPA, and service-level reporting. Ask the provider how their system handles it, and check a report from a Knoxville-based agent against one from Memphis.",
       },
       {
-        question: "What HIPAA controls should a Tennessee call centre have in place?",
+        question: "What HIPAA controls should a Tennessee call center have in place?",
         answer:
           "Four, and each should be evidenced rather than asserted. A signed business associate agreement executed before the first call is taken. Role-based access so an agent sees only the protected health information their specific task requires, rather than an open patient record. Documented, repeated training with per-agent records showing who completed what and when. And audited monitoring of who accessed which record, retained and reviewable. Providers who have genuinely run healthcare programs will describe all four without prompting; those who offer a signed BAA and nothing else have given you paperwork rather than protection.",
       },
       {
         question: "Why is Memphis good for overnight support operations?",
         answer:
-          "Because the local economy already works those hours. Memphis is one of the world's major air-cargo hubs, and cargo operations peak overnight, which means a substantial part of the metro's workforce is accustomed to night shifts and available for them without the premium and elevated attrition that overnight staffing attracts in most markets. The work itself also suits the labour pool: air-cargo exception handling — missed connections, customs holds, failed deliveries — needs agents who can resolve a problem rather than read a script, and that familiarity is already present locally.",
+          "Because the local economy already works those hours. Memphis is one of the world's major air-cargo hubs, and cargo operations peak overnight, which means a substantial part of the metro's workforce is accustomed to night shifts and available for them without the premium and elevated attrition that overnight staffing attracts in most markets. The work itself also suits the labor pool: air-cargo exception handling — missed connections, customs holds, failed deliveries — needs agents who can resolve a problem rather than read a script, and that familiarity is already present locally.",
       },
     ],
     locationHref: "/locations/tennessee",
@@ -972,14 +972,14 @@ const SEEDS: StateSeed[] = [
       "Utah is a one-party consent state (Utah Code §77-23a-4). Because Utah programs skew heavily outbound, the more pressing compliance surface is TCPA — consent records, calling windows, and do-not-call scrubbing — which any high-volume outbound operation here must provably manage.",
     economy: [
       "The Wasatch Front — Ogden, Salt Lake City, Provo, and Lehi — is a national center for outbound and inside sales, built on an unusually deep multilingual talent pool. The Silicon Slopes technology cluster added SaaS customer success and technical support, and tightened the labor market considerably.",
-      "The multilingual depth is the feature that genuinely sets Utah apart from every other US market, and it has a specific cause. A large share of young adults along the Wasatch Front spend eighteen months to two years living and working abroad, and return with functional conversational fluency in languages that are otherwise scarce in the domestic labour market — Portuguese, Japanese, Korean, Mandarin, Tagalog, Russian and a long list of others, alongside Spanish. No other state supplies that mix at that scale.",
+      "The multilingual depth is the feature that genuinely sets Utah apart from every other US market, and it has a specific cause. A large share of young adults along the Wasatch Front spend eighteen months to two years living and working abroad, and return with functional conversational fluency in languages that are otherwise scarce in the domestic labor market — Portuguese, Japanese, Korean, Mandarin, Tagalog, Russian and a long list of others, alongside Spanish. No other state supplies that mix at that scale.",
       "The second Utah characteristic is a sales culture rather than a service culture. The Wasatch Front's outbound and inside-sales industry has been established for decades, which means the workforce is unusually comfortable with quota-carrying, consultative telephone work — and correspondingly, a buyer looking for patient, low-key inbound service should test for that fit rather than assume it.",
     ],
     metros: "Salt Lake City, Provo, Orem, Lehi, Ogden, and St. George",
     metroRows: [
-      ["Salt Lake City", "The state's commercial centre and largest talent pool", "Broadest multilingual availability; strong across inbound and outbound"],
+      ["Salt Lake City", "The state's commercial center and largest talent pool", "Broadest multilingual availability; strong across inbound and outbound"],
       ["Lehi & Draper", "The heart of the Silicon Slopes technology corridor", "Technically literate; suited to SaaS customer success and Tier 2 support"],
-      ["Provo & Orem", "University market and a long-established inside-sales centre", "Exceptional second-language availability; strong consultative outbound"],
+      ["Provo & Orem", "University market and a long-established inside-sales center", "Exceptional second-language availability; strong consultative outbound"],
       ["Ogden", "Northern Wasatch Front with a lower cost base", "Cost-effective supply; solid for scaled voice programs"],
       ["Logan", "Utah State University market", "Strong part-time availability; useful for flexible capacity"],
       ["St. George", "Southern Utah, growing quickly, with a large retiree population", "Smaller pool; useful for daytime overflow and seasonal flexing"],
@@ -991,12 +991,12 @@ const SEEDS: StateSeed[] = [
       { name: "Ecommerce & Retail", href: "/industries/ecommerce-customer-service-outsourcing", note: "Multilingual order support and returns for direct-to-consumer brands." },
     ],
     industryDetail: [
-      "Outbound and inside sales is what Utah is actually known for, and the workforce reflects decades of it. Consultative B2B calling, appointment setting, demand generation and lead qualification all draw on a labour pool comfortable with quota-carrying telephone work — which is a genuinely different disposition from the patience and de-escalation an inbound service queue rewards.",
+      "Outbound and inside sales is what Utah is actually known for, and the workforce reflects decades of it. Consultative B2B calling, appointment setting, demand generation and lead qualification all draw on a labor pool comfortable with quota-carrying telephone work — which is a genuinely different disposition from the patience and de-escalation an inbound service queue rewards.",
       "The multilingual capability turns Utah into a serious option for international support. A direct-to-consumer brand needing Portuguese for Brazil, or a software company needing Japanese or Korean coverage during US hours, can frequently staff that from the Wasatch Front rather than opening an offshore site — and do it with US-based agents on a US contract.",
-      "Silicon Slopes has added a technical layer over the past decade and tightened the labour market considerably. SaaS customer success and Tier 2 support now compete directly with the sales industry for the same articulate, software-literate candidates, which has pushed wages up from where they sat historically.",
+      "Silicon Slopes has added a technical layer over the past decade and tightened the labor market considerably. SaaS customer success and Tier 2 support now compete directly with the sales industry for the same articulate, software-literate candidates, which has pushed wages up from where they sat historically.",
     ],
     labor: {
-      heading: "The Utah contact centre labour market",
+      heading: "The Utah contact center labor market",
       body: [
         "Utah has the youngest median age of any US state, and along the Wasatch Front that translates into an unusually large pool of candidates available for entry-level and part-time work — a genuine advantage for programs that need to flex capacity or staff non-standard hours.",
         "The university pipeline is dense for the state's size. Brigham Young University, the University of Utah, Utah Valley University and Utah State together supply a steady flow of candidates, and Utah Valley University in particular is among the larger public institutions in the country by enrolment.",
@@ -1019,7 +1019,7 @@ const SEEDS: StateSeed[] = [
     continuity: {
       heading: "Continuity risk along the Wasatch Front",
       body: [
-        "Utah's principal exposure is seismic. The Wasatch fault runs directly beneath the state's population centre, and while significant events are infrequent, the risk is real enough that any provider operating a physical site along the Front should be able to describe its building standard and its failover arrangements.",
+        "Utah's principal exposure is seismic. The Wasatch fault runs directly beneath the state's population center, and while significant events are infrequent, the risk is real enough that any provider operating a physical site along the Front should be able to describe its building standard and its failover arrangements.",
         "The routine disruptions are winter inversions, which degrade air quality across the Salt Lake valley for days at a time and can affect attendance, and heavy winter storms in the canyons. Neither is severe by national standards, and Utah's high remote-work adoption substantially reduces the practical impact of both.",
       ],
     },
@@ -1033,12 +1033,12 @@ const SEEDS: StateSeed[] = [
       {
         question: "Why does Utah have such a deep multilingual talent pool?",
         answer:
-          "Because a large share of young adults along the Wasatch Front spend eighteen months to two years living and working abroad, and return with functional conversational fluency in the local language. The result is a domestic labour market supplying Portuguese, Japanese, Korean, Mandarin, Tagalog, Russian and dozens of other languages at a scale no other US state approaches — alongside plentiful Spanish. For a buyer this matters practically: it makes Utah frequently the cheapest place in the United States to staff a language that is otherwise only available offshore, using US-based agents on a US contract.",
+          "Because a large share of young adults along the Wasatch Front spend eighteen months to two years living and working abroad, and return with functional conversational fluency in the local language. The result is a domestic labor market supplying Portuguese, Japanese, Korean, Mandarin, Tagalog, Russian and dozens of other languages at a scale no other US state approaches — alongside plentiful Spanish. For a buyer this matters practically: it makes Utah frequently the cheapest place in the United States to staff a language that is otherwise only available offshore, using US-based agents on a US contract.",
       },
       {
-        question: "Is Utah better for outbound or inbound call centre work?",
+        question: "Is Utah better for outbound or inbound call center work?",
         answer:
-          "Historically and still predominantly outbound, and the difference is about workforce disposition rather than capability. The Wasatch Front has had an inside-sales industry for decades, so the labour pool is genuinely comfortable with quota-carrying, consultative telephone work — which is a different temperament from the patience and de-escalation an inbound service queue rewards. Utah does inbound support well, particularly on the technical side since Silicon Slopes grew, but a buyer placing a sensitive inbound service program here should test specifically for service disposition rather than assuming the local strength transfers.",
+          "Historically and still predominantly outbound, and the difference is about workforce disposition rather than capability. The Wasatch Front has had an inside-sales industry for decades, so the labor pool is genuinely comfortable with quota-carrying, consultative telephone work — which is a different temperament from the patience and de-escalation an inbound service queue rewards. Utah does inbound support well, particularly on the technical side since Silicon Slopes grew, but a buyer placing a sensitive inbound service program here should test specifically for service disposition rather than assuming the local strength transfers.",
       },
       {
         question: "What TCPA controls should a Utah outbound program have?",
@@ -1048,7 +1048,7 @@ const SEEDS: StateSeed[] = [
       {
         question: "Is Utah still a low-cost outsourcing market?",
         answer:
-          "Less than its reputation suggests. Utah was genuinely inexpensive for many years, but the growth of the Silicon Slopes technology corridor has pulled wages up considerably by putting well-funded software employers in direct competition for the same articulate, computer-literate candidates a contact centre wants. The state now sits mid-range domestically rather than at the low end, and buyers should price it accordingly. Where Utah remains exceptional value is multilingual work — for languages that are expensive or unavailable elsewhere in the US, it is frequently still the cheapest domestic answer by a wide margin.",
+          "Less than its reputation suggests. Utah was genuinely inexpensive for many years, but the growth of the Silicon Slopes technology corridor has pulled wages up considerably by putting well-funded software employers in direct competition for the same articulate, computer-literate candidates a contact center wants. The state now sits mid-range domestically rather than at the low end, and buyers should price it accordingly. Where Utah remains exceptional value is multilingual work — for languages that are expensive or unavailable elsewhere in the US, it is frequently still the cheapest domestic answer by a wide margin.",
       },
     ],
     locationHref: "/locations/utah",
@@ -1063,17 +1063,17 @@ const SEEDS: StateSeed[] = [
       "Washington is a strict all-party consent state (RCW 9.73.030). All parties must consent before a call is recorded, and the state's privacy statute is among the most aggressively enforced in the country. Any BPO serving Washington must deliver an all-party disclosure on every call and retain proof of consent — a genuine, non-optional compliance requirement.",
     economy: [
       "Seattle anchors the global cloud computing and ecommerce industry, giving Washington a heavily technical support market — Tier 1–3 help desk, developer support, SaaS customer success, and marketplace seller support. A major Puget Sound aerospace base adds B2B technical support demand.",
-      "That technical weighting sets the state apart. A large share of Washington programs are not consumer service at all but business-to-business or developer-facing support, where the caller is themselves technically competent and the agent's job is to be useful to an expert rather than to reassure a novice. Very few labour markets can supply that, and it is the main reason Puget Sound commands the rates it does.",
-      "Washington is also two economies with very different cost structures. Puget Sound is among the most expensive labour markets in the United States, while Spokane and the Tri-Cities in the east of the state offer Pacific-time coverage at a fraction of the cost. Programs that need Pacific hours but not Seattle capability frequently find the answer on the other side of the Cascades.",
+      "That technical weighting sets the state apart. A large share of Washington programs are not consumer service at all but business-to-business or developer-facing support, where the caller is themselves technically competent and the agent's job is to be useful to an expert rather than to reassure a novice. Very few labor markets can supply that, and it is the main reason Puget Sound commands the rates it does.",
+      "Washington is also two economies with very different cost structures. Puget Sound is among the most expensive labor markets in the United States, while Spokane and the Tri-Cities in the east of the state offer Pacific-time coverage at a fraction of the cost. Programs that need Pacific hours but not Seattle capability frequently find the answer on the other side of the Cascades.",
     ],
     metros: "Seattle, Bellevue, Tacoma, Spokane, Everett, and Vancouver, WA",
     metroRows: [
-      ["Seattle", "Cloud computing, ecommerce and the state's commercial centre", "Highly technical and expensive; suited to developer and B2B support"],
+      ["Seattle", "Cloud computing, ecommerce and the state's commercial center", "Highly technical and expensive; suited to developer and B2B support"],
       ["Bellevue & Redmond", "Enterprise software and technology employers on the Eastside", "Strong Tier 2 and Tier 3 capability; the state's highest wage expectations"],
       ["Tacoma", "Port, logistics and a lower-cost alternative within Puget Sound", "Broad general-support pool at a meaningful discount to Seattle"],
       ["Everett", "Aerospace manufacturing and supply chain", "Technically grounded workforce; suited to B2B and product support"],
-      ["Spokane", "Eastern Washington's commercial centre", "Pacific-time coverage at a cost far below Puget Sound; strong general support"],
-      ["Vancouver, WA", "Portland metro's Washington side", "Draws on the Portland labour market; no state income tax on the Washington side"],
+      ["Spokane", "Eastern Washington's commercial center", "Pacific-time coverage at a cost far below Puget Sound; strong general support"],
+      ["Vancouver, WA", "Portland metro's Washington side", "Draws on the Portland labor market; no state income tax on the Washington side"],
     ],
     industries: [
       { name: "SaaS & Technology", href: "/industries/saas-technology-support", note: "Tier 1–3 help desk, developer support and customer success for Puget Sound software firms." },
@@ -1083,13 +1083,13 @@ const SEEDS: StateSeed[] = [
     ],
     industryDetail: [
       "Developer and marketplace-seller support is Washington's most distinctive requirement, and it is genuinely hard to staff. The caller is a professional — a software engineer debugging an integration, or a merchant whose business depends on resolving a listing problem today — and an agent who can only follow a decision tree actively wastes their time. What these programs need is technical grounding, product depth and the authority to escalate meaningfully.",
-      "The aerospace supply chain around Everett produces a second B2B pattern: technical support to manufacturers and suppliers, where accuracy and traceability matter more than speed and where the vocabulary is specialised.",
+      "The aerospace supply chain around Everett produces a second B2B pattern: technical support to manufacturers and suppliers, where accuracy and traceability matter more than speed and where the vocabulary is specialized.",
       "Underneath both sits a conventional healthcare and logistics market, which is where Washington's east-side metros become interesting. That work needs Pacific-time coverage and reliable execution, not Seattle-level technical depth, and Spokane supplies it at a fraction of the cost.",
     ],
     labor: {
-      heading: "The Washington contact centre labour market",
+      heading: "The Washington contact center labor market",
       body: [
-        "Puget Sound has one of the most technically capable labour pools in the country and one of the most expensive. A contact centre hiring in Seattle or Bellevue is competing directly with very well-funded technology employers for the same candidates, which sets a high floor on wages and makes retention a persistent challenge.",
+        "Puget Sound has one of the most technically capable labor pools in the country and one of the most expensive. A contact center hiring in Seattle or Bellevue is competing directly with very well-funded technology employers for the same candidates, which sets a high floor on wages and makes retention a persistent challenge.",
         "Eastern Washington is a different market entirely. Spokane offers a substantial, stable workforce with Pacific-time coverage at costs closer to the interior West than to the coast, and the state's absence of an income tax on wages supports recruitment throughout.",
       ],
       bullets: [
@@ -1115,21 +1115,21 @@ const SEEDS: StateSeed[] = [
       ],
     },
     costContext: [
-      "Puget Sound is among the most expensive places in the United States to run a contact centre, and the premium is real rather than incidental — it buys technical capability that is genuinely scarce. For developer support, marketplace seller support and complex B2B work, that is frequently worth paying.",
+      "Puget Sound is among the most expensive places in the United States to run a contact center, and the premium is real rather than incidental — it buys technical capability that is genuinely scarce. For developer support, marketplace seller support and complex B2B work, that is frequently worth paying.",
       "For everything else, the east side is the answer. Spokane and the Tri-Cities deliver the same Pacific-time coverage at a fraction of the cost, and for healthcare scheduling, order support or general customer service the capability difference is negligible. Choosing the wrong side of the Cascades is the most expensive mistake available in this state.",
     ],
     providerFit:
       "Washington shortlists turn on two questions — can the provider evidence all-party consent handling, and can they staff technical depth: Contact Center USA and Global Empire Corporation where a program needs Tier 2 and Tier 3 support alongside documented Washington consent and My Health My Data controls, Customer Communications Corp for port and freight exception handling across the Puget Sound corridor, and Intelemark for consultative B2B outbound into the region's technology and aerospace base.",
     extraFaqs: [
       {
-        question: "What is the My Health My Data Act and why does it matter for call centres?",
+        question: "What is the My Health My Data Act and why does it matter for call centers?",
         answer:
           "It is among the broadest consumer health privacy laws in the United States, and it applies well beyond HIPAA-covered entities — which is what catches businesses out. Its definition of consumer health data is expansive enough to capture information many companies would never classify as health-related, it requires separate authorisation before that data is shared, and unusually for a US privacy statute it carries a private right of action, meaning individual consumers can sue directly rather than waiting for a regulator. If your support program touches Washington consumers, ask a prospective provider how they identify and segregate consumer health data and how their agents are trained on the distinction. A provider unaware of the Act has not been paying attention to the state.",
       },
       {
         question: "Should I place a Washington program in Seattle or Spokane?",
         answer:
-          "Choose on whether the work genuinely needs technical depth, because the cost difference is very large. Puget Sound has the strongest technical support talent in Pacific time — genuinely capable of developer support, marketplace seller support and complex B2B work — and it is among the most expensive labour markets in the country, because a contact centre there competes directly with well-funded technology employers. Spokane delivers the same Pacific-time coverage at a fraction of the cost with a stable, capable general-support workforce. For healthcare scheduling, order support or tier one service, the capability difference is negligible and the cost difference is not.",
+          "Choose on whether the work genuinely needs technical depth, because the cost difference is very large. Puget Sound has the strongest technical support talent in Pacific time — genuinely capable of developer support, marketplace seller support and complex B2B work — and it is among the most expensive labor markets in the country, because a contact center there competes directly with well-funded technology employers. Spokane delivers the same Pacific-time coverage at a fraction of the cost with a stable, capable general-support workforce. For healthcare scheduling, order support or tier one service, the capability difference is negligible and the cost difference is not.",
       },
       {
         question: "How strict is Washington's call recording law?",
@@ -1139,7 +1139,7 @@ const SEEDS: StateSeed[] = [
       {
         question: "Why is developer and marketplace seller support hard to staff?",
         answer:
-          "Because the caller is a professional and a decision tree actively wastes their time. A software engineer debugging an integration, or a merchant whose income depends on fixing a listing problem today, has usually already tried the obvious steps before calling. An agent working from a script will restate what the caller already knows, which converts a support interaction into a frustration. What these programs need instead is genuine technical grounding, product depth, and the authority to escalate meaningfully to engineering. Puget Sound is one of the few labour markets in the country that supplies that reliably, which is a large part of why it costs what it does.",
+          "Because the caller is a professional and a decision tree actively wastes their time. A software engineer debugging an integration, or a merchant whose income depends on fixing a listing problem today, has usually already tried the obvious steps before calling. An agent working from a script will restate what the caller already knows, which converts a support interaction into a frustration. What these programs need instead is genuine technical grounding, product depth, and the authority to escalate meaningfully to engineering. Puget Sound is one of the few labor markets in the country that supplies that reliably, which is a large part of why it costs what it does.",
       },
     ],
     locationHref: "/locations/washington",
@@ -1180,7 +1180,7 @@ export const CARD_META: Record<number, {
   3: {
     founded: "2010",
     strengths: "Real-estate-trained calling pods, high-volume outreach discipline, structured CRM handoffs.",
-    weaknesses: "Narrow specialisation — real estate acquisition calling is the product.",
+    weaknesses: "Narrow specialization — real estate acquisition calling is the product.",
     pricing: "Per-hour or per-qualified-lead",
     clients: "Real estate investors, wholesaling teams, asset funds",
     highlight: "Purpose-built for motivated-seller prospecting at scale.",
@@ -1227,7 +1227,7 @@ export const CARD_META: Record<number, {
   },
   9: {
     founded: "2003",
-    strengths: "Digital CX transformation, journey mapping, analytics-led programme design.",
+    strengths: "Digital CX transformation, journey mapping, analytics-led program design.",
     weaknesses: "Consulting-led engagements take longer to stand up than delivery-first peers.",
     pricing: "Project plus managed-service retainers",
     clients: "Mid-market brands modernising their support stack",
@@ -1242,6 +1242,30 @@ export const CARD_META: Record<number, {
     highlight: "The efficiency play — automation-assisted delivery for transactional volume.",
   },
 };
+
+/**
+ * All ten state ranking pages shipped the same hero (/images/america.jpg), so
+ * every page — and every social card — carried an identical, non-descriptive
+ * image. Rotating a real contact-center photo by state name gives each page a
+ * distinct hero and OG image without hand-assigning ten files.
+ */
+const HERO_PHOTOS = [
+  "/images/cc-office-wide.jpg",
+  "/images/cc-team-meeting.jpg",
+  "/images/agents-team-row.jpg",
+  "/images/cc-support-team.jpg",
+  "/images/hd-office-team.jpg",
+  "/images/cc-diverse-team.jpg",
+  "/images/cc-team-huddle.jpg",
+  "/images/agents-office-pair.jpg",
+  "/images/cc-woman-headset.jpg",
+  "/images/cc-management.jpg",
+];
+
+export function statePhoto(slug: string, offset = 0): string {
+  const i = SEEDS.findIndex((s) => s.slug === slug);
+  return HERO_PHOTOS[((i < 0 ? 0 : i) + offset) % HERO_PHOTOS.length];
+}
 
 function buildPost(seed: StateSeed): TrafficBlogPost {
   const { slug, state, abbr } = seed;
@@ -1285,14 +1309,14 @@ function buildPost(seed: StateSeed): TrafficBlogPost {
 
   return {
     slug,
-    title: `Top 10 BPO Companies in ${state} (2026)`,
+    title: `Top 10 BPO Companies in ${state} (2026 Rankings)`,
     h1: `Top 10 BPO Companies in ${state} (2026)`,
     description: `The top 10 BPO companies in ${state} for 2026, ranked for US-based support, compliance and CX — plus ${state} call-recording consent rules.`,
     category: "Industry Rankings",
     readTime: "16 min read",
     datePublished: "2026-07-23",
     dateModified: "2026-08-26",
-    image: "/images/america.jpg",
+    image: statePhoto(slug),
     imageAlt: `US-based BPO and call center agents supporting ${state} businesses`,
     keywords: [
       `bpo companies ${state.toLowerCase()}`,
@@ -1305,7 +1329,7 @@ function buildPost(seed: StateSeed): TrafficBlogPost {
     ],
     intro: [
       `Choosing among BPO companies in ${state} comes down to more than seat price. The right partner must align with ${state}'s dominant industries, staff reliably across its timezone (${seed.timezone}), and satisfy strict compliance requirements — including ${state}'s call-recording consent rules.`,
-      `Below is our ranking of the top 10 BPO and call center companies serving ${state} organizations in 2026, followed by the parts that actually decide a shortlist here: the state's labour market, its regulatory position beyond consent, how its metros differ, and where its continuity risk sits.`,
+      `Below is our ranking of the top 10 BPO and call center companies serving ${state} organizations in 2026, followed by the parts that actually decide a shortlist here: the state's labor market, its regulatory position beyond consent, how its metros differ, and where its continuity risk sits.`,
     ],
     sections: [
       {

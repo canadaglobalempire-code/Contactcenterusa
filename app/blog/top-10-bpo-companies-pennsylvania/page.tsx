@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     description: post.description,
     url: `/blog/${post.slug}`,
     type: "article",
+    siteName: "Contact Center USA",
+    publishedTime: post.datePublished,
+    modifiedTime: post.dateModified,
+    authors: ["Contact Center USA"],
     images: [{ url: post.image, alt: post.imageAlt }],
   },
   twitter: {

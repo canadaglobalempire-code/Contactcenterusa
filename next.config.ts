@@ -26,6 +26,10 @@ const nextConfig: NextConfig = {
     // CPU and doubles the cached variant count.
     formats: ["image/webp"],
     minimumCacheTTL: 60 * 60 * 24 * 30,
+    // Next 16 only honours quality values declared here; anything else silently
+    // falls back to 75. 35 is the footer's 6%-opacity backdrop, 62 the article
+    // hero — both photographic, both indistinguishable from 75 at display size.
+    qualities: [35, 62, 75],
   },
 
   // Rendered pages and fetch entries go to the on-disk cache ONLY. The

@@ -100,12 +100,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-US" className={`${inter.variable} h-full antialiased`}>
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://scripts.clarity.ms" />
+      </head>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PJDXM78DK3"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());

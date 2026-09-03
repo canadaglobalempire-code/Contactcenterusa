@@ -85,6 +85,15 @@ export function LeadForm({
   const recaptchaRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<number | null>(null);
 
+  // Google's reCAPTCHA bundle is ~390 KB (script + stylesheet + a Roboto face it
+  // pulls from fonts.gstatic.com) and it was loading on every page view, for a
+  // form the overwhelming majority of visitors never touch. It now loads on the
+  // first real signal of intent — hovering, tapping or tabbing into the form —
+  // which is well before anyone can finish typing, and never at all for readers
+  // who just read the article.
+  const [captchaArmed, setCaptchaArmed] = useState(false);
+  const armCaptcha = () => setCaptchaArmed(true);
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     if (params.get("submitted") === "1") setIsSubmitted(true);
@@ -100,6 +109,7 @@ export function LeadForm({
   // staring at "complete the verification" with no checkbox on the page and no
   // way to send the form. See the fail-open branch in handleSubmit.
   useEffect(() => {
+    if (!captchaArmed) return;
     let tries = 0;
     const id = window.setInterval(() => {
       const g = window.grecaptcha;
@@ -116,7 +126,7 @@ export function LeadForm({
       if (++tries > 300) window.clearInterval(id);
     }, 200);
     return () => window.clearInterval(id);
-  }, []);
+  }, [captchaArmed]);
 
   // Only reset a widget we actually rendered. `reset(undefined)` targets the
   // first widget on the page, which throws when none exists.
@@ -264,11 +274,18 @@ export function LeadForm({
     : className;
 
   return (
-    <div className={wrapperClass}>
-      <Script
-        src="https://www.google.com/recaptcha/api.js?render=explicit"
-        strategy="afterInteractive"
-      />
+    <div
+      className={wrapperClass}
+      onPointerEnter={armCaptcha}
+      onPointerDown={armCaptcha}
+      onFocusCapture={armCaptcha}
+    >
+      {captchaArmed && (
+        <Script
+          src="https://www.google.com/recaptcha/api.js?render=explicit"
+          strategy="afterInteractive"
+        />
+      )}
       {title && <h3 className="text-xl font-bold text-navy">{title}</h3>}
       {description && <p className="mt-1 text-sm text-gray-600">{description}</p>}
 
@@ -464,7 +481,7 @@ export function LeadForm({
           {/* reCAPTCHA v2 — token is verified server-side by SplitForms */}
           <div
             ref={recaptchaRef}
-            className="origin-top-left scale-[0.85] @[300px]:scale-100"
+            className="min-h-[68px] origin-top-left scale-[0.85] @[300px]:scale-100 @[300px]:min-h-[78px]"
           />
 
           {captchaError && (

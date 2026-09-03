@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
+import { buildAEOBlogPostingSchema, buildItemListSchema } from "@/lib/aeo";
 import {
   CARD_META,
   PROVIDER_PROFILES,
+  statePhoto,
   stateRankingPosts,
   stateRankingSeeds,
 } from "@/lib/state-ranking-posts";
@@ -16,6 +18,39 @@ import {
  * state deep-dive sections, trends grid, CTA and FAQ — driven entirely from
  * the per-state seed data in lib/state-ranking-posts.ts.
  */
+/**
+ * In-body photo with a caption. These articles ran ~16 minutes of text against
+ * two images, which is thin on image search and gives the body copy no visual
+ * break. The caption is the point as much as the photo: it is indexable text
+ * tied to the section it sits in, and it carries the state name.
+ */
+function ArticleFigure({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+}) {
+  return (
+    <figure className="my-10">
+      <div className="relative aspect-[16/8] overflow-hidden rounded-2xl">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(min-width: 1024px) 800px, 100vw"
+          className="object-cover"
+        />
+      </div>
+      <figcaption className="mt-3 text-sm leading-relaxed text-gray-600">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
+
 export function StateRankingArticle({ slug }: { slug: string }) {
   const seed = stateRankingSeeds[slug];
   const post = stateRankingPosts[slug];
@@ -45,15 +80,46 @@ export function StateRankingArticle({ slug }: { slug: string }) {
     "References from organizations of your size, not just flagship logos",
   ];
 
-  const trends = [
-    { title: seed.regulatory.heading, desc: seed.regulatory.body[seed.regulatory.body.length - 1] },
-    { title: seed.labor.heading, desc: seed.labor.body[0] },
-    { title: seed.continuity.heading, desc: seed.continuity.body[0] },
-    { title: `What outsourcing costs in ${state}`, desc: seed.costContext[0] },
-  ];
+  const url = `https://contactcenterusa.com/blog/${slug}`;
+  const modified = new Date(`${post.dateModified}T00:00:00Z`).toLocaleDateString("en-US", {
+    year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildAEOBlogPostingSchema({
+              url,
+              headline: `Top 10 BPO Companies in ${state} (2026 Rankings)`,
+              description: post.description,
+              datePublished: post.datePublished,
+              dateModified: post.dateModified,
+              image: `https://contactcenterusa.com${post.image}`,
+              keywords: post.keywords,
+              category: post.category,
+            })
+          ).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildItemListSchema(
+              `Top 10 BPO Companies in ${state} (2026)`,
+              companies.map((c) => ({
+                rank: c.rank,
+                name: c.name,
+                url: c.rank === 7 ? "https://contactcenterusa.com" : `https://${c.website.replace(/^https?:\/\//, "")}`,
+              }))
+            )
+          ).replace(/</g, "\\u003c"),
+        }}
+      />
+
       {/* HERO */}
       <section className="bg-navy pt-40 pb-20 lg:pb-28">
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
@@ -67,8 +133,9 @@ export function StateRankingArticle({ slug }: { slug: string }) {
           <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Top 10 BPO Companies in {state} (2026 Rankings)
           </h1>
-          <div className="mt-4 flex items-center gap-4 text-sm text-white/50">
-            <span className="flex items-center gap-1"><Calendar className="h-4 w-4" /> Updated August 26, 2026</span>
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/50">
+            <span>By the Contact Center USA editorial team</span>
+            <span className="flex items-center gap-1"><Calendar className="h-4 w-4" /> Updated {modified}</span>
             <span className="flex items-center gap-1"><Clock className="h-4 w-4" /> {post.readTime}</span>
           </div>
           <div className="relative mt-10 aspect-[21/8] max-h-[480px] w-full overflow-hidden rounded-2xl">
@@ -76,7 +143,10 @@ export function StateRankingArticle({ slug }: { slug: string }) {
               src={post.image}
               alt={post.imageAlt}
               fill
-              sizes="(max-width: 1280px) 100vw, 1280px"
+              priority
+              fetchPriority="high"
+              quality={62}
+              sizes="(max-width: 1536px) 100vw, 1280px"
               className="object-cover"
             />
           </div>
@@ -95,7 +165,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
 
               {/* Key takeaways */}
               <div className="mt-8 rounded-2xl border border-gray-100 bg-gray-50 p-6">
-                <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
+                <h2 className="text-lg font-bold text-navy">Key Takeaways</h2>
                 <ul className="mt-3 space-y-2">
                   {keyTakeaways.map((item, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
@@ -128,6 +198,11 @@ export function StateRankingArticle({ slug }: { slug: string }) {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">
                 The Top 10 BPO Companies in {state} (2026)
               </h2>
+              <p className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-4 text-sm leading-relaxed text-gray-600">
+                <strong className="text-navy">Disclosure:</strong> Contact Center USA is the publisher of
+                this ranking and appears in it at #7. We have not placed ourselves first. Every other
+                entry links out to the provider&apos;s own site so you can verify the claims yourself.
+              </p>
 
               {companies.map((company, i) => (
                 <div
@@ -205,15 +280,11 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 </div>
               ))}
 
-              <div className="relative my-10 aspect-[16/8] overflow-hidden rounded-2xl">
-                <Image
-                  src="/images/cc-team-collab.jpg"
-                  alt={`BPO agent team supporting ${state} businesses`}
-                  fill
-                  sizes="(min-width: 1024px) 800px, 100vw"
-                  className="object-cover"
-                />
-              </div>
+              <ArticleFigure
+                src="/images/cc-team-collab.jpg"
+                alt={`BPO agent team supporting ${state} businesses`}
+                caption={`Contact Center USA (#7) staffs ${state} programs with 100% US-based agents scheduled to ${seed.timezone}, on month-to-month terms.`}
+              />
 
               {/* Which providers fit */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">
@@ -235,6 +306,12 @@ export function StateRankingArticle({ slug }: { slug: string }) {
               {seed.economy.map((p, i) => (
                 <p key={i} className="mt-4 leading-relaxed text-gray-700">{p}</p>
               ))}
+
+              <ArticleFigure
+                src={statePhoto(slug, 2)}
+                alt={`Contact center floor serving ${state} metro markets`}
+                caption={`Primary ${state} talent markets: ${seed.metros}. The metro a program lands in changes both what it costs and what it can do.`}
+              />
 
               {/* Metro comparison */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">
@@ -281,6 +358,12 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 </ul>
               )}
 
+              <ArticleFigure
+                src={statePhoto(slug, 3)}
+                alt={`Quality team reviewing ${state} call recording consent procedures`}
+                caption={`${state} follows ${consentLabel}. A partner should be able to show you the ${state} disclosure script its agents read, not a national default.`}
+              />
+
               {/* Compliance */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">
                 {state}-Specific Compliance: Recording Consent and Beyond
@@ -309,7 +392,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {seed.industries.map((ind, i) => (
                   <Link key={i} href={ind.href} className="rounded-xl border border-gray-100 bg-white p-5 transition-colors hover:border-red/30">
-                    <h4 className="font-bold text-navy">{ind.name}</h4>
+                    <h3 className="font-bold text-navy">{ind.name}</h3>
                     <p className="mt-2 text-sm text-gray-700">{ind.note}</p>
                     <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-red">
                       {ind.name} Call Center Services <ArrowRight className="h-3.5 w-3.5" />
@@ -318,18 +401,11 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 ))}
               </div>
 
-              {/* Trends grid */}
-              <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">
-                {state} BPO Market Factors for 2026
-              </h2>
-              <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {trends.map((trend, i) => (
-                  <div key={i} className="rounded-xl border border-gray-100 bg-white p-5">
-                    <h4 className="font-bold text-navy">{trend.title}</h4>
-                    <p className="mt-2 text-sm text-gray-700">{trend.desc}</p>
-                  </div>
-                ))}
-              </div>
+              <ArticleFigure
+                src={statePhoto(slug, 4)}
+                alt={`US-based agents handling ${state} industry programs`}
+                caption={`${state} BPO demand concentrates in ${seed.industries.map((i) => i.name.toLowerCase()).slice(0, 3).join(", ")} — sectors where industry-specific training and compliance decide the shortlist.`}
+              />
 
               {/* Local vs national */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">
@@ -360,6 +436,17 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 {state} {consentLabel} script, and scheduling aligned to {seed.timezone}. Pair this ranking with
                 our <Link href={seed.locationHref} className="font-semibold text-red hover:underline">{state} call
                 center services</Link> page to scope a program against your own call volumes.
+              </p>
+
+              {/* Routes equity from these pages to the national rankings, which are the
+                  formats that actually earn clicks on this site. */}
+              <p className="mt-4 leading-relaxed text-gray-700">
+                If your program is vertical-specific rather than {state}-specific, our national
+                rankings go deeper on provider fit:{" "}
+                <Link href="/blog/top-15-healthcare-bpo-companies-usa" className="font-semibold text-red hover:underline">healthcare BPO companies</Link>,{" "}
+                <Link href="/blog/top-15-insurance-bpo-companies-usa" className="font-semibold text-red hover:underline">insurance BPO companies</Link>,{" "}
+                <Link href="/blog/top-10-appointment-setting-companies-usa" className="font-semibold text-red hover:underline">appointment setting companies</Link>, and{" "}
+                <Link href="/blog/top-10-customer-service-outsourcing-companies-usa" className="font-semibold text-red hover:underline">customer service outsourcing companies</Link>.
               </p>
 
               {/* CTA */}
@@ -399,7 +486,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 />
 
                 <div className="rounded-2xl border border-gray-100 bg-white p-6">
-                  <h4 className="font-bold text-navy">Related Articles</h4>
+                  <h3 className="font-bold text-navy">Related Articles</h3>
                   <ul className="mt-4 space-y-3">
                     {post.related.map((article, i) => (
                       <li key={i}>
