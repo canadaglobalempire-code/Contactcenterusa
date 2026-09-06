@@ -1,8 +1,8 @@
 export const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
+// Public form identifier, protected by SplitForms' allowed-domain settings.
 export const SPLITFORMS_ACCESS_KEY =
   process.env.NEXT_PUBLIC_SPLITFORMS_ACCESS_KEY?.trim() ||
   "0ffd7166ac97420ba6ffc7727d189d07";
-
 export const LEAD_FORM_ENDPOINT =
   process.env.NEXT_PUBLIC_LEAD_FORM_ENDPOINT?.trim() || SPLITFORMS_ENDPOINT;
 
@@ -174,15 +174,15 @@ export async function submitLeadForm(formData: FormData) {
     const contentType = response.headers.get("content-type") ?? "";
     const data = contentType.includes("application/json")
       ? await response.json()
-      : { success: response.ok, message: await response.text() };
+      : { success: false, message: "Unable to confirm your submission. Please try again." };
 
     return { data, response };
   }
 
   // Collapse to SplitForms' supported trio (name, email, message). Every other
   // field is folded into the message so nothing is lost and the lead arrives
-  // clean and readable. Sent as native browser multipart, directly to
-  // SplitForms — the combination confirmed to actually store.
+  // clean and readable. Browser delivery supplies the genuine site Origin
+  // required by SplitForms' domain protection.
   const payload = new FormData();
   payload.set("access_key", SPLITFORMS_ACCESS_KEY);
   payload.set("name", (formData.get("name") ?? "").toString().trim());
@@ -198,7 +198,7 @@ export async function submitLeadForm(formData: FormData) {
   const contentType = response.headers.get("content-type") ?? "";
   const data = contentType.includes("application/json")
     ? await response.json()
-    : { success: response.ok, message: await response.text() };
+    : { success: false, message: "Unable to confirm your submission. Please try again." };
 
   return { data, response };
 }

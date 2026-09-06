@@ -1,6 +1,4 @@
 const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
-const SPLITFORMS_ACCESS_KEY =
-  process.env.SPLITFORMS_ACCESS_KEY ?? "0ffd7166ac97420ba6ffc7727d189d07";
 
 const DEFAULT_ALLOWED_ORIGINS = [
   "https://contactcenterusa.com",
@@ -108,7 +106,16 @@ export async function POST(request: Request) {
     );
   }
 
-  formData.set("access_key", SPLITFORMS_ACCESS_KEY);
+  const accessKey = process.env.SPLITFORMS_ACCESS_KEY?.trim();
+  if (!accessKey) {
+    console.error("SPLITFORMS_ACCESS_KEY is not configured.");
+    return Response.json(
+      { success: false, message: "Unable to submit the form right now." },
+      { status: 503, headers },
+    );
+  }
+
+  formData.set("access_key", accessKey);
 
   // Forward as application/x-www-form-urlencoded, NOT multipart. SplitForms'
   // multipart parser drops fields after the first few (it collapsed the rest
@@ -133,7 +140,7 @@ export async function POST(request: Request) {
     const contentType = response.headers.get("content-type") ?? "";
     const payload = contentType.includes("application/json")
       ? await response.json()
-      : { success: response.ok, message: await response.text() };
+      : { success: false, message: "Unable to confirm your submission. Please try again." };
 
     return Response.json(payload, { status: response.status, headers });
   } catch (error) {
