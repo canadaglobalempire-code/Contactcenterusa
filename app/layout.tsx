@@ -17,6 +17,8 @@ const inter = Inter({
   display: "swap",
 });
 
+export const revalidate = 300;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://contactcenterusa.com"),
   applicationName: "Contact Center USA",

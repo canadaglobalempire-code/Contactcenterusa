@@ -18,6 +18,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Expire stale HTML without shortening the cache of content-hashed assets.
+  expireTime: 600,
   images: {
     // webp only, and a 30-day variant TTL. Next's default minimumCacheTTL is 4h,
     // so every optimized variant was being RE-ENCODED several times a day — CPU,
