@@ -4,8 +4,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
   title: "HVAC Answering Service & Call Center | 24/7 Dispatch",
-  description:
-    "24/7 US-based HVAC answering service and call center for heating & cooling contractors. Emergency dispatch, ServiceTitan integration, and seasonal surge capture.",
+  description: "HVAC answering service for repair enquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs.",
   keywords: [
     "hvac answering service",
     "hvac call center",
@@ -73,25 +72,17 @@ const testimonial = {
 
 const faqs = [
   {
-    question: "How do your agents dispatch our on-call HVAC technicians?",
-    answer:
-      "We follow your exact on-call schedule. When an emergency call arrives, our agent collects the homeowner details, problem description, system info, and reaches out to your designated technician via phone call, SMS, or dispatch app notification. If the primary tech doesn't answer within your required window (e.g., 10 minutes), we escalate down the chain.",
+    "question": "Which HVAC calls should an answering team handle?",
+    "answer": "Separate repair requests, maintenance bookings, replacement estimates and existing-job updates in the brief. Each may need different questions and scheduling rules. Provide your service area, equipment or job restrictions and the circumstances that require a technician or supervisor so agents can route enquiries without making unsupported promises."
   },
   {
-    question: "Do you integrate directly with ServiceTitan and Housecall Pro?",
-    answer:
-      "Yes. Our agents log directly into your field service software (ServiceTitan, Housecall Pro, Jobber, FieldEdge, ServiceFusion). We see real-time technician availability, book appointments directly onto your dispatch board, and update customer job histories without any duplicate manual entry.",
+    "question": "How do we plan HVAC coverage for seasonal spikes?",
+    "answer": "Review call demand during previous hot or cold periods and share upcoming promotions, coverage hours and available appointment capacity. Agree the overflow trigger and how urgent work will be routed. A support team needs both a call-handling plan and current dispatch information; answering more calls does not create technician availability."
   },
   {
-    question: "How do you distinguish between a real HVAC emergency and routine service?",
-    answer:
-      "We build custom triage logic based on your criteria. For instance, no heat with outdoor temps below 40°F, gas odors, active water leaks from attic air handlers, or elderly/infant occupants can be flagged as immediate dispatch, while routine seasonal tune-ups are scheduled during normal business hours.",
-  },
-  {
-    question: "Can you handle seasonal surge call volumes without long-term contracts?",
-    answer:
-      "Absolutely. We offer month-to-month agreements so you can scale up your line capacity during extreme summer and winter peak demand, and scale back down during shoulder months without penalties.",
-  },
+    "question": "What should we include in an HVAC answering-service quote request?",
+    "answer": "Include normal and peak call volumes, the hours you need covered and whether the work involves messages, scheduling or technician escalation. Name your dispatch system and describe the access you can provide. Confirm setup, training, reporting and billing terms before choosing a plan or agreeing a launch date."
+  }
 ];
 
 const seoSections: SEOPattern[] = [
@@ -187,7 +178,7 @@ export default function HVACPage() {
       title="HVAC Answering Service & Call Center"
       titleHighlight="HVAC Answering Service"
       subtitle="24/7 Emergency Dispatch, Live ServiceTitan Booking & High-Ticket Lead Capture"
-      description="Capture every high-ticket HVAC replacement and emergency service call. Our 100% US-based agents integrate directly with ServiceTitan, Housecall Pro, and Jobber to book appointments on your dispatch board 24/7/365."
+      description="HVAC answering service for repair enquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs."
       features={features}
       benefits={benefits}
       image="/images/cc-team-floor.jpg"

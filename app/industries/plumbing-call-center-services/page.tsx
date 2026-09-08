@@ -4,8 +4,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
   title: "Plumbing Answering Service & Call Center | 24/7 Dispatch",
-  description:
-    "24/7 US-based plumbing answering service and call center for residential and commercial plumbers. Emergency dispatch, ServiceTitan integration, and leak intake.",
+  description: "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team.",
   keywords: [
     "plumbing answering service",
     "plumber call center",
@@ -73,25 +72,17 @@ const testimonial = {
 
 const faqs = [
   {
-    question: "How does your plumbing answering service dispatch our on-call technicians?",
-    answer:
-      "We strictly follow your custom on-call schedule. When an urgent call arrives (burst pipe, sewer backup, water heater leak), we collect the caller's address, issue, and water shutoff status, then immediately contact your on-call plumber via phone and SMS. If the first tech does not respond within your designated timeframe, we escalate to the backup tech or supervisor.",
+    "question": "What should a plumbing answering service collect from callers?",
+    "answer": "Define an intake checklist with the caller's contact details, service address, description of the problem and whether the request is for repair, maintenance or an estimate. Add the information your dispatcher needs to decide the next step. Agents should follow your approved triage process and escalate urgent situations to the designated contact."
   },
   {
-    question: "Can your agents book directly into ServiceTitan and Housecall Pro?",
-    answer:
-      "Yes. Our agents are trained on ServiceTitan, Housecall Pro, Jobber, FieldEdge, and ServiceFusion. We book the job directly onto your live dispatch calendar, assign the proper job type, and enter all customer notes.",
+    "question": "What do we need to set up after-hours plumbing dispatch?",
+    "answer": "Prepare your service area, opening hours, on-call rota, escalation order and the rules for accepting a job. Clarify whether agents may book directly or should send a request for approval. Test the handoff and backup contact process before launch, including what happens when the first technician is unavailable."
   },
   {
-    question: "Can your agents guide a caller to their main water shutoff valve?",
-    answer:
-      "Yes. If a caller is experiencing active flooding from a burst pipe or fixture, our agents can provide basic safety instructions (such as locating the main shutoff valve or fixture shutoff) while the technician is being dispatched.",
-  },
-  {
-    question: "Do you require long-term contracts for plumbing companies?",
-    answer:
-      "No. We provide month-to-month agreements. You can use our service for full 24/7 coverage, after-hours emergency dispatch, or daytime overflow without being locked into an annual contract.",
-  },
+    "question": "What affects the price of a plumbing answering service?",
+    "answer": "The required coverage, expected call volume, intake depth and dispatch responsibilities shape the quote. Message taking, appointment booking and urgent escalation are different scopes. Send these requirements through our contact page and confirm software access, training, billing terms and any minimum commitment in the proposal."
+  }
 ];
 
 const seoSections: SEOPattern[] = [
@@ -146,7 +137,7 @@ export default function PlumbingPage() {
       title="Plumbing Answering Service & Call Center"
       titleHighlight="Plumbing Answering Service"
       subtitle="24/7 Emergency Dispatch, ServiceTitan Integration & High-Margin Job Capture"
-      description="Never miss an emergency plumbing job or water heater replacement. Our 100% US-based agents answer in seconds, triage urgent leaks, and schedule appointments directly into your dispatch board 24/7/365."
+      description="Plumbing answering service for incoming enquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team."
       features={features}
       benefits={benefits}
       image="/images/cc-management.jpg"

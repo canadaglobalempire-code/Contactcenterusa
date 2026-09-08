@@ -4,8 +4,7 @@ import type { SEOPattern } from "@/components/shared/SEOContentSection";
 
 export const metadata: Metadata = {
   title: "Ecommerce Customer Service | Contact Center USA",
-  description:
-    "US-based ecommerce customer service support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  description: "Ecommerce customer service outsourcing for order enquiries, returns and product support. Scope channels, store access and seasonal coverage with Contact Center USA.",
   keywords: [
     "ecommerce customer service",
     "ecommerce bpo usa",
@@ -73,30 +72,17 @@ const testimonial = {
 
 const faqs = [
   {
-    question: "Can you integrate with our e-commerce platform?",
-    answer:
-      "Yes, we integrate with all major e-commerce platforms including Shopify, WooCommerce, Magento, BigCommerce, and custom solutions. Our team sets up direct API connections so agents have real-time access to orders, inventory, and customer data.",
+    "question": "What should an ecommerce customer service team be able to resolve?",
+    "answer": "Build the scope around your actual contact reasons: order tracking, delivery questions, product information, returns and account support. Provide approved answers and a clear policy for exceptions. Separate enquiries an agent can complete from actions requiring store-owner approval, such as unusual refunds or sensitive account changes."
   },
   {
-    question: "How do you handle peak season demand spikes?",
-    answer:
-      "We maintain a bench of pre-trained e-commerce agents who are ready to deploy during high-volume periods. We begin ramping up 4-6 weeks before major shopping events, ensuring agents are fully trained on your products and policies before the rush begins.",
+    "question": "How do we prepare an outsourced team for our store?",
+    "answer": "Provide product information, shipping and returns policies, store and helpdesk access requirements, and an escalation contact. Use sample customer enquiries to check the workflow before launch. Confirm the capabilities of any proposed integration against your own store configuration rather than assuming every platform connection offers the same actions."
   },
   {
-    question: "Do you offer live chat support for our website?",
-    answer:
-      "Absolutely. We provide live chat agents who engage shoppers in real time, answer product questions, assist with checkout issues, and proactively reach out to visitors showing exit intent — all proven to reduce cart abandonment and increase conversions.",
-  },
-  {
-    question: "How do your agents learn about our products?",
-    answer:
-      "We develop comprehensive product knowledge bases from your catalog, run hands-on training sessions, and use AI-assisted tools that give agents instant access to product specs, availability, and comparison data during live customer interactions.",
-  },
-  {
-    question: "What metrics do you track for e-commerce support?",
-    answer:
-      "We track CSAT, first-contact resolution, average handle time, cart recovery rate, upsell conversion, and NPS. You receive real-time dashboards and weekly performance reports with actionable insights to continuously improve the customer experience.",
-  },
+    "question": "How do we compare ecommerce support proposals?",
+    "answer": "Use the same channels, service hours and normal and peak enquiry volumes in each request. Ask which order actions, training, management and reports are included. Review resolution quality, repeat contacts and customer feedback as well as response speed. Set a review cadence so changes in promotions, products or fulfilment are reflected in the support process."
+  }
 ];
 
 const seoContent: SEOPattern[] = [
@@ -278,7 +264,7 @@ export default function EcommercePage() {
       title="Call Center Solutions Built for E-Commerce Success"
       titleHighlight="E-Commerce Success"
       subtitle="Scalable customer support that reduces cart abandonment, streamlines returns, and delivers the fast, friendly service online shoppers expect."
-      description="E-commerce never sleeps, and neither do we. Our agents are trained on your products, integrated with your platform, and ready to handle everything from order inquiries to complex returns. Whether it is a quiet Tuesday or Black Friday chaos, we deliver consistent, brand-aligned support that turns one-time buyers into loyal customers."
+      description="Ecommerce customer service outsourcing for order enquiries, returns and product support. Scope channels, store access and seasonal coverage with Contact Center USA."
       features={features}
       benefits={benefits}
       image="/images/hd-agents-pair.jpg"
