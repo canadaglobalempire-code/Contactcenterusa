@@ -228,8 +228,15 @@ export function LeadForm({
 
     const formData = new FormData(form);
     if (token) formData.set("g-recaptcha-response", token);
+    // The website field accepts whatever the visitor types — a full URL, a bare
+    // domain, or plain text. Only prepend https:// to something that actually
+    // looks like a bare domain (a dot, no spaces); leave free text untouched.
     const companyUrl = (formData.get("company_url") ?? "").toString().trim();
-    if (companyUrl && !/^https?:\/\//i.test(companyUrl)) {
+    if (
+      companyUrl &&
+      !/^https?:\/\//i.test(companyUrl) &&
+      /^\S+\.\S+$/.test(companyUrl)
+    ) {
       formData.set("company_url", `https://${companyUrl}`);
     }
 
@@ -351,8 +358,9 @@ export function LeadForm({
             />
             <input
               name="company_name"
+              required
               aria-label="Company name"
-              placeholder="Company name"
+              placeholder="Company name *"
               className={inputClass + errorRing("company_name")}
             />
           </div>
@@ -370,8 +378,9 @@ export function LeadForm({
             <input
               name="phone_number"
               type="tel"
+              required
               aria-label="Phone number"
-              placeholder="Phone number"
+              placeholder="Phone number *"
               className={inputClass + errorRing("phone_number")}
             />
           </div>
@@ -382,8 +391,9 @@ export function LeadForm({
               name="company_url"
               type="text"
               inputMode="url"
+              required
               aria-label="Company website"
-              placeholder="Company website"
+              placeholder="Company website *"
               className={inputClass + errorRing("company_url")}
             />
             <select
@@ -406,11 +416,12 @@ export function LeadForm({
           <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
             <select
               name="service_type"
+              required
               aria-label="Call center services type"
               defaultValue=""
               className={selectClass + errorRing("service_type")}
             >
-              <option value="">Service type</option>
+              <option value="">Service type *</option>
               {serviceTypes.map((s) => (
                 <option key={s} value={s}>
                   {s}
@@ -419,11 +430,12 @@ export function LeadForm({
             </select>
             <select
               name="agent_requirement"
+              required
               aria-label="Agent requirements"
               defaultValue=""
               className={selectClass + errorRing("agent_requirement")}
             >
-              <option value="">Agent requirements</option>
+              <option value="">Agent requirements *</option>
               {agentOptions.map((a) => (
                 <option key={a} value={a}>
                   {a}
@@ -436,11 +448,12 @@ export function LeadForm({
           <div className="grid grid-cols-1 gap-4 @sm:grid-cols-2">
             <select
               name="call_volume"
+              required
               aria-label="Call volume"
               defaultValue=""
               className={selectClass + errorRing("call_volume")}
             >
-              <option value="">Call volume / month</option>
+              <option value="">Call volume / month *</option>
               {volumeOptions.map((v) => (
                 <option key={v} value={v}>
                   {v}
@@ -449,11 +462,12 @@ export function LeadForm({
             </select>
             <select
               name="operating_schedule"
+              required
               aria-label="Operating schedule"
               defaultValue=""
               className={selectClass + errorRing("operating_schedule")}
             >
-              <option value="">Operating schedule</option>
+              <option value="">Operating schedule *</option>
               {scheduleOptions.map((s) => (
                 <option key={s} value={s}>
                   {s}
