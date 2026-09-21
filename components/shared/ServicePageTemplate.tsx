@@ -12,6 +12,7 @@ import { RelatedServices } from "@/components/shared/RelatedServices";
 import { PageCTA } from "@/components/shared/PageCTA";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { citeSources } from "@/lib/cite-sources";
 
 interface ServicePageTemplateProps {
   badge: string;
@@ -48,6 +49,7 @@ export function ServicePageTemplate({
   ctaSubtitle,
   seoContent,
 }: ServicePageTemplateProps) {
+  const cited = new Set<string>();
   const titleParts = title.split(titleHighlight);
   const pathname = usePathname();
   const section =
@@ -177,7 +179,7 @@ export function ServicePageTemplate({
                 What Sets Us <span className="text-red">Apart</span>
               </h2>
               <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
-                {description}
+                {citeSources(description, cited)}
               </p>
 
               <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -218,7 +220,7 @@ export function ServicePageTemplate({
                   {feature.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-700">
-                  {feature.desc}
+                  {citeSources(feature.desc, cited)}
                 </p>
               </div>
             ))}

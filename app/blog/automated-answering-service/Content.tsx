@@ -189,8 +189,8 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
               <p className="mt-4 text-gray-700 leading-relaxed">
                 Automation changes who is speaking, not what the rules require. In all-party consent states such as California,
                 Illinois, Florida and Nevada, the recorded-line disclosure must come before recording starts rather than after the
-                menu. Any system touching protected health information needs the same HIPAA handling and a signed Business
-                Associate Agreement, exactly as a live provider would. And if the system places outbound calls or texts, the TCPA
+                menu. Any system touching protected health information needs the same <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a> handling and a signed Business
+                Associate Agreement, exactly as a live provider would. And if the system places outbound calls or texts, the <a href="https://www.law.cornell.edu/uscode/text/47/227" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">TCPA</a>
                 applies in full.
               </p>
 

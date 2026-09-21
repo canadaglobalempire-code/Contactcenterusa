@@ -181,7 +181,7 @@ export default function DentalAnsweringServiceContent({ faqs }: { faqs: Faq[] })
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> answers with US-based
-                HIPAA-trained agents under a signed BAA, books live into Dentrix, Eaglesoft, Open Dental and Curve, verifies
+                <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a>-trained agents under a signed BAA, books live into Dentrix, Eaglesoft, Open Dental and Curve, verifies
                 benefits at booking, and runs recall campaigns into your open hygiene columns.
               </p>
 

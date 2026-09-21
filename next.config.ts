@@ -55,7 +55,7 @@ const nextConfig: NextConfig = {
       // to its closest current, intent-equivalent page. Do not send obsolete
       // WordPress feeds, categories, tags, or unrelated URLs to the homepage.
       {
-        source: "/home/",
+        source: "/home",
         destination: "/",
         permanent: true,
       },
@@ -65,7 +65,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/solutions/outbound-services/",
+        source: "/solutions/outbound-services",
         destination: "/solutions/outbound-call-center-services",
         permanent: true,
       },
@@ -90,12 +90,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/solutions/inbound-services/",
+        source: "/solutions/inbound-services",
         destination: "/solutions/inbound-call-center-services",
         permanent: true,
       },
       {
-        source: "/solutions/lead-generation/",
+        source: "/solutions/lead-generation",
         destination: "/solutions/lead-generation-appointment-setting",
         permanent: true,
       },
@@ -105,7 +105,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/solutions/technical-support/",
+        source: "/solutions/technical-support",
         destination: "/solutions/technical-support-outsourcing",
         permanent: true,
       },
@@ -120,17 +120,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/solutions/financial-solutions/",
+        source: "/solutions/financial-solutions",
         destination: "/solutions/financial-call-center-services",
         permanent: true,
       },
       {
-        source: "/solutions/interactive-voice-response/",
+        source: "/solutions/interactive-voice-response",
         destination: "/services/interactive-voice-response",
         permanent: true,
       },
       {
-        source: "/services/omnichannel-solutions/",
+        source: "/services/omnichannel-solutions",
         destination: "/services/omnichannel-contact-center-solutions",
         permanent: true,
       },
@@ -145,17 +145,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/services/contact-center-software/",
+        source: "/services/contact-center-software",
         destination: "/services/contact-center-software-solutions",
         permanent: true,
       },
       {
-        source: "/services/cx-analytics/",
+        source: "/services/cx-analytics",
         destination: "/services/customer-experience-analytics",
         permanent: true,
       },
       {
-        source: "/services/digital-and-cx-services/",
+        source: "/services/digital-and-cx-services",
         destination: "/services/digital-customer-experience-services",
         permanent: true,
       },
@@ -165,7 +165,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/solutions/government-services/",
+        source: "/solutions/government-services",
         destination: "/solutions/government-call-center-services",
         permanent: true,
       },

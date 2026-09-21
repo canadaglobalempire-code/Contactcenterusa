@@ -231,7 +231,7 @@ export default function HowToChooseCallCenterPartnerContent() {
                   Regulatory Compliance
                 </h3>
                 <p>
-                  Industries like <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link>, <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>, and <Link href="/industries/insurance-call-center-outsourcing" className="text-red hover:text-red-dark font-semibold">insurance</Link> have strict regulatory requirements. A provider experienced in these sectors already has compliance frameworks in place, reducing your risk and onboarding time. They understand HIPAA, PCI-DSS, TCPA, and other regulations that govern customer communications.
+                  Industries like <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link>, <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>, and <Link href="/industries/insurance-call-center-outsourcing" className="text-red hover:text-red-dark font-semibold">insurance</Link> have strict regulatory requirements. A provider experienced in these sectors already has compliance frameworks in place, reducing your risk and onboarding time. They understand <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a>, PCI-DSS, TCPA, and other regulations that govern customer communications.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">
@@ -275,7 +275,7 @@ export default function HowToChooseCallCenterPartnerContent() {
                   Security and Compliance Technology
                 </h3>
                 <p>
-                  Data security is non-negotiable. Your partner should employ end-to-end encryption, secure payment processing (PCI-DSS Level 1), multi-factor authentication, role-based access controls, and regular penetration testing. For businesses handling sensitive data, look for SOC 2 Type II certification and <Link href="/services/fraud-prevention-cyber-security" className="text-red hover:text-red-dark font-semibold">fraud prevention</Link> capabilities built into the technology stack.
+                  Data security is non-negotiable. Your partner should employ end-to-end encryption, secure payment processing (<a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">PCI-DSS</a> Level 1), multi-factor authentication, role-based access controls, and regular penetration testing. For businesses handling sensitive data, look for SOC 2 Type II certification and <Link href="/services/fraud-prevention-cyber-security" className="text-red hover:text-red-dark font-semibold">fraud prevention</Link> capabilities built into the technology stack.
                 </p>
 
                 {/* H2: Making Your Decision */}

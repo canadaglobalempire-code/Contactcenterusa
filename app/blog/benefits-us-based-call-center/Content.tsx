@@ -100,7 +100,7 @@ export default function BenefitsUSBasedCallCenterContent() {
                   US Privacy Law Coverage
                 </h3>
                 <p>
-                  Customer data handled by US-based agents remains under the jurisdiction of American privacy laws, including state-specific regulations like the California Consumer Privacy Act (CCPA) and sector-specific rules like HIPAA for <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link> and the Gramm-Leach-Bliley Act for <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>. When data is processed offshore, it becomes subject to foreign data protection frameworks that may offer less protection and are harder to enforce.
+                  Customer data handled by US-based agents remains under the jurisdiction of American privacy laws, including state-specific regulations like the California Consumer Privacy Act (CCPA) and sector-specific rules like <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a> for <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">healthcare</Link> and the <a href="https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">Gramm-Leach-Bliley Act</a> for <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">financial services</Link>. When data is processed offshore, it becomes subject to foreign data protection frameworks that may offer less protection and are harder to enforce.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">
@@ -114,7 +114,7 @@ export default function BenefitsUSBasedCallCenterContent() {
                   Stronger Enforcement and Accountability
                 </h3>
                 <p>
-                  In the event of a data breach or privacy violation, US-based operations are subject to domestic legal proceedings, regulatory enforcement, and established accountability frameworks. The average cost of a data breach in the US is <strong>$4.45 million</strong> (IBM), and companies are increasingly held liable for the actions of their service providers. Working with a US-based partner with SOC 2 Type II certification, PCI-DSS compliance, and robust security practices significantly reduces this risk.
+                  In the event of a data breach or privacy violation, US-based operations are subject to domestic legal proceedings, regulatory enforcement, and established accountability frameworks. The average cost of a data breach in the US is <strong>$4.45 million</strong> (IBM), and companies are increasingly held liable for the actions of their service providers. Working with a US-based partner with SOC 2 Type II certification, <a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">PCI-DSS</a> compliance, and robust security practices significantly reduces this risk.
                 </p>
 
                 {/* H2: Time Zone */}
@@ -259,14 +259,14 @@ export default function BenefitsUSBasedCallCenterContent() {
                   TCPA and FCC Compliance
                 </h3>
                 <p>
-                  For <Link href="/solutions/outbound-call-center-services" className="text-red hover:text-red-dark font-semibold">outbound calling operations</Link>, compliance with the Telephone Consumer Protection Act (TCPA) and FCC regulations is critical. Violations carry penalties of $500-$1,500 per call, and class-action lawsuits can result in multi-million dollar settlements. US-based call centers are more attuned to TCPA requirements, maintain compliant dialing practices, and are more easily governed by domestic legal frameworks.
+                  For <Link href="/solutions/outbound-call-center-services" className="text-red hover:text-red-dark font-semibold">outbound calling operations</Link>, compliance with the Telephone Consumer Protection Act (<a href="https://www.law.cornell.edu/uscode/text/47/227" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">TCPA</a>) and FCC regulations is critical. Violations carry penalties of $500-$1,500 per call, and class-action lawsuits can result in multi-million dollar settlements. US-based call centers are more attuned to TCPA requirements, maintain compliant dialing practices, and are more easily governed by domestic legal frameworks.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">
                   State-Specific Regulations
                 </h3>
                 <p>
-                  An increasing number of US states are enacting their own privacy and consumer protection laws, including California (CCPA/CPRA), Virginia (VCDPA), Colorado (CPA), and Connecticut (CTDPA). US-based providers stay current with this evolving patchwork of state regulations, while offshore providers often lack awareness of and compliance with state-specific requirements.
+                  An increasing number of US states are enacting their own privacy and consumer protection laws, including California (<a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">CCPA</a>/CPRA), Virginia (VCDPA), Colorado (CPA), and Connecticut (CTDPA). US-based providers stay current with this evolving patchwork of state regulations, while offshore providers often lack awareness of and compliance with state-specific requirements.
                 </p>
 
                 {/* H2: When to Choose US-Based */}

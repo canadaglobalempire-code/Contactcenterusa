@@ -275,14 +275,14 @@ export default function CallCenterOutsourcingCostContent() {
                   Healthcare
                 </h3>
                 <p>
-                  <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">Healthcare call centers</Link> require HIPAA-compliant systems, specialized agent training, and often 24/7 coverage. Expect to pay a <strong>15-25% premium</strong> over standard customer service rates. However, the cost of non-compliance far outweighs this premium, with HIPAA violation fines reaching up to $1.5 million per incident.
+                  <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">Healthcare call centers</Link> require <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a>-compliant systems, specialized agent training, and often 24/7 coverage. Expect to pay a <strong>15-25% premium</strong> over standard customer service rates. However, the cost of non-compliance far outweighs this premium, with HIPAA violation fines reaching up to $1.5 million per incident.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">
                   Financial Services
                 </h3>
                 <p>
-                  <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">Financial services</Link> and <Link href="/industries/banking-financial-services-call-center" className="text-red hover:text-red-dark font-semibold">banking</Link> call centers must comply with PCI-DSS, SOX, and other regulatory frameworks, adding 10-20% to base costs. Specialized <Link href="/services/fraud-prevention-cyber-security" className="text-red hover:text-red-dark font-semibold">fraud prevention</Link> services require additional investment but protect against losses that average $4.35 million per data breach.
+                  <Link href="/industries/financial-services-call-center" className="text-red hover:text-red-dark font-semibold">Financial services</Link> and <Link href="/industries/banking-financial-services-call-center" className="text-red hover:text-red-dark font-semibold">banking</Link> call centers must comply with <a href="https://www.pcisecuritystandards.org/" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">PCI-DSS</a>, SOX, and other regulatory frameworks, adding 10-20% to base costs. Specialized <Link href="/services/fraud-prevention-cyber-security" className="text-red hover:text-red-dark font-semibold">fraud prevention</Link> services require additional investment but protect against losses that average $4.35 million per data breach.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">

@@ -89,7 +89,7 @@ export default function Content() {
                 </p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Tier-1 US metros (NYC, SF, LA, Boston, Seattle)</h3>
                 <p>
-                  <strong>$32–$42 per hour</strong> fully loaded. These are typically brick-and-mortar contact centers with senior agents, high-end tech stacks, and strong English proficiency. Expect PCI, HIPAA, and SOC 2 coverage as standard.
+                  <strong>$32–$42 per hour</strong> fully loaded. These are typically brick-and-mortar contact centers with senior agents, high-end tech stacks, and strong English proficiency. Expect PCI, <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a>, and SOC 2 coverage as standard.
                 </p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Tier-2 US metros (Austin, Charlotte, Phoenix, Columbus)</h3>
                 <p>
@@ -214,7 +214,7 @@ export default function Content() {
                 </p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Why is there a huge price gap between India and the US?</h3>
                 <p>
-                  Labor costs, cost-of-living, real estate, and regulatory overhead. US agents earn 4–6x Indian agent wages, drive higher real estate costs, and require compliance frameworks (HIPAA, PCI, SOC 2) that add 10–15% to infrastructure.
+                  Labor costs, cost-of-living, real estate, and regulatory overhead. US agents earn 4–6x Indian agent wages, drive higher real estate costs, and require compliance frameworks (HIPAA, PCI, <a href="https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">SOC 2</a>) that add 10–15% to infrastructure.
                 </p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Is $15/hour realistic for US call center outsourcing?</h3>
                 <p>

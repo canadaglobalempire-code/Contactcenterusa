@@ -35,7 +35,7 @@ export default function Content() {
             <div className="lg:col-span-2">
               <article className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                 <p className="text-xl leading-relaxed">
-                  If you&apos;re a healthcare provider, payer, or digital-health company evaluating <strong>HIPAA-compliant call center services</strong> in 2026, the stakes are bigger than ever. Under updated enforcement guidance, HHS OCR penalties now reach <strong>$2.1M per violation category per year</strong>, and class-action exposure from PHI breaches routinely runs 8 figures. Picking the right partner isn&apos;t a procurement decision — it&apos;s a risk-management decision.
+                  If you&apos;re a healthcare provider, payer, or digital-health company evaluating <strong><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a>-compliant call center services</strong> in 2026, the stakes are bigger than ever. Under updated enforcement guidance, HHS OCR penalties now reach <strong>$2.1M per violation category per year</strong>, and class-action exposure from PHI breaches routinely runs 8 figures. Picking the right partner isn&apos;t a procurement decision — it&apos;s a risk-management decision.
                 </p>
                 <p>
                   This guide covers everything you need: what HIPAA compliance actually requires of a BPO, the Business Associate Agreement (BAA), safeguards, vendor evaluation checklist, realistic costs, and the 2026 compliance trends reshaping the space.
@@ -110,7 +110,7 @@ export default function Content() {
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">SOC 2 Type II: The Third-Party Validation You Should Require</h2>
                 <p>
-                  While HIPAA has no official certification, a <strong>SOC 2 Type II</strong> audit from a reputable CPA firm is the closest independent validation you&apos;ll get. It covers security, availability, confidentiality, and processing integrity over a 6–12 month window.
+                  While HIPAA has no official certification, a <strong><a href="https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">SOC 2 Type II</a></strong> audit from a reputable CPA firm is the closest independent validation you&apos;ll get. It covers security, availability, confidentiality, and processing integrity over a 6–12 month window.
                 </p>
                 <p>
                   Require vendors to share:

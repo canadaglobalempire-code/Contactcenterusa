@@ -147,7 +147,7 @@ export default function InboundVsOutboundCallCentersContent() {
                   Regulatory Considerations
                 </h3>
                 <p>
-                  Outbound call centers face significantly more regulatory scrutiny than inbound operations. In the US, the Telephone Consumer Protection Act (TCPA) governs outbound calling practices, including restrictions on automated dialing, calling hours (8 AM to 9 PM local time), and mandatory compliance with the National Do Not Call Registry. Violations can result in fines of <strong>$500 to $1,500 per call</strong>. The FCC has strengthened enforcement in recent years, making compliance infrastructure critical for any outbound operation.
+                  Outbound call centers face significantly more regulatory scrutiny than inbound operations. In the US, the Telephone Consumer Protection Act (<a href="https://www.law.cornell.edu/uscode/text/47/227" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">TCPA</a>) governs outbound calling practices, including restrictions on automated dialing, calling hours (8 AM to 9 PM local time), and mandatory compliance with the National Do Not Call Registry. Violations can result in fines of <strong>$500 to $1,500 per call</strong>. The FCC has strengthened enforcement in recent years, making compliance infrastructure critical for any outbound operation.
                 </p>
 
                 {/* H2: When You Need Inbound */}

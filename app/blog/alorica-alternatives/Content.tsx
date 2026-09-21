@@ -84,7 +84,7 @@ export default function Content() {
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">4. TTEC</h3>
                 <p><strong>Best for:</strong> Regulated programs where a blended delivery footprint complicates compliance.</p>
-                <p>Alorica&apos;s mix of onshore, nearshore and offshore delivery is efficient, but it adds work to any program operating under HIPAA, PCI-DSS or government data-residency expectations, because controls have to hold across every site. TTEC&apos;s consulting-plus-delivery model is built for exactly those high-trust verticals — healthcare, financial services and government. It costs more. See our <Link href="/blog/ttec-alternatives" className="text-red hover:text-red-dark font-semibold">TTEC alternatives guide</Link>.</p>
+                <p>Alorica&apos;s mix of onshore, nearshore and offshore delivery is efficient, but it adds work to any program operating under <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a>, PCI-DSS or government data-residency expectations, because controls have to hold across every site. TTEC&apos;s consulting-plus-delivery model is built for exactly those high-trust verticals — healthcare, financial services and government. It costs more. See our <Link href="/blog/ttec-alternatives" className="text-red hover:text-red-dark font-semibold">TTEC alternatives guide</Link>.</p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">5. Foundever</h3>
                 <p><strong>Best for:</strong> Keeping a nearshore model but widening language coverage.</p>

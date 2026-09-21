@@ -313,7 +313,7 @@ export default function CallCenterKPIsContent() {
                   Healthcare
                 </h3>
                 <p>
-                  <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">Healthcare call centers</Link> prioritize accuracy and compliance above speed. FCR targets of 72-80% reflect the complexity of medical inquiries. CSAT standards are high at 88-92% given the sensitive nature of healthcare interactions. Compliance with HIPAA adds quality dimensions that are not captured by standard metrics.
+                  <Link href="/industries/healthcare-call-center-services" className="text-red hover:text-red-dark font-semibold">Healthcare call centers</Link> prioritize accuracy and compliance above speed. FCR targets of 72-80% reflect the complexity of medical inquiries. CSAT standards are high at 88-92% given the sensitive nature of healthcare interactions. Compliance with <a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noopener noreferrer" className="text-red font-semibold hover:underline">HIPAA</a> adds quality dimensions that are not captured by standard metrics.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">
