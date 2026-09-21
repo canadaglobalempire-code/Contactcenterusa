@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "The outbound engine behind recall, reactivation, and short-notice schedule fill.",
     href: "/solutions/outbound-call-center-services",
   },
+  {
+    title: "Healthcare Revenue Cycle Management",
+    desc: "How a mid-size hospital network reduced claim denial rates by 34% and accelerated patient billing with our HIPAA-compliant call center solution.",
+    href: "/case-studies/healthcare-revenue-cycle-management",
+  },
+  {
+    title: "Membership Sales & Retention for Fitness Businesses",
+    desc: "US-based call center for gyms, studios, and fitness franchises.",
+    href: "/industries/fitness-gym-call-center",
+  },
+  {
+    title: "24/7 First Call Coverage for Funeral Homes",
+    desc: "US-based 24/7 answering service for funeral homes and cremation providers.",
+    href: "/industries/funeral-home-answering-service",
+  },
 ];
 
 export default function DentalCallCenterPage() {

@@ -137,7 +137,7 @@ export default function GeorgiaPage() {
         "Contact Center USA supports Georgia businesses with 100% US-based inbound, outbound, technical support, and back-office teams scheduled to Eastern time, with the PCI-DSS and HIPAA coverage that the state's dominant industries require.",
       ]}
       metros={[
-        { name: "Atlanta", focus: "The Southeast's business capital and a national payments and fintech hub. Financial servicing, SaaS support, and large-scale customer operations." },
+        { name: "Atlanta", href: "/call-center-services-atlanta", focus: "The Southeast's business capital and a national payments and fintech hub. Financial servicing, SaaS support, and large-scale customer operations." },
         { name: "Savannah", focus: "One of the busiest container ports in the country. Logistics exception handling, shipment tracking, and B2B supply chain support." },
         { name: "Augusta", focus: "Healthcare, cybersecurity, and defense-adjacent employers. Compliance-aware technical and patient support programs." },
         { name: "Columbus", focus: "Financial services and insurance operations with a large military-adjacent customer base at Fort Moore." },

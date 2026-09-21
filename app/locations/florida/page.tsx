@@ -135,9 +135,9 @@ export default function FloridaPage() {
         "Contact Center USA supports Florida businesses with 100% US-based teams on Eastern time, a workforce distributed outside the state for genuine storm continuity, and multilingual capacity for the state's diverse population.",
       ]}
       metros={[
-        { name: "Miami–Fort Lauderdale", focus: "International business gateway with large Spanish- and Creole-speaking populations. Bilingual consumer support, financial services, and trade programs." },
-        { name: "Tampa–St. Petersburg", focus: "Financial services, healthcare, and insurance operations. Policyholder servicing and patient access programs." },
-        { name: "Orlando", focus: "Global tourism and hospitality capital. 24/7 reservations, guest services, and event-driven surge programs." },
+        { name: "Miami–Fort Lauderdale", href: "/call-center-services-miami", focus: "International business gateway with large Spanish- and Creole-speaking populations. Bilingual consumer support, financial services, and trade programs." },
+        { name: "Tampa–St. Petersburg", href: "/call-center-services-tampa", focus: "Financial services, healthcare, and insurance operations. Policyholder servicing and patient access programs." },
+        { name: "Orlando", href: "/call-center-services-orlando", focus: "Global tourism and hospitality capital. 24/7 reservations, guest services, and event-driven surge programs." },
         { name: "Jacksonville", href: "/call-center-services-jacksonville", focus: "Insurance, logistics, and financial services hub. Claims intake and B2B support programs." },
         { name: "West Palm Beach", focus: "Wealth management, healthcare, and a large seasonal-resident base. Appointment-driven and Medicare support programs." },
         { name: "Fort Myers & Naples", focus: "Retiree-heavy Southwest Florida with healthcare and hospitality. Medicare-aware patient support and seasonal scaling." },

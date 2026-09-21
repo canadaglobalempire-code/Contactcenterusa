@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Automated Answering Service: When AI Works",
+  title: "AI Voice Agent vs Live Answering Service: How to Choose",
   description:
     "Where an automated answering service genuinely outperforms a live agent, where it loses you the job, and how to split call types between the two.",
   keywords: [
@@ -30,7 +30,7 @@ const FAQS = [
   },
   {
     q: "How much does an automated answering service cost?",
-    a: "Auto-attendant and basic IVR typically run $20-$150 per month, often bundled into a phone system you already pay for. Conversational voice AI runs $0.08-$0.35 per minute or $200-$800 per month for a small business. All of these are materially cheaper than live US-based agents at $0.85-$1.65 per minute — which is exactly why the decision should turn on outcomes rather than rate.",
+    a: "Pricing depends on call volume, hours of coverage, integrations, languages, escalation design, and whether live agents are included. A useful quote starts with your actual call mix and the outcomes that matter, not a generic published rate. Ask each provider to explain what is included, what is usage-based, and how human escalation is handled.",
   },
   {
     q: "When does automation genuinely work better than a person?",
@@ -67,7 +67,7 @@ export default function Page() {
           __html: JSON.stringify(
             buildAEOBlogPostingSchema({
               url: "https://contactcenterusa.com/blog/automated-answering-service",
-              headline: "Automated Answering Service: Where AI Works and Where It Costs You",
+              headline: "AI Voice Agent vs Live Answering Service: How to Choose",
               description:
                 "Where an automated answering service genuinely outperforms a live agent, where it loses you the job, and how to split call types between the two.",
               datePublished: "2026-08-21",

@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "QA monitoring and coaching tools designed to maintain quality across remote workforces.",
     href: "/solutions/call-monitoring-services",
   },
+  {
+    title: "Central Intake & Territory Routing for Franchise Networks",
+    desc: "US-based call center for franchise networks.",
+    href: "/industries/franchise-call-center",
+  },
+  {
+    title: "Donor Care & Fundraising Support for Nonprofits",
+    desc: "US-based call center for nonprofits and foundations.",
+    href: "/industries/nonprofit-call-center",
+  },
+  {
+    title: "Candidate Screening & Shift Coverage for Staffing Agencies",
+    desc: "US-based call center for staffing agencies and recruiters.",
+    href: "/industries/staffing-recruiting-call-center",
+  },
 ];
 
 export default function WorkFromHomeSolutionsPage() {

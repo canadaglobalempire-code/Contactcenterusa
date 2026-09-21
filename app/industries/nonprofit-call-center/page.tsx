@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Adjacent public-sector coverage for organizations delivering government-funded programs.",
     href: "/solutions/government-call-center-services",
   },
+  {
+    title: "Central Intake & Territory Routing for Franchise Networks",
+    desc: "US-based call center for franchise networks.",
+    href: "/industries/franchise-call-center",
+  },
+  {
+    title: "Bilingual & Multilingual Support for the US Market",
+    desc: "US-based bilingual Spanish call center services and multilingual BPO support.",
+    href: "/industries/spanish-call-center-services",
+  },
+  {
+    title: "Professional Call Monitoring & Quality Assurance Solutions",
+    desc: "Call monitoring and QA services with calibrated scorecards, agent coaching and compliance review across your queues.",
+    href: "/solutions/call-monitoring-services",
+  },
 ];
 
 export default function NonprofitCallCenterPage() {

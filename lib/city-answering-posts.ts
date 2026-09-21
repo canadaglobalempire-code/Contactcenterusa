@@ -428,6 +428,7 @@ const SEEDS: CitySeed[] = [
   },
   {
     slug: "answering-service-atlanta",
+    cityPage: "/call-center-services-atlanta",
     city: "Atlanta",
     state: "Georgia",
     stateAbbr: "GA",
@@ -780,6 +781,7 @@ const SEEDS: CitySeed[] = [
   },
   {
     slug: "answering-service-miami",
+    cityPage: "/call-center-services-miami",
     city: "Miami",
     state: "Florida",
     stateAbbr: "FL",
@@ -896,6 +898,7 @@ const SEEDS: CitySeed[] = [
   },
   {
     slug: "answering-service-tampa",
+    cityPage: "/call-center-services-tampa",
     city: "Tampa",
     state: "Florida",
     stateAbbr: "FL",
@@ -1012,6 +1015,7 @@ const SEEDS: CitySeed[] = [
   },
   {
     slug: "answering-service-denver",
+    cityPage: "/call-center-services-denver",
     city: "Denver",
     state: "Colorado",
     stateAbbr: "CO",
@@ -1247,6 +1251,7 @@ const SEEDS: CitySeed[] = [
   },
   {
     slug: "answering-service-las-vegas",
+    cityPage: "/call-center-services-las-vegas",
     city: "Las Vegas",
     state: "Nevada",
     stateAbbr: "NV",
@@ -1482,6 +1487,7 @@ const SEEDS: CitySeed[] = [
   },
   {
     slug: "answering-service-portland",
+    cityPage: "/call-center-services-portland",
     city: "Portland",
     state: "Oregon",
     stateAbbr: "OR",

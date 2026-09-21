@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import { AIAutomationContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
@@ -176,6 +177,11 @@ const seoContent: SEOPattern[] = [
 export default function AIAutomationPage() {
   return (
     <>
+      <ServiceSchema
+        name="AI Call Center Automation"
+        description="AI call center automation paired with US-based human agents for voice AI, intelligent routing, automated deflection, and live escalation."
+        path="/services/ai-call-center-automation"
+      />
       <AIAutomationContent />
       <SEOContentSection sections={seoContent} />
     </>

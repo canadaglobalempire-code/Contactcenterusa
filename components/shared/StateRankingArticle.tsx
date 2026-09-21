@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, ArrowRight, CheckCircle, ExternalLink } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { buildAEOBlogPostingSchema, buildItemListSchema } from "@/lib/aeo";
+import { citeSources } from "@/lib/cite-sources";
 import {
   CARD_META,
   PROVIDER_PROFILES,
@@ -52,6 +53,7 @@ function ArticleFigure({
 }
 
 export function StateRankingArticle({ slug }: { slug: string }) {
+  const cited = new Set<string>();
   const seed = stateRankingSeeds[slug];
   const post = stateRankingPosts[slug];
   const { state, abbr } = seed;
@@ -160,7 +162,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
             {/* Main content */}
             <div className="lg:col-span-2">
               {post.intro.map((p, i) => (
-                <p key={i} className={`${i === 0 ? "" : "mt-4 "}text-lg leading-relaxed text-gray-700`}>{p}</p>
+                <p key={i} className={`${i === 0 ? "" : "mt-4 "}text-lg leading-relaxed text-gray-700`}>{citeSources(p, cited)}</p>
               ))}
 
               {/* Key takeaways */}
@@ -314,7 +316,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 What Makes {state} a Distinct Contact Center Market
               </h2>
               {seed.economy.map((p, i) => (
-                <p key={i} className="mt-4 leading-relaxed text-gray-700">{p}</p>
+                <p key={i} className="mt-4 leading-relaxed text-gray-700">{citeSources(p, cited)}</p>
               ))}
 
               <ArticleFigure
@@ -355,7 +357,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
               {/* Labor market */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">{seed.labor.heading}</h2>
               {seed.labor.body.map((p, i) => (
-                <p key={i} className="mt-4 leading-relaxed text-gray-700">{p}</p>
+                <p key={i} className="mt-4 leading-relaxed text-gray-700">{citeSources(p, cited)}</p>
               ))}
               {seed.labor.bullets && (
                 <ul className="mt-4 space-y-3">
@@ -389,7 +391,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
               </p>
               <h3 className="mt-8 text-xl font-bold text-navy">{seed.regulatory.heading}</h3>
               {seed.regulatory.body.map((p, i) => (
-                <p key={i} className="mt-4 leading-relaxed text-gray-700">{p}</p>
+                <p key={i} className="mt-4 leading-relaxed text-gray-700">{citeSources(p, cited)}</p>
               ))}
 
               {/* Industries */}
@@ -397,7 +399,7 @@ export function StateRankingArticle({ slug }: { slug: string }) {
                 Top {state} Industries That Hire BPOs
               </h2>
               {seed.industryDetail.map((p, i) => (
-                <p key={i} className="mt-4 leading-relaxed text-gray-700">{p}</p>
+                <p key={i} className="mt-4 leading-relaxed text-gray-700">{citeSources(p, cited)}</p>
               ))}
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {seed.industries.map((ind, i) => (

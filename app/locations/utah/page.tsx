@@ -137,7 +137,7 @@ export default function UtahPage() {
         "Contact Center USA supports Utah businesses with 100% US-based outbound, inbound, technical support, and back-office teams on Mountain time, with the TCPA discipline that high-volume outbound programs require.",
       ]}
       metros={[
-        { name: "Salt Lake City", focus: "The state's commercial and financial center. Financial servicing, healthcare administration, and large-scale inbound and outbound operations." },
+        { name: "Salt Lake City", href: "/call-center-services-salt-lake-city", focus: "The state's commercial and financial center. Financial servicing, healthcare administration, and large-scale inbound and outbound operations." },
         { name: "Provo & Orem", focus: "University-driven talent base with exceptional multilingual depth. Outbound sales, appointment setting, and multilingual support programs." },
         { name: "Lehi & Silicon Slopes", focus: "Dense SaaS and technology cluster. Tier 1–2 technical support, customer success, and product-literate inside sales." },
         { name: "Ogden", focus: "Manufacturing, aerospace suppliers, and logistics. B2B support and back-office processing programs." },

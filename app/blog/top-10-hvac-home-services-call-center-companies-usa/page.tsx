@@ -6,7 +6,7 @@ import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 export const metadata: Metadata = {
   title: "Top 10 HVAC & Home Services Call Center Companies (2026)",
   description:
-    "The top 10 HVAC and home services call center companies for 2026 — ranked by after-hours coverage, booking rates & pricing. Compare and get a quote.",
+    "The top 10 HVAC and home services call center companies for 2026 — compared by after-hours coverage, booking workflows, and field-service integrations.",
   keywords: [
     "HVAC call center",
     "HVAC answering service",

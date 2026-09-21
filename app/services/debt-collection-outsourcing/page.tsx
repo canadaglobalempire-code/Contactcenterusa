@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Protect your collections operation with advanced fraud detection and secure data handling.",
     href: "/services/fraud-prevention-cyber-security",
   },
+  {
+    title: "Speed-to-Lead & Borrower Support for the Lending Industry",
+    desc: "US-based mortgage call center services for lenders, brokers, and servicers.",
+    href: "/industries/mortgage-call-center",
+  },
+  {
+    title: "Insurance Claims Processing",
+    desc: "How a regional insurance carrier cut claims processing time by 60% and improved customer satisfaction by 22 points with specialized call center…",
+    href: "/case-studies/insurance-claims-processing",
+  },
+  {
+    title: "CPA & Accounting Firm Answering Service",
+    desc: "US-based answering service and call center for CPA firms and accounting practices.",
+    href: "/industries/accounting-cpa-call-center",
+  },
 ];
 
 export default function DebtCollectionOutsourcingPage() {

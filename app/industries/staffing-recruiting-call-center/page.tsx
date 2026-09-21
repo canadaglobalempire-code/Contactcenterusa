@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Administrative and coordination support for branch operations.",
     href: "/solutions/office-support-services",
   },
+  {
+    title: "Central Intake & Territory Routing for Franchise Networks",
+    desc: "US-based call center for franchise networks.",
+    href: "/industries/franchise-call-center",
+  },
+  {
+    title: "Donor Care & Fundraising Support for Nonprofits",
+    desc: "US-based call center for nonprofits and foundations.",
+    href: "/industries/nonprofit-call-center",
+  },
+  {
+    title: "Bilingual & Multilingual Support for the US Market",
+    desc: "US-based bilingual Spanish call center services and multilingual BPO support.",
+    href: "/industries/spanish-call-center-services",
+  },
 ];
 
 export default function StaffingRecruitingPage() {

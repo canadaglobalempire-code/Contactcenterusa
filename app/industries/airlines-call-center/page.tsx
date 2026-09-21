@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Strategic CX programs that improve passenger satisfaction, loyalty, and lifetime value.",
     href: "/solutions/customer-experience-management",
   },
+  {
+    title: "Travel Crisis Management & Support",
+    desc: "How a travel management company handled 50,000+ rebookings during a global disruption with 96% resolution rate and 4-minute average handle time.",
+    href: "/case-studies/travel-crisis-management",
+  },
+  {
+    title: "Season Ticket & Game-Day Support for Sports Organizations",
+    desc: "US-based call center for sports teams, stadiums, and arenas.",
+    href: "/industries/sports-venue-call-center",
+  },
+  {
+    title: "Music & Entertainment Call Center",
+    desc: "US-based call center for music labels, streaming platforms, artist fan clubs, and merch brands.",
+    href: "/industries/music-entertainment-call-center",
+  },
 ];
 
 export default function AirlinesPage() {

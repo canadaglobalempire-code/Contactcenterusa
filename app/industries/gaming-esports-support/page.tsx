@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Monitored coverage on the public channels where player issues surface first.",
     href: "/solutions/social-media-customer-support",
   },
+  {
+    title: "Scaling from 50 to 400 Agents in 3 Weeks for Black Friday",
+    desc: "How a mid-size e-commerce retailer scaled from 50 to 400 agents in 3 weeks for Black Friday, achieving 98.5% CSAT during peak season.",
+    href: "/case-studies/ecommerce-holiday-scaling",
+  },
+  {
+    title: "SaaS Customer Retention Strategy",
+    desc: "How a B2B SaaS company cut churn 28% and lifted NPS from 32 to 67 with proactive US-based customer success support — the baseline, the fix, and…",
+    href: "/case-studies/saas-customer-retention",
+  },
+  {
+    title: "What Makes Contact Center USA Different",
+    desc: "Learn why teams choose Contact Center USA for US-based agents, flexible programs, clear reporting, compliance support, and scalable customer care.",
+    href: "/about/why-work-with-us",
+  },
 ];
 
 export default function GamingEsportsPage() {

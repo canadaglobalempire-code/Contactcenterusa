@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Deeper case screening and retainer follow-up for law firms with real intake volume.",
     href: "/industries/legal-intake-call-center",
   },
+  {
+    title: "Candidate Screening & Shift Coverage for Staffing Agencies",
+    desc: "US-based call center for staffing agencies and recruiters.",
+    href: "/industries/staffing-recruiting-call-center",
+  },
+  {
+    title: "Office Support Services",
+    desc: "Outsourced office support: scheduling, data entry, document handling and virtual assistant coverage from US-based staff.",
+    href: "/solutions/office-support-services",
+  },
+  {
+    title: "Professional Call Monitoring & Quality Assurance Solutions",
+    desc: "Call monitoring and QA services with calibrated scorecards, agent coaching and compliance review across your queues.",
+    href: "/solutions/call-monitoring-services",
+  },
 ];
 
 export default function VirtualReceptionistPage() {

@@ -4,9 +4,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 
 export const metadata: Metadata = {
-  title: "10 Best Appointment Setting Companies (2026 Pricing)",
+  title: "10 Best Appointment Setting Companies (2026)",
   description:
-    "Compare 10 US appointment setting companies by pricing, SDR quality, lead qualification, CRM fit, and qualified-meeting process. Updated for 2026.",
+    "Compare 10 US appointment setting companies by SDR quality, lead qualification, CRM fit, and qualified-meeting process. Updated for 2026.",
   keywords: [
     "appointment setting services",
     "B2B appointment setting companies",

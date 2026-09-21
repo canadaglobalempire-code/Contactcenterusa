@@ -5,6 +5,7 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 import { ProviderFitSelector } from "@/components/shared/ProviderFitSelector";
 import type { TrafficBlogPost, TrafficBlogSection } from "@/lib/traffic-blog-posts";
+import { citeSources } from "@/lib/cite-sources";
 
 const SITE_URL = "https://contactcenterusa.com";
 
@@ -101,6 +102,7 @@ function BlogTable({ table }: { table: NonNullable<TrafficBlogSection["table"]> 
 }
 
 export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
+  const cited = new Set<string>();
   return (
     <>
       <script
@@ -169,7 +171,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
         <div className="mx-auto grid max-w-[1200px] gap-12 px-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
           <article className="prose prose-lg max-w-none leading-relaxed text-gray-700">
             {post.intro.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+              <p key={paragraph}>{citeSources(paragraph, cited)}</p>
             ))}
 
 
@@ -180,7 +182,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
                   {section.heading}
                 </h2>
                 {section.paragraphs?.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
+                  <p key={paragraph}>{citeSources(paragraph, cited)}</p>
                 ))}
                 {section.bullets && (
                   <ul className="not-prose mt-4 space-y-3">

@@ -398,7 +398,7 @@ export default function CallCenterKPIsContent() {
                   <h3 className="text-lg font-bold text-navy mb-4">Related Articles</h3>
                   <ul className="space-y-3">
                     <li>
-                      <Link href="/blog/inbound-vs-outbound-call-centers" className="text-sm text-gray-600 hover:text-red transition-colors">
+                      <Link href="/blog/inbound-vs-outbound-call-center" className="text-sm text-gray-600 hover:text-red transition-colors">
                         Inbound vs Outbound Call Centers: Which Is Right?
                       </Link>
                     </li>

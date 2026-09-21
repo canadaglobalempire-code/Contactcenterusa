@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Full-service customer support teams that extend your office capabilities to customer-facing channels.",
     href: "/solutions/customer-service-outsourcing",
   },
+  {
+    title: "Dialer & ACD Administration",
+    desc: "Dialer and ACD administration: campaign build, list strategy, skills-based routing and pacing tuned for contact rate.",
+    href: "/solutions/dialer-acd-administration",
+  },
+  {
+    title: "Work From Home Solutions",
+    desc: "Work-from-home contact center solutions with vetted remote US agents, secure endpoints and the same QA standards as on-site.",
+    href: "/solutions/work-from-home-solutions",
+  },
+  {
+    title: "IVR Services & Interactive Voice Response Outsourcing",
+    desc: "IVR design, build and ongoing management.",
+    href: "/services/interactive-voice-response",
+  },
 ];
 
 export default function OfficeSupportServicesPage() {

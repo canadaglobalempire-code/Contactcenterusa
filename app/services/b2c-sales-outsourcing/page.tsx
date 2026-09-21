@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Full-funnel customer acquisition services that drive growth from awareness to conversion.",
     href: "/services/customer-acquisition-outsourcing",
   },
+  {
+    title: "Outsourced Sales & Service BDC for Auto Dealerships",
+    desc: "US-based BDC for auto dealerships.",
+    href: "/industries/auto-dealership-bdc",
+  },
+  {
+    title: "Sales Outsourcing",
+    desc: "Outsource sales to US-based SDRs and closers.",
+    href: "/solutions/sales-outsourcing",
+  },
+  {
+    title: "Solar Lead Qualification & Appointment Setting Call Center",
+    desc: "US-based solar lead qualification and appointment setting call center.",
+    href: "/industries/solar-lead-generation-call-center",
+  },
 ];
 
 export default function B2CSalesOutsourcingPage() {

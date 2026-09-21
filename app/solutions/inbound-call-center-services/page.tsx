@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import Content from "./Content";
 
 export const metadata: Metadata = {
@@ -19,5 +20,14 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Content />;
+  return (
+    <>
+      <ServiceSchema
+        name="Inbound Call Center Services"
+        description="Inbound call center services with 24/7 US-based agents for overflow, after-hours, and full-time coverage across phone, chat, and email."
+        path="/solutions/inbound-call-center-services"
+      />
+      <Content />
+    </>
+  );
 }

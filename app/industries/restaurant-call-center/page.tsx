@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Front-desk style coverage for single-location independents.",
     href: "/industries/virtual-receptionist-services",
   },
+  {
+    title: "Membership Sales & Retention for Fitness Businesses",
+    desc: "US-based call center for gyms, studios, and fitness franchises.",
+    href: "/industries/fitness-gym-call-center",
+  },
+  {
+    title: "24/7 First Call Coverage for Funeral Homes",
+    desc: "US-based 24/7 answering service for funeral homes and cremation providers.",
+    href: "/industries/funeral-home-answering-service",
+  },
+  {
+    title: "Consultation Booking & Retention for Aesthetic Practices",
+    desc: "US-based call center for med spas and aesthetic practices.",
+    href: "/industries/med-spa-aesthetics-call-center",
+  },
 ];
 
 export default function RestaurantCallCenterPage() {

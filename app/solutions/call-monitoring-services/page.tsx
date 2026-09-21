@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Tiered technical support with monitored quality and compliance across every interaction.",
     href: "/solutions/technical-support-outsourcing",
   },
+  {
+    title: "IVR Services & Interactive Voice Response Outsourcing",
+    desc: "IVR design, build and ongoing management.",
+    href: "/services/interactive-voice-response",
+  },
+  {
+    title: "Donor Care & Fundraising Support for Nonprofits",
+    desc: "US-based call center for nonprofits and foundations.",
+    href: "/industries/nonprofit-call-center",
+  },
+  {
+    title: "Candidate Screening & Shift Coverage for Staffing Agencies",
+    desc: "US-based call center for staffing agencies and recruiters.",
+    href: "/industries/staffing-recruiting-call-center",
+  },
 ];
 
 export default function CallMonitoringServicesPage() {

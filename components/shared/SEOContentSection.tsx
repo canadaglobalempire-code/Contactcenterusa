@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, X } from "lucide-react";
+import { citeSources } from "@/lib/cite-sources";
 import {
   HeartPulse,
   Landmark,
@@ -148,6 +149,7 @@ function renderHeading(heading: string, accent?: string) {
    ============================================================ */
 
 function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
+  const cited = new Set<string>();
   const paras = Array.isArray(data.body) ? data.body : [data.body];
   return (
     <section className="border-y border-gray-100 bg-white py-14 lg:py-16">
@@ -169,7 +171,7 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
               </h2>
               <div className="mt-4 max-w-[620px] space-y-3 text-[15.5px] leading-[1.7] text-gray-700">
                 {paras.map((p, i) => (
-                  <p key={i}>{p}</p>
+                  <p key={i}>{citeSources(p, cited)}</p>
                 ))}
               </div>
             </div>
@@ -400,6 +402,7 @@ function FeaturedIndustriesBlock({ data }: { data: FeaturedIndustriesPattern }) 
    ============================================================ */
 
 function SplitImageBlock({ data }: { data: SplitImagePattern }) {
+  const cited = new Set<string>();
   const imageLeft = data.imagePosition !== "right";
   const paras = Array.isArray(data.body) ? data.body : [data.body];
   return (
@@ -443,7 +446,7 @@ function SplitImageBlock({ data }: { data: SplitImagePattern }) {
               </h2>
               <div className="mt-6 space-y-4 text-[16px] leading-[1.78] text-gray-700">
                 {paras.map((p, i) => (
-                  <p key={i}>{p}</p>
+                  <p key={i}>{citeSources(p, cited)}</p>
                 ))}
               </div>
               {data.bullets && (

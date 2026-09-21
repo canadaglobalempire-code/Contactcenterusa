@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "End-to-end CX programs that turn community insights into measurable business improvements.",
     href: "/solutions/customer-experience-management",
   },
+  {
+    title: "SaaS Customer Retention Strategy",
+    desc: "How a B2B SaaS company cut churn 28% and lifted NPS from 32 to 67 with proactive US-based customer success support — the baseline, the fix, and…",
+    href: "/case-studies/saas-customer-retention",
+  },
+  {
+    title: "Player Support & Trust and Safety for the Gaming Industry",
+    desc: "US-based player support for game studios and esports platforms.",
+    href: "/industries/gaming-esports-support",
+  },
+  {
+    title: "Scaling from 50 to 400 Agents in 3 Weeks for Black Friday",
+    desc: "How a mid-size e-commerce retailer scaled from 50 to 400 agents in 3 weeks for Black Friday, achieving 98.5% CSAT during peak season.",
+    href: "/case-studies/ecommerce-holiday-scaling",
+  },
 ];
 
 export default function ContentModerationServicesPage() {

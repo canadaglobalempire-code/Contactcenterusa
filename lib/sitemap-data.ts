@@ -24,6 +24,12 @@ import { dirname, join, relative, sep } from "node:path";
 
 export const BASE_URL = "https://contactcenterusa.com";
 
+// Redirected URLs must never be advertised in a sitemap. This keeps Google
+// from wasting crawl budget on a duplicate route we have intentionally merged.
+const EXCLUDED_ROUTES = new Set([
+  "/blog/inbound-vs-outbound-call-centers",
+]);
+
 export type SitemapEntry = {
   loc: string;
   lastmod?: string;
@@ -199,6 +205,7 @@ function buildAll(): Map<string, SitemapEntry[]> {
   for (const section of SECTIONS) grouped.set(section.file, []);
 
   for (const { route, dir } of collectPageRoutes(appDir)) {
+    if (EXCLUDED_ROUTES.has(route)) continue;
     const blob = readRouteSource(dir);
     // Data-driven blog routes carry their date in lib/, not in the route dir.
     const slug = route.startsWith("/blog/") ? route.slice("/blog/".length) : null;

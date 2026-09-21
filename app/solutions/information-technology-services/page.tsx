@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Complete remote agent infrastructure including secure connectivity, monitoring, and support.",
     href: "/solutions/work-from-home-solutions",
   },
+  {
+    title: "Making Your Customer Service Experience Soar",
+    desc: "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.",
+    href: "/about/company-history",
+  },
+  {
+    title: "Not Just a Call CenterYour Strategic Partner",
+    desc: "Where our 25+ years of US-based contact center experience runs deepest — the sectors we staff, the compliance each demands, and the teams behind them.",
+    href: "/about/industries",
+  },
+  {
+    title: "What Makes Us Different",
+    desc: "See why businesses choose Contact Center USA for US-based agents, flexible programs, clear reporting, and reliable outsourced customer support.",
+    href: "/why-us",
+  },
 ];
 
 export default function InformationTechnologyServicesPage() {

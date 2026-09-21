@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Front-desk coverage for single-provider studios and small clinics.",
     href: "/industries/virtual-receptionist-services",
   },
+  {
+    title: "Compliant Call Center Solutions for Pharmaceutical Companies",
+    desc: "US-based pharmaceuticals call center support for customer care, inbound calls, outbound outreach, and back office workflows.",
+    href: "/industries/pharmaceuticals-call-center",
+  },
+  {
+    title: "Healthcare Revenue Cycle Management",
+    desc: "How a mid-size hospital network reduced claim denial rates by 34% and accelerated patient billing with our HIPAA-compliant call center solution.",
+    href: "/case-studies/healthcare-revenue-cycle-management",
+  },
+  {
+    title: "24/7 First Call Coverage for Funeral Homes",
+    desc: "US-based 24/7 answering service for funeral homes and cremation providers.",
+    href: "/industries/funeral-home-answering-service",
+  },
 ];
 
 export default function MedSpaPage() {

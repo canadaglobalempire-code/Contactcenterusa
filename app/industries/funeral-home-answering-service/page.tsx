@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Additional language coverage for firms serving diverse communities.",
     href: "/solutions/multilingual-call-center-services",
   },
+  {
+    title: "Patient Scheduling & Recall for Dental Practices",
+    desc: "US-based dental call center for practices and DSOs.",
+    href: "/industries/dental-call-center",
+  },
+  {
+    title: "Urgent Care & Medical Clinic Call Center",
+    desc: "HIPAA-compliant urgent care and medical clinic call center services.",
+    href: "/industries/urgent-care-call-center-services",
+  },
+  {
+    title: "Membership Sales & Retention for Fitness Businesses",
+    desc: "US-based call center for gyms, studios, and fitness franchises.",
+    href: "/industries/fitness-gym-call-center",
+  },
 ];
 
 export default function FuneralHomePage() {

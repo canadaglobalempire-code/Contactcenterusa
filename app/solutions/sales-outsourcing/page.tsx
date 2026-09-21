@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "CX strategy that supports customer retention and expansion revenue.",
     href: "/solutions/customer-experience-management",
   },
+  {
+    title: "B2C Sales Outsourcing BPO in USA",
+    desc: "Outsource B2C sales to US-based agents.",
+    href: "/services/b2c-sales-outsourcing",
+  },
+  {
+    title: "Outsourced Sales & Service BDC for Auto Dealerships",
+    desc: "US-based BDC for auto dealerships.",
+    href: "/industries/auto-dealership-bdc",
+  },
+  {
+    title: "Solar Lead Qualification & Appointment Setting Call Center",
+    desc: "US-based solar lead qualification and appointment setting call center.",
+    href: "/industries/solar-lead-generation-call-center",
+  },
 ];
 
 export default function SalesOutsourcingPage() {

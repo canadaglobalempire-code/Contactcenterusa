@@ -16,7 +16,7 @@ export default function Content() {
               AI &amp; AUTOMATION
             </span>
             <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              AI Call Center vs Human Agents: Cost, Quality &amp; What to Outsource (2026)
+              AI Call Center vs Human Agents: Escalation, Quality Controls &amp; Agent Assist
             </h1>
             <div className="mt-4 flex items-center gap-4 text-sm text-white/50">
               <span className="flex items-center gap-1"><Calendar className="h-4 w-4" /> April 2026</span>
@@ -38,7 +38,7 @@ export default function Content() {
                   In 2026, <strong>AI voice agents</strong> are finally ready for real production work. The hard question isn&apos;t &quot;can AI do this?&quot; — it&apos;s &quot;<em>should</em> AI do this, and where should humans stay in the loop?&quot; This guide gives you the honest answer: which calls to automate, which to keep human, and what the blended economics actually look like.
                 </p>
                 <p>
-                  We&apos;ll cover cost per call, CX quality benchmarks, deflection rates top programs are hitting, and the specific categories of call where AI wins, breaks even, or loses to humans.
+                  We&apos;ll cover the quality controls, escalation rules, and specific call categories where AI wins, breaks even, or loses to humans.
                 </p>
 
                 <h2 className="text-2xl font-bold text-navy mt-12 mb-4">The 2026 Reality: Most Call Centers Run Blended</h2>
@@ -54,16 +54,16 @@ export default function Content() {
                   <li><strong>Net cost per resolved contact</strong> down 25–40% vs 100%-human baseline</li>
                 </ul>
 
-                <h2 className="text-2xl font-bold text-navy mt-12 mb-4">Cost Per Call: AI vs Human (Real 2026 Numbers)</h2>
-                <ul className="space-y-3 my-6">
-                  <li><strong>AI voice agent (contained):</strong> $0.08–$0.35 per call (LLM + voice + telephony). Approaches $0 at scale with self-hosted models.</li>
-                  <li><strong>AI chatbot (contained):</strong> $0.03–$0.15 per conversation.</li>
-                  <li><strong>Human agent (US):</strong> $6–$18 per call (5–12 min AHT at $24–$32/hr fully loaded).</li>
-                  <li><strong>Human agent (nearshore):</strong> $3.50–$9 per call.</li>
-                  <li><strong>Human agent (offshore):</strong> $2.50–$6 per call.</li>
-                </ul>
+                <h2 className="text-2xl font-bold text-navy mt-12 mb-4">How to Evaluate the Business Case</h2>
                 <p>
-                  So AI is roughly <strong>20–200x cheaper per call</strong> than a human — when the call is in scope. That &quot;in scope&quot; qualifier is where most AI call center programs succeed or fail.
+                  There is no honest universal AI-versus-human rate. The commercial model changes with call volume, hours of coverage,
+                  integrations, languages, compliance needs, and the share of calls that need a live person. Evaluate a program on cost
+                  per <em>resolved</em> contact, customer outcome, and the cost of a failed handoff — not on a headline unit price.
+                </p>
+                <p>
+                  Ask a provider to model your real call mix, show what is included in implementation and ongoing operations, and make
+                  the human-escalation path explicit. The most useful automation is the kind that removes routine work without pushing
+                  difficult customers into a dead end.
                 </p>
 
                 <div className="my-10 overflow-hidden rounded-2xl">
@@ -160,9 +160,9 @@ export default function Content() {
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Will AI replace call center agents?</h3>
                 <p>Not entirely, and not soon. AI will handle 40–60% of routine volume over the next 3 years, but complex, emotional, and regulated calls will stay human for the foreseeable future.</p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">How much does AI call center automation cost?</h3>
-                <p>$0.08–$0.35 per call for AI voice, plus setup and integration ($15,000–$150,000 depending on complexity). Full TCO breakdown in our <Link href="/blog/call-center-outsourcing-cost-per-hour-2026" className="text-red hover:text-red-dark font-semibold">2026 hourly rate guide</Link>.</p>
+                <p>It depends on the call mix, channels, integrations, coverage hours, languages, compliance requirements, and the amount of live-agent escalation required. A tailored assessment should show what is included, the outcomes expected, and how quality will be measured.</p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Can AI voice agents handle my specific industry?</h3>
-                <p>It depends on vocabulary, regulatory requirements, and call complexity. Straight-forward industries (e-commerce, scheduling, SMB support) deploy in weeks. Regulated/specialized industries (healthcare triage, legal intake) deploy over months with heavier guardrails.</p>
+                <p>It depends on vocabulary, regulatory requirements, and call complexity. Straightforward industries such as e-commerce, scheduling, and basic support can begin with narrow call types. Regulated or specialized workflows need heavier guardrails, testing, and governance.</p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">Do customers prefer AI or human?</h3>
                 <p>Depends on the task. For simple lookups: AI (no hold time, 24/7). For complex or emotional situations: human, every time. Modern buyers expect a blend.</p>
                 <h3 className="text-xl font-semibold text-navy mt-8 mb-3">What about accents and multilingual?</h3>

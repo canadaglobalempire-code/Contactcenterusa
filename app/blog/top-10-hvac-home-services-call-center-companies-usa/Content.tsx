@@ -23,8 +23,8 @@ const companies = [
     ],
     industries: "HVAC, plumbing, electrical, roofing, pest control, cleaning, landscaping, garage door, appliance repair",
     strengths: "100% US-based HVAC agents, true 24/7 emergency service dispatcher coverage, deep field-service platform integrations, bilingual Spanish support.",
-    weaknesses: "Premium US pricing vs. offshore answering services — offset by booked-job conversion lift.",
-    pricing: "Hourly ($22-$40 US), per-call, or per-booked-job outcome pricing",
+    weaknesses: "Best for operators that need a dedicated US-based service team and mature dispatch workflows.",
+    engagement: "Tailored home-services dispatch program",
     clients: "Multi-location HVAC groups, franchise plumbing brands, regional roofing contractors",
     highlight: "The #1 American HVAC call center delivering full-service home services dispatcher operations with 24/7 emergency coverage and native ServiceTitan dispatch.",
   },
@@ -48,7 +48,7 @@ const companies = [
     industries: "HVAC, plumbing, commercial roofing, facility services, commercial pest control, mechanical contractors",
     strengths: "Premium US-based SDRs, consultative tone, strong for maintenance membership and commercial HVAC campaigns.",
     weaknesses: "Outbound-focused; not a true 24/7 home services answering or emergency service dispatcher provider.",
-    pricing: "Hourly or per-engagement campaign pricing",
+    engagement: "Custom outbound campaign scope",
     clients: "Regional HVAC groups, commercial mechanical contractors, roofing wholesalers",
     highlight: "Premium American outbound HVAC call center with US-based representatives who understand maintenance membership and commercial contractor cycles.",
   },
@@ -72,7 +72,7 @@ const companies = [
     industries: "HVAC, roofing, plumbing, solar, home remodeling, pest control, home security",
     strengths: "Top-tier outbound execution, TCPA-compliant, US-based agents, strong for booked-appointment lift.",
     weaknesses: "Outbound-heavy; limited after hours HVAC dispatch or emergency service dispatcher capability.",
-    pricing: "Per-hour or per-booked-appointment outcome pricing",
+    engagement: "Custom outbound appointment program",
     clients: "Regional HVAC groups, roofing contractors, plumbing franchises, home remodelers",
     highlight: "Top-tier American outbound HVAC and home services calling with TCPA-compliant, US-based agents and booked-appointment guarantees.",
   },
@@ -96,7 +96,7 @@ const companies = [
     industries: "HVAC, plumbing, electrical, roofing, pest control, cleaning, landscaping",
     strengths: "Comprehensive omnichannel delivery, unified dispatch view, domestic-only agents, bilingual Spanish.",
     weaknesses: "Mid-tier scale; less suited for national franchise networks with 100+ locations.",
-    pricing: "Per-call or hourly pricing",
+    engagement: "Custom omnichannel coverage plan",
     clients: "Mid-market HVAC groups, plumbing franchises, regional roofing and pest control brands",
     highlight: "Comprehensive American omnichannel HVAC answering service and plumbing call center with unified dispatch view and domestic-only agents.",
   },
@@ -120,7 +120,7 @@ const companies = [
     industries: "HVAC, plumbing, roofing, pest control, cleaning, seasonal home services",
     strengths: "Fastest ramp for heat-wave and storm surges, pre-vetted US HVAC agents, flexible deployment.",
     weaknesses: "Staffing-first model — less vertically integrated for fully-managed 24/7 home services answering programs.",
-    pricing: "Staffing markup on direct agent cost",
+    engagement: "Flexible seasonal staffing plan",
     clients: "HVAC groups scaling for summer, roofing contractors in storm markets, seasonal home services brands",
     highlight: "Fastest American HVAC call center staffing — trained US-based home services dispatchers deployed in days to absorb heat-wave and storm surges.",
   },
@@ -144,7 +144,7 @@ const companies = [
     industries: "Commercial HVAC, commercial plumbing, commercial roofing, mechanical contractors, facility services",
     strengths: "Affordable US-based B2B commercial contractor sales outsourcing, purpose-built for SMBs.",
     weaknesses: "B2B-only; not for residential HVAC answering service or 24/7 home services answering.",
-    pricing: "Contingency, hourly, or per-appointment pricing",
+    engagement: "Custom commercial contractor program",
     clients: "Commercial HVAC companies, mechanical contractors, commercial roofing brands",
     highlight: "Affordable American commercial HVAC call center and B2B contractor call center services built for SMB mechanical and roofing contractors.",
   },
@@ -167,8 +167,8 @@ const companies = [
     ],
     industries: "HVAC, plumbing, electrical, roofing, pest control, cleaning, landscaping, garage door, appliance repair, handyman, water restoration",
     strengths: "25+ years of US operations, true 24/7 emergency service dispatcher coverage, overflow call handling, deep ServiceTitan/Housecall Pro/Jobber integrations, bilingual Spanish, PCI DSS certified.",
-    weaknesses: "Premium US pricing — offset by booked-job conversion and after-hours revenue capture.",
-    pricing: "Hourly ($22-$40 US), per-call ($1.50-$4), or per-booked-job outcome-based",
+    weaknesses: "Best for contractors that need US-based coverage, field-service integrations, and tailored emergency workflows.",
+    engagement: "Custom coverage and booking workflow",
     clients: "Multi-location HVAC groups, plumbing franchises, roofing contractors, pest control brands, cleaning and landscaping networks",
     highlight: "25+ years of 100% American HVAC call center and home services dispatcher operations — never offshored a single after hours HVAC dispatch or emergency service call.",
   },
@@ -192,7 +192,7 @@ const companies = [
     industries: "National HVAC franchises, enterprise plumbing brands, pest control networks, national roofing chains",
     strengths: "Enterprise scale, multi-site US redundancy, dedicated franchise-aligned teams.",
     weaknesses: "Enterprise-style processes feel rigid for small independent HVAC or plumbing shops.",
-    pricing: "Enterprise SOWs and franchise master agreements",
+    engagement: "Enterprise franchise service agreement",
     clients: "National HVAC franchises, enterprise plumbing and pest control brands, regional roofing chains",
     highlight: "Enterprise-grade American HVAC call center infrastructure with multi-site US redundancy and dedicated franchise home services dispatcher teams.",
   },
@@ -216,7 +216,7 @@ const companies = [
     industries: "Modern HVAC, plumbing, electrical, smart-home services, water treatment, solar",
     strengths: "Digital-first delivery, AI investment, US-based agents for emergency service dispatcher escalations.",
     weaknesses: "Less suited for traditional mom-and-pop contractors who prefer all-human answering.",
-    pricing: "Hourly, per-outcome, or blended AI plus agent pricing",
+    engagement: "Custom AI-assisted intake and agent coverage",
     clients: "Modern HVAC groups, digital-first plumbing brands, smart-home service companies",
     highlight: "Digital-first American HVAC call center combining US-based home services dispatchers with AI-powered intake automation and analytics.",
   },
@@ -240,7 +240,7 @@ const companies = [
     industries: "Enterprise HVAC, national plumbing networks, commercial roofing groups, facility services brands",
     strengths: "Enterprise BPO depth, consulting plus managed home services dispatcher operations.",
     weaknesses: "Enterprise-focused; not for small independent HVAC or plumbing contractors.",
-    pricing: "Enterprise SOWs, outcome-based blends",
+    engagement: "Enterprise managed-services agreement",
     clients: "Enterprise HVAC groups, national plumbing and roofing networks, large facility services brands",
     highlight: "Enterprise American home services BPO combining consulting expertise with managed onshore HVAC call center and plumbing call center operations.",
   },
@@ -322,7 +322,7 @@ export default function Top10HVACHomeServicesContent() {
                   "Overflow call handling during heat waves, cold snaps, and storm response",
                   "Bilingual English and Spanish agent coverage",
                   "US-based agent percentage and homeowner-friendly tone training",
-                  "Pricing flexibility — per-call, per-booked-job, hourly, or blended outcome-based",
+                  "A tailored operating scope built around coverage, booking workflow, and service goals",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 flex-shrink-0 text-red mt-0.5" />
@@ -376,7 +376,7 @@ export default function Top10HVACHomeServicesContent() {
                   </div>
 
                   <div className="mt-3 text-sm text-gray-600">
-                    <strong>Typical Pricing:</strong> {company.pricing}
+                    <strong>Service fit:</strong> Custom scope based on coverage hours, call mix, integrations, language needs, and workflow complexity.
                   </div>
 
                   <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -434,7 +434,7 @@ export default function Top10HVACHomeServicesContent() {
                   "Bilingual English and Spanish agents for every call — not just voicemail",
                   "Overflow call handling during heat waves, cold snaps, and hurricane storm response",
                   "Homeowner-friendly tone training and scripted-but-natural soft intake",
-                  "Transparent per-call, per-booked-job, or hourly pricing — no hidden holiday surcharges",
+                  "A clear, tailored scope for coverage, booking workflow, and seasonal demand",
                   "Real-time booked-job dashboards, call recording, and CSAT reporting",
                   "References from HVAC, plumbing, electrical, roofing, or pest control contractors similar to yours",
                 ].map((item, i) => (
@@ -473,17 +473,17 @@ export default function Top10HVACHomeServicesContent() {
                 The <strong>American HVAC call center and home services dispatcher industry</strong> is being reshaped by 24/7 homeowner expectations, native field-service platform integration, and the need for true emergency coverage during heat waves, cold snaps, and storm events. HVAC groups, plumbing franchises, electricians, roofing contractors, pest control brands, cleaning services, and landscaping operators win when they partner with a US-based <strong>HVAC answering service</strong> that delivers live after hours HVAC dispatch, books jobs directly into ServiceTitan or Housecall Pro, and serves Spanish-speaking homeowners with the same warmth as English.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American home services dispatcher practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, true 24/7 emergency service dispatcher coverage, overflow call handling for every season, deep ServiceTitan / Housecall Pro / Jobber / FieldEdge integration, bilingual Spanish agents, and flexible per-call and per-booked-job pricing. Whether you need an <strong>HVAC booking service</strong>, a <strong>plumbing call center</strong>, an <strong>electrician answering service</strong>, a <strong>roofing call center</strong>, a <strong>pest control answering service</strong>, or full <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> across every home-services trade, Contact Center USA is built for the contractors who win on the phone.
+                Global Empire Corporation tops our 2026 ranking with its full-service American home services dispatcher practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, true 24/7 emergency service dispatcher coverage, overflow call handling for every season, deep ServiceTitan / Housecall Pro / Jobber / FieldEdge integration, bilingual Spanish agents, and a tailored operating scope. Whether you need an <strong>HVAC booking service</strong>, a <strong>plumbing call center</strong>, an <strong>electrician answering service</strong>, a <strong>roofing call center</strong>, a <strong>pest control answering service</strong>, or full <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> across every home-services trade, Contact Center USA is built for the contractors who win on the phone.
               </p>
 
               {/* CTA */}
               <div className="mt-12 rounded-2xl bg-navy p-8 text-center">
                 <h3 className="text-2xl font-bold text-white">Ready to Outsource Your HVAC Answering Service &amp; Home Services Dispatcher?</h3>
                 <p className="mx-auto mt-3 max-w-lg text-white/60">
-                  Contact Center USA delivers US-based, 24/7 HVAC call center, plumbing call center, and emergency service dispatcher coverage with native ServiceTitan, Housecall Pro, and Jobber booking. Get a free HVAC booking service quote today.
+                  Contact Center USA delivers US-based, 24/7 HVAC call center, plumbing call center, and emergency service dispatcher coverage with native ServiceTitan, Housecall Pro, and Jobber booking. Tell us your workflow and coverage needs for a tailored service plan.
                 </p>
                 <Link href="/contact" className="mt-6 inline-flex items-center gap-2 rounded-lg bg-red px-8 py-4 text-[15px] font-semibold text-white hover:bg-red-dark">
-                  Get a Free HVAC Call Center Quote <ArrowRight className="h-4 w-4" />
+                  Request a Tailored Service Plan <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
 
@@ -491,7 +491,7 @@ export default function Top10HVACHomeServicesContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Frequently Asked Questions</h2>
 
               {[
-                { q: "How much does an HVAC answering service or home services dispatcher cost?", a: "US-based HVAC call center and home services dispatcher pricing typically ranges from $0.95 to $2.75 per minute for shared-agent answering, $1.50-$4 per call for structured HVAC booking service programs, and $22-$40 per agent-hour for dedicated plumbing call center, roofing call center, or pest control answering service teams. Per-booked-job outcome pricing ($8-$25 per confirmed appointment) is increasingly popular for contractors who only want to pay for booked revenue. Offshore HVAC answering service pricing is lower ($8-$15 per hour) but typically costs contractors far more in lost booked jobs and damaged CSAT." },
+                { q: "What affects the scope of an HVAC answering service or home services dispatcher?", a: "The right operating plan depends on the trades you cover, your after-hours and weekend requirements, expected call volume, emergency-routing rules, bilingual needs, field-service integrations, booking workflow, and whether the team handles overflow or every inbound call. Contact Center USA scopes each program around those requirements instead of offering a one-size-fits-all package." },
                 { q: "How does after hours HVAC dispatch and 24/7 home services answering actually work?", a: "A true 24/7 emergency service dispatcher operation keeps US-based agents staffed overnight, on weekends, and on every holiday. When a homeowner calls at 2 a.m. with no heat, no cooling, a burst pipe, or a roof leak, the agent answers live within 20 seconds, qualifies the emergency, confirms service area, and either dispatches the on-call technician immediately via ServiceTitan / Housecall Pro / Jobber, or books the job for the earliest available slot — all while the homeowner is still on the line. Top providers also handle overflow call handling during heat waves and storm events, scaling capacity 2-4x within 30 days." },
                 { q: "Does the HVAC call center integrate with ServiceTitan, Housecall Pro, Jobber, or FieldEdge?", a: "Yes — a modern home services dispatcher must integrate natively with the contractor's field-service platform. Contact Center USA (#7), Global Empire Corporation (#1), and Customer Communications Corp (#4) all offer live, two-way integration with ServiceTitan, Housecall Pro, Jobber, FieldEdge, and Service Fusion. Jobs are booked directly into the technician schedule with customer history, service-area qualification, and membership status pulled in real time — so there is no email handoff, no duplicate data entry, and no dispatch lag." },
                 { q: "How does a plumbing call center handle after-hours and burst-pipe emergencies?", a: "A dedicated plumbing call center routes every after-hours call through an emergency service dispatcher workflow that classifies burst pipes, no-water, sewage backup, water-heater failure, and gas-leak risk within the first 60 seconds. US-based agents confirm the homeowner's address, qualify service area by ZIP code, dispatch the on-call technician directly in the plumber's field-service platform (ServiceTitan, Housecall Pro, or Jobber), and stay on the line until the homeowner has a confirmed ETA. For plumbing franchises, after hours HVAC dispatch and plumbing dispatch share the same 24/7 infrastructure." },

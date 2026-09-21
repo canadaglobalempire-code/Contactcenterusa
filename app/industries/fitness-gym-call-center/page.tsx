@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Recovery on genuinely delinquent membership balances after save attempts.",
     href: "/industries/debt-collection-call-center",
   },
+  {
+    title: "Consultation Booking & Retention for Aesthetic Practices",
+    desc: "US-based call center for med spas and aesthetic practices.",
+    href: "/industries/med-spa-aesthetics-call-center",
+  },
+  {
+    title: "Reservations & Catering Coverage for Restaurants",
+    desc: "US-based call center for restaurants and multi-unit groups.",
+    href: "/industries/restaurant-call-center",
+  },
+  {
+    title: "Appointment & Emergency Coverage for Veterinary Practices",
+    desc: "US-based veterinary call center for clinics and animal hospitals.",
+    href: "/industries/veterinary-call-center",
+  },
 ];
 
 export default function FitnessGymPage() {

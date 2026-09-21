@@ -136,7 +136,7 @@ export default function NevadaPage() {
         "Contact Center USA supports Nevada businesses with 100% US-based teams providing true 24/7 coverage, elastic surge capacity for convention and event peaks, and multilingual support for international guest volume.",
       ]}
       metros={[
-        { name: "Las Vegas", focus: "Hospitality, gaming, entertainment, and conventions. Round-the-clock reservations, guest services, and service recovery programs." },
+        { name: "Las Vegas", href: "/call-center-services-las-vegas", focus: "Hospitality, gaming, entertainment, and conventions. Round-the-clock reservations, guest services, and service recovery programs." },
         { name: "Reno & Sparks", focus: "Logistics and distribution corridor serving West Coast markets. B2B order management and supply chain support." },
         { name: "Henderson", focus: "Healthcare, financial services, and a large residential base. Consumer support and appointment-driven programs." },
         { name: "North Las Vegas", focus: "Manufacturing, warehousing, and distribution operations supporting the wider Las Vegas Valley." },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
@@ -174,5 +175,14 @@ const seoContent: SEOPattern[] = [
 ];
 
 export default function Page() {
-  return <Content seoContent={seoContent} />;
+  return (
+    <>
+      <ServiceSchema
+        name="Customer Service Outsourcing"
+        description="US-based customer service outsourcing with omnichannel coverage, flexible scaling, and no offshore routing."
+        path="/solutions/customer-service-outsourcing"
+      />
+      <Content seoContent={seoContent} />
+    </>
+  );
 }

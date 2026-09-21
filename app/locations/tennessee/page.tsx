@@ -135,7 +135,7 @@ export default function TennesseePage() {
         "Contact Center USA supports Tennessee businesses with 100% US-based inbound, outbound, and back-office teams on Central time, with the documented HIPAA program that the state's healthcare sector requires.",
       ]}
       metros={[
-        { name: "Nashville", focus: "A national healthcare management center. Patient access, insurance verification, revenue cycle support, and provider-group intake programs." },
+        { name: "Nashville", href: "/call-center-services-nashville", focus: "A national healthcare management center. Patient access, insurance verification, revenue cycle support, and provider-group intake programs." },
         { name: "Memphis", focus: "Global air-cargo and logistics hub. Overnight exception handling, shipment tracking, and B2B supply chain support." },
         { name: "Knoxville", focus: "Manufacturing, energy, and university-driven services. B2B support and technical help desk programs." },
         { name: "Chattanooga", focus: "Logistics, insurance, and a growing technology base supported by the city's fiber infrastructure." },

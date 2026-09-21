@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import Content from "./Content";
 
 export const metadata: Metadata = {
@@ -27,5 +28,14 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <Content />;
+  return (
+    <>
+      <ServiceSchema
+        name="Lead Generation and Appointment Setting"
+        description="US-based B2B lead generation and appointment setting with qualified meetings booked directly onto sales calendars."
+        path="/solutions/lead-generation-appointment-setting"
+      />
+      <Content />
+    </>
+  );
 }

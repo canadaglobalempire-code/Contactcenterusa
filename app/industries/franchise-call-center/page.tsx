@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Outbound appointment setting delivered consistently across every territory.",
     href: "/solutions/lead-generation-appointment-setting",
   },
+  {
+    title: "Donor Care & Fundraising Support for Nonprofits",
+    desc: "US-based call center for nonprofits and foundations.",
+    href: "/industries/nonprofit-call-center",
+  },
+  {
+    title: "Candidate Screening & Shift Coverage for Staffing Agencies",
+    desc: "US-based call center for staffing agencies and recruiters.",
+    href: "/industries/staffing-recruiting-call-center",
+  },
+  {
+    title: "Office Support Services",
+    desc: "Outsourced office support: scheduling, data entry, document handling and virtual assistant coverage from US-based staff.",
+    href: "/solutions/office-support-services",
+  },
 ];
 
 export default function FranchiseCallCenterPage() {

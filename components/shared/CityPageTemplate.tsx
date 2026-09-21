@@ -25,6 +25,7 @@ import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { citeSources } from "@/lib/cite-sources";
 
 interface CityPageTemplateProps {
   city: string;
@@ -132,6 +133,7 @@ export function CityPageTemplate({
   city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent, statePage, answeringPost,
   faqs: faqsProp,
 }: CityPageTemplateProps) {
+  const cited = new Set<string>();
   const testimonial = testimonials[city];
   const faqs = faqsProp && faqsProp.length ? faqsProp : getFAQs(city, state);
 
@@ -270,8 +272,8 @@ export function CityPageTemplate({
               <h2 className="mt-5 text-3xl font-bold leading-[1.15] text-navy sm:text-4xl">
                 Call Center Outsourcing for <span className="text-red">{city}</span> Companies
               </h2>
-              <p className="mt-6 text-[16px] leading-relaxed text-gray-700">{description}</p>
-              <p className="mt-4 text-[16px] leading-relaxed text-gray-700">{businessLandscape}</p>
+              <p className="mt-6 text-[16px] leading-relaxed text-gray-700">{citeSources(description, cited)}</p>
+              <p className="mt-4 text-[16px] leading-relaxed text-gray-700">{citeSources(businessLandscape, cited)}</p>
 
               <div className="mt-8 grid grid-cols-2 gap-4">
                 <div className="rounded-xl bg-gray-50 p-4 text-center">

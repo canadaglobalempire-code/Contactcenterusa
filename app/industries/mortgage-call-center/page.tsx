@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Compliant recovery and payment arrangement calling for delinquent accounts.",
     href: "/services/debt-collection-outsourcing",
   },
+  {
+    title: "Insurance Claims Processing",
+    desc: "How a regional insurance carrier cut claims processing time by 60% and improved customer satisfaction by 22 points with specialized call center…",
+    href: "/case-studies/insurance-claims-processing",
+  },
+  {
+    title: "CPA & Accounting Firm Answering Service",
+    desc: "US-based answering service and call center for CPA firms and accounting practices.",
+    href: "/industries/accounting-cpa-call-center",
+  },
+  {
+    title: "Not Just a Call CenterYour Strategic Partner",
+    desc: "Where our 25+ years of US-based contact center experience runs deepest — the sectors we staff, the compliance each demands, and the teams behind them.",
+    href: "/about/industries",
+  },
 ];
 
 export default function MortgageCallCenterPage() {

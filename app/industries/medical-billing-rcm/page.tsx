@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Payment posting, reconciliation, and claims administration behind the calls.",
     href: "/solutions/back-office-outsourcing",
   },
+  {
+    title: "Consultation Booking & Retention for Aesthetic Practices",
+    desc: "US-based call center for med spas and aesthetic practices.",
+    href: "/industries/med-spa-aesthetics-call-center",
+  },
+  {
+    title: "Compliant Call Center Solutions for Pharmaceutical Companies",
+    desc: "US-based pharmaceuticals call center support for customer care, inbound calls, outbound outreach, and back office workflows.",
+    href: "/industries/pharmaceuticals-call-center",
+  },
+  {
+    title: "Appointment & Emergency Coverage for Veterinary Practices",
+    desc: "US-based veterinary call center for clinics and animal hospitals.",
+    href: "/industries/veterinary-call-center",
+  },
 ];
 
 export default function MedicalBillingRcmPage() {

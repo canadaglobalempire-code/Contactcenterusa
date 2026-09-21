@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
@@ -174,5 +175,14 @@ const seoContent: SEOPattern[] = [
 ];
 
 export default function Page() {
-  return <Content seoContent={seoContent} />;
+  return (
+    <>
+      <ServiceSchema
+        name="Outbound Call Center Services"
+        description="US-based outbound calling teams for lead follow-up, appointment setting, surveys, win-back campaigns, and compliant customer outreach."
+        path="/solutions/outbound-call-center-services"
+      />
+      <Content seoContent={seoContent} />
+    </>
+  );
 }

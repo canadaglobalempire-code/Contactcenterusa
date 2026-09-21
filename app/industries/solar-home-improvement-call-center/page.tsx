@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "The outbound engine behind reactivation and unsold estimate campaigns.",
     href: "/solutions/outbound-call-center-services",
   },
+  {
+    title: "Roofing Contractor Call Center & Answering Service",
+    desc: "US-based roofing contractor call center and answering service.",
+    href: "/industries/roofing-call-center-services",
+  },
+  {
+    title: "Plumbing Answering Service & Call Center",
+    desc: "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch.",
+    href: "/industries/plumbing-call-center-services",
+  },
+  {
+    title: "Electrical Contractor Call Center & 24/7 Dispatch",
+    desc: "24/7 US-based electrical contractor call center and answering service.",
+    href: "/industries/electrical-contractor-call-center",
+  },
 ];
 
 export default function SolarHomeImprovementPage() {

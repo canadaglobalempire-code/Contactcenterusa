@@ -884,7 +884,7 @@ const blogPosts = [
     category: "Best Practices",
     readTime: "10 min read",
     image: "/images/hd-office-team.jpg",
-    href: "/blog/inbound-vs-outbound-call-centers",
+    href: "/blog/inbound-vs-outbound-call-center",
   },
   {
     title: "Top 10 KPIs Every Outsourced Call Center Should Track",
@@ -993,6 +993,132 @@ const blogPosts = [
     readTime: "15 min read",
     image: "/images/cc-management.jpg",
     href: "/blog/nearshore-call-center-outsourcing",
+  },
+  {
+    title: "After-Hours Call Center Best Practices (2026)",
+    excerpt:
+      "Best practices for after-hours call center coverage. Learn how to set up on-call escalation trees, emergency triage scripts, and 24/7 SLA standards.",
+    category: "Best Practices",
+    readTime: "8 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/after-hours-call-center-best-practices",
+  },
+  {
+    title: "Top 6 AnswerConnect Alternatives & Competitors (2026)",
+    excerpt:
+      "Looking for AnswerConnect alternatives? Compare US-based live answering services, dedicated agent pods, software integrations, and pricing plans.",
+    category: "Competitor Comparison",
+    readTime: "9 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/answerconnect-alternatives",
+  },
+  {
+    title: "Call Center SLA Template & Best Practices (2026 Benchmarks)",
+    excerpt:
+      "Complete guide to Service Level Agreements (SLAs) for call center outsourcing. Learn standard benchmarks for ASA, FCR, abandonment rate, and QA scoring.",
+    category: "Best Practices",
+    readTime: "9 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/call-center-sla-best-practices",
+  },
+  {
+    title: "Ecommerce Call Center Outsourcing Guide (2026)",
+    excerpt:
+      "Learn how ecommerce call center outsourcing works for Shopify, DTC, retail, returns, live chat, order support, peak season scaling, and customer service.",
+    category: "Buyer's Guide",
+    readTime: "6 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/ecommerce-call-center-outsourcing-guide",
+  },
+  {
+    title: "Healthcare BPO Services Guide (2026)",
+    excerpt:
+      "Guide to healthcare BPO services for patient support, scheduling, call centers, payer support, HIPAA workflows, vendor selection, pricing, and compliance.",
+    category: "Buyer's Guide",
+    readTime: "6 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/healthcare-bpo-services-guide",
+  },
+  {
+    title: "Home Services Call Center Outsourcing Guide (2026)",
+    excerpt:
+      "Guide to home services call center outsourcing for HVAC, plumbing, electrical, roofing, restoration, emergency dispatch, appointment booking, and after-hours.",
+    category: "Buyer's Guide",
+    readTime: "6 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/home-services-call-center-outsourcing-guide",
+  },
+  {
+    title: "Answering Service Cost Per Month (2026 Guide)",
+    excerpt:
+      "Complete 2026 pricing guide for answering services. Compare per-minute, per-call, and dedicated agent costs, hidden fees, and ROI calculations.",
+    category: "Pricing Guide",
+    readTime: "9 min read",
+    image: "/images/cc-agent-monitor.jpg",
+    href: "/blog/how-much-does-an-answering-service-cost-per-month",
+  },
+  {
+    title: "How to Switch Call Center Providers: 7 Steps",
+    excerpt:
+      "Step-by-step guide to switching call center outsourcing vendors. Learn how to migrate telephony, audit scripts, train agents, and ensure zero downtime.",
+    category: "Buyer's Guide",
+    readTime: "10 min read",
+    image: "/images/cc-management.jpg",
+    href: "/blog/how-to-switch-call-center-providers",
+  },
+  {
+    title: "Insurance BPO Services Guide (2026)",
+    excerpt:
+      "Guide to insurance BPO services for carriers, agencies, MGAs, TPAs, policyholder support, claims intake, FNOL, renewals, compliance, and back-office workflows.",
+    category: "Buyer's Guide",
+    readTime: "6 min read",
+    image: "/images/cc-agent-focus.jpg",
+    href: "/blog/insurance-bpo-services-guide",
+  },
+  {
+    title: "HIPAA Medical Answering Service Requirements & BAA Checklist",
+    excerpt:
+      "Essential HIPAA compliance requirements for medical answering services. Learn BAA obligations, PHI encryption standards, and triage security rules.",
+    category: "Healthcare Compliance",
+    readTime: "9 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/medical-answering-service-hipaa-requirements",
+  },
+  {
+    title: "Top 5 Moneypenny Alternatives & Competitors (2026)",
+    excerpt:
+      "Looking for Moneypenny alternatives? Compare top corporate virtual receptionist services, dedicated agent pods, 24/7 coverage, and pricing models.",
+    category: "Competitor Comparison",
+    readTime: "8 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/moneypenny-alternatives",
+  },
+  {
+    title: "Top 6 PATLive Alternatives & Competitors (2026 Comparison)",
+    excerpt:
+      "Comparing PATLive alternatives? Compare US-based live answering services, dedicated agent pods, software integrations, and per-minute vs dedicated pricing.",
+    category: "Competitor Comparison",
+    readTime: "9 min read",
+    image: "/images/cc-woman-typing.jpg",
+    href: "/blog/patlive-alternatives",
+  },
+  {
+    title: "Top 7 Ruby Receptionists Alternatives & Competitors (2026)",
+    excerpt:
+      "Comparing Ruby Receptionists alternatives? Compare pricing, per-minute billing vs dedicated agents, 24/7 availability, and call center scaling options.",
+    category: "Competitor Comparison",
+    readTime: "8 min read",
+    image: "/images/cc-agent-headset.jpg",
+    href: "/blog/ruby-receptionists-alternatives",
+  },
+  {
+    title: "US-Based Answering Service Guide (2026)",
+    excerpt:
+      "Compare US-based answering service options for small business calls, after-hours coverage, overflow, appointment booking, bilingual support, and pricing.",
+    category: "Buyer's Guide",
+    readTime: "6 min read",
+    image: "/images/cc-agent-smile.jpg",
+    href: "/blog/us-based-answering-service",
   },
 ];
 

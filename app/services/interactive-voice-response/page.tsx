@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Enterprise contact center platforms that power IVR, routing, analytics, and omnichannel capabilities.",
     href: "/services/contact-center-software-solutions",
   },
+  {
+    title: "Dialer & ACD Administration",
+    desc: "Dialer and ACD administration: campaign build, list strategy, skills-based routing and pacing tuned for contact rate.",
+    href: "/solutions/dialer-acd-administration",
+  },
+  {
+    title: "Work From Home Solutions",
+    desc: "Work-from-home contact center solutions with vetted remote US agents, secure endpoints and the same QA standards as on-site.",
+    href: "/solutions/work-from-home-solutions",
+  },
+  {
+    title: "Central Intake & Territory Routing for Franchise Networks",
+    desc: "US-based call center for franchise networks.",
+    href: "/industries/franchise-call-center",
+  },
 ];
 
 export default function InteractiveVoiceResponsePage() {

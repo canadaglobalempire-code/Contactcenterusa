@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Serve diverse patient populations with support in English, Spanish, and 200+ languages.",
     href: "/solutions/multilingual-call-center-services",
   },
+  {
+    title: "Patient Scheduling & Recall for Dental Practices",
+    desc: "US-based dental call center for practices and DSOs.",
+    href: "/industries/dental-call-center",
+  },
+  {
+    title: "Urgent Care & Medical Clinic Call Center",
+    desc: "HIPAA-compliant urgent care and medical clinic call center services.",
+    href: "/industries/urgent-care-call-center-services",
+  },
+  {
+    title: "Healthcare Revenue Cycle Management",
+    desc: "How a mid-size hospital network reduced claim denial rates by 34% and accelerated patient billing with our HIPAA-compliant call center solution.",
+    href: "/case-studies/healthcare-revenue-cycle-management",
+  },
 ];
 
 export default function PharmaceuticalsPage() {

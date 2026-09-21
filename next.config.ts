@@ -50,6 +50,135 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Preserve the value of relevant URLs from the pre-Next.js site. These
+      // were surfaced in Search Console as 404s after the migration; each maps
+      // to its closest current, intent-equivalent page. Do not send obsolete
+      // WordPress feeds, categories, tags, or unrelated URLs to the homepage.
+      {
+        source: "/home/",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/blog/inbound-vs-outbound-call-centers",
+        destination: "/blog/inbound-vs-outbound-call-center",
+        permanent: true,
+      },
+      {
+        source: "/solutions/outbound-services/",
+        destination: "/solutions/outbound-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/services/outbound-sales-outsourcing",
+        destination: "/solutions/outbound-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/services/outbound-call-center-services",
+        destination: "/solutions/outbound-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/services/outbound-telemarketing",
+        destination: "/services/telemarketing-services",
+        permanent: true,
+      },
+      {
+        source: "/services/after-hours",
+        destination: "/solutions/inbound-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/solutions/inbound-services/",
+        destination: "/solutions/inbound-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/solutions/lead-generation/",
+        destination: "/solutions/lead-generation-appointment-setting",
+        permanent: true,
+      },
+      {
+        source: "/services/lead-generation-services",
+        destination: "/solutions/lead-generation-appointment-setting",
+        permanent: true,
+      },
+      {
+        source: "/solutions/technical-support/",
+        destination: "/solutions/technical-support-outsourcing",
+        permanent: true,
+      },
+      {
+        source: "/services/healthcare-call-center-services",
+        destination: "/industries/healthcare-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/services/debt-collection-bpo",
+        destination: "/services/debt-collection-outsourcing",
+        permanent: true,
+      },
+      {
+        source: "/solutions/financial-solutions/",
+        destination: "/solutions/financial-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/solutions/interactive-voice-response/",
+        destination: "/services/interactive-voice-response",
+        permanent: true,
+      },
+      {
+        source: "/services/omnichannel-solutions/",
+        destination: "/services/omnichannel-contact-center-solutions",
+        permanent: true,
+      },
+      {
+        source: "/services/work-from-home-solutions",
+        destination: "/solutions/work-from-home-solutions",
+        permanent: true,
+      },
+      {
+        source: "/services/social-customer-care",
+        destination: "/solutions/social-customer-care",
+        permanent: true,
+      },
+      {
+        source: "/services/contact-center-software/",
+        destination: "/services/contact-center-software-solutions",
+        permanent: true,
+      },
+      {
+        source: "/services/cx-analytics/",
+        destination: "/services/customer-experience-analytics",
+        permanent: true,
+      },
+      {
+        source: "/services/digital-and-cx-services/",
+        destination: "/services/digital-customer-experience-services",
+        permanent: true,
+      },
+      {
+        source: "/solutions/sales-development-outsourcing",
+        destination: "/solutions/sales-outsourcing",
+        permanent: true,
+      },
+      {
+        source: "/solutions/government-services/",
+        destination: "/solutions/government-call-center-services",
+        permanent: true,
+      },
+      {
+        source: "/industries/government",
+        destination: "/industries/government-call-center",
+        permanent: true,
+      },
+      {
+        source: "/services/email-support-services",
+        destination: "/services/digital-customer-experience-services",
+        permanent: true,
+      },
       {
         source: "/services/fraud-prevention-and-cyber-security",
         destination: "/services/fraud-prevention-cyber-security",

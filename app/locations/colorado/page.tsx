@@ -135,7 +135,7 @@ export default function ColoradoPage() {
         "Contact Center USA supports Colorado businesses with 100% US-based inbound, outbound, technical support, and back-office teams on Mountain time, with product-specific training and elastic capacity for the state's seasonal cycles.",
       ]}
       metros={[
-        { name: "Denver", focus: "The state's commercial center and a growing technology hub. SaaS support, financial servicing, and large-scale customer operations." },
+        { name: "Denver", href: "/call-center-services-denver", focus: "The state's commercial center and a growing technology hub. SaaS support, financial servicing, and large-scale customer operations." },
         { name: "Boulder", focus: "Dense software, aerospace, and research cluster. Tier 1–3 technical support and product-literate customer success." },
         { name: "Colorado Springs", focus: "Aerospace, defense, and cybersecurity employers. B2B technical support and government-adjacent services." },
         { name: "Fort Collins", focus: "University-driven talent base with technology manufacturing and consumer brands." },

@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "Ticket triage, QA testing, and administrative support for technology teams.",
     href: "/solutions/back-office-outsourcing",
   },
+  {
+    title: "Player Support & Trust and Safety for the Gaming Industry",
+    desc: "US-based player support for game studios and esports platforms.",
+    href: "/industries/gaming-esports-support",
+  },
+  {
+    title: "Comprehensive Content Moderation for Safe Online Communities",
+    desc: "US-based content moderation for UGC platforms and marketplaces.",
+    href: "/solutions/content-moderation-services",
+  },
+  {
+    title: "SaaS Customer Retention Strategy",
+    desc: "How a B2B SaaS company cut churn 28% and lifted NPS from 32 to 67 with proactive US-based customer success support — the baseline, the fix, and…",
+    href: "/case-studies/saas-customer-retention",
+  },
 ];
 
 export default function TechnologyPage() {

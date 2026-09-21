@@ -6,10 +6,10 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 type Faq = { q: string; a: string };
 
 const kinds = [
-  { t: "Auto-attendant", d: "A menu that routes by keypress. No understanding, no lookup — it only forwards. Often already bundled in your phone system.", cost: "$20 - $80 / mo" },
-  { t: "IVR", d: "Menu plus data lookup, so it can read back an order status, a balance or an appointment time from a connected system.", cost: "$50 - $150 / mo" },
-  { t: "Conversational voice AI", d: "Understands natural speech, asks follow-up questions, and can complete tasks such as booking a simple appointment.", cost: "$0.08 - $0.35 / min" },
-  { t: "Live US agent", d: "A trained person who can handle anything, including the calls where judgment and reassurance decide the outcome.", cost: "$0.85 - $1.65 / min" },
+  { t: "Auto-attendant", d: "A menu that routes by keypress. No understanding, no lookup — it only forwards. Often already bundled in your phone system.", cost: "Usually a phone-system feature" },
+  { t: "IVR", d: "Menu plus data lookup, so it can read back an order status, a balance or an appointment time from a connected system.", cost: "Scope depends on integrations" },
+  { t: "Conversational voice AI", d: "Understands natural speech, asks follow-up questions, and can complete tasks such as booking a simple appointment.", cost: "Usage and implementation vary" },
+  { t: "Live US agent", d: "A trained person who can handle anything, including the calls where judgment and reassurance decide the outcome.", cost: "Coverage and training vary" },
 ];
 
 const automate = [
@@ -43,7 +43,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
           <div className="mb-6" />
           <span className="inline-block rounded-full bg-red px-3 py-1 text-xs font-semibold text-white mb-5">BUYER&apos;S GUIDE</span>
           <h1 className="max-w-4xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Automated Answering Service: When AI Works
+            AI Voice Agent vs Live Answering Service: How to Choose
           </h1>
           <div className="mt-4 flex items-center gap-4 text-sm text-white/50">
             <span className="flex items-center gap-1"><Calendar className="h-4 w-4" /> August 21, 2026</span>
@@ -77,7 +77,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
                 <ul className="mt-3 space-y-2">
                   {[
-                    "Four different products are sold under one name, at wildly different prices",
+                    "Four different products are sold under one name, with very different capabilities",
                     "Automation wins on high-volume, low-variation, information-retrieval calls",
                     "It loses the job on emergencies, upset callers and high-value enquiries",
                     "The right setup for most businesses is hybrid, with a fast path to a human",
@@ -99,7 +99,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
                     <tr className="bg-navy text-white">
                       <th className="p-4 font-semibold">Option</th>
                       <th className="p-4 font-semibold">What it can do</th>
-                      <th className="p-4 font-semibold">Cost</th>
+                      <th className="p-4 font-semibold">Commercial model</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -115,7 +115,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
               </div>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 Vendors use these terms loosely, and the gap between an auto-attendant and conversational AI is roughly the gap
-                between a signpost and a receptionist. Establish which one you are being quoted before comparing prices.
+                between a signpost and a receptionist. Establish which one you are being quoted before comparing proposals.
               </p>
 
               <div className="my-10 overflow-hidden rounded-2xl">

@@ -269,6 +269,21 @@ const relatedServices = [
     desc: "AI-powered automation including chatbots, virtual agents, and intelligent routing for digital channels.",
     href: "/services/ai-call-center-automation",
   },
+  {
+    title: "Player Support & Trust and Safety for the Gaming Industry",
+    desc: "US-based player support for game studios and esports platforms.",
+    href: "/industries/gaming-esports-support",
+  },
+  {
+    title: "Comprehensive Content Moderation for Safe Online Communities",
+    desc: "US-based content moderation for UGC platforms and marketplaces.",
+    href: "/solutions/content-moderation-services",
+  },
+  {
+    title: "Scaling from 50 to 400 Agents in 3 Weeks for Black Friday",
+    desc: "How a mid-size e-commerce retailer scaled from 50 to 400 agents in 3 weeks for Black Friday, achieving 98.5% CSAT during peak season.",
+    href: "/case-studies/ecommerce-holiday-scaling",
+  },
 ];
 
 export default function LiveChatOutsourcingPage() {

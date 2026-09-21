@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
 
@@ -174,5 +175,14 @@ const seoContent: SEOPattern[] = [
 ];
 
 export default function Page() {
-  return <Content seoContent={seoContent} />;
+  return (
+    <>
+      <ServiceSchema
+        name="Technical Support Outsourcing"
+        description="US-based Tier 1, 2, and 3 technical support outsourcing for help desks, ticket triage, troubleshooting, and escalation management."
+        path="/solutions/technical-support-outsourcing"
+      />
+      <Content seoContent={seoContent} />
+    </>
+  );
 }

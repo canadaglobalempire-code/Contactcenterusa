@@ -22,6 +22,7 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { citeSources } from "@/lib/cite-sources";
 
 export interface StateMetro {
   name: string;
@@ -74,6 +75,7 @@ export function StatePageTemplate({
   relatedPost,
   h1Prefix = "Call Center & BPO Services in",
 }: StatePageTemplateProps) {
+  const cited = new Set<string>();
   const url = `https://contactcenterusa.com/locations/${slug}`;
 
   return (
@@ -156,7 +158,7 @@ export function StatePageTemplate({
               </h2>
               {overview.map((para, i) => (
                 <p key={i} className="mt-5 text-[16px] leading-relaxed text-gray-700">
-                  {para}
+                  {citeSources(para, cited)}
                 </p>
               ))}
             </div>

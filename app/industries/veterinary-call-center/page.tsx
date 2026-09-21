@@ -267,6 +267,21 @@ const relatedServices = [
     desc: "Scaled inbound coverage for multi-site veterinary groups and referral hospitals.",
     href: "/solutions/inbound-call-center-services",
   },
+  {
+    title: "Reservations & Catering Coverage for Restaurants",
+    desc: "US-based call center for restaurants and multi-unit groups.",
+    href: "/industries/restaurant-call-center",
+  },
+  {
+    title: "Compliant Call Center Solutions for Pharmaceutical Companies",
+    desc: "US-based pharmaceuticals call center support for customer care, inbound calls, outbound outreach, and back office workflows.",
+    href: "/industries/pharmaceuticals-call-center",
+  },
+  {
+    title: "Patient Scheduling & Recall for Dental Practices",
+    desc: "US-based dental call center for practices and DSOs.",
+    href: "/industries/dental-call-center",
+  },
 ];
 
 export default function VeterinaryCallCenterPage() {
