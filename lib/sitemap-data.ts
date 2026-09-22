@@ -195,6 +195,19 @@ function pageImages(blob: string): string[] {
 /* Public API                                                           */
 /* ------------------------------------------------------------------ */
 
+/*
+ * Template-driven pages carry no date of their own. These families changed
+ * on 2026-09-21 (related-page links, primary-source citations, state-to-city
+ * links); bump the date here when they genuinely change again.
+ */
+const FAMILY_UPDATED: [RegExp, string][] = [
+  [/^\/(industries|services|solutions|locations)\//, "2026-09-21"],
+  [/^\/call-center-services-/, "2026-09-21"],
+];
+function familyUpdated(route: string): string | undefined {
+  return FAMILY_UPDATED.find(([re]) => re.test(route))?.[1];
+}
+
 let cache: Map<string, SitemapEntry[]> | null = null;
 
 function buildAll(): Map<string, SitemapEntry[]> {
@@ -211,7 +224,8 @@ function buildAll(): Map<string, SitemapEntry[]> {
     const slug = route.startsWith("/blog/") ? route.slice("/blog/".length) : null;
     const entry: SitemapEntry = {
       loc: route === "/" ? `${BASE_URL}/` : `${BASE_URL}${route}`,
-      lastmod: contentDate(blob) ?? (slug ? libSlugDates().get(slug) : undefined),
+      lastmod:
+        contentDate(blob) ?? (slug ? libSlugDates().get(slug) : undefined) ?? familyUpdated(route),
       images: pageImages(blob),
     };
     const section = SECTIONS.find((s) => s.match(route))!;
