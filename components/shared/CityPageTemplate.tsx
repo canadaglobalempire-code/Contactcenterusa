@@ -21,7 +21,7 @@ import {
   Star,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
-import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
+import { StatCounter } from "@/components/shared/StatCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
@@ -232,7 +232,7 @@ export function CityPageTemplate({
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white"><AnimatedCounter target={500} suffix="+" /></div>
+              <div className="text-3xl font-bold text-white"><StatCounter target={500} suffix="+" /></div>
               <div className="mt-1 text-sm text-white/50">US-Based Agents</div>
             </div>
             <div className="text-center">
@@ -240,7 +240,7 @@ export function CityPageTemplate({
               <div className="mt-1 text-sm text-white/50">Always Available</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white"><AnimatedCounter target={98} suffix="%" /></div>
+              <div className="text-3xl font-bold text-white"><StatCounter target={98} suffix="%" /></div>
               <div className="mt-1 text-sm text-white/50">Client Satisfaction</div>
             </div>
             <div className="text-center">

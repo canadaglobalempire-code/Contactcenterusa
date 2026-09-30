@@ -1,7 +1,7 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
-import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
+import { StatCounter } from "@/components/shared/StatCounter";
 
 interface Stat {
   value: number;
@@ -27,7 +27,7 @@ export function StatsBar({ stats }: StatsBarProps) {
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
             <div className="text-3xl font-bold text-navy sm:text-4xl">
-              <AnimatedCounter
+              <StatCounter
                 target={stat.value}
                 suffix={stat.suffix}
                 prefix={stat.prefix}

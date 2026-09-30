@@ -2,7 +2,7 @@
 
 import { useInView } from "@/hooks/useInView";
 import Image from "next/image";
-import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
+import { StatCounter } from "@/components/shared/StatCounter";
 
 const stats = [
   { value: 1999, label: "Founded", suffix: "" },
@@ -29,7 +29,7 @@ export function AboutHistory() {
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-bold text-navy sm:text-4xl">
-                <AnimatedCounter target={stat.value} suffix={stat.suffix} />
+                <StatCounter target={stat.value} suffix={stat.suffix} />
               </div>
               <div className="mt-1 text-sm text-gray-600">{stat.label}</div>
             </div>

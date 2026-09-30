@@ -12,7 +12,7 @@ import {
   Star,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
-import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
+import { StatCounter } from "@/components/shared/StatCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 
 const features = [
@@ -106,7 +106,7 @@ export function AIAutomationContent() {
               { value: 24, suffix: "/7", label: "AI Availability" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl font-bold text-white"><AnimatedCounter target={stat.value} suffix={stat.suffix} /></div>
+                <div className="text-3xl font-bold text-white"><StatCounter target={stat.value} suffix={stat.suffix} /></div>
                 <div className="mt-1 text-sm text-white/50">{stat.label}</div>
               </div>
             ))}
