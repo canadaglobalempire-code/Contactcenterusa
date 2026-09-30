@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Solar Lead Qualification & Appointment Setting Call Center";
 const description =
-  "US-based solar lead qualification and appointment setting call center. Sub-60-second speed-to-lead response, utility bill verification, and CRM calendar booking.";
+  "US-based solar lead qualification and appointment setting: sub-60-second speed-to-lead, utility bill verification and CRM calendar booking.";
 
 export const metadata: Metadata = {
   title,

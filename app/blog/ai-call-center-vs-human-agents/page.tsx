@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Content from "./Content";
 import { articleMeta } from "@/lib/seo-config";
 
-const title = "AI Call Center vs Human Agents: Escalation & Quality Controls";
+const title = "AI Call Center vs Human Agents: Escalation & QA";
 const description =
   "AI call center vs human agents: build escalation, QA, and agent-assist controls that keep automation useful without sacrificing customer experience.";
 

@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Ecommerce Customer Service | Contact Center USA";
 const description =
-  "Ecommerce customer service outsourcing for order enquiries, returns and product support. Scope channels, store access and seasonal coverage with Contact Center USA.";
+  "Ecommerce customer support outsourcing with US-based agents for order enquiries, returns and product questions, scoped to your channels and peak seasons.";
 
 export const metadata: Metadata = {
   title,

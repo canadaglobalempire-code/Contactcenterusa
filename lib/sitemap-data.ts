@@ -219,7 +219,14 @@ function familyUpdated(route: string): string | undefined {
  * forward but never back past a date its own source declares. Data-driven
  * blog posts are dated by dateModified in lib/traffic-blog-posts.ts instead.
  */
-const ROUTE_UPDATED: Record<string, string> = {};
+const ROUTE_UPDATED: Record<string, string> = {
+  // Shorter titles and meta descriptions that fit the search result.
+  "/blog/ai-call-center-vs-human-agents": "2026-09-30",
+  "/call-center-services-boston": "2026-09-30",
+  "/industries/ecommerce-customer-service-outsourcing": "2026-09-30",
+  "/industries/pest-control-call-center": "2026-09-30",
+  "/industries/solar-lead-generation-call-center": "2026-09-30",
+};
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
   return (dates.filter(Boolean) as string[]).sort().at(-1);

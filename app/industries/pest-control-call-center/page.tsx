@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Pest Control Answering Service & Call Center | Lead Intake";
 const description =
-  "US-based pest control answering service and call center. 24/7 lead qualification, recurring service agreement sales, FieldRoutes/PestPac scheduling, and emergency dispatch.";
+  "US-based pest control answering service: 24/7 lead qualification, recurring service agreement sales, FieldRoutes/PestPac scheduling and emergency dispatch.";
 
 export const metadata: Metadata = {
   title,
