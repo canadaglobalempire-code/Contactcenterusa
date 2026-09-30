@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Thank You | Contact Center USA";
+const description =
+  "Your call center outsourcing quote request has been received. A member of our team will reach out within one business day.";
 
 export const metadata: Metadata = {
-  title: "Thank You | Contact Center USA",
-  description: "Your call center outsourcing quote request has been received.",
+  title,
+  description,
   robots: { index: false, follow: true },
   alternates: { canonical: "/thank-you" },
+  ...pageMeta(title, description, "/thank-you"),
 };
 
 export default function ThankYouPage() {

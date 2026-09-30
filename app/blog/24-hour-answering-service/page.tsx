@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "24 Hour Answering Service: How to Verify It's Real";
+const description =
+  "Most 24/7 answering services are not truly staffed at 3 AM. How to test a provider before you sign, and what genuine round-the-clock cover costs in 2026.";
 
 export const metadata: Metadata = {
-  title: "24 Hour Answering Service: How to Verify It's Real",
-  description:
-    "Most 24/7 answering services are not truly staffed at 3 AM. How to test a provider before you sign, and what genuine round-the-clock cover costs in 2026.",
+  title,
+  description,
   keywords: [
     "24 hour answering service",
     "24 7 answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "continuous phone coverage",
   ],
   alternates: { canonical: "/blog/24-hour-answering-service" },
+  ...articleMeta(title, description, "/blog/24-hour-answering-service"),
 };
 
 const FAQS = [

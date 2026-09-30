@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Customer Service Outsourcing | 100% US-Based Agents";
+const description =
+  "Outsource customer service to trained US-based agents. Omnichannel coverage, flexible scaling, and no offshore routing. Request a free quote today.";
 
 export const metadata: Metadata = {
-  title: "Customer Service Outsourcing | 100% US-Based Agents",
-  description:
-    "Outsource customer service to trained US-based agents. Omnichannel coverage, flexible scaling, and no offshore routing. Request a free quote today.",
+  title,
+  description,
   keywords: [
     "customer service outsourcing",
     "customer service bpo usa",
@@ -18,6 +22,7 @@ export const metadata: Metadata = {
     "customer service call center outsourcing",
   ],
   alternates: { canonical: "/solutions/customer-service-outsourcing" },
+  ...pageMeta(title, description, "/solutions/customer-service-outsourcing"),
 };
 
 const seoContent: SEOPattern[] = [

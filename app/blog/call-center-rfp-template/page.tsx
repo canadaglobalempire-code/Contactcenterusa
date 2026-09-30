@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Call Center RFP Template & Checklist (2026)";
+const description =
+  "A free call center RFP template and checklist — the exact questions, scoring criteria, and SLAs to include so you choose the right BPO partner.";
 
 export const metadata: Metadata = {
-  title: "Call Center RFP Template & Checklist (2026)",
-  description:
-    "A free call center RFP template and checklist — the exact questions, scoring criteria, and SLAs to include so you choose the right BPO partner.",
+  title,
+  description,
   alternates: { canonical: "/blog/call-center-rfp-template" },
+  ...articleMeta(title, description, "/blog/call-center-rfp-template"),
 };
 
 export default function Page() {

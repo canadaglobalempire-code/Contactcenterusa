@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Med Spa Call Center | Aesthetics Consultation Booking";
+const description =
+  "US-based call center for med spas and aesthetic practices. Consultation booking, lead follow-up, no-show recovery, and membership retention. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Med Spa Call Center | Aesthetics Consultation Booking",
-  description:
-    "US-based call center for med spas and aesthetic practices. Consultation booking, lead follow-up, no-show recovery, and membership retention. Get a quote.",
+  title,
+  description,
   keywords: [
     "med spa call center",
     "medical spa answering service",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "med spa membership retention",
   ],
   alternates: { canonical: "/industries/med-spa-aesthetics-call-center" },
+  ...pageMeta(title, description, "/industries/med-spa-aesthetics-call-center"),
 };
 
 const features = [

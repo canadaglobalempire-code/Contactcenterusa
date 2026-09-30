@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Debt Collection BPO Companies USA (2026)";
+const description =
+  "The top 10 debt collection BPO companies in the USA for 2026, ranked by FDCPA compliance, recovery rates & technology. Compare and get a quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Debt Collection BPO Companies USA (2026)",
-  description:
-    "The top 10 debt collection BPO companies in the USA for 2026, ranked by FDCPA compliance, recovery rates & technology. Compare and get a quote.",
+  title,
+  description,
   keywords: [
     "debt collection bpo companies in usa",
     "top debt collection companies in usa",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "collection agency outsourcing",
   ],
   alternates: { canonical: "/blog/top-10-debt-collection-bpo-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-debt-collection-bpo-companies-usa"),
 };
 
 export default function Page() {

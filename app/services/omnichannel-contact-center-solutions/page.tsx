@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { OmnichannelContent } from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Omnichannel Contact Center Solutions | US-Based Agents";
+const description =
+  "Unify phone, chat, email, SMS and social into one connected queue with US-based agents and a single shared customer history. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Omnichannel Contact Center Solutions | US-Based Agents",
-  description:
-    "Unify phone, chat, email, SMS and social into one connected queue with US-based agents and a single shared customer history. Request a free quote.",
+  title,
+  description,
   keywords: [
     "omnichannel contact center",
     "omnichannel cx bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "omnichannel support outsourcing",
   ],
   alternates: { canonical: "/services/omnichannel-contact-center-solutions" },
+  ...pageMeta(title, description, "/services/omnichannel-contact-center-solutions"),
 };
 
 const seoContent: SEOPattern[] = [

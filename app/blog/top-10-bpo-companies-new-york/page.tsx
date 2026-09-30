@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 BPO Companies in New York (2026)";
+const description =
+  "Compare the top 10 BPO companies in New York for 2026 — ranked by service quality, finance/CX expertise, scalability & cost. Find your partner.";
 
 export const metadata: Metadata = {
-  title: "Top 10 BPO Companies in New York (2026)",
-  description:
-    "Compare the top 10 BPO companies in New York for 2026 — ranked by service quality, finance/CX expertise, scalability & cost. Find your partner.",
+  title,
+  description,
   keywords: [
     "BPO companies New York",
     "best BPO companies in New York",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "best call center NYC",
   ],
   alternates: { canonical: "/blog/top-10-bpo-companies-new-york" },
+  ...articleMeta(title, description, "/blog/top-10-bpo-companies-new-york"),
 };
 
 const FAQS = [

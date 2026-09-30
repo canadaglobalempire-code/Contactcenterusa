@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Government Call Center | Contact Center USA";
+const description =
+  "US-based government call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Government Call Center | Contact Center USA",
-  description:
-    "US-based government call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "government call center",
     "government contact center bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "section 508 citizen support",
   ],
   alternates: { canonical: "/industries/government-call-center" },
+  ...pageMeta(title, description, "/industries/government-call-center"),
 };
 
 const features = [

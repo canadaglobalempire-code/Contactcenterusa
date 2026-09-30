@@ -2,6 +2,7 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
 
 const FAQS = [
   {
@@ -38,10 +39,13 @@ const FAQS = [
   },
 ];
 
+const title = "Top 10 Medical Answering Service Companies (2026)";
+const description =
+  "The top 10 medical answering service companies for 2026, ranked by HIPAA compliance, 24/7 triage & pricing. Compare US providers and get a quote.";
+
 export const metadata: Metadata = {
-  title: "Top 10 Medical Answering Service Companies (2026)",
-  description:
-    "The top 10 medical answering service companies for 2026, ranked by HIPAA compliance, 24/7 triage & pricing. Compare US providers and get a quote.",
+  title,
+  description,
   keywords: [
     "medical answering service",
     "doctor answering service",
@@ -57,6 +61,7 @@ export const metadata: Metadata = {
     "hipaa compliant answering service",
   ],
   alternates: { canonical: "/blog/top-10-medical-answering-service-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-medical-answering-service-companies-usa"),
 };
 
 export default function Page() {

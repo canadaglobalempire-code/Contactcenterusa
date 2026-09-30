@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Banking Financial Services Call Center | Contact Center USA";
+const description =
+  "US-based banking & financial services call center: customer care, inbound/outbound calls, and back-office support. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Banking Financial Services Call Center | Contact Center USA",
-  description:
-    "US-based banking & financial services call center: customer care, inbound/outbound calls, and back-office support. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "banking bpo services",
     "financial services call center",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "digital banking support",
   ],
   alternates: { canonical: "/industries/banking-financial-services-call-center" },
+  ...pageMeta(title, description, "/industries/banking-financial-services-call-center"),
 };
 
 const features = [

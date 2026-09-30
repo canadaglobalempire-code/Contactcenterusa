@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best Healthcare BPO Companies in USA (2026)";
+const description =
+  "Compare healthcare BPO providers by HIPAA readiness, patient support workflows, scheduling capability, technology fit, and CX quality.";
 
 export const metadata: Metadata = {
-  title: "Best Healthcare BPO Companies in USA (2026)",
-  description:
-    "Compare healthcare BPO providers by HIPAA readiness, patient support workflows, scheduling capability, technology fit, and CX quality.",
+  title,
+  description,
   keywords: [
     "healthcare BPO companies",
     "best healthcare BPO companies in USA",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "healthcare BPO providers 2026",
   ],
   alternates: { canonical: "/blog/top-15-healthcare-bpo-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-15-healthcare-bpo-companies-usa"),
 };
 
 export default function Page() {

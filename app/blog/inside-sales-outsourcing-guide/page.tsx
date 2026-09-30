@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Inside Sales Outsourcing Guide (2026)";
+const description =
+  "Inside sales outsourcing in 2026 — when to outsource SDRs, pricing models, and how to scale pipeline without hiring. A complete buyer's guide.";
 
 export const metadata: Metadata = {
-  title: "Inside Sales Outsourcing Guide (2026)",
-  description:
-    "Inside sales outsourcing in 2026 — when to outsource SDRs, pricing models, and how to scale pipeline without hiring. A complete buyer's guide.",
+  title,
+  description,
   keywords: [
     "inside sales outsourcing",
     "outsourced inside sales",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "inside sales BPO",
   ],
   alternates: { canonical: "/blog/inside-sales-outsourcing-guide" },
+  ...articleMeta(title, description, "/blog/inside-sales-outsourcing-guide"),
 };
 
 export default function Page() {

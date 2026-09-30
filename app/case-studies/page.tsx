@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { CaseStudiesContent } from "./CaseStudiesContent";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Call Center Outsourcing Case Studies | Contact Center USA";
+const description =
+  "Explore call center outsourcing case studies and examples of customer support, sales, technical support, and BPO programs.";
 
 export const metadata: Metadata = {
-  title: "Call Center Outsourcing Case Studies | Contact Center USA",
-  description:
-    "Explore call center outsourcing case studies and examples of customer support, sales, technical support, and BPO programs.",
+  title,
+  description,
   alternates: { canonical: "/case-studies" },
+  ...pageMeta(title, description, "/case-studies"),
 };
 
 

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Telecommunications Call Center | Contact Center USA";
+const description =
+  "US-based telecommunications call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Telecommunications Call Center | Contact Center USA",
-  description:
-    "US-based telecommunications call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "telecom call center",
     "telecommunications bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "msp customer support outsourcing",
   ],
   alternates: { canonical: "/industries/telecommunications-call-center" },
+  ...pageMeta(title, description, "/industries/telecommunications-call-center"),
 };
 
 const features = [

@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Mortgage Call Center Companies USA (2026)";
+const description =
+  "Compare the top 10 mortgage call center companies in the USA for 2026 — ranked by licensing, lead conversion & compliance. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Mortgage Call Center Companies USA (2026)",
-  description:
-    "Compare the top 10 mortgage call center companies in the USA for 2026 — ranked by licensing, lead conversion & compliance. Get a free quote.",
+  title,
+  description,
   keywords: [
     "mortgage call center companies",
     "top mortgage call center usa",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "mortgage BPO services",
   ],
   alternates: { canonical: "/blog/top-10-mortgage-call-center-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-mortgage-call-center-companies-usa"),
 };
 
 const FAQS = [

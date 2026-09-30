@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Dental Call Center | Dental Answering & Scheduling Service";
+const description =
+  "US-based dental call center for practices and DSOs. New patient calls, recall and reactivation, insurance verification, and after-hours emergencies.";
 
 export const metadata: Metadata = {
-  title: "Dental Call Center | Dental Answering & Scheduling Service",
-  description:
-    "US-based dental call center for practices and DSOs. New patient calls, recall and reactivation, insurance verification, and after-hours emergencies.",
+  title,
+  description,
   keywords: [
     "dental call center",
     "dental answering service",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "new patient dental calls",
   ],
   alternates: { canonical: "/industries/dental-call-center" },
+  ...pageMeta(title, description, "/industries/dental-call-center"),
 };
 
 const features = [

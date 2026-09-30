@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Music & Entertainment Call Center | Fan Support Outsourcing";
+const description =
+  "US-based call center for music labels, streaming platforms, artist fan clubs, and merch brands. Fan support, membership servicing, merch and tour support.";
 
 export const metadata: Metadata = {
-  title: "Music & Entertainment Call Center | Fan Support Outsourcing",
-  description:
-    "US-based call center for music labels, streaming platforms, artist fan clubs, and merch brands. Fan support, membership servicing, merch and tour support.",
+  title,
+  description,
   keywords: [
     "music industry call center",
     "entertainment bpo",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "entertainment customer service outsourcing",
   ],
   alternates: { canonical: "/industries/music-entertainment-call-center" },
+  ...pageMeta(title, description, "/industries/music-entertainment-call-center"),
 };
 
 const features = [

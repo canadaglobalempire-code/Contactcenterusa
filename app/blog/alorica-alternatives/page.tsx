@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generateBlogAEOSchema } from "@/lib/schema";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
 
 const faqs = [
   {
@@ -35,11 +36,15 @@ const companies = [
   { rank: 7, name: "TaskUs", description: "High-growth digital brands, trust & safety, and content moderation." },
 ];
 
+const title = "7 Alorica Alternatives for US-Based CX (2026)";
+const description =
+  "Compare the 7 best Alorica alternatives for 2026 — 100% US-based delivery, no enterprise minimums, month-to-month contracts, and a 60-90 day switching plan.";
+
 export const metadata: Metadata = {
-  title: "7 Alorica Alternatives for US-Based CX (2026)",
-  description:
-    "Compare the 7 best Alorica alternatives for 2026 — 100% US-based delivery, no enterprise minimums, month-to-month contracts, and a 60-90 day switching plan.",
+  title,
+  description,
   alternates: { canonical: "/blog/alorica-alternatives" },
+  ...articleMeta(title, description, "/blog/alorica-alternatives"),
 };
 
 export default function Page() {

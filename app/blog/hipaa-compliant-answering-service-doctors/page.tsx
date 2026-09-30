@@ -1,6 +1,7 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
 
 const FAQS = [
   {
@@ -37,10 +38,13 @@ const FAQS = [
   },
 ];
 
+const title = "HIPAA Answering Service for Doctors (2026)";
+const description =
+  "A HIPAA-compliant answering service for doctors and medical offices — secure patient messaging, 24/7 coverage, and signed BAAs. Get a free quote.";
+
 export const metadata: Metadata = {
-  title: "HIPAA Answering Service for Doctors (2026)",
-  description:
-    "A HIPAA-compliant answering service for doctors and medical offices — secure patient messaging, 24/7 coverage, and signed BAAs. Get a free quote.",
+  title,
+  description,
   keywords: [
     "hipaa compliant answering service for doctors",
     "medical answering service hipaa",
@@ -56,6 +60,7 @@ export const metadata: Metadata = {
     "hipaa answering service cost",
   ],
   alternates: { canonical: "/blog/hipaa-compliant-answering-service-doctors" },
+  ...articleMeta(title, description, "/blog/hipaa-compliant-answering-service-doctors"),
 };
 
 export default function Page() {

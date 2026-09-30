@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Pest Control Answering Service & Call Center | Lead Intake";
+const description =
+  "US-based pest control answering service and call center. 24/7 lead qualification, recurring service agreement sales, FieldRoutes/PestPac scheduling, and emergency dispatch.";
 
 export const metadata: Metadata = {
-  title: "Pest Control Answering Service & Call Center | Lead Intake",
-  description:
-    "US-based pest control answering service and call center. 24/7 lead qualification, recurring service agreement sales, FieldRoutes/PestPac scheduling, and emergency dispatch.",
+  title,
+  description,
   keywords: [
     "pest control answering service",
     "pest control call center",
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
     "bed bug lead response service",
   ],
   alternates: { canonical: "/industries/pest-control-call-center" },
+  ...pageMeta(title, description, "/industries/pest-control-call-center"),
 };
 
 const features = [

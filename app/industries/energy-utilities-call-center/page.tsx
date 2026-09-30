@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Energy Utilities Call Center | Contact Center USA";
+const description =
+  "US-based energy utilities call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Energy Utilities Call Center | Contact Center USA",
-  description:
-    "US-based energy utilities call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "energy call center",
     "utilities bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "smart meter support outsourcing",
   ],
   alternates: { canonical: "/industries/energy-utilities-call-center" },
+  ...pageMeta(title, description, "/industries/energy-utilities-call-center"),
 };
 
 const features = [

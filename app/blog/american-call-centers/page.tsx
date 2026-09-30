@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best American Call Centers: US-Based Agents (2026)";
+const description =
+  "What makes the best American call centers — US-based agents, accent neutrality, compliance, and CX quality. Compare your options and get a quote.";
 
 export const metadata: Metadata = {
-  title: "Best American Call Centers: US-Based Agents (2026)",
-  description:
-    "What makes the best American call centers — US-based agents, accent neutrality, compliance, and CX quality. Compare your options and get a quote.",
+  title,
+  description,
   keywords: [
     "american call centers",
     "american based call centers",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "best US based call centers 2026",
   ],
   alternates: { canonical: "/blog/american-call-centers" },
+  ...articleMeta(title, description, "/blog/american-call-centers"),
 };
 
 export default function Page() {

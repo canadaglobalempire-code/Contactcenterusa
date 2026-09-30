@@ -2,12 +2,17 @@ import type { Metadata } from "next";
 import SolutionsContent from "./SolutionsContent";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Call Center Solutions | Contact Center USA";
+const description =
+  "Call Center Solutions from Contact Center USA. Learn services, coverage, industries, and quote options for US-based outsourcing.";
 
 export const metadata: Metadata = {
-  title: "Call Center Solutions | Contact Center USA",
-  description:
-    "Call Center Solutions from Contact Center USA. Learn services, coverage, industries, and quote options for US-based outsourcing.",
+  title,
+  description,
   alternates: { canonical: "/solutions" },
+  ...pageMeta(title, description, "/solutions"),
 };
 
 

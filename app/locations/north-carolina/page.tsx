@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
 
 const title = "North Carolina Call Center & BPO Services | US-Based Teams";
 const description =
@@ -20,8 +21,7 @@ export const metadata: Metadata = {
     "nc customer service outsourcing",
   ],
   alternates: { canonical: "/locations/north-carolina" },
-  openGraph: { title, description, url: "/locations/north-carolina", type: "website" },
-  twitter: { card: "summary_large_image", title, description },
+  ...pageMeta(title, description, "/locations/north-carolina"),
 };
 
 const seoContent: SEOPattern[] = [

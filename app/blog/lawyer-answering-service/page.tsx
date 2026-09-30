@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Lawyer Answering Service: Intake, Conflicts, UPL";
+const description =
+  "How law firms run 24/7 intake without crossing into legal advice, where conflict checks belong, and what legal intake costs per signed case.";
 
 export const metadata: Metadata = {
-  title: "Lawyer Answering Service: Intake, Conflicts, UPL",
-  description:
-    "How law firms run 24/7 intake without crossing into legal advice, where conflict checks belong, and what legal intake costs per signed case.",
+  title,
+  description,
   keywords: [
     "lawyer answering service",
     "attorney answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "law firm phone answering",
   ],
   alternates: { canonical: "/blog/lawyer-answering-service" },
+  ...articleMeta(title, description, "/blog/lawyer-answering-service"),
 };
 
 const FAQS = [

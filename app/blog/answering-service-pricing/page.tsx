@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Answering Service Pricing: What It Really Costs";
+const description =
+  "The four answering service pricing models, real 2026 US rates, the seven fees that inflate a quote, and how to compare providers on cost per captured job.";
 
 export const metadata: Metadata = {
-  title: "Answering Service Pricing: What It Really Costs",
-  description:
-    "The four answering service pricing models, real 2026 US rates, the seven fees that inflate a quote, and how to compare providers on cost per captured job.",
+  title,
+  description,
   keywords: [
     "answering service pricing",
     "answering service cost",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "answering service quote",
   ],
   alternates: { canonical: "/blog/answering-service-pricing" },
+  ...articleMeta(title, description, "/blog/answering-service-pricing"),
 };
 
 const FAQS = [

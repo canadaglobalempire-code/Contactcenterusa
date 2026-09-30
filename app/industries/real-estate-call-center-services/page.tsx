@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Real Estate Call Center | Contact Center USA";
+const description =
+  "US-based real estate call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Real Estate Call Center | Contact Center USA",
-  description:
-    "US-based real estate call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "real estate call center",
     "real estate bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "real estate investor support",
   ],
   alternates: { canonical: "/industries/real-estate-call-center-services" },
+  ...pageMeta(title, description, "/industries/real-estate-call-center-services"),
 };
 
 const features = [

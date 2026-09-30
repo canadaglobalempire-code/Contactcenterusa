@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Healthcare Call Center Services | HIPAA-Compliant Agents";
+const description =
+  "HIPAA-compliant healthcare call center services with US-based agents. Patient scheduling, insurance verification and after-hours triage. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Healthcare Call Center Services | HIPAA-Compliant Agents",
-  description:
-    "HIPAA-compliant healthcare call center services with US-based agents. Patient scheduling, insurance verification and after-hours triage. Get a quote.",
+  title,
+  description,
   keywords: [
     "healthcare bpo services",
     "healthcare call center usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "clinic answering service",
   ],
   alternates: { canonical: "/industries/healthcare-call-center-services" },
+  ...pageMeta(title, description, "/industries/healthcare-call-center-services"),
 };
 
 const features = [

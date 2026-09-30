@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "In-House vs Outsourced Call Center: Cost (2026)";
+const description =
+  "In-house vs outsourced call center: a 2026 cost and ROI breakdown covering staffing, tech, and overhead — so you can decide with real numbers.";
 
 export const metadata: Metadata = {
-  title: "In-House vs Outsourced Call Center: Cost (2026)",
-  description:
-    "In-house vs outsourced call center: a 2026 cost and ROI breakdown covering staffing, tech, and overhead — so you can decide with real numbers.",
+  title,
+  description,
   alternates: { canonical: "/blog/in-house-vs-outsourced-call-center" },
+  ...articleMeta(title, description, "/blog/in-house-vs-outsourced-call-center"),
 };
 
 export default function Page() {

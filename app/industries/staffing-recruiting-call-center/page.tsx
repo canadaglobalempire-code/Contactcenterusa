@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Staffing & Recruiting Call Center | Candidate Screening BPO";
+const description =
+  "US-based call center for staffing agencies and recruiters. Candidate screening, shift filling, redeployment calls, and 24/7 branch after-hours coverage.";
 
 export const metadata: Metadata = {
-  title: "Staffing & Recruiting Call Center | Candidate Screening BPO",
-  description:
-    "US-based call center for staffing agencies and recruiters. Candidate screening, shift filling, redeployment calls, and 24/7 branch after-hours coverage.",
+  title,
+  description,
   keywords: [
     "staffing agency call center",
     "recruiting bpo services",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "staffing branch overflow support",
   ],
   alternates: { canonical: "/industries/staffing-recruiting-call-center" },
+  ...pageMeta(title, description, "/industries/staffing-recruiting-call-center"),
 };
 
 const features = [

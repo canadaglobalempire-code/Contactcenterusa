@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Information Technology Services | US-Based IT Help Desk";
+const description =
+  "Outsourced IT services and 24/7 help desk staffed by US-based technicians. Tier 1-3 support, ticket triage and escalation management. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Information Technology Services | US-Based IT Help Desk",
-  description:
-    "Outsourced IT services and 24/7 help desk staffed by US-based technicians. Tier 1-3 support, ticket triage and escalation management. Get a free quote.",
+  title,
+  description,
   keywords: [
     "it services outsourcing",
     "it help desk bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "managed it provider usa",
   ],
   alternates: { canonical: "/solutions/information-technology-services" },
+  ...pageMeta(title, description, "/solutions/information-technology-services"),
 };
 
 const features = [

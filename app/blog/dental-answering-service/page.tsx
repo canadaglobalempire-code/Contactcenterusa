@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Dental Answering Service: New Patients & Emergencies";
+const description =
+  "Why dental practices lose new patients to a busy signal, how emergency triage and recall differ, and what a dental answering service costs.";
 
 export const metadata: Metadata = {
-  title: "Dental Answering Service: New Patients & Emergencies",
-  description:
-    "Why dental practices lose new patients to a busy signal, how emergency triage and recall differ, and what a dental answering service costs.",
+  title,
+  description,
   keywords: [
     "dental answering service",
     "dental office answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "orthodontic answering service",
   ],
   alternates: { canonical: "/blog/dental-answering-service" },
+  ...articleMeta(title, description, "/blog/dental-answering-service"),
 };
 
 const FAQS = [

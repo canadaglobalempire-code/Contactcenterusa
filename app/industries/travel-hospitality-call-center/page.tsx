@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Travel Hospitality Call Center | Contact Center USA";
+const description =
+  "US-based travel hospitality call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Travel Hospitality Call Center | Contact Center USA",
-  description:
-    "US-based travel hospitality call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "travel hospitality call center",
     "hospitality bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "travel disruption support",
   ],
   alternates: { canonical: "/industries/travel-hospitality-call-center" },
+  ...pageMeta(title, description, "/industries/travel-hospitality-call-center"),
 };
 
 const features = [

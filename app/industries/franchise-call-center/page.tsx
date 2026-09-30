@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Franchise Call Center | Central Intake & Territory Routing";
+const description =
+  "US-based call center for franchise networks. Central lead intake, territory routing to franchisees, brand-consistent handling, and network-wide reporting.";
 
 export const metadata: Metadata = {
-  title: "Franchise Call Center | Central Intake & Territory Routing",
-  description:
-    "US-based call center for franchise networks. Central lead intake, territory routing to franchisees, brand-consistent handling, and network-wide reporting.",
+  title,
+  description,
   keywords: [
     "franchise call center",
     "franchise lead routing",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "franchise development call support",
   ],
   alternates: { canonical: "/industries/franchise-call-center" },
+  ...pageMeta(title, description, "/industries/franchise-call-center"),
 };
 
 const features = [

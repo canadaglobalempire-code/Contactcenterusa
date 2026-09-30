@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Technical Support Outsourcing | US-Based Tier 1-3 Desk";
+const description =
+  "Outsourced technical support with US-based Tier 1, 2 and 3 engineers. 24/7 help desk, ticket triage and escalation management. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Technical Support Outsourcing | US-Based Tier 1-3 Desk",
-  description:
-    "Outsourced technical support with US-based Tier 1, 2 and 3 engineers. 24/7 help desk, ticket triage and escalation management. Request a free quote.",
+  title,
+  description,
   keywords: [
     "technical support outsourcing",
     "tech support bpo usa",
@@ -18,6 +22,7 @@ export const metadata: Metadata = {
     "saas technical support outsourcing",
   ],
   alternates: { canonical: "/solutions/technical-support-outsourcing" },
+  ...pageMeta(title, description, "/solutions/technical-support-outsourcing"),
 };
 
 const seoContent: SEOPattern[] = [

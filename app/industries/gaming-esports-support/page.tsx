@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Gaming & Esports Player Support | Game Studio BPO";
+const description =
+  "US-based player support for game studios and esports platforms. Launch-day surge, account recovery, purchase disputes, and trust & safety moderation.";
 
 export const metadata: Metadata = {
-  title: "Gaming & Esports Player Support | Game Studio BPO",
-  description:
-    "US-based player support for game studios and esports platforms. Launch-day surge, account recovery, purchase disputes, and trust & safety moderation.",
+  title,
+  description,
   keywords: [
     "gaming player support outsourcing",
     "game studio customer support",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "live ops player support",
   ],
   alternates: { canonical: "/industries/gaming-esports-support" },
+  ...pageMeta(title, description, "/industries/gaming-esports-support"),
 };
 
 const features = [

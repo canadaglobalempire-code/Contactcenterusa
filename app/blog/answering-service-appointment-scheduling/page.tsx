@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Answering Service Appointment Scheduling (2026 Guide)";
+const description =
+  "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking.";
 
 export const metadata: Metadata = {
-  title: "Answering Service Appointment Scheduling (2026 Guide)",
-  description:
-    "How answering service appointment scheduling works, the calendar rules that prevent double-booking, SMS reminder flows that cut no-shows, and 2026 per-booking.",
+  title,
+  description,
   keywords: [
     "answering service appointment scheduling",
     "appointment scheduling answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "scheduling call center",
   ],
   alternates: { canonical: "/blog/answering-service-appointment-scheduling" },
+  ...articleMeta(title, description, "/blog/answering-service-appointment-scheduling"),
 };
 
 const FAQS = [

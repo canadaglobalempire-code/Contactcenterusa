@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Property Management Call Center Companies (2026)";
+const description =
+  "Compare the top 10 property management call center companies for 2026 — ranked by maintenance dispatch, leasing support & pricing. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Property Management Call Center Companies (2026)",
-  description:
-    "Compare the top 10 property management call center companies for 2026 — ranked by maintenance dispatch, leasing support & pricing. Get a quote.",
+  title,
+  description,
   keywords: [
     "property management call center",
     "tenant answering service",
@@ -24,6 +28,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/blog/top-10-property-management-call-center-companies-usa",
   },
+  ...articleMeta(title, description, "/blog/top-10-property-management-call-center-companies-usa"),
 };
 
 const FAQS = [

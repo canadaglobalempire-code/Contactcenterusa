@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Legal Intake Call Center Companies (2026)";
+const description =
+  "The top 10 legal intake call center companies for 2026, ranked by 24/7 intake, conversion & law-firm experience. Compare US providers and get a quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Legal Intake Call Center Companies (2026)",
-  description:
-    "The top 10 legal intake call center companies for 2026, ranked by 24/7 intake, conversion & law-firm experience. Compare US providers and get a quote.",
+  title,
+  description,
   keywords: [
     "legal intake call center",
     "legal intake outsourcing",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "after hours legal intake",
   ],
   alternates: { canonical: "/blog/top-10-legal-intake-call-center-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-legal-intake-call-center-companies-usa"),
 };
 
 export default function Page() {

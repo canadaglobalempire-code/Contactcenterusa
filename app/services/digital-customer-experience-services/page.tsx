@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { DigitalCXContent } from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Digital Customer Experience Services | Omnichannel CX";
+const description =
+  "Digital CX across chat, email, SMS, social and self-service, staffed by US-based agents with unified customer history. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Digital Customer Experience Services | Omnichannel CX",
-  description:
-    "Digital CX across chat, email, SMS, social and self-service, staffed by US-based agents with unified customer history. Get a free quote.",
+  title,
+  description,
   keywords: [
     "digital cx services",
     "digital customer experience bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "cx outsourcing provider",
   ],
   alternates: { canonical: "/services/digital-customer-experience-services" },
+  ...pageMeta(title, description, "/services/digital-customer-experience-services"),
 };
 
 const seoContent: SEOPattern[] = [

@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top Call Center KPIs & Metrics to Track (2026)";
+const description =
+  "The call center KPIs that matter in 2026 — from FCR and AHT to CSAT and occupancy — with target ranges and why each one drives performance.";
 
 export const metadata: Metadata = {
-  title: "Top Call Center KPIs & Metrics to Track (2026)",
-  description:
-    "The call center KPIs that matter in 2026 — from FCR and AHT to CSAT and occupancy — with target ranges and why each one drives performance.",
+  title,
+  description,
   alternates: { canonical: "/blog/call-center-kpis" },
+  ...articleMeta(title, description, "/blog/call-center-kpis"),
 };
 
 export default function Page() {

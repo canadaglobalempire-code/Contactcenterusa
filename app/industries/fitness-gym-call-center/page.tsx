@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Fitness & Gym Call Center | Membership Sales & Retention";
+const description =
+  "US-based call center for gyms, studios, and fitness franchises. Membership enquiries, tour booking, cancellation saves, and billing support. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Fitness & Gym Call Center | Membership Sales & Retention",
-  description:
-    "US-based call center for gyms, studios, and fitness franchises. Membership enquiries, tour booking, cancellation saves, and billing support. Get a quote.",
+  title,
+  description,
   keywords: [
     "gym call center",
     "fitness membership sales outsourcing",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "gym billing support outsourcing",
   ],
   alternates: { canonical: "/industries/fitness-gym-call-center" },
+  ...pageMeta(title, description, "/industries/fitness-gym-call-center"),
 };
 
 const features = [

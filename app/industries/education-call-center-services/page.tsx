@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Education Call Center | Contact Center USA";
+const description =
+  "US-based education call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Education Call Center | Contact Center USA",
-  description:
-    "US-based education call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "education call center",
     "university bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "lms help desk support",
   ],
   alternates: { canonical: "/industries/education-call-center-services" },
+  ...pageMeta(title, description, "/industries/education-call-center-services"),
 };
 
 const features = [

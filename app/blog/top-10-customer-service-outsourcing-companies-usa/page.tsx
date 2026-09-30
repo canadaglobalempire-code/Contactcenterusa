@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best Customer Service Outsourcing Companies (2026)";
+const description =
+  "Compare customer service outsourcing companies by US-based support, omnichannel coverage, CX quality, scalability, and client fit.";
 
 export const metadata: Metadata = {
-  title: "Best Customer Service Outsourcing Companies (2026)",
-  description:
-    "Compare customer service outsourcing companies by US-based support, omnichannel coverage, CX quality, scalability, and client fit.",
+  title,
+  description,
   keywords: [
     "customer service outsourcing companies",
     "top customer service outsourcing companies usa",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "customer experience outsourcing",
   ],
   alternates: { canonical: "/blog/top-10-customer-service-outsourcing-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-customer-service-outsourcing-companies-usa"),
 };
 
 export default function Page() {

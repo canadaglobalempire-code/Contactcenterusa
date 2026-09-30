@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Insurance Call Center Outsourcing | Contact Center USA";
+const description =
+  "US-based insurance call center outsourcing support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Insurance Call Center Outsourcing | Contact Center USA",
-  description:
-    "US-based insurance call center outsourcing support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "insurance bpo services",
     "insurance call center outsourcing",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "insurance policyholder support",
   ],
   alternates: { canonical: "/industries/insurance-call-center-outsourcing" },
+  ...pageMeta(title, description, "/industries/insurance-call-center-outsourcing"),
 };
 
 const features = [

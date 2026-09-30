@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Pharmaceuticals Call Center | Contact Center USA";
+const description =
+  "US-based pharmaceuticals call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Pharmaceuticals Call Center | Contact Center USA",
-  description:
-    "US-based pharmaceuticals call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "pharmaceutical call center",
     "pharma bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "pharma hub services",
   ],
   alternates: { canonical: "/industries/pharmaceuticals-call-center" },
+  ...pageMeta(title, description, "/industries/pharmaceuticals-call-center"),
 };
 
 const features = [

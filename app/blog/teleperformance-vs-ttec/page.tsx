@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generateBlogAEOSchema } from "@/lib/schema";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
 
 const faqs = [
   {
@@ -25,11 +26,15 @@ const faqs = [
   },
 ];
 
+const title = "Teleperformance vs TTEC: Full 2026 Comparison";
+const description =
+  "Teleperformance vs TTEC for 2026 — scale, delivery location, pricing, verticals and contract flexibility, plus which fits enterprise vs mid-market.";
+
 export const metadata: Metadata = {
-  title: "Teleperformance vs TTEC: Full 2026 Comparison",
-  description:
-    "Teleperformance vs TTEC for 2026 — scale, delivery location, pricing, verticals and contract flexibility, plus which fits enterprise vs mid-market.",
+  title,
+  description,
   alternates: { canonical: "/blog/teleperformance-vs-ttec" },
+  ...articleMeta(title, description, "/blog/teleperformance-vs-ttec"),
 };
 
 export default function Page() {

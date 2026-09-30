@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "10 Best Plumbing Answering Services (2026 Pricing)";
+const description =
+  "Compare 10 plumbing answering services by pricing, 24/7 emergency coverage, dispatch integrations, booking quality, and bilingual support.";
 
 export const metadata: Metadata = {
-  title: "10 Best Plumbing Answering Services (2026 Pricing)",
-  description:
-    "Compare 10 plumbing answering services by pricing, 24/7 emergency coverage, dispatch integrations, booking quality, and bilingual support.",
+  title,
+  description,
   keywords: [
     "plumbing answering service",
     "plumber call center",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "plumber on call dispatch",
   ],
   alternates: { canonical: "/blog/top-10-plumbing-answering-service-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-plumbing-answering-service-companies-usa"),
 };
 
 const FAQS = [

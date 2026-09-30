@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Funeral Home Answering Service | 24/7 First Call Coverage";
+const description =
+  "US-based 24/7 answering service for funeral homes and cremation providers. First call intake, removal coordination, and pre-need enquiries. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Funeral Home Answering Service | 24/7 First Call Coverage",
-  description:
-    "US-based 24/7 answering service for funeral homes and cremation providers. First call intake, removal coordination, and pre-need enquiries. Get a quote.",
+  title,
+  description,
   keywords: [
     "funeral home answering service",
     "funeral home call center",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "death care call center",
   ],
   alternates: { canonical: "/industries/funeral-home-answering-service" },
+  ...pageMeta(title, description, "/industries/funeral-home-answering-service"),
 };
 
 const features = [

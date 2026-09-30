@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Airlines Call Center | Contact Center USA";
+const description =
+  "US-based airlines call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Airlines Call Center | Contact Center USA",
-  description:
-    "US-based airlines call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "airlines call center",
     "airline bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "24/7 airline contact center",
   ],
   alternates: { canonical: "/industries/airlines-call-center" },
+  ...pageMeta(title, description, "/industries/airlines-call-center"),
 };
 
 const features = [

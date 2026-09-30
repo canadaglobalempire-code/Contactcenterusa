@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Answering Service Companies USA (2026)";
+const description =
+  "The top 10 answering service companies in the USA for 2026, ranked by 24/7 coverage, answer speed, pricing & reviews. Compare and get a quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Answering Service Companies USA (2026)",
-  description:
-    "The top 10 answering service companies in the USA for 2026, ranked by 24/7 coverage, answer speed, pricing & reviews. Compare and get a quote.",
+  title,
+  description,
   keywords: [
     "answering service companies",
     "24/7 answering service",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "us based answering service",
   ],
   alternates: { canonical: "/blog/top-10-answering-service-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-answering-service-companies-usa"),
 };
 
 export default function Page() {

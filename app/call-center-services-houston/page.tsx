@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { cityExtras } from "@/lib/city-landing-extras";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Houston Call Center & BPO Services | US-Based Teams";
+const description =
+  "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.";
 
 export const metadata: Metadata = {
-  title: "Houston Call Center & BPO Services | US-Based Teams",
-  description:
-    "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
+  title,
+  description,
   keywords: [
     "call center services houston",
     "houston bpo",
@@ -18,19 +22,7 @@ export const metadata: Metadata = {
     "houston contact center",
   ],
   alternates: { canonical: "/call-center-services-houston" },
-  openGraph: {
-    title: "Houston Call Center & BPO Services | US-Based Teams",
-    description:
-      "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
-    url: "/call-center-services-houston",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Houston Call Center & BPO Services | US-Based Teams",
-    description:
-      "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
-  },
+  ...pageMeta(title, description, "/call-center-services-houston"),
 };
 
 const seoContent: SEOPattern[] = [

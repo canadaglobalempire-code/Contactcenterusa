@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Answering Service Near Me: Does Location Matter?";
+const description =
+  "Whether a local answering service is actually better, the four things proximity genuinely buys you, and how to judge any provider.";
 
 export const metadata: Metadata = {
-  title: "Answering Service Near Me: Does Location Matter?",
-  description:
-    "Whether a local answering service is actually better, the four things proximity genuinely buys you, and how to judge any provider.",
+  title,
+  description,
   keywords: [
     "answering service near me",
     "local answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "medical answering service near me",
   ],
   alternates: { canonical: "/blog/answering-service-near-me" },
+  ...articleMeta(title, description, "/blog/answering-service-near-me"),
 };
 
 const FAQS = [

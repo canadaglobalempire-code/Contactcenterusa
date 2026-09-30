@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "10 Best US-Based Live Chat Outsourcing Companies (2026)";
+const description =
+  "Compare 10 US-based live chat outsourcing companies by pricing, 24/7 coverage, response time, ecommerce fit, AI assistance, and integrations.";
 
 export const metadata: Metadata = {
-  title: "10 Best US-Based Live Chat Outsourcing Companies (2026)",
-  description:
-    "Compare 10 US-based live chat outsourcing companies by pricing, 24/7 coverage, response time, ecommerce fit, AI assistance, and integrations.",
+  title,
+  description,
   keywords: [
     "live chat outsourcing companies",
     "24/7 live chat support",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "us based live chat agents",
   ],
   alternates: { canonical: "/blog/top-10-live-chat-outsourcing-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-live-chat-outsourcing-companies-usa"),
 };
 
 export default function Page() {

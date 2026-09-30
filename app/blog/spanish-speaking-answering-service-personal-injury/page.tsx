@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Spanish Answering Service for PI Law Firms (2026)";
+const description =
+  "A bilingual Spanish answering service for personal injury law firms — capture more intakes 24/7 with native Spanish-speaking agents. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Spanish Answering Service for PI Law Firms (2026)",
-  description:
-    "A bilingual Spanish answering service for personal injury law firms — capture more intakes 24/7 with native Spanish-speaking agents. Get a quote.",
+  title,
+  description,
   keywords: [
     "spanish speaking answering service for personal injury",
     "bilingual personal injury intake",
@@ -23,6 +27,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/blog/spanish-speaking-answering-service-personal-injury",
   },
+  ...articleMeta(title, description, "/blog/spanish-speaking-answering-service-personal-injury"),
 };
 
 const faqs = [
