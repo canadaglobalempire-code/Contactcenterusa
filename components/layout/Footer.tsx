@@ -272,6 +272,7 @@ export default function Footer() {
               { label: "Charlotte", href: "/call-center-services-charlotte" },
               { label: "San Francisco", href: "/call-center-services-san-francisco" },
               { label: "Seattle", href: "/call-center-services-seattle" },
+              { label: "Boston", href: "/call-center-services-boston" },
             ].map((city) => (
               <Link key={city.href} href={city.href} className="text-sm text-gray-600 transition-colors hover:text-navy">
                 {city.label}

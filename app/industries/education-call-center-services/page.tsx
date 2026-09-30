@@ -289,6 +289,11 @@ const relatedServices = [
     desc: "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.",
     href: "/about/company-history",
   },
+  {
+    title: "Boston Call Center Services for Colleges",
+    desc: "Admissions inquiry management, financial aid answering, and student help desk for Greater Boston universities and EdTech, staffed on Eastern Time.",
+    href: "/call-center-services-boston",
+  },
 ];
 
 export default function EducationPage() {

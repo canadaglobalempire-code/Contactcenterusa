@@ -289,6 +289,11 @@ const relatedServices = [
     desc: "How a mid-size hospital network reduced claim denial rates by 34% and accelerated patient billing with our HIPAA-compliant call center solution.",
     href: "/case-studies/healthcare-revenue-cycle-management",
   },
+  {
+    title: "Boston Biotech & Life Sciences Support",
+    desc: "Medical information lines, clinical trial inquiries, patient support, and device intake for Greater Boston biotech and life sciences teams.",
+    href: "/call-center-services-boston",
+  },
 ];
 
 export default function PharmaceuticalsPage() {

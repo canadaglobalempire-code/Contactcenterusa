@@ -279,6 +279,11 @@ const relatedServices = [
     desc: "See our ranked guide to the best healthcare BPO companies in the USA.",
     href: "/blog/top-15-healthcare-bpo-companies-usa",
   },
+  {
+    title: "Boston Healthcare Call Center Services",
+    desc: "HIPAA-compliant patient intake for Boston and Massachusetts healthcare networks, with a dedicated Eastern Time pod for New England hours.",
+    href: "/call-center-services-boston",
+  },
 ];
 
 export default function HealthcarePage() {

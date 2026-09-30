@@ -226,6 +226,10 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/industries/ecommerce-customer-service-outsourcing": "2026-09-30",
   "/industries/pest-control-call-center": "2026-09-30",
   "/industries/solar-lead-generation-call-center": "2026-09-30",
+  // In-body links to the Boston city page.
+  "/industries/education-call-center-services": "2026-09-30",
+  "/industries/healthcare-call-center-services": "2026-09-30",
+  "/industries/pharmaceuticals-call-center": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
