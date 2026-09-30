@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useInView } from "framer-motion";
 
 interface AnimatedCounterProps {
   target: number;
@@ -11,6 +10,12 @@ interface AnimatedCounterProps {
   decimals?: number;
 }
 
+/**
+ * Renders the real figure in the server HTML, so crawlers, AI readers and
+ * visitors without JavaScript read "98%" rather than "0%". The count-up only
+ * runs for counters that start below the fold, where the reset to 0 is never
+ * seen, and never for visitors who prefer reduced motion.
+ */
 export function AnimatedCounter({
   target,
   suffix = "",
@@ -19,29 +24,45 @@ export function AnimatedCounter({
   decimals = 0,
 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target);
 
   useEffect(() => {
-    if (!isInView) return;
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    let startTime: number;
-    let animationFrame: number;
+    const { top, bottom } = el.getBoundingClientRect();
+    if (top < window.innerHeight && bottom > 0) return;
 
+    let frame = 0;
+    let startTime: number | undefined;
     const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
+      startTime ??= timestamp;
       const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(eased * target);
-
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
+      setCount((1 - Math.pow(1 - progress, 3)) * target);
+      if (progress < 1) frame = requestAnimationFrame(animate);
     };
 
-    animationFrame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [isInView, target, duration]);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(animate);
+      },
+      { rootMargin: "-100px 0px" }
+    );
+
+    // Out of view: start from zero so the count-up plays when it scrolls in.
+    frame = requestAnimationFrame(() => setCount(0));
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(frame);
+      setCount(target);
+    };
+  }, [target, duration]);
 
   return (
     <span ref={ref}>
