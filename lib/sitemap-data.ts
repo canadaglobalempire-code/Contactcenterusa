@@ -208,6 +208,23 @@ function familyUpdated(route: string): string | undefined {
   return FAMILY_UPDATED.find(([re]) => re.test(route))?.[1];
 }
 
+/*
+ * Per-route content dates. A family date is only true for the change that set
+ * it: a page added later would claim a date from before it existed, and a
+ * page improved later would keep the old one. List a route here when its own
+ * content (copy, title, description, in-body links) changes, including
+ * top-level pages such as "/" that match no family.
+ *
+ * The newest known date wins, so an entry here can move a route's lastmod
+ * forward but never back past a date its own source declares. Data-driven
+ * blog posts are dated by dateModified in lib/traffic-blog-posts.ts instead.
+ */
+const ROUTE_UPDATED: Record<string, string> = {};
+
+function latestDate(...dates: (string | undefined)[]): string | undefined {
+  return (dates.filter(Boolean) as string[]).sort().at(-1);
+}
+
 let cache: Map<string, SitemapEntry[]> | null = null;
 
 function buildAll(): Map<string, SitemapEntry[]> {
@@ -224,8 +241,10 @@ function buildAll(): Map<string, SitemapEntry[]> {
     const slug = route.startsWith("/blog/") ? route.slice("/blog/".length) : null;
     const entry: SitemapEntry = {
       loc: route === "/" ? `${BASE_URL}/` : `${BASE_URL}${route}`,
-      lastmod:
+      lastmod: latestDate(
+        ROUTE_UPDATED[route],
         contentDate(blob) ?? (slug ? libSlugDates().get(slug) : undefined) ?? familyUpdated(route),
+      ),
       images: pageImages(blob),
     };
     const section = SECTIONS.find((s) => s.match(route))!;
