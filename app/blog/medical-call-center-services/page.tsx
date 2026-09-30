@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Medical Call Center Services Guide (2026)";
+const description =
+  "Medical call center services — HIPAA-compliant patient scheduling, triage, and 24/7 answering for clinics and hospitals. Compare options & get a quote.";
 
 export const metadata: Metadata = {
-  title: "Medical Call Center Services Guide (2026)",
-  description:
-    "Medical call center services — HIPAA-compliant patient scheduling, triage, and 24/7 answering for clinics and hospitals. Compare options & get a quote.",
+  title,
+  description,
   keywords: [
     "medical call center",
     "healthcare call center",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "healthcare call center metrics",
   ],
   alternates: { canonical: "/blog/medical-call-center-services" },
+  ...articleMeta(title, description, "/blog/medical-call-center-services"),
 };
 
 export default function Page() {

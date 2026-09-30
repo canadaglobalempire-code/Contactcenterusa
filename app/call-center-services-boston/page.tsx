@@ -6,7 +6,7 @@ import { cityExtras } from "@/lib/city-landing-extras";
 
 const title = "Boston Call Center & BPO Services | US-Based Teams";
 const description =
-  "US-based call center and BPO services for Boston & Massachusetts businesses. Biotech support, healthcare patient intake, higher education, and financial services.";
+  "US-based call center and BPO services for Boston and Massachusetts: biotech support, healthcare patient intake, higher education and financial services.";
 
 export const metadata: Metadata = {
   title,

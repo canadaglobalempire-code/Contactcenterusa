@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Bilingual Answering Service: Native vs Translated";
+const description =
+  "Why a Spanish line is not a bilingual answering service, what fluent coverage costs, and how to test whether agents are staffed overnight.";
 
 export const metadata: Metadata = {
-  title: "Bilingual Answering Service: Native vs Translated",
-  description:
-    "Why a Spanish line is not a bilingual answering service, what fluent coverage costs, and how to test whether agents are staffed overnight.",
+  title,
+  description,
   keywords: [
     "bilingual answering service",
     "spanish answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "us based bilingual answering service",
   ],
   alternates: { canonical: "/blog/bilingual-answering-service" },
+  ...articleMeta(title, description, "/blog/bilingual-answering-service"),
 };
 
 const FAQS = [

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ContactCenterSoftwareContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Contact Center Software Solutions | CCaaS Setup";
+const description =
+  "Contact center software selection, setup and administration. CCaaS platforms, IVR, routing and CRM integration managed for you. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Contact Center Software Solutions | CCaaS Setup",
-  description:
-    "Contact center software selection, setup and administration. CCaaS platforms, IVR, routing and CRM integration managed for you. Request a free quote.",
+  title,
+  description,
   keywords: [
     "contact center software solutions",
     "contact center software bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "enterprise call center software",
   ],
   alternates: { canonical: "/services/contact-center-software-solutions" },
+  ...pageMeta(title, description, "/services/contact-center-software-solutions"),
 };
 
 const seoContent: SEOPattern[] = [

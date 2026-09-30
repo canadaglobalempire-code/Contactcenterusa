@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Customer Service De-escalation Techniques (2026)";
+const description =
+  "De-escalation techniques for customer service teams — calm angry customers, defuse tension, and turn complaints into loyalty. Real scripts included.";
 
 export const metadata: Metadata = {
-  title: "Customer Service De-escalation Techniques (2026)",
-  description:
-    "De-escalation techniques for customer service teams — calm angry customers, defuse tension, and turn complaints into loyalty. Real scripts included.",
+  title,
+  description,
   keywords: [
     "de-escalation techniques",
     "de escalation skills",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "conflict resolution customer service",
   ],
   alternates: { canonical: "/blog/de-escalation-techniques-customer-service" },
+  ...articleMeta(title, description, "/blog/de-escalation-techniques-customer-service"),
 };
 
 export default function Page() {

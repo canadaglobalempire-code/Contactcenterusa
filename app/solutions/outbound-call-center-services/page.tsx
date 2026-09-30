@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Outbound Call Center Services | US Calling Teams";
+const description =
+  "Outbound call center services with US-based agents. Lead follow-up, appointment setting, surveys and win-back campaigns. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Outbound Call Center Services | US Calling Teams",
-  description:
-    "Outbound call center services with US-based agents. Lead follow-up, appointment setting, surveys and win-back campaigns. Request a free quote.",
+  title,
+  description,
   keywords: [
     "outbound call center services",
     "outbound bpo usa",
@@ -18,6 +22,7 @@ export const metadata: Metadata = {
     "outsourced outbound sales",
   ],
   alternates: { canonical: "/solutions/outbound-call-center-services" },
+  ...pageMeta(title, description, "/solutions/outbound-call-center-services"),
 };
 
 const seoContent: SEOPattern[] = [

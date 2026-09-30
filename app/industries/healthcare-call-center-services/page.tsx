@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Healthcare Call Center Services | HIPAA-Compliant Agents";
+const description =
+  "HIPAA-compliant healthcare call center services with US-based agents. Patient scheduling, insurance verification and after-hours triage. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Healthcare Call Center Services | HIPAA-Compliant Agents",
-  description:
-    "HIPAA-compliant healthcare call center services with US-based agents. Patient scheduling, insurance verification and after-hours triage. Get a quote.",
+  title,
+  description,
   keywords: [
     "healthcare bpo services",
     "healthcare call center usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "clinic answering service",
   ],
   alternates: { canonical: "/industries/healthcare-call-center-services" },
+  ...pageMeta(title, description, "/industries/healthcare-call-center-services"),
 };
 
 const features = [
@@ -273,6 +278,11 @@ const relatedServices = [
     title: "Top 15 Healthcare BPO Companies (2026)",
     desc: "See our ranked guide to the best healthcare BPO companies in the USA.",
     href: "/blog/top-15-healthcare-bpo-companies-usa",
+  },
+  {
+    title: "Boston Healthcare Call Center Services",
+    desc: "HIPAA-compliant patient intake for Boston and Massachusetts healthcare networks, with a dedicated Eastern Time pod for New England hours.",
+    href: "/call-center-services-boston",
   },
 ];
 

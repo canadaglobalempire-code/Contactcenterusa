@@ -1,11 +1,16 @@
 import BlogPage from "./BlogPage";
 import { BlogLeadSection } from "./BlogLeadSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Call Center Outsourcing Guides & Provider Rankings";
+const description =
+  "Read call center outsourcing guides, provider rankings, comparison articles, and buyer checklists for choosing the right support partner.";
 
 export const metadata = {
-  title: "Call Center Outsourcing Guides & Provider Rankings",
-  description:
-    "Read call center outsourcing guides, provider rankings, comparison articles, and buyer checklists for choosing the right support partner.",
+  title,
+  description,
   alternates: { canonical: "/blog" },
+  ...pageMeta(title, description, "/blog"),
 };
 
 export default function Page() {

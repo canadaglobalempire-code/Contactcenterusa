@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Plumbing Answering Service & Call Center | 24/7 Dispatch";
+const description =
+  "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team.";
 
 export const metadata: Metadata = {
-  title: "Plumbing Answering Service & Call Center | 24/7 Dispatch",
-  description: "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team.",
+  title,
+  description,
   keywords: [
     "plumbing answering service",
     "plumber call center",
@@ -16,6 +21,7 @@ export const metadata: Metadata = {
     "contractor answering service plumbing",
   ],
   alternates: { canonical: "/industries/plumbing-call-center-services" },
+  ...pageMeta(title, description, "/industries/plumbing-call-center-services"),
 };
 
 const features = [

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Financial Services Call Center | Contact Center USA";
+const description =
+  "US-based financial services call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Financial Services Call Center | Contact Center USA",
-  description:
-    "US-based financial services call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "financial services call center",
     "fintech bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "lending customer service outsourcing",
   ],
   alternates: { canonical: "/industries/financial-services-call-center" },
+  ...pageMeta(title, description, "/industries/financial-services-call-center"),
 };
 
 const features = [

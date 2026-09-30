@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Answering Service for Contractors: 2026 Costs & ROI";
+const description =
+  "Why contractors miss most inbound calls from the job site, what a US-based contractor answering service costs, and how estimate capture works with JobNimbus.";
 
 export const metadata: Metadata = {
-  title: "Answering Service for Contractors: 2026 Costs & ROI",
-  description:
-    "Why contractors miss most inbound calls from the job site, what a US-based contractor answering service costs, and how estimate capture works with JobNimbus.",
+  title,
+  description,
   keywords: [
     "answering service for contractors",
     "contractor answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "storm response answering service",
   ],
   alternates: { canonical: "/blog/answering-service-for-contractors" },
+  ...articleMeta(title, description, "/blog/answering-service-for-contractors"),
 };
 
 const FAQS = [

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Virtual & Remote Support | US Work-From-Home Agents";
+const description =
+  "Virtual and remote support staffed by vetted US-based work-from-home agents, with the same security and QA standards as on-site. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Virtual & Remote Support | US Work-From-Home Agents",
-  description:
-    "Virtual and remote support staffed by vetted US-based work-from-home agents, with the same security and QA standards as on-site. Get a quote.",
+  title,
+  description,
   keywords: [
     "virtual remote support",
     "remote customer support outsourcing",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "virtual customer service usa",
   ],
   alternates: { canonical: "/services/virtual-remote-support" },
+  ...pageMeta(title, description, "/services/virtual-remote-support"),
 };
 
 const features = [

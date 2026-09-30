@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Government Call Center Services | Citizen Support";
+const description =
+  "Government call center services for citizen support lines, benefits enquiries, program enrollment and multilingual access. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Government Call Center Services | Citizen Support",
-  description:
-    "Government call center services for citizen support lines, benefits enquiries, program enrollment and multilingual access. Get a free quote.",
+  title,
+  description,
   keywords: [
     "government call center",
     "government bpo services",
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
     "citizen services hotline",
   ],
   alternates: { canonical: "/solutions/government-call-center-services" },
+  ...pageMeta(title, description, "/solutions/government-call-center-services"),
 };
 
 export default function Page() {

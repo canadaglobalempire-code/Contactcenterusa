@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Solar Lead Qualification & Appointment Setting Call Center";
+const description =
+  "US-based solar lead qualification and appointment setting: sub-60-second speed-to-lead, utility bill verification and CRM calendar booking.";
 
 export const metadata: Metadata = {
-  title: "Solar Lead Qualification & Appointment Setting Call Center",
-  description:
-    "US-based solar lead qualification and appointment setting call center. Sub-60-second speed-to-lead response, utility bill verification, and CRM calendar booking.",
+  title,
+  description,
   keywords: [
     "solar lead qualification call center",
     "solar appointment setting call center",
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
     "solar call center usa",
   ],
   alternates: { canonical: "/industries/solar-lead-generation-call-center" },
+  ...pageMeta(title, description, "/industries/solar-lead-generation-call-center"),
 };
 
 const features = [

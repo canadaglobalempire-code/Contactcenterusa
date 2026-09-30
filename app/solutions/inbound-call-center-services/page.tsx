@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Inbound Call Center Services | 24/7 US Answering";
+const description =
+  "Inbound call center services with 24/7 US-based agents. Overflow, after-hours and full-time coverage across phone, chat and email. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Inbound Call Center Services | 24/7 US Answering",
-  description:
-    "Inbound call center services with 24/7 US-based agents. Overflow, after-hours and full-time coverage across phone, chat and email. Get a quote.",
+  title,
+  description,
   keywords: [
     "inbound call center services",
     "inbound bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "us-based call center",
   ],
   alternates: { canonical: "/solutions/inbound-call-center-services" },
+  ...pageMeta(title, description, "/solutions/inbound-call-center-services"),
 };
 
 export default function Page() {

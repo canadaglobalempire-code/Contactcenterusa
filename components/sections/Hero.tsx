@@ -78,7 +78,7 @@ export function Hero() {
             >
               <div className="pr-6">
                 <div className="text-2xl font-bold text-navy sm:text-3xl">
-                  <AnimatedCounter target={500} suffix="+" />
+                  <AnimatedCounter target={5000} suffix="+" />
                 </div>
                 <div className="mt-0.5 text-sm text-gray-600">
                   Trained Agents

@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Answering Service for Small Business (2026 Costs)";
+const description =
+  "What US answering service coverage costs a small business in 2026, when it beats hiring a receptionist, and how to pick one that books work.";
 
 export const metadata: Metadata = {
-  title: "Answering Service for Small Business (2026 Costs)",
-  description:
-    "What US answering service coverage costs a small business in 2026, when it beats hiring a receptionist, and how to pick one that books work.",
+  title,
+  description,
   keywords: [
     "answering service for small business",
     "small business answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "best answering service for small business",
   ],
   alternates: { canonical: "/blog/answering-service-for-small-business" },
+  ...articleMeta(title, description, "/blog/answering-service-for-small-business"),
 };
 
 const FAQS = [

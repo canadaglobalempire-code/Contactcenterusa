@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { CXAnalyticsContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Customer Experience Analytics | CSAT, FCR & AHT";
+const description =
+  "Customer experience analytics that turn call data into action. CSAT, FCR, AHT and sentiment reporting with root-cause analysis. Request a quote.";
 
 export const metadata: Metadata = {
-  title: "Customer Experience Analytics | CSAT, FCR & AHT",
-  description:
-    "Customer experience analytics that turn call data into action. CSAT, FCR, AHT and sentiment reporting with root-cause analysis. Request a quote.",
+  title,
+  description,
   keywords: [
     "cx analytics services",
     "customer experience analytics outsourcing",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "customer journey analytics services",
   ],
   alternates: { canonical: "/services/customer-experience-analytics" },
+  ...pageMeta(title, description, "/services/customer-experience-analytics"),
 };
 
 const seoContent: SEOPattern[] = [

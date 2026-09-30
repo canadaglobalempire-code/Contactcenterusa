@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Back Office Outsourcing | Data Entry & Processing";
+const description =
+  "Back office outsourcing for data entry, order processing, claims and case management. US-based teams with documented QA. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Back Office Outsourcing | Data Entry & Processing",
-  description:
-    "Back office outsourcing for data entry, order processing, claims and case management. US-based teams with documented QA. Request a free quote.",
+  title,
+  description,
   keywords: [
     "back office outsourcing",
     "back office bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "outsourced back office operations",
   ],
   alternates: { canonical: "/solutions/back-office-outsourcing" },
+  ...pageMeta(title, description, "/solutions/back-office-outsourcing"),
 };
 
 const seoContent: SEOPattern[] = [

@@ -53,7 +53,7 @@ export function AboutSection() {
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-navy">
-                    <AnimatedCounter target={500} suffix="+" />
+                    <AnimatedCounter target={5000} suffix="+" />
                   </div>
                   <div className="text-sm text-gray-600">Trained Agents</div>
                 </div>

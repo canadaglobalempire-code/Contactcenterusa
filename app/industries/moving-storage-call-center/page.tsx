@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Moving & Storage Call Center | Quote Intake & Booking";
+const description =
+  "US-based call center for moving companies and self-storage operators. Quote intake, survey booking, unit enquiries, and peak-season surge coverage. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Moving & Storage Call Center | Quote Intake & Booking",
-  description:
-    "US-based call center for moving companies and self-storage operators. Quote intake, survey booking, unit enquiries, and peak-season surge coverage. Get a quote.",
+  title,
+  description,
   keywords: [
     "moving company call center",
     "moving company answering service",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "movers phone answering",
   ],
   alternates: { canonical: "/industries/moving-storage-call-center" },
+  ...pageMeta(title, description, "/industries/moving-storage-call-center"),
 };
 
 const features = [

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Sales Outsourcing | US-Based SDR & Full-Cycle Teams";
+const description =
+  "Outsource sales to US-based SDRs and closers. Pipeline generation, lead qualification and full-cycle selling built on your ICP. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Sales Outsourcing | US-Based SDR & Full-Cycle Teams",
-  description:
-    "Outsource sales to US-based SDRs and closers. Pipeline generation, lead qualification and full-cycle selling built on your ICP. Get a free quote.",
+  title,
+  description,
   keywords: [
     "sales outsourcing",
     "sales bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "outsourced sales reps usa",
   ],
   alternates: { canonical: "/solutions/sales-outsourcing" },
+  ...pageMeta(title, description, "/solutions/sales-outsourcing"),
 };
 
 const features = [

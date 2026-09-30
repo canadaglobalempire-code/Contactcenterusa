@@ -51,7 +51,7 @@ export function SocialProofBar() {
               </div>
             ))}
             <span className="ml-2 text-sm font-medium text-text-muted">
-              500+ trained agents ready to serve
+              5,000+ trained agents ready to serve
             </span>
           </div>
         </div>

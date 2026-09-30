@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Medical Billing & RCM Support | Patient Balance Calls";
+const description =
+  "US-based revenue cycle support for providers and billing companies. Patient balance calls, insurance follow-up, denial management, and prior authorization.";
 
 export const metadata: Metadata = {
-  title: "Medical Billing & RCM Support | Patient Balance Calls",
-  description:
-    "US-based revenue cycle support for providers and billing companies. Patient balance calls, insurance follow-up, denial management, and prior authorization.",
+  title,
+  description,
   keywords: [
     "medical billing call center",
     "revenue cycle management outsourcing",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "healthcare billing support",
   ],
   alternates: { canonical: "/industries/medical-billing-rcm" },
+  ...pageMeta(title, description, "/industries/medical-billing-rcm"),
 };
 
 const features = [

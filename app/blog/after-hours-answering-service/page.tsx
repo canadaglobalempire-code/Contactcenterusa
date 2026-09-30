@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "After Hours Answering Service: 2026 Costs & Coverage";
+const description =
+  "How a US-based after hours answering service works, what 24/7 night and weekend coverage costs per minute and per call, and how to pick a provider that books.";
 
 export const metadata: Metadata = {
-  title: "After Hours Answering Service: 2026 Costs & Coverage",
-  description:
-    "How a US-based after hours answering service works, what 24/7 night and weekend coverage costs per minute and per call, and how to pick a provider that books.",
+  title,
+  description,
   keywords: [
     "after hours answering service",
     "after hours phone answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "after hours call center",
   ],
   alternates: { canonical: "/blog/after-hours-answering-service" },
+  ...articleMeta(title, description, "/blog/after-hours-answering-service"),
 };
 
 const FAQS = [

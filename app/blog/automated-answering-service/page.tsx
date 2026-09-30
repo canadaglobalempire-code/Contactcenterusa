@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "AI Voice Agent vs Live Answering Service: How to Choose";
+const description =
+  "Where an automated answering service genuinely outperforms a live agent, where it loses you the job, and how to split call types between the two.";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agent vs Live Answering Service: How to Choose",
-  description:
-    "Where an automated answering service genuinely outperforms a live agent, where it loses you the job, and how to split call types between the two.",
+  title,
+  description,
   keywords: [
     "automated answering service",
     "ai answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "robot answering service",
   ],
   alternates: { canonical: "/blog/automated-answering-service" },
+  ...articleMeta(title, description, "/blog/automated-answering-service"),
 };
 
 const FAQS = [

@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Nearshore Call Center Outsourcing Guide (2026)";
+const description =
+  "Nearshore call center outsourcing in 2026 — costs, time-zone and bilingual advantages, and top locations vs offshore. Find the right fit.";
 
 export const metadata: Metadata = {
-  title: "Nearshore Call Center Outsourcing Guide (2026)",
-  description:
-    "Nearshore call center outsourcing in 2026 — costs, time-zone and bilingual advantages, and top locations vs offshore. Find the right fit.",
+  title,
+  description,
   keywords: [
     "nearshore call center",
     "nearshore contact center",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "US based call center",
   ],
   alternates: { canonical: "/blog/nearshore-call-center-outsourcing" },
+  ...articleMeta(title, description, "/blog/nearshore-call-center-outsourcing"),
 };
 
 export default function Page() {

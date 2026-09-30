@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Auto Dealership BDC | Outsourced Sales & Service BDC";
+const description =
+  "US-based BDC for auto dealerships. Internet lead response, service appointment booking, missed-call recovery, and unsold follow-up. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Auto Dealership BDC | Outsourced Sales & Service BDC",
-  description:
-    "US-based BDC for auto dealerships. Internet lead response, service appointment booking, missed-call recovery, and unsold follow-up. Get a quote.",
+  title,
+  description,
   keywords: [
     "dealership bdc outsourcing",
     "auto dealership call center",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "unsold follow up calling",
   ],
   alternates: { canonical: "/industries/auto-dealership-bdc" },
+  ...pageMeta(title, description, "/industries/auto-dealership-bdc"),
 };
 
 const features = [

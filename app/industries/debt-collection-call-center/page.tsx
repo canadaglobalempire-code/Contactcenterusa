@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Debt Collection Call Center | ARM & Accounts Receivable BPO";
+const description =
+  "US-based debt collection call center and accounts receivable management BPO. FDCPA-aware first-party and early-stage recovery, payment arrangements, and skip.";
 
 export const metadata: Metadata = {
-  title: "Debt Collection Call Center | ARM & Accounts Receivable BPO",
-  description:
-    "US-based debt collection call center and accounts receivable management BPO. FDCPA-aware first-party and early-stage recovery, payment arrangements, and skip.",
+  title,
+  description,
   keywords: [
     "debt collection call center",
     "accounts receivable management bpo",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "past due account calling",
   ],
   alternates: { canonical: "/industries/debt-collection-call-center" },
+  ...pageMeta(title, description, "/industries/debt-collection-call-center"),
 };
 
 const features = [

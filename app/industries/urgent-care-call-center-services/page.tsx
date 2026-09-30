@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Urgent Care & Clinic Call Center | HIPAA Patient Intake";
+const description =
+  "HIPAA-compliant urgent care and medical clinic call center services. 24/7 patient scheduling, insurance verification, after-hours triage, and EHR integration.";
 
 export const metadata: Metadata = {
-  title: "Urgent Care & Clinic Call Center | HIPAA Patient Intake",
-  description:
-    "HIPAA-compliant urgent care and medical clinic call center services. 24/7 patient scheduling, insurance verification, after-hours triage, and EHR integration.",
+  title,
+  description,
   keywords: [
     "urgent care call center",
     "clinic answering service",
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
     "after hours urgent care triage",
   ],
   alternates: { canonical: "/industries/urgent-care-call-center-services" },
+  ...pageMeta(title, description, "/industries/urgent-care-call-center-services"),
 };
 
 const features = [

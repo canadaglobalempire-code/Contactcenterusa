@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "CPA & Accounting Firm Answering Service | Tax Season Surge";
+const description =
+  "US-based answering service and call center for CPA firms and accounting practices. Client intake, tax appointment scheduling, and seasonal surge management.";
 
 export const metadata: Metadata = {
-  title: "CPA & Accounting Firm Answering Service | Tax Season Surge",
-  description:
-    "US-based answering service and call center for CPA firms and accounting practices. Client intake, tax appointment scheduling, and seasonal surge management.",
+  title,
+  description,
   keywords: [
     "cpa answering service",
     "accounting firm call center",
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
     "accounting customer service outsourcing",
   ],
   alternates: { canonical: "/industries/accounting-cpa-call-center" },
+  ...pageMeta(title, description, "/industries/accounting-cpa-call-center"),
 };
 
 const features = [

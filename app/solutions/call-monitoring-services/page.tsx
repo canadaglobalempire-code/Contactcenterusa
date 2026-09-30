@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Call Monitoring Services | QA Scoring & Coaching";
+const description =
+  "Call monitoring and QA services with calibrated scorecards, agent coaching and compliance review across your queues. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Call Monitoring Services | QA Scoring & Coaching",
-  description:
-    "Call monitoring and QA services with calibrated scorecards, agent coaching and compliance review across your queues. Request a free quote.",
+  title,
+  description,
   keywords: [
     "call monitoring services",
     "call quality monitoring bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "contact center quality assurance",
   ],
   alternates: { canonical: "/solutions/call-monitoring-services" },
+  ...pageMeta(title, description, "/solutions/call-monitoring-services"),
 };
 
 const features = [

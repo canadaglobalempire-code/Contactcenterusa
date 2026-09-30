@@ -99,7 +99,7 @@ export function WhyChooseUs() {
               <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-white font-bold text-lg">500+</div>
+                    <div className="text-white font-bold text-lg">5,000+</div>
                     <div className="text-white/60 text-xs">Agents</div>
                   </div>
                   <div>

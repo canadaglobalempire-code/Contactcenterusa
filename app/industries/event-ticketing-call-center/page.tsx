@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Event Ticketing Call Center | Box Office & Ticketing BPO";
+const description =
+  "US-based call center for ticketing companies, venues, and resale marketplaces. On-sale surge, event-day support, refunds, exchanges, and chargeback handling.";
 
 export const metadata: Metadata = {
-  title: "Event Ticketing Call Center | Box Office & Ticketing BPO",
-  description:
-    "US-based call center for ticketing companies, venues, and resale marketplaces. On-sale surge, event-day support, refunds, exchanges, and chargeback handling.",
+  title,
+  description,
   keywords: [
     "ticketing call center",
     "event ticketing bpo",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "ticketing chargeback support",
   ],
   alternates: { canonical: "/industries/event-ticketing-call-center" },
+  ...pageMeta(title, description, "/industries/event-ticketing-call-center"),
 };
 
 const features = [

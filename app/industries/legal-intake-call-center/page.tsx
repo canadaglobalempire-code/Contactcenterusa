@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Legal Intake Call Center | 24/7 Law Firm Answering Service";
+const description =
+  "US-based legal intake call center for personal injury and mass tort firms. 24/7 answering, case screening, retainer follow-up, and CRM integration. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Legal Intake Call Center | 24/7 Law Firm Answering Service",
-  description:
-    "US-based legal intake call center for personal injury and mass tort firms. 24/7 answering, case screening, retainer follow-up, and CRM integration. Get a quote.",
+  title,
+  description,
   keywords: [
     "legal intake call center",
     "legal intake companies",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "spanish speaking legal intake",
   ],
   alternates: { canonical: "/industries/legal-intake-call-center" },
+  ...pageMeta(title, description, "/industries/legal-intake-call-center"),
 };
 
 const features = [

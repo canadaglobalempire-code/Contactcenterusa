@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Social Customer Care | US-Based Social Support Team";
+const description =
+  "US-based social customer care across X, Facebook, Instagram and TikTok. Monitored coverage, brand-voice replies and escalation handling. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Social Customer Care | US-Based Social Support Team",
-  description:
-    "US-based social customer care across X, Facebook, Instagram and TikTok. Monitored coverage, brand-voice replies and escalation handling. Get a quote.",
+  title,
+  description,
   keywords: [
     "social customer care",
     "social media customer service bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "omnichannel social care",
   ],
   alternates: { canonical: "/solutions/social-customer-care" },
+  ...pageMeta(title, description, "/solutions/social-customer-care"),
 };
 
 const features = [

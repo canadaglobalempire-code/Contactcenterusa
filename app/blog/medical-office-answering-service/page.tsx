@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Medical Office Answering Service (2026 Guide)";
+const description =
+  "How practices cut phone abandonment, verify insurance at booking, and separate front-desk overflow from on-call paging. HIPAA rules and costs.";
 
 export const metadata: Metadata = {
-  title: "Medical Office Answering Service (2026 Guide)",
-  description:
-    "How practices cut phone abandonment, verify insurance at booking, and separate front-desk overflow from on-call paging. HIPAA rules and costs.",
+  title,
+  description,
   keywords: [
     "medical office answering service",
     "physician answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "medical front desk outsourcing",
   ],
   alternates: { canonical: "/blog/medical-office-answering-service" },
+  ...articleMeta(title, description, "/blog/medical-office-answering-service"),
 };
 
 const FAQS = [

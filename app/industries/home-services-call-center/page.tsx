@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Home Services Call Center | HVAC & Plumbing";
+const description =
+  "US-based home services call center for HVAC, plumbing, electrical, and roofing contractors. 24/7 answering, emergency dispatch, and booked-job capture.";
 
 export const metadata: Metadata = {
-  title: "Home Services Call Center | HVAC & Plumbing",
-  description:
-    "US-based home services call center for HVAC, plumbing, electrical, and roofing contractors. 24/7 answering, emergency dispatch, and booked-job capture.",
+  title,
+  description,
   keywords: [
     "home services call center",
     "hvac answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "pest control answering service",
   ],
   alternates: { canonical: "/industries/home-services-call-center" },
+  ...pageMeta(title, description, "/industries/home-services-call-center"),
 };
 
 const features = [
