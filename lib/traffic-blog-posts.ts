@@ -213,9 +213,9 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         ],
       },
       {
-        heading: "Contingency collection fees and BPO pricing",
+        heading: "How BPO collections is priced",
         paragraphs: [
-          "A contingency collection agency charges a percentage of the amount recovered. Compare the gross recovery with the net amount remitted after the agency fee, and ask how direct payments to your business are reconciled. IC System’s published remittance practices illustrate two possibilities: billing the client for the agency’s share or deducting that share from the next remittance. Its programs also show that flat-fee and contingency phases can coexist. Check placement periods, cancellation terms and additional processing or legal fees in the proposal. Early-stage first-party work may instead be quoted per hour or per agent; compare total fees and net recovery for the same account mix rather than assuming that one model costs less. Confirm the applicable fee model and terms in your provider’s written quote.",
+          "Most collections BPOs charge a contingency fee — a percentage of what they recover — which typically rises with the age and difficulty of the debt. Early-stage first-party work can also be priced per hour or per agent. Some providers offer flat-fee or hybrid models for high-volume, lower-balance portfolios.",
         ],
       },
       {

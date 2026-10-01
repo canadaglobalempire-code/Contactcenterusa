@@ -106,12 +106,9 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
   function renderParagraph(text: string) {
     if (post.slug !== 'what-is-bpo-collections') return citeSources(text, cited);
     const links: Record<string, string> = {
-      'collections BPOs': '/services/debt-collection-outsourcing',
-      'contingency collection agency': 'https://healthcare.icsystem.com/blog/how-to-choose-a-healthcare-debt-collection-agency/',
-      'published remittance practices': 'https://www.icsystem.com/faqs/',
-      'first-party work': '/services/debt-collection-outsourcing',
+      'BPO collections': '/services/debt-collection-outsourcing',
     };
-    const parts = text.split(/(collections BPOs|contingency collection agency|published remittance practices|first-party work)/);
+    const parts = text.split(/(BPO collections)/);
     return parts.map((part, index) => links[part] ? <Link key={index} href={links[part]} style={{ color: 'inherit', textDecoration: 'inherit' }}>{part}</Link> : citeSources(part, cited));
   }
   return (
