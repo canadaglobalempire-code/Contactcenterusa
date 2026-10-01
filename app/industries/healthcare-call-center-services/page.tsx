@@ -252,7 +252,7 @@ const seoContent: SEOPattern[] = [
     eyebrow: "Get Started",
     heading: "Ready to evaluate a better healthcare BPO partner?",
     accent: "better healthcare BPO",
-    body: "Whether you're a hospital drowning in patient access volume, a clinic losing revenue to insurance denials, a pharma team scaling a patient support hub, or a DME supplier wrestling with compliance documentation — we can show you expected impact before you commit. Request a free consultation and we'll walk you through integration scope, compliance posture, and go-live timeline.",
+    body: "Whether you're a hospital drowning in patient access volume, a clinic losing revenue to insurance denials, a pharma team scaling a patient support hub, or a DME supplier wrestling with compliance documentation — we can show you expected impact before you commit. Request a free consultation and we'll walk you through integration scope, compliance posture, and go-live timeline. If your requirements include telehealth appointment workflows, describe them when requesting a quote so our team can confirm scope and fit.",
     ctaLabel: "Request a Free Consultation",
     ctaHref: "/contact",
   },
