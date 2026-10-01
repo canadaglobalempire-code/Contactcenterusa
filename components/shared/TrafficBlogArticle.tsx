@@ -104,10 +104,15 @@ function BlogTable({ table }: { table: NonNullable<TrafficBlogSection["table"]> 
 export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
   const cited = new Set<string>();
   function renderParagraph(text: string) {
-    const phrase = 'collections BPOs';
-    if (post.slug !== 'what-is-bpo-collections' || !text.includes(phrase)) return citeSources(text, cited);
-    const at = text.indexOf(phrase);
-    return <>{citeSources(text.slice(0, at), cited)}<Link href="/services/debt-collection-outsourcing" style={{ color: 'inherit', textDecoration: 'inherit' }}>{phrase}</Link>{citeSources(text.slice(at + phrase.length), cited)}</>;
+    if (post.slug !== 'what-is-bpo-collections') return citeSources(text, cited);
+    const links: Record<string, string> = {
+      'collections BPOs': '/services/debt-collection-outsourcing',
+      'contingency collection agency': 'https://healthcare.icsystem.com/blog/how-to-choose-a-healthcare-debt-collection-agency/',
+      'published remittance practices': 'https://www.icsystem.com/faqs/',
+      'first-party work': '/services/debt-collection-outsourcing',
+    };
+    const parts = text.split(/(collections BPOs|contingency collection agency|published remittance practices|first-party work)/);
+    return parts.map((part, index) => links[part] ? <Link key={index} href={links[part]} style={{ color: 'inherit', textDecoration: 'inherit' }}>{part}</Link> : citeSources(part, cited));
   }
   return (
     <>
