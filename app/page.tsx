@@ -49,13 +49,11 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* The rated Organization node lives here only. The site-wide layout
-          emits the same @id WITHOUT aggregateRating - see lib/schema.ts. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            generateOrganizationSchema({ withRating: true })
+            generateOrganizationSchema()
           ).replace(/</g, "\\u003c"),
         }}
       />
