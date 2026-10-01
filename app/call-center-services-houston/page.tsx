@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "Get US-based Houston call center and BPO services for inbound support, outbound calls, answering, bilingual agents, energy, and healthcare.",
     url: "/call-center-services-houston",
     type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

@@ -20,7 +20,10 @@ export const metadata: Metadata = {
     "arizona customer service outsourcing",
   ],
   alternates: { canonical: "/locations/arizona" },
-  openGraph: { title, description, url: "/locations/arizona", type: "website" },
+  openGraph: {
+    title, description, url: "/locations/arizona", type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 

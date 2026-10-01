@@ -20,7 +20,10 @@ export const metadata: Metadata = {
     "illinois customer service outsourcing",
   ],
   alternates: { canonical: "/locations/illinois" },
-  openGraph: { title, description, url: "/locations/illinois", type: "website" },
+  openGraph: {
+    title, description, url: "/locations/illinois", type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 

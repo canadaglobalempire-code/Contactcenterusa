@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
     url: "/call-center-services-dallas",
     type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",

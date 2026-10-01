@@ -20,7 +20,10 @@ export const metadata: Metadata = {
     "nevada customer service outsourcing",
   ],
   alternates: { canonical: "/locations/nevada" },
-  openGraph: { title, description, url: "/locations/nevada", type: "website" },
+  openGraph: {
+    title, description, url: "/locations/nevada", type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 

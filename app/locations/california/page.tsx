@@ -20,7 +20,10 @@ export const metadata: Metadata = {
     "california customer service outsourcing",
   ],
   alternates: { canonical: "/locations/california" },
-  openGraph: { title, description, url: "/locations/california", type: "website" },
+  openGraph: {
+    title, description, url: "/locations/california", type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 

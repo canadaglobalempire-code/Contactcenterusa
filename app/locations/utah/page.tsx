@@ -20,7 +20,10 @@ export const metadata: Metadata = {
     "utah outbound call center",
   ],
   alternates: { canonical: "/locations/utah" },
-  openGraph: { title, description, url: "/locations/utah", type: "website" },
+  openGraph: {
+    title, description, url: "/locations/utah", type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 

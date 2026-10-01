@@ -20,7 +20,10 @@ export const metadata: Metadata = {
     "nc customer service outsourcing",
   ],
   alternates: { canonical: "/locations/north-carolina" },
-  openGraph: { title, description, url: "/locations/north-carolina", type: "website" },
+  openGraph: {
+    title, description, url: "/locations/north-carolina", type: "website",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   twitter: { card: "summary_large_image", title, description },
 };
 
