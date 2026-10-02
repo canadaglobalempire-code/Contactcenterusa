@@ -78,6 +78,26 @@ const testimonial = {
 
 const faqs = [
   {
+    question: "What does a plumbing answering service do?",
+    answer:
+      "It answers your calls when your office cannot, works through your triage questions to separate emergencies from routine jobs, pages the on-call plumber for true emergencies, books other jobs and estimate visits on your dispatch board, and sends you the details of every call.",
+  },
+  {
+    question: "Can the answering service book jobs in ServiceTitan?",
+    answer:
+      "Yes. Agents can book jobs directly onto your dispatch board in ServiceTitan, Housecall Pro, Jobber or FieldEdge, following your rules for job types, time slots and service area.",
+  },
+  {
+    question: "How does after-hours emergency plumbing dispatch work?",
+    answer:
+      "You set the rules: which situations count as emergencies, who is on call, the order in which to try technicians and the backup contact. Agents follow your triage questions, page the on-call plumber by phone or text for emergencies, and book everything else into the next available slot.",
+  },
+  {
+    question: "What is the difference between after-hours and overflow answering?",
+    answer:
+      "After-hours answering covers every call while your office is closed and centers on emergency triage and dispatch. Overflow answering picks up during business hours when your line is busy or unanswered, and centers on booking jobs and estimates. Many plumbing companies use both, with separate rules for each.",
+  },
+  {
     "question": "What should a plumbing answering service collect from callers?",
     "answer": "Define an intake checklist with the caller's contact details, service address, description of the problem and whether the request is for repair, maintenance or an estimate. Add the information your dispatcher needs to decide the next step. Agents should follow your approved triage process and escalate urgent situations to the designated contact."
   },
@@ -105,6 +125,43 @@ const seoSections: SEOPattern[] = [
       { stat: "<3 Rings", label: "Rapid answer speed on every emergency line" },
       { stat: "Direct Sync", label: "Live ServiceTitan and Housecall Pro scheduling" },
       { stat: "No Contracts", label: "Flexible month-to-month service agreements" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "What We Handle",
+    heading: "What a plumbing answering service handles",
+    image: "/images/cc-woman-headset.jpg",
+    imagePosition: "left",
+    body: [
+      "A plumbing answering service answers your line when your office cannot, and turns each call into the next step your business needs: an emergency dispatch, a booked job, an estimate visit or a message for the morning. What makes it a plumbing service rather than a general one is the triage. Agents work from your script to find out how serious the problem is before deciding who to wake up.",
+      "Typical triage questions: Is water still running, and has the main shutoff been closed? Is sewage backing up into the home? Is water near the electrical panel or outlets? Is this the only working toilet or the only source of hot water? Is the caller the owner, a tenant or a property manager, and is the address inside your service area? If a caller mentions a gas smell, your script's safety instruction comes first. The answers decide whether the call is an emergency under your rules or a job for the next opening.",
+      "Then your dispatch rules apply. You decide which situations page the on-call plumber at night, which go to the first slot in the morning, the escalation order when the first technician does not answer, and what agents may say about arrival times. Agents book directly onto your dispatch board in ServiceTitan, Housecall Pro, Jobber or FieldEdge, and record the details your technician needs before arriving.",
+    ],
+    bullets: [
+      "Emergency triage from your approved question list",
+      "On-call paging and escalation in the order you set",
+      "Job booking in ServiceTitan, Housecall Pro, Jobber or FieldEdge",
+      "Estimate visits for water heaters, repipes and sewer lines",
+      "Call notes and messages delivered the way your team works",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Coverage Options",
+    heading: "After-hours vs overflow coverage for plumbers",
+    image: "/images/cc-agent-night.jpg",
+    imagePosition: "right",
+    body: [
+      "After-hours coverage means the answering service takes every call when your office is closed: evenings, nights, weekends and holidays. This is where emergency triage and on-call dispatch matter most. A burst pipe at 2 a.m. cannot wait, a dripping faucet can, and waking a technician for the wrong one costs you the next day's work.",
+      "Overflow coverage means the service picks up during business hours when your office line is busy or not answered within a set number of rings. It protects you on the mornings after a freeze, when every homeowner with a split pipe calls at once, and through lunch breaks and staff absences. Overflow calls are mostly bookings and estimate requests, so the key part of the setup is live access to your schedule.",
+      "Many plumbing companies use both, with different rules for each: dispatch rules for after-hours calls and booking rules for overflow. Start with the gap that costs you the most jobs today, then add the other once the scripts are working.",
+    ],
+    bullets: [
+      "After-hours: nights, weekends and holidays, with emergency dispatch",
+      "Overflow: business-hours calls your office cannot reach in time",
+      "Separate rules for each: dispatch at night, booking by day",
+      "Freeze-event and storm surges answered by the same trained team",
     ],
   },
   {
@@ -165,6 +222,11 @@ export default function PlumbingPage() {
           title: "Virtual & Remote Support",
           desc: "24/7 virtual receptionist and overflow answering services.",
           href: "/services/virtual-remote-support",
+        },
+        {
+          title: "After-Hours Answering Service Guide",
+          desc: "How night and weekend answering works and how to choose a provider that books jobs instead of taking messages.",
+          href: "/blog/after-hours-answering-service",
         },
       ]}
       ctaHeading="Ready to book more high-margin plumbing jobs?"

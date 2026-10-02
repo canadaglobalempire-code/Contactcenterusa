@@ -269,6 +269,9 @@ const ROUTE_UPDATED: Record<string, string> = {
   // What a telemarketing company does, inbound vs outbound, pricing models,
   // TSR and TCPA rules, FAQs, new title and H1.
   "/services/telemarketing-services": "2026-09-30",
+  // Plumbing answering service: triage and dispatch, after-hours vs
+  // overflow, FAQs, link to the after-hours guide.
+  "/industries/plumbing-call-center-services": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
