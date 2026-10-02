@@ -181,7 +181,7 @@ const seoContent: SEOPattern[] = [
     imagePosition: "left",
     body: [
       "The two terms are often used as if they mean the same thing, but they describe different scopes. A help desk fixes problems: something is broken, a user cannot log in, an application throws an error. Its job is to restore service quickly and record what happened.",
-      "A service desk is the single point of contact for all IT services, not just breakages. As well as incidents, it handles service requests such as new starter accounts, hardware and software requests and access changes, keeps users informed about planned changes and outages, and feeds problem and change management, the broader role described in the ITIL framework. If you are outsourcing, decide which scope you are buying, because a service desk needs a request catalog, approval rules and access to more of your systems.",
+      "A service desk is the single point of contact for all IT services, not just breakages. As well as incidents, it handles service requests such as new starter accounts, hardware and software requests and access changes, keeps users informed about planned changes and outages, and feeds problem and change management. If you are outsourcing, decide which scope you are buying, because a service desk needs a request catalog, approval rules and access to more of your systems.",
     ],
     bullets: [
       "Help desk: incidents and break-fix, focused on fast resolution",
