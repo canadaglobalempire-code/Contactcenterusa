@@ -262,6 +262,8 @@ const ROUTE_UPDATED: Record<string, string> = {
   // in-body link to it.
   "/industries/legal-intake-call-center": "2026-09-30",
   "/blog/lawyer-answering-service": "2026-09-30",
+  // Blog index card for the new contingency collection agency guide.
+  "/blog": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
