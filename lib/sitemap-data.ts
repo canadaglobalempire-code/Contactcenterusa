@@ -281,6 +281,8 @@ const ROUTE_UPDATED: Record<string, string> = {
   // link to it from back office outsourcing.
   "/solutions/office-support-services": "2026-09-30",
   "/solutions/back-office-outsourcing": "2026-09-30",
+  // Answers hub lists the new and renamed pages from lib/ai-context.ts.
+  "/answers": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {

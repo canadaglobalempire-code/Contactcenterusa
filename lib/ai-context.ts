@@ -1,5 +1,5 @@
 export const SITE_BASE_URL = "https://contactcenterusa.com";
-export const AI_CONTEXT_UPDATED_AT = "2026-08-19";
+export const AI_CONTEXT_UPDATED_AT = "2026-09-30";
 
 export type PriorityLink = {
   title: string;
@@ -61,7 +61,22 @@ export const priorityServiceLinks: PriorityLink[] = [
   {
     title: "Telemarketing Services",
     href: "/services/telemarketing-services",
-    summary: "Compliant outbound telemarketing, prospect outreach, customer reactivation, and campaign support.",
+    summary: "What a telemarketing company does: outbound and inbound telemarketing campaigns, pricing models, and Telemarketing Sales Rule and TCPA compliance.",
+  },
+  {
+    title: "IT Help Desk Outsourcing",
+    href: "/solutions/information-technology-services",
+    summary: "US-based L1-L3 IT help desk for employees: ticket triage, remote desktop support, escalation management, and 24/7 coverage.",
+  },
+  {
+    title: "Administrative Outsourcing Services",
+    href: "/solutions/office-support-services",
+    summary: "Scheduling, data entry, document processing, order entry, correspondence, and virtual receptionist support from US-based staff.",
+  },
+  {
+    title: "Debt Collection Outsourcing",
+    href: "/services/debt-collection-outsourcing",
+    summary: "First-party early-stage collections and collection reminders under your brand, plus third-party recovery of charged-off accounts.",
   },
 ];
 
@@ -87,9 +102,9 @@ export const priorityIndustryLinks: PriorityLink[] = [
     summary: "Order support, returns, shipping questions, live chat, and post-purchase customer care.",
   },
   {
-    title: "SaaS and Technology Support",
+    title: "SaaS Customer Support Outsourcing",
     href: "/industries/saas-technology-support",
-    summary: "SaaS customer support, technical triage, help desk, onboarding, and product support coverage.",
+    summary: "SaaS customer support outsourcing: onboarding, Tier 1-3 troubleshooting, billing and subscription questions, and churn-risk handoff.",
   },
   {
     title: "Retail Call Center Services",
@@ -105,6 +120,16 @@ export const priorityIndustryLinks: PriorityLink[] = [
     title: "Travel and Hospitality Call Center",
     href: "/industries/travel-hospitality-call-center",
     summary: "Reservation support, guest communications, booking assistance, and travel customer care.",
+  },
+  {
+    title: "Plumbing Answering Service",
+    href: "/industries/plumbing-call-center-services",
+    summary: "Plumbing answering with emergency triage, on-call dispatch, and job booking in ServiceTitan, Housecall Pro, Jobber, or FieldEdge.",
+  },
+  {
+    title: "Debt Collection Call Center",
+    href: "/industries/debt-collection-call-center",
+    summary: "First-party early-stage recovery calling, payment arrangements, and FDCPA and Regulation F aware handling.",
   },
 ];
 
@@ -306,6 +331,11 @@ export const priorityBuyerGuideLinks: PriorityLink[] = [
     title: "What Is BPO in Collections?",
     href: "/blog/what-is-bpo-collections",
     summary: "How outsourced debt collection works: first-party vs third-party collections, FDCPA compliance, and pricing.",
+  },
+  {
+    title: "Contingency Collection Agency Guide",
+    href: "/blog/contingency-collection-agency",
+    summary: "How contingency collection fees work, what drives the rate, contract terms to check, FDCPA and Regulation F basics, and when first-party collections fit better.",
   },
   {
     title: "Cost to Outsource Customer Service",
