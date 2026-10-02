@@ -12,7 +12,7 @@ import {
   Eye,
 } from "lucide-react";
 import { HeroContactForm } from "@/components/shared/HeroContactForm";
-import { StatCounter } from "@/components/shared/StatCounter";
+import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { PageFAQ } from "@/components/shared/PageFAQ";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 
@@ -107,7 +107,7 @@ export default function SocialMediaContent({ seoContent }: { seoContent?: SEOPat
               { value: 24, suffix: "/7", label: "Social Monitoring" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl font-bold text-white"><StatCounter target={stat.value} suffix={stat.suffix} /></div>
+                <div className="text-3xl font-bold text-white"><AnimatedCounter target={stat.value} suffix={stat.suffix} /></div>
                 <div className="mt-1 text-sm text-white/50">{stat.label}</div>
               </div>
             ))}

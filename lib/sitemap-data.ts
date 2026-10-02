@@ -199,15 +199,10 @@ function pageImages(blob: string): string[] {
  * Template-driven pages carry no date of their own. These families changed
  * on 2026-09-21 (related-page links, primary-source citations, state-to-city
  * links); bump the date here when they genuinely change again.
- *
- * 2026-09-30: every industry, service, solution and city page now renders its
- * stat figures in the server HTML instead of 0. The state pages have no stat
- * figures, so /locations/ keeps its 2026-09-21 date.
  */
 const FAMILY_UPDATED: [RegExp, string][] = [
-  [/^\/(industries|services|solutions)\//, "2026-09-30"],
-  [/^\/call-center-services-/, "2026-09-30"],
-  [/^\/locations\//, "2026-09-21"],
+  [/^\/(industries|services|solutions|locations)\//, "2026-09-21"],
+  [/^\/call-center-services-/, "2026-09-21"],
 ];
 function familyUpdated(route: string): string | undefined {
   return FAMILY_UPDATED.find(([re]) => re.test(route))?.[1];
