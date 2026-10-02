@@ -3,15 +3,17 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Telemarketing Services | US-Based Outbound Calling";
+const title = "Telemarketing Services | US-Based Telemarketing Company";
 const description =
-  "US-based telemarketing with trained outbound agents. Compliant calling, list management and transparent per-campaign reporting. Get a free quote.";
+  "What a telemarketing company does, inbound vs outbound calling, how programs are priced and the TSR and TCPA rules. US-based telemarketing services.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
     "telemarketing services",
+    "telemarketing company",
+    "inbound telemarketing",
     "telemarketing bpo usa",
     "outbound telemarketing outsourcing",
     "telemarketing companies usa",
@@ -78,6 +80,26 @@ const testimonial = {
 
 const faqs = [
   {
+    question: "What does a telemarketing company do?",
+    answer:
+      "A telemarketing company makes and answers sales and marketing calls for other businesses. It provides trained callers, dialing technology, list management and compliance controls, and runs campaigns such as prospecting, lead qualification, appointment setting, customer reactivation and phone surveys, with reporting on every call.",
+  },
+  {
+    question: "What is the difference between inbound and outbound telemarketing?",
+    answer:
+      "Outbound telemarketing means agents call prospects or customers from a list. Inbound telemarketing means agents answer calls that customers make in response to advertising, then qualify the caller, take the order or book the appointment. Outbound reaches people who are not yet looking for you; inbound handles people who already are.",
+  },
+  {
+    question: "How are telemarketing services priced?",
+    answer:
+      "Usually per agent hour, per completed contact, or per appointment or qualified lead. Per hour suits new and complex campaigns, per contact suits surveys and campaigns with a clear outcome, and per appointment suits proven offers with a tight definition of what qualifies. The cost depends on list quality, the audience, call length, the hours covered and how much product training is needed.",
+  },
+  {
+    question: "Do business-to-business calls fall under the Telemarketing Sales Rule?",
+    answer:
+      "Calls to businesses are exempt from most of the Telemarketing Sales Rule, but its bans on misrepresentation still apply, and calls selling nondurable office or cleaning supplies are covered. TCPA rules on autodialed and prerecorded calls to mobile numbers, and state laws, can still apply to B2B campaigns.",
+  },
+  {
     question: "How do you ensure telemarketing compliance with TCPA and TSR regulations?",
     answer:
       "We maintain comprehensive compliance programs including automated DNC list scrubbing against federal and state registries, consent tracking for every contact, calling time window enforcement, and mandatory disclosures in every call. All agents complete TCPA and TSR training, and our compliance team audits campaigns weekly.",
@@ -118,6 +140,43 @@ const seoContent: SEOPattern[] = [
       { stat: "4.5x", label: "Average ROI on outbound telemarketing campaign spend" },
       { stat: "12%", label: "Average contact-to-qualified-lead conversion rate" },
       { stat: "0", label: "Material TCPA / TSR compliance findings across 10+ years" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Telemarketing Explained",
+    heading: "What a telemarketing company does",
+    image: "/images/cc-agent-call.jpg",
+    imagePosition: "left",
+    body: [
+      "A telemarketing company makes and takes sales and marketing calls for other businesses. It supplies the trained callers, the dialing technology, the call lists and the compliance controls, and it reports on every call so you can see what each campaign produced. You supply the offer, the target audience and the rules for what counts as a qualified lead or a sale.",
+      "The work covers more than cold calling. Telemarketing companies qualify leads before they reach your sales team, book appointments, follow up on web enquiries and trade show contacts, promote events and webinars, renew or reactivate lapsed customers, and run phone surveys. Each campaign starts with a script and a target list, and a well-run campaign keeps testing both against what the calls show.",
+    ],
+    bullets: [
+      "Prospecting and cold calling to your ideal customer profile",
+      "Lead qualification and appointment setting for your sales team",
+      "Follow-up on web enquiries, form fills and event contacts",
+      "Customer reactivation, renewal and cross-sell calls",
+      "Market research and phone surveys",
+      "List cleaning, Do Not Call scrubbing and call reporting",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Inbound vs Outbound",
+    heading: "Inbound vs outbound telemarketing",
+    image: "/images/cc-headset-desk.jpg",
+    imagePosition: "right",
+    body: [
+      "Outbound telemarketing is when the agent places the call: to prospects on a list, to past customers, or to people who asked to be contacted. It is how you reach buyers who are not yet looking for you, and it carries the heaviest rules, because the person being called did not start the conversation.",
+      "Inbound telemarketing is when the customer calls you, usually in response to an advertisement, a mailer, a TV or radio spot, or your website. The agent's job is to answer quickly, qualify the caller, take the order or book the appointment, and offer anything related that genuinely fits. Inbound callers are already interested, which makes these calls valuable, but the volume is uneven: it jumps when an ad runs, so coverage has to be planned around the media schedule.",
+      "Many programs blend the two, with an inbound line for responses and an outbound team that calls back missed calls, abandoned web forms and leads that did not buy the first time. The rules differ by direction. Under the Telemarketing Sales Rule, many calls that customers make in response to general advertising are exempt from parts of the rule, but an upsell made during such a call is still covered (16 CFR 310.6).",
+    ],
+    bullets: [
+      "Outbound: prospecting, lead follow-up, appointment setting, reactivation",
+      "Inbound: advertising response lines, order taking and sales enquiries",
+      "Blended: an inbound line plus outbound call-backs on missed calls and web forms",
+      "Staffing planned around list size for outbound, and the media schedule for inbound",
     ],
   },
   {
@@ -194,6 +253,43 @@ const seoContent: SEOPattern[] = [
         title: "Full Launch & Optimization",
         body: "Scale to target volume with weekly A/B testing, QA review, and conversion reporting.",
       },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Pricing Models",
+    heading: "How telemarketing programs are priced",
+    image: "/images/cc-team-plan.jpg",
+    imagePosition: "left",
+    body: [
+      "Telemarketing is priced in one of three main ways, and the right one depends on how predictable your results are. Per-hour pricing pays for agent time on the phones. It suits new campaigns, complex B2B sales and programs where you want full control of the script, because you are paying for effort rather than outcomes and the caller has no reason to rush a conversation.",
+      "Per-contact pricing pays for each completed conversation with a decision maker, or each call handled on an inbound line. It suits surveys, reminders and campaigns with a clear call outcome. Per-appointment or per-lead pricing pays only when a meeting is booked or a lead meets agreed criteria. It moves risk to the provider, so it needs a tight definition of what qualifies, and it suits proven offers with steady lists.",
+      "Whatever the model, the cost is driven by the same things: how hard your audience is to reach, the size and quality of your list, the length and complexity of the call, B2B or B2C, the hours and time zones covered, how much product training is needed, and the reporting and integrations you ask for. Ask for a quote on the model that fits your campaign, and a pilot before you commit to volume.",
+    ],
+    bullets: [
+      "Per hour: agent time, best for new or complex campaigns",
+      "Per contact: each completed conversation or handled call",
+      "Per appointment or lead: paid only on agreed outcomes",
+      "Pilot first, then scale on the model that fits your results",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Compliance",
+    heading: "Rules a telemarketing company must follow",
+    image: "/images/cc-team-desk.jpg",
+    imagePosition: "right",
+    body: [
+      "Telemarketing in the United States is governed by two main sets of federal rules. The FTC's Telemarketing Sales Rule (16 CFR 310) covers sellers and telemarketers: no outbound sales calls to a home before 8 a.m. or after 9 p.m. local time, prompt disclosure of who is calling and that the call is a sales call, caller ID on every call, limits on abandoned calls, and no calls to numbers on the National Do Not Call Registry unless an exception applies. Calls to businesses are exempt from most of the rule, but its bans on misrepresentation still apply.",
+      "The Telephone Consumer Protection Act (TCPA, 47 U.S.C. 227) and the FCC's rules at 47 CFR 64.1200 add consent requirements. Telemarketing calls and texts to a mobile number made with an autodialer or a prerecorded or artificial voice need the consumer's prior express written consent, prerecorded telemarketing calls to a home line need it too, and anyone making telemarketing calls to consumers must keep an internal do-not-call list and honor requests to stop. Several states add their own registration, calling-hour and consent rules on top.",
+      "A telemarketing company should be able to show you how it meets each rule: how lists are scrubbed against the national registry (the rules' safe harbor calls for a copy of the registry no more than 31 days old), where consent records are kept, how opt-outs reach the dialer, and how calling hours are enforced by the time zone of the person called.",
+    ],
+    bullets: [
+      "National Do Not Call Registry scrubbing and an internal do-not-call list",
+      "Calling hours enforced by the called person's time zone",
+      "Consent records for autodialed, prerecorded and text campaigns",
+      "Caller ID, required disclosures and recorded calls for QA",
+      "State telemarketing rules checked for every state you call",
     ],
   },
   {
@@ -275,6 +371,11 @@ const relatedServices = [
     href: "/solutions/lead-generation-appointment-setting",
   },
   {
+    title: "Inbound Call Center Services",
+    desc: "Live answering for advertising response lines, order support and sales enquiries.",
+    href: "/solutions/inbound-call-center-services",
+  },
+  {
     title: "Top 10 Telemarketing Companies (2026)",
     desc: "Compare the top US telemarketing companies in our ranked buyer's guide.",
     href: "/blog/top-10-telemarketing-companies-usa",
@@ -285,8 +386,8 @@ export default function TelemarketingServicesPage() {
   return (
     <ServicePageTemplate
       badge="Telemarketing Services"
-      title="Telemarketing Services & Telemarketing BPO USA"
-      titleHighlight="Telemarketing BPO USA"
+      title="Telemarketing Services from a US-Based Telemarketing Company"
+      titleHighlight="Telemarketing Company"
       subtitle="One of the leading telemarketing services providers in the USA — our telemarketing BPO USA runs compliant outbound telemarketing outsourcing campaigns that generate leads, drive sales, and gather insights."
       description="Effective telemarketing services require more than just dialing numbers — they take skilled communicators, smart targeting, compelling scripts, and strict compliance management. Our professional telemarketing BPO USA teams combine all four to execute outbound telemarketing outsourcing campaigns that consistently outperform expectations. Whether you need lead generation, appointment setting, event promotion, or market research, we deliver the conversations that move your business forward."
       features={features}

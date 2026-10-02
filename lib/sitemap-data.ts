@@ -266,6 +266,9 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/blog": "2026-09-30",
   // SaaS customer support outsourcing title, H1, guide sections and FAQs.
   "/industries/saas-technology-support": "2026-09-30",
+  // What a telemarketing company does, inbound vs outbound, pricing models,
+  // TSR and TCPA rules, FAQs, new title and H1.
+  "/services/telemarketing-services": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
