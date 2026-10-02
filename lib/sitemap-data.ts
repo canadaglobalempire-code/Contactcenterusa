@@ -277,6 +277,10 @@ const ROUTE_UPDATED: Record<string, string> = {
   // technical support outsourcing (the SaaS page is dated above).
   "/solutions/information-technology-services": "2026-09-30",
   "/solutions/technical-support-outsourcing": "2026-09-30",
+  // Administrative outsourcing section, FAQs, title and H1, and the in-body
+  // link to it from back office outsourcing.
+  "/solutions/office-support-services": "2026-09-30",
+  "/solutions/back-office-outsourcing": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
