@@ -17,6 +17,8 @@ const SOURCES: { id: string; pattern: RegExp; href: string }[] = [
   { id: "glba", pattern: /\b(?:GLBA|Gramm-Leach-Bliley Act)\b/, href: "https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act" },
   { id: "ccpa", pattern: /\bCCPA\b/, href: "https://oag.ca.gov/privacy/ccpa" },
   { id: "dnc", pattern: /\bNational Do Not Call Registry\b/, href: "https://www.donotcall.gov/" },
+  { id: "coppa", pattern: /\bCOPPA\b/, href: "https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa" },
+  { id: "usc2258a", pattern: /\b18 U\.S\.C\. 2258A\b/, href: "https://www.law.cornell.edu/uscode/text/18/2258A" },
   { id: "soc2", pattern: /\bSOC 2(?: Type II)?\b/, href: "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" },
 ];
 

@@ -254,6 +254,8 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/industries/debt-collection-call-center": "2026-09-30",
   // Customer care vs support and dedicated vs shared team sections, FAQs.
   "/services/customer-care-outsourcing": "2026-09-30",
+  // Buyer checklist for content moderation companies, chat moderation, FAQs.
+  "/solutions/content-moderation-services": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
