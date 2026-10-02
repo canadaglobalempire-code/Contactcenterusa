@@ -258,6 +258,10 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/solutions/content-moderation-services": "2026-09-30",
   // (Also 2026-09-30, listed above: /industries/ecommerce-customer-service-outsourcing
   // got WISMO, returns and peak-season sections and new title, H1 and FAQs.)
+  // "What is legal intake outsourcing?" section and FAQ, and the article's
+  // in-body link to it.
+  "/industries/legal-intake-call-center": "2026-09-30",
+  "/blog/lawyer-answering-service": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
