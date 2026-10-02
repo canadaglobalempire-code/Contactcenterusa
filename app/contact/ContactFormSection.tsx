@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useInView } from "@/hooks/useInView";
 import { MapPin, Clock } from "lucide-react";
 import { LeadForm } from "@/components/shared/LeadForm";
@@ -17,7 +18,11 @@ export function ContactFormSection() {
             </h2>
             <p className="mt-2 text-gray-700">
               Fill out the form below and one of our specialists will contact you
-              within 1 working day.
+              within 1 working day. See our{" "}
+              <Link href="/privacy-policy" className="font-semibold text-red hover:underline">
+                Privacy Policy
+              </Link>{" "}
+              for how we handle your information.
             </p>
 
             <LeadForm
