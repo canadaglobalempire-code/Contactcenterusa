@@ -3,15 +3,20 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Ecommerce Customer Service | Contact Center USA";
+const title = "Ecommerce Customer Support & E-Commerce Call Center";
 const description =
-  "Ecommerce customer support outsourcing with US-based agents for order enquiries, returns and product questions, scoped to your channels and peak seasons.";
+  "US-based ecommerce customer support and e-commerce call center agents for order status (WISMO), returns, exchanges, product questions and peak-season surges.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
+    "ecommerce customer support",
+    "e-commerce call center",
+    "ecommerce call center",
     "ecommerce customer service",
+    "wismo support",
+    "ecommerce returns and exchanges support",
     "ecommerce bpo usa",
     "online retail customer support",
     "shopify customer service outsourcing",
@@ -88,17 +93,32 @@ const faqs = [
   {
     "question": "How do we compare ecommerce support proposals?",
     "answer": "Use the same channels, service hours and normal and peak enquiry volumes in each request. Ask which order actions, training, management and reports are included. Review resolution quality, repeat contacts and customer feedback as well as response speed. Set a review cadence so changes in promotions, products or fulfilment are reflected in the support process."
-  }
+  },
+  {
+    question: "What does an e-commerce call center do?",
+    answer:
+      "An e-commerce call center answers online shoppers before and after they buy, by phone, live chat, email, SMS, and social messages. Agents handle order status and delivery questions, product and sizing questions, returns, exchanges and refunds, subscription changes, payment issues, and orders placed by phone, working inside your store and help desk.",
+  },
+  {
+    question: "How do you handle WISMO (where is my order) contacts?",
+    answer:
+      "Agents look the order up in your store and in the carrier's tracking, tell the customer where it is and when to expect it, and act on the answer: changing an address before shipment, opening a claim for a lost or damaged parcel, or escalating to your fulfillment team. When a delay affects many orders, proactive updates reduce the number of customers who need to ask.",
+  },
+  {
+    question: "Can you scale ecommerce customer support for Black Friday and the holidays?",
+    answer:
+      "Yes. We forecast peak contacts by channel with you, cross-train a bench of agents on your products and policies before the season, agree macros and refund approval rules in advance, and add evening and weekend coverage for your promotion dates. Volumes, CSAT, and refund rates are reviewed daily during the peak.",
+  },
 ];
 
 const seoContent: SEOPattern[] = [
   {
     pattern: "hero-statement",
-    eyebrow: "Best Ecommerce BPO in USA",
-    heading: "The ecommerce customer service partner online retailers choose when every minute of response time moves revenue.",
+    eyebrow: "US-Based E-Commerce Call Center",
+    heading: "The ecommerce customer support partner online retailers choose when every minute of response time moves revenue.",
     accent: "moves revenue",
     body: [
-      "Contact Center USA is one of the best ecommerce customer service providers in the USA — a 100% US-based ecommerce BPO USA operation delivering online retail customer support for DTC brands, marketplaces, Shopify Plus stores, subscription boxes, and omnichannel retailers.",
+      "Contact Center USA is a 100% US-based e-commerce call center delivering ecommerce customer support for DTC brands, marketplaces, Shopify Plus stores, subscription boxes, and omnichannel retailers.",
       "For ecommerce brands evaluating online retail customer support partners, the stakes are measurable: every minute of response delay increases abandonment, every mishandled return erodes LTV, and every peak season without surge capacity caps the year's growth. We solve all three.",
     ],
     stats: [
@@ -157,7 +177,7 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "flow",
     eyebrow: "How It Works",
-    heading: "Our Ecommerce Customer Service Onboarding Process",
+    heading: "How We Launch Your Ecommerce Customer Support Team",
     intro:
       "Every DTC brand, marketplace, and omnichannel retailer we support flows through the same five-stage workflow — engineered to stand up a production-ready online retail customer support team before your next peak.",
     steps: [
@@ -214,6 +234,36 @@ const seoContent: SEOPattern[] = [
         title: "Omnichannel Retailers",
         body: "Buy-online-pickup-in-store, curbside, ship-from-store, and in-store appointment support at scale.",
       },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Order Status & Returns",
+    heading: "Order status (WISMO), returns, and exchanges handled end to end",
+    image: "/images/cc-woman-typing.jpg",
+    imagePosition: "left",
+    body: [
+      "\"Where is my order?\" questions, known as WISMO, arrive every day in any ecommerce support queue, and they are easy to get wrong. Our agents work from live order and carrier tracking data in your store and help desk, so they can tell a shopper where a parcel is, explain a delay, change an address before the order ships, and open a lost or damaged-parcel claim without passing the customer around. When a carrier delay hits many orders at once, proactive updates let customers hear it from you before they need to ask.",
+      "Returns and exchanges follow your policy, not an agent's guess. We build your return window, item-condition rules, final-sale exclusions, and refund, exchange, and store-credit options into the workflow, create RMAs and return labels in your returns tool, and agree clear approval rules for exceptions. Where a customer is open to it, agents offer an exchange or a different size first, which keeps the sale, and they flag repeat returners or suspected fraud to your team instead of deciding alone.",
+      "Both queues rest on the same groundwork: access to your commerce platform, help desk, shipping, and returns tools; approved macros for the common cases; and a clear line between what agents may resolve and what needs your approval. Shoppers who would rather place or change an order by phone are handled the same way, with the order entered straight into your store.",
+    ],
+    bullets: [
+      "WISMO and delivery questions answered from live order and tracking data",
+      "Address changes, cancellations, and lost or damaged-parcel claims",
+      "Returns, exchanges, RMAs, and labels handled to your written policy",
+      "Exchange-first offers that keep revenue in the business",
+      "Refund exceptions and suspected fraud escalated to your team",
+    ],
+  },
+  {
+    pattern: "hero-statement",
+    eyebrow: "Peak Season",
+    heading: "Peak-season surge coverage for Black Friday, Cyber Monday, and launches",
+    accent: "Peak-season surge coverage",
+    body: [
+      "For most online retailers a handful of weeks decide the year, and the support queue is busiest exactly when there is the least room for error. We plan peak season with you well before it starts: forecasting contacts by channel rather than just orders, cross-training a bench of agents on your catalog and policies before they are needed, and adding evening and weekend coverage for the dates your promotions run.",
+      "Before go-live, the peak playbook is written down: macros for shipping delays, gift orders, extended return windows, and promotion exclusions; refund and appeasement approval rules agreed in advance; and a daily review of CSAT, first response time, resolution time, and refund rate, so problems are caught in hours rather than weeks.",
+      "The same approach covers product drops, flash sales, and launches. Our holiday scaling case study, linked below, shows how one e-commerce program was staffed up for Black Friday, and our ecommerce call center outsourcing guide sets out the full peak-season checklist.",
     ],
   },
   {
@@ -276,16 +326,21 @@ const relatedServices = [
     desc: "How a B2B SaaS company cut churn 28% and lifted NPS from 32 to 67 with proactive US-based customer success support — the baseline, the fix, and…",
     href: "/case-studies/saas-customer-retention",
   },
+  {
+    title: "Ecommerce Call Center Outsourcing Guide",
+    desc: "What ecommerce call center agents handle, the integrations to request, how to tier support, and a peak-season checklist.",
+    href: "/blog/ecommerce-call-center-outsourcing-guide",
+  },
 ];
 
 export default function EcommercePage() {
   return (
     <ServicePageTemplate
       badge="E-Commerce Call Center Services"
-      title="Call Center Solutions Built for E-Commerce Success"
-      titleHighlight="E-Commerce Success"
-      subtitle="Scalable customer support that reduces cart abandonment, streamlines returns, and delivers the fast, friendly service online shoppers expect."
-      description="Ecommerce customer service outsourcing for order enquiries, returns and product support. Scope channels, store access and seasonal coverage with Contact Center USA."
+      title="E-Commerce Call Center & Ecommerce Customer Support"
+      titleHighlight="Ecommerce Customer Support"
+      subtitle="Ecommerce customer support from a US-based e-commerce call center that answers order questions fast, streamlines returns and exchanges, and scales for peak season."
+      description="Ecommerce customer support outsourcing for order status, returns, exchanges and product questions. Our US-based e-commerce call center scopes channels, store access and seasonal coverage with you, so shoppers get the fast, friendly service they expect."
       features={features}
       benefits={benefits}
       image="/images/hd-agents-pair.jpg"

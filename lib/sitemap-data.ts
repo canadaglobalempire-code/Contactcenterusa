@@ -256,6 +256,8 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/services/customer-care-outsourcing": "2026-09-30",
   // Buyer checklist for content moderation companies, chat moderation, FAQs.
   "/solutions/content-moderation-services": "2026-09-30",
+  // (Also 2026-09-30, listed above: /industries/ecommerce-customer-service-outsourcing
+  // got WISMO, returns and peak-season sections and new title, H1 and FAQs.)
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {

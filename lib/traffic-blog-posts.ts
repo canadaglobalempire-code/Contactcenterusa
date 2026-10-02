@@ -837,7 +837,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     ],
     related: [
       { label: "Top ecommerce call center companies", href: "/blog/top-10-ecommerce-call-center-companies-usa" },
-      { label: "Ecommerce customer service outsourcing", href: "/industries/ecommerce-customer-service-outsourcing" },
+      { label: "Ecommerce customer support and e-commerce call center services", href: "/industries/ecommerce-customer-service-outsourcing" },
       { label: "Customer service outsourcing companies", href: "/blog/top-10-customer-service-outsourcing-companies-usa" },
       { label: "Live chat outsourcing", href: "/services/live-chat-outsourcing" },
       { label: "Top live chat outsourcing companies", href: "/blog/top-10-live-chat-outsourcing-companies-usa" },
