@@ -4,9 +4,9 @@ import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
 import { articleMeta } from "@/lib/seo-config";
 
-const title = "Best Healthcare BPO Companies in USA (2026)";
+const title = "Healthcare BPO in the USA: Top 15 Companies (2026)";
 const description =
-  "Compare healthcare BPO providers by HIPAA readiness, patient support workflows, scheduling capability, technology fit, and CX quality.";
+  "Compare 15 providers of healthcare BPO in the USA by HIPAA readiness, patient support workflows, scheduling capability, technology fit and CX quality.";
 
 export const metadata: Metadata = {
   title,

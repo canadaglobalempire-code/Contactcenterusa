@@ -6,7 +6,7 @@ import { articleMeta } from "@/lib/seo-config";
 
 const title = "Top 10 Legal Intake Call Center Companies (2026)";
 const description =
-  "The top 10 legal intake call center companies for 2026, ranked by 24/7 intake, conversion & law-firm experience. Compare US providers and get a quote.";
+  "Compare the top 10 legal intake call center companies for 2026 on 24/7 intake, conversion and law-firm fit, and see what legal intake outsourcing involves.";
 
 export const metadata: Metadata = {
   title,

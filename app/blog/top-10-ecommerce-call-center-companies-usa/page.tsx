@@ -6,7 +6,7 @@ import { articleMeta } from "@/lib/seo-config";
 
 const title = "Top 10 Ecommerce Call Center Companies USA (2026)";
 const description =
-  "Compare the top 10 ecommerce call center companies in the USA for 2026 — ranked by omnichannel CX, peak-season scaling & pricing. Get a quote.";
+  "Compare the top 10 ecommerce call center companies in the USA for 2026, ranked on ecommerce customer support quality, peak-season scaling and omnichannel CX.";
 
 export const metadata: Metadata = {
   title,

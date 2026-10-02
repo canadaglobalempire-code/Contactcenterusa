@@ -230,6 +230,22 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/industries/education-call-center-services": "2026-09-30",
   "/industries/healthcare-call-center-services": "2026-09-30",
   "/industries/pharmaceuticals-call-center": "2026-09-30",
+  // Ranked lists: one in-body link to the matching service page, and title or
+  // description wording on the healthcare, ecommerce and legal lists.
+  "/blog/top-10-bpo-companies-in-usa": "2026-09-30",
+  "/blog/top-10-bpo-companies-texas": "2026-09-30",
+  "/blog/top-10-customer-service-outsourcing-companies-usa": "2026-09-30",
+  "/blog/top-10-ecommerce-call-center-companies-usa": "2026-09-30",
+  "/blog/top-10-legal-intake-call-center-companies-usa": "2026-09-30",
+  "/blog/top-10-outsourced-sdr-companies-usa": "2026-09-30",
+  "/blog/top-10-plumbing-answering-service-companies-usa": "2026-09-30",
+  "/blog/top-10-telemarketing-companies-usa": "2026-09-30",
+  "/blog/top-15-healthcare-bpo-companies-usa": "2026-09-30",
+  // Link from the Texas city pages to the Texas BPO list.
+  "/call-center-services-austin": "2026-09-30",
+  "/call-center-services-dallas": "2026-09-30",
+  "/call-center-services-houston": "2026-09-30",
+  "/call-center-services-san-antonio": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
