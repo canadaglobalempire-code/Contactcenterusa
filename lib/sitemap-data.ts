@@ -246,6 +246,8 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/call-center-services-dallas": "2026-09-30",
   "/call-center-services-houston": "2026-09-30",
   "/call-center-services-san-antonio": "2026-09-30",
+  // Outsourced SDR / sales development wording, H1 and new section.
+  "/solutions/sales-outsourcing": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
