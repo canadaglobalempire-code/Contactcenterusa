@@ -155,9 +155,9 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     description:
       "What is BPO collections? Learn how outsourced debt collection works, the difference between first-party and third-party collections, FDCPA compliance.",
     category: "Debt Collection BPO",
-    readTime: "10 min read",
+    readTime: "12 min read",
     datePublished: "2026-06-26",
-    dateModified: "2026-06-26",
+    dateModified: "2026-09-30",
     image: "/images/cc-management.jpg",
     imageAlt: "Outsourced collections team working accounts receivable",
     keywords: [
@@ -219,6 +219,38 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         ],
       },
       {
+        heading: "Contingency collection agency vs first-party collections",
+        paragraphs: [
+          "A contingency collection agency is a third-party agency that is paid only when it recovers money. You place accounts with the agency, it contacts your customers in its own name, and it keeps an agreed percentage of whatever it collects; if nothing is recovered, no fee is due. On consumer accounts it is acting as a debt collector, so the FDCPA and Regulation F govern how it makes contact.",
+          "First-party collections outsourcing works the other way round. The provider's agents contact your customers under your brand, usually on early-stage accounts before charge-off, and you pay for the staffed hours or the agents assigned to your program rather than a share of each dollar recovered. The account and the customer relationship stay with you, and the team works to your scripts, hours and rules.",
+          "That changes the cost logic. A contingency agency carries the risk of working accounts that never pay, so its rate is set per placement and rises with the age and difficulty of the debt. A first-party program costs what the coverage you ask for costs, which makes it easy to budget when volumes are steady. The fair comparison is not the headline rate but how much you keep per dollar placed, and what each model does to the customers you want to keep.",
+        ],
+        bullets: [
+          "What moves a contingency rate: how old the debt is, how hard the accounts are to reach, and how much work the agency expects before anyone pays.",
+          "What moves a first-party cost: hours of coverage, the number of agents, the channels used (calls, texts, emails, letters) and how many accounts are worked.",
+          "What moves both: the quality of the account data you hand over, dispute rates, and how much documentation you can supply.",
+        ],
+      },
+      {
+        heading: "When a contingency agency is the wrong choice",
+        paragraphs: [
+          "A contingency agency suits aged, charged-off consumer accounts that you no longer expect to keep as customers. It is usually the wrong tool in these situations:",
+        ],
+        bullets: [
+          "The accounts are early-stage and the customer is worth keeping. A call from a third-party agency tells the customer the relationship has broken down; a reminder in your own brand does not.",
+          "Balances are disputed or billing errors are likely. Under Regulation F a debt collector's validation notice has to itemize the debt, so fix the account and its records before anyone else tries to collect it.",
+          "You need control over every message. In first-party work the scripts, calling hours and tone stay yours; a contingency agency runs its own process under its own name.",
+          "The accounts are sensitive, such as patient balances, where charity care screening, insurance re-verification and HIPAA handling have to come before any request for payment.",
+          "You need a predictable monthly cost. Contingency fees move with what is recovered, while a staffed first-party program is budgeted in advance.",
+        ],
+      },
+      {
+        heading: "Combining the two models",
+        paragraphs: [
+          "You do not always have to choose. A common setup is first-party collections outsourcing on early-stage accounts, where many customers only need a reminder and an easy way to pay, followed by placement with a contingency agency only for the accounts that remain unpaid after charge-off. Keeping the two stages separate also keeps the customer experience, the fee structure and the regulatory obligations of each stage clear.",
+        ],
+      },
+      {
         heading: "When to outsource collections",
         bullets: [
           "Your internal team cannot keep up with aging receivables.",
@@ -254,7 +286,8 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     related: [
       { label: "Top debt collection BPO companies", href: "/blog/top-10-debt-collection-bpo-companies-usa" },
       { label: "Financial services call center", href: "/industries/financial-services-call-center" },
-      { label: "Debt collection outsourcing", href: "/services/debt-collection-outsourcing" },
+      { label: "First-party collections outsourcing", href: "/services/debt-collection-outsourcing" },
+      { label: "Debt collection call center (first-party recovery)", href: "/industries/debt-collection-call-center" },
       { label: "Call center outsourcing cost", href: "/blog/call-center-outsourcing-cost" },
       { label: "Financial services call centers in North Carolina", href: "/blog/financial-services-call-center-north-carolina" },
       { label: "How to switch call center providers", href: "/blog/how-to-switch-call-center-providers" },

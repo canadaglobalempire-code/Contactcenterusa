@@ -197,6 +197,25 @@ const seoContent: SEOPattern[] = [
     ],
   },
   {
+    pattern: "split-image",
+    eyebrow: "Collection Reminders",
+    heading: "Collection reminder services: pre-due and early-stage calls, texts and emails",
+    image: "/images/cc-woman-headset.jpg",
+    imagePosition: "left",
+    body: [
+      "The cheapest balance to collect is the one that never goes past due. Our collection reminder service contacts your customers before a payment is due and in the first days after one is missed, by phone, text and email, under your brand. A reminder that arrives on time, with an easy way to pay or to agree a new date, often settles the account before it becomes a collections problem, and it keeps the conversation friendly while the customer is still a customer.",
+      "The rules depend on who is calling. The FDCPA and Regulation F apply to third-party debt collectors; a creditor reminding its own customers in its own name is generally outside them, although some state laws reach creditors too. Our reminder cadences use the same controls as the rest of our collection process anyway: no calls before 8 a.m. or after 9 p.m. at the customer's location (12 CFR 1006.6(b)), the seven-calls-in-seven-days limit (12 CFR 1006.14(b)), and a simple way to opt out of texts and emails (12 CFR 1006.6(e)).",
+      "Texts and automated calls carry a separate risk under the TCPA. Calls to a mobile number made with an autodialer or a prerecorded or artificial voice, and texts sent the same way, need the customer's prior express consent (47 U.S.C. 227(b)), and a customer can withdraw it. A reminder program therefore needs a documented consent basis for every mobile number it texts or auto-dials, and a stop request has to end that channel. Consent records sit in the same audit trail as every other contact attempt.",
+    ],
+    bullets: [
+      "Pre-due reminders by text, email or call ahead of the payment date",
+      "Due-date and missed-payment follow-up in the first days after a payment is missed",
+      "Payment portal and promise-to-pay capture, with PCI DSS payment processing",
+      "Handoff to early-stage collections when a reminder does not resolve the account",
+      "Calling windows, call-frequency limits and opt-outs enforced across every channel",
+    ],
+  },
+  {
     pattern: "featured-industries",
     eyebrow: "Industries",
     heading: "Industries We Serve with Outsourced Debt Recovery",
@@ -288,6 +307,11 @@ const relatedServices = [
     title: "CPA & Accounting Firm Answering Service",
     desc: "US-based answering service and call center for CPA firms and accounting practices.",
     href: "/industries/accounting-cpa-call-center",
+  },
+  {
+    title: "What Is BPO in Collections?",
+    desc: "First-party vs third-party collections, contingency agencies, compliance and how each model is priced.",
+    href: "/blog/what-is-bpo-collections",
   },
 ];
 
