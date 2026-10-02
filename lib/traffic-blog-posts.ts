@@ -222,8 +222,9 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         heading: "Contingency collection agency vs first-party collections",
         paragraphs: [
           "A contingency collection agency is a third-party agency that is paid only when it recovers money. You place accounts with the agency, it contacts your customers in its own name, and it keeps an agreed percentage of whatever it collects; if nothing is recovered, no fee is due. On consumer accounts it is acting as a debt collector, so the FDCPA and Regulation F govern how it makes contact.",
-          "First-party collections outsourcing works the other way round. The provider's agents contact your customers under your brand, usually on early-stage accounts before charge-off, and you pay for the staffed hours or the agents assigned to your program rather than a share of each dollar recovered. The account and the customer relationship stay with you, and the team works to your scripts, hours and rules.",
+          "[First-party collections outsourcing](/services/debt-collection-outsourcing) works the other way round. The provider's agents contact your customers under your brand, usually on early-stage accounts before charge-off, and you pay for the staffed hours or the agents assigned to your program rather than a share of each dollar recovered. The account and the customer relationship stay with you, and the team works to your scripts, hours and rules.",
           "That changes the cost logic. A contingency agency carries the risk of working accounts that never pay, so its rate is set per placement and rises with the age and difficulty of the debt. A first-party program costs what the coverage you ask for costs, which makes it easy to budget when volumes are steady. The fair comparison is not the headline rate but how much you keep per dollar placed, and what each model does to the customers you want to keep.",
+          "For how contingency fees are set, what moves the rate, the contract terms to check and the questions to ask before you place accounts, see our full guide to [choosing a contingency collection agency](/blog/contingency-collection-agency).",
         ],
         bullets: [
           "What moves a contingency rate: how old the debt is, how hard the accounts are to reach, and how much work the agency expects before anyone pays.",
@@ -247,7 +248,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       {
         heading: "Combining the two models",
         paragraphs: [
-          "You do not always have to choose. A common setup is first-party collections outsourcing on early-stage accounts, where many customers only need a reminder and an easy way to pay, followed by placement with a contingency agency only for the accounts that remain unpaid after charge-off. Keeping the two stages separate also keeps the customer experience, the fee structure and the regulatory obligations of each stage clear.",
+          "You do not always have to choose. A common setup is to use a [debt collection call center for first-party collections outsourcing](/industries/debt-collection-call-center) on early-stage accounts, where many customers only need a reminder and an easy way to pay, followed by placement with a contingency agency only for the accounts that remain unpaid after charge-off. Keeping the two stages separate also keeps the customer experience, the fee structure and the regulatory obligations of each stage clear.",
         ],
       },
       {
@@ -284,6 +285,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       },
     ],
     related: [
+      { label: "Contingency collection agency: fees, terms and fit", href: "/blog/contingency-collection-agency" },
       { label: "Top debt collection BPO companies", href: "/blog/top-10-debt-collection-bpo-companies-usa" },
       { label: "Financial services call center", href: "/industries/financial-services-call-center" },
       { label: "First-party collections outsourcing", href: "/services/debt-collection-outsourcing" },
