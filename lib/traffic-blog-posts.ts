@@ -255,6 +255,8 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       { label: "Top debt collection BPO companies", href: "/blog/top-10-debt-collection-bpo-companies-usa" },
       { label: "Financial services call center", href: "/industries/financial-services-call-center" },
       { label: "Debt collection outsourcing", href: "/services/debt-collection-outsourcing" },
+      { label: "First-party collections", href: "/services/first-party-collections" },
+      { label: "Contingency collection agency", href: "/services/contingency-collection-agency" },
       { label: "Call center outsourcing cost", href: "/blog/call-center-outsourcing-cost" },
       { label: "Financial services call centers in North Carolina", href: "/blog/financial-services-call-center-north-carolina" },
       { label: "How to switch call center providers", href: "/blog/how-to-switch-call-center-providers" },

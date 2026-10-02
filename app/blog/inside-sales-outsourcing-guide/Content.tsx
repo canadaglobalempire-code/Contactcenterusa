@@ -38,7 +38,7 @@ export default function InsideSalesOutsourcingContent() {
                 <strong>Inside sales outsourcing</strong> has become one of the fastest-growing strategies for companies looking to scale revenue without the overhead of building and managing an in-house sales team. In 2026, organizations across SaaS, healthcare, financial services, and manufacturing are turning to <strong>outsourced inside sales</strong> partners to accelerate pipeline growth, improve conversion rates, and reduce customer acquisition costs.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
-                Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, full-cycle sales development representatives (SDRs), or <strong>inbound sales outsourcing</strong> to handle high-volume inquiries, this guide covers everything you need to know about <strong>inside sales outsourcing</strong> in 2026 &mdash; from pricing models and service types to KPIs and technology stacks.
+                Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, full-cycle <Link href="/services/sdr-outsourcing" className="text-red font-semibold hover:underline">sales development representatives (SDRs)</Link>, or <strong>inbound sales outsourcing</strong> to handle high-volume inquiries, this guide covers everything you need to know about <strong>inside sales outsourcing</strong> in 2026 &mdash; from pricing models and service types to KPIs and technology stacks.
               </p>
 
               {/* Key takeaways */}
