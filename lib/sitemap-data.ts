@@ -264,6 +264,8 @@ const ROUTE_UPDATED: Record<string, string> = {
   "/blog/lawyer-answering-service": "2026-09-30",
   // Blog index card for the new contingency collection agency guide.
   "/blog": "2026-09-30",
+  // SaaS customer support outsourcing title, H1, guide sections and FAQs.
+  "/industries/saas-technology-support": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {

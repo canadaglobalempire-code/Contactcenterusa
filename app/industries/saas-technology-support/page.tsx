@@ -3,17 +3,18 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "SaaS Technology Support | Contact Center USA";
+const title = "SaaS Customer Support Outsourcing | US Tier 1-3 Teams";
 const description =
-  "US-based saas technology support support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
+  "SaaS customer support outsourcing with US-based agents: onboarding, Tier 1-3 troubleshooting, billing questions and churn-risk follow-up. Get a quote.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
+    "saas customer support outsourcing",
+    "saas customer support",
     "saas technical support",
     "technology bpo usa",
-    "saas customer support outsourcing",
     "tier 1 technical support",
     "help desk outsourcing",
     "developer support outsourcing",
@@ -78,6 +79,16 @@ const testimonial = {
 
 const faqs = [
   {
+    question: "What does SaaS customer support outsourcing include?",
+    answer:
+      "It usually covers onboarding help, Tier 1 and Tier 2 troubleshooting with structured escalation to your engineers, billing and subscription questions within rules you set, and tagging of churn-risk signals for your customer success team. Our agents work inside your help desk, such as Zendesk, Freshdesk, Intercom, HubSpot Service Hub or Jira Service Management.",
+  },
+  {
+    question: "How should we measure an outsourced SaaS support team?",
+    answer:
+      "Track first response time by channel, resolution time, first-contact resolution and CSAT, and pair them with quality checks such as reopened tickets, escalations engineering sends back as incomplete, and QA reviews of real conversations. Set targets from your own baseline and review them weekly while the team ramps up.",
+  },
+  {
     question: "Can your agents handle technical troubleshooting for software products?",
     answer:
       "Yes, our technology support agents have backgrounds in IT and software. We train them extensively on your product, APIs, and common technical issues. They handle everything from password resets to complex configuration problems across Tier 1-3 levels.",
@@ -118,6 +129,71 @@ const seoContent: SEOPattern[] = [
       { stat: "92%", label: "First-contact resolution across Tier 1 technical support engagements" },
       { stat: "4.8/5", label: "Average CSAT score maintained across active SaaS support programs" },
       { stat: "24/7", label: "Global help desk coverage with blended voice, chat, email, and API support" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "SaaS Support Guide",
+    heading: "What SaaS customer support covers",
+    image: "/images/cc-agent-laptop.jpg",
+    imagePosition: "left",
+    body: [
+      "SaaS customer support is everything a subscriber needs from you between signing up and renewing. It starts with onboarding: account setup, first configuration, data imports and the first time a user tries the feature they bought the product for. It continues with troubleshooting in tiers. Tier 1 resolves known issues from the knowledge base, Tier 2 reproduces harder problems and checks logs and settings, and Tier 3 works with your engineers on bugs and integration faults.",
+      "Two areas are easy to forget when you scope an outsourced team. Billing and subscription questions, such as plan changes, failed payments, invoices, refunds and cancellations, need clear rules about what an agent may approve. And every conversation carries churn-risk signals: repeated tickets on the same problem, a drop in usage, questions about exporting data or cancelling, or a key user leaving. A good SaaS support team tags those signals and passes them to customer success while there is still time to act.",
+    ],
+    bullets: [
+      "Onboarding calls, walkthroughs and setup help for new accounts",
+      "Tier 1 to Tier 3 troubleshooting with reproduction steps for engineering",
+      "Billing, plan change, renewal and cancellation requests within your rules",
+      "API, integration and webhook questions from developer users",
+      "Churn-risk tagging and handoff to your customer success team",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Measuring Support",
+    heading: "How outsourced SaaS customer support is measured",
+    image: "/images/cc-agent-monitor.jpg",
+    imagePosition: "right",
+    body: [
+      "Agree the measures before launch, and agree how each one is calculated. First response time (FRT) is how long a customer waits for the first human reply, measured per channel because chat, email and in-app messages carry different expectations. Resolution time is how long a ticket takes to close, and first-contact resolution is the share of tickets closed without a follow-up or an escalation. Customer satisfaction (CSAT) is the score customers give after a conversation.",
+      "Read them together. A team can cut first response time with quick replies that do not help, or lift its resolution rate by closing tickets too early, so pair speed with quality: reopened tickets, escalations that engineering sends back as incomplete, and QA reviews of real conversations. Set targets from your own current baseline and your plan tiers rather than borrowed benchmarks, and review them weekly during the first months.",
+    ],
+    bullets: [
+      "First response time by channel and by plan tier",
+      "Resolution time and first-contact resolution",
+      "CSAT after each conversation, with the comments read",
+      "Reopen rate and the quality of escalations",
+      "Backlog age and ticket volume against forecast",
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "Handover Checklist",
+    heading: "What to Hand to an Outsourced SaaS Support Team",
+    intro:
+      "An outsourced team is only as good as what it is given on day one. These five items decide how quickly agents can resolve tickets without pulling in your engineers.",
+    steps: [
+      {
+        title: "Product Access",
+        body: "A sandbox or demo account per agent, least-privilege admin views of customer settings, and release notes for recent changes.",
+      },
+      {
+        title: "Ticket Taxonomy & Macros",
+        body: "Your categories, tags and priority rules, the top issues by volume, and the macros and knowledge base articles that answer them.",
+      },
+      {
+        title: "Escalation Matrix",
+        body: "Severity definitions, who owns each product area, what a complete bug report contains, and when each team can be reached.",
+      },
+      {
+        title: "Billing Rules",
+        body: "What agents may change or approve on plans, credits, refunds and cancellations, and when a request goes to finance.",
+      },
+      {
+        title: "Churn-Risk Playbook",
+        body: "The signals to tag, the handoff route to customer success, and any retention offers agents are allowed to make.",
+      },
     ],
   },
   {
@@ -295,8 +371,8 @@ export default function TechnologyPage() {
   return (
     <ServicePageTemplate
       badge="Technology Call Center Services"
-      title="Call Center Solutions for Technology Companies"
-      titleHighlight="Technology Companies"
+      title="SaaS Customer Support Outsourcing for Technology Companies"
+      titleHighlight="SaaS Customer Support Outsourcing"
       subtitle="Scalable Tier 1-3 technical support, SaaS onboarding, and 24/7 help desk services that let your engineering team focus on building great products."
       description="Technology companies need support partners who speak their language. Our agents understand SaaS workflows, API integrations, and technical troubleshooting at a level that keeps your users productive and your engineering team focused. From startup to enterprise, we scale with you — delivering fast, accurate support that protects your product reputation."
       features={features}
