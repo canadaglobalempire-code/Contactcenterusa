@@ -341,6 +341,11 @@ const relatedServices = [
     href: "/solutions/technical-support-outsourcing",
   },
   {
+    title: "IT Help Desk Outsourcing",
+    desc: "US-based L1-L3 IT help desk for your own employees, from password resets to infrastructure escalations.",
+    href: "/solutions/information-technology-services",
+  },
+  {
     title: "Live Chat Support",
     desc: "Real-time chat support for SaaS products with technical troubleshooting capabilities.",
     href: "/services/live-chat-outsourcing",

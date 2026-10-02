@@ -272,6 +272,11 @@ const ROUTE_UPDATED: Record<string, string> = {
   // Plumbing answering service: triage and dispatch, after-hours vs
   // overflow, FAQs, link to the after-hours guide.
   "/industries/plumbing-call-center-services": "2026-09-30",
+  // IT help desk outsourcing: title, H1, tiers, service desk vs help desk,
+  // desktop support, ITSM handoff, FAQs; and the in-body link to it from
+  // technical support outsourcing (the SaaS page is dated above).
+  "/solutions/information-technology-services": "2026-09-30",
+  "/solutions/technical-support-outsourcing": "2026-09-30",
 };
 
 function latestDate(...dates: (string | undefined)[]): string | undefined {
