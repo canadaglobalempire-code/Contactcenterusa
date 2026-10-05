@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best Telemarketing Companies in USA: 2026 Rankings";
+const description =
+  "Compare US telemarketing companies by TCPA compliance, DNC processes, B2B/B2C campaign fit, agent quality, and reporting.";
 
 export const metadata: Metadata = {
-  title: "Best Telemarketing Companies in USA: 2026 Rankings",
-  description:
-    "Compare US telemarketing companies by TCPA compliance, DNC processes, B2B/B2C campaign fit, agent quality, and reporting.",
+  title,
+  description,
   keywords: [
     "telemarketing companies usa",
     "top telemarketing companies",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "dnc compliant telemarketing",
   ],
   alternates: { canonical: "/blog/top-10-telemarketing-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-telemarketing-companies-usa"),
 };
 
 export default function Page() {

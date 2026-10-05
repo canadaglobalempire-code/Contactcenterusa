@@ -191,6 +191,7 @@ export default function HoustonPage() {
       population="2.3M"
       businesses="300K+"
       statePage="texas"
+      rankingPost={{ label: "Top 10 BPO Companies in Texas", href: "/blog/top-10-bpo-companies-texas" }}
       answeringPost="answering-service-houston"
       seoContent={[...seoContent, ...cityExtras["houston"].seo]}
       faqs={cityExtras["houston"].faqs}

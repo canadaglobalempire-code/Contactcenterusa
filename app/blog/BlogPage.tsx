@@ -5,6 +5,15 @@ import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
 const blogPosts = [
   {
+    title: "Contingency Collection Agency: Fees, Terms & Fit",
+    excerpt:
+      "How contingency collection fees work, what drives the rate, the contract terms to check, FDCPA and Regulation F basics, and when a first-party program fits better.",
+    category: "Debt Collection BPO",
+    readTime: "13 min read",
+    image: "/images/cc-agent-writing.jpg",
+    href: "/blog/contingency-collection-agency",
+  },
+  {
     title: "Virtual Receptionist Pricing: 2026 Cost Breakdown",
     excerpt:
       "Real plan tiers, why overage runs 2-3x the in-tier rate, and the honest test for whether a cheaper answering service already solves your problem.",

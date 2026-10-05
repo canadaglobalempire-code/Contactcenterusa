@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Virtual Receptionist Companies USA (2026)";
+const description =
+  "Compare the top 10 virtual receptionist companies in the USA for 2026 — ranked by answer rates, pricing & features. Find 24/7 coverage and get a quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Virtual Receptionist Companies USA (2026)",
-  description:
-    "Compare the top 10 virtual receptionist companies in the USA for 2026 — ranked by answer rates, pricing & features. Find 24/7 coverage and get a quote.",
+  title,
+  description,
   keywords: [
     "virtual receptionist companies",
     "best virtual receptionist service",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "virtual receptionist with appointment booking",
   ],
   alternates: { canonical: "/blog/top-10-virtual-receptionist-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-virtual-receptionist-companies-usa"),
 };
 
 export default function Page() {

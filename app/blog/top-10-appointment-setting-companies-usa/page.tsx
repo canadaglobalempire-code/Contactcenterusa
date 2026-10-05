@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "10 Best Appointment Setting Companies (2026)";
+const description =
+  "Compare 10 US appointment setting companies by SDR quality, lead qualification, CRM fit, and qualified-meeting process. Updated for 2026.";
 
 export const metadata: Metadata = {
-  title: "10 Best Appointment Setting Companies (2026)",
-  description:
-    "Compare 10 US appointment setting companies by SDR quality, lead qualification, CRM fit, and qualified-meeting process. Updated for 2026.",
+  title,
+  description,
   keywords: [
     "appointment setting services",
     "B2B appointment setting companies",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "insurance appointment setting",
   ],
   alternates: { canonical: "/blog/top-10-appointment-setting-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-appointment-setting-companies-usa"),
 };
 
 export default function Page() {

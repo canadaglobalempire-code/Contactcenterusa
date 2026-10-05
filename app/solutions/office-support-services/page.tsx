@@ -3,14 +3,16 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Office Support Services | Admin & Virtual Assistants";
+const title = "Office Support & Administrative Outsourcing Services";
 const description =
-  "Outsourced office support: scheduling, data entry, document handling and virtual assistant coverage from US-based staff. Request a free quote.";
+  "Administrative outsourcing services from US-based staff: scheduling, data entry, document processing, order entry and virtual receptionist cover. Get a quote.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
+    "administrative outsourcing services",
+    "administrative outsourcing",
     "office support services",
     "administrative outsourcing bpo",
     "office admin bpo usa",
@@ -78,6 +80,26 @@ const testimonial = {
 
 const faqs = [
   {
+    question: "What are administrative outsourcing services?",
+    answer:
+      "They are routine office tasks handled by an outside team: scheduling, data entry, document processing, order entry, mail and correspondence, and virtual receptionist work. The team works in your systems and follows your procedures, so the work and the data stay yours.",
+  },
+  {
+    question: "Which administrative tasks should we outsource first?",
+    answer:
+      "Start with work that is frequent, rule-based and easy to check, such as appointment scheduling, data entry or document indexing. Write down the steps and the quality check, run the task with the outside team for a few weeks, then add the next one once accuracy and turnaround meet your standard.",
+  },
+  {
+    question: "How is administrative outsourcing different from back office outsourcing?",
+    answer:
+      "Administrative outsourcing covers day-to-day office support such as scheduling, correspondence, reception and data entry. Back office outsourcing covers larger-volume processing behind the scenes, such as claims data, reconciliation, order fulfillment support and records management. Many businesses use both.",
+  },
+  {
+    question: "How is administrative outsourcing priced?",
+    answer:
+      "Per hour, per task or as a monthly retainer, depending on how steady and measurable the work is. The cost depends on volume, the hours covered, the systems involved and the quality checks you need.",
+  },
+  {
     question: "What types of data entry do you handle?",
     answer:
       "We handle all types of data entry including CRM updates, order processing, survey responses, medical records, insurance claims, invoice processing, and custom database maintenance. Every entry goes through a multi-step quality assurance process to maintain accuracy above 99.5%.",
@@ -118,6 +140,25 @@ const seoContent: SEOPattern[] = [
       { stat: "40%", label: "Average reduction in fully loaded administrative overhead cost" },
       { stat: "99.8%", label: "Measured accuracy across data entry and document workflows" },
       { stat: "24/7", label: "Virtual receptionist and office support coverage every day of the year" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Administrative Outsourcing",
+    heading: "Administrative outsourcing services we handle",
+    image: "/images/cc-team-work.jpg",
+    imagePosition: "left",
+    body: [
+      "Administrative outsourcing means handing routine office work to a trained outside team that follows your procedures in your systems. It suits tasks that are frequent, rule-based and easy to check, and that pull your own staff away from customers and revenue. The work stays yours: the team uses your calendars, CRM, document storage and templates, and you set the rules and the quality checks.",
+      "It sits between the front office and the back office. It overlaps with back office outsourcing, which covers larger-volume processing such as claims data, reconciliation and records management, and with virtual receptionist work on the phones. Many businesses start with one task, such as scheduling or data entry, prove the process and the quality checks, then add the next.",
+    ],
+    bullets: [
+      "Scheduling: appointments, meetings, calendars, confirmations and reminders",
+      "Data entry: CRM, ERP and database updates with QA checks",
+      "Document processing: scanning, indexing, data extraction and filing",
+      "Order entry: entering, verifying and tracking orders",
+      "Mail and correspondence: inbox triage, form letters and routing",
+      "Virtual receptionist: answering, screening, transfers and messages",
     ],
   },
   {
@@ -295,8 +336,8 @@ export default function OfficeSupportServicesPage() {
   return (
     <ServicePageTemplate
       badge="Office Support Services"
-      title="Professional Office Support Services That Keep Your Business Running"
-      titleHighlight="Business Running"
+      title="Office Support & Administrative Outsourcing Services"
+      titleHighlight="Administrative Outsourcing"
       subtitle="Streamline administration, eliminate data backlogs, and deliver a polished professional image with dedicated office support teams."
       description="Our office support services provide the administrative backbone your business needs to operate efficiently. From data entry and document management to virtual receptionist services and appointment scheduling, we handle the operational details so your team can focus on strategic priorities. Scalable, accurate, and available when you need us."
       features={features}

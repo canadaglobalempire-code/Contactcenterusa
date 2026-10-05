@@ -191,6 +191,7 @@ export default function AustinPage() {
       population="1.0M"
       businesses="150K+"
       statePage="texas"
+      rankingPost={{ label: "Top 10 BPO Companies in Texas", href: "/blog/top-10-bpo-companies-texas" }}
       seoContent={[...seoContent, ...cityExtras["austin"].seo]}
       faqs={cityExtras["austin"].faqs}
     />

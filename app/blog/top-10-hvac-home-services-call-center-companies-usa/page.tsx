@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 HVAC & Home Services Call Center Companies (2026)";
+const description =
+  "The top 10 HVAC and home services call center companies for 2026 — compared by after-hours coverage, booking workflows, and field-service integrations.";
 
 export const metadata: Metadata = {
-  title: "Top 10 HVAC & Home Services Call Center Companies (2026)",
-  description:
-    "The top 10 HVAC and home services call center companies for 2026 — compared by after-hours coverage, booking workflows, and field-service integrations.",
+  title,
+  description,
   keywords: [
     "HVAC call center",
     "HVAC answering service",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "HVAC booking service",
   ],
   alternates: { canonical: "/blog/top-10-hvac-home-services-call-center-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-hvac-home-services-call-center-companies-usa"),
 };
 
 export default function Page() {

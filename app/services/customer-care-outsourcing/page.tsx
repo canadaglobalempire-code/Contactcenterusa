@@ -3,15 +3,19 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Customer Care Outsourcing | 24/7 US-Based Support Teams";
+const title = "Customer Care Outsourcing: Dedicated Customer Care Teams";
 const description =
-  "Outsource customer care to 100% US-based agents. 24/7 omnichannel support across phone, chat, email and social, scaled to your volume. Get a free quote.";
+  "Outsourced customer care services from a 100% US-based team. Dedicated or shared agents for phone, chat, email and social customer care support, 24/7.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
     "customer care outsourcing",
+    "customer care team",
+    "customer care services",
+    "customer care support",
+    "dedicated customer care team",
     "customer care bpo usa",
     "outsourced customer care services",
     "customer care outsourcing company",
@@ -102,17 +106,37 @@ const faqs = [
     answer:
       "Our agents follow structured escalation paths tailored to your policies. Tier 1 agents are empowered to resolve common issues immediately. Complex or sensitive cases route to senior agents or your internal team based on predefined criteria. Every escalation is tracked, timed, and reported to ensure nothing falls through the cracks.",
   },
+  {
+    question: "What does an outsourced customer care team do?",
+    answer:
+      "It handles the conversations that shape how customers feel about your brand: questions and problems, complaints and escalations, retention and save calls, loyalty program support, VIP lines, satisfaction surveys, and win-back outreach. Our customer care teams work across phone, email, live chat, SMS, and social media, follow your brand playbook and policies, and report on CSAT, NPS, first-contact resolution, and retention.",
+  },
+  {
+    question: "What is the difference between customer care services and customer support?",
+    answer:
+      "Customer support is reactive: it answers questions and fixes problems, and it is judged on speed and resolution. Customer care services include that support plus the work that protects the relationship afterwards, such as complaint handling, retention offers, loyalty and VIP programs, and follow-up surveys. Most brands need both, so we map each contact reason to the right one when we scope your program.",
+  },
+  {
+    question: "When is a dedicated customer care team worth it?",
+    answer:
+      "A dedicated team pays off when your customer care is complex, regulated, or brand-sensitive, when volume is steady enough to keep agents busy, and when retention or other high-value conversations are involved. For low, seasonal, or unpredictable volume, shared agents usually give better value. A blended model gives you a dedicated core team with shared overflow behind it.",
+  },
+  {
+    question: "What drives the cost of outsourced customer care?",
+    answer:
+      "The main drivers are the agent model (dedicated, shared, or blended), the hours you need covered, the channels and languages involved, how complex your contacts are and how much training they need, and the QA and reporting you require. We quote after mapping your contact reasons and volumes, so you can compare options against your own numbers rather than a generic rate card.",
+  },
 ];
 
 const seoContent: SEOPattern[] = [
   {
     pattern: "hero-statement",
-    eyebrow: "Best Customer Care Outsourcing BPO in USA",
+    eyebrow: "Customer Care Outsourcing in the USA",
     heading: "The customer care outsourcing partner US brands trust to protect revenue and loyalty.",
     accent: "protect revenue and loyalty",
     body: [
-      "Contact Center USA is one of the best customer care outsourcing providers in the USA — a 100% US-based customer care BPO USA operation delivering outsourced customer care services that lower churn, lift NPS, and protect lifetime value across every channel.",
-      "For CX, support, and success leaders looking for the best customer care BPO in USA, we run omnichannel retention, loyalty, VIP, and complaint-resolution programs that make your customer care feel premium — not outsourced.",
+      "Contact Center USA is a 100% US-based customer care outsourcing provider. Our outsourced customer care services are built to lower churn, lift NPS, and protect lifetime value across every channel.",
+      "For CX, support, and success leaders, we run customer care teams for omnichannel support, retention, loyalty, VIP, and complaint resolution, so your customer care feels like your own team rather than an outsourced one.",
     ],
     stats: [
       { stat: "-27%", label: "Lower customer churn within 12 months of launching outsourced customer care" },
@@ -194,6 +218,36 @@ const seoContent: SEOPattern[] = [
         title: "Measure, Coach, Improve",
         body: "QA scoring, voice-of-customer analytics, and weekly business reviews drive continuous improvement.",
       },
+    ],
+  },
+  {
+    pattern: "hero-statement",
+    eyebrow: "Care vs. Support",
+    heading: "Customer care services vs. customer support: what each one covers",
+    accent: "what each one covers",
+    body: [
+      "The two terms are often used as if they mean the same thing, but they describe different jobs. Customer support is reactive and problem-focused: a customer has a question or something has gone wrong, and the agent's job is to fix it, whether that is a billing error, a delivery problem, a locked account, or a product that will not work. Support is measured on speed and resolution: response time, handle time, and first-contact resolution.",
+      "Customer care services cover the whole relationship around those moments. They include support, plus the work that keeps a customer once the problem is solved: complaint handling and service recovery, retention and save conversations, loyalty program questions, VIP and concierge lines, satisfaction surveys, and win-back outreach to customers who have lapsed. Customer care is measured on how customers feel and whether they stay: CSAT, NPS, customer effort, and churn.",
+      "Most programs need both. A good customer care team handles customer care support tickets with the speed of a help desk and the judgment of a relationship team: it knows when a refund request is a simple fix and when it comes from an at-risk customer who needs a save offer or a call back from a senior agent. When we scope your program, we map each contact reason to one of the two jobs, so the right agents, scripts, and metrics sit behind it.",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Dedicated Teams",
+    heading: "Dedicated customer care team or shared agents?",
+    image: "/images/cc-team-huddle.jpg",
+    imagePosition: "left",
+    body: [
+      "A dedicated customer care team works only on your account. The agents are recruited and trained for your brand, learn your products, policies, and systems in depth, and stay on your queues week after week, so customers reach someone who already knows how you do things. In a shared-agent model, a pool of trained agents answers for several clients, and you draw on that capacity as contacts arrive instead of reserving people.",
+      "Neither model is right in every case. Dedicated teams suit complex, regulated, or brand-sensitive customer care, such as retention and save calls, VIP lines, and healthcare or financial accounts, along with steady volume that keeps agents busy. Shared agents suit lower, seasonal, or unpredictable volume and simpler contacts such as after-hours messages and overflow. Many clients run a blended model: dedicated agents during peak hours, with shared overflow covering evenings, weekends, and holidays.",
+      "The choice also shapes cost. A dedicated team means reserved capacity and deeper training; shared capacity is used only as it is needed, which costs less but buys less brand depth. Our guide to dedicated vs. shared call center agents, linked below, walks through the trade-off, and we will model each option against your real contact volumes before you decide.",
+    ],
+    bullets: [
+      "Dedicated customer care team: agents reserved for and trained on your brand only",
+      "Shared agents: pooled capacity for low, seasonal, or after-hours volume",
+      "Blended model: a dedicated core team with shared overflow behind it",
+      "Customer care support across phone, email, chat, SMS, and social in every model",
+      "Your escalation paths, QA scoring, and reporting set up whichever model you choose",
     ],
   },
   {
@@ -289,15 +343,20 @@ const relatedServices = [
     desc: "Answers to common questions about call center outsourcing, setup, compliance, US-based agents, multilingual support, and provider selection.",
     href: "/faq",
   },
+  {
+    title: "Dedicated vs Shared Call Center Agents",
+    desc: "When a dedicated customer care team pays off, when shared agents are the better fit, and how a blended model works.",
+    href: "/blog/dedicated-vs-shared-call-center-agents",
+  },
 ];
 
 export default function CustomerCareOutsourcingPage() {
   return (
     <ServicePageTemplate
       badge="Customer Care Outsourcing"
-      title="Customer Care Outsourcing BPO in USA"
-      titleHighlight="Customer Care Outsourcing BPO"
-      subtitle="Outsourced customer care services and customer care BPO USA programs that lower churn, lift CSAT, and protect lifetime value across every channel."
+      title="Customer Care Outsourcing & Dedicated Customer Care Teams"
+      titleHighlight="Dedicated Customer Care Teams"
+      subtitle="Outsourced customer care services from a US-based customer care team, built to lower churn, lift CSAT, and protect lifetime value across every channel."
       description="Exceptional customer care is the single greatest driver of retention and lifetime value. Our outsourced customer care teams combine emotional intelligence with operational excellence to resolve issues, strengthen relationships, and protect your revenue. From proactive retention outreach to VIP concierge support, we help you deliver the kind of care that earns five-star reviews and word-of-mouth referrals."
       features={features}
       benefits={benefits}

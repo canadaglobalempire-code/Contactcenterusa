@@ -287,6 +287,16 @@ const relatedServices = [
     desc: "US-based mortgage call center services for lenders, brokers, and servicers.",
     href: "/industries/mortgage-call-center",
   },
+  {
+    title: "What Is BPO in Collections?",
+    desc: "First-party vs third-party collections, contingency agencies, compliance and how each model is priced.",
+    href: "/blog/what-is-bpo-collections",
+  },
+  {
+    title: "Contingency Collection Agency Guide",
+    desc: "How contingency fees work, what drives the rate, contract terms to check and when first-party collections fit better.",
+    href: "/blog/contingency-collection-agency",
+  },
 ];
 
 export default function DebtCollectionCallCenterPage() {

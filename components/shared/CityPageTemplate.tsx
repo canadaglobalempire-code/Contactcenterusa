@@ -46,6 +46,11 @@ interface CityPageTemplateProps {
    */
   answeringPost?: string;
   /**
+   * The state's ranked-provider post, e.g. the Texas BPO list. Adds one more
+   * line to the related-links strip, worded like the state page's own link.
+   */
+  rankingPost?: { label: string; href: string };
+  /**
    * City-specific FAQs. Falls back to the generic set when absent — but every
    * metro should supply its own, because five interpolated questions repeated
    * across 25 city pages is duplicate content, not an FAQ.
@@ -131,7 +136,7 @@ function getFAQs(city: string, state: string) {
 
 export function CityPageTemplate({
   city, state, stateAbbr, description, businessLandscape, industries, population, businesses, seoContent, statePage, answeringPost,
-  faqs: faqsProp,
+  rankingPost, faqs: faqsProp,
 }: CityPageTemplateProps) {
   const cited = new Set<string>();
   const testimonial = testimonials[city];
@@ -204,7 +209,7 @@ export function CityPageTemplate({
         },
       ]} />
 
-      {(statePage || answeringPost) && (
+      {(statePage || answeringPost || rankingPost) && (
         <section className="bg-gray-50 py-5">
           <div className="mx-auto max-w-[1536px] px-5 lg:px-8 space-y-2">
             {statePage && (
@@ -220,6 +225,14 @@ export function CityPageTemplate({
                 Just need the phones covered after hours?{" "}
                 <Link href={`/blog/${answeringPost}`} className="font-semibold text-red hover:underline">
                   Read the {city} answering service buyer&apos;s guide &rarr;
+                </Link>
+              </p>
+            )}
+            {rankingPost && (
+              <p className="text-sm text-gray-700">
+                Want a ranked shortlist?{" "}
+                <Link href={rankingPost.href} className="font-semibold text-red hover:underline">
+                  {rankingPost.label} &rarr;
                 </Link>
               </p>
             )}

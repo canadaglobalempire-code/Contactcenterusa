@@ -191,6 +191,7 @@ export default function SanAntonioPage() {
       population="1.5M"
       businesses="150K+"
       statePage="texas"
+      rankingPost={{ label: "Top 10 BPO Companies in Texas", href: "/blog/top-10-bpo-companies-texas" }}
       answeringPost="answering-service-san-antonio"
       seoContent={[...seoContent, ...cityExtras["san-antonio"].seo]}
       faqs={cityExtras["san-antonio"].faqs}

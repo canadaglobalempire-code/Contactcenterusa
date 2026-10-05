@@ -191,6 +191,7 @@ export default function DallasPage() {
       population="1.3M"
       businesses="200K+"
       statePage="texas"
+      rankingPost={{ label: "Top 10 BPO Companies in Texas", href: "/blog/top-10-bpo-companies-texas" }}
       answeringPost="answering-service-dallas"
       seoContent={[...seoContent, ...cityExtras["dallas"].seo]}
       faqs={cityExtras["dallas"].faqs}

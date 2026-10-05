@@ -224,8 +224,9 @@ export default function LawyerAnsweringServiceContent({ faqs }: { faqs: Faq[] })
                 UPL line and moves every call toward the same destination — a booked consultation with a complete record attached.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> runs US-based legal
-                intake around the clock, screens conflicts against your database before booking, records narratives verbatim, and
+                <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> provides US-based{" "}
+                <Link href="/industries/legal-intake-call-center" className="text-red font-semibold hover:underline">legal intake outsourcing</Link>{" "}
+                around the clock, screens conflicts against your database before booking, records narratives verbatim, and
                 writes full matter records into Clio, Litify, MyCase, Filevine and PracticePanther.
               </p>
 

@@ -125,7 +125,7 @@ export default function BackOfficeContent({ seoContent }: { seoContent?: SEOPatt
                 Streamline Your Operations with <span className="text-red">US-Based</span> Back Office Teams
               </h2>
               <p className="mt-6 text-[16px] leading-relaxed text-gray-700">
-                Back office outsourcing transfers your <strong>administrative, data processing, and document management tasks</strong> to a dedicated team of trained professionals — freeing your core staff to focus on revenue-generating activities instead of paperwork.
+                Back office outsourcing transfers your <strong>administrative, data processing, and document management tasks</strong> to a dedicated team of trained professionals — freeing your core staff to focus on revenue-generating activities instead of paperwork. For day-to-day office tasks such as scheduling, correspondence and reception, see our <Link href="/solutions/office-support-services" className="text-red font-semibold hover:underline">administrative outsourcing services</Link>.
               </p>
               <p className="mt-4 text-[16px] leading-relaxed text-gray-700">
                 At Contact Center USA, our back office teams are not offshore temps. They are <strong>US-based professionals</strong> trained on your specific systems, processes, and quality standards. They work as a seamless extension of your organization, handling everything from high-volume data entry and document indexing to order processing and compliance-ready records management.

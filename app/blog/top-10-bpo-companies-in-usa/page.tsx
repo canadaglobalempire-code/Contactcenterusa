@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best BPO Companies in the USA: 2026 Rankings";
+const description =
+  "Compare US BPO companies by service quality, scalability, compliance, technology maturity, vertical expertise, and outsourcing fit.";
 
 export const metadata: Metadata = {
-  title: "Best BPO Companies in the USA: 2026 Rankings",
-  description:
-    "Compare US BPO companies by service quality, scalability, compliance, technology maturity, vertical expertise, and outsourcing fit.",
+  title,
+  description,
   keywords: [
     "bpo companies in usa",
     "top bpo companies in usa",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "best outsourcing companies in united states",
   ],
   alternates: { canonical: "/blog/top-10-bpo-companies-in-usa" },
+  ...articleMeta(title, description, "/blog/top-10-bpo-companies-in-usa"),
 };
 
 export default function Page() {

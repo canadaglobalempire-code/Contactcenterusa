@@ -3,14 +3,18 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Information Technology Services | US-Based IT Help Desk";
+const title = "IT Help Desk Outsourcing | US-Based IT Services & Support";
 const description =
-  "Outsourced IT services and 24/7 help desk staffed by US-based technicians. Tier 1-3 support, ticket triage and escalation management. Get a free quote.";
+  "IT help desk outsourcing with US-based technicians: L1-L3 support, service desk and desktop support, ticketing and ITSM handoff, and 24/7 coverage.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
+    "it help desk outsourcing",
+    "help desk outsourcing",
+    "service desk outsourcing",
+    "desktop support outsourcing",
     "it services outsourcing",
     "it help desk bpo",
     "managed it services usa",
@@ -78,6 +82,26 @@ const testimonial = {
 
 const faqs = [
   {
+    question: "What is IT help desk outsourcing?",
+    answer:
+      "It means a provider runs your IT help desk for you: answering employee calls, chats and emails, logging and resolving tickets at L1 and L2, and escalating to L3 engineers or vendors when needed. Our help desk is staffed by US-based technicians and works inside your ticketing system.",
+  },
+  {
+    question: "What is the difference between a help desk and a service desk?",
+    answer:
+      "A help desk fixes incidents, such as a failed login or a broken application. A service desk is the single point of contact for all IT services: it handles incidents plus service requests such as new accounts and hardware, tells users about planned changes and outages, and supports problem and change management.",
+  },
+  {
+    question: "What is desktop support?",
+    answer:
+      "Desktop support is help with the devices and software employees use every day, such as laptops, operating systems, email, printers, VPN and single sign-on. Most of it is done remotely with the user's permission; hardware faults and new equipment need someone at the desk.",
+  },
+  {
+    question: "What should we hand over to an outsourced IT help desk?",
+    answer:
+      "Access to your ticketing or ITSM system, your ticket categories and priority matrix, SLA targets, escalation contacts for L3 engineers and vendors, runbooks and knowledge base articles, and an asset and software inventory. The more of this exists on day one, the faster tickets close.",
+  },
+  {
     question: "What levels of IT support do you provide?",
     answer:
       "We provide full tiered support from Level 1 through Level 3. Level 1 handles common requests like password resets and software installs. Level 2 covers system administration, application troubleshooting, and escalated issues. Level 3 addresses infrastructure, architecture, and complex engineering problems.",
@@ -118,6 +142,87 @@ const seoContent: SEOPattern[] = [
       { stat: "95%", label: "First-contact resolution across tiered IT help desk BPO tickets" },
       { stat: "15 min", label: "Average response time — critical tickets routed to on-call engineers" },
       { stat: "35%", label: "Lower TCO vs. internal IT — no recruiting, benefits, or tooling overhead" },
+    ],
+  },
+  {
+    pattern: "flow",
+    eyebrow: "Support Tiers",
+    heading: "Help Desk Tiers: What L1, L2 and L3 Handle",
+    intro:
+      "Most help desks are organized in tiers, so simple requests close fast and hard problems reach the right people. The names vary between companies; the logic does not.",
+    steps: [
+      {
+        title: "Tier 0: Self-Service",
+        body: "Knowledge base articles, password reset portals and status pages that let employees fix common issues without a ticket.",
+      },
+      {
+        title: "Tier 1 (L1): First Contact",
+        body: "Logs every ticket, verifies the user, resolves known issues such as password resets, access requests and software installs, and routes the rest.",
+      },
+      {
+        title: "Tier 2 (L2): Troubleshooting",
+        body: "System administration, application faults, remote desktop sessions and issues that need more access or more time than a first call.",
+      },
+      {
+        title: "Tier 3 (L3): Engineering",
+        body: "Infrastructure, network, cloud and security problems, root-cause analysis and fixes that change the environment itself.",
+      },
+      {
+        title: "Tier 4: Vendors & Field",
+        body: "Hardware warranty claims, software vendor cases and on-site work, tracked in the same ticket until it is closed.",
+      },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Service Desk vs Help Desk",
+    heading: "Service desk vs help desk: which one are you outsourcing?",
+    image: "/images/hd-agents-working.jpg",
+    imagePosition: "left",
+    body: [
+      "The two terms are often used as if they mean the same thing, but they describe different scopes. A help desk fixes problems: something is broken, a user cannot log in, an application throws an error. Its job is to restore service quickly and record what happened.",
+      "A service desk is the single point of contact for all IT services, not just breakages. As well as incidents, it handles service requests such as new starter accounts, hardware and software requests and access changes, keeps users informed about planned changes and outages, and feeds problem and change management. If you are outsourcing, decide which scope you are buying, because a service desk needs a request catalog, approval rules and access to more of your systems.",
+    ],
+    bullets: [
+      "Help desk: incidents and break-fix, focused on fast resolution",
+      "Service desk: incidents plus service requests, changes and user updates",
+      "Both: one ticket per contact, clear priorities and SLA targets",
+      "Choose the scope first, then the provider",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Desktop Support",
+    heading: "What is desktop support? Remote vs deskside",
+    image: "/images/cc-man-laptop.jpg",
+    imagePosition: "right",
+    body: [
+      "Desktop support is help with the devices and software people use every day: laptops and desktops, operating systems, email and office applications, printers, VPN and single sign-on. Most of it can be done remotely. With the user's permission a technician connects to the device, sees the problem and fixes it, which is faster than a visit and works for remote and hybrid staff wherever they are.",
+      "Deskside support means someone physically at the device. It is needed for hardware failures, new equipment setup, docking stations and peripherals, network ports and anything that will not start far enough for a remote session. A remote help desk handles these tickets by diagnosing as far as it can, then arranging the visit with your on-site IT staff, a field-service partner or the hardware vendor's warranty service, and keeping the ticket open until the user confirms the fix.",
+    ],
+    bullets: [
+      "Remote: operating system, application, email, VPN, SSO and access issues",
+      "Remote: software installs, updates and device configuration",
+      "Deskside: hardware faults, new equipment, peripherals and cabling",
+      "Handoffs to on-site staff or vendors tracked in the same ticket",
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Ticketing & ITSM",
+    heading: "Ticketing and ITSM handoff to an outsourced help desk",
+    image: "/images/cc-agent-desk.jpg",
+    imagePosition: "left",
+    body: [
+      "An outsourced help desk should work inside your ticketing or IT service management (ITSM) system rather than a separate one, so every ticket, note and resolution stays in your records. Common platforms include ServiceNow, Jira Service Management and Zendesk. Agents need named accounts with single sign-on, multi-factor authentication and only the permissions their tier requires.",
+      "The handoff decides how well the first month goes. Share your ticket categories and priority matrix, the response and resolution targets for each priority, the escalation paths and on-call contacts for L3 and vendors, existing runbooks and knowledge base articles, an asset and software inventory, and the users or systems that need special handling. Agree what L1 may change on its own and what needs approval, then review escalations and reopened tickets together each week until the pattern settles.",
+    ],
+    bullets: [
+      "Your ITSM platform, with named agent accounts, SSO and MFA",
+      "Ticket categories, priority matrix and SLA targets",
+      "Runbooks, knowledge base articles and asset inventory",
+      "Escalation paths for L3, vendors and on-call engineers",
+      "Weekly review of escalations and reopened tickets",
     ],
   },
   {
@@ -280,7 +385,7 @@ const relatedServices = [
     href: "/about/company-history",
   },
   {
-    title: "Not Just a Call CenterYour Strategic Partner",
+    title: "Not Just a Call Center: Your Strategic Partner",
     desc: "Where our 25+ years of US-based contact center experience runs deepest — the sectors we staff, the compliance each demands, and the teams behind them.",
     href: "/about/industries",
   },
@@ -295,8 +400,8 @@ export default function InformationTechnologyServicesPage() {
   return (
     <ServicePageTemplate
       badge="Information Technology Services"
-      title="Reliable IT Support & Infrastructure Services for Growing Businesses"
-      titleHighlight="Growing Businesses"
+      title="IT Help Desk Outsourcing & Information Technology Services"
+      titleHighlight="IT Help Desk Outsourcing"
       subtitle="Keep your technology running, your data secure, and your teams productive with fully managed IT services from help desk to cloud infrastructure."
       description="Our information technology services provide end-to-end IT support for businesses that need enterprise-grade capabilities without the overhead of a large internal team. From 24/7 help desk and cloud management to cybersecurity and strategic consulting, we deliver the technology foundation your business needs to operate efficiently and scale confidently."
       features={features}

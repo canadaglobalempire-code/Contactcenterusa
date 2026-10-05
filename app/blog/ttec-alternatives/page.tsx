@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generateBlogAEOSchema } from "@/lib/schema";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
 
 const faqs = [
   {
@@ -35,11 +36,15 @@ const companies = [
   { rank: 7, name: "TaskUs", description: "High-growth digital brands, trust & safety, and content moderation." },
 ];
 
+const title = "7 TTEC Alternatives for Mid-Market CX (2026)";
+const description =
+  "Compare the 7 best TTEC alternatives for 2026 — delivery-first US providers without the consulting overhead, plus how to unpick a bundled TTEC engagement.";
+
 export const metadata: Metadata = {
-  title: "7 TTEC Alternatives for Mid-Market CX (2026)",
-  description:
-    "Compare the 7 best TTEC alternatives for 2026 — delivery-first US providers without the consulting overhead, plus how to unpick a bundled TTEC engagement.",
+  title,
+  description,
   alternates: { canonical: "/blog/ttec-alternatives" },
+  ...articleMeta(title, description, "/blog/ttec-alternatives"),
 };
 
 export default function Page() {

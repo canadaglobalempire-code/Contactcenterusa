@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { generateBlogAEOSchema } from "@/lib/schema";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
 
 const faqs = [
   {
@@ -35,11 +36,15 @@ const companies = [
   { rank: 7, name: "Working Solutions", description: "100% US work-from-home agents for complex, high-ticket support." },
 ];
 
+const title = "7 Best Concentrix Alternatives & Competitors (2026)";
+const description =
+  "Compare 7 Concentrix alternatives and competitors for US-based delivery, flexible contracts, program fit, and CX quality. Updated for 2026.";
+
 export const metadata: Metadata = {
-  title: "7 Best Concentrix Alternatives & Competitors (2026)",
-  description:
-    "Compare 7 Concentrix alternatives and competitors for US-based delivery, flexible contracts, program fit, and CX quality. Updated for 2026.",
+  title,
+  description,
   alternates: { canonical: "/blog/concentrix-alternatives" },
+  ...articleMeta(title, description, "/blog/concentrix-alternatives"),
 };
 
 export default function Page() {

@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 BPO Companies in Texas (2026)";
+const description =
+  "Compare the top 10 BPO companies in Texas for 2026 — ranked by service quality, bilingual support, scalability & cost. Find your outsourcing partner.";
 
 export const metadata: Metadata = {
-  title: "Top 10 BPO Companies in Texas (2026)",
-  description:
-    "Compare the top 10 BPO companies in Texas for 2026 — ranked by service quality, bilingual support, scalability & cost. Find your outsourcing partner.",
+  title,
+  description,
   keywords: [
     "BPO companies Texas",
     "best BPO companies in Texas",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "San Antonio call center outsourcing",
   ],
   alternates: { canonical: "/blog/top-10-bpo-companies-texas" },
+  ...articleMeta(title, description, "/blog/top-10-bpo-companies-texas"),
 };
 
 const FAQS = [

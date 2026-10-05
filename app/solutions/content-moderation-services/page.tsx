@@ -3,16 +3,22 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Content Moderation Services | US-Based Trust & Safety";
+const title = "Content Moderation Services | US Content Moderation Company";
 const description =
-  "US-based content moderation for UGC platforms and marketplaces. Policy enforcement, escalation review and 24/7 trust and safety coverage. Get a quote.";
+  "US-based content moderation company for platforms, marketplaces and games: human and AI review, live chat and community moderation, escalation and reporting.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
     "content moderation services",
+    "content moderation company",
+    "content moderation companies",
     "content moderation outsourcing",
+    "chat moderation services",
+    "live chat moderation",
+    "in-game chat moderation",
+    "community moderation services",
     "trust safety bpo usa",
     "ugc moderation services",
     "social media content moderation",
@@ -102,16 +108,36 @@ const faqs = [
     answer:
       "You receive real-time dashboards and weekly reports covering moderation volume, violation types, response times, accuracy rates, trending content issues, and community health metrics. Custom reports can be configured to match your internal KPIs.",
   },
+  {
+    question: "What does a content moderation company do?",
+    answer:
+      "A content moderation company reviews what users post on your platform, including text, images, video, livestreams, chat, and profiles, against your community guidelines and the law. It removes or restricts what breaks the rules, escalates the most serious cases to your team, and reports on what it is seeing. Most combine automated filtering with trained human moderators.",
+  },
+  {
+    question: "How should we compare content moderation companies?",
+    answer:
+      "Compare how each one turns your policy into decision trees, which decisions are automated and which always get a human, how fast and how reliably severe content is escalated, what is done to protect moderator wellbeing, and what reporting and audit trail you receive. Ask to see a real queue and a sample report rather than a sales deck.",
+  },
+  {
+    question: "Do you moderate live chat and in-game chat in real time?",
+    answer:
+      "Yes. Automated filters act on messages as they are sent, and human moderators watch busy channels, livestream chat, and community events, act on user reports, and apply warnings, timeouts, mutes, and bans under your rules. Threats and child-safety signals go to a senior moderator and your trust and safety team as soon as they are spotted.",
+  },
+  {
+    question: "What is the difference between pre-moderation and post-moderation?",
+    answer:
+      "Pre-moderation reviews content before anyone else can see it. It is the safest option but slows publishing and does not work for live chat. Post-moderation publishes first and reviews afterwards, usually prioritized by filters and user reports. Most platforms mix the two: pre-moderation for high-risk content such as marketplace listings or images from new accounts, and post-moderation or report-driven review for the rest.",
+  },
 ];
 
 const seoContent: SEOPattern[] = [
   {
     pattern: "hero-statement",
-    eyebrow: "Best Content Moderation Services in USA",
+    eyebrow: "US-Based Content Moderation Company",
     heading: "The trust safety BPO that keeps your community safe without killing its voice.",
     accent: "without killing its voice",
     body: [
-      "Contact Center USA is one of the best content moderation services providers in the USA — a US-based trust safety BPO with trained moderators, resilience programs, and AI triage layered into every content stream we touch.",
+      "Contact Center USA is a US-based content moderation company and trust and safety BPO, with trained moderators, resilience programs, and AI triage layered into every content stream we touch.",
       "For platforms searching for content moderation outsourcing that scales without regressing on accuracy, we deliver human-in-the-loop moderation across text, image, video, and livestream — at millisecond response times and with audit-ready evidence on every decision.",
     ],
     stats: [
@@ -168,6 +194,20 @@ const seoContent: SEOPattern[] = [
     ],
   },
   {
+    pattern: "hero-statement",
+    eyebrow: "Buyer's Checklist",
+    heading: "What to compare between content moderation companies",
+    accent: "content moderation companies",
+    body: [
+      "Most content moderation companies describe their service in the same words, so compare them on how the work is actually done. Ask each provider to walk you through a live queue and a sample report, not a slide deck, and check these five things.",
+      "Policy coverage. A provider should turn your community guidelines into written decision trees with examples for each violation type, and explain how moderators handle content your policy does not yet cover. Ask how quickly a policy change reaches every moderator, how often calibration sessions run, and which legal requirements in your markets are built into the workflow.",
+      "Human and AI review. Automated classifiers are good at removing clear violations at volume; people are needed for context, sarcasm, coded language, and new forms of abuse. Ask which decisions are automated, which always get a human, how borderline cases are routed, and how moderator decisions are fed back to improve the filters.",
+      "Escalation. Find out what happens to the worst content: threats of imminent harm, child-safety material, self-harm, and fast-moving brand risk. A good provider has defined severity levels, a time target for each one, a path to your own trust and safety team at any hour, and a record of every escalation.",
+      "Moderator wellness. Reviewing harmful content takes a toll, and exhausted moderators make worse decisions. Ask about exposure limits, rotation off the hardest queues, access to counseling, and how wellbeing is monitored, not just whether a wellness program exists on paper.",
+      "Reporting. You should see volume, decision accuracy from QA sampling, time to action, appeal and overturn rates, and emerging trends, along with an audit trail you can use when a user, partner, or regulator asks why a decision was made.",
+    ],
+  },
+  {
     pattern: "flow",
     eyebrow: "How It Works",
     heading: "Our Trust & Safety Moderation Process",
@@ -194,6 +234,26 @@ const seoContent: SEOPattern[] = [
         title: "Calibration & Reporting",
         body: "Weekly QA calibration, monthly policy reviews, and executive dashboards on volume, accuracy, wellbeing, and community health.",
       },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Chat Moderation",
+    heading: "Live chat, community, and in-game chat moderation",
+    image: "/images/cc-agent-monitor.jpg",
+    imagePosition: "left",
+    body: [
+      "Chat is the hardest content to moderate because it is live. A post can be reviewed before it is published; a chat message is seen the moment it is sent, often in a fast-moving channel with hundreds of people in it. Chat moderation therefore pairs automated filters that act in real time on blocked terms, links, spam, and flooding with human moderators who watch the conversation, act on user reports, and step in when a discussion turns.",
+      "We moderate chat rooms and live chat features in websites and apps, community spaces such as forums, group channels, and creator communities, livestream chat, and in-game chat for game studios and esports platforms. The tools are the same everywhere, from warnings and message removal to timeouts, mutes, and bans, but the rules are yours and the thresholds differ: competitive trash talk that is fine in one game is harassment in another community.",
+      "Games and communities with young users need extra care. Grooming signals, such as an adult pressing a minor to move to a private channel, go straight to a senior moderator and to your trust and safety team. Services directed to children under 13 must also follow COPPA, which shapes what children may share in chat, and US online service providers must report apparent child sexual abuse material to NCMEC once they know of it (18 U.S.C. 2258A). Our job is to detect, preserve, and escalate quickly so your team can meet those duties.",
+      "Not every chat message is a moderation problem. A player reporting a bug or a shopper asking about an order needs support, not enforcement, so moderators route those conversations to your live chat support team, or ours, with the context attached.",
+    ],
+    bullets: [
+      "Real-time filters for blocked terms, links, spam, and flooding, with human review of flagged messages",
+      "Live monitoring of busy channels, livestream chat, and community events",
+      "Warnings, removals, timeouts, mutes, and bans applied under your rules",
+      "Child-safety and threat escalation to your trust and safety team around the clock",
+      "Support questions handed to live chat agents instead of left in the channel",
     ],
   },
   {
@@ -289,13 +349,18 @@ const relatedServices = [
     desc: "How a mid-size e-commerce retailer scaled from 50 to 400 agents in 3 weeks for Black Friday, achieving 98.5% CSAT during peak season.",
     href: "/case-studies/ecommerce-holiday-scaling",
   },
+  {
+    title: "Live Chat Outsourcing",
+    desc: "US-based live chat agents for the support questions that turn up in moderated chat and community channels.",
+    href: "/services/live-chat-outsourcing",
+  },
 ];
 
 export default function ContentModerationServicesPage() {
   return (
     <ServicePageTemplate
       badge="Content Moderation Services"
-      title="Comprehensive Content Moderation for Safe Online Communities"
+      title="Content Moderation Services for Safe Online Communities"
       titleHighlight="Safe Online Communities"
       subtitle="Protect your brand, users, and platform with human-powered moderation backed by AI filtering and 24/7 global coverage."
       description="Our content moderation services combine trained human moderators with AI-assisted filtering to keep your digital platforms safe, compliant, and welcoming. From social media and user-generated content to ad compliance and crisis detection, we provide the scale and expertise to moderate millions of interactions while preserving your community culture."

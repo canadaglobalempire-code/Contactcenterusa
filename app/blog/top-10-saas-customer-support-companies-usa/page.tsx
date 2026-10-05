@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 SaaS Customer Support Companies USA (2026)";
+const description =
+  "Compare the top 10 SaaS customer support companies in the USA for 2026 — ranked by technical depth, omnichannel & pricing. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 SaaS Customer Support Companies USA (2026)",
-  description:
-    "Compare the top 10 SaaS customer support companies in the USA for 2026 — ranked by technical depth, omnichannel & pricing. Get a free quote.",
+  title,
+  description,
   keywords: [
     "saas customer support outsourcing",
     "saas customer success companies",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "saas retention expansion support",
   ],
   alternates: { canonical: "/blog/top-10-saas-customer-support-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-saas-customer-support-companies-usa"),
 };
 
 export default function Page() {

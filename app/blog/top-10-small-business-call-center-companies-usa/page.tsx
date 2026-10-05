@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Top 10 Small Business Call Center Companies (2026)";
+const description =
+  "The top 10 small business call center companies for 2026, ranked by affordability, flexibility & no-contract plans. Compare US providers and get a quote.";
 
 export const metadata: Metadata = {
-  title: "Top 10 Small Business Call Center Companies (2026)",
-  description:
-    "The top 10 small business call center companies for 2026, ranked by affordability, flexibility & no-contract plans. Compare US providers and get a quote.",
+  title,
+  description,
   keywords: [
     "call center services for small business",
     "small business answering service",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "pay as you go call center services",
   ],
   alternates: { canonical: "/blog/top-10-small-business-call-center-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-small-business-call-center-companies-usa"),
 };
 
 export default function Page() {

@@ -3,16 +3,18 @@ import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
 
-const title = "Sales Outsourcing | US-Based SDR & Full-Cycle Teams";
+const title = "Outsourced SDR & Sales Development Agency | US-Based";
 const description =
-  "Outsource sales to US-based SDRs and closers. Pipeline generation, lead qualification and full-cycle selling built on your ICP. Get a free quote.";
+  "Outsourced SDR and sales development with a US-based team: ICP and list building, outbound cadences and qualified meetings handed to your closers. Get a quote.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
     "sales outsourcing",
-    "sales bpo usa",
+    "outsourced sdr",
+    "sales development agency",
+    "sales development outsourcing",
     "outsourced sales team",
     "sdr outsourcing",
     "outsourced sales development",
@@ -108,11 +110,11 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "hero-statement",
     eyebrow: "Best Sales Outsourcing in USA",
-    heading: "The sales BPO USA growth teams trust when pipeline and close rate both need to move.",
+    heading: "The outsourced sales development partner growth teams trust when pipeline and close rate both need to move.",
     accent: "pipeline and close rate",
     body: [
       "Contact Center USA is one of the best sales outsourcing providers in the USA — a 100% US-based outsourced sales team of SDRs, closers, and full-cycle reps operating under your brand, on your CRM, inside your playbooks.",
-      "For revenue leaders searching for a sales BPO USA partner that can actually scale pipeline without ballooning cost of acquisition, we deliver trained domestic sales talent, performance-aligned pricing models, and repeatable playbooks that have tripled pipeline for clients across SaaS, financial services, and B2B technology.",
+      "For revenue leaders looking for a sales development agency that can scale pipeline without ballooning cost of acquisition, we deliver trained domestic SDRs and closers, performance-aligned pricing models, and repeatable playbooks that have tripled pipeline for clients across SaaS, financial services, and B2B technology.",
     ],
     stats: [
       { stat: "3x", label: "Average pipeline growth in year one of partnership" },
@@ -197,11 +199,30 @@ const seoContent: SEOPattern[] = [
     ],
   },
   {
+    pattern: "split-image",
+    eyebrow: "Sales Development",
+    heading: "Outsourced sales development: how our SDR agency works",
+    image: "/images/cc-team-huddle.jpg",
+    imagePosition: "left",
+    body: [
+      "Outsourced sales development only works when the SDR team chases your definition of a good account. Before the first dial we write your ideal customer profile, messaging, objection handling and qualification criteria into a shared playbook, then research the prospects that fit it and build the lists the team will work inside your CRM.",
+      "Our US-based SDRs work those lists through outreach cadences configured in your dialer and sales engagement tools, such as Outreach, SalesLoft, Apollo or LinkedIn Sales Navigator, using approved messaging only. Every call is recorded and reviewed, and weekly calibration sessions with your team keep the pitch and the qualification bar where you want them.",
+      "When a prospect meets the agreed criteria, the SDR books the meeting on your closer's calendar and logs the context in Salesforce, HubSpot, Pipedrive or Dynamics, so your account executives walk into the call knowing why the buyer said yes. Reporting is daily rather than monthly, and the meetings are judged by whether they turn into pipeline, not by how many were set.",
+    ],
+    bullets: [
+      "ICP and list building: your ideal customer profile and qualification criteria are written down before outreach starts",
+      "Cadence: outreach runs through your own dialer and sales engagement stack, on approved messaging",
+      "Qualification: SDRs follow your criteria, so closers receive sales-ready opportunities rather than raw meetings",
+      "Handoff to AEs: meetings land on your closers' calendars with the prospect's context logged in your CRM",
+      "Reporting: daily dashboards on dials, connects, meetings, SQLs and win rate, plus regular pipeline and cost-per-opportunity reviews",
+    ],
+  },
+  {
     pattern: "featured-industries",
     eyebrow: "Industries",
     heading: "Industries We Support with Outsourced Sales",
     intro:
-      "Sales motions differ sharply by industry. Our sales BPO USA pods are specialized by vertical, with reps who speak the language of your buyers from day one.",
+      "Sales motions differ sharply by industry. Our SDR and sales pods are specialized by vertical, with reps who speak the language of your buyers from day one.",
     items: [
       {
         icon: "laptop",
@@ -232,7 +253,7 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "split-image",
     eyebrow: "Why Us",
-    heading: "Why Choose Contact Center USA as Your Sales BPO USA",
+    heading: "Why Choose Contact Center USA as Your Outsourced SDR Partner",
     image: "/images/cc-management.jpg",
     imagePosition: "right",
     body: [
@@ -289,14 +310,19 @@ const relatedServices = [
     desc: "US-based solar lead qualification and appointment setting call center.",
     href: "/industries/solar-lead-generation-call-center",
   },
+  {
+    title: "Inside Sales Outsourcing Guide",
+    desc: "When to outsource SDRs, how the engagement models compare, and how to scale pipeline without hiring.",
+    href: "/blog/inside-sales-outsourcing-guide",
+  },
 ];
 
 export default function SalesOutsourcingPage() {
   return (
     <ServicePageTemplate
       badge="Sales Outsourcing"
-      title="Sales Outsourcing That Scales Your Revenue Without the Overhead"
-      titleHighlight="Revenue Without the Overhead"
+      title="Outsourced SDR & Sales Development Team - US-Based"
+      titleHighlight="Sales Development Team"
       subtitle="From SDR teams and appointment setting to full-cycle sales management, we build and run the sales engine that drives your growth."
       description="Our sales outsourcing services give you a dedicated, trained sales force without the cost and complexity of building one in-house. Whether you need SDRs to fill the top of your funnel, appointment setters to book meetings with decision-makers, or full-cycle reps to close deals, we deliver measurable pipeline growth with performance-aligned pricing."
       features={features}

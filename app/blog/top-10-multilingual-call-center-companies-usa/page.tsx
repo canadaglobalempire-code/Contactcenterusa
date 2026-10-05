@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best Multilingual Call Center Companies in USA (2026)";
+const description =
+  "Compare bilingual and multilingual call center providers for US brands, including Spanish support, language coverage, compliance, and CX fit.";
 
 export const metadata: Metadata = {
-  title: "Best Multilingual Call Center Companies in USA (2026)",
-  description:
-    "Compare bilingual and multilingual call center providers for US brands, including Spanish support, language coverage, compliance, and CX fit.",
+  title,
+  description,
   keywords: [
     "multilingual call center companies",
     "bilingual call center usa",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "mandarin customer support usa",
   ],
   alternates: { canonical: "/blog/top-10-multilingual-call-center-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-multilingual-call-center-companies-usa"),
 };
 
 export default function Page() {

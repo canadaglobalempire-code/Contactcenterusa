@@ -208,6 +208,87 @@ function familyUpdated(route: string): string | undefined {
   return FAMILY_UPDATED.find(([re]) => re.test(route))?.[1];
 }
 
+/*
+ * Per-route content dates. A family date is only true for the change that set
+ * it: a page added later would claim a date from before it existed, and a
+ * page improved later would keep the old one. List a route here when its own
+ * content (copy, title, description, in-body links) changes, including
+ * top-level pages such as "/" that match no family.
+ *
+ * The newest known date wins, so an entry here can move a route's lastmod
+ * forward but never back past a date its own source declares. Data-driven
+ * blog posts are dated by dateModified in lib/traffic-blog-posts.ts instead.
+ */
+const ROUTE_UPDATED: Record<string, string> = {
+  // Shorter titles and meta descriptions that fit the search result.
+  "/blog/ai-call-center-vs-human-agents": "2026-09-30",
+  "/call-center-services-boston": "2026-09-30",
+  "/industries/ecommerce-customer-service-outsourcing": "2026-09-30",
+  "/industries/pest-control-call-center": "2026-09-30",
+  "/industries/solar-lead-generation-call-center": "2026-09-30",
+  // In-body links to the Boston city page.
+  "/industries/education-call-center-services": "2026-09-30",
+  "/industries/healthcare-call-center-services": "2026-09-30",
+  "/industries/pharmaceuticals-call-center": "2026-09-30",
+  // Ranked lists: one in-body link to the matching service page, and title or
+  // description wording on the healthcare, ecommerce and legal lists.
+  "/blog/top-10-bpo-companies-in-usa": "2026-09-30",
+  "/blog/top-10-bpo-companies-texas": "2026-09-30",
+  "/blog/top-10-customer-service-outsourcing-companies-usa": "2026-09-30",
+  "/blog/top-10-ecommerce-call-center-companies-usa": "2026-09-30",
+  "/blog/top-10-legal-intake-call-center-companies-usa": "2026-09-30",
+  "/blog/top-10-outsourced-sdr-companies-usa": "2026-09-30",
+  "/blog/top-10-plumbing-answering-service-companies-usa": "2026-09-30",
+  "/blog/top-10-telemarketing-companies-usa": "2026-09-30",
+  "/blog/top-15-healthcare-bpo-companies-usa": "2026-09-30",
+  // Link from the Texas city pages to the Texas BPO list.
+  "/call-center-services-austin": "2026-09-30",
+  "/call-center-services-dallas": "2026-09-30",
+  "/call-center-services-houston": "2026-09-30",
+  "/call-center-services-san-antonio": "2026-09-30",
+  // Outsourced SDR / sales development wording, H1 and new section.
+  "/solutions/sales-outsourcing": "2026-09-30",
+  // Collection reminder section with Regulation F and TCPA citations.
+  "/services/debt-collection-outsourcing": "2026-09-30",
+  // Related link to the collections article.
+  "/industries/debt-collection-call-center": "2026-09-30",
+  // Customer care vs support and dedicated vs shared team sections, FAQs.
+  "/services/customer-care-outsourcing": "2026-09-30",
+  // Buyer checklist for content moderation companies, chat moderation, FAQs.
+  "/solutions/content-moderation-services": "2026-09-30",
+  // (Also 2026-09-30, listed above: /industries/ecommerce-customer-service-outsourcing
+  // got WISMO, returns and peak-season sections and new title, H1 and FAQs.)
+  // "What is legal intake outsourcing?" section and FAQ, and the article's
+  // in-body link to it.
+  "/industries/legal-intake-call-center": "2026-09-30",
+  "/blog/lawyer-answering-service": "2026-09-30",
+  // Blog index card for the new contingency collection agency guide.
+  "/blog": "2026-09-30",
+  // SaaS customer support outsourcing title, H1, guide sections and FAQs.
+  "/industries/saas-technology-support": "2026-09-30",
+  // What a telemarketing company does, inbound vs outbound, pricing models,
+  // TSR and TCPA rules, FAQs, new title and H1.
+  "/services/telemarketing-services": "2026-09-30",
+  // Plumbing answering service: triage and dispatch, after-hours vs
+  // overflow, FAQs, link to the after-hours guide.
+  "/industries/plumbing-call-center-services": "2026-09-30",
+  // IT help desk outsourcing: title, H1, tiers, service desk vs help desk,
+  // desktop support, ITSM handoff, FAQs; and the in-body link to it from
+  // technical support outsourcing (the SaaS page is dated above).
+  "/solutions/information-technology-services": "2026-09-30",
+  "/solutions/technical-support-outsourcing": "2026-09-30",
+  // Administrative outsourcing section, FAQs, title and H1, and the in-body
+  // link to it from back office outsourcing.
+  "/solutions/office-support-services": "2026-09-30",
+  "/solutions/back-office-outsourcing": "2026-09-30",
+  // Answers hub lists the new and renamed pages from lib/ai-context.ts.
+  "/answers": "2026-09-30",
+};
+
+function latestDate(...dates: (string | undefined)[]): string | undefined {
+  return (dates.filter(Boolean) as string[]).sort().at(-1);
+}
+
 let cache: Map<string, SitemapEntry[]> | null = null;
 
 function buildAll(): Map<string, SitemapEntry[]> {
@@ -224,8 +305,10 @@ function buildAll(): Map<string, SitemapEntry[]> {
     const slug = route.startsWith("/blog/") ? route.slice("/blog/".length) : null;
     const entry: SitemapEntry = {
       loc: route === "/" ? `${BASE_URL}/` : `${BASE_URL}${route}`,
-      lastmod:
+      lastmod: latestDate(
+        ROUTE_UPDATED[route],
         contentDate(blob) ?? (slug ? libSlugDates().get(slug) : undefined) ?? familyUpdated(route),
+      ),
       images: pageImages(blob),
     };
     const section = SECTIONS.find((s) => s.match(route))!;

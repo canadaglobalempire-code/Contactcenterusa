@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best Technical Support Outsourcing Companies (2026)";
+const description =
+  "Compare technical support outsourcing providers by tiered help desk depth, SaaS/product expertise, tooling, SLAs, and CX quality.";
 
 export const metadata: Metadata = {
-  title: "Best Technical Support Outsourcing Companies (2026)",
-  description:
-    "Compare technical support outsourcing providers by tiered help desk depth, SaaS/product expertise, tooling, SLAs, and CX quality.",
+  title,
+  description,
   keywords: [
     "technical support outsourcing companies",
     "top technical support companies usa",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "outsourced tech support services",
   ],
   alternates: { canonical: "/blog/top-10-technical-support-outsourcing-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-10-technical-support-outsourcing-companies-usa"),
 };
 
 export default function Page() {

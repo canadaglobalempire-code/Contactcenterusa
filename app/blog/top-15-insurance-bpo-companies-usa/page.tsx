@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Best Insurance BPO Companies in USA (2026)";
+const description =
+  "Compare insurance BPO providers by claims support, policyholder CX, compliance workflows, surge coverage, technology, and reporting.";
 
 export const metadata: Metadata = {
-  title: "Best Insurance BPO Companies in USA (2026)",
-  description:
-    "Compare insurance BPO providers by claims support, policyholder CX, compliance workflows, surge coverage, technology, and reporting.",
+  title,
+  description,
   keywords: [
     "insurance bpo companies",
     "top insurance bpo companies",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "insurance back office outsourcing",
   ],
   alternates: { canonical: "/blog/top-15-insurance-bpo-companies-usa" },
+  ...articleMeta(title, description, "/blog/top-15-insurance-bpo-companies-usa"),
 };
 
 export default function Page() {

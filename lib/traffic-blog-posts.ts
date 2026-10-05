@@ -155,9 +155,9 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     description:
       "What is BPO collections? Learn how outsourced debt collection works, the difference between first-party and third-party collections, FDCPA compliance.",
     category: "Debt Collection BPO",
-    readTime: "10 min read",
+    readTime: "12 min read",
     datePublished: "2026-06-26",
-    dateModified: "2026-06-26",
+    dateModified: "2026-09-30",
     image: "/images/cc-management.jpg",
     imageAlt: "Outsourced collections team working accounts receivable",
     keywords: [
@@ -219,6 +219,39 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         ],
       },
       {
+        heading: "Contingency collection agency vs first-party collections",
+        paragraphs: [
+          "A contingency collection agency is a third-party agency that is paid only when it recovers money. You place accounts with the agency, it contacts your customers in its own name, and it keeps an agreed percentage of whatever it collects; if nothing is recovered, no fee is due. On consumer accounts it is acting as a debt collector, so the FDCPA and Regulation F govern how it makes contact.",
+          "[First-party collections outsourcing](/services/debt-collection-outsourcing) works the other way round. The provider's agents contact your customers under your brand, usually on early-stage accounts before charge-off, and you pay for the staffed hours or the agents assigned to your program rather than a share of each dollar recovered. The account and the customer relationship stay with you, and the team works to your scripts, hours and rules.",
+          "That changes the cost logic. A contingency agency carries the risk of working accounts that never pay, so its rate is set per placement and rises with the age and difficulty of the debt. A first-party program costs what the coverage you ask for costs, which makes it easy to budget when volumes are steady. The fair comparison is not the headline rate but how much you keep per dollar placed, and what each model does to the customers you want to keep.",
+          "For how contingency fees are set, what moves the rate, the contract terms to check and the questions to ask before you place accounts, see our full guide to [choosing a contingency collection agency](/blog/contingency-collection-agency).",
+        ],
+        bullets: [
+          "What moves a contingency rate: how old the debt is, how hard the accounts are to reach, and how much work the agency expects before anyone pays.",
+          "What moves a first-party cost: hours of coverage, the number of agents, the channels used (calls, texts, emails, letters) and how many accounts are worked.",
+          "What moves both: the quality of the account data you hand over, dispute rates, and how much documentation you can supply.",
+        ],
+      },
+      {
+        heading: "When a contingency agency is the wrong choice",
+        paragraphs: [
+          "A contingency agency suits aged, charged-off consumer accounts that you no longer expect to keep as customers. It is usually the wrong tool in these situations:",
+        ],
+        bullets: [
+          "The accounts are early-stage and the customer is worth keeping. A call from a third-party agency tells the customer the relationship has broken down; a reminder in your own brand does not.",
+          "Balances are disputed or billing errors are likely. Under Regulation F a debt collector's validation notice has to itemize the debt, so fix the account and its records before anyone else tries to collect it.",
+          "You need control over every message. In first-party work the scripts, calling hours and tone stay yours; a contingency agency runs its own process under its own name.",
+          "The accounts are sensitive, such as patient balances, where charity care screening, insurance re-verification and HIPAA handling have to come before any request for payment.",
+          "You need a predictable monthly cost. Contingency fees move with what is recovered, while a staffed first-party program is budgeted in advance.",
+        ],
+      },
+      {
+        heading: "Combining the two models",
+        paragraphs: [
+          "You do not always have to choose. A common setup is to use a [debt collection call center for first-party collections outsourcing](/industries/debt-collection-call-center) on early-stage accounts, where many customers only need a reminder and an easy way to pay, followed by placement with a contingency agency only for the accounts that remain unpaid after charge-off. Keeping the two stages separate also keeps the customer experience, the fee structure and the regulatory obligations of each stage clear.",
+        ],
+      },
+      {
         heading: "When to outsource collections",
         bullets: [
           "Your internal team cannot keep up with aging receivables.",
@@ -252,16 +285,218 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       },
     ],
     related: [
+      { label: "Contingency collection agency: fees, terms and fit", href: "/blog/contingency-collection-agency" },
       { label: "Top debt collection BPO companies", href: "/blog/top-10-debt-collection-bpo-companies-usa" },
       { label: "Financial services call center", href: "/industries/financial-services-call-center" },
-      { label: "Debt collection outsourcing", href: "/services/debt-collection-outsourcing" },
-      { label: "First-party collections", href: "/services/first-party-collections" },
-      { label: "Contingency collection agency", href: "/services/contingency-collection-agency" },
+      { label: "First-party collections outsourcing", href: "/services/debt-collection-outsourcing" },
+      { label: "Debt collection call center (first-party recovery)", href: "/industries/debt-collection-call-center" },
       { label: "Call center outsourcing cost", href: "/blog/call-center-outsourcing-cost" },
       { label: "Financial services call centers in North Carolina", href: "/blog/financial-services-call-center-north-carolina" },
       { label: "How to switch call center providers", href: "/blog/how-to-switch-call-center-providers" },
     ],
     ctaLocation: "what_is_bpo_collections_blog_cta",
+    leadOffer: "Debt collection outsourcing quote",
+  },
+  "contingency-collection-agency": {
+    slug: "contingency-collection-agency",
+    title: "Contingency Collection Agency: Fees, Terms & Fit",
+    h1: "Contingency Collection Agency: How the Fees Work and When It Fits",
+    description:
+      "How a contingency collection agency works: how its fee is set, what drives the rate, contract terms to check, FDCPA and Regulation F rules, and when it fits.",
+    category: "Debt Collection BPO",
+    readTime: "13 min read",
+    datePublished: "2026-09-30",
+    dateModified: "2026-09-30",
+    image: "/images/cc-agent-writing.jpg",
+    imageAlt: "Collections specialist reviewing placed accounts and agency contract terms",
+    keywords: [
+      "contingency collection agency",
+      "contingency fee collection agency",
+      "how contingency collection fees work",
+      "contingency vs flat fee collections",
+      "collection agency contingency rate",
+      "no recovery no fee collection agency",
+    ],
+    intro: [
+      "A contingency collection agency is a third-party collector that is paid only out of what it recovers. You place past-due accounts with the agency, it works them in its own name, and it keeps an agreed share of each payment it collects. If an account never pays, you owe the agency nothing for that account.",
+      "That simple promise hides a lot of variation. The rate you are offered depends on the accounts you place, the contract decides what counts as a recovery, and federal law limits how the agency may contact your customers. This guide explains how contingency fees work, what moves the rate, how the model compares with flat-fee and first-party collections, when it is the wrong choice, and what to ask before you sign. It describes what drives the rate instead of quoting one, because an honest rate depends on your portfolio.",
+    ],
+    sections: [
+      {
+        heading: "What is a contingency collection agency?",
+        paragraphs: [
+          "A collection agency works on contingency when its fee is a share of the money it actually recovers, rather than an hourly charge, a monthly retainer or a fixed price per account. You keep ownership of the debt. The agency acts for you: it contacts the customer, negotiates payment or a payment plan, and passes on what it collects minus its fee. That is different from selling the debt to a debt buyer, where you receive a one-off price and the buyer keeps whatever it later collects.",
+          "Because the agency collects debts owed to someone else, it is a debt collector under the Fair Debt Collection Practices Act (FDCPA) when the accounts are consumer debts, meaning debts taken on mainly for personal, family or household purposes (15 U.S.C. 1692a). Regulation F, the Consumer Financial Protection Bureau's rule at 12 CFR part 1006, adds detailed requirements on calling times, call frequency, validation notices and electronic messages. Debts owed by businesses fall outside the FDCPA, although state law and the placement contract still apply.",
+        ],
+      },
+      {
+        heading: "How contingency fees work",
+        paragraphs: [
+          "The fee is written into the placement agreement as a percentage of each amount collected. When a customer pays, either the agency deducts its share and sends you the rest, or the customer pays you directly and the agency invoices you for its share. The agreement should say which, how often money and statements move, and how collected funds are held until they reach you.",
+          "Three parts of the agreement decide what you actually pay, so read them before you place a single account:",
+        ],
+        bullets: [
+          "What counts as a recovery. An agreement may charge the fee on any payment made after placement, including payments a customer sends straight to you, and sometimes on credits or returned goods. Check how payments that were already arranged before placement are treated.",
+          "Recalls and cancellations. If you pull an account back, for example because the customer disputes it or you want to settle it yourself, the agreement may still charge a fee. Know the terms before you place accounts you might want back.",
+          "Rate tiers. An agency may quote different rates for different groups of accounts, such as by age or balance, and a separate rate when an account goes to an attorney or to court. Get every tier, and what moves an account between tiers, in writing.",
+        ],
+      },
+      {
+        heading: "Can the fee be added to what your customer owes?",
+        paragraphs: [
+          "Whether the agency's fee can be passed on to your customer is a legal question, not a negotiating point. The FDCPA bars a debt collector from collecting any amount, including a fee or charge, unless the agreement that created the debt expressly authorizes it or the law permits it (15 U.S.C. 1692f). Some state laws are stricter still.",
+          "In practice, if your customer terms do not provide for collection costs, plan on the fee coming out of what is recovered. If they do, have your counsel confirm that the clause is enforceable in the states where your customers live before anyone adds a charge to a balance.",
+        ],
+      },
+      {
+        heading: "What drives a contingency rate",
+        paragraphs: [
+          "An agency sets its rate by estimating how much work your accounts will take and how likely they are to pay. Nobody can quote a fair rate without seeing a sample of the portfolio, which is why this guide does not list one. These are the factors that move it:",
+        ],
+        bullets: [
+          "Age of the debt. The longer an account has been past due, the harder the customer is to reach and the less likely payment becomes, so older placements carry higher rates. Very old debts may also be past the statute of limitations, which limits what a collector can do.",
+          "Balance size. A small balance takes almost as much work as a large one, so a portfolio of low balances tends to draw a higher percentage than one of larger balances.",
+          "Consumer or commercial. Consumer accounts bring the FDCPA and Regulation F contact rules. Commercial accounts bring different work, such as finding the person who can approve a payment and resolving invoice disputes.",
+          "Quality of the account data. Current phone numbers, email and postal addresses, a clear itemization and copies of the contract or invoices cut skip tracing and dispute handling.",
+          "Whether litigation may be needed. Suing takes attorneys, court costs and time, so accounts that may need legal action are often quoted separately.",
+          "Volume and placement pattern. A steady flow of new accounts lets an agency plan its staffing; a single placement of old accounts does not.",
+          "Industry rules. Patient balances, for example, need insurance re-verification and charity care screening before any request for payment, which adds work.",
+        ],
+      },
+      {
+        heading: "Time-barred and bankrupt accounts",
+        paragraphs: [
+          "Two kinds of account need checking before placement, whatever the rate. A debt past the state statute of limitations is time-barred, and Regulation F prohibits a debt collector from suing or threatening to sue to collect it (12 CFR 1006.26). Where state law allows, an agency may still ask for voluntary payment, but the account is worth less and the rate will reflect that.",
+          "Accounts of customers in bankruptcy should not be placed at all. A bankruptcy filing triggers the automatic stay, which stops acts to collect a pre-filing debt from the debtor (11 U.S.C. 362). A good placement process scrubs files against bankruptcy, deceased and military-service lists before any contact is made, and keeps a record that it did.",
+        ],
+      },
+      {
+        heading: "Contingency vs flat-fee vs first-party collections",
+        paragraphs: [
+          "There are three common ways to pay for help with past-due accounts. They suit different stages of delinquency, and many creditors use more than one.",
+        ],
+        table: {
+          headers: ["", "Contingency agency", "Flat-fee service", "First-party outsourcing"],
+          rows: [
+            ["How you pay", "A share of each amount recovered, nothing if nothing is collected", "A fixed price per account placed, whether or not it pays", "Staffed hours or dedicated agents, agreed in advance"],
+            ["Name the customer sees", "The agency's", "Depends on the program, often a series of letters or notices", "Yours"],
+            ["Usual stage", "Later-stage or charged-off accounts", "Recent accounts where a firm notice may be enough", "Early-stage accounts, before charge-off"],
+            ["Who carries the risk", "The agency, which is paid only if it collects", "You, because the fee is due either way", "You, because you pay for the coverage you set"],
+            ["Best for", "Accounts you no longer expect to keep as customers", "Large numbers of small, recent balances", "Customers you want to keep"],
+          ],
+        },
+      },
+      {
+        heading: "How to compare the three models",
+        paragraphs: [
+          "A contingency agency carries the risk that accounts never pay, and its rate reflects that. A flat-fee service moves that risk to you: the fee is the same on an account that pays the next day as on one that never pays. A [first-party collections program](/services/debt-collection-outsourcing) costs whatever coverage you ask for, which makes it easy to budget, and keeps the conversation in your brand while the customer is still worth keeping.",
+          "The useful comparison is net recovery: what you keep per dollar placed after fees, plus what each model does to the customers you want to keep. A low rate on accounts that an agency barely works can return less than a higher rate on accounts it works properly, so ask how each provider measures and reports recovery net of its fee.",
+          "The legal position differs too. The FDCPA's definition of a debt collector leaves out a creditor collecting its own debts in its own name, and a person collecting a debt that was not in default when that person obtained it. A creditor that collects under another name, so that it looks as though a third party is collecting, is treated as a debt collector. Whether a particular first-party program falls outside the Act depends on those facts, so ask your counsel to confirm the position for your accounts. For a fuller comparison of the two stages, see [first-party vs third-party collections](/blog/what-is-bpo-collections).",
+        ],
+      },
+      {
+        heading: "When a contingency agency is the wrong choice",
+        paragraphs: [
+          "A contingency agency suits aged, charged-off consumer accounts that you no longer expect to keep as customers. It is usually the wrong tool in these situations:",
+        ],
+        bullets: [
+          "The accounts are only days or weeks past due and the customer is worth keeping. A reminder in your own name is the gentler first step, and it costs no share of the balance.",
+          "The balance may be wrong. If billing errors, unapplied credits or open disputes are likely, fix them first. The agency has to send the customer an itemized validation notice, and it cannot correct records it never had.",
+          "You need control over every message. An agency works to its own scripts, letters and calling plan under its own name.",
+          "The customer is a business you still trade with. A call from an agency can end a supplier relationship that a call from your own accounts receivable team would have kept.",
+          "You need a predictable monthly cost. Contingency fees rise and fall with what is recovered.",
+          "The balances are too small to be worth an agency's time. If an agency accepts them at all, the rate may leave you little; a reminder program or a write-off may make more sense.",
+        ],
+      },
+      {
+        heading: "Contract terms to check before you place accounts",
+        bullets: [
+          "The rate for each tier, and what moves an account from one tier to another, such as forwarding to an attorney.",
+          "What counts as a recovery, including direct payments to you, credits and returned goods.",
+          "Recall rights: when you can pull an account back, and whether a fee applies when you do.",
+          "Settlement authority: the lowest amount the agency may accept without asking you, and how payment plans are approved.",
+          "Remittance: how often collected money and statements reach you, and how funds are held in the meantime.",
+          "Litigation: who decides to sue, who pays court costs, and how attorney fees interact with the contingency rate.",
+          "Credit reporting: whether the agency reports accounts to the credit bureaus, and how it handles disputes about what it reports.",
+          "Licensing and insurance: proof of the state licenses the agency holds where your customers live, and bonding where a state requires it.",
+          "Term and exit: the notice period, what happens to accounts in progress, and how your data is returned or destroyed.",
+        ],
+      },
+      {
+        heading: "Questions to ask a contingency collection agency",
+        ordered: [
+          "Which of our account types and ages do you work today, and how would you tier our portfolio?",
+          "How do you measure recovery net of your fee, and will you report it to us by placement month?",
+          "How do you check and itemize a balance before the validation notice goes out?",
+          "Which channels do you use (calls, letters, texts, emails), and how do you track consent and opt-outs?",
+          "How do you enforce the Regulation F limits on calling times and call frequency across your dialer?",
+          "How are disputes handled, and how quickly do we hear about them?",
+          "Who handles complaints, and will you share complaint logs for our accounts?",
+          "Which states are you licensed in, and what happens to accounts in states where you are not?",
+          "Can we listen to call recordings for our accounts?",
+          "How is our customer data protected, and what happens to it when the contract ends?",
+        ],
+      },
+      {
+        heading: "Compliance basics: FDCPA and Regulation F",
+        paragraphs: [
+          "On consumer accounts, a contingency agency's conduct is governed by the FDCPA and Regulation F. As the creditor you are not the debt collector, but how the agency treats your customers reflects on you, and its mistakes become your complaints. These are the rules that most often shape a placement:",
+          "Calling hours and frequency. A debt collector may not call at a time it knows or should know is inconvenient, and before 8 a.m. or after 9 p.m. at the consumer's location is presumed inconvenient (12 CFR 1006.6). It is presumed to break the law if it places more than seven calls about a debt within seven days, or calls within seven days of a phone conversation about that debt (12 CFR 1006.14).",
+          "Validation and disputes. The debt collector must give the consumer validation information, including an itemization of the debt, in its first communication or within five days of it (12 CFR 1006.34). If the consumer disputes the debt in writing within the validation period, collection stops until the collector sends verification (15 U.S.C. 1692g).",
+          "Electronic messages and credit reporting. Emails and texts must tell the consumer how to opt out of further messages (12 CFR 1006.6(e)), and a debt collector may not report a debt to a credit bureau before it has spoken to the consumer about it or sent a message and waited for any notice that it was undeliverable (12 CFR 1006.30).",
+          "Automated calls and texts. Under the TCPA, autodialed or prerecorded calls and texts to a mobile number need the consumer's prior express consent, and a consumer can withdraw it. State laws add their own licensing, disclosure and calling rules on top.",
+          "This is a summary, not legal advice. Have your counsel review the placement agreement and the agency's scripts and letters for your industry and the states where your customers live.",
+        ],
+      },
+      {
+        heading: "Where Contact Center USA fits",
+        paragraphs: [
+          "Contact Center USA runs debt collection outsourcing with US-based agents. On early-stage accounts the team works first-party, under your brand, with reminder calls, texts and emails and payment arrangements. For charged-off accounts the service also covers third-party recovery on contingency-fee pricing.",
+          "If you are choosing between models, start with the accounts: how old they are, how large, and whether you want to keep the customers. Our [debt collection outsourcing](/services/debt-collection-outsourcing) page explains how the service works, and the [debt collection call center](/industries/debt-collection-call-center) page covers first-party recovery calling in more detail.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a contingency collection agency?",
+        answer:
+          "It is a third-party collection agency that is paid a share of the money it recovers on the accounts you place with it, and nothing on accounts that never pay. You keep ownership of the debt; the agency contacts your customers in its own name, negotiates payment and passes on what it collects minus its fee.",
+      },
+      {
+        question: "How much does a contingency collection agency charge?",
+        answer:
+          "It charges a percentage of what it recovers, set in the placement agreement. The percentage depends on the age of the debt, the size of the balances, whether the accounts are consumer or commercial, the quality of your account data and whether litigation may be needed. Ask for a written quote by tier after the agency has reviewed a sample of your accounts.",
+      },
+      {
+        question: "Is a contingency collection agency a debt collector under the FDCPA?",
+        answer:
+          "Yes, when it collects consumer debts owed to someone else. The FDCPA and the CFPB's Regulation F then govern its calls, letters, emails and texts. Debts owed by businesses fall outside the FDCPA, although state law can still apply.",
+      },
+      {
+        question: "Can the agency's fee be added to what my customer owes?",
+        answer:
+          "Only if the agreement that created the debt expressly allows it or the law permits it, and some states are stricter. If your customer terms say nothing about collection costs, plan on the fee coming out of what is recovered.",
+      },
+      {
+        question: "What is the difference between a contingency agency and a debt buyer?",
+        answer:
+          "A contingency agency collects for you: you keep ownership of the debt and pay a share of each recovery. A debt buyer purchases the debt outright for a one-off price and keeps whatever it later collects, so you give up any further recovery on those accounts.",
+      },
+      {
+        question: "Should I use a contingency agency or first-party collections?",
+        answer:
+          "Use first-party collections on early-stage accounts where the customer is worth keeping, because the contact stays in your brand and you pay for the coverage rather than a share of each payment. Use a contingency agency for aged or charged-off accounts you no longer expect to keep. Many creditors use both, one after the other.",
+      },
+    ],
+    related: [
+      { label: "Debt collection outsourcing services", href: "/services/debt-collection-outsourcing" },
+      { label: "Debt collection call center for first-party recovery", href: "/industries/debt-collection-call-center" },
+      { label: "What is BPO in collections? First vs third-party", href: "/blog/what-is-bpo-collections" },
+      { label: "Top debt collection BPO companies", href: "/blog/top-10-debt-collection-bpo-companies-usa" },
+      { label: "Financial services call center", href: "/industries/financial-services-call-center" },
+      { label: "Medical billing and revenue cycle support", href: "/industries/medical-billing-rcm" },
+    ],
+    ctaLocation: "contingency_collection_agency_blog_cta",
     leadOffer: "Debt collection outsourcing quote",
   },
   "cost-to-outsource-customer-service": {
@@ -806,7 +1041,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     ],
     related: [
       { label: "Top ecommerce call center companies", href: "/blog/top-10-ecommerce-call-center-companies-usa" },
-      { label: "Ecommerce customer service outsourcing", href: "/industries/ecommerce-customer-service-outsourcing" },
+      { label: "Ecommerce customer support and e-commerce call center services", href: "/industries/ecommerce-customer-service-outsourcing" },
       { label: "Customer service outsourcing companies", href: "/blog/top-10-customer-service-outsourcing-companies-usa" },
       { label: "Live chat outsourcing", href: "/services/live-chat-outsourcing" },
       { label: "Top live chat outsourcing companies", href: "/blog/top-10-live-chat-outsourcing-companies-usa" },

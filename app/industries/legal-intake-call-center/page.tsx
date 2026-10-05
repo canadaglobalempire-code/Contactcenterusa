@@ -5,13 +5,16 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Legal Intake Call Center | 24/7 Law Firm Answering Service";
 const description =
-  "US-based legal intake call center for personal injury and mass tort firms. 24/7 answering, case screening, retainer follow-up, and CRM integration. Get a quote.";
+  "Legal intake outsourcing for personal injury and mass tort firms: US-based specialists answer 24/7, screen cases, hand off conflict checks and send retainers.";
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: [
     "legal intake call center",
+    "legal intake outsourcing",
+    "what is legal intake outsourcing",
+    "outsourced legal intake",
     "legal intake companies",
     "legal intake services",
     "law firm answering service",
@@ -71,6 +74,11 @@ const stats = [
 
 const faqs = [
   {
+    question: "What is legal intake outsourcing?",
+    answer:
+      "It is the practice of having an outside team of trained intake specialists answer a law firm's new-client calls under the firm's name. The team screens each caller against the firm's case criteria, captures every party name for the firm's conflict check, books consultations, and sends retainers for signature when the firm authorizes it. The firm's attorneys keep every legal decision, including whether to accept the case and whether a conflict exists.",
+  },
+  {
     question: "Do you answer legal intake calls after hours and on weekends?",
     answer:
       "Yes — 24/7/365, including nights, weekends, and holidays. This is where most firms lose cases. Accident and injury calls do not follow business hours, and a claimant who reaches voicemail almost always calls the next firm advertising in that market. Live coverage at 2am on a Sunday is the single highest-value part of a legal intake program.",
@@ -116,6 +124,25 @@ const seoContent: SEOPattern[] = [
       { stat: "24/7", label: "Live intake including nights, weekends, and holidays" },
       { stat: "100%", label: "US-based intake specialists under confidentiality agreement" },
       { stat: "6+", label: "Legal CRM platforms supported, including Litify and Filevine" },
+    ],
+  },
+  {
+    pattern: "split-image",
+    eyebrow: "Definition",
+    heading: "What is legal intake outsourcing?",
+    image: "/images/cc-man-headset.jpg",
+    imagePosition: "left",
+    body: [
+      "Legal intake outsourcing means a law firm hands the first conversation with potential new clients to an outside team of trained intake specialists. They answer the firm's intake line under the firm's name, collect the facts of a potential matter, screen it against the criteria the firm's attorneys set, and pass qualified matters to the firm with a complete record. The firm keeps every legal decision: whether to take the case, whether a conflict exists, and what the client should do next.",
+      "Intake specialists do three jobs. They screen against your case criteria, such as practice area, jurisdiction, incident date, injury and treatment status, liability facts, and prior representation, using the questions your attorneys wrote. They hand off the conflict check: every party name is captured and run against the conflicts database your firm maintains, and an apparent match stops the booking and goes to your team, because deciding whether a match is a genuine conflict is a legal judgment. And they schedule the next step, booking the consultation into your calendar and, where your firm authorizes it, sending the retainer for e-signature and following up until it is signed.",
+      "Firms usually outsource intake when calls arrive outside office hours, when an advertising or mass tort campaign brings in more calls than staff can screen, when screening varies from one staff member to the next, or when Spanish-speaking callers are lost to transfers. Some outsource only nights and weekends; others send every new-matter call to the intake team and keep their own staff on existing clients. Either way, the intake team stays on the right side of the unauthorized-practice line: it gathers facts and never tells a caller whether they have a case.",
+    ],
+    bullets: [
+      "Screening against your case criteria, using your attorneys' questions",
+      "Every party name captured for your conflict check",
+      "Apparent conflicts routed to your team before anything is booked",
+      "Consultations booked and retainers sent for e-signature when you authorize it",
+      "Full intake records written into your case management system",
     ],
   },
   {
@@ -286,6 +313,11 @@ const relatedServices = [
     title: "Making Your Customer Service Experience Soar",
     desc: "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.",
     href: "/about/company-history",
+  },
+  {
+    title: "Lawyer Answering Service: Intake, Conflicts, UPL",
+    desc: "Where the conflict check belongs in the call, what an intake record should capture, and how agents stay clear of legal advice.",
+    href: "/blog/lawyer-answering-service",
   },
 ];
 
