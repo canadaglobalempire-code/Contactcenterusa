@@ -334,6 +334,7 @@ export default function DebtCollectionOutsourcingPage() {
       stats={stats}
       testimonial={testimonial}
       faqs={faqs}
+      goLiveStat={{ value: "10–15", label: "Business Days to Launch" }}
       relatedServices={relatedServices}
       seoContent={seoContent}
     />

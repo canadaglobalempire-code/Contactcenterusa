@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, X } from "lucide-react";
@@ -61,7 +62,7 @@ type HeroStatementPattern = {
   eyebrow?: string;
   heading: string;
   accent?: string; // Portion of heading to show in red
-  body: string | string[];
+  body: ReactNode | ReactNode[];
   stats?: { stat: string; label: string }[];
 };
 
@@ -95,7 +96,7 @@ type SplitImagePattern = {
   pattern: "split-image";
   eyebrow?: string;
   heading: string;
-  body: string | string[];
+  body: ReactNode | ReactNode[];
   image: string;
   imagePosition?: "left" | "right";
   bullets?: string[];
@@ -171,7 +172,7 @@ function HeroStatementBlock({ data }: { data: HeroStatementPattern }) {
               </h2>
               <div className="mt-4 max-w-[620px] space-y-3 text-[15.5px] leading-[1.7] text-gray-700">
                 {paras.map((p, i) => (
-                  <p key={i}>{citeSources(p, cited)}</p>
+                  <p key={i}>{typeof p === "string" ? citeSources(p, cited) : p}</p>
                 ))}
               </div>
             </div>
@@ -446,7 +447,7 @@ function SplitImageBlock({ data }: { data: SplitImagePattern }) {
               </h2>
               <div className="mt-6 space-y-4 text-[16px] leading-[1.78] text-gray-700">
                 {paras.map((p, i) => (
-                  <p key={i}>{citeSources(p, cited)}</p>
+                  <p key={i}>{typeof p === "string" ? citeSources(p, cited) : p}</p>
                 ))}
               </div>
               {data.bullets && (

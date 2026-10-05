@@ -80,7 +80,7 @@ const services = [
 ];
 
 const stats = [
-  { value: "5,000+", label: "US-Based Agents" },
+  { value: "500+", label: "US-Based Agents" },
   { value: "99.9%", label: "Uptime SLA" },
   { value: "40%", label: "Avg. Cost Savings" },
   { value: "24/7/365", label: "Availability" },

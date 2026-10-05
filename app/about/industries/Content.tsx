@@ -224,7 +224,7 @@ export default function Content() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
               Tailored contact center solutions for 16+ industries, backed by
-              decades of expertise and thousands of US-based agents.
+              decades of expertise and hundreds of US-based agents.
             </p>
           </div>
         </div>

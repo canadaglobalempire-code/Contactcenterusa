@@ -32,7 +32,7 @@ const seoContent: SEOPattern[] = [
     heading: "The customer service BPO USA brands trust when every interaction matters.",
     accent: "every interaction matters",
     body: [
-      "Contact Center USA is one of the best customer service outsourcing providers in the USA — a 100% US-based customer service BPO USA with 5,000+ trained agents, omnichannel technology, and a 93% average CSAT score across live programs.",
+      "Contact Center USA is one of the best customer service outsourcing providers in the USA — a 100% US-based customer service BPO USA with 500+ trained agents, omnichannel technology, and a 93% average CSAT score across live programs.",
       "For leaders searching for outsourced customer service in the USA that actually feels like their brand, we deliver certified agents, closed-loop QA, and elastic capacity — at 40–60% below the fully loaded cost of an in-house team.",
     ],
     stats: [

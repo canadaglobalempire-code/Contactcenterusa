@@ -26,6 +26,7 @@ interface ServicePageTemplateProps {
   stats?: { value: number; suffix: string; label: string; prefix?: string; decimals?: number }[];
   testimonial?: { quote: string; name: string; title: string; company: string; initials: string };
   faqs?: { question: string; answer: string }[];
+  goLiveStat?: { value: string; label: string };
   relatedServices?: { title: string; desc: string; href: string }[];
   ctaHeading?: string;
   ctaSubtitle?: string;
@@ -44,6 +45,7 @@ export function ServicePageTemplate({
   stats,
   testimonial,
   faqs,
+  goLiveStat,
   relatedServices,
   ctaHeading,
   ctaSubtitle,
@@ -231,7 +233,7 @@ export function ServicePageTemplate({
       {seoContent && <SEOContentSection sections={seoContent} />}
       {stats && <StatsBar stats={stats} />}
       {testimonial && <PageTestimonial {...testimonial} />}
-      {faqs && faqs.length > 0 && <PageFAQ faqs={faqs} />}
+      {faqs && faqs.length > 0 && <PageFAQ faqs={faqs} goLiveStat={goLiveStat} />}
       {relatedServices && relatedServices.length > 0 && <RelatedServices items={relatedServices} />}
 
       <PageCTA heading={ctaHeading} subtitle={ctaSubtitle} />

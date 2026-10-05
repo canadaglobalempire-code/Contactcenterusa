@@ -1,8 +1,5 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView } from "framer-motion";
-
 interface AnimatedCounterProps {
   target: number;
   suffix?: string;
@@ -11,42 +8,23 @@ interface AnimatedCounterProps {
   decimals?: number;
 }
 
+/**
+ * Renders the final value on the server and on the first client render so the
+ * real number is always present in the HTML (no 0 -> target count-up that
+ * leaves zeros in the static markup). Kept as a component with the same props
+ * shape as the previous animated version; the animation, at most, goes from
+ * this number to itself.
+ */
 export function AnimatedCounter({
   target,
   suffix = "",
   prefix = "",
-  duration = 2,
   decimals = 0,
 }: AnimatedCounterProps) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [count, setCount] = useState(target);
-
-  useEffect(() => {
-    if (!isInView) return;
-
-    let startTime: number;
-    let animationFrame: number;
-
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(eased * target);
-
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
-    };
-
-    animationFrame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [isInView, target, duration]);
-
   return (
-    <span ref={ref}>
+    <span>
       {prefix}
-      {decimals > 0 ? count.toFixed(decimals) : Math.round(count)}
+      {decimals > 0 ? target.toFixed(decimals) : Math.round(target)}
       {suffix}
     </span>
   );

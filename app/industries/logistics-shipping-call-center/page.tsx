@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
@@ -238,6 +239,16 @@ const seoContent: SEOPattern[] = [
     body: [
       "Offshore logistics customer support creates friction with US drivers and shippers — nuance on lane detail, OS&D claims, and exception management gets lost. Generalist BPOs miss the operational urgency that defines freight.",
       "Contact Center USA is different: a 100% US-based logistics call center with dedicated supervisors who've run dispatch operations, real TMS/WMS integration, and a 24/7 model engineered for the freight cycle.",
+      <>
+        Many manufacturers and industrial distributors pair this freight coverage with our{" "}
+        <Link
+          href="/industries/manufacturing-call-center-services"
+          className="text-red font-semibold hover:underline"
+        >
+          manufacturing call center services
+        </Link>{" "}
+        so dealer order-status, warranty intake, and shipment updates are handled by one US-based team.
+      </>,
     ],
     bullets: [
       "100% US-based logistics call center workforce — US drivers get US support",

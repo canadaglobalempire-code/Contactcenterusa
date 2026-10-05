@@ -396,6 +396,7 @@ export default function TelemarketingServicesPage() {
       stats={stats}
       testimonial={testimonial}
       faqs={faqs}
+      goLiveStat={{ value: "15-20", label: "Business Days to Launch" }}
       relatedServices={relatedServices}
       seoContent={seoContent}
     />

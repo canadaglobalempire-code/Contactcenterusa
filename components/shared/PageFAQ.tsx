@@ -14,11 +14,13 @@ import { generateFAQSchema } from "@/lib/schema";
 interface PageFAQProps {
   heading?: string;
   faqs: { question: string; answer: string }[];
+  goLiveStat?: { value: string; label: string };
 }
 
 export function PageFAQ({
   heading = "Frequently Asked Questions",
   faqs,
+  goLiveStat = { value: "<48h", label: "Go Live" },
 }: PageFAQProps) {
   const faqSchema = generateFAQSchema(faqs);
   const { ref, isInView } = useInView(0.1);
@@ -94,8 +96,8 @@ export function PageFAQ({
                     <div className="mt-1 text-sm text-gray-600">CSAT Score</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-navy">&lt;48h</div>
-                    <div className="mt-1 text-sm text-gray-600">Go Live</div>
+                    <div className="text-2xl font-bold text-navy">{goLiveStat.value}</div>
+                    <div className="mt-1 text-sm text-gray-600">{goLiveStat.label}</div>
                   </div>
                 </div>
               </div>
