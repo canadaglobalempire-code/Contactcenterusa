@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { FraudPreventionContent } from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Fraud Prevention & Cyber Security | Order Verification";
+const description =
+  "Fraud prevention and order verification with US-based analysts. Chargeback representment, risk screening and dispute support. Request a quote.";
 
 export const metadata: Metadata = {
-  title: "Fraud Prevention & Cyber Security | Order Verification",
-  description:
-    "Fraud prevention and order verification with US-based analysts. Chargeback representment, risk screening and dispute support. Request a quote.",
+  title,
+  description,
   keywords: [
     "fraud prevention bpo",
     "call center fraud prevention",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "managed security services contact center",
   ],
   alternates: { canonical: "/services/fraud-prevention-cyber-security" },
+  ...pageMeta(title, description, "/services/fraud-prevention-cyber-security"),
 };
 
 const seoContent: SEOPattern[] = [

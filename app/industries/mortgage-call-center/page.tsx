@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Mortgage Call Center Services | Lending BPO & Loan Support";
+const description =
+  "US-based mortgage call center services for lenders, brokers, and servicers. Lead speed-to-contact, borrower support, document chase, and servicing calls.";
 
 export const metadata: Metadata = {
-  title: "Mortgage Call Center Services | Lending BPO & Loan Support",
-  description:
-    "US-based mortgage call center services for lenders, brokers, and servicers. Lead speed-to-contact, borrower support, document chase, and servicing calls.",
+  title,
+  description,
   keywords: [
     "mortgage call center",
     "mortgage call center services",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "mortgage speed to lead",
   ],
   alternates: { canonical: "/industries/mortgage-call-center" },
+  ...pageMeta(title, description, "/industries/mortgage-call-center"),
 };
 
 const features = [

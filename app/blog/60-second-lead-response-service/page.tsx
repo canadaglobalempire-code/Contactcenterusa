@@ -2,11 +2,15 @@ import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
 import { BlogAEOSchemas } from "@/components/shared/BlogAEOSchemas";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "60-Second Lead Response: Speed-to-Lead Guide (2026)";
+const description =
+  "Why responding to leads in 60 seconds wins more deals — speed-to-lead benchmarks, the cost of slow follow-up, and how to hit it. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "60-Second Lead Response: Speed-to-Lead Guide (2026)",
-  description:
-    "Why responding to leads in 60 seconds wins more deals — speed-to-lead benchmarks, the cost of slow follow-up, and how to hit it. Get a free quote.",
+  title,
+  description,
   keywords: [
     "60 second lead response service",
     "5 minute lead response",
@@ -22,6 +26,7 @@ export const metadata: Metadata = {
     "speed to lead service",
   ],
   alternates: { canonical: "/blog/60-second-lead-response-service" },
+  ...articleMeta(title, description, "/blog/60-second-lead-response-service"),
 };
 
 const FAQS: { q: string; a: string }[] = [

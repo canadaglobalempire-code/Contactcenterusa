@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
 
 const title = "Texas Call Center & BPO Services | US-Based Teams";
 const description =
@@ -20,11 +21,7 @@ export const metadata: Metadata = {
     "bilingual call center texas",
   ],
   alternates: { canonical: "/locations/texas" },
-  openGraph: {
-    title, description, url: "/locations/texas", type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-  },
-  twitter: { card: "summary_large_image", title, description },
+  ...pageMeta(title, description, "/locations/texas"),
 };
 
 const seoContent: SEOPattern[] = [

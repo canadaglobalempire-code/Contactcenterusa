@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Customer Experience Management | End-to-End CX";
+const description =
+  "Customer experience management across every channel: journey mapping, agent enablement and measurement tied to CSAT and retention. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Customer Experience Management | End-to-End CX",
-  description:
-    "Customer experience management across every channel: journey mapping, agent enablement and measurement tied to CSAT and retention. Get a quote.",
+  title,
+  description,
   keywords: [
     "customer experience management",
     "cx management outsourcing",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "omnichannel cx services",
   ],
   alternates: { canonical: "/solutions/customer-experience-management" },
+  ...pageMeta(title, description, "/solutions/customer-experience-management"),
 };
 
 const features = [

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "US-Based Live Chat Outsourcing | 24/7 Chat Agents";
+const description =
+  "Outsource live chat to US-based agents. 24/7 coverage, proactive engagement that cuts cart abandonment, and real-time CRM integration. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "US-Based Live Chat Outsourcing | 24/7 Chat Agents",
-  description:
-    "Outsource live chat to US-based agents. 24/7 coverage, proactive engagement that cuts cart abandonment, and real-time CRM integration. Get a free quote.",
+  title,
+  description,
   keywords: [
     "live chat outsourcing",
     "live chat support bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "chat support outsourcing usa",
   ],
   alternates: { canonical: "/services/live-chat-outsourcing" },
+  ...pageMeta(title, description, "/services/live-chat-outsourcing"),
 };
 
 const features = [

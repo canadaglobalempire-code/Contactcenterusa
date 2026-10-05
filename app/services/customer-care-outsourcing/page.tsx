@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Customer Care Outsourcing | 24/7 US-Based Support Teams";
+const description =
+  "Outsource customer care to 100% US-based agents. 24/7 omnichannel support across phone, chat, email and social, scaled to your volume. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Customer Care Outsourcing | 24/7 US-Based Support Teams",
-  description:
-    "Outsource customer care to 100% US-based agents. 24/7 omnichannel support across phone, chat, email and social, scaled to your volume. Get a free quote.",
+  title,
+  description,
   keywords: [
     "customer care outsourcing",
     "customer care bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "outsourced customer retention services",
   ],
   alternates: { canonical: "/services/customer-care-outsourcing" },
+  ...pageMeta(title, description, "/services/customer-care-outsourcing"),
 };
 
 const features = [

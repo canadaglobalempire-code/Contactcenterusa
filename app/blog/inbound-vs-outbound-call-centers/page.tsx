@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Inbound vs Outbound Call Centers Explained (2026)";
+const description =
+  "Inbound vs outbound call centers — the difference, use cases, and which your business needs. A clear 2026 guide with examples. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Inbound vs Outbound Call Centers Explained (2026)",
-  description:
-    "Inbound vs outbound call centers — the difference, use cases, and which your business needs. A clear 2026 guide with examples. Get a quote.",
+  title,
+  description,
   alternates: { canonical: "/blog/inbound-vs-outbound-call-centers" },
+  ...articleMeta(title, description, "/blog/inbound-vs-outbound-call-centers"),
 };
 
 export default function Page() {

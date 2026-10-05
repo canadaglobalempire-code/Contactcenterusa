@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Property Management Call Center | Tenant & HOA Answering";
+const description =
+  "US-based property management call center for tenant maintenance calls, after-hours emergencies, leasing enquiries, and HOA resident lines. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Property Management Call Center | Tenant & HOA Answering",
-  description:
-    "US-based property management call center for tenant maintenance calls, after-hours emergencies, leasing enquiries, and HOA resident lines. Get a quote.",
+  title,
+  description,
   keywords: [
     "property management call center",
     "property management answering service",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "emergency maintenance dispatch",
   ],
   alternates: { canonical: "/industries/property-management-call-center" },
+  ...pageMeta(title, description, "/industries/property-management-call-center"),
 };
 
 const features = [

@@ -1,6 +1,7 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
 
 const FAQs = [
   {
@@ -37,10 +38,13 @@ const FAQs = [
   },
 ];
 
+const title = "After-Hours Answering Service for HVAC (2026)";
+const description =
+  "24/7 after-hours answering service for HVAC companies — capture emergency calls, book more jobs, and never miss a lead overnight. Get a free quote.";
+
 export const metadata: Metadata = {
-  title: "After-Hours Answering Service for HVAC (2026)",
-  description:
-    "24/7 after-hours answering service for HVAC companies — capture emergency calls, book more jobs, and never miss a lead overnight. Get a free quote.",
+  title,
+  description,
   keywords: [
     "after hours answering service for hvac companies",
     "24/7 answering service for hvac",
@@ -56,6 +60,7 @@ export const metadata: Metadata = {
     "bilingual hvac dispatch",
   ],
   alternates: { canonical: "/blog/after-hours-answering-service-hvac-companies" },
+  ...articleMeta(title, description, "/blog/after-hours-answering-service-hvac-companies"),
 };
 
 export default function Page() {

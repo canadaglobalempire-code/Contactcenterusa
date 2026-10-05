@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "US-Based Virtual Receptionist Services | Live Call Answering";
+const description =
+  "Live US-based virtual receptionist services for small businesses and professional firms. Every call answered, appointments booked, calls screened and routed.";
 
 export const metadata: Metadata = {
-  title: "US-Based Virtual Receptionist Services | Live Call Answering",
-  description:
-    "Live US-based virtual receptionist services for small businesses and professional firms. Every call answered, appointments booked, calls screened and routed.",
+  title,
+  description,
   keywords: [
     "virtual receptionist services",
     "virtual receptionist companies",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "bilingual virtual receptionist",
   ],
   alternates: { canonical: "/industries/virtual-receptionist-services" },
+  ...pageMeta(title, description, "/industries/virtual-receptionist-services"),
 };
 
 const features = [

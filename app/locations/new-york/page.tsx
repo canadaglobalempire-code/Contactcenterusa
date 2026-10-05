@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { StatePageTemplate } from "@/components/shared/StatePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
 
 const title = "New York State Call Center & BPO Services | US-Based Teams";
 const description =
@@ -20,11 +21,7 @@ export const metadata: Metadata = {
     "new york customer service outsourcing",
   ],
   alternates: { canonical: "/locations/new-york" },
-  openGraph: {
-    title, description, url: "/locations/new-york", type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-  },
-  twitter: { card: "summary_large_image", title, description },
+  ...pageMeta(title, description, "/locations/new-york"),
 };
 
 const seoContent: SEOPattern[] = [

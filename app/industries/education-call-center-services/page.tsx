@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Education Call Center | Contact Center USA";
+const description =
+  "US-based education call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Education Call Center | Contact Center USA",
-  description:
-    "US-based education call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "education call center",
     "university bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "lms help desk support",
   ],
   alternates: { canonical: "/industries/education-call-center-services" },
+  ...pageMeta(title, description, "/industries/education-call-center-services"),
 };
 
 const features = [
@@ -283,6 +288,11 @@ const relatedServices = [
     title: "Making Your Customer Service Experience Soar",
     desc: "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.",
     href: "/about/company-history",
+  },
+  {
+    title: "Boston Call Center Services for Colleges",
+    desc: "Admissions inquiry management, financial aid answering, and student help desk for Greater Boston universities and EdTech, staffed on Eastern Time.",
+    href: "/call-center-services-boston",
   },
 ];
 

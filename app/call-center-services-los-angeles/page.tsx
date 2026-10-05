@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { cityExtras } from "@/lib/city-landing-extras";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Los Angeles Call Center & BPO Services | US-Based Teams";
+const description =
+  "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.";
 
 export const metadata: Metadata = {
-  title: "Los Angeles Call Center & BPO Services | US-Based Teams",
-  description:
-    "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.",
+  title,
+  description,
   keywords: [
     "call center services los angeles",
     "la bpo services",
@@ -18,20 +22,7 @@ export const metadata: Metadata = {
     "la contact center",
   ],
   alternates: { canonical: "/call-center-services-los-angeles" },
-  openGraph: {
-    title: "Los Angeles Call Center & BPO Services | US-Based Teams",
-    description:
-      "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.",
-    url: "/call-center-services-los-angeles",
-    type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Los Angeles Call Center & BPO Services | US-Based Teams",
-    description:
-      "Get US-based Los Angeles call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and customer care.",
-  },
+  ...pageMeta(title, description, "/call-center-services-los-angeles"),
 };
 
 const seoContent: SEOPattern[] = [

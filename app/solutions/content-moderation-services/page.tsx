@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Content Moderation Services | US-Based Trust & Safety";
+const description =
+  "US-based content moderation for UGC platforms and marketplaces. Policy enforcement, escalation review and 24/7 trust and safety coverage. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Content Moderation Services | US-Based Trust & Safety",
-  description:
-    "US-based content moderation for UGC platforms and marketplaces. Policy enforcement, escalation review and 24/7 trust and safety coverage. Get a quote.",
+  title,
+  description,
   keywords: [
     "content moderation services",
     "content moderation outsourcing",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "brand safety moderation",
   ],
   alternates: { canonical: "/solutions/content-moderation-services" },
+  ...pageMeta(title, description, "/solutions/content-moderation-services"),
 };
 
 const features = [

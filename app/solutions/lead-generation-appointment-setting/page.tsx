@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Appointment Setting Services | US-Based B2B SDR Teams";
+const description =
+  "Outsourced appointment setting and B2B lead generation with US-based SDRs. Qualified meetings booked straight onto your reps' calendars. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Appointment Setting Services | US-Based B2B SDR Teams",
-  description:
-    "Outsourced appointment setting and B2B lead generation with US-based SDRs. Qualified meetings booked straight onto your reps' calendars. Get a quote.",
+  title,
+  description,
   keywords: [
     // Exact GSC queries ranking 12-18 with real volume and zero clicks —
     // these were missing from the page entirely.
@@ -25,6 +29,7 @@ export const metadata: Metadata = {
     "qualified leads usa",
   ],
   alternates: { canonical: "/solutions/lead-generation-appointment-setting" },
+  ...pageMeta(title, description, "/solutions/lead-generation-appointment-setting"),
 };
 
 export default function Page() {

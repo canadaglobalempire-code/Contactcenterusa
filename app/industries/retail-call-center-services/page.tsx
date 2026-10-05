@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Retail Call Center | Contact Center USA";
+const description =
+  "US-based retail call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Retail Call Center | Contact Center USA",
-  description:
-    "US-based retail call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "retail call center services",
     "retail bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "retail cx outsourcing",
   ],
   alternates: { canonical: "/industries/retail-call-center-services" },
+  ...pageMeta(title, description, "/industries/retail-call-center-services"),
 };
 
 const features = [

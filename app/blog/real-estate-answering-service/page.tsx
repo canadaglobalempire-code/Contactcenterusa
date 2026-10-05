@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Real Estate Answering Service: Speed-to-Lead in 2026";
+const description =
+  "How a US-based real estate answering service captures Zillow and portal leads in under five minutes, books showings live, and routes to Follow Up Boss, kvCORE.";
 
 export const metadata: Metadata = {
-  title: "Real Estate Answering Service: Speed-to-Lead in 2026",
-  description:
-    "How a US-based real estate answering service captures Zillow and portal leads in under five minutes, books showings live, and routes to Follow Up Boss, kvCORE.",
+  title,
+  description,
   keywords: [
     "real estate answering service",
     "answering service for realtors",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "speed to lead real estate",
   ],
   alternates: { canonical: "/blog/real-estate-answering-service" },
+  ...articleMeta(title, description, "/blog/real-estate-answering-service"),
 };
 
 const FAQS = [

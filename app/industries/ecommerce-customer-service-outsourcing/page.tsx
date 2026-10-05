@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Ecommerce Customer Service | Contact Center USA";
+const description =
+  "Ecommerce customer support outsourcing with US-based agents for order enquiries, returns and product questions, scoped to your channels and peak seasons.";
 
 export const metadata: Metadata = {
-  title: "Ecommerce Customer Service | Contact Center USA",
-  description: "Ecommerce customer service outsourcing for order enquiries, returns and product support. Scope channels, store access and seasonal coverage with Contact Center USA.",
+  title,
+  description,
   keywords: [
     "ecommerce customer service",
     "ecommerce bpo usa",
@@ -16,6 +21,7 @@ export const metadata: Metadata = {
     "returns processing bpo",
   ],
   alternates: { canonical: "/industries/ecommerce-customer-service-outsourcing" },
+  ...pageMeta(title, description, "/industries/ecommerce-customer-service-outsourcing"),
 };
 
 const features = [

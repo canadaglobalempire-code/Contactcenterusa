@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Benefits of US-Based Call Centers (2026)";
+const description =
+  "The benefits of a US-based call center: native-English agents, data security, time-zone coverage, and stronger CX. See if onshore is right for you.";
 
 export const metadata: Metadata = {
-  title: "Benefits of US-Based Call Centers (2026)",
-  description:
-    "The benefits of a US-based call center: native-English agents, data security, time-zone coverage, and stronger CX. See if onshore is right for you.",
+  title,
+  description,
   alternates: { canonical: "/blog/benefits-us-based-call-center" },
+  ...articleMeta(title, description, "/blog/benefits-us-based-call-center"),
 };
 
 export default function Page() {

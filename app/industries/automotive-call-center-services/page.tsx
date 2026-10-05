@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Automotive Call Center | Contact Center USA";
+const description =
+  "US-based automotive call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Automotive Call Center | Contact Center USA",
-  description:
-    "US-based automotive call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "automotive call center",
     "auto industry bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "warranty claims outsourcing",
   ],
   alternates: { canonical: "/industries/automotive-call-center-services" },
+  ...pageMeta(title, description, "/industries/automotive-call-center-services"),
 };
 
 const features = [

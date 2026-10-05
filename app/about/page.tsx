@@ -206,7 +206,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {[
-              { value: "500+", label: "US-Based Agents" },
+              { value: "5,000+", label: "US-Based Agents" },
               { value: "5", label: "US Locations" },
               { value: "25+", label: "Years in Business" },
               { value: "24/7/365", label: "Availability" },
@@ -246,7 +246,7 @@ export default function AboutPage() {
                 <span className="text-red">a National Leader</span>
               </h2>
               <p className="mt-6 text-lg leading-relaxed text-gray-700">
-                Contact Center USA was founded in 1999 as a small inbound support center in Southern California. What started with just 10 agents in a single office has grown into one of the nation&apos;s most respected US-based call center outsourcing providers, with over 500 agents operating across five strategically located centers in Los Angeles, Dallas, Chicago, Miami, and Phoenix.
+                Contact Center USA was founded in 1999 as a small inbound support center in Southern California. What started with just 10 agents in a single office has grown into one of the nation&apos;s most respected US-based call center outsourcing providers, with over 5,000 agents operating across five strategically located centers in Los Angeles, Dallas, Chicago, Miami, and Phoenix.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-gray-700">
                 Our journey has been defined by resilience and adaptation. When the dot-com bubble burst in the early 2000s, many of our competitors shuttered their doors. We doubled down on quality, investing in agent training and building deeper relationships with the clients who stayed. That commitment to excellence carried us through the 2008 financial crisis as well — a period where we pivoted our service offerings to support the healthcare and financial services industries that needed reliable customer communication more than ever.

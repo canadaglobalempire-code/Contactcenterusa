@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { CustomerAcquisitionContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Customer Acquisition Outsourcing | US-Based Teams";
+const description =
+  "Outsourced customer acquisition with US-based agents. Lead qualification, conversion calling and onboarding built to your funnel. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Customer Acquisition Outsourcing | US-Based Teams",
-  description:
-    "Outsourced customer acquisition with US-based agents. Lead qualification, conversion calling and onboarding built to your funnel. Get a free quote.",
+  title,
+  description,
   keywords: [
     "customer acquisition outsourcing",
     "lead generation bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "sales acquisition outsourcing",
   ],
   alternates: { canonical: "/services/customer-acquisition-outsourcing" },
+  ...pageMeta(title, description, "/services/customer-acquisition-outsourcing"),
 };
 
 const seoContent: SEOPattern[] = [

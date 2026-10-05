@@ -12,28 +12,17 @@ import {
   priorityServiceLinks,
 } from "@/lib/ai-context";
 import { generateFAQSchema } from "@/lib/schema";
+import { pageMeta } from "@/lib/seo-config";
 
-const ogTitle = "Call Center Outsourcing Answers | Contact Center USA";
-const ogDescription =
-  "Clear answers for buyers comparing call center outsourcing, BPO services, US-based support, multilingual coverage, and quote options.";
+const title = "Call Center Outsourcing Answers & Buyer Guides";
+const description =
+  "Fast answers about call center services, contact center outsourcing, provider selection, US-based support, multilingual coverage, pricing, and quotes.";
 
 export const metadata: Metadata = {
-  title: "Call Center Outsourcing Answers & Buyer Guides",
-  description:
-    "Fast answers about call center services, contact center outsourcing, provider selection, US-based support, multilingual coverage, pricing, and quotes.",
+  title,
+  description,
   alternates: { canonical: "/answers" },
-  openGraph: {
-    title: ogTitle,
-    description: ogDescription,
-    url: "/answers",
-    type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: ogTitle,
-    description: ogDescription,
-  },
+  ...pageMeta(title, description, "/answers"),
 };
 
 const answerHubSchema = {

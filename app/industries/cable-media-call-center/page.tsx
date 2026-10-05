@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Cable Media Call Center | Contact Center USA";
+const description =
+  "US-based cable media call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Cable Media Call Center | Contact Center USA",
-  description:
-    "US-based cable media call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "cable media bpo",
     "media call center services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "telecom cable billing bpo",
   ],
   alternates: { canonical: "/industries/cable-media-call-center" },
+  ...pageMeta(title, description, "/industries/cable-media-call-center"),
 };
 
 const features = [

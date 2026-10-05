@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "HVAC Answering Service & Call Center | 24/7 Dispatch";
+const description =
+  "HVAC answering service for repair enquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs.";
 
 export const metadata: Metadata = {
-  title: "HVAC Answering Service & Call Center | 24/7 Dispatch",
-  description: "HVAC answering service for repair enquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs.",
+  title,
+  description,
   keywords: [
     "hvac answering service",
     "hvac call center",
@@ -16,6 +21,7 @@ export const metadata: Metadata = {
     "hvac lead response service",
   ],
   alternates: { canonical: "/industries/hvac-call-center-services" },
+  ...pageMeta(title, description, "/industries/hvac-call-center-services"),
 };
 
 const features = [

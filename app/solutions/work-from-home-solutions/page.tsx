@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Work From Home Solutions | Remote US Agent Teams";
+const description =
+  "Work-from-home contact center solutions with vetted remote US agents, secure endpoints and the same QA standards as on-site. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Work From Home Solutions | Remote US Agent Teams",
-  description:
-    "Work-from-home contact center solutions with vetted remote US agents, secure endpoints and the same QA standards as on-site. Get a free quote.",
+  title,
+  description,
   keywords: [
     "work from home call center",
     "remote agent bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "virtual call center usa",
   ],
   alternates: { canonical: "/solutions/work-from-home-solutions" },
+  ...pageMeta(title, description, "/solutions/work-from-home-solutions"),
 };
 
 const features = [

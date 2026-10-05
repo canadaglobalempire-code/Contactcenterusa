@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Property Management Answering Service (2026 Guide)";
+const description =
+  "How a US-based property management answering service handles maintenance emergencies, lockouts, leasing calls and Fair Housing compliance — with 2026 pricing.";
 
 export const metadata: Metadata = {
-  title: "Property Management Answering Service (2026 Guide)",
-  description:
-    "How a US-based property management answering service handles maintenance emergencies, lockouts, leasing calls and Fair Housing compliance — with 2026 pricing.",
+  title,
+  description,
   keywords: [
     "property management answering service",
     "answering service for property management companies",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "resident emergency call center",
   ],
   alternates: { canonical: "/blog/property-management-answering-service" },
+  ...articleMeta(title, description, "/blog/property-management-answering-service"),
 };
 
 const FAQS = [

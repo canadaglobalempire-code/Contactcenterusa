@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Customer Service Best Practices for 2026";
+const description =
+  "Proven customer service best practices for 2026 — response time, tone, escalation, and the CX metrics that boost CSAT and loyalty. Put them to work.";
 
 export const metadata: Metadata = {
-  title: "Customer Service Best Practices for 2026",
-  description:
-    "Proven customer service best practices for 2026 — response time, tone, escalation, and the CX metrics that boost CSAT and loyalty. Put them to work.",
+  title,
+  description,
   keywords: [
     "customer service best practices",
     "customer care best practices",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "customer service strategies",
   ],
   alternates: { canonical: "/blog/customer-service-best-practices" },
+  ...articleMeta(title, description, "/blog/customer-service-best-practices"),
 };
 
 export default function Page() {

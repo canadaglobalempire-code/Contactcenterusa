@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Veterinary Call Center | Vet Answering & Scheduling Service";
+const description =
+  "US-based veterinary call center for clinics and animal hospitals. Appointment booking, after-hours emergency triage routing, and refill requests. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Veterinary Call Center | Vet Answering & Scheduling Service",
-  description:
-    "US-based veterinary call center for clinics and animal hospitals. Appointment booking, after-hours emergency triage routing, and refill requests. Get a quote.",
+  title,
+  description,
   keywords: [
     "veterinary call center",
     "veterinary answering service",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "emergency vet call routing",
   ],
   alternates: { canonical: "/industries/veterinary-call-center" },
+  ...pageMeta(title, description, "/industries/veterinary-call-center"),
 };
 
 const features = [

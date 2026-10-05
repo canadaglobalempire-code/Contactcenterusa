@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Virtual Receptionist for Real Estate Investors (2026)";
+const description =
+  "A US-based virtual receptionist for real estate investors — answer seller leads 24/7, screen calls, and book more deals. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Virtual Receptionist for Real Estate Investors (2026)",
-  description:
-    "A US-based virtual receptionist for real estate investors — answer seller leads 24/7, screen calls, and book more deals. Get a free quote.",
+  title,
+  description,
   keywords: [
     "us based virtual receptionist for real estate investors",
     "real estate investor answering service",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "motivated seller call center",
   ],
   alternates: { canonical: "/blog/us-based-virtual-receptionist-real-estate-investors" },
+  ...articleMeta(title, description, "/blog/us-based-virtual-receptionist-real-estate-investors"),
 };
 
 const FAQS = [

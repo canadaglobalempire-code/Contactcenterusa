@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Spanish Call Center Services | Bilingual & Multilingual BPO";
+const description =
+  "US-based bilingual Spanish call center services and multilingual BPO support. Native-speaking agents for inbound, outbound, chat, and back office. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Spanish Call Center Services | Bilingual & Multilingual BPO",
-  description:
-    "US-based bilingual Spanish call center services and multilingual BPO support. Native-speaking agents for inbound, outbound, chat, and back office. Get a quote.",
+  title,
+  description,
   keywords: [
     "spanish call center services",
     "bilingual call center services",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "bilingual agents usa",
   ],
   alternates: { canonical: "/industries/spanish-call-center-services" },
+  ...pageMeta(title, description, "/industries/spanish-call-center-services"),
 };
 
 const features = [

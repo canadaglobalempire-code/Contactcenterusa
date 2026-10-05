@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "B2C Sales Outsourcing | US-Based Inside Sales Teams";
+const description =
+  "Outsource B2C sales to US-based agents. Inbound conversion, outbound campaigns and warm follow-up built around your offer. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "B2C Sales Outsourcing | US-Based Inside Sales Teams",
-  description:
-    "Outsource B2C sales to US-based agents. Inbound conversion, outbound campaigns and warm follow-up built around your offer. Request a free quote.",
+  title,
+  description,
   keywords: [
     "b2c sales outsourcing",
     "outbound sales bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "telesales outsourcing company",
   ],
   alternates: { canonical: "/services/b2c-sales-outsourcing" },
+  ...pageMeta(title, description, "/services/b2c-sales-outsourcing"),
 };
 
 const features = [

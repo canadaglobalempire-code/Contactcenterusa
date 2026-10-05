@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { CityPageTemplate } from "@/components/shared/CityPageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { cityExtras } from "@/lib/city-landing-extras";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Dallas Call Center & BPO Services | US-Based Teams";
+const description =
+  "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.";
 
 export const metadata: Metadata = {
-  title: "Dallas Call Center & BPO Services | US-Based Teams",
-  description:
-    "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
+  title,
+  description,
   keywords: [
     "call center services dallas",
     "dallas bpo services",
@@ -18,20 +22,7 @@ export const metadata: Metadata = {
     "dallas customer support",
   ],
   alternates: { canonical: "/call-center-services-dallas" },
-  openGraph: {
-    title: "Dallas Call Center & BPO Services | US-Based Teams",
-    description:
-      "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
-    url: "/call-center-services-dallas",
-    type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Dallas Call Center & BPO Services | US-Based Teams",
-    description:
-      "Get US-based Dallas call center and BPO services for inbound support, outbound calls, answering, bilingual agents, and financial services.",
-  },
+  ...pageMeta(title, description, "/call-center-services-dallas"),
 };
 
 const seoContent: SEOPattern[] = [

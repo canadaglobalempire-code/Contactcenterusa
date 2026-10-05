@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Electrical Contractor Call Center & 24/7 Dispatch";
+const description =
+  "24/7 US-based electrical contractor call center and answering service. Emergency outage dispatch, ServiceTitan booking, and commercial service intake.";
 
 export const metadata: Metadata = {
-  title: "Electrical Contractor Call Center & 24/7 Dispatch",
-  description:
-    "24/7 US-based electrical contractor call center and answering service. Emergency outage dispatch, ServiceTitan booking, and commercial service intake.",
+  title,
+  description,
   keywords: [
     "electrical contractor call center",
     "electrician answering service",
@@ -15,6 +19,7 @@ export const metadata: Metadata = {
     "servicetitan electrician answering",
   ],
   alternates: { canonical: "/industries/electrical-contractor-call-center" },
+  ...pageMeta(title, description, "/industries/electrical-contractor-call-center"),
 };
 
 const features = [

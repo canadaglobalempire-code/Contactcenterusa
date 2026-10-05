@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Interactive Voice Response | IVR Design & Management";
+const description =
+  "IVR design, build and ongoing management. Call flow mapping, self-service containment and clean escalation to live US agents. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Interactive Voice Response | IVR Design & Management",
-  description:
-    "IVR design, build and ongoing management. Call flow mapping, self-service containment and clean escalation to live US agents. Request a free quote.",
+  title,
+  description,
   keywords: [
     "ivr services",
     "interactive voice response outsourcing",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "ivr call center provider",
   ],
   alternates: { canonical: "/services/interactive-voice-response" },
+  ...pageMeta(title, description, "/services/interactive-voice-response"),
 };
 
 const features = [

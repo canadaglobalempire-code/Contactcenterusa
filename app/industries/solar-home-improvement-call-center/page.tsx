@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Solar & Home Improvement Call Center | Appointment Setting";
+const description =
+  "US-based call center for solar, roofing, windows, and remodeling companies. Lead qualification, in-home appointment setting, and install coordination.";
 
 export const metadata: Metadata = {
-  title: "Solar & Home Improvement Call Center | Appointment Setting",
-  description:
-    "US-based call center for solar, roofing, windows, and remodeling companies. Lead qualification, in-home appointment setting, and install coordination.",
+  title,
+  description,
   keywords: [
     "solar call center",
     "solar appointment setting",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "home improvement bpo",
   ],
   alternates: { canonical: "/industries/solar-home-improvement-call-center" },
+  ...pageMeta(title, description, "/industries/solar-home-improvement-call-center"),
 };
 
 const features = [

@@ -103,6 +103,14 @@ function BlogTable({ table }: { table: NonNullable<TrafficBlogSection["table"]> 
 
 export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
   const cited = new Set<string>();
+  function renderParagraph(text: string) {
+    if (post.slug !== 'what-is-bpo-collections') return citeSources(text, cited);
+    const links: Record<string, string> = {
+      'BPO collections': '/services/debt-collection-outsourcing',
+    };
+    const parts = text.split(/(BPO collections)/);
+    return parts.map((part, index) => links[part] ? <Link key={index} href={links[part]} style={{ color: 'inherit', textDecoration: 'inherit' }}>{part}</Link> : citeSources(part, cited));
+  }
   return (
     <>
       <script
@@ -171,7 +179,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
         <div className="mx-auto grid max-w-[1200px] gap-12 px-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
           <article className="prose prose-lg max-w-none leading-relaxed text-gray-700">
             {post.intro.map((paragraph) => (
-              <p key={paragraph}>{citeSources(paragraph, cited)}</p>
+              <p key={paragraph}>{renderParagraph(paragraph)}</p>
             ))}
 
 
@@ -182,7 +190,7 @@ export function TrafficBlogArticle({ post }: { post: TrafficBlogPost }) {
                   {section.heading}
                 </h2>
                 {section.paragraphs?.map((paragraph) => (
-                  <p key={paragraph}>{citeSources(paragraph, cited)}</p>
+                  <p key={paragraph}>{renderParagraph(paragraph)}</p>
                 ))}
                 {section.bullets && (
                   <ul className="not-prose mt-4 space-y-3">

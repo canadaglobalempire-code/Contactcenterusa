@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Healthcare Call Center Services | HIPAA-Compliant Agents";
+const description =
+  "HIPAA-compliant healthcare call center services with US-based agents. Patient scheduling, insurance verification and after-hours triage. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Healthcare Call Center Services | HIPAA-Compliant Agents",
-  description:
-    "HIPAA-compliant healthcare call center services with US-based agents. Patient scheduling, insurance verification and after-hours triage. Get a quote.",
+  title,
+  description,
   keywords: [
     "healthcare bpo services",
     "healthcare call center usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "clinic answering service",
   ],
   alternates: { canonical: "/industries/healthcare-call-center-services" },
+  ...pageMeta(title, description, "/industries/healthcare-call-center-services"),
 };
 
 const features = [
@@ -247,7 +252,7 @@ const seoContent: SEOPattern[] = [
     eyebrow: "Get Started",
     heading: "Ready to evaluate a better healthcare BPO partner?",
     accent: "better healthcare BPO",
-    body: "Whether you're a hospital drowning in patient access volume, a clinic losing revenue to insurance denials, a pharma team scaling a patient support hub, or a DME supplier wrestling with compliance documentation — we can show you expected impact before you commit. Request a free consultation and we'll walk you through integration scope, compliance posture, and go-live timeline.",
+    body: "Whether you're a hospital drowning in patient access volume, a clinic losing revenue to insurance denials, a pharma team scaling a patient support hub, or a DME supplier wrestling with compliance documentation — we can show you expected impact before you commit. Request a free consultation and we'll walk you through integration scope, compliance posture, and go-live timeline. If your requirements include telehealth appointment workflows, describe them when requesting a quote so our team can confirm scope and fit.",
     ctaLabel: "Request a Free Consultation",
     ctaHref: "/contact",
   },
@@ -273,6 +278,11 @@ const relatedServices = [
     title: "Top 15 Healthcare BPO Companies (2026)",
     desc: "See our ranked guide to the best healthcare BPO companies in the USA.",
     href: "/blog/top-15-healthcare-bpo-companies-usa",
+  },
+  {
+    title: "Boston Healthcare Call Center Services",
+    desc: "HIPAA-compliant patient intake for Boston and Massachusetts healthcare networks, with a dedicated Eastern Time pod for New England hours.",
+    href: "/call-center-services-boston",
   },
 ];
 

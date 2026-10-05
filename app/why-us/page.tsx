@@ -1,12 +1,17 @@
 import WhyUsPage from "./WhyUsPage";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Why Choose Contact Center USA | US-Based CX Outsourcing";
+const description =
+  "See why businesses choose Contact Center USA for US-based agents, flexible programs, clear reporting, and reliable outsourced customer support.";
 
 export const metadata = {
-  title: "Why Choose Contact Center USA | US-Based CX Outsourcing",
-  description:
-    "See why businesses choose Contact Center USA for US-based agents, flexible programs, clear reporting, and reliable outsourced customer support.",
+  title,
+  description,
   alternates: { canonical: "/why-us" },
+  ...pageMeta(title, description, "/why-us"),
 };
 
 const seoSections: SEOPattern[] = [

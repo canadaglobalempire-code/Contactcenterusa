@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Office Support Services | Admin & Virtual Assistants";
+const description =
+  "Outsourced office support: scheduling, data entry, document handling and virtual assistant coverage from US-based staff. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Office Support Services | Admin & Virtual Assistants",
-  description:
-    "Outsourced office support: scheduling, data entry, document handling and virtual assistant coverage from US-based staff. Request a free quote.",
+  title,
+  description,
   keywords: [
     "office support services",
     "administrative outsourcing bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "back office admin services",
   ],
   alternates: { canonical: "/solutions/office-support-services" },
+  ...pageMeta(title, description, "/solutions/office-support-services"),
 };
 
 const features = [

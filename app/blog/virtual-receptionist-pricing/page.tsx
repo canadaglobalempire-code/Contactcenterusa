@@ -1,11 +1,15 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Virtual Receptionist Pricing: 2026 Cost Breakdown";
+const description =
+  "What a virtual receptionist actually costs per month, how per-minute and per-call plans differ, and the overage terms that decide your real bill.";
 
 export const metadata: Metadata = {
-  title: "Virtual Receptionist Pricing: 2026 Cost Breakdown",
-  description:
-    "What a virtual receptionist actually costs per month, how per-minute and per-call plans differ, and the overage terms that decide your real bill.",
+  title,
+  description,
   keywords: [
     "virtual receptionist pricing",
     "virtual receptionist cost",
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     "outsourced receptionist pricing",
   ],
   alternates: { canonical: "/blog/virtual-receptionist-pricing" },
+  ...articleMeta(title, description, "/blog/virtual-receptionist-pricing"),
 };
 
 const FAQS = [

@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "7 Teleperformance Alternatives for Mid-Market CX (2026)";
+const description =
+  "Compare flexible Teleperformance competitors for US-based support, omnichannel CX, contract fit, migration planning, and service quality.";
 
 export const metadata: Metadata = {
-  title: "7 Teleperformance Alternatives for Mid-Market CX (2026)",
-  description:
-    "Compare flexible Teleperformance competitors for US-based support, omnichannel CX, contract fit, migration planning, and service quality.",
+  title,
+  description,
   alternates: { canonical: "/blog/teleperformance-alternatives" },
+  ...articleMeta(title, description, "/blog/teleperformance-alternatives"),
 };
 
 export default function Page() {

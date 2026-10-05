@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Social Media Customer Support | Brand Coverage";
+const description =
+  "Social media customer support with US-based agents. Monitored coverage, brand-voice replies and escalation before issues go public. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Social Media Customer Support | Brand Coverage",
-  description:
-    "Social media customer support with US-based agents. Monitored coverage, brand-voice replies and escalation before issues go public. Get a quote.",
+  title,
+  description,
   keywords: [
     "social media customer support",
     "social support bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "24/7 social media monitoring",
   ],
   alternates: { canonical: "/solutions/social-media-customer-support" },
+  ...pageMeta(title, description, "/solutions/social-media-customer-support"),
 };
 
 const seoContent: SEOPattern[] = [

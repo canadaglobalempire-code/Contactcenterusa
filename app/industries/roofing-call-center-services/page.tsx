@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Roofing Contractor Call Center | Storm Surge & Lead Intake";
+const description =
+  "US-based roofing contractor call center and answering service. 24/7 storm damage intake, insurance claim lead capture, and inspection appointment setting.";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractor Call Center | Storm Surge & Lead Intake",
-  description:
-    "US-based roofing contractor call center and answering service. 24/7 storm damage intake, insurance claim lead capture, and inspection appointment setting.",
+  title,
+  description,
   keywords: [
     "roofing call center",
     "roofing answering service",
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
     "roofing answering service 24 7",
   ],
   alternates: { canonical: "/industries/roofing-call-center-services" },
+  ...pageMeta(title, description, "/industries/roofing-call-center-services"),
 };
 
 const features = [

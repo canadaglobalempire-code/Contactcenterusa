@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import { ServiceSchema } from "@/components/shared/ServiceSchema";
 import { AIAutomationContent } from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "AI Call Center Automation | Voice AI & Human Agents";
+const description =
+  "AI call center automation paired with US-based human agents. Voice AI, intelligent routing and automated deflection with live escalation. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "AI Call Center Automation | Voice AI & Human Agents",
-  description:
-    "AI call center automation paired with US-based human agents. Voice AI, intelligent routing and automated deflection with live escalation. Get a quote.",
+  title,
+  description,
   keywords: [
     "ai call center automation",
     "ai contact center bpo",
@@ -18,6 +22,7 @@ export const metadata: Metadata = {
     "ai chatbot call center services",
   ],
   alternates: { canonical: "/services/ai-call-center-automation" },
+  ...pageMeta(title, description, "/services/ai-call-center-automation"),
 };
 
 const seoContent: SEOPattern[] = [

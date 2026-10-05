@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Building2, MapPin, Shield, Users } from "lucide-react";
 import { SITE_BASE_URL } from "@/lib/ai-context";
 import { generateCollectionPageSchema } from "@/lib/schema";
+import { pageMeta } from "@/lib/seo-config";
 
 const title = "US Call Center & BPO Service Areas | Contact Center USA";
 const description =
@@ -12,18 +13,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/locations" },
-  openGraph: {
-    title,
-    description,
-    url: "/locations",
-    type: "website",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-  },
+  ...pageMeta(title, description, "/locations"),
 };
 
 const cities = [

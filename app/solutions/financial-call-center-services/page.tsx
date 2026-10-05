@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Content from "./Content";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Financial Call Center Services | Secure US Agents";
+const description =
+  "Financial call center services with US-based agents. Account servicing, payments, fraud alerts and compliance-aware handling. Request a quote.";
 
 export const metadata: Metadata = {
-  title: "Financial Call Center Services | Secure US Agents",
-  description:
-    "Financial call center services with US-based agents. Account servicing, payments, fraud alerts and compliance-aware handling. Request a quote.",
+  title,
+  description,
   keywords: [
     "financial call center services",
     "financial services bpo usa",
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
     "healthcare revenue cycle bpo",
   ],
   alternates: { canonical: "/solutions/financial-call-center-services" },
+  ...pageMeta(title, description, "/solutions/financial-call-center-services"),
 };
 
 export default function Page() {

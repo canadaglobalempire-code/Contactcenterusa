@@ -232,7 +232,7 @@ export function CityPageTemplate({
         <div className="mx-auto max-w-[1536px] px-5 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white"><AnimatedCounter target={500} suffix="+" /></div>
+              <div className="text-3xl font-bold text-white"><AnimatedCounter target={5000} suffix="+" /></div>
               <div className="mt-1 text-sm text-white/50">US-Based Agents</div>
             </div>
             <div className="text-center">

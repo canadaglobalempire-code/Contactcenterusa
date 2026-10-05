@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Call Center Benchmarks & Metrics (2026 Data)";
+const description =
+  "2026 call center benchmarks — service level, AHT, FCR, CSAT, and abandonment rates by industry, so you can measure performance against your peers.";
 
 export const metadata: Metadata = {
-  title: "Call Center Benchmarks & Metrics (2026 Data)",
-  description:
-    "2026 call center benchmarks — service level, AHT, FCR, CSAT, and abandonment rates by industry, so you can measure performance against your peers.",
+  title,
+  description,
   alternates: { canonical: "/blog/call-center-benchmarks-2026" },
+  ...articleMeta(title, description, "/blog/call-center-benchmarks-2026"),
 };
 
 export default function Page() {

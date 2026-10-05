@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Sports & Venue Call Center | Season Ticket Support";
+const description =
+  "US-based call center for sports teams, stadiums, and arenas. Season ticket renewals, membership servicing, playoff on-sales, and game-day support. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Sports & Venue Call Center | Season Ticket Support",
-  description:
-    "US-based call center for sports teams, stadiums, and arenas. Season ticket renewals, membership servicing, playoff on-sales, and game-day support. Get a quote.",
+  title,
+  description,
   keywords: [
     "sports call center services",
     "season ticket support outsourcing",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "hospitality package support",
   ],
   alternates: { canonical: "/industries/sports-venue-call-center" },
+  ...pageMeta(title, description, "/industries/sports-venue-call-center"),
 };
 
 const features = [

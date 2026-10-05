@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "HIPAA-Compliant Call Center Services (2026)";
+const description =
+  "HIPAA-compliant call center services for healthcare — secure PHI handling, trained agents, and full compliance. Protect patients and get a quote.";
 
 export const metadata: Metadata = {
-  title: "HIPAA-Compliant Call Center Services (2026)",
-  description:
-    "HIPAA-compliant call center services for healthcare — secure PHI handling, trained agents, and full compliance. Protect patients and get a quote.",
+  title,
+  description,
   alternates: { canonical: "/blog/hipaa-compliant-call-center-services" },
+  ...articleMeta(title, description, "/blog/hipaa-compliant-call-center-services"),
 };
 
 export default function Page() {

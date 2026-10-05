@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "B2B Sales Outsourcing | US-Based SDR & Closing Teams";
+const description =
+  "Outsource B2B sales to US-based SDRs and closers. Pipeline generation, lead qualification and full-cycle selling built on your ICP. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "B2B Sales Outsourcing | US-Based SDR & Closing Teams",
-  description:
-    "Outsource B2B sales to US-based SDRs and closers. Pipeline generation, lead qualification and full-cycle selling built on your ICP. Get a free quote.",
+  title,
+  description,
   keywords: [
     "b2b sales outsourcing",
     "b2b lead generation bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "b2b pipeline generation",
   ],
   alternates: { canonical: "/services/b2b-sales-outsourcing" },
+  ...pageMeta(title, description, "/services/b2b-sales-outsourcing"),
 };
 
 const features = [

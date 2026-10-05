@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Debt Collection Outsourcing | FDCPA-Aware US Agents";
+const description =
+  "Outsourced debt collection with US-based agents. First-party recovery, payment arrangements and FDCPA and Regulation F aware handling. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Debt Collection Outsourcing | FDCPA-Aware US Agents",
-  description:
-    "Outsourced debt collection with US-based agents. First-party recovery, payment arrangements and FDCPA and Regulation F aware handling. Get a quote.",
+  title,
+  description,
   keywords: [
     "debt collection bpo",
     "debt collection outsourcing bpo in usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "accounts receivable outsourcing",
   ],
   alternates: { canonical: "/services/debt-collection-outsourcing" },
+  ...pageMeta(title, description, "/services/debt-collection-outsourcing"),
 };
 
 const features = [

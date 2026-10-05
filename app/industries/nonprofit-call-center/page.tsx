@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Nonprofit Call Center | Donor Care & Fundraising Support";
+const description =
+  "US-based call center for nonprofits and foundations. Donor care, recurring gift recovery, campaign outbound, and helpline coverage. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Nonprofit Call Center | Donor Care & Fundraising Support",
-  description:
-    "US-based call center for nonprofits and foundations. Donor care, recurring gift recovery, campaign outbound, and helpline coverage. Get a quote.",
+  title,
+  description,
   keywords: [
     "nonprofit call center",
     "donor care outsourcing",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "donation processing support",
   ],
   alternates: { canonical: "/industries/nonprofit-call-center" },
+  ...pageMeta(title, description, "/industries/nonprofit-call-center"),
 };
 
 const features = [

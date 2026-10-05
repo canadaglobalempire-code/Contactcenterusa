@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Dialer & ACD Administration | Routing & Campaigns";
+const description =
+  "Dialer and ACD administration: campaign build, list strategy, skills-based routing and pacing tuned for contact rate. Request a free quote.";
 
 export const metadata: Metadata = {
-  title: "Dialer & ACD Administration | Routing & Campaigns",
-  description:
-    "Dialer and ACD administration: campaign build, list strategy, skills-based routing and pacing tuned for contact rate. Request a free quote.",
+  title,
+  description,
   keywords: [
     "dialer administration",
     "acd administration bpo",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "genesys administration services",
   ],
   alternates: { canonical: "/solutions/dialer-acd-administration" },
+  ...pageMeta(title, description, "/solutions/dialer-acd-administration"),
 };
 
 const features = [

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Telemarketing Services | US-Based Outbound Calling";
+const description =
+  "US-based telemarketing with trained outbound agents. Compliant calling, list management and transparent per-campaign reporting. Get a free quote.";
 
 export const metadata: Metadata = {
-  title: "Telemarketing Services | US-Based Outbound Calling",
-  description:
-    "US-based telemarketing with trained outbound agents. Compliant calling, list management and transparent per-campaign reporting. Get a free quote.",
+  title,
+  description,
   keywords: [
     "telemarketing services",
     "telemarketing bpo usa",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "telemarketing call center",
   ],
   alternates: { canonical: "/services/telemarketing-services" },
+  ...pageMeta(title, description, "/services/telemarketing-services"),
 };
 
 const features = [

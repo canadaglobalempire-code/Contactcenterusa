@@ -2,12 +2,17 @@ import type { Metadata } from "next";
 import Content from "./Content";
 import { SEOContentSection, type SEOPattern } from "@/components/shared/SEOContentSection";
 import { PageFAQ } from "@/components/shared/PageFAQ";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Company History | Contact Center USA";
+const description =
+  "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.";
 
 export const metadata: Metadata = {
-  title: "Company History | Contact Center USA",
-  description:
-    "See Contact Center USA's company history, 1999 founding, US-based growth, service milestones, and customer support infrastructure.",
+  title,
+  description,
   alternates: { canonical: "/about/company-history" },
+  ...pageMeta(title, description, "/about/company-history"),
 };
 
 const seoSections: SEOPattern[] = [

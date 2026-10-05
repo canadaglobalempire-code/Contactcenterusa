@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Logistics Shipping Call Center | Contact Center USA";
+const description =
+  "US-based logistics shipping call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
 
 export const metadata: Metadata = {
-  title: "Logistics Shipping Call Center | Contact Center USA",
-  description:
-    "US-based logistics shipping call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.",
+  title,
+  description,
   keywords: [
     "logistics call center",
     "shipping bpo services",
@@ -17,6 +21,7 @@ export const metadata: Metadata = {
     "freight claims outsourcing",
   ],
   alternates: { canonical: "/industries/logistics-shipping-call-center" },
+  ...pageMeta(title, description, "/industries/logistics-shipping-call-center"),
 };
 
 const features = [

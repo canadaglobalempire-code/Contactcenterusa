@@ -1,12 +1,17 @@
 import { buildAEOBlogPostingSchema } from "@/lib/aeo";
 import type { Metadata } from "next";
 import Content from "./Content";
+import { articleMeta } from "@/lib/seo-config";
+
+const title = "Call Center Outsourcing Cost Per Hour (2026 Pricing)";
+const description =
+  "What does call center outsourcing cost per hour in 2026? See US, nearshore & offshore pricing benchmarks by region — plus what drives your rate.";
 
 export const metadata: Metadata = {
-  title: "Call Center Outsourcing Cost Per Hour (2026 Pricing)",
-  description:
-    "What does call center outsourcing cost per hour in 2026? See US, nearshore & offshore pricing benchmarks by region — plus what drives your rate.",
+  title,
+  description,
   alternates: { canonical: "/blog/call-center-outsourcing-cost-per-hour-2026" },
+  ...articleMeta(title, description, "/blog/call-center-outsourcing-cost-per-hour-2026"),
 };
 
 export default function Page() {

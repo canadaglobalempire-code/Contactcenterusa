@@ -5,7 +5,7 @@ import { trafficBlogPosts } from "@/lib/traffic-blog-posts";
 const post = trafficBlogPosts["what-is-bpo-collections"];
 
 export const metadata: Metadata = {
-  title: post.title,
+  title: "BPO Collections vs Contingency Collection Agencies",
   description: post.description,
   keywords: post.keywords,
   alternates: { canonical: `/blog/${post.slug}` },

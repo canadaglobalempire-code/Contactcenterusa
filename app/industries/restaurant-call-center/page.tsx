@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
+import { pageMeta } from "@/lib/seo-config";
+
+const title = "Restaurant Call Center | Reservations & Catering Order Line";
+const description =
+  "US-based call center for restaurants and multi-unit groups. Reservations, catering and large orders, guest recovery, and overflow during service. Get a quote.";
 
 export const metadata: Metadata = {
-  title: "Restaurant Call Center | Reservations & Catering Order Line",
-  description:
-    "US-based call center for restaurants and multi-unit groups. Reservations, catering and large orders, guest recovery, and overflow during service. Get a quote.",
+  title,
+  description,
   keywords: [
     "restaurant call center",
     "restaurant answering service",
@@ -19,6 +23,7 @@ export const metadata: Metadata = {
     "takeout order line outsourcing",
   ],
   alternates: { canonical: "/industries/restaurant-call-center" },
+  ...pageMeta(title, description, "/industries/restaurant-call-center"),
 };
 
 const features = [
