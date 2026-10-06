@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise financial process outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American financial process outsourcing for large banks, insurance carriers, and financial institutions seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and fraud operations to back-office processing, mortgage servicing, and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed financial services",
+      "US-based enterprise process consulting",
+      "Domestic operations transformation programs",
+      "Onshore back-office consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
+    ],
+    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
+    strengths: "Enterprise BPO depth, consulting + managed ops, strong compliance.",
+    weaknesses: "Enterprise-focused; not for SMB financial services.",
+    pricing: "Enterprise SOWs, hourly + outcome-based blends",
+    clients: "Large financial institutions, insurance carriers, mortgage servicers",
+    highlight: "Enterprise American financial BPO combining consulting expertise with managed onshore operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American financial services call center operations — never offshored a single call.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American financial CX infrastructure with multi-site US redundancy and dedicated teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent pricing",
     clients: "Fintech lenders, digital banks, modern consumer finance brands",
     highlight: "Digital-first American financial CX combining US-based agents with AI-powered automation and analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise financial process outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American financial process outsourcing for large banks, insurance carriers, and financial institutions seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and fraud operations to back-office processing, mortgage servicing, and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed financial services",
-      "US-based enterprise process consulting",
-      "Domestic operations transformation programs",
-      "Onshore back-office consolidation",
-      "American program management & governance",
-      "US enterprise technology integration",
-    ],
-    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
-    strengths: "Enterprise BPO depth, consulting + managed ops, strong compliance.",
-    weaknesses: "Enterprise-focused; not for SMB financial services.",
-    pricing: "Enterprise SOWs, hourly + outcome-based blends",
-    clients: "Large financial institutions, insurance carriers, mortgage servicers",
-    highlight: "Enterprise American financial BPO combining consulting expertise with managed onshore operations.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10FinancialServicesContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -468,7 +468,7 @@ export default function Top10FinancialServicesContent() {
                 The <strong>financial services call center industry in the USA</strong> is consolidating around American specialists that compete on compliance and CX quality. For banks, credit unions, lenders, and fintechs that cannot afford a single compliance misstep, the US-based specialist model is winning — because total cost of ownership (factoring in complaints, enforcement risk, and customer retention) consistently favors domestic delivery.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American financial CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of regulated financial services operations</strong>, 100% US-based agents, PCI DSS and SOC 2 Type II certification, and deep experience across banking, credit unions, lending, fintech, and wealth management. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound customer support</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound retention programs</Link>, or <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">compliance-grade collections</Link>, Contact Center USA is the partner of choice for compliance-first financial institutions.
+                Global Empire Corporation tops our 2026 ranking with its full-service American financial CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of regulated financial services operations</strong>, 100% US-based agents, PCI DSS and SOC 2 Type II certification, and deep experience across banking, credit unions, lending, fintech, and wealth management. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound customer support</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound retention programs</Link>, or <Link href="/services/debt-collection-outsourcing" className="text-red font-semibold hover:underline">compliance-grade collections</Link>, Contact Center USA is the partner of choice for compliance-first financial institutions.
               </p>
 
               {/* CTA */}
@@ -490,7 +490,7 @@ export default function Top10FinancialServicesContent() {
                 { q: "How much does it cost to outsource a financial services call center?", a: "US-based financial services call center pricing typically runs $24-$45 per agent-hour depending on compliance requirements and skills. Enterprise SOWs often blend hourly rates with outcome-based pricing tied to retention uplift, fraud prevented, and first-call resolution. Offshore rates are lower ($8-$15 per hour) but total cost of ownership is usually worse once you factor in complaint rates, compliance risk, and customer churn." },
                 { q: "Why do banks and fintechs choose US-based financial call centers?", a: "Banks and fintechs increasingly choose US-based call centers because native-English agents drive measurably higher CSAT, US data residency simplifies GLBA and state-by-state compliance, PCI DSS audits are cleaner, and cultural alignment produces better fraud intervention and retention outcomes. For regulated financial programs, US-based delivery is often the only defensible choice." },
                 { q: "What compliance certifications should a financial services call center have?", a: "At minimum: PCI DSS Level 1 attestation, SOC 2 Type II, documented GLBA, FCRA, TCPA, and Regulation E training per agent, 100% call recording with 3-7 year retention depending on the program, and a clean CFPB consumer complaint history. Fintech-specific programs may also require state money-transmitter awareness and BSA/AML training." },
-                { q: "Which financial services call center is best for a mid-market bank or fintech?", a: "For mid-market banks, credit unions, and fintechs, Contact Center USA (#7) is the strongest fit because of its combination of US-based delivery, PCI/SOC 2 certification, GLBA/FCRA/TCPA training, and flexibility to scale from 10 to 500+ agents without enterprise-style rigid SOWs. Global Empire Corporation (#1) and Call Center Communications (#8) are also strong American choices for growing institutions." },
+                { q: "Which financial services call center is best for a mid-market bank or fintech?", a: "For mid-market banks, credit unions, and fintechs, Contact Center USA (#8) is the strongest fit because of its combination of US-based delivery, PCI/SOC 2 certification, GLBA/FCRA/TCPA training, and flexibility to scale from 10 to 500+ agents without enterprise-style rigid SOWs. Global Empire Corporation (#1) and Call Center Communications (#9) are also strong American choices for growing institutions." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

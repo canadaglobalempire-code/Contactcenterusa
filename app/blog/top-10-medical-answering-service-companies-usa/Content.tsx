@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise medical BPO and managed scheduling operations for hospital networks",
+    description:
+      "The enterprise division of B2B Appointment Setting delivers managed medical BPO services for hospital networks and large multi-specialty groups consolidating their American answering, scheduling, referral, and revenue-cycle support with one onshore partner. Their managed-services model bundles HIPAA-compliant medical reception with operations consulting, workforce management, and quality assurance — all delivered from US-based facilities under a single Business Associate Agreement and unified PHI audit trail.",
+    services: [
+      "Managed American medical BPO operations",
+      "Hospital network scheduling consolidation",
+      "Referral coordination and prior-auth support",
+      "US-based revenue-cycle adjacent services",
+      "HIPAA workforce management & QA governance",
+      "Unified BAA and PHI audit trail across services",
+    ],
+    industries: "Hospital networks, multi-specialty groups, managed-care organizations",
+    strengths: "Enterprise BPO depth, managed operations, single BAA across services.",
+    weaknesses: "Enterprise-focused — overbuilt for small practices.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Hospital networks, large multi-specialty groups, MCOs",
+    highlight: "Enterprise American medical BPO — consolidates answering, scheduling, and referral operations under one BAA and one onshore partner.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American medical answering — signed BAA, RN triage option, encrypted on-call dispatch, and never offshored a single PHI-bearing call.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American medical answering with multi-site redundancy and audit-ready HIPAA logging for hospital systems.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly + per-AI-deflection blended",
     clients: "Telehealth platforms, modern urgent care chains, behavioral health networks",
     highlight: "AI-augmented American medical answering with HIPAA-grade engineering, signed BAA, and human-in-the-loop fallback for every PHI call.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise medical BPO and managed scheduling operations for hospital networks",
-    description:
-      "The enterprise division of B2B Appointment Setting delivers managed medical BPO services for hospital networks and large multi-specialty groups consolidating their American answering, scheduling, referral, and revenue-cycle support with one onshore partner. Their managed-services model bundles HIPAA-compliant medical reception with operations consulting, workforce management, and quality assurance — all delivered from US-based facilities under a single Business Associate Agreement and unified PHI audit trail.",
-    services: [
-      "Managed American medical BPO operations",
-      "Hospital network scheduling consolidation",
-      "Referral coordination and prior-auth support",
-      "US-based revenue-cycle adjacent services",
-      "HIPAA workforce management & QA governance",
-      "Unified BAA and PHI audit trail across services",
-    ],
-    industries: "Hospital networks, multi-specialty groups, managed-care organizations",
-    strengths: "Enterprise BPO depth, managed operations, single BAA across services.",
-    weaknesses: "Enterprise-focused — overbuilt for small practices.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Hospital networks, large multi-specialty groups, MCOs",
-    highlight: "Enterprise American medical BPO — consolidates answering, scheduling, and referral operations under one BAA and one onshore partner.",
   },
 ];
 
@@ -338,10 +338,10 @@ export default function Top10MedicalAnsweringServiceContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -560,7 +560,7 @@ export default function Top10MedicalAnsweringServiceContent() {
                 The <strong>best medical answering service</strong> in 2026 is the one that treats your patients&rsquo; PHI with the same discipline your practice does — and is willing to put that discipline in writing through a signed Business Associate Agreement, documented HIPAA training, encrypted on-call dispatch, and OCR-audit-ready evidence. Practices that select on price alone and skip the diligence are accepting a regulatory exposure that is invisible right up until the moment OCR opens an investigation.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with full-service American medical answering and deep EHR integration, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only choice — combining <strong>25+ years of medical answering experience</strong>, signed BAA, optional live RN triage, encrypted on-call dispatch, EHR write-back across Epic, Athena, eClinicalWorks, NextGen, and Greenway, bilingual English/Spanish reception, and OCR-audit-ready documentation. Whether you need a <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound medical answering partner</Link> or full <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare contact center services</Link>, Contact Center USA is built for practices that take HIPAA — and patient outcomes — seriously.
+                Global Empire Corporation tops our 2026 ranking with full-service American medical answering and deep EHR integration, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only choice — combining <strong>25+ years of medical answering experience</strong>, signed BAA, optional live RN triage, encrypted on-call dispatch, EHR write-back across Epic, Athena, eClinicalWorks, NextGen, and Greenway, bilingual English/Spanish reception, and OCR-audit-ready documentation. Whether you need a <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound medical answering partner</Link> or full <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare contact center services</Link>, Contact Center USA is built for practices that take HIPAA — and patient outcomes — seriously.
               </p>
 
               {/* CTA */}
@@ -582,7 +582,7 @@ export default function Top10MedicalAnsweringServiceContent() {
                 { q: "How much does a HIPAA medical answering service cost in 2026?", a: "US-based medical answering services typically price between $1.05 and $1.85 per minute, $1.85-$3.50 per call, or $3,400-$5,800 per month for a dedicated American FTE receptionist. Layering live RN triage adds a 30-50% premium, with dedicated nurses running $7,500-$11,000/month. Offshore answering services advertise lower per-minute rates but most refuse to sign a HIPAA Business Associate Agreement under enforceable US-court terms — which makes them a compliance non-starter for any practice handling PHI." },
                 { q: "Do I really need a Business Associate Agreement with my answering service?", a: "Yes — a signed Business Associate Agreement is mandatory under 45 CFR 164.504(e) before any PHI is shared with the answering service. There is no informal workaround, no verbal agreement, and no marketing-page promise of HIPAA compliance that substitutes for the signed contract. A vendor that resists signing a BAA — or insists on signing only their own watered-down template that omits breach SLAs or termination rights — is signaling that they are not OCR-audit ready." },
                 { q: "What is the difference between live nurse triage and a message-only medical answering service?", a: "A message-only medical answering service takes the patient's name, callback number, and reason for the call, then forwards the message to the on-call physician via encrypted dispatch. A live RN triage service layers a licensed nurse who follows physician-approved protocols (typically Schmitt-Thompson) to assess symptom acuity in real time, can instruct the patient to call 911 for emergencies, and documents a clinical decision in the chart. RN triage costs 30-50% more but materially reduces the practice's clinical liability for time-sensitive symptoms — chest pain, pediatric fever, post-op bleeding, suicidal ideation." },
-                { q: "Can a US-based medical answering service integrate with my EHR (Epic, Athena, eClinicalWorks)?", a: "Yes — top US-based medical answering services including Contact Center USA (#7) and Global Empire Corporation (#1) write directly into Epic, Athena, eClinicalWorks, NextGen, Greenway, and Cerner. Integration depth varies: at the basic level, the answering service appends call notes to the patient chart; at the advanced level, the agent can book appointments, route messages to specific provider in-baskets, and trigger automated workflows. Always confirm during the sales process exactly which fields the service can read versus write." },
+                { q: "Can a US-based medical answering service integrate with my EHR (Epic, Athena, eClinicalWorks)?", a: "Yes — top US-based medical answering services including Contact Center USA (#8) and Global Empire Corporation (#1) write directly into Epic, Athena, eClinicalWorks, NextGen, Greenway, and Cerner. Integration depth varies: at the basic level, the answering service appends call notes to the patient chart; at the advanced level, the agent can book appointments, route messages to specific provider in-baskets, and trigger automated workflows. Always confirm during the sales process exactly which fields the service can read versus write." },
                 { q: "How does an after-hours medical answering service handle a patient emergency?", a: "Under documented protocols, every medical answering service should immediately direct a caller experiencing chest pain, stroke symptoms, severe bleeding, suicidal ideation, or other acute presentations to call 911 — and then notify the on-call physician via encrypted dispatch. Services with a live RN triage layer can do more: stay on the line with the patient, gather additional clinical information for the receiving ER, and document the encounter in the EHR. Services without RN triage are limited to the 911 redirect and physician notification." },
                 { q: "Is HIPAA voicemail allowed? What can a medical answering service leave on a patient's voicemail?", a: "HIPAA does not prohibit voicemails for patients, but the message content must respect the minimum-necessary rule under 45 CFR 164.502(b). A compliant voicemail typically includes only the practice name, callback number, and a generic prompt to call back — no test results, diagnoses, medication names, or symptom-specific content unless the patient has explicit confidential-communication preferences on file under 45 CFR 164.522(b). Top US-based medical answering services script their agents to follow this discipline by default and document any patient-specific exceptions." },
                 { q: "Can an offshore answering service be HIPAA-compliant for a US medical practice?", a: "Technically yes — HIPAA does not prohibit offshore PHI processing, but the practice (as the covered entity) remains fully liable for any breach by the offshore Business Associate, and OCR has demonstrated a clear pattern of pursuing both parties. In practice, the operational and legal frictions — international jurisdiction, lack of US-court enforceability of the BAA, weaker breach-notification reliability, and OCR's heightened scrutiny of offshore processing — push the vast majority of US medical practices toward US-based medical answering services like Contact Center USA, Global Empire Corporation, and Customer Communications Corp." },

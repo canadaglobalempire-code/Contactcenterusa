@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise telemarketing and managed sales development operations",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American telemarketing process outsourcing for large B2B organizations seeking to consolidate their sales development operations with a single trusted US-based partner. Their managed services model covers everything from strategic list building and ICP definition to full-cycle outbound telemarketing, appointment setting, and pipeline analytics — all delivered by American sales development professionals working from secure onshore facilities with enterprise-grade dialer and CRM infrastructure.",
+    services: [
+      "American managed telemarketing services",
+      "US-based enterprise sales development consulting",
+      "Domestic outbound SDR program transformation",
+      "Onshore ICP definition and list strategy",
+      "American program management and governance",
+      "US enterprise telephony and CRM integration",
+    ],
+    industries: "Enterprise SaaS, financial services, manufacturing, professional services, technology",
+    strengths: "Enterprise telemarketing depth, consulting + managed SDR operations.",
+    weaknesses: "Enterprise-focused; not for SMB or transactional B2C telemarketing.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise SaaS companies, national financial services firms, large professional services",
+    highlight: "Enterprise American telemarketing BPO combining consulting expertise with managed onshore SDR operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American telemarketing — TCPA-compliant, DNC-clean, never offshored a single dial.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American telemarketing infrastructure with multi-site dialing redundancy and dedicated caller teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern SaaS brands, fintech companies, HR tech and digital insurance firms",
     highlight: "Digital-first American telemarketing combining US-based callers with AI dialers and conversation intelligence.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise telemarketing and managed sales development operations",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American telemarketing process outsourcing for large B2B organizations seeking to consolidate their sales development operations with a single trusted US-based partner. Their managed services model covers everything from strategic list building and ICP definition to full-cycle outbound telemarketing, appointment setting, and pipeline analytics — all delivered by American sales development professionals working from secure onshore facilities with enterprise-grade dialer and CRM infrastructure.",
-    services: [
-      "American managed telemarketing services",
-      "US-based enterprise sales development consulting",
-      "Domestic outbound SDR program transformation",
-      "Onshore ICP definition and list strategy",
-      "American program management and governance",
-      "US enterprise telephony and CRM integration",
-    ],
-    industries: "Enterprise SaaS, financial services, manufacturing, professional services, technology",
-    strengths: "Enterprise telemarketing depth, consulting + managed SDR operations.",
-    weaknesses: "Enterprise-focused; not for SMB or transactional B2C telemarketing.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise SaaS companies, national financial services firms, large professional services",
-    highlight: "Enterprise American telemarketing BPO combining consulting expertise with managed onshore SDR operations.",
   },
 ];
 
@@ -358,10 +358,10 @@ export default function Top10TelemarketingContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -491,7 +491,7 @@ export default function Top10TelemarketingContent() {
                 The <strong>American telemarketing industry</strong> is being reshaped by AI dialers, tightening TCPA enforcement, and a consumer base that rewards trust and punishes spam. B2B and B2C brands win when they partner with US-based telemarketing firms that can deliver compliant, conversational, conversion-oriented outbound at a mid-market-friendly price.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American telemarketing practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based telemarketing operations</strong>, rigorous TCPA and DNC compliance, deep Salesforce / HubSpot / Five9 / Genesys integration, and flexible per-lead and outcome-based pricing. Whether you need <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">full-service telemarketing</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, or <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, Contact Center USA is built for brands that win on the phone without the compliance risk. Ready to brief one partner instead of comparing ten? Read how we run campaigns as a US-based <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">telemarketing company</Link>.
+                Global Empire Corporation tops our 2026 ranking with its full-service American telemarketing practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based telemarketing operations</strong>, rigorous TCPA and DNC compliance, deep Salesforce / HubSpot / Five9 / Genesys integration, and flexible per-lead and outcome-based pricing. Whether you need <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">full-service telemarketing</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, or <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, Contact Center USA is built for brands that win on the phone without the compliance risk. Ready to brief one partner instead of comparing ten? Read how we run campaigns as a US-based <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">telemarketing company</Link>.
               </p>
 
               {/* CTA */}

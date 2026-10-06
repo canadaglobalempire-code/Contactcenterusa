@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise home services BPO — managed HVAC call center, plumbing call center, and commercial roofing call center operations",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American home services process outsourcing for large HVAC, plumbing, and roofing networks seeking to consolidate their domestic dispatcher operations with a single trusted US-based partner. Their managed services model covers everything from HVAC answering service and 24/7 home services answering to back-office dispatch operations, membership administration, and field-service platform management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed HVAC call center services",
+      "US-based enterprise home services process consulting",
+      "Domestic dispatch operations transformation programs",
+      "Onshore back-office and membership administration",
+      "American program management and franchise governance",
+      "US enterprise field-service platform integration",
+    ],
+    industries: "Enterprise HVAC, national plumbing networks, commercial roofing groups, facility services brands",
+    strengths: "Enterprise BPO depth, consulting plus managed home services dispatcher operations.",
+    weaknesses: "Enterprise-focused; not for small independent HVAC or plumbing contractors.",
+    engagement: "Enterprise managed-services agreement",
+    clients: "Enterprise HVAC groups, national plumbing and roofing networks, large facility services brands",
+    highlight: "Enterprise American home services BPO combining consulting expertise with managed onshore HVAC call center and plumbing call center operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American HVAC call center and home services dispatcher operations — never offshored a single after hours HVAC dispatch or emergency service call.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American HVAC call center infrastructure with multi-site US redundancy and dedicated franchise home services dispatcher teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     engagement: "Custom AI-assisted intake and agent coverage",
     clients: "Modern HVAC groups, digital-first plumbing brands, smart-home service companies",
     highlight: "Digital-first American HVAC call center combining US-based home services dispatchers with AI-powered intake automation and analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise home services BPO — managed HVAC call center, plumbing call center, and commercial roofing call center operations",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American home services process outsourcing for large HVAC, plumbing, and roofing networks seeking to consolidate their domestic dispatcher operations with a single trusted US-based partner. Their managed services model covers everything from HVAC answering service and 24/7 home services answering to back-office dispatch operations, membership administration, and field-service platform management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed HVAC call center services",
-      "US-based enterprise home services process consulting",
-      "Domestic dispatch operations transformation programs",
-      "Onshore back-office and membership administration",
-      "American program management and franchise governance",
-      "US enterprise field-service platform integration",
-    ],
-    industries: "Enterprise HVAC, national plumbing networks, commercial roofing groups, facility services brands",
-    strengths: "Enterprise BPO depth, consulting plus managed home services dispatcher operations.",
-    weaknesses: "Enterprise-focused; not for small independent HVAC or plumbing contractors.",
-    engagement: "Enterprise managed-services agreement",
-    clients: "Enterprise HVAC groups, national plumbing and roofing networks, large facility services brands",
-    highlight: "Enterprise American home services BPO combining consulting expertise with managed onshore HVAC call center and plumbing call center operations.",
   },
 ];
 
@@ -337,10 +337,10 @@ export default function Top10HVACHomeServicesContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -473,7 +473,7 @@ export default function Top10HVACHomeServicesContent() {
                 The <strong>American HVAC call center and home services dispatcher industry</strong> is being reshaped by 24/7 homeowner expectations, native field-service platform integration, and the need for true emergency coverage during heat waves, cold snaps, and storm events. HVAC groups, plumbing franchises, electricians, roofing contractors, pest control brands, cleaning services, and landscaping operators win when they partner with a US-based <strong>HVAC answering service</strong> that delivers live after hours HVAC dispatch, books jobs directly into ServiceTitan or Housecall Pro, and serves Spanish-speaking homeowners with the same warmth as English.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American home services dispatcher practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, true 24/7 emergency service dispatcher coverage, overflow call handling for every season, deep ServiceTitan / Housecall Pro / Jobber / FieldEdge integration, bilingual Spanish agents, and a tailored operating scope. Whether you need an <strong>HVAC booking service</strong>, a <strong>plumbing call center</strong>, an <strong>electrician answering service</strong>, a <strong>roofing call center</strong>, a <strong>pest control answering service</strong>, or full <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> across every home-services trade, Contact Center USA is built for the contractors who win on the phone.
+                Global Empire Corporation tops our 2026 ranking with its full-service American home services dispatcher practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, true 24/7 emergency service dispatcher coverage, overflow call handling for every season, deep ServiceTitan / Housecall Pro / Jobber / FieldEdge integration, bilingual Spanish agents, and a tailored operating scope. Whether you need an <strong>HVAC booking service</strong>, a <strong>plumbing call center</strong>, an <strong>electrician answering service</strong>, a <strong>roofing call center</strong>, a <strong>pest control answering service</strong>, or full <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link> across every home-services trade, Contact Center USA is built for the contractors who win on the phone.
               </p>
 
               {/* CTA */}
@@ -493,7 +493,7 @@ export default function Top10HVACHomeServicesContent() {
               {[
                 { q: "What affects the scope of an HVAC answering service or home services dispatcher?", a: "The right operating plan depends on the trades you cover, your after-hours and weekend requirements, expected call volume, emergency-routing rules, bilingual needs, field-service integrations, booking workflow, and whether the team handles overflow or every inbound call. Contact Center USA scopes each program around those requirements instead of offering a one-size-fits-all package." },
                 { q: "How does after hours HVAC dispatch and 24/7 home services answering actually work?", a: "A true 24/7 emergency service dispatcher operation keeps US-based agents staffed overnight, on weekends, and on every holiday. When a homeowner calls at 2 a.m. with no heat, no cooling, a burst pipe, or a roof leak, the agent answers live within 20 seconds, qualifies the emergency, confirms service area, and either dispatches the on-call technician immediately via ServiceTitan / Housecall Pro / Jobber, or books the job for the earliest available slot — all while the homeowner is still on the line. Top providers also handle overflow call handling during heat waves and storm events, scaling capacity 2-4x within 30 days." },
-                { q: "Does the HVAC call center integrate with ServiceTitan, Housecall Pro, Jobber, or FieldEdge?", a: "Yes — a modern home services dispatcher must integrate natively with the contractor's field-service platform. Contact Center USA (#7), Global Empire Corporation (#1), and Customer Communications Corp (#4) all offer live, two-way integration with ServiceTitan, Housecall Pro, Jobber, FieldEdge, and Service Fusion. Jobs are booked directly into the technician schedule with customer history, service-area qualification, and membership status pulled in real time — so there is no email handoff, no duplicate data entry, and no dispatch lag." },
+                { q: "Does the HVAC call center integrate with ServiceTitan, Housecall Pro, Jobber, or FieldEdge?", a: "Yes — a modern home services dispatcher must integrate natively with the contractor's field-service platform. Contact Center USA (#8), Global Empire Corporation (#1), and Customer Communications Corp (#4) all offer live, two-way integration with ServiceTitan, Housecall Pro, Jobber, FieldEdge, and Service Fusion. Jobs are booked directly into the technician schedule with customer history, service-area qualification, and membership status pulled in real time — so there is no email handoff, no duplicate data entry, and no dispatch lag." },
                 { q: "How does a plumbing call center handle after-hours and burst-pipe emergencies?", a: "A dedicated plumbing call center routes every after-hours call through an emergency service dispatcher workflow that classifies burst pipes, no-water, sewage backup, water-heater failure, and gas-leak risk within the first 60 seconds. US-based agents confirm the homeowner's address, qualify service area by ZIP code, dispatch the on-call technician directly in the plumber's field-service platform (ServiceTitan, Housecall Pro, or Jobber), and stay on the line until the homeowner has a confirmed ETA. For plumbing franchises, after hours HVAC dispatch and plumbing dispatch share the same 24/7 infrastructure." },
                 { q: "Do these contractor call center services include bilingual English and Spanish support?", a: "Yes — any serious HVAC answering service, roofing call center, electrician answering service, or pest control answering service in 2026 must provide bilingual English and Spanish coverage 24/7. In many US markets, 20-35% of inbound home services calls are Spanish-first, and routing those callers to voicemail or a separate callback line is one of the fastest ways to lose booked jobs. The top providers in this ranking — including Contact Center USA, Global Empire Corporation, and Customer Communications Corp — staff bilingual US-based agents on every shift, not just business hours." },
                 { q: "What is the difference between overflow call handling and a full HVAC answering service?", a: "Overflow call handling is a safety net — when your in-house office staff cannot pick up within 3-4 rings, calls roll over to the US-based home services dispatcher, who books the job in your field-service platform exactly as your office would. A full HVAC call center or 24/7 home services answering program replaces your in-house intake entirely (or covers every hour outside of business hours), handling 100% of inbound calls, after hours HVAC dispatch, emergency service dispatcher coverage, membership renewals, and HVAC booking service conversion. Most contractors start with overflow call handling and graduate to full 24/7 service once they see the booked-job lift." },

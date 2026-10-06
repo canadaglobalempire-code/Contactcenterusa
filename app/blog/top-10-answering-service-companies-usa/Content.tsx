@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise inbound and managed answering operations",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American managed answering and inbound operations for large professional services firms, healthcare networks, and multi-location brands seeking to consolidate their domestic front-desk operations with a single trusted US-based partner. Their managed services model covers everything from 24/7 live answering and appointment booking to back-office intake processing and caller data management — all delivered by American receptionists working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed answering services",
+      "US-based enterprise inbound consulting",
+      "Domestic intake operations transformation",
+      "Onshore back-office message processing",
+      "American program management & governance",
+      "US enterprise CRM & PMS integration",
+    ],
+    industries: "Enterprise healthcare, multi-location professional services, franchise networks, property portfolios",
+    strengths: "Enterprise BPO depth, consulting + managed inbound ops.",
+    weaknesses: "Enterprise-focused; not for solo practitioners or small firms.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise healthcare networks, national professional services firms, franchise brands",
+    highlight: "Enterprise American answering BPO combining consulting expertise with managed onshore receptionist operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American answering service — never offshored a single call, even during storm-season and open-enrollment surges.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American answering infrastructure with multi-site US redundancy and dedicated receptionist teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Per-minute, per-outcome, or blended AI + receptionist",
     clients: "Modern professional services, telehealth practices, digital-first agencies",
     highlight: "Digital-first American answering service combining US-based receptionists with AI-powered call triage and smart routing.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise inbound and managed answering operations",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American managed answering and inbound operations for large professional services firms, healthcare networks, and multi-location brands seeking to consolidate their domestic front-desk operations with a single trusted US-based partner. Their managed services model covers everything from 24/7 live answering and appointment booking to back-office intake processing and caller data management — all delivered by American receptionists working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed answering services",
-      "US-based enterprise inbound consulting",
-      "Domestic intake operations transformation",
-      "Onshore back-office message processing",
-      "American program management & governance",
-      "US enterprise CRM & PMS integration",
-    ],
-    industries: "Enterprise healthcare, multi-location professional services, franchise networks, property portfolios",
-    strengths: "Enterprise BPO depth, consulting + managed inbound ops.",
-    weaknesses: "Enterprise-focused; not for solo practitioners or small firms.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise healthcare networks, national professional services firms, franchise brands",
-    highlight: "Enterprise American answering BPO combining consulting expertise with managed onshore receptionist operations.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10AnsweringServiceContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -468,7 +468,7 @@ export default function Top10AnsweringServiceContent() {
                 The <strong>American answering service industry</strong> is being reshaped by AI voice triage, HIPAA requirements, and the rising expectation of 24/7 live coverage. Law firms, medical practices, home-service brands, and small businesses win when they partner with US-based answering providers that answer every call in under 20 seconds, integrate natively with CRMs and PMS platforms, and deliver brand-aligned receptionist quality at SMB-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American 24/7 live answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only answering partner of choice — combining <strong>25+ years of US-based receptionist operations</strong>, HIPAA-compliant medical answering, rapid overflow scaling, deep Clio / Athenahealth / ServiceTitan / Salesforce integration, and flexible per-minute and per-appointment pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound answering</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or bilingual virtual receptionist coverage, Contact Center USA is built for the American businesses that refuse to miss a single call.
+                Global Empire Corporation tops our 2026 ranking with its full-service American 24/7 live answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only answering partner of choice — combining <strong>25+ years of US-based receptionist operations</strong>, HIPAA-compliant medical answering, rapid overflow scaling, deep Clio / Athenahealth / ServiceTitan / Salesforce integration, and flexible per-minute and per-appointment pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound answering</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or bilingual virtual receptionist coverage, Contact Center USA is built for the American businesses that refuse to miss a single call.
               </p>
 
               {/* CTA */}
@@ -488,10 +488,10 @@ export default function Top10AnsweringServiceContent() {
               {[
                 { q: "How much does an American answering service cost?", a: "US-based answering services typically cost $0.95-$1.75 per minute, $1.25-$3.50 per call, or $1,800-$3,500 per month for a dedicated virtual receptionist. Offshore answering services are cheaper ($0.40-$0.75 per minute) but caller experience and conversion rates are usually worse. Outcome-based pricing tied to booked appointments or qualified leads is increasingly common at top American providers." },
                 { q: "What is the difference between a live answering service and an automated one?", a: "A live answering service uses trained human receptionists — often US-based — to answer calls, take detailed messages, book appointments, and warm-transfer urgent callers. An automated answering service uses IVR menus, voice AI, or voicemail-to-text to handle calls without a live person. Most modern American providers now offer a hybrid: AI handles routine FAQs and after-hours routing, while live US receptionists handle qualified callers, appointments, and urgent intake — cutting cost while preserving caller experience." },
-                { q: "Is there a HIPAA-compliant medical answering service?", a: "Yes. Top American providers like Contact Center USA (#7) operate under signed Business Associate Agreements (BAAs), use HIPAA-compliant messaging to PMS platforms like Athenahealth and eClinicalWorks, and train every medical receptionist on PHI handling. For dental practices, telehealth clinics, and multi-location medical groups, HIPAA-ready US-based answering is the standard — never outsource medical intake to an offshore or non-BAA-backed provider." },
-                { q: "What is the best answering service for small business?", a: "For small businesses and solo practitioners, the best answering service is one that offers US-based receptionists, transparent per-minute or per-call pricing, and direct calendar integration with tools like Calendly, Acuity, and Google Calendar. Contact Center USA (#7) and B2B Appointment Setting (#6) are both purpose-built for SMBs — combining 24/7 live coverage with appointment booking and instant message delivery to email and SMS, with no long-term contracts." },
-                { q: "Do answering services offer bilingual English and Spanish coverage?", a: "Yes. Most top American answering services — including Contact Center USA (#7), Global Empire Corporation (#1), and Customer Communications Corp (#4) — offer native bilingual English and Spanish receptionist coverage at no premium or a minimal surcharge. Bilingual answering is critical for home-service brands, healthcare practices, and legal intake in markets like Texas, Florida, California, Arizona, and the Southwest, where Spanish-preferred callers make up a significant share of inbound volume." },
-                { q: "Which answering service integrates best with Clio, Athenahealth, and Calendly?", a: "Contact Center USA (#7) offers native integration with Clio, Salesforce, HubSpot, Athenahealth, ServiceTitan, Calendly, and Google Calendar — letting US-based receptionists log intake, book appointments, and route messages directly into your existing CRM or PMS. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-receptionist engagements across legal, medical, and home-services platforms." },
+                { q: "Is there a HIPAA-compliant medical answering service?", a: "Yes. Top American providers like Contact Center USA (#8) operate under signed Business Associate Agreements (BAAs), use HIPAA-compliant messaging to PMS platforms like Athenahealth and eClinicalWorks, and train every medical receptionist on PHI handling. For dental practices, telehealth clinics, and multi-location medical groups, HIPAA-ready US-based answering is the standard — never outsource medical intake to an offshore or non-BAA-backed provider." },
+                { q: "What is the best answering service for small business?", a: "For small businesses and solo practitioners, the best answering service is one that offers US-based receptionists, transparent per-minute or per-call pricing, and direct calendar integration with tools like Calendly, Acuity, and Google Calendar. Contact Center USA (#8) and B2B Appointment Setting (#6) are both purpose-built for SMBs — combining 24/7 live coverage with appointment booking and instant message delivery to email and SMS, with no long-term contracts." },
+                { q: "Do answering services offer bilingual English and Spanish coverage?", a: "Yes. Most top American answering services — including Contact Center USA (#8), Global Empire Corporation (#1), and Customer Communications Corp (#4) — offer native bilingual English and Spanish receptionist coverage at no premium or a minimal surcharge. Bilingual answering is critical for home-service brands, healthcare practices, and legal intake in markets like Texas, Florida, California, Arizona, and the Southwest, where Spanish-preferred callers make up a significant share of inbound volume." },
+                { q: "Which answering service integrates best with Clio, Athenahealth, and Calendly?", a: "Contact Center USA (#8) offers native integration with Clio, Salesforce, HubSpot, Athenahealth, ServiceTitan, Calendly, and Google Calendar — letting US-based receptionists log intake, book appointments, and route messages directly into your existing CRM or PMS. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-receptionist engagements across legal, medical, and home-services platforms." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

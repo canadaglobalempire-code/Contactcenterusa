@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise front-office BPO and managed virtual reception programs",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American front-office outsourcing for large organizations and multi-location practices seeking to consolidate their virtual reception, appointment booking, and inbound intake operations with a single trusted US-based partner. Their managed services model covers everything from live reception and scheduling to back-office intake processing and data entry — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed virtual reception services",
+      "US-based enterprise front-office consulting",
+      "Domestic multi-site reception consolidation",
+      "Onshore back-office intake processing",
+      "American program management & governance",
+      "US enterprise CRM & calendar integration",
+    ],
+    industries: "Enterprise professional services, hospital systems, multi-location practices, corporate switchboards",
+    strengths: "Enterprise BPO depth, consulting + managed reception.",
+    weaknesses: "Enterprise-focused; not for solo practitioners or SMBs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise multi-location practices, hospital systems, large professional services groups",
+    highlight: "Enterprise American virtual reception BPO combining consulting expertise with managed onshore front-office operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American virtual reception — never offshored a single call, with HIPAA-aware intake and native legal/medical CRM sync.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American virtual reception with multi-site US redundancy and dedicated corporate switchboard teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Per-minute, monthly, or blended AI + receptionist",
     clients: "SaaS companies, digital-first professional firms, modern SMBs",
     highlight: "Digital-first American virtual reception combining US-based receptionists with AI-powered call automation and intake analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise front-office BPO and managed virtual reception programs",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American front-office outsourcing for large organizations and multi-location practices seeking to consolidate their virtual reception, appointment booking, and inbound intake operations with a single trusted US-based partner. Their managed services model covers everything from live reception and scheduling to back-office intake processing and data entry — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed virtual reception services",
-      "US-based enterprise front-office consulting",
-      "Domestic multi-site reception consolidation",
-      "Onshore back-office intake processing",
-      "American program management & governance",
-      "US enterprise CRM & calendar integration",
-    ],
-    industries: "Enterprise professional services, hospital systems, multi-location practices, corporate switchboards",
-    strengths: "Enterprise BPO depth, consulting + managed reception.",
-    weaknesses: "Enterprise-focused; not for solo practitioners or SMBs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise multi-location practices, hospital systems, large professional services groups",
-    highlight: "Enterprise American virtual reception BPO combining consulting expertise with managed onshore front-office operations.",
   },
 ];
 
@@ -358,10 +358,10 @@ export default function Top10VirtualReceptionistContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -496,7 +496,7 @@ export default function Top10VirtualReceptionistContent() {
                 The <strong>American virtual receptionist industry</strong> is being reshaped by voice-AI, deep practice-management integration, and SMB demand for 24/7 live coverage at predictable monthly prices. Law firms, medical practices, home services contractors, and SaaS SMBs win when they partner with US-based virtual receptionist providers that integrate natively with their calendar and CRM, speak the language of their callers, and never let a lead hit voicemail.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American virtual receptionist practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based call answering</strong>, HIPAA-aware medical and legal intake, and native Clio, Epic, HubSpot, and Google Calendar integration. Whether you need <Link href="/services/virtual-remote-support" className="text-red font-semibold hover:underline">virtual receptionist services</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">appointment setting</Link>, or <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call answering</Link>, Contact Center USA is built for the SMBs that win on every first impression.
+                Global Empire Corporation tops our 2026 ranking with its full-service American virtual receptionist practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based call answering</strong>, HIPAA-aware medical and legal intake, and native Clio, Epic, HubSpot, and Google Calendar integration. Whether you need <Link href="/services/virtual-remote-support" className="text-red font-semibold hover:underline">virtual receptionist services</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">appointment setting</Link>, or <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call answering</Link>, Contact Center USA is built for the SMBs that win on every first impression.
               </p>
 
               {/* CTA */}
@@ -518,8 +518,8 @@ export default function Top10VirtualReceptionistContent() {
                 { q: "How much does a virtual receptionist service cost in the USA?", a: "US-based virtual receptionist services typically cost between $175 and $1,200 per month depending on call volume, hours of coverage, and whether you need bilingual or dedicated receptionists. Per-minute pricing ranges from $1.50 to $2.50 per minute of live-agent time. Offshore virtual receptionists are cheaper ($0.75-$1.25/min) but CSAT, conversion, and brand fit usually suffer — especially for law firms, medical practices, and premium service brands where first impressions drive revenue." },
                 { q: "Is a virtual receptionist cheaper than hiring in-house?", a: "Yes — a dedicated, fully loaded in-house receptionist costs $45,000-$65,000 per year in salary plus roughly 25-30% in benefits, payroll taxes, software, and office space. A comparable US-based virtual receptionist plan with 24/7 coverage, CRM integration, and bilingual support runs $4,000-$14,000 per year — a 70-85% cost reduction while gaining 24/7 coverage that a single in-house hire cannot provide." },
                 { q: "Can a virtual receptionist book appointments directly into my calendar?", a: "Yes. Top American virtual receptionist providers (including Contact Center USA) integrate natively with Google Calendar, Outlook, Calendly, Acuity, Clio, MyCase, Practice Panther, Jane, and major EHR systems. US-based receptionists book appointments in real time during the call, send confirmations by email or SMS, handle rescheduling, and reduce no-shows with automated reminders — all without your staff touching the calendar." },
-                { q: "Are virtual receptionists HIPAA-compliant for medical and dental practices?", a: "The top American virtual receptionist companies — including Contact Center USA (#7) — operate under signed Business Associate Agreements (BAAs) and HIPAA-aware intake workflows, which protect PHI during scheduling and intake. Always confirm BAA availability, agent training records, secure call-recording retention, and encrypted CRM integration before signing. Offshore providers often cannot offer enforceable HIPAA BAAs — another reason US-based reception matters for healthcare SMBs." },
-                { q: "Which virtual receptionist integrates best with Clio and other legal practice-management tools?", a: "Contact Center USA (#7) offers native integration with Clio, MyCase, Practice Panther, Smokeball, and Rocket Matter — letting US-based receptionists log new client intakes, conflict checks, and matter notes directly into the firm's case-management system. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well with Clio and HubSpot for dedicated-receptionist engagements." },
+                { q: "Are virtual receptionists HIPAA-compliant for medical and dental practices?", a: "The top American virtual receptionist companies — including Contact Center USA (#8) — operate under signed Business Associate Agreements (BAAs) and HIPAA-aware intake workflows, which protect PHI during scheduling and intake. Always confirm BAA availability, agent training records, secure call-recording retention, and encrypted CRM integration before signing. Offshore providers often cannot offer enforceable HIPAA BAAs — another reason US-based reception matters for healthcare SMBs." },
+                { q: "Which virtual receptionist integrates best with Clio and other legal practice-management tools?", a: "Contact Center USA (#8) offers native integration with Clio, MyCase, Practice Panther, Smokeball, and Rocket Matter — letting US-based receptionists log new client intakes, conflict checks, and matter notes directly into the firm's case-management system. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well with Clio and HubSpot for dedicated-receptionist engagements." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

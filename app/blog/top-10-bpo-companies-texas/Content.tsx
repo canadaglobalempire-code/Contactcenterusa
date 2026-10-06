@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise Texas managed BPO and process consulting",
+    description:
+      "The enterprise division of B2B Appointment Setting delivers managed BPO services for the largest Texas employers seeking to consolidate sales operations, customer support, and back-office processing into a single onshore partner. Their Texas engagements typically span energy enterprise (Houston), telecom and financial services (DFW), and large-scale insurance (San Antonio USAA-type accounts). The managed-services model includes program governance, transformation consulting, technology integration, and full Texas regulatory alignment — TTSA, ITPA, TDI, NMLS — across multi-year engagements.",
+    services: [
+      "Managed Texas enterprise BPO programs",
+      "Texas process transformation consulting",
+      "Multi-year governance & program management",
+      "Houston energy enterprise delivery",
+      "DFW telecom + financial services delivery",
+      "San Antonio insurance and military-adjacent accounts",
+    ],
+    industries: "Enterprise energy, telecom, financial services, insurance, healthcare",
+    strengths: "Enterprise BPO depth combined with Texas-specific consulting and managed operations.",
+    weaknesses: "Enterprise-focused; not for SMB or mid-market Texas brands.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Houston energy enterprises, DFW telecom and financial services, San Antonio insurance carriers",
+    highlight: "Enterprise Texas managed BPO combining program consulting with onshore delivery across the Houston, DFW, and San Antonio enterprise corridors.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American CX, with a Texas-only delivery option, native Spanish-bilingual coverage, and the full Texas regulatory stack — TCPA + TTSA + ITPA + TDI + NMLS.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade Texas BPO with redundant DFW + Houston centers and hurricane-season business continuity built in.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Austin SaaS scale-ups, Dallas fintech, modern DTC brands with Texas customer bases",
     highlight: "Texas's leading digital-first BPO — Austin and Dallas tech-corridor agents paired with AI-powered deflection and bilingual coverage.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise Texas managed BPO and process consulting",
-    description:
-      "The enterprise division of B2B Appointment Setting delivers managed BPO services for the largest Texas employers seeking to consolidate sales operations, customer support, and back-office processing into a single onshore partner. Their Texas engagements typically span energy enterprise (Houston), telecom and financial services (DFW), and large-scale insurance (San Antonio USAA-type accounts). The managed-services model includes program governance, transformation consulting, technology integration, and full Texas regulatory alignment — TTSA, ITPA, TDI, NMLS — across multi-year engagements.",
-    services: [
-      "Managed Texas enterprise BPO programs",
-      "Texas process transformation consulting",
-      "Multi-year governance & program management",
-      "Houston energy enterprise delivery",
-      "DFW telecom + financial services delivery",
-      "San Antonio insurance and military-adjacent accounts",
-    ],
-    industries: "Enterprise energy, telecom, financial services, insurance, healthcare",
-    strengths: "Enterprise BPO depth combined with Texas-specific consulting and managed operations.",
-    weaknesses: "Enterprise-focused; not for SMB or mid-market Texas brands.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Houston energy enterprises, DFW telecom and financial services, San Antonio insurance carriers",
-    highlight: "Enterprise Texas managed BPO combining program consulting with onshore delivery across the Houston, DFW, and San Antonio enterprise corridors.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10BPOTexasContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -562,7 +562,7 @@ export default function Top10BPOTexasContent() {
                 The <strong>Texas BPO industry</strong> in 2026 is the most cost-competitive large-scale onshore call center market in the United States. With 23M residents across DFW, Houston, Austin, San Antonio, and Fort Worth, an 11.4M-strong Hispanic population fueling unmatched Spanish-bilingual capacity, no state income tax driving 20-30% wage savings versus CA/NY, and a $2.4T economy generating dense in-state demand, Texas is where serious onshore BPO programs scale.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 Texas ranking on the strength of its DFW + Houston + Austin delivery footprint and full bilingual coverage, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic 100% US-based partner of choice for Texas businesses — combining 25+ years of US-based CX, multi-metro Texas delivery, native Spanish-bilingual queues, and the complete Texas regulatory stack: federal TCPA, the Texas Telephone Solicitation Act (Chapter 305), the Texas Do-Not-Call registry, the Texas Identity Theft Protection Act, NMLS for mortgage workflows, and TDI for insurance. Whether you need <Link href="/call-center-services-dallas" className="text-red font-semibold hover:underline">Dallas call center services</Link>, <Link href="/call-center-services-houston" className="text-red font-semibold hover:underline">Houston call center services</Link>, or <Link href="/call-center-services-austin" className="text-red font-semibold hover:underline">Austin call center services</Link>, Contact Center USA is built for Texas. For one program that covers all four metros, see our <Link href="/locations/texas" className="text-red font-semibold hover:underline">Texas call center and BPO services</Link>.
+                Global Empire Corporation tops our 2026 Texas ranking on the strength of its DFW + Houston + Austin delivery footprint and full bilingual coverage, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic 100% US-based partner of choice for Texas businesses — combining 25+ years of US-based CX, multi-metro Texas delivery, native Spanish-bilingual queues, and the complete Texas regulatory stack: federal TCPA, the Texas Telephone Solicitation Act (Chapter 305), the Texas Do-Not-Call registry, the Texas Identity Theft Protection Act, NMLS for mortgage workflows, and TDI for insurance. Whether you need <Link href="/call-center-services-dallas" className="text-red font-semibold hover:underline">Dallas call center services</Link>, <Link href="/call-center-services-houston" className="text-red font-semibold hover:underline">Houston call center services</Link>, or <Link href="/call-center-services-austin" className="text-red font-semibold hover:underline">Austin call center services</Link>, Contact Center USA is built for Texas. For one program that covers all four metros, see our <Link href="/locations/texas" className="text-red font-semibold hover:underline">Texas call center and BPO services</Link>.
               </p>
 
               {/* CTA */}
@@ -580,13 +580,13 @@ export default function Top10BPOTexasContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Frequently Asked Questions</h2>
 
               {[
-                { q: "What are the best BPO companies in Texas in 2026?", a: "The best BPO companies in Texas for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), Contact Center USA (#7), Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10). Each has Texas-based delivery capacity, Spanish-bilingual agent pools, and experience supporting energy, healthcare, SaaS, real estate, and insurance verticals across Dallas, Houston, Austin, San Antonio, and Fort Worth." },
+                { q: "What are the best BPO companies in Texas in 2026?", a: "The best BPO companies in Texas for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), B2B Appointment Setting Enterprise (#7), Contact Center USA (#8), Call Center Communications (#9), and Business Process Outsourcing (#10). Each has Texas-based delivery capacity, Spanish-bilingual agent pools, and experience supporting energy, healthcare, SaaS, real estate, and insurance verticals across Dallas, Houston, Austin, San Antonio, and Fort Worth." },
                 { q: "How much does Texas call center outsourcing cost in 2026?", a: "Texas call center outsourcing typically costs $14-$22 per agent-hour for English voice work and $16-$25 per hour for Spanish-bilingual agents. Texas wages run roughly 20-30% below California and New York comparable rates because of the state's no-income-tax labor environment. Per-contact pricing for Texas BPOs averages $1.50-$3.50 for chat and email, with dedicated-team pricing typically $2,200-$4,800 per FTE/month for fully managed onshore engagements." },
                 { q: "Why do so many BPOs operate in Texas?", a: "Texas hosts more than 1,300 corporate headquarters and over 50 Fortune 500 companies, generating massive in-state demand for customer service outsourcing. The state's $2.4T economy (the 8th largest in the world if Texas were a country), 30% Spanish-bilingual workforce, central US time zone, no state income tax, and strong veteran labor pool make it the most cost-competitive large-scale BPO geography in the United States." },
                 { q: "Which Texas city is best for call center outsourcing?", a: "Dallas-Fort Worth is the largest Texas BPO market thanks to financial services and telecom HQs (AT&T, Charles Schwab, McKesson). Houston dominates energy, healthcare, and petrochemical BPO needs. Austin (Silicon Hills) is the SaaS and government call center capital. San Antonio is unmatched for financial services BPO (USAA) and military contracting. Fort Worth leads logistics and manufacturing. Most national BPOs maintain delivery centers in at least two of these metros." },
                 { q: "What Texas-specific compliance laws affect BPOs?", a: "Texas BPOs must comply with the federal TCPA, the Texas Telephone Solicitation Act (Texas Business & Commerce Code Chapter 305), the statewide Texas Do-Not-Call registry, and the Texas Identity Theft Protection Act (60-day breach notification). Mortgage call centers need NMLS state licensing, and insurance BPOs are regulated by the Texas Department of Insurance (TDI). HIPAA and PCI DSS still apply to healthcare and payment workflows." },
                 { q: "Do Texas BPOs offer Spanish bilingual call center services?", a: "Yes. Texas's 11.4M Hispanic residents (roughly 40% of the state population) give Texas the deepest Spanish-bilingual labor pool of any major US state. Most Tier-1 Texas BPOs maintain dedicated Spanish-bilingual agent pools. Bilingual wages run 10-15% above English-only rates but typically deliver 25-40% conversion lift on Spanish-dominant callers, making bilingual coverage a margin lever rather than a cost." },
-                { q: "Which Texas BPO is best for energy and oil and gas customers?", a: "Houston-based delivery is preferred for energy and oil and gas BPO programs because of proximity to Schlumberger, ExxonMobil, ConocoPhillips, and the petrochemical corridor. Contact Center USA (#7), Customer Communications Corp (#4), and Call Center Communications (#8) all offer Houston-area or Houston-aligned delivery for energy customer support, field service dispatch, and B2B account management." },
+                { q: "Which Texas BPO is best for energy and oil and gas customers?", a: "Houston-based delivery is preferred for energy and oil and gas BPO programs because of proximity to Schlumberger, ExxonMobil, ConocoPhillips, and the petrochemical corridor. Contact Center USA (#8), Customer Communications Corp (#4), and Call Center Communications (#9) all offer Houston-area or Houston-aligned delivery for energy customer support, field service dispatch, and B2B account management." },
                 { q: "How do Texas BPOs compete with nearshore Mexico call centers?", a: "Nearshore Mexico (Monterrey, Guadalajara, Tijuana) costs roughly 30-45% less than Texas labor, but Texas wins on US-based data residency, full TCPA jurisdiction, no cross-border PII transfer concerns, native English plus US-trained Spanish-bilingual agents, and strong cultural fit with US consumers. Many Texas BPOs run a hybrid model — onshore Texas for regulated and high-AOV work, nearshore for volume overflow." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">

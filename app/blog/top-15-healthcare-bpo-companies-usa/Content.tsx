@@ -116,6 +116,24 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "Canada",
+    website: "https://www.b2bappointmentsetting.com",
+    bestFor: "Enterprise healthcare process transformation",
+    description: "The enterprise division of B2B Appointment Setting offers healthcare process transformation services combining consulting, technology, and managed operations to help large healthcare organizations optimize clinical and administrative processes at scale.",
+    capabilities: [
+      "Healthcare managed business services",
+      "Clinical process automation & analytics",
+      "Industry-specific healthcare operations",
+      "Enterprise consulting integration",
+      "Population health program support",
+      "Payer-provider coordination services",
+    ],
+    industries: "Health systems, insurance, pharma, clinical research, HR",
+    highlight: "Enterprise healthcare transformation combining consulting with managed operations",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     website: "https://contactcenterusa.com",
@@ -133,7 +151,7 @@ const companies = [
     highlight: "100% US-based agents with 25+ years of healthcare outsourcing experience",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "Canada",
     website: "https://callcentercommunications.com",
@@ -151,7 +169,7 @@ const companies = [
     highlight: "Enterprise-grade healthcare BPO with multilingual capabilities across North America",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     website: "https://businessprocessoutsourcing.info",
@@ -167,24 +185,6 @@ const companies = [
     ],
     industries: "Healthcare, retail, finance, technology",
     highlight: "Digital-first healthcare CX approach with analytics-driven patient engagement",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "Canada",
-    website: "https://www.b2bappointmentsetting.com",
-    bestFor: "Enterprise healthcare process transformation",
-    description: "The enterprise division of B2B Appointment Setting offers healthcare process transformation services combining consulting, technology, and managed operations to help large healthcare organizations optimize clinical and administrative processes at scale.",
-    capabilities: [
-      "Healthcare managed business services",
-      "Clinical process automation & analytics",
-      "Industry-specific healthcare operations",
-      "Enterprise consulting integration",
-      "Population health program support",
-      "Payer-provider coordination services",
-    ],
-    industries: "Health systems, insurance, pharma, clinical research, HR",
-    highlight: "Enterprise healthcare transformation combining consulting with managed operations",
   },
   {
     rank: 11,
@@ -472,7 +472,7 @@ export default function Top15HealthcareBPOContent() {
                 The healthcare BPO landscape in 2026 offers more specialized, technology-driven, and compliance-focused options than ever before. While enterprise giants like Optum, Accenture, and Cognizant dominate through scale and technology budgets, many healthcare organizations achieve <strong>better patient outcomes and stronger ROI</strong> by partnering with specialized providers that offer hands-on execution, flexibility, and deep healthcare expertise.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> stands out as the #1 healthcare BPO provider by combining <strong>full-service healthcare outsourcing, HIPAA-compliant operations, and measurable performance</strong>. Alongside Intelemark for healthcare B2B sales and Call Motivated Sellers for compliance-driven patient support, these top 3 providers deliver results that larger enterprise BPOs often cannot match. For US-based healthcare outsourcing, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) also offers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">patient support</Link>, <Link href="/solutions/back-office-outsourcing" className="text-red font-semibold hover:underline">medical billing</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-driven patient engagement</Link>.
+                <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> stands out as the #1 healthcare BPO provider by combining <strong>full-service healthcare outsourcing, HIPAA-compliant operations, and measurable performance</strong>. Alongside Intelemark for healthcare B2B sales and Call Motivated Sellers for compliance-driven patient support, these top 3 providers deliver results that larger enterprise BPOs often cannot match. For US-based healthcare outsourcing, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) also offers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">patient support</Link>, <Link href="/solutions/back-office-outsourcing" className="text-red font-semibold hover:underline">medical billing</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-driven patient engagement</Link>.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 As healthcare organizations face growing patient expectations, tighter regulations, and mounting cost pressures, the right BPO partner can be the difference between struggling and thriving. Choose a partner that understands healthcare — not just outsourcing.

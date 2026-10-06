@@ -12,10 +12,10 @@ export const TOP_PROVIDERS: { rank: number; name: string; hq: string; bestFor: s
   { rank: 4, name: "Customer Communications Corp", hq: "United States", bestFor: "Scalable customer support programs" },
   { rank: 5, name: "Call Center Staffing", hq: "United States", bestFor: "Seasonal and open-enrollment staffing" },
   { rank: 6, name: "B2B Appointment Setting", hq: "United States", bestFor: "Pipeline development and agent recruitment" },
-  { rank: 7, name: "Contact Center USA", hq: "United States", bestFor: "US-based HIPAA and PCI-compliant support" },
-  { rank: 8, name: "Call Center Communications", hq: "Canada", bestFor: "Enterprise call center operations" },
-  { rank: 9, name: "Business Process Outsourcing", hq: "United States", bestFor: "Digital CX and claims automation" },
-  { rank: 10, name: "B2B Appointment Setting (Enterprise)", hq: "Canada", bestFor: "Large-carrier process transformation" },
+  { rank: 7, name: "B2B Appointment Setting (Enterprise)", hq: "Canada", bestFor: "Large-carrier process transformation" },
+  { rank: 8, name: "Contact Center USA", hq: "United States", bestFor: "US-based HIPAA and PCI-compliant support" },
+  { rank: 9, name: "Call Center Communications", hq: "Canada", bestFor: "Enterprise call center operations" },
+  { rank: 10, name: "Business Process Outsourcing", hq: "United States", bestFor: "Digital CX and claims automation" },
 ];
 
 /**

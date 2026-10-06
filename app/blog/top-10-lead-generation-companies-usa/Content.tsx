@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise sales-development outsourcing and managed demand-gen programs",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American sales-development outsourcing for large B2B companies seeking to consolidate their domestic demand-gen operations with a single trusted US-based partner. Their managed services model covers everything from ICP definition and list building through SDR execution, pipeline management, and sales-intelligence reporting — all delivered by American SDRs and revops professionals working from secure onshore facilities with enterprise-grade sales-tech infrastructure.",
+    services: [
+      "American managed SDR-as-a-service",
+      "US-based enterprise demand-gen consulting",
+      "Domestic sales-development transformation programs",
+      "Onshore pipeline and revenue-operations consolidation",
+      "American program management & SDR governance",
+      "US enterprise sales-tech integration (SFDC, Outreach, Gong)",
+    ],
+    industries: "Enterprise technology, large-scale SaaS, industrial B2B, financial services, healthcare technology",
+    strengths: "Enterprise BPO depth, consulting + managed SDR ops, RevOps sophistication.",
+    weaknesses: "Enterprise-focused; not for SMB or seed-stage startups.",
+    pricing: "Enterprise SOWs with outcome-based blends",
+    clients: "Enterprise B2B brands, global SaaS platforms, large industrial and financial services firms",
+    highlight: "Enterprise American lead generation BPO combining consulting expertise with managed onshore SDR operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American B2B lead generation — never offshored a single SDR conversation, even during scale-up seasons.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American lead generation infrastructure with multi-site US redundancy and dedicated SDR pods.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Per-FTE, per-opportunity, or blended AI + SDR outcome pricing",
     clients: "Modern SaaS companies, fintech platforms, cybersecurity vendors with RevOps maturity",
     highlight: "Digital-first American lead generation combining US-based SDRs with intent data, AI scoring, and marketing automation.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise sales-development outsourcing and managed demand-gen programs",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American sales-development outsourcing for large B2B companies seeking to consolidate their domestic demand-gen operations with a single trusted US-based partner. Their managed services model covers everything from ICP definition and list building through SDR execution, pipeline management, and sales-intelligence reporting — all delivered by American SDRs and revops professionals working from secure onshore facilities with enterprise-grade sales-tech infrastructure.",
-    services: [
-      "American managed SDR-as-a-service",
-      "US-based enterprise demand-gen consulting",
-      "Domestic sales-development transformation programs",
-      "Onshore pipeline and revenue-operations consolidation",
-      "American program management & SDR governance",
-      "US enterprise sales-tech integration (SFDC, Outreach, Gong)",
-    ],
-    industries: "Enterprise technology, large-scale SaaS, industrial B2B, financial services, healthcare technology",
-    strengths: "Enterprise BPO depth, consulting + managed SDR ops, RevOps sophistication.",
-    weaknesses: "Enterprise-focused; not for SMB or seed-stage startups.",
-    pricing: "Enterprise SOWs with outcome-based blends",
-    clients: "Enterprise B2B brands, global SaaS platforms, large industrial and financial services firms",
-    highlight: "Enterprise American lead generation BPO combining consulting expertise with managed onshore SDR operations.",
   },
 ];
 
@@ -358,10 +358,10 @@ export default function Top10LeadGenerationContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -491,7 +491,7 @@ export default function Top10LeadGenerationContent() {
                 The <strong>American B2B lead generation industry</strong> is being reshaped by intent data, AI-assisted SDR workflows, and the shift to outcome-based pricing. SaaS, technology, professional services, and industrial B2B brands win when they partner with US-based lead-gen companies that can deliver trained domestic SDRs, multi-channel fluency, ABM sophistication, and transparent per-meeting reporting.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-funnel American demand-gen practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based sales-development operations</strong>, experienced domestic SDRs, deep Outreach / Salesloft / HubSpot / Salesforce integration, and flexible per-FTE, per-qualified-meeting, and outcome-based pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, or <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>, Contact Center USA is built for the B2B teams that win on pipeline.
+                Global Empire Corporation tops our 2026 ranking with its full-funnel American demand-gen practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based sales-development operations</strong>, experienced domestic SDRs, deep Outreach / Salesloft / HubSpot / Salesforce integration, and flexible per-FTE, per-qualified-meeting, and outcome-based pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, or <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">inside sales outsourcing</Link>, Contact Center USA is built for the B2B teams that win on pipeline.
               </p>
 
               {/* CTA */}
@@ -513,8 +513,8 @@ export default function Top10LeadGenerationContent() {
                 { q: "What is the difference between B2B and B2C lead generation?", a: "B2B lead generation targets business buyers — VPs, directors, and C-suite decision-makers — through multi-touch cadences across phone, email, and LinkedIn, qualifying on BANT (budget, authority, need, timeline). B2C lead generation targets individual consumers, typically through high-volume outbound calling, digital ads, and SMS, optimized for cost-per-lead rather than deal quality. Top American lead-gen companies specialize in one or the other — choose the partner that matches your go-to-market motion." },
                 { q: "What is SDR-as-a-service?", a: "SDR-as-a-service is a fully-managed lead-generation engagement where a US-based provider supplies trained sales-development reps (SDRs) who execute outbound prospecting, inbound MQL qualification, and appointment setting as an extension of your sales team. The SDRs use your CRM and sales-engagement tools (Salesforce, HubSpot, Outreach, Salesloft), follow sequenced cadences, and hand sales-ready meetings to your account executives. Contact Center USA and Global Empire Corporation offer 100% American SDR-as-a-service with per-FTE and per-meeting pricing." },
                 { q: "What is the difference between appointment setting and lead generation?", a: "Lead generation is the full-funnel process of identifying, attracting, and qualifying potential buyers — including inbound MQLs, outbound prospecting, nurturing, and ABM. Appointment setting is a narrower service focused specifically on booking sales-ready meetings between a qualified prospect and your account executive. Most American lead-gen companies offer both, but some specialize in appointment setting only (purely per-meeting pricing) while others deliver full-funnel demand generation." },
-                { q: "What is account-based marketing (ABM) and how does outsourcing help?", a: "Account-based marketing (ABM) is a B2B strategy that targets a defined list of high-value accounts with personalized, multi-threaded outreach across marketing and sales channels. Outsourced ABM providers like Contact Center USA (#7), Global Empire Corporation (#1), and Business Process Outsourcing (#9) execute multi-channel plays — LinkedIn, email, phone, direct mail, and personalized video — across multiple buying-committee stakeholders at each target account, accelerating pipeline creation in enterprise and high-ACV sales motions." },
-                { q: "Which lead generation company integrates best with Salesforce and Outreach?", a: "Contact Center USA (#7) offers native integration with Salesforce, HubSpot, Pipedrive, Outreach, Salesloft, Gong, LinkedIn Sales Navigator, 6sense, and ZoomInfo — letting US-based SDRs run cadences inside your existing sales-tech stack and log every activity directly to your CRM. Global Empire Corporation (#1) and Business Process Outsourcing (#9) also integrate well for enterprise-scale SDR-as-a-service and ABM engagements." },
+                { q: "What is account-based marketing (ABM) and how does outsourcing help?", a: "Account-based marketing (ABM) is a B2B strategy that targets a defined list of high-value accounts with personalized, multi-threaded outreach across marketing and sales channels. Outsourced ABM providers like Contact Center USA (#8), Global Empire Corporation (#1), and Business Process Outsourcing (#10) execute multi-channel plays — LinkedIn, email, phone, direct mail, and personalized video — across multiple buying-committee stakeholders at each target account, accelerating pipeline creation in enterprise and high-ACV sales motions." },
+                { q: "Which lead generation company integrates best with Salesforce and Outreach?", a: "Contact Center USA (#8) offers native integration with Salesforce, HubSpot, Pipedrive, Outreach, Salesloft, Gong, LinkedIn Sales Navigator, 6sense, and ZoomInfo — letting US-based SDRs run cadences inside your existing sales-tech stack and log every activity directly to your CRM. Global Empire Corporation (#1) and Business Process Outsourcing (#10) also integrate well for enterprise-scale SDR-as-a-service and ABM engagements." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

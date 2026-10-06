@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise appointment setting outsourcing and managed SDR programs",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American enterprise appointment setting outsourcing for large organizations seeking to consolidate their SDR function with a single trusted US-based partner. Their managed-SDR model covers everything from persona research and account-based targeting to multichannel cadence execution and full sales appointment setting services — all delivered by American appointment setters working from secure onshore facilities. A strong fit for enterprise appointment setting programs that need 25-100+ SDRs, strict governance, and integration with enterprise revenue stacks (Salesforce, Outreach, 6sense, Demandbase).",
+    services: [
+      "American managed-SDR enterprise programs",
+      "US-based enterprise appointment setting consulting",
+      "Account-based multichannel cadence design",
+      "Onshore back-office sales operations",
+      "American SDR program management & governance",
+      "US enterprise revenue-stack integration",
+    ],
+    industries: "Enterprise SaaS, consulting, financial services, healthcare systems, manufacturing",
+    strengths: "Enterprise SDR depth, consulting + managed outbound, strong governance.",
+    weaknesses: "Enterprise-focused; not for SMB pay-per-appointment buyers.",
+    pricing: "Enterprise SOWs, per-SDR at volume, outcome-based blends",
+    clients: "Enterprise SaaS, global consulting firms, national financial institutions",
+    highlight: "Enterprise American B2B appointment setting outsourcing combining consulting expertise with managed onshore SDR operations for large revenue teams.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American appointment setting services — never offshored a single dial, with a written qualified-meeting definition and replacement guarantee on every program.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American appointment setting companies with multi-site US redundancy and dedicated SDR pods for Fortune 500-scale enterprise appointment setting programs.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Per-SDR retainer, per-outcome, or blended AI + human SDR",
     clients: "Modern SaaS, fintech, cybersecurity vendors, HR tech platforms",
     highlight: "Digital-first American appointment setting services combining US-based SDRs with conversation intelligence, intent data, and AI-driven cadence optimization.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise appointment setting outsourcing and managed SDR programs",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American enterprise appointment setting outsourcing for large organizations seeking to consolidate their SDR function with a single trusted US-based partner. Their managed-SDR model covers everything from persona research and account-based targeting to multichannel cadence execution and full sales appointment setting services — all delivered by American appointment setters working from secure onshore facilities. A strong fit for enterprise appointment setting programs that need 25-100+ SDRs, strict governance, and integration with enterprise revenue stacks (Salesforce, Outreach, 6sense, Demandbase).",
-    services: [
-      "American managed-SDR enterprise programs",
-      "US-based enterprise appointment setting consulting",
-      "Account-based multichannel cadence design",
-      "Onshore back-office sales operations",
-      "American SDR program management & governance",
-      "US enterprise revenue-stack integration",
-    ],
-    industries: "Enterprise SaaS, consulting, financial services, healthcare systems, manufacturing",
-    strengths: "Enterprise SDR depth, consulting + managed outbound, strong governance.",
-    weaknesses: "Enterprise-focused; not for SMB pay-per-appointment buyers.",
-    pricing: "Enterprise SOWs, per-SDR at volume, outcome-based blends",
-    clients: "Enterprise SaaS, global consulting firms, national financial institutions",
-    highlight: "Enterprise American B2B appointment setting outsourcing combining consulting expertise with managed onshore SDR operations for large revenue teams.",
   },
 ];
 
@@ -359,10 +359,10 @@ export default function Top10AppointmentSettingContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -492,7 +492,7 @@ export default function Top10AppointmentSettingContent() {
                 The <strong>American appointment setting industry</strong> is being reshaped by multichannel cadences, AI-powered dialing, and the rise of outcome-based pricing tied to qualified meetings. SaaS, insurance, financial services, medical device, and manufacturing brands win when they partner with US-based <strong>outsourced appointment setters</strong> that combine senior SDR quality with tight Salesforce, HubSpot, Outreach, and SalesLoft integration.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American <strong>appointment setting services</strong>, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based SDR appointment setting</strong>, a written qualified-meeting definition, a replacement guarantee, and full multichannel cadence execution across cold calling appointment setting, LinkedIn appointment setting, and email. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link> for SaaS, enterprise, or insurance appointment setting, Contact Center USA is built for the revenue teams that need qualified pipeline, not just dial activity.
+                Global Empire Corporation tops our 2026 ranking with its full-service American <strong>appointment setting services</strong>, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based SDR appointment setting</strong>, a written qualified-meeting definition, a replacement guarantee, and full multichannel cadence execution across cold calling appointment setting, LinkedIn appointment setting, and email. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link> for SaaS, enterprise, or insurance appointment setting, Contact Center USA is built for the revenue teams that need qualified pipeline, not just dial activity.
               </p>
 
               {/* CTA */}
@@ -512,10 +512,10 @@ export default function Top10AppointmentSettingContent() {
               {[
                 { q: "What affects the scope of an appointment setting program?", a: "The right program depends on your ICP, market, sales cycle, target job titles, outreach channels, CRM workflow, meeting target, qualification standard, and reporting needs. Contact Center USA scopes each program around those requirements rather than offering a one-size-fits-all package." },
                 { q: "What is the difference between B2B and B2C appointment setting?", a: "B2B appointment setting companies target business decision-makers — usually booking discovery meetings for a sales rep to pitch SaaS, professional services, insurance, or enterprise technology. B2B programs tend to have fewer, more complex meetings and longer sales cycles. B2C appointment setting for insurance, home services, financial advisors, and solar is higher-volume, TCPA-compliant, and optimized for show rate and close-at-appointment. Most outsourced appointment setters specialize in one or the other — few do both well." },
-                { q: "Do appointment setting companies handle SaaS appointment setting?", a: "Yes — SaaS appointment setting is one of the largest segments of B2B appointment setting outsourcing in the US. Top American appointment setting agencies like Contact Center USA (#7), Global Empire Corporation (#1), and Intelemark (#2) run dedicated SaaS pods with SDRs trained on SaaS personas (VP Sales, VP Marketing, CIO, CFO), buying committees, competitive landscapes, and common objections. They integrate natively with Salesforce, HubSpot, Outreach, and SalesLoft so every call and LinkedIn touch from the outsourced appointment setters flows directly into your CRM." },
-                { q: "How does insurance appointment setting work?", a: "Insurance appointment setting is a specialized high-volume vertical. US-based appointment setters dial homeowners, Medicare-eligible seniors, small businesses, or commercial prospects and book phone or in-home appointments for licensed agents. Programs are strictly TCPA-compliant (do-not-call scrubbing, consented calling hours, call recording) and priced per-appointment ($50-$150 for standard P&C or Medicare, up to $350 for final expense or commercial). Call Motivated Sellers (#3) and Contact Center USA (#7) are among the strongest American insurance appointment setting providers." },
-                { q: "Do outsourced appointment setters integrate with Salesforce, HubSpot, Outreach, and SalesLoft?", a: "Yes — native CRM and SEP integration is now table-stakes at any serious American B2B appointment setting company. Top providers work directly inside your Salesforce or HubSpot instance (not a parallel CRM) and execute cadences in your Outreach, SalesLoft, or Apollo account. This means every dial, email, LinkedIn touch, and booked meeting flows into your pipeline reporting, attribution, and opportunity data in real time. Contact Center USA (#7) and Global Empire Corporation (#1) are the strongest on full multi-tool integration." },
-                { q: "Do appointment setting agencies guarantee qualified meetings?", a: "Top American appointment setting agencies guarantee qualified meetings against a written qualified-meeting definition — typically covering persona/title, company size, industry, identified pain, buying timeline, and budget authority. If a meeting no-shows or fails to meet the criteria, the provider replaces it at no cost. Beware of any appointment setting company that will not put a qualified-meeting definition and replacement policy in writing — unqualified or no-show meetings are the single biggest waste in B2B appointment setting outsourcing. Contact Center USA (#7) includes a written qualified-meeting definition and replacement guarantee on every program." },
+                { q: "Do appointment setting companies handle SaaS appointment setting?", a: "Yes — SaaS appointment setting is one of the largest segments of B2B appointment setting outsourcing in the US. Top American appointment setting agencies like Contact Center USA (#8), Global Empire Corporation (#1), and Intelemark (#2) run dedicated SaaS pods with SDRs trained on SaaS personas (VP Sales, VP Marketing, CIO, CFO), buying committees, competitive landscapes, and common objections. They integrate natively with Salesforce, HubSpot, Outreach, and SalesLoft so every call and LinkedIn touch from the outsourced appointment setters flows directly into your CRM." },
+                { q: "How does insurance appointment setting work?", a: "Insurance appointment setting is a specialized high-volume vertical. US-based appointment setters dial homeowners, Medicare-eligible seniors, small businesses, or commercial prospects and book phone or in-home appointments for licensed agents. Programs are strictly TCPA-compliant (do-not-call scrubbing, consented calling hours, call recording) and priced per-appointment ($50-$150 for standard P&C or Medicare, up to $350 for final expense or commercial). Call Motivated Sellers (#3) and Contact Center USA (#8) are among the strongest American insurance appointment setting providers." },
+                { q: "Do outsourced appointment setters integrate with Salesforce, HubSpot, Outreach, and SalesLoft?", a: "Yes — native CRM and SEP integration is now table-stakes at any serious American B2B appointment setting company. Top providers work directly inside your Salesforce or HubSpot instance (not a parallel CRM) and execute cadences in your Outreach, SalesLoft, or Apollo account. This means every dial, email, LinkedIn touch, and booked meeting flows into your pipeline reporting, attribution, and opportunity data in real time. Contact Center USA (#8) and Global Empire Corporation (#1) are the strongest on full multi-tool integration." },
+                { q: "Do appointment setting agencies guarantee qualified meetings?", a: "Top American appointment setting agencies guarantee qualified meetings against a written qualified-meeting definition — typically covering persona/title, company size, industry, identified pain, buying timeline, and budget authority. If a meeting no-shows or fails to meet the criteria, the provider replaces it at no cost. Beware of any appointment setting company that will not put a qualified-meeting definition and replacement policy in writing — unqualified or no-show meetings are the single biggest waste in B2B appointment setting outsourcing. Contact Center USA (#8) includes a written qualified-meeting definition and replacement guarantee on every program." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

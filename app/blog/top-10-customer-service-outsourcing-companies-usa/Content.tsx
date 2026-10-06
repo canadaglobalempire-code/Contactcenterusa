@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise customer service and process outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American business process outsourcing for large organizations seeking to consolidate their domestic customer service operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed customer service",
+      "US-based enterprise process consulting",
+      "Domestic operations transformation programs",
+      "Onshore back-office consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
+    ],
+    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
+    strengths: "Enterprise BPO depth, consulting + managed ops.",
+    weaknesses: "Enterprise-focused; not for SMBs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Large healthcare systems, insurance carriers, financial institutions",
+    highlight: "Enterprise American customer service BPO combining consulting expertise with managed onshore operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American customer service operations — never offshored a single contact.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American customer service infrastructure with multi-site US redundancy and dedicated teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern DTC brands, SaaS, fintech, digital-first retailers",
     highlight: "Digital-first American CX combining US-based agents with AI-powered automation and analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise customer service and process outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American business process outsourcing for large organizations seeking to consolidate their domestic customer service operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed customer service",
-      "US-based enterprise process consulting",
-      "Domestic operations transformation programs",
-      "Onshore back-office consolidation",
-      "American program management & governance",
-      "US enterprise technology integration",
-    ],
-    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
-    strengths: "Enterprise BPO depth, consulting + managed ops.",
-    weaknesses: "Enterprise-focused; not for SMBs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Large healthcare systems, insurance carriers, financial institutions",
-    highlight: "Enterprise American customer service BPO combining consulting expertise with managed onshore operations.",
   },
 ];
 
@@ -358,10 +358,10 @@ export default function Top10CustomerServiceOutsourcingContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -491,7 +491,7 @@ export default function Top10CustomerServiceOutsourcingContent() {
                 <strong>Customer service outsourcing in the USA</strong> has matured into a strategic function that shapes customer loyalty, retention, and brand equity. The winners in 2026 are American providers that combine US-based delivery, AI-enabled tooling, omnichannel fluency, and transparent outcome-based pricing — not providers that still compete purely on hourly cost.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation leads our 2026 ranking with its full-service American CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based customer service operations</strong>, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and an omnichannel delivery model tuned for mid-market and enterprise brands. Whether you need <Link href="/services/customer-care-outsourcing" className="text-red font-semibold hover:underline">customer care outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat support</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce CX outsourcing</Link>, Contact Center USA is built for brands that win on customer experience.
+                Global Empire Corporation leads our 2026 ranking with its full-service American CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based customer service operations</strong>, PCI DSS / SOC 2 / HIPAA-aligned infrastructure, and an omnichannel delivery model tuned for mid-market and enterprise brands. Whether you need <Link href="/services/customer-care-outsourcing" className="text-red font-semibold hover:underline">customer care outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat support</Link>, <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce CX outsourcing</Link>, Contact Center USA is built for brands that win on customer experience.
               </p>
 
               {/* CTA */}
@@ -513,7 +513,7 @@ export default function Top10CustomerServiceOutsourcingContent() {
                 { q: "How much does customer service outsourcing cost in 2026?", a: "US-based customer service outsourcing typically costs $22-$40 per agent-hour for voice and $1.50-$4 per contact for chat and email. Offshore can be $8-$15 per hour but CSAT is usually 20-40% lower. Outcome-based pricing tied to CSAT, retention, and first-contact resolution is rising fast at top American providers, with blended effective rates often comparable to hourly US pricing." },
                 { q: "Should I outsource customer service or keep it in-house?", a: "Outsource when you need 24/7 coverage, rapid scaling, omnichannel expertise, or cost efficiency without sacrificing quality. Keep in-house when customer service is your primary differentiator and you can invest heavily in training and technology. Most mid-market and enterprise brands use a hybrid model — in-house for Tier 2/3 and specialist work, outsourced for Tier 1, overflow, and after-hours." },
                 { q: "How do I know if a customer service outsourcing company is right for my brand?", a: "Start with a 30-90 day pilot. Measure CSAT, first-contact resolution, AHT, and retention impact against your existing baseline. Verify US-based delivery (if required), compliance certifications, and that their technology integrates with your CRM, helpdesk, and knowledge base. Check client references in your industry, and evaluate their coaching and QA cadence before scaling." },
-                { q: "Which customer service outsourcing company is best for ecommerce brands?", a: "For ecommerce, Contact Center USA (#7) is the strongest patriotic choice because of its omnichannel delivery (voice, chat, email, social), US-based agents, rapid scaling for peak seasons like Black Friday and Cyber Monday, and proven experience across DTC, subscription, and marketplace brands. Global Empire Corporation (#1) and Customer Communications Corp (#4) are also excellent American options for growing ecommerce operations." },
+                { q: "Which customer service outsourcing company is best for ecommerce brands?", a: "For ecommerce, Contact Center USA (#8) is the strongest patriotic choice because of its omnichannel delivery (voice, chat, email, social), US-based agents, rapid scaling for peak seasons like Black Friday and Cyber Monday, and proven experience across DTC, subscription, and marketplace brands. Global Empire Corporation (#1) and Customer Communications Corp (#4) are also excellent American options for growing ecommerce operations." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

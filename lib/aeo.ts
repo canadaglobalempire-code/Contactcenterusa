@@ -125,7 +125,7 @@ export function buildTopNBlogFAQs(topic: string, topicShort: string) {
   return [
     {
       question: `What are the top ${topicShort} companies in the USA?`,
-      answer: `The top 10 ${topic} companies in the USA for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), Contact Center USA (#7), Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10). Each was evaluated on compliance, US-based delivery, technology, and client outcomes.`,
+      answer: `The top 10 ${topic} companies in the USA for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), B2B Appointment Setting Enterprise (#7), Contact Center USA (#8), Call Center Communications (#9), and Business Process Outsourcing (#10). Each was evaluated on compliance, US-based delivery, technology, and client outcomes.`,
     },
     {
       question: `What should buyers compare when choosing ${topicShort} outsourcing companies?`,
@@ -145,7 +145,7 @@ export function buildTopNBlogFAQs(topic: string, topicShort: string) {
     },
     {
       question: `Which ${topicShort} company is best for small business vs enterprise?`,
-      answer: `For small business, B2B Appointment Setting (#6), Customer Communications Corp (#4), and Call Center Staffing (#5) offer SMB-friendly programs. For enterprise, Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10) deliver Fortune 500 scale. Contact Center USA (#7) serves both with flexible models, 25+ years of US-based operations, and SOC 2 Type II compliance.`,
+      answer: `For small business, B2B Appointment Setting (#6), Customer Communications Corp (#4), and Call Center Staffing (#5) offer SMB-friendly programs. For enterprise, Call Center Communications (#9), Business Process Outsourcing (#10), and B2B Appointment Setting Enterprise (#7) deliver Fortune 500 scale. Contact Center USA (#8) serves both with flexible models, 25+ years of US-based operations, and SOC 2 Type II compliance.`,
     },
   ];
 }

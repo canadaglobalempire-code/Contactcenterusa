@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Established SMBs graduating to larger-scale US-based sales operations",
+    description:
+      "The enterprise division of B2B Appointment Setting serves established small businesses that have outgrown pure-SMB providers and need more structured US-based sales operations — without fully committing to an enterprise contract. For growing small businesses that have validated their product and now need to scale pipeline, their managed sales programs combine US-based agents, structured process, and reporting typically reserved for mid-market — at SMB-accessible pricing. A strong bridge between entrepreneur call center services and true enterprise BPO.",
+    services: [
+      "Graduated small business sales outsourcing",
+      "US-based managed SMB commerce programs",
+      "Structured reporting for growing small business",
+      "Onshore back-office SMB support",
+      "Dedicated US agents for established SMBs",
+      "Outcome-based growing small business pricing",
+    ],
+    industries: "Established SMBs, scaling startups, mid-market B2B, growing DTC small business",
+    strengths: "Best bridge from SMB to mid-market, structured process, US-based managed operations.",
+    weaknesses: "More structured than pure-SMB providers; less ideal for solo founders just starting out.",
+    pricing: "Outcome-based and retainer blends",
+    clients: "Scaling SMBs, established small businesses graduating to mid-market",
+    highlight: "Best bridge from small business call center to mid-market — US-based managed sales operations for growing SMBs that need structure without enterprise contracts.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American small business call center services — no minimums, no setup fees, 24/7 US-based agents, and pay-as-you-go pricing built for entrepreneurs, solo founders, and growing SMBs.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Most reliable established US small business answering service with deep overflow capacity and multi-site redundancy.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hybrid AI + agent blended pricing",
     clients: "Digital-first SMBs, SaaS startups, fintech small business",
     highlight: "Best AI-enhanced small business call center — cutting cost-per-contact for startups with hybrid US agent and AI small business telephone answering.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Established SMBs graduating to larger-scale US-based sales operations",
-    description:
-      "The enterprise division of B2B Appointment Setting serves established small businesses that have outgrown pure-SMB providers and need more structured US-based sales operations — without fully committing to an enterprise contract. For growing small businesses that have validated their product and now need to scale pipeline, their managed sales programs combine US-based agents, structured process, and reporting typically reserved for mid-market — at SMB-accessible pricing. A strong bridge between entrepreneur call center services and true enterprise BPO.",
-    services: [
-      "Graduated small business sales outsourcing",
-      "US-based managed SMB commerce programs",
-      "Structured reporting for growing small business",
-      "Onshore back-office SMB support",
-      "Dedicated US agents for established SMBs",
-      "Outcome-based growing small business pricing",
-    ],
-    industries: "Established SMBs, scaling startups, mid-market B2B, growing DTC small business",
-    strengths: "Best bridge from SMB to mid-market, structured process, US-based managed operations.",
-    weaknesses: "More structured than pure-SMB providers; less ideal for solo founders just starting out.",
-    pricing: "Outcome-based and retainer blends",
-    clients: "Scaling SMBs, established small businesses graduating to mid-market",
-    highlight: "Best bridge from small business call center to mid-market — US-based managed sales operations for growing SMBs that need structure without enterprise contracts.",
   },
 ];
 
@@ -339,10 +339,10 @@ export default function Top10SmallBusinessCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -397,7 +397,7 @@ export default function Top10SmallBusinessCallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.rank === 7 ? (
+                  {company.name === "Contact Center USA" ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
@@ -472,7 +472,7 @@ export default function Top10SmallBusinessCallCenterContent() {
                 The <strong>American small business call center industry</strong> has been transformed by pay-as-you-go pricing, no-minimum contracts, and SMB-first onboarding. Entrepreneurs, solo founders, and growing small businesses now have access to professional <strong>small business answering service</strong> solutions, <strong>24/7 answering service for small business</strong> coverage, and full <strong>outsourced customer service for small business</strong> — all without enterprise contracts, setup fees, or offshore agents.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service SMB-first practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice for small business — combining <strong>25+ years of US-based operations</strong>, month-to-month contracts, no minimums, no setup fees, pay-as-you-go per-minute pricing, and 24/7 coverage. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services for small business</Link>, after-hours overflow, or full startup customer support outsourcing, Contact Center USA is built from day one for entrepreneurs, solo founders, and growing SMBs.
+                Global Empire Corporation tops our 2026 ranking with its full-service SMB-first practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice for small business — combining <strong>25+ years of US-based operations</strong>, month-to-month contracts, no minimums, no setup fees, pay-as-you-go per-minute pricing, and 24/7 coverage. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services for small business</Link>, after-hours overflow, or full startup customer support outsourcing, Contact Center USA is built from day one for entrepreneurs, solo founders, and growing SMBs.
               </p>
 
               {/* CTA */}
@@ -495,7 +495,7 @@ export default function Top10SmallBusinessCallCenterContent() {
                 { q: "Can I get a call center service for small business on a month-to-month contract with no minimums?", a: "Absolutely. The best entrepreneur call center services in 2026 offer true month-to-month contracts with no minimums, no setup fees, and no long-term commitments. You should never sign a 12-month or 24-month lock-in as a small business owner. Contact Center USA, Global Empire Corporation, and several other top-ranked providers in this guide offer fully SMB-friendly contracts where you can cancel any time and only pay for the minutes you use." },
                 { q: "Can a small business call center handle my overflow and after-hours calls?", a: "Yes — overflow and after-hours coverage is the single most common use case for small business telephone answering services. Your main line stays as-is; calls only roll to the outsourced small business call center when you are busy, closed, or unavailable. This lets entrepreneurs and solo founders offer 24/7 customer experience at a fraction of the cost of hiring full-time staff, typically for $99-$399/month in overflow volume." },
                 { q: "What's the difference between a small business call center and an enterprise call center?", a: "Small business call centers are purpose-built for SMBs with pay-as-you-go pricing, no minimums, no setup fees, month-to-month contracts, and 48-72 hour onboarding — typically $0.85-$1.50 per minute or $199-$499/month flat-rate plans. Enterprise call centers require 6-12 week onboarding, dedicated agent teams, multi-year contracts, and minimum volume commitments (usually 10+ FTEs / $25K+ per month). For startups, solo founders, and growing SMBs, a true small business call center is dramatically more cost-effective and flexible." },
-                { q: "Do small business call centers integrate with Shopify, Square, Stripe, and QuickBooks?", a: "Yes. Top US-based small business call centers now integrate natively with Shopify, Square, Stripe, QuickBooks, HubSpot, Google Workspace, and most modern SMB SaaS tools — letting US-based agents see orders, invoices, and customer history in real time. This is standard at Contact Center USA (#7), Global Empire Corporation (#1), and Customer Communications Corp (#4), and it means most small businesses can go live with outsourced customer service for small business in 48-72 hours." },
+                { q: "Do small business call centers integrate with Shopify, Square, Stripe, and QuickBooks?", a: "Yes. Top US-based small business call centers now integrate natively with Shopify, Square, Stripe, QuickBooks, HubSpot, Google Workspace, and most modern SMB SaaS tools — letting US-based agents see orders, invoices, and customer history in real time. This is standard at Contact Center USA (#8), Global Empire Corporation (#1), and Customer Communications Corp (#4), and it means most small businesses can go live with outsourced customer service for small business in 48-72 hours." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

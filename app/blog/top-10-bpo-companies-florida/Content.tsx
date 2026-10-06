@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Florida enterprise BPO consulting and managed back-office operations",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive managed BPO services for large Florida buyers — statewide insurance carriers, multi-hospital health systems, and enterprise hospitality groups — that want to consolidate sales operations, customer support, and back-office processing under a single US-based partner. The model wraps consulting, program management, and managed operations into a unified governance layer with FTSA-aware outbound, FIPA-aligned data handling, and hurricane-resilient infrastructure baked in.",
+    services: [
+      "Managed BPO services for Florida enterprises",
+      "Enterprise process consulting and transformation",
+      "Back-office consolidation and shared services",
+      "FTSA + FIPA governance baked into operations",
+      "Hurricane-resilient enterprise infrastructure",
+      "Program management with US-based teams",
+    ],
+    industries: "Statewide insurance, multi-hospital health systems, enterprise hospitality, large consumer brands",
+    strengths: "Enterprise BPO depth, consulting + managed ops, Florida-aware governance.",
+    weaknesses: "Enterprise-focused; not for SMB Miami fintech or DTC brands.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Statewide Florida insurers, multi-hospital systems, large hospitality groups",
+    highlight: "Enterprise Florida BPO combining consulting expertise with managed onshore operations and FTSA-aware governance.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American CX — never offshored a single contact, even during a Cat-5 landfall.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade Florida CX with multi-site US redundancy built for cruise-line, theme-park, and statewide insurance programs.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Miami fintech, Orlando proptech, Florida healthcare networks, modern DTC brands",
     highlight: "Digital-first Florida CX combining US-based agents with AI automation tuned for fintech, proptech, and healthcare.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Florida enterprise BPO consulting and managed back-office operations",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive managed BPO services for large Florida buyers — statewide insurance carriers, multi-hospital health systems, and enterprise hospitality groups — that want to consolidate sales operations, customer support, and back-office processing under a single US-based partner. The model wraps consulting, program management, and managed operations into a unified governance layer with FTSA-aware outbound, FIPA-aligned data handling, and hurricane-resilient infrastructure baked in.",
-    services: [
-      "Managed BPO services for Florida enterprises",
-      "Enterprise process consulting and transformation",
-      "Back-office consolidation and shared services",
-      "FTSA + FIPA governance baked into operations",
-      "Hurricane-resilient enterprise infrastructure",
-      "Program management with US-based teams",
-    ],
-    industries: "Statewide insurance, multi-hospital health systems, enterprise hospitality, large consumer brands",
-    strengths: "Enterprise BPO depth, consulting + managed ops, Florida-aware governance.",
-    weaknesses: "Enterprise-focused; not for SMB Miami fintech or DTC brands.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Statewide Florida insurers, multi-hospital systems, large hospitality groups",
-    highlight: "Enterprise Florida BPO combining consulting expertise with managed onshore operations and FTSA-aware governance.",
   },
 ];
 
@@ -336,10 +336,10 @@ export default function Top10BPOFloridaContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -558,7 +558,7 @@ export default function Top10BPOFloridaContent() {
                 The <strong>Florida BPO market</strong> is being reshaped by FTSA litigation pressure, the Miami fintech boom, hurricane-driven CX surge demand, and aggressive Latin American nearshore competition. Florida buyers — property insurers, health plans, theme parks, cruise lines, fintech firms, real-estate investors, and retiree-services brands — win when they partner with a BPO that masters the Florida Telephone Solicitation Act, operates a defensible hurricane disaster-recovery plan, fields Miami-Dade-grade Spanish bilingual coverage, and offers a clean nearshore complement to onshore delivery.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 Florida ranking with end-to-end FTSA-compliant, hurricane-ready, bilingual CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice for Florida buyers — combining <strong>25+ years of US-based contact center operations</strong>, deep FTSA mastery, FIPA-aligned data handling, hurricane disaster recovery, native Spanish and Haitian Creole desks, and dedicated brand-aligned teams for property insurance, healthcare, hospitality, cruise lines, and Miami fintech. Whether you need <Link href="/call-center-services-jacksonville" className="text-red font-semibold hover:underline">Jacksonville call center services</Link>, FTSA-clean Miami outbound, or hurricane-ready statewide insurance FNOL, Contact Center USA is built for the brands that can't afford a single Florida misstep.
+                Global Empire Corporation tops our 2026 Florida ranking with end-to-end FTSA-compliant, hurricane-ready, bilingual CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice for Florida buyers — combining <strong>25+ years of US-based contact center operations</strong>, deep FTSA mastery, FIPA-aligned data handling, hurricane disaster recovery, native Spanish and Haitian Creole desks, and dedicated brand-aligned teams for property insurance, healthcare, hospitality, cruise lines, and Miami fintech. Whether you need <Link href="/call-center-services-jacksonville" className="text-red font-semibold hover:underline">Jacksonville call center services</Link>, FTSA-clean Miami outbound, or hurricane-ready statewide insurance FNOL, Contact Center USA is built for the brands that can't afford a single Florida misstep.
               </p>
 
               {/* CTA */}

@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise plumbing-group BPO — back-office, dispatch, and commercial sales operations",
+    description:
+      "The enterprise division of B2B Appointment Setting handles end-to-end plumbing-group BPO for large operators — dispatch, after-hours answering, commercial sales operations, accounts-receivable follow-up, and back-office data entry — all from American facilities. For PE-backed plumbing platforms and multi-state plumbing groups consolidating their non-trade operations into a single onshore partner, this is the most comprehensive option. Their managed-services model layers consulting, technology integration, and US-based agent delivery into a single accountable contract.",
+    services: [
+      "End-to-end US plumbing-group BPO",
+      "Back-office and accounts-receivable management",
+      "Commercial sales operations for plumbing roll-ups",
+      "Onshore process consulting and operations transformation",
+      "US enterprise field-service-software integration",
+      "Plumbing-group program management and governance",
+    ],
+    industries: "PE-backed plumbing platforms, large multi-state plumbing groups, mechanical contractor roll-ups",
+    strengths: "Enterprise BPO depth, consulting plus managed ops, full plumbing back-office coverage.",
+    weaknesses: "Enterprise-focused; not for single-shop plumbers.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "PE-backed plumbing platforms, large plumbing roll-ups, multi-state mechanical groups",
+    highlight: "Enterprise US plumbing BPO combining consulting, dispatch, commercial sales ops, and back-office under one onshore contract.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American plumbing answering — every emergency triaged in the US, every dispatch written into your ServiceTitan or Housecall Pro calendar live.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade US plumbing dispatch for franchise networks and PE-backed plumbing roll-ups that need branded, multi-state coverage.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern plumbing shops, smart-home water-management partners, multi-channel plumbing groups",
     highlight: "AI-augmented US plumbing answering with smart-leak-sensor integrations — turns Moen Flo and Phyn alerts into booked service jobs.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise plumbing-group BPO — back-office, dispatch, and commercial sales operations",
-    description:
-      "The enterprise division of B2B Appointment Setting handles end-to-end plumbing-group BPO for large operators — dispatch, after-hours answering, commercial sales operations, accounts-receivable follow-up, and back-office data entry — all from American facilities. For PE-backed plumbing platforms and multi-state plumbing groups consolidating their non-trade operations into a single onshore partner, this is the most comprehensive option. Their managed-services model layers consulting, technology integration, and US-based agent delivery into a single accountable contract.",
-    services: [
-      "End-to-end US plumbing-group BPO",
-      "Back-office and accounts-receivable management",
-      "Commercial sales operations for plumbing roll-ups",
-      "Onshore process consulting and operations transformation",
-      "US enterprise field-service-software integration",
-      "Plumbing-group program management and governance",
-    ],
-    industries: "PE-backed plumbing platforms, large multi-state plumbing groups, mechanical contractor roll-ups",
-    strengths: "Enterprise BPO depth, consulting plus managed ops, full plumbing back-office coverage.",
-    weaknesses: "Enterprise-focused; not for single-shop plumbers.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "PE-backed plumbing platforms, large plumbing roll-ups, multi-state mechanical groups",
-    highlight: "Enterprise US plumbing BPO combining consulting, dispatch, commercial sales ops, and back-office under one onshore contract.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10PlumbingAnsweringServiceContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -544,7 +544,7 @@ export default function Top10PlumbingAnsweringServiceContent() {
                 The <strong>US plumbing answering service industry</strong> has matured well past basic message-taking. The shops that win in 2026 partner with US-based providers that triage emergencies correctly in 60 seconds, write live work orders into ServiceTitan or Housecall Pro before the call ends, page on-call technicians only when warranted, and cover Spanish bilingual 24/7 in the markets where it matters. Every other shop is donating jobs to the next plumber on Google.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American plumbing answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based dispatch operations</strong>, deep integration with ServiceTitan, Housecall Pro, Jobber, and FieldEdge, 24/7 Spanish bilingual coverage, on-call rotation paging, and per-call, per-minute, and per-booked-appointment pricing options. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound plumbing call center services</Link> or you also work property-management and commercial accounts via <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate call center services</Link>, Contact Center USA is built for the plumbing shops that book every emergency.
+                Global Empire Corporation tops our 2026 ranking with its full-service American plumbing answering practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based dispatch operations</strong>, deep integration with ServiceTitan, Housecall Pro, Jobber, and FieldEdge, 24/7 Spanish bilingual coverage, on-call rotation paging, and per-call, per-minute, and per-booked-appointment pricing options. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound plumbing call center services</Link> or you also work property-management and commercial accounts via <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate call center services</Link>, Contact Center USA is built for the plumbing shops that book every emergency.
               </p>
 
               {/* CTA */}

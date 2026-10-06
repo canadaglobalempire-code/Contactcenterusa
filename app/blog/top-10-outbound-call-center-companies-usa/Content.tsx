@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise outbound process outsourcing and managed sales operations",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American outbound process outsourcing for large brands seeking to consolidate their domestic outbound sales operations with a single trusted US-based partner. Their managed services model covers everything from outbound SDR teams and appointment setting to sales operations consulting and CRM administration — all delivered by American professionals working from secure onshore facilities with enterprise-grade dialer and compliance infrastructure.",
+    services: [
+      "American managed outbound services",
+      "US-based enterprise outbound process consulting",
+      "Domestic outbound operations transformation",
+      "Onshore outbound SDR team consolidation",
+      "American outbound program management & governance",
+      "US enterprise outbound technology integration",
+    ],
+    industries: "Enterprise B2B, insurance, financial services, telecom, large consumer brands",
+    strengths: "Enterprise outbound BPO depth, consulting + managed outbound ops.",
+    weaknesses: "Enterprise-focused; not for SMBs or mid-market outbound programs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise B2B brands, insurers, telecoms, large consumer brands",
+    highlight: "Enterprise American outbound BPO combining consulting expertise with managed onshore outbound sales operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American outbound — never offshored a single outbound campaign, with zero TCPA violations in program history.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American outbound infrastructure with multi-site US redundancy and dedicated outbound teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern DTC brands, fintech companies, insurtech startups, digital-first B2B SaaS",
     highlight: "Digital-first American outbound combining US-based agents with AI-powered dialers, intent scoring, and predictive analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise outbound process outsourcing and managed sales operations",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American outbound process outsourcing for large brands seeking to consolidate their domestic outbound sales operations with a single trusted US-based partner. Their managed services model covers everything from outbound SDR teams and appointment setting to sales operations consulting and CRM administration — all delivered by American professionals working from secure onshore facilities with enterprise-grade dialer and compliance infrastructure.",
-    services: [
-      "American managed outbound services",
-      "US-based enterprise outbound process consulting",
-      "Domestic outbound operations transformation",
-      "Onshore outbound SDR team consolidation",
-      "American outbound program management & governance",
-      "US enterprise outbound technology integration",
-    ],
-    industries: "Enterprise B2B, insurance, financial services, telecom, large consumer brands",
-    strengths: "Enterprise outbound BPO depth, consulting + managed outbound ops.",
-    weaknesses: "Enterprise-focused; not for SMBs or mid-market outbound programs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise B2B brands, insurers, telecoms, large consumer brands",
-    highlight: "Enterprise American outbound BPO combining consulting expertise with managed onshore outbound sales operations.",
   },
 ];
 
@@ -337,10 +337,10 @@ export default function Top10OutboundCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -471,7 +471,7 @@ export default function Top10OutboundCallCenterContent() {
                 The <strong>American outbound call center industry</strong> is being reshaped by AI intent scoring, tightening TCPA enforcement, and the shift to outcome-based pricing. B2B and B2C brands win when they partner with US-based outsourcers that combine mature TCPA compliance, advanced predictive dialers, native CRM and sales engagement integrations, and brand-aligned outbound execution at outcome-based prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American outbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based outbound operations</strong>, zero TCPA violations in program history, advanced dialer technology, and flexible per-appointment and per-qualified-lead pricing. Whether you need <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">appointment setting services</Link>, or <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead qualification services</Link>, Contact Center USA is built for brands that refuse to compromise on outbound execution or compliance.
+                Global Empire Corporation tops our 2026 ranking with its full-service American outbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based outbound operations</strong>, zero TCPA violations in program history, advanced dialer technology, and flexible per-appointment and per-qualified-lead pricing. Whether you need <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound call center services</Link>, <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">appointment setting services</Link>, or <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead qualification services</Link>, Contact Center USA is built for brands that refuse to compromise on outbound execution or compliance.
               </p>
 
               {/* CTA */}
@@ -494,7 +494,7 @@ export default function Top10OutboundCallCenterContent() {
                 { q: "What is TCPA compliance and why does it matter for outbound?", a: "The Telephone Consumer Protection Act (TCPA) governs outbound calling and texting in the United States, requiring real-time DNC list scrubbing, prior express consent for autodialed calls to wireless numbers, mandatory recording disclosure, and strict hour-of-day calling rules. Violations carry $500-$1,500 per-call statutory damages and routinely trigger class actions with 7- to 9-figure settlements. Serious US-based outbound providers embed TCPA compliance into every dial — offshore and shady onshore providers frequently cut corners." },
                 { q: "What is a predictive dialer and do I need one?", a: "A predictive dialer automatically dials multiple outbound numbers simultaneously and routes connected calls to available agents, maximizing agent talk time and list throughput. For high-volume B2C outbound, predictive dialers are essential. For B2B appointment setting and consultative sales, power or preview dialers are usually a better fit since they give agents a moment to review the prospect record before the call connects. Top US-based outbound providers offer all three dialer modes and switch between them based on campaign type." },
                 { q: "Should I use onshore or offshore outbound call centers?", a: "For B2B outbound, regulated industries, high-ACV sales, and any program where brand voice and TCPA compliance matter, US-based outbound delivery is strongly preferred — connect rates, conversion, and compliance safety all favor onshore. For commoditized, high-volume B2C outbound on low-ACV products, offshore or nearshore hybrid can be cost-effective. Most growing brands use onshore for sales conversations and offshore or AI for list cleanup and simple outreach." },
-                { q: "Which outbound call center integrates best with Salesforce and HubSpot?", a: "Contact Center USA (#7) offers native integration with Salesforce, HubSpot, Outreach, Salesloft, Five9, Genesys, and Dynamics 365 — letting US-based outbound agents dial, log, and report conversion from a single pane of glass. Global Empire Corporation (#1) and Intelemark (#2) also integrate deeply with Salesforce and HubSpot for dedicated SDR and appointment-setting engagements." },
+                { q: "Which outbound call center integrates best with Salesforce and HubSpot?", a: "Contact Center USA (#8) offers native integration with Salesforce, HubSpot, Outreach, Salesloft, Five9, Genesys, and Dynamics 365 — letting US-based outbound agents dial, log, and report conversion from a single pane of glass. Global Empire Corporation (#1) and Intelemark (#2) also integrate deeply with Salesforce and HubSpot for dedicated SDR and appointment-setting engagements." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

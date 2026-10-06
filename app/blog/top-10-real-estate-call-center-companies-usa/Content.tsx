@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise real estate process outsourcing and franchise back-office",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American real estate process outsourcing for national brokerages, franchise networks, and large property management organizations seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from ISA operations and transaction coordination support to back-office lease administration and property management back-office work — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full compliance coverage.",
+    services: [
+      "American managed real estate services",
+      "US-based enterprise brokerage consulting",
+      "Domestic operations transformation programs",
+      "Onshore transaction coordination and back-office",
+      "American program management and governance",
+      "US enterprise CRM and proptech integration",
+    ],
+    industries: "National brokerages, franchise networks, enterprise property management, relocation, new-home developers",
+    strengths: "Enterprise BPO depth, consulting + managed operations, transaction coordination expertise.",
+    weaknesses: "Enterprise-focused; not for solo agents or small teams.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "National brokerages, franchise networks, enterprise property managers, relocation firms",
+    highlight: "Enterprise American real estate BPO combining consulting expertise with managed onshore ISA and transaction coordination operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American real estate lead qualification — never offshored a single lead, backed by a 5-minute speed-to-lead SLA.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American real estate infrastructure with multi-site US redundancy and dedicated ISA teams for national brands.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern brokerages, iBuyers, tech-forward investor groups, proptech-enabled teams",
     highlight: "Digital-first American real estate CX combining US-based ISAs with AI-powered lead scoring, SMS automation, and predictive routing.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise real estate process outsourcing and franchise back-office",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American real estate process outsourcing for national brokerages, franchise networks, and large property management organizations seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from ISA operations and transaction coordination support to back-office lease administration and property management back-office work — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full compliance coverage.",
-    services: [
-      "American managed real estate services",
-      "US-based enterprise brokerage consulting",
-      "Domestic operations transformation programs",
-      "Onshore transaction coordination and back-office",
-      "American program management and governance",
-      "US enterprise CRM and proptech integration",
-    ],
-    industries: "National brokerages, franchise networks, enterprise property management, relocation, new-home developers",
-    strengths: "Enterprise BPO depth, consulting + managed operations, transaction coordination expertise.",
-    weaknesses: "Enterprise-focused; not for solo agents or small teams.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "National brokerages, franchise networks, enterprise property managers, relocation firms",
-    highlight: "Enterprise American real estate BPO combining consulting expertise with managed onshore ISA and transaction coordination operations.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10RealEstateCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -468,7 +468,7 @@ export default function Top10RealEstateCallCenterContent() {
                 The <strong>American real estate call center industry</strong> is being reshaped by AI-driven SMS, outcome-based pricing, and the realization that 5-minute speed-to-lead is non-negotiable. Brokerages, teams, iBuyers, and investors win when they partner with US-based outsourcers that can answer every lead in minutes, integrate natively with modern real estate CRMs, and deliver MLS-trained ISAs at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American real estate ISA practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, a 5-minute speed-to-lead SLA, deep Follow Up Boss / kvCORE / Chime / BoomTown / Salesforce integration, TCPA-compliant motivated seller outreach, and flexible per-qualified-lead pricing. Whether you need <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate lead qualification</Link>, <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound answering</Link>, or <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">motivated seller outbound</Link>, Contact Center USA is built for the brokerages and investors that convert more leads.
+                Global Empire Corporation tops our 2026 ranking with its full-service American real estate ISA practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, a 5-minute speed-to-lead SLA, deep Follow Up Boss / kvCORE / Chime / BoomTown / Salesforce integration, TCPA-compliant motivated seller outreach, and flexible per-qualified-lead pricing. Whether you need <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate lead qualification</Link>, <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound answering</Link>, or <Link href="/services/telemarketing-services" className="text-red font-semibold hover:underline">motivated seller outbound</Link>, Contact Center USA is built for the brokerages and investors that convert more leads.
               </p>
 
               {/* CTA */}
@@ -491,7 +491,7 @@ export default function Top10RealEstateCallCenterContent() {
                 { q: "What CRMs do real estate call centers integrate with?", a: "Top American real estate call centers integrate natively with Follow Up Boss, kvCORE, Chime, BoomTown, Sierra Interactive, LionDesk, Real Geeks, Top Producer, and Salesforce Real Estate Cloud. Leads, call notes, and lead-stage updates flow bidirectionally so agents and ISAs work from a single system of record — critical for speed-to-lead and nurture automation." },
                 { q: "Should I use onshore or offshore ISAs for my brokerage?", a: "For luxury residential, commercial real estate, and relationship-heavy teams, US-based ISAs consistently outperform offshore on appointment-set rate and brand trust. For high-volume motivated-seller campaigns and first-touch qualification, a hybrid model (AI SMS + offshore first-touch + US-based live ISA for hot leads) is increasingly common. Most top brokerages in 2026 run hybrid programs." },
                 { q: "How do real estate call centers handle TCPA compliance for outbound motivated seller calls?", a: "The best American real estate call centers run dedicated TCPA-compliance programs including national and state-level DNC list scrubbing, consent capture logging, quiet-hours enforcement, re-verification of phone-number ownership before dialing, and full audit-trail retention. For investor and wholesaler campaigns, this is non-negotiable — penalties under TCPA can reach $500-$1,500 per violating call." },
-                { q: "Which real estate call center is best for Follow Up Boss and kvCORE users?", a: "Contact Center USA (#7) offers native integration with Follow Up Boss, kvCORE, Chime, BoomTown, Sierra Interactive, and Salesforce — letting US-based ISAs qualify leads, book appointments, and update lead stage directly inside the CRM without double data entry. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for mid-market and enterprise brokerage engagements." },
+                { q: "Which real estate call center is best for Follow Up Boss and kvCORE users?", a: "Contact Center USA (#8) offers native integration with Follow Up Boss, kvCORE, Chime, BoomTown, Sierra Interactive, and Salesforce — letting US-based ISAs qualify leads, book appointments, and update lead stage directly inside the CRM without double data entry. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for mid-market and enterprise brokerage engagements." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

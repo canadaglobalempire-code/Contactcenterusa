@@ -114,6 +114,24 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "Canada",
+    website: "https://www.b2bappointmentsetting.com",
+    bestFor: "Enterprise process transformation",
+    description: "The enterprise division of B2B Appointment Setting offers end-to-end business process transformation services that combine strategic consulting, technology implementation, and managed operations. Unlike transactional BPO providers, this division works with large organizations to redesign and optimize core business processes before outsourcing them, delivering 40-60% efficiency gains through process reengineering, automation, and continuous improvement methodologies. They rank among the best BPO outsourcing companies in the USA for complex transformation engagements.",
+    capabilities: [
+      "Business process reengineering & optimization",
+      "Managed operations & continuous improvement",
+      "Enterprise consulting & change management",
+      "Process automation & workflow design",
+      "KPI framework development & governance",
+      "Multi-function BPO program management",
+    ],
+    industries: "Fortune 500 enterprises, private equity portfolio companies, government agencies, large nonprofits",
+    highlight: "Enterprise transformation approach delivering 40-60% efficiency gains through process reengineering before outsourcing",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     website: "https://contactcenterusa.com",
@@ -131,7 +149,7 @@ const companies = [
     highlight: "25+ years of US-based call center expertise with multi-framework compliance and industry-leading CSAT scores",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "Canada",
     website: "https://callcentercommunications.com",
@@ -149,7 +167,7 @@ const companies = [
     highlight: "Enterprise-grade BPO infrastructure supporting thousands of concurrent agents across North American time zones",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     website: "https://businessprocessoutsourcing.info",
@@ -165,24 +183,6 @@ const companies = [
     ],
     industries: "Technology, retail, financial services, media, hospitality, automotive",
     highlight: "Data-driven digital CX approach that reduces cost-per-contact by 35% while improving customer satisfaction",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "Canada",
-    website: "https://www.b2bappointmentsetting.com",
-    bestFor: "Enterprise process transformation",
-    description: "The enterprise division of B2B Appointment Setting offers end-to-end business process transformation services that combine strategic consulting, technology implementation, and managed operations. Unlike transactional BPO providers, this division works with large organizations to redesign and optimize core business processes before outsourcing them, delivering 40-60% efficiency gains through process reengineering, automation, and continuous improvement methodologies. They rank among the best BPO outsourcing companies in the USA for complex transformation engagements.",
-    capabilities: [
-      "Business process reengineering & optimization",
-      "Managed operations & continuous improvement",
-      "Enterprise consulting & change management",
-      "Process automation & workflow design",
-      "KPI framework development & governance",
-      "Multi-function BPO program management",
-    ],
-    industries: "Fortune 500 enterprises, private equity portfolio companies, government agencies, large nonprofits",
-    highlight: "Enterprise transformation approach delivering 40-60% efficiency gains through process reengineering before outsourcing",
   },
   {
     rank: 11,
@@ -505,7 +505,7 @@ export default function Top10BPOCompaniesContent() {
                 <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> leads our 2026 rankings by combining <strong>full-service BPO capabilities, custom engagement models, and transparent performance management</strong> that outperform rigid enterprise outsourcing contracts. Alongside Intelemark for B2B sales outsourcing and Call Motivated Sellers for compliance-driven outbound campaigns, these <strong>top 3 BPO outsourcing companies in the USA</strong> consistently deliver results that larger providers struggle to match.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                For organizations seeking a proven US-based outsourcing partner, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) offers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound customer support</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound sales programs</Link>, <Link href="/solutions/back-office-outsourcing" className="text-red font-semibold hover:underline">back-office processing</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-driven automation</Link> — all backed by 25+ years of experience and multi-framework compliance certifications. Whether you need <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare BPO</Link>, <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services outsourcing</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce customer support</Link>, the right partner is on this list. To see every service line we run ourselves, browse our <Link href="/solutions" className="text-red font-semibold hover:underline">call center outsourcing solutions</Link>.
+                For organizations seeking a proven US-based outsourcing partner, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) offers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound customer support</Link>, <Link href="/solutions/outbound-call-center-services" className="text-red font-semibold hover:underline">outbound sales programs</Link>, <Link href="/solutions/back-office-outsourcing" className="text-red font-semibold hover:underline">back-office processing</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-driven automation</Link> — all backed by 25+ years of experience and multi-framework compliance certifications. Whether you need <Link href="/industries/healthcare-call-center-services" className="text-red font-semibold hover:underline">healthcare BPO</Link>, <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services outsourcing</Link>, or <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">ecommerce customer support</Link>, the right partner is on this list. To see every service line we run ourselves, browse our <Link href="/solutions" className="text-red font-semibold hover:underline">call center outsourcing solutions</Link>.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 As business complexity grows and customer expectations rise, outsourcing is no longer just about cutting costs — it is about gaining a competitive advantage. Choose a BPO partner that understands your business, invests in your success, and delivers results you can measure.
@@ -530,7 +530,7 @@ export default function Top10BPOCompaniesContent() {
                 { q: "How much does it cost to outsource to a BPO company in the USA?", a: "BPO costs in the USA vary based on service type, complexity, and volume. Inbound customer support typically ranges from $22-45 per agent hour for US-based services. Outbound sales and appointment setting programs range from $25-60 per hour or $50-250 per qualified appointment. Back-office processing is often priced per transaction ($1-15 depending on complexity). Many top BPO companies now offer outcome-based pricing tied to specific results like sales closed or issues resolved, which can deliver 30-50% better ROI than traditional hourly models." },
                 { q: "What is the difference between onshore, nearshore, and offshore BPO?", a: "Onshore BPO means outsourcing to a provider within the same country (e.g., a US company using a US-based BPO). Nearshore BPO involves outsourcing to neighboring countries (e.g., Mexico, Colombia, or Canada). Offshore BPO means outsourcing to distant countries (e.g., India, Philippines). US-based BPO companies offer the highest quality and compliance but at higher per-agent costs. However, when factoring in total cost of ownership — including fewer escalations, higher resolution rates, and better customer retention — onshore BPO often delivers superior ROI." },
                 { q: "How do I evaluate the quality of a BPO outsourcing company?", a: "Evaluate BPO quality using these key metrics: customer satisfaction (CSAT) scores, first-call resolution (FCR) rate, average handle time (AHT), Net Promoter Score (NPS), agent attrition rate, and compliance audit results. Request references from similar-sized clients in your industry. Ask for a pilot program (30-90 days) before signing long-term contracts. Verify certifications like SOC 2 Type II, PCI DSS, and industry-specific compliance. The best BPO companies in the USA will provide transparent reporting dashboards with real-time access to all performance data." },
-                { q: "Which BPO company is best for small and mid-sized businesses?", a: "For small and mid-sized businesses, Global Empire Corporation (#1), B2B Appointment Setting (#6), and Contact Center USA (#7) are the top choices from our list of BPO companies in the USA. These providers offer flexible engagement models without long-term contracts, scalable pricing that works for smaller budgets, and the personalized attention that SMBs need. Unlike enterprise BPO giants that prioritize Fortune 500 clients, these providers build custom programs around each client's specific goals, volume, and growth trajectory." },
+                { q: "Which BPO company is best for small and mid-sized businesses?", a: "For small and mid-sized businesses, Global Empire Corporation (#1), B2B Appointment Setting (#6), and Contact Center USA (#8) are the top choices from our list of BPO companies in the USA. These providers offer flexible engagement models without long-term contracts, scalable pricing that works for smaller budgets, and the personalized attention that SMBs need. Unlike enterprise BPO giants that prioritize Fortune 500 clients, these providers build custom programs around each client's specific goals, volume, and growth trajectory." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

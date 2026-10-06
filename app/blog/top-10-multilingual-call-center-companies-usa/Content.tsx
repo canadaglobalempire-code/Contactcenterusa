@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise multilingual process outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American multilingual process outsourcing for large healthcare carriers, retailers, and utilities seeking to consolidate their bilingual and multilingual operations with a single trusted US-based partner. Their managed services model covers everything from Spanish-language customer support and Hispanic-market sales operations to multilingual back-office processing — all delivered by American bilingual professionals working from secure onshore facilities with enterprise-grade language technology infrastructure.",
+    services: [
+      "American managed multilingual services",
+      "US-based enterprise bilingual process consulting",
+      "Domestic multilingual operations transformation",
+      "Onshore bilingual back-office consolidation",
+      "American multilingual program management & governance",
+      "US enterprise language-technology integration",
+    ],
+    industries: "Enterprise healthcare, utilities, omnichannel retail, consumer brands, telecom",
+    strengths: "Enterprise multilingual BPO depth, consulting + managed bilingual ops.",
+    weaknesses: "Enterprise-focused; not for SMB multicultural DTC brands.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise health insurers, national utilities, large consumer brands serving multicultural markets",
+    highlight: "Enterprise American multilingual BPO combining consulting expertise with managed onshore bilingual operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American multilingual customer service — never offshored a single contact, across 15+ languages with dedicated Hispanic-market teams.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American multilingual infrastructure with multi-site US redundancy and dedicated bilingual teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + bilingual agent",
     clients: "Modern fintech serving Hispanic consumers, subscription brands, multicultural marketplaces",
     highlight: "Digital-first American multilingual CX combining US-based bilingual agents with AI-powered translation and language detection.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise multilingual process outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American multilingual process outsourcing for large healthcare carriers, retailers, and utilities seeking to consolidate their bilingual and multilingual operations with a single trusted US-based partner. Their managed services model covers everything from Spanish-language customer support and Hispanic-market sales operations to multilingual back-office processing — all delivered by American bilingual professionals working from secure onshore facilities with enterprise-grade language technology infrastructure.",
-    services: [
-      "American managed multilingual services",
-      "US-based enterprise bilingual process consulting",
-      "Domestic multilingual operations transformation",
-      "Onshore bilingual back-office consolidation",
-      "American multilingual program management & governance",
-      "US enterprise language-technology integration",
-    ],
-    industries: "Enterprise healthcare, utilities, omnichannel retail, consumer brands, telecom",
-    strengths: "Enterprise multilingual BPO depth, consulting + managed bilingual ops.",
-    weaknesses: "Enterprise-focused; not for SMB multicultural DTC brands.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise health insurers, national utilities, large consumer brands serving multicultural markets",
-    highlight: "Enterprise American multilingual BPO combining consulting expertise with managed onshore bilingual operations.",
   },
 ];
 
@@ -358,10 +358,10 @@ export default function Top10MultilingualCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -494,7 +494,7 @@ export default function Top10MultilingualCallCenterContent() {
                 The <strong>American multilingual call center industry</strong> is being reshaped by Hispanic-market growth, AI translation, and the rise of Spanish-first CX design. Healthcare carriers, national retailers, utilities, financial services firms, and government programs win when they partner with US-based multilingual outsourcers that offer native-speaker depth, cultural fluency, flexible language-line models, and seamless OPI coverage across 200+ languages.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American multilingual CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based bilingual operations</strong>, dedicated Spanish-market teams, on-demand OPI across 200+ languages, and flexible per-minute and dedicated-FTE pricing. Whether you need <Link href="/solutions/multilingual-call-center-services" className="text-red font-semibold hover:underline">multilingual call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win multicultural America on CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American multilingual CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based bilingual operations</strong>, dedicated Spanish-market teams, on-demand OPI across 200+ languages, and flexible per-minute and dedicated-FTE pricing. Whether you need <Link href="/solutions/multilingual-call-center-services" className="text-red font-semibold hover:underline">multilingual call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win multicultural America on CX.
               </p>
 
               {/* CTA */}
@@ -516,8 +516,8 @@ export default function Top10MultilingualCallCenterContent() {
                 { q: "Should I design my CX Spanish-first or translate from English?", a: "For brands where Hispanic consumers represent more than 15-20% of the customer base, Spanish-first CX design consistently outperforms translated English flows. That means dedicated Spanish IVR trees, Spanish-native web chat, Spanish SMS channels, and Spanish-first self-service — all staffed by US-based native Hispanic agents. Simply adding 'press 2 for Spanish' to an English-designed flow tends to produce higher AHT, lower CSAT, and more escalations than Spanish-first design." },
                 { q: "What is the difference between OPI interpretation and dedicated bilingual agents?", a: "On-demand over-the-phone interpretation (OPI) connects a third-party certified interpreter on a three-way call with your monolingual agent and the customer — typically priced per minute ($0.75-$1.95) and covering 200+ languages. Dedicated bilingual agents, by contrast, are US-based employees who speak both English and the target language fluently, handling the entire call without an interpreter — typically priced per FTE. Best practice for 2026 is a hybrid: dedicated bilingual teams for your highest-volume languages (Spanish, French, Mandarin) and OPI for the long tail." },
                 { q: "Should I use US-based or nearshore providers for Spanish customer service?", a: "For premium Hispanic consumers, healthcare, financial services, and brand-sensitive programs, US-based delivery consistently wins on CSAT, cultural alignment with US Hispanic consumers (who often differ culturally from Latin American markets), and retention. For lower-margin, commoditized programs, nearshore Spanish providers in Mexico, Colombia, or the Dominican Republic can be cost-effective. Most brands serving US Hispanic consumers use a hybrid: US-based native Hispanic agents for complex and high-value contacts, nearshore or AI for simple FAQ deflection." },
-                { q: "Which languages do top American multilingual call centers offer?", a: "Top US multilingual providers like Contact Center USA (#7) typically offer dedicated bilingual teams in Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog — the six highest-volume non-English languages in the US — plus on-demand OPI coverage across 200+ additional languages including Arabic, Russian, Korean, Haitian Creole, Polish, German, Japanese, Italian, Farsi, Hindi, Punjabi, and more. The best providers can stand up new dedicated language lines within 30-60 days based on client demand." },
-                { q: "How do multilingual call centers ensure cultural fluency, not just translation?", a: "Top American multilingual providers train agents in Hispanic, Asian-American, Brazilian, and other cultural norms — including formality levels (tú vs. usted in Spanish), holiday calendars, regional dialects, and communication styles. They also segment agents by market (Mexican-American, Puerto Rican, Cuban-American, Dominican) to match dialect and cultural context. Contact Center USA (#7) and Global Empire Corporation (#1) both invest heavily in ongoing cultural-fluency certifications and regional-market training for their US-based agents." },
+                { q: "Which languages do top American multilingual call centers offer?", a: "Top US multilingual providers like Contact Center USA (#8) typically offer dedicated bilingual teams in Spanish, French, Mandarin, Portuguese, Vietnamese, and Tagalog — the six highest-volume non-English languages in the US — plus on-demand OPI coverage across 200+ additional languages including Arabic, Russian, Korean, Haitian Creole, Polish, German, Japanese, Italian, Farsi, Hindi, Punjabi, and more. The best providers can stand up new dedicated language lines within 30-60 days based on client demand." },
+                { q: "How do multilingual call centers ensure cultural fluency, not just translation?", a: "Top American multilingual providers train agents in Hispanic, Asian-American, Brazilian, and other cultural norms — including formality levels (tú vs. usted in Spanish), holiday calendars, regional dialects, and communication styles. They also segment agents by market (Mexican-American, Puerto Rican, Cuban-American, Dominican) to match dialect and cultural context. Contact Center USA (#8) and Global Empire Corporation (#1) both invest heavily in ongoing cultural-fluency certifications and regional-market training for their US-based agents." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

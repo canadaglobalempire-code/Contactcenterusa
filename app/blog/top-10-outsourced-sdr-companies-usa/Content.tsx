@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise managed sales development with full SDR + RevOps + enablement bundles",
+    description:
+      "The enterprise division of B2B Appointment Setting delivers fully-managed sales development programs that bundle outsourced SDRs with RevOps consulting, sales enablement build-out, and CRM / sales engagement implementation. The model targets large B2B SaaS companies that want a single partner to design the ICP, build the cadences, implement the Salesforce / Outreach stack, train the team, and run the SDR program — rather than stitching together five vendors. Best for software companies entering new markets, launching new products, or rebuilding a broken SDR motion from scratch.",
+    services: [
+      "Managed outsourced SDR programs",
+      "RevOps and sales operations consulting",
+      "Salesforce and Outreach implementation",
+      "Sales enablement and content build",
+      "ICP and qualification framework design",
+      "US-based SDR delivery with full governance",
+    ],
+    industries: "Enterprise B2B SaaS, large software, expansion-stage scaleups, regulated industries",
+    strengths: "Single-partner depth across SDR, RevOps, enablement, and tooling.",
+    weaknesses: "Enterprise scope and pricing — too much for SMB or seed-stage SaaS.",
+    pricing: "Enterprise SOW combining per-SDR fees and consulting retainers",
+    clients: "Enterprise B2B SaaS, large software vendors, expansion-stage scaleups",
+    highlight: "Enterprise American outsourced SDR + RevOps + enablement — a single partner for software companies rebuilding the full sales development motion.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American sales development — US-based SDRs, modern sales engagement stack, written qualification rubric, and SQO-guaranteed outcomes.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American outsourced SDR — 20-100+ US-based reps with named leadership, governance, and SOC 2 alignment.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Fractional $4K-$6K/mo, dedicated $8K-$10K/mo, AI tooling included",
     clients: "Modern B2B SaaS, devtools, AI platforms, fintech scaleups",
     highlight: "AI-augmented American outsourced SDR — US-based reps powered by Orum, Nooks, Gong, and Lavender for next-gen sales productivity.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise managed sales development with full SDR + RevOps + enablement bundles",
-    description:
-      "The enterprise division of B2B Appointment Setting delivers fully-managed sales development programs that bundle outsourced SDRs with RevOps consulting, sales enablement build-out, and CRM / sales engagement implementation. The model targets large B2B SaaS companies that want a single partner to design the ICP, build the cadences, implement the Salesforce / Outreach stack, train the team, and run the SDR program — rather than stitching together five vendors. Best for software companies entering new markets, launching new products, or rebuilding a broken SDR motion from scratch.",
-    services: [
-      "Managed outsourced SDR programs",
-      "RevOps and sales operations consulting",
-      "Salesforce and Outreach implementation",
-      "Sales enablement and content build",
-      "ICP and qualification framework design",
-      "US-based SDR delivery with full governance",
-    ],
-    industries: "Enterprise B2B SaaS, large software, expansion-stage scaleups, regulated industries",
-    strengths: "Single-partner depth across SDR, RevOps, enablement, and tooling.",
-    weaknesses: "Enterprise scope and pricing — too much for SMB or seed-stage SaaS.",
-    pricing: "Enterprise SOW combining per-SDR fees and consulting retainers",
-    clients: "Enterprise B2B SaaS, large software vendors, expansion-stage scaleups",
-    highlight: "Enterprise American outsourced SDR + RevOps + enablement — a single partner for software companies rebuilding the full sales development motion.",
   },
 ];
 
@@ -338,10 +338,10 @@ export default function Top10OutsourcedSDRContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -573,7 +573,7 @@ export default function Top10OutsourcedSDRContent() {
                 The <strong>outsourced SDR industry</strong> has matured far past the cold-calling sweatshops of a decade ago. In 2026, the best <strong>SDR as a service</strong> companies in the USA field college-educated American SDRs, operate inside modern sales engagement stacks, run 16-touch multichannel cadences, and put written show-rate and accept-rate guarantees in their contracts. For B2B SaaS founders and CROs, the question is no longer "should we outsource?" — it is "which US-based partner gets us to pipeline fastest, with qualification rigor we can trust?"
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American outsourced SDR practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US sales operations</strong>, deep Salesforce / HubSpot / Outreach / SalesLoft fluency, written BANT / MEDDIC qualification rubrics, and SQO-based outcome pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">B2B sales outsourcing</Link>, or a fully-managed <strong>fractional SDR team</strong>, Contact Center USA is built for B2B SaaS companies that refuse to compromise on US-based talent.
+                Global Empire Corporation tops our 2026 ranking with its full-service American outsourced SDR practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US sales operations</strong>, deep Salesforce / HubSpot / Outreach / SalesLoft fluency, written BANT / MEDDIC qualification rubrics, and SQO-based outcome pricing. Whether you need <Link href="/solutions/lead-generation-appointment-setting" className="text-red font-semibold hover:underline">lead generation and appointment setting</Link>, <Link href="/services/b2b-sales-outsourcing" className="text-red font-semibold hover:underline">B2B sales outsourcing</Link>, or a fully-managed <strong>fractional SDR team</strong>, Contact Center USA is built for B2B SaaS companies that refuse to compromise on US-based talent.
               </p>
 
               {/* CTA */}

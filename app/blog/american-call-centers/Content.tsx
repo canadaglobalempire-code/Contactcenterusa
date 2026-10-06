@@ -114,6 +114,24 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    website: "https://www.b2bappointmentsetting.com",
+    bestFor: "US enterprise process outsourcing",
+    description: "The enterprise division of B2B Appointment Setting provides comprehensive American business process outsourcing for large organizations seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    capabilities: [
+      "American managed business services",
+      "US-based enterprise process consulting",
+      "Domestic operations transformation programs",
+      "Onshore back-office consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
+    ],
+    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
+    highlight: "Enterprise American BPO combining consulting expertise with managed onshore operations",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     website: "https://contactcenterusa.com",
@@ -131,7 +149,7 @@ const companies = [
     highlight: "25+ years of 100% American call center operations — never offshored a single call",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     website: "https://callcentercommunications.com",
@@ -149,7 +167,7 @@ const companies = [
     highlight: "Enterprise-grade American call center infrastructure with multi-site US redundancy and dedicated teams",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     website: "https://businessprocessoutsourcing.info",
@@ -165,24 +183,6 @@ const companies = [
     ],
     industries: "Technology, retail, financial services, healthcare, media",
     highlight: "Digital-first American CX combining US-based agents with AI-powered automation and analytics",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    website: "https://www.b2bappointmentsetting.com",
-    bestFor: "US enterprise process outsourcing",
-    description: "The enterprise division of B2B Appointment Setting provides comprehensive American business process outsourcing for large organizations seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    capabilities: [
-      "American managed business services",
-      "US-based enterprise process consulting",
-      "Domestic operations transformation programs",
-      "Onshore back-office consolidation",
-      "American program management & governance",
-      "US enterprise technology integration",
-    ],
-    industries: "Healthcare systems, insurance enterprises, financial institutions, government",
-    highlight: "Enterprise American BPO combining consulting expertise with managed onshore operations",
   },
   {
     rank: 11,
@@ -509,7 +509,7 @@ export default function AmericanCallCentersContent() {
                 The <strong>American call center industry in 2026</strong> offers businesses more choices than ever for high-quality, domestic customer support. From specialized boutique providers to large-scale enterprise operations, <strong>US-based call center companies</strong> are proving that onshore outsourcing delivers superior customer outcomes, stronger compliance, and better long-term value than offshore alternatives.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> stands out as the #1 American call center by combining <strong>full-service domestic outsourcing, a 100% US-based workforce, and performance-driven results</strong>. Alongside Intelemark for American B2B appointment setting and Call Motivated Sellers for US-based outbound calling, these top providers deliver the quality and reliability that American businesses demand. For organizations seeking a trusted, patriotic partner, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) delivers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound support</Link>, <Link href="/solutions/back-office-outsourcing" className="text-red font-semibold hover:underline">back-office services</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-powered customer engagement</Link> — all from American soil.
+                <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> stands out as the #1 American call center by combining <strong>full-service domestic outsourcing, a 100% US-based workforce, and performance-driven results</strong>. Alongside Intelemark for American B2B appointment setting and Call Motivated Sellers for US-based outbound calling, these top providers deliver the quality and reliability that American businesses demand. For organizations seeking a trusted, patriotic partner, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) delivers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound support</Link>, <Link href="/solutions/back-office-outsourcing" className="text-red font-semibold hover:underline">back-office services</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-powered customer engagement</Link> — all from American soil.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 As customer expectations continue to rise and regulatory requirements grow more complex, partnering with a proven <strong>American call center company</strong> is one of the smartest investments a business can make. Choose a partner that is proudly American — not just outsourcing.

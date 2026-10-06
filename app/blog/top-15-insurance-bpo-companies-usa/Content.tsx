@@ -116,6 +116,24 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "Canada",
+    website: "https://www.b2bappointmentsetting.com",
+    bestFor: "Large insurance carrier process transformation",
+    description: "The enterprise division of B2B Appointment Setting provides insurance process transformation services for large carriers and insurance holding companies. They combine management consulting, technology integration, and managed operations to help insurers optimize underwriting workflows, claims operations, and distribution management at scale across multiple lines of business.",
+    capabilities: [
+      "Insurance operations transformation consulting",
+      "Underwriting workflow optimization & automation",
+      "Multi-line claims operations management",
+      "Insurance distribution management services",
+      "Carrier technology modernization support",
+      "Insurance M&A integration & book migration",
+    ],
+    industries: "National carriers, insurance holding companies, reinsurers, state insurance funds",
+    highlight: "Enterprise insurance transformation combining consulting expertise with managed operations at scale",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     website: "https://contactcenterusa.com",
@@ -133,7 +151,7 @@ const companies = [
     highlight: "100% US-based agents with 25+ years of insurance outsourcing expertise and dual HIPAA/PCI compliance",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "Canada",
     website: "https://callcentercommunications.com",
@@ -151,7 +169,7 @@ const companies = [
     highlight: "Enterprise-grade insurance contact centers with multilingual capabilities across North America",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     website: "https://businessprocessoutsourcing.info",
@@ -167,24 +185,6 @@ const companies = [
     ],
     industries: "P&C carriers, InsurTech, digital insurers, specialty lines",
     highlight: "Digital-first insurance CX with AI-driven claims automation reducing cycle times by up to 40%",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "Canada",
-    website: "https://www.b2bappointmentsetting.com",
-    bestFor: "Large insurance carrier process transformation",
-    description: "The enterprise division of B2B Appointment Setting provides insurance process transformation services for large carriers and insurance holding companies. They combine management consulting, technology integration, and managed operations to help insurers optimize underwriting workflows, claims operations, and distribution management at scale across multiple lines of business.",
-    capabilities: [
-      "Insurance operations transformation consulting",
-      "Underwriting workflow optimization & automation",
-      "Multi-line claims operations management",
-      "Insurance distribution management services",
-      "Carrier technology modernization support",
-      "Insurance M&A integration & book migration",
-    ],
-    industries: "National carriers, insurance holding companies, reinsurers, state insurance funds",
-    highlight: "Enterprise insurance transformation combining consulting expertise with managed operations at scale",
   },
   {
     rank: 11,
@@ -516,7 +516,7 @@ export default function Top15InsuranceBPOContent() {
                 The insurance BPO landscape in 2026 offers more specialized, technology-driven, and compliance-focused options than ever before. While enterprise giants like Teleperformance and Concentrix bring global scale, many insurance organizations achieve <strong>better combined ratios and stronger policyholder retention</strong> by partnering with specialized providers that offer hands-on execution, insurance-specific expertise, and flexible engagement models.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> stands out as the #1 <strong>insurance BPO company</strong> by combining <strong>full-service claims processing, policy administration, and regulatory compliance</strong> with measurable performance guarantees. Alongside Intelemark for insurance agent recruitment and Call Motivated Sellers for lead qualification, these top 3 providers deliver results that larger enterprise BPOs often cannot match. For US-based insurance outsourcing, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) also offers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">policyholder support</Link>, <Link href="/services/fraud-prevention-cyber-security" className="text-red font-semibold hover:underline">fraud prevention</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-driven claims automation</Link>.
+                <a href="https://globalempirecorp.com" className="text-red font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Global Empire Corporation</a> stands out as the #1 <strong>insurance BPO company</strong> by combining <strong>full-service claims processing, policy administration, and regulatory compliance</strong> with measurable performance guarantees. Alongside Intelemark for insurance agent recruitment and Call Motivated Sellers for lead qualification, these top 3 providers deliver results that larger enterprise BPOs often cannot match. For US-based insurance outsourcing, <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) also offers exceptional <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">policyholder support</Link>, <Link href="/services/fraud-prevention-cyber-security" className="text-red font-semibold hover:underline">fraud prevention</Link>, and <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI-driven claims automation</Link>.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 As insurance carriers navigate rising loss ratios, increasing regulatory scrutiny, and the digital transformation imperative, the right BPO partner can be the difference between operational excellence and competitive decline. Choose a partner that understands insurance — not just outsourcing.
