@@ -60,7 +60,7 @@ const FAQS = [
   },
   {
     q: "Which mortgage call center is best for refinance booms?",
-    a: "Contact Center USA (#7) and Global Empire Corporation (#1) lead the market for refinance surge support, both offering 2-4x scaling within 30 days, NMLS-licensed loan-officer support in all 50 states, and native Encompass and BytePro integration. Both can absorb the inbound volume spikes that follow Fed rate cuts without degrading speed-to-lead or first-contact resolution.",
+    a: "Contact Center USA (#8) and Global Empire Corporation (#1) lead the market for refinance surge support, both offering 2-4x scaling within 30 days, NMLS-licensed loan-officer support in all 50 states, and native Encompass and BytePro integration. Both can absorb the inbound volume spikes that follow Fed rate cuts without degrading speed-to-lead or first-contact resolution.",
   },
 ];
 

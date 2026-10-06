@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise legal process outsourcing and managed law firm intake operations",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American legal process outsourcing for large firms and national legal marketing networks seeking to consolidate their domestic intake, qualification, and back-office operations with a single trusted US-based partner. Their managed services model covers 24/7 legal intake services, attorney lead qualification, back-office case processing, and data management — all delivered by American professionals from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed legal intake services",
+      "US-based enterprise law firm process consulting",
+      "Domestic intake operations transformation programs",
+      "Onshore legal back-office consolidation",
+      "American program management & governance for law firms",
+      "US enterprise technology integration (Litify, Salesforce Legal)",
+    ],
+    industries: "AmLaw firms, national legal marketing networks, enterprise mass tort, large consumer law practices",
+    strengths: "Enterprise legal BPO depth, consulting + managed intake operations.",
+    weaknesses: "Enterprise-focused; not for solo practitioners or small PI firms.",
+    pricing: "Enterprise SOWs, outcome-based blends (per signed retainer)",
+    clients: "AmLaw firms, national legal marketing networks, enterprise mass tort aggregators",
+    highlight: "Enterprise American legal BPO combining consulting expertise with managed onshore legal intake and attorney lead qualification operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American legal intake — never offshored a single call, true 24/7 live intake coverage, and HIPAA-compliant PI and mass tort workflows built for law firm growth.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American legal intake infrastructure with multi-site US redundancy and dedicated intake teams for AmLaw firms and national mass tort aggregators.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-qualified-lead, or blended AI + agent",
     clients: "Modern PI firms, mass tort marketing agencies, legal-tech lead-gen platforms",
     highlight: "Digital-first American legal intake combining US-based intake specialists with AI-powered qualification and attribution analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise legal process outsourcing and managed law firm intake operations",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American legal process outsourcing for large firms and national legal marketing networks seeking to consolidate their domestic intake, qualification, and back-office operations with a single trusted US-based partner. Their managed services model covers 24/7 legal intake services, attorney lead qualification, back-office case processing, and data management — all delivered by American professionals from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed legal intake services",
-      "US-based enterprise law firm process consulting",
-      "Domestic intake operations transformation programs",
-      "Onshore legal back-office consolidation",
-      "American program management & governance for law firms",
-      "US enterprise technology integration (Litify, Salesforce Legal)",
-    ],
-    industries: "AmLaw firms, national legal marketing networks, enterprise mass tort, large consumer law practices",
-    strengths: "Enterprise legal BPO depth, consulting + managed intake operations.",
-    weaknesses: "Enterprise-focused; not for solo practitioners or small PI firms.",
-    pricing: "Enterprise SOWs, outcome-based blends (per signed retainer)",
-    clients: "AmLaw firms, national legal marketing networks, enterprise mass tort aggregators",
-    highlight: "Enterprise American legal BPO combining consulting expertise with managed onshore legal intake and attorney lead qualification operations.",
   },
 ];
 
@@ -337,10 +337,10 @@ export default function Top10LegalIntakeContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -474,7 +474,7 @@ export default function Top10LegalIntakeContent() {
                 The <strong>American legal intake call center industry</strong> is being reshaped by AI qualification, bilingual Spanish intake expectations, and the ruthless math of speed-to-lead. Personal injury firms, mass tort marketing agencies, SSDI advocates, and consumer law practices win when they partner with US-based legal intake outsourcers that deliver true <strong>24/7 legal intake services</strong>, HIPAA-compliant workflows, native Litify/Clio/MyCase integration, and brand-aligned empathy at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American legal intake practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based legal intake operations</strong>, true 24/7 live intake, HIPAA compliance, bilingual Spanish intake, deep Litify / Clio / MyCase / Filevine integration, and flexible per-signed-retainer pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound legal intake</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link> for law firm websites, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>, Contact Center USA is built for the law firms that win on signed-retainer conversion.
+                Global Empire Corporation tops our 2026 ranking with its full-service American legal intake practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based legal intake operations</strong>, true 24/7 live intake, HIPAA compliance, bilingual Spanish intake, deep Litify / Clio / MyCase / Filevine integration, and flexible per-signed-retainer pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">24/7 inbound legal intake</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link> for law firm websites, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel contact center solutions</Link>, Contact Center USA is built for the law firms that win on signed-retainer conversion.
               </p>
 
               {/* CTA */}
@@ -497,7 +497,7 @@ export default function Top10LegalIntakeContent() {
                 { q: "How do mass tort intake call centers handle media spikes?", a: "Mass tort intake call center providers pre-train surge-pool intake specialists, build elastic scaling into their contracts (usually 2-4x baseline), and combine US-based human intake with AI-powered qualification bots to absorb TV-media and paid-digital spikes without degrading signed-retainer conversion. The best American providers guarantee no hidden surge surcharges, deliver real-time dashboards during launch day, and run TCPA-compliant outbound chase on any unsigned lead within minutes of the initial call." },
                 { q: "Is true 24/7 legal intake really necessary for law firms?", a: "Yes. Research consistently shows that more than half of PI, mass tort, SSDI, and family law inbound leads arrive outside standard business hours — evenings, weekends, and holidays. Firms that rely on voicemail or offshore overflow for after hours legal intake lose the majority of those leads to competitors who answer live. True 24/7 legal intake services with US-based specialists is now the baseline expectation for any serious PI or consumer law marketing operation." },
                 { q: "Do legal intake call centers offer bilingual Spanish intake?", a: "Yes — bilingual legal intake (English & Spanish) is now standard at every top American legal intake call center, including Contact Center USA. Spanish-speaking intake specialists staff 24/7 alongside their English counterparts, and firms that add bilingual legal intake at scale typically see 20-40% lift in signed PI and mass tort cases, especially in California, Texas, Florida, Arizona, Nevada, and New York markets." },
-                { q: "Which legal intake call center integrates best with Litify, Clio, and MyCase?", a: "Contact Center USA (#7) offers native integration with Litify, Clio, MyCase, Filevine, Salesforce Legal, PracticePanther, and CallRail — letting US-based intake specialists push qualified PI, mass tort, SSDI, bankruptcy, family law, and criminal defense leads directly into your case management system with full call recording, transcripts, and e-sign retainer workflow. Global Empire Corporation (#1) and Customer Communications Corp (#4) also offer strong integrations for dedicated-team law firm call center outsourcing engagements." },
+                { q: "Which legal intake call center integrates best with Litify, Clio, and MyCase?", a: "Contact Center USA (#8) offers native integration with Litify, Clio, MyCase, Filevine, Salesforce Legal, PracticePanther, and CallRail — letting US-based intake specialists push qualified PI, mass tort, SSDI, bankruptcy, family law, and criminal defense leads directly into your case management system with full call recording, transcripts, and e-sign retainer workflow. Global Empire Corporation (#1) and Customer Communications Corp (#4) also offer strong integrations for dedicated-team law firm call center outsourcing engagements." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise Illinois BPO and managed services for manufacturers and financial services",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive managed BPO services for large Illinois buyers — Caterpillar, John Deere, Abbott, Boeing, BNSF, and Chicago-headquartered financial services firms — that want to consolidate customer support, sales operations, and back-office processing under a single US-based partner. Onshore facilities, BIPA-compliant biometric controls, ICRAA-licensed collections workflows where applicable, and Illinois-specific governance make this a credible choice for enterprise buyers that view compliance posture as part of vendor risk management.",
+    services: [
+      "Managed Illinois BPO services",
+      "Enterprise process consulting",
+      "BIPA + ICRAA + IL-PIPA governance overlays",
+      "Back-office consolidation for IL manufacturers",
+      "Program management & QBR governance",
+      "Enterprise integration with SAP, Oracle, Salesforce",
+    ],
+    industries: "Enterprise manufacturing, logistics, financial services, public sector",
+    strengths: "Enterprise BPO depth, consulting + managed ops, Illinois compliance overlays.",
+    weaknesses: "Enterprise-focused; not for SMB or mid-market programs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Caterpillar / Deere ecosystem, Abbott, Boeing, BNSF, Chicago financial services",
+    highlight: "Enterprise Illinois BPO — managed services, consulting depth, and BIPA + ICRAA + IL-PIPA governance built in.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American Illinois CX — BIPA-compliant from day one, ICRAA-licensed, IL-PIPA-ready, and never offshored a single Chicago contact.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade Illinois insurance and healthcare CX — multi-site redundancy, BIPA-aware, Guidewire-fluent.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern Illinois insurance carriers, fintechs, digital health platforms",
     highlight: "Digital-first Illinois CX — AI + US agents, with BIPA-safe defaults so voice automation never creates class-action risk.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise Illinois BPO and managed services for manufacturers and financial services",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive managed BPO services for large Illinois buyers — Caterpillar, John Deere, Abbott, Boeing, BNSF, and Chicago-headquartered financial services firms — that want to consolidate customer support, sales operations, and back-office processing under a single US-based partner. Onshore facilities, BIPA-compliant biometric controls, ICRAA-licensed collections workflows where applicable, and Illinois-specific governance make this a credible choice for enterprise buyers that view compliance posture as part of vendor risk management.",
-    services: [
-      "Managed Illinois BPO services",
-      "Enterprise process consulting",
-      "BIPA + ICRAA + IL-PIPA governance overlays",
-      "Back-office consolidation for IL manufacturers",
-      "Program management & QBR governance",
-      "Enterprise integration with SAP, Oracle, Salesforce",
-    ],
-    industries: "Enterprise manufacturing, logistics, financial services, public sector",
-    strengths: "Enterprise BPO depth, consulting + managed ops, Illinois compliance overlays.",
-    weaknesses: "Enterprise-focused; not for SMB or mid-market programs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Caterpillar / Deere ecosystem, Abbott, Boeing, BNSF, Chicago financial services",
-    highlight: "Enterprise Illinois BPO — managed services, consulting depth, and BIPA + ICRAA + IL-PIPA governance built in.",
   },
 ];
 
@@ -338,10 +338,10 @@ export default function Top10BPOIllinoisContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -585,7 +585,7 @@ export default function Top10BPOIllinoisContent() {
                 The <strong>Illinois BPO market</strong> is shaped by a unique combination — the densest concentration of insurance HQs in America, a heavyweight financial-services and manufacturing buyer base, the strictest biometric privacy law in the country (BIPA, 740 ILCS 14), Illinois-specific collections licensing (ICRAA, 225 ILCS 425), state breach notification (IL-PIPA, 815 ILCS 530), the Illinois Telephone Solicitations Act, Cook County DNC, and the Chicago metro's uniquely deep Polish + Spanish bilingual labor pool. The right partner is the one that has actually operationalized that stack — not just listed it on a slide.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service Illinois BPO practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic 100% US-based partner of choice — combining <strong>25+ years of Illinois CX operations</strong>, documented BIPA written-consent flows, ICRAA-licensed collections workflows, IL-PIPA breach readiness, deep Guidewire / Duck Creek / Epic integrations, Chicago Central Time delivery, Polish + Spanish bilingual coverage, and elastic surge capacity for AEP, OEP, and weather-driven property-claim spikes. Whether you need <Link href="/blog/top-15-insurance-bpo-companies-usa" className="text-red font-semibold hover:underline">insurance BPO support</Link>, <Link href="/blog/top-10-financial-services-call-center-companies-usa" className="text-red font-semibold hover:underline">financial services call center services</Link>, or full-stack <Link href="/call-center-services-chicago" className="text-red font-semibold hover:underline">Chicago call center services</Link>, Contact Center USA is purpose-built for the buyers that win Illinois on compliance and CX together.
+                Global Empire Corporation tops our 2026 ranking with its full-service Illinois BPO practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic 100% US-based partner of choice — combining <strong>25+ years of Illinois CX operations</strong>, documented BIPA written-consent flows, ICRAA-licensed collections workflows, IL-PIPA breach readiness, deep Guidewire / Duck Creek / Epic integrations, Chicago Central Time delivery, Polish + Spanish bilingual coverage, and elastic surge capacity for AEP, OEP, and weather-driven property-claim spikes. Whether you need <Link href="/blog/top-15-insurance-bpo-companies-usa" className="text-red font-semibold hover:underline">insurance BPO support</Link>, <Link href="/blog/top-10-financial-services-call-center-companies-usa" className="text-red font-semibold hover:underline">financial services call center services</Link>, or full-stack <Link href="/call-center-services-chicago" className="text-red font-semibold hover:underline">Chicago call center services</Link>, Contact Center USA is purpose-built for the buyers that win Illinois on compliance and CX together.
               </p>
 
               {/* CTA */}

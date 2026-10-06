@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise commerce process outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American commerce process outsourcing for large retailers and marketplaces seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed commerce services",
+      "US-based enterprise process consulting",
+      "Domestic operations transformation programs",
+      "Onshore back-office consolidation",
+      "American program management & governance",
+      "US enterprise technology integration",
+    ],
+    industries: "Enterprise retail, marketplaces, omnichannel commerce, consumer brands",
+    strengths: "Enterprise BPO depth, consulting + managed ops.",
+    weaknesses: "Enterprise-focused; not for SMB DTC brands.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise retailers, marketplaces, large consumer brands",
+    highlight: "Enterprise American commerce BPO combining consulting expertise with managed onshore operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American e-commerce customer service — never offshored a single contact, even during BFCM.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American e-commerce infrastructure with multi-site US redundancy and dedicated retail teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern DTC brands, subscription commerce, marketplace sellers",
     highlight: "Digital-first American e-commerce CX combining US-based agents with AI-powered automation and analytics.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise commerce process outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American commerce process outsourcing for large retailers and marketplaces seeking to consolidate their domestic operations with a single trusted US-based partner. Their managed services model covers everything from customer support and sales operations to back-office processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed commerce services",
-      "US-based enterprise process consulting",
-      "Domestic operations transformation programs",
-      "Onshore back-office consolidation",
-      "American program management & governance",
-      "US enterprise technology integration",
-    ],
-    industries: "Enterprise retail, marketplaces, omnichannel commerce, consumer brands",
-    strengths: "Enterprise BPO depth, consulting + managed ops.",
-    weaknesses: "Enterprise-focused; not for SMB DTC brands.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise retailers, marketplaces, large consumer brands",
-    highlight: "Enterprise American commerce BPO combining consulting expertise with managed onshore operations.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10EcommerceCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -468,7 +468,7 @@ export default function Top10EcommerceCallCenterContent() {
                 The <strong>American e-commerce call center industry</strong> is being reshaped by AI, omnichannel expectations, and the need for peak-season elasticity. DTC, subscription, and omnichannel brands win when they partner with US-based outsourcers that can absorb holiday surges, integrate natively with commerce and helpdesk platforms, and deliver brand-aligned CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American e-commerce CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, rapid peak-season scaling, deep Shopify / BigCommerce / Zendesk / Gorgias integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">DTC customer service outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win BFCM on CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American e-commerce CX practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, rapid peak-season scaling, deep Shopify / BigCommerce / Zendesk / Gorgias integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/industries/ecommerce-customer-service-outsourcing" className="text-red font-semibold hover:underline">DTC customer service outsourcing</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/solutions/social-customer-care" className="text-red font-semibold hover:underline">social customer care</Link>, Contact Center USA is built for the brands that win BFCM on CX.
               </p>
 
               {/* CTA */}
@@ -490,7 +490,7 @@ export default function Top10EcommerceCallCenterContent() {
                 { q: "How much does e-commerce call center outsourcing cost?", a: "US-based e-commerce call center outsourcing typically costs $22-$40 per agent-hour for voice, $1.50-$4 per contact for chat and email, and custom dedicated-team pricing ($2,500-$5,500 per FTE/month) for always-on brand-aligned teams. Offshore pricing is lower ($8-$15 per hour) but CSAT and retention impact is usually worse. Outcome-based pricing tied to CSAT or retention is rising fast at top American providers." },
                 { q: "How do e-commerce call centers handle Black Friday and Cyber Monday surges?", a: "Top American e-commerce call centers pre-train surge-pool agents, build elastic scaling into their contracts (usually 2-4x baseline), and combine human agents with AI chat automation to absorb holiday volume without degrading CSAT. The best US-based providers guarantee no hidden peak-season surcharges and provide real-time dashboards during BFCM for minute-by-minute visibility." },
                 { q: "Should I use onshore or offshore e-commerce customer service?", a: "For premium DTC brands, subscription commerce, and high-AOV products, US-based delivery consistently wins on CSAT, retention, and brand alignment. For lower-margin, commoditized e-commerce, offshore or hybrid models can be cost-effective. Most growing DTC brands use a hybrid: US-based for complex and high-value contacts, offshore or AI for simple WISMO and self-service deflection." },
-                { q: "Which e-commerce call center integrates best with Shopify and Gorgias?", a: "Contact Center USA (#7) offers native integration with Shopify, BigCommerce, Magento, Gorgias, Zendesk, Kustomer, and Intercom — letting US-based agents handle orders, returns, and customer history from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-team engagements across ecommerce platforms." },
+                { q: "Which e-commerce call center integrates best with Shopify and Gorgias?", a: "Contact Center USA (#8) offers native integration with Shopify, BigCommerce, Magento, Gorgias, Zendesk, Kustomer, and Intercom — letting US-based agents handle orders, returns, and customer history from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-team engagements across ecommerce platforms." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

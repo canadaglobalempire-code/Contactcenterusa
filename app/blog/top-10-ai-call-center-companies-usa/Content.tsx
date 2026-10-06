@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise AI + human hybrid B2B process outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting delivers full-lifecycle AI + human hybrid contact center programs for large B2B enterprises — combining conversational AI contact center infrastructure, AI voice agents, AI chatbot outsourcing, and a dedicated US-based human tier for complex B2B conversations. Their managed services wrap AI customer service automation, AI-powered QA, AI agent assist, and AI knowledge base governance into a single enterprise SOW, with program management and AI model governance handled onshore.",
+    services: [
+      "Enterprise AI + human hybrid B2B programs",
+      "Conversational AI contact center for B2B",
+      "AI agent assist and AI knowledge base governance",
+      "AI-powered QA and model oversight",
+      "Onshore program management and AI model governance",
+      "Enterprise-grade AI call deflection reporting",
+    ],
+    industries: "Enterprise B2B, manufacturing, professional services, wholesale",
+    strengths: "Enterprise AI governance, strong B2B AI + human hybrid, consulting-style engagement.",
+    weaknesses: "Enterprise-focused; not a fit for SMBs.",
+    pricing: "Enterprise SOWs with AI consumption + outcome blends",
+    clients: "Enterprise B2B sellers, manufacturers, professional services firms",
+    highlight: "Enterprise AI + human hybrid B2B programs with AI governance, AI agent assist, and onshore program management.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of US-based CX, now delivering AI call deflection of 40-55% with conversational AI, AI voice agents, and 100% American human-in-the-loop escalation.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise AI powered contact center with dedicated US teams, multi-site redundancy, and 100% AI-powered QA.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Per-contained-contact plus hourly US escalation",
     clients: "DTC brands, fintechs, SaaS companies",
     highlight: "Digital-first AI customer service automation with measurable AI call deflection and US agents on complex escalations.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise AI + human hybrid B2B process outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting delivers full-lifecycle AI + human hybrid contact center programs for large B2B enterprises — combining conversational AI contact center infrastructure, AI voice agents, AI chatbot outsourcing, and a dedicated US-based human tier for complex B2B conversations. Their managed services wrap AI customer service automation, AI-powered QA, AI agent assist, and AI knowledge base governance into a single enterprise SOW, with program management and AI model governance handled onshore.",
-    services: [
-      "Enterprise AI + human hybrid B2B programs",
-      "Conversational AI contact center for B2B",
-      "AI agent assist and AI knowledge base governance",
-      "AI-powered QA and model oversight",
-      "Onshore program management and AI model governance",
-      "Enterprise-grade AI call deflection reporting",
-    ],
-    industries: "Enterprise B2B, manufacturing, professional services, wholesale",
-    strengths: "Enterprise AI governance, strong B2B AI + human hybrid, consulting-style engagement.",
-    weaknesses: "Enterprise-focused; not a fit for SMBs.",
-    pricing: "Enterprise SOWs with AI consumption + outcome blends",
-    clients: "Enterprise B2B sellers, manufacturers, professional services firms",
-    highlight: "Enterprise AI + human hybrid B2B programs with AI governance, AI agent assist, and onshore program management.",
   },
 ];
 
@@ -337,10 +337,10 @@ export default function Top10AICallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -395,7 +395,7 @@ export default function Top10AICallCenterContent() {
                     <span className="text-gray-700">{company.highlight}</span>
                   </div>
 
-                  {company.rank === 7 ? (
+                  {company.name === "Contact Center USA" ? (
                     <Link
                       href={company.website}
                       className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-red hover:underline"
@@ -470,7 +470,7 @@ export default function Top10AICallCenterContent() {
                 The <strong>AI call center</strong> industry in the USA has matured fast. Conversational AI contact centers, AI voice agents, and generative AI customer service copilots now deliver measurable AI call deflection of 40-60%, while AI agent assist and AI-powered QA compress cost-per-contact and lift CSAT at the same time. The brands that win in 2026 are the ones who combine <strong>AI customer service automation</strong> with a genuinely American human-in-the-loop escalation tier — AI-only providers consistently lose on CSAT, compliance, and brand alignment.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with the deepest AI + human hybrid stack in the country, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only AI partner of choice — combining <strong>25+ years of US-based CX operations</strong>, AI voice agents, conversational AI contact center routing, AI agent assist across every queue, and 100% US-based human-in-the-loop escalation. To explore how an AI + human hybrid program would look for your business, see our <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI call center automation</Link> service page.
+                Global Empire Corporation tops our 2026 ranking with the deepest AI + human hybrid stack in the country, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only AI partner of choice — combining <strong>25+ years of US-based CX operations</strong>, AI voice agents, conversational AI contact center routing, AI agent assist across every queue, and 100% US-based human-in-the-loop escalation. To explore how an AI + human hybrid program would look for your business, see our <Link href="/services/ai-call-center-automation" className="text-red font-semibold hover:underline">AI call center automation</Link> service page.
               </p>
 
               {/* CTA */}

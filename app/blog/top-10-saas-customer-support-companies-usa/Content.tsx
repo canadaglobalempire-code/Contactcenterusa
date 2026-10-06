@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise SaaS customer operations outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American customer operations outsourcing for large SaaS vendors seeking to consolidate their domestic CS, support, and revenue operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 support and customer success management to back-office billing operations, revenue operations, and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full SOC 2 / ISO 27001 compliance coverage.",
+    services: [
+      "American managed SaaS customer operations",
+      "US-based enterprise SaaS consulting",
+      "Domestic CS and support operations transformation",
+      "Onshore billing, renewal, and revenue operations",
+      "American program management and governance",
+      "US enterprise SaaS technology integration",
+    ],
+    industries: "Enterprise SaaS, public SaaS companies, platform businesses, data and AI SaaS",
+    strengths: "Enterprise BPO depth, consulting + managed customer operations, RevOps expertise.",
+    weaknesses: "Enterprise-focused; not for early-stage or SMB SaaS companies.",
+    pricing: "Enterprise SOWs, outcome-based blends (NRR, CSAT)",
+    clients: "Enterprise SaaS, public software companies, large platform and data SaaS businesses",
+    highlight: "Enterprise American SaaS customer operations BPO combining consulting expertise with managed onshore CS, support, and RevOps.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American SaaS customer support — never offshored a single ticket, with SOC 2 Type II, Tier 1-3 product training, and native helpdesk integration.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American SaaS support infrastructure with multi-site US redundancy and dedicated Tier 1-3 teams for public and enterprise software.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "PLG SaaS, developer-tool companies, AI-first SaaS, API-first platforms, modern B2B SaaS",
     highlight: "Digital-first American SaaS support combining US-based agents with AI deflection, health scoring, and predictive ticket routing.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise SaaS customer operations outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American customer operations outsourcing for large SaaS vendors seeking to consolidate their domestic CS, support, and revenue operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 support and customer success management to back-office billing operations, revenue operations, and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full SOC 2 / ISO 27001 compliance coverage.",
-    services: [
-      "American managed SaaS customer operations",
-      "US-based enterprise SaaS consulting",
-      "Domestic CS and support operations transformation",
-      "Onshore billing, renewal, and revenue operations",
-      "American program management and governance",
-      "US enterprise SaaS technology integration",
-    ],
-    industries: "Enterprise SaaS, public SaaS companies, platform businesses, data and AI SaaS",
-    strengths: "Enterprise BPO depth, consulting + managed customer operations, RevOps expertise.",
-    weaknesses: "Enterprise-focused; not for early-stage or SMB SaaS companies.",
-    pricing: "Enterprise SOWs, outcome-based blends (NRR, CSAT)",
-    clients: "Enterprise SaaS, public software companies, large platform and data SaaS businesses",
-    highlight: "Enterprise American SaaS customer operations BPO combining consulting expertise with managed onshore CS, support, and RevOps.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10SaaSCustomerSupportContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -468,7 +468,7 @@ export default function Top10SaaSCustomerSupportContent() {
                 The <strong>American SaaS customer support industry</strong> is being reshaped by AI deflection, outcome-based pricing tied to NRR, and the recognition that support and customer success are retention and expansion engines — not cost centers. B2B SaaS, PLG SaaS, and enterprise software companies win when they partner with US-based outsourcers that can deliver Tier 1-3 product fluency, integrate natively with modern helpdesk and CS platforms, and deliver brand-aligned CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American SaaS support practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, Tier 1-3 product fluency, SOC 2 Type II compliance, deep Intercom / Zendesk / Front / Gainsight / Jira integration, and flexible per-ticket and outcome-based pricing tied to NRR and activation. Whether you need <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer support outsourcing</Link>, <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 2-3 technical support</Link>, or <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">in-app chat support</Link>, Contact Center USA is built for the software companies that compound retention into growth.
+                Global Empire Corporation tops our 2026 ranking with its full-service American SaaS support practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, Tier 1-3 product fluency, SOC 2 Type II compliance, deep Intercom / Zendesk / Front / Gainsight / Jira integration, and flexible per-ticket and outcome-based pricing tied to NRR and activation. Whether you need <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer support outsourcing</Link>, <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 2-3 technical support</Link>, or <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">in-app chat support</Link>, Contact Center USA is built for the software companies that compound retention into growth.
               </p>
 
               {/* CTA */}
@@ -490,7 +490,7 @@ export default function Top10SaaSCustomerSupportContent() {
                 { q: "How much does SaaS customer support outsourcing cost?", a: "US-based SaaS customer support outsourcing typically costs $25-$45 per agent-hour, $4-$9 per ticket, and $3,500-$7,500 per FTE/month for dedicated product-trained agents. Offshore pricing is lower ($10-$18 per hour) but NRR and NPS impact is usually materially worse for mid-market and enterprise SaaS. Outcome-based pricing tied to NRR, activation rate, or CSAT is rising fast at top American providers." },
                 { q: "What are Tier 1, Tier 2, and Tier 3 support in SaaS?", a: "Tier 1 handles simple how-to questions, password resets, account questions, and product-usage guidance — typically via in-app chat and email. Tier 2 handles technical issues like SSO configuration, API troubleshooting, integration problems, and complex billing questions. Tier 3 handles escalations that require engineering investigation — bug triage, performance issues, and customer-impacting incidents, with formal handoff into Jira or Linear. Top American SaaS support companies staff agents fluent in all three tiers." },
                 { q: "Should I use onshore or offshore SaaS customer support?", a: "For enterprise B2B SaaS, high-ACV products, and executive-visible escalations, US-based delivery consistently wins on NRR, NPS, and retention. For high-volume PLG SaaS, prosumer tools, and self-serve products, hybrid (AI deflection + offshore Tier 1 + US-based Tier 2-3 and CSM) is increasingly standard. The key is matching tiering to where US-based quality actually moves retention." },
-                { q: "Which SaaS support company integrates best with Intercom, Zendesk, and Gainsight?", a: "Contact Center USA (#7) offers native integration with Intercom, Zendesk, Front, HubSpot Service Hub, Gainsight, Totango, ChurnZero, Jira, and Linear — letting US-based agents handle tickets, bug triage, customer health, and renewal signals from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for mid-market and enterprise SaaS engagements." },
+                { q: "Which SaaS support company integrates best with Intercom, Zendesk, and Gainsight?", a: "Contact Center USA (#8) offers native integration with Intercom, Zendesk, Front, HubSpot Service Hub, Gainsight, Totango, ChurnZero, Jira, and Linear — letting US-based agents handle tickets, bug triage, customer health, and renewal signals from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for mid-market and enterprise SaaS engagements." },
                 { q: "How do SaaS support partners help with customer retention and NRR?", a: "Top American SaaS support companies co-own customer health scoring, deliver activation-focused onboarding, run proactive expansion and renewal outreach, flag churn-risk accounts 60-90 days before renewal, and tie their compensation to NRR outcomes. When support is repositioned as a retention engine — not a cost center — companies typically see 3-7 point NRR improvements within 12 months of a well-structured engagement." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">

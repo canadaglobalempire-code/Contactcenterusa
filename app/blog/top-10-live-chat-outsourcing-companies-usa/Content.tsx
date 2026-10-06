@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise chat process outsourcing and managed conversational services",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American chat process outsourcing for large brands seeking to consolidate their domestic chat operations with a single trusted US-based partner. Their managed services model covers end-to-end chat strategy, bot design, live agent delivery, and chat analytics — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full regulatory compliance.",
+    services: [
+      "American managed chat services",
+      "US-based enterprise chat strategy consulting",
+      "Domestic conversational AI design and delivery",
+      "Onshore chat operations transformation programs",
+      "American chat program management & governance",
+      "US enterprise technology integration (Salesforce, ServiceNow, Zendesk)",
+    ],
+    industries: "Enterprise retail, banking, insurance, telecom, healthcare",
+    strengths: "Enterprise chat BPO depth, consulting + managed ops.",
+    weaknesses: "Enterprise-focused; not for SMB DTC chat programs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise retailers, banks, insurers, telecom providers",
+    highlight: "Enterprise American chat BPO combining consulting expertise with managed onshore live chat operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American live chat outsourcing — 24/7 US-based chat agents, AI-assisted, never offshored.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American live chat infrastructure with multi-site US redundancy and dedicated regulated-industry teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Per-chat, per-outcome, or blended AI + agent pricing",
     clients: "Modern DTC brands, fintech platforms, SaaS marketplaces",
     highlight: "Digital-first American live chat combining US-based agents with AI chatbots, conversational AI, and generative copilots.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise chat process outsourcing and managed conversational services",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American chat process outsourcing for large brands seeking to consolidate their domestic chat operations with a single trusted US-based partner. Their managed services model covers end-to-end chat strategy, bot design, live agent delivery, and chat analytics — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure and full regulatory compliance.",
-    services: [
-      "American managed chat services",
-      "US-based enterprise chat strategy consulting",
-      "Domestic conversational AI design and delivery",
-      "Onshore chat operations transformation programs",
-      "American chat program management & governance",
-      "US enterprise technology integration (Salesforce, ServiceNow, Zendesk)",
-    ],
-    industries: "Enterprise retail, banking, insurance, telecom, healthcare",
-    strengths: "Enterprise chat BPO depth, consulting + managed ops.",
-    weaknesses: "Enterprise-focused; not for SMB DTC chat programs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise retailers, banks, insurers, telecom providers",
-    highlight: "Enterprise American chat BPO combining consulting expertise with managed onshore live chat operations.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10LiveChatContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -468,7 +468,7 @@ export default function Top10LiveChatContent() {
                 The <strong>American live chat outsourcing industry</strong> is being reshaped by generative AI, 24/7 customer expectations, and the treatment of website chat as a core revenue channel. DTC, SaaS, healthcare, and B2B brands win when they partner with US-based chat outsourcers that can deliver round-the-clock coverage, integrate natively with every modern helpdesk and chatbot platform, and blend AI efficiency with human brand-aligned writing quality.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American live chat practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, rapid scaling, deep Zendesk / Intercom / Drift / Gorgias integration, and flexible per-chat and outcome-based pricing. Whether you need <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, AI-assisted chat support, or chat-to-voice handoff, Contact Center USA is built for the brands that treat chat as a premium, revenue-generating channel.
+                Global Empire Corporation tops our 2026 ranking with its full-service American live chat practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based CX operations</strong>, rapid scaling, deep Zendesk / Intercom / Drift / Gorgias integration, and flexible per-chat and outcome-based pricing. Whether you need <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, AI-assisted chat support, or chat-to-voice handoff, Contact Center USA is built for the brands that treat chat as a premium, revenue-generating channel.
               </p>
 
               {/* CTA */}
@@ -491,7 +491,7 @@ export default function Top10LiveChatContent() {
                 { q: "Can outsourced live chat agents handle my helpdesk and chatbot integrations?", a: "Yes. Top American live chat outsourcing companies offer native integrations with Zendesk, Intercom, Drift, Gorgias, LiveChat, Freshdesk, and Kustomer, as well as handoff from popular chatbots like Ada, Tidio, and in-house GPT-based bots. Agents work directly inside your helpdesk with full customer history, prior transcripts, and order or account data in a single view." },
                 { q: "Should I use onshore or offshore live chat outsourcing?", a: "For premium DTC brands, SaaS platforms, healthcare, fintech, and any B2B website where chat drives revenue, US-based chat consistently wins on writing quality, CSAT, and conversion. Offshore chat can work for low-complexity, high-volume consumer support where margins are tight. Most growing brands use a hybrid: AI for simple deflection, US-based humans for high-value or complex conversations." },
                 { q: "Can outsourced chat agents handle proactive engagement and cart recovery?", a: "Yes. Leading American live chat outsourcing providers deploy rule-based and intent-based proactive engagement — triggering chat invitations based on cart value, exit intent, page depth, or account tier. US-based agents then handle the proactive conversation, recover carts, and book demos, with full attribution reporting on chat-driven revenue." },
-                { q: "Is 24/7 live chat outsourcing available with US-based agents?", a: "Yes. Contact Center USA (#7) and other top American providers staff domestic chat coverage around the clock, including overnight, weekends, and holidays — all with US-based agents. This is critical for global DTC brands, SaaS platforms with international users, and healthcare or fintech portals where customers expect always-on support." },
+                { q: "Is 24/7 live chat outsourcing available with US-based agents?", a: "Yes. Contact Center USA (#8) and other top American providers staff domestic chat coverage around the clock, including overnight, weekends, and holidays — all with US-based agents. This is critical for global DTC brands, SaaS platforms with international users, and healthcare or fintech portals where customers expect always-on support." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

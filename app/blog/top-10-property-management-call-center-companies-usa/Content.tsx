@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise property management BPO and managed-operations consolidation",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American property management BPO for large multifamily operators, institutional SFR portfolios, and national HOA management firms looking to consolidate tenant CX, leasing, and back-office processing under a single trusted US-based partner. Their managed services model covers tenant call handling, leasing-call qualification, lease-document processing, owner-statement generation, and HOA violation administration — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology and dedicated PMS integration teams.",
+    services: [
+      "American managed property management services",
+      "Tenant CX + leasing + back-office consolidation",
+      "Lease document processing & e-signature ops",
+      "Owner statement and HOA assessment processing",
+      "PMS integration and governance",
+      "US-based program management",
+    ],
+    industries: "Enterprise multifamily, institutional SFR, national HOA management, senior living operators",
+    strengths: "Enterprise BPO depth combining consulting + managed property operations.",
+    weaknesses: "Enterprise-focused — not for SMB property managers under 500 doors.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise multifamily REITs, institutional SFR portfolios, national HOA management firms",
+    highlight: "Enterprise American property management BPO consolidating tenant CX, leasing, and back-office under one US partner.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American property management call handling — never offshored a single tenant emergency, even at 3am on Christmas.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American property management call center infrastructure with multi-site US redundancy and dedicated tenant teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "PropTech-forward multifamily operators, modern BTR developers, AI-leasing-first property managers",
     highlight: "Digital-first American property management CX combining AI maintenance triage and leasing bots with US-based human escalation.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise property management BPO and managed-operations consolidation",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American property management BPO for large multifamily operators, institutional SFR portfolios, and national HOA management firms looking to consolidate tenant CX, leasing, and back-office processing under a single trusted US-based partner. Their managed services model covers tenant call handling, leasing-call qualification, lease-document processing, owner-statement generation, and HOA violation administration — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology and dedicated PMS integration teams.",
-    services: [
-      "American managed property management services",
-      "Tenant CX + leasing + back-office consolidation",
-      "Lease document processing & e-signature ops",
-      "Owner statement and HOA assessment processing",
-      "PMS integration and governance",
-      "US-based program management",
-    ],
-    industries: "Enterprise multifamily, institutional SFR, national HOA management, senior living operators",
-    strengths: "Enterprise BPO depth combining consulting + managed property operations.",
-    weaknesses: "Enterprise-focused — not for SMB property managers under 500 doors.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise multifamily REITs, institutional SFR portfolios, national HOA management firms",
-    highlight: "Enterprise American property management BPO consolidating tenant CX, leasing, and back-office under one US partner.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10PropertyManagementCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -564,7 +564,7 @@ export default function Top10PropertyManagementCallCenterContent() {
                 The <strong>American property management call center industry</strong> is being reshaped by PropTech-driven self-service, AI maintenance triage, and the build-to-rent boom across the Sun Belt. Property managers win when they partner with US-based providers that integrate natively with AppFolio, Buildium, and Yardi, dispatch true emergencies inside 60 seconds, qualify leasing leads into signed leases, and cover after-hours, weekends, and holidays without ever waking the on-call manager for a leaky faucet.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American property management practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based tenant CX</strong>, native API integrations with every major PMS, sub-30-second answer times, and bilingual English/Spanish coverage at no extra cost. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound tenant call handling</Link> or specialized <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate and property management call center services</Link>, Contact Center USA is built for the property managers who refuse to lose a leasing lead or mishandle an emergency at 3am.
+                Global Empire Corporation tops our 2026 ranking with its full-service American property management practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based tenant CX</strong>, native API integrations with every major PMS, sub-30-second answer times, and bilingual English/Spanish coverage at no extra cost. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound tenant call handling</Link> or specialized <Link href="/industries/real-estate-call-center-services" className="text-red font-semibold hover:underline">real estate and property management call center services</Link>, Contact Center USA is built for the property managers who refuse to lose a leasing lead or mishandle an emergency at 3am.
               </p>
 
               {/* CTA */}

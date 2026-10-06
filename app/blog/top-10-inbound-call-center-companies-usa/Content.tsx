@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise inbound process outsourcing and managed services",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American inbound process outsourcing for large brands seeking to consolidate their domestic inbound operations with a single trusted US-based partner. Their managed services model covers everything from inbound customer support and help desk to back-office inbound processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
+    services: [
+      "American managed inbound services",
+      "US-based enterprise inbound process consulting",
+      "Domestic inbound operations transformation",
+      "Onshore inbound back-office consolidation",
+      "American inbound program management & governance",
+      "US enterprise inbound technology integration",
+    ],
+    industries: "Enterprise retail, insurance, financial services, telecom, large consumer brands",
+    strengths: "Enterprise inbound BPO depth, consulting + managed inbound ops.",
+    weaknesses: "Enterprise-focused; not for SMBs or mid-market inbound programs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Enterprise retailers, insurers, telecoms, large consumer brands",
+    highlight: "Enterprise American inbound BPO combining consulting expertise with managed onshore inbound operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American inbound customer service — never offshored a single inbound contact, even during the biggest launches and recalls.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American inbound infrastructure with multi-site US redundancy and dedicated inbound teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern DTC brands, fintech companies, insurtech startups, digital-first retailers",
     highlight: "Digital-first American inbound CX combining US-based agents with AI-powered IVR, routing, and automation.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise inbound process outsourcing and managed services",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American inbound process outsourcing for large brands seeking to consolidate their domestic inbound operations with a single trusted US-based partner. Their managed services model covers everything from inbound customer support and help desk to back-office inbound processing and data management — all delivered by American professionals working from secure onshore facilities with enterprise-grade technology infrastructure.",
-    services: [
-      "American managed inbound services",
-      "US-based enterprise inbound process consulting",
-      "Domestic inbound operations transformation",
-      "Onshore inbound back-office consolidation",
-      "American inbound program management & governance",
-      "US enterprise inbound technology integration",
-    ],
-    industries: "Enterprise retail, insurance, financial services, telecom, large consumer brands",
-    strengths: "Enterprise inbound BPO depth, consulting + managed inbound ops.",
-    weaknesses: "Enterprise-focused; not for SMBs or mid-market inbound programs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Enterprise retailers, insurers, telecoms, large consumer brands",
-    highlight: "Enterprise American inbound BPO combining consulting expertise with managed onshore inbound operations.",
   },
 ];
 
@@ -337,10 +337,10 @@ export default function Top10InboundCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -471,7 +471,7 @@ export default function Top10InboundCallCenterContent() {
                 The <strong>American inbound call center industry</strong> is being reshaped by AI copilots, conversational IVR, and rising customer expectations for 24/7 US-based live agent coverage. Brands win when they partner with US-based outsourcers that deliver industry-leading FCR, omnichannel inbound fluency, native CRM and help desk integrations, and brand-aligned inbound CX at mid-market-friendly prices.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American inbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based inbound operations</strong>, true 24/7 live agent coverage, deep Salesforce / Zendesk / Five9 integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel inbound solutions</Link>, Contact Center USA is built for brands that refuse to compromise on inbound CX.
+                Global Empire Corporation tops our 2026 ranking with its full-service American inbound practice, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based inbound operations</strong>, true 24/7 live agent coverage, deep Salesforce / Zendesk / Five9 integration, and flexible per-contact and outcome-based pricing. Whether you need <Link href="/solutions/inbound-call-center-services" className="text-red font-semibold hover:underline">inbound call center services</Link>, <Link href="/services/live-chat-outsourcing" className="text-red font-semibold hover:underline">live chat outsourcing</Link>, or <Link href="/services/omnichannel-contact-center-solutions" className="text-red font-semibold hover:underline">omnichannel inbound solutions</Link>, Contact Center USA is built for brands that refuse to compromise on inbound CX.
               </p>
 
               {/* CTA */}
@@ -494,7 +494,7 @@ export default function Top10InboundCallCenterContent() {
                 { q: "What is FCR and why does it matter for inbound call centers?", a: "First-contact resolution (FCR) is the percentage of inbound contacts fully resolved on the first interaction — no callback, no transfer, no escalation. It is the single most important inbound KPI because every 1% FCR lift typically drives a 1%+ CSAT lift and 1-5% cost reduction. Industry benchmark FCR is 70%, but top American inbound providers consistently deliver 85%+ on well-designed programs with AI copilots and skills-based routing." },
                 { q: "Should I use onshore or offshore for inbound customer service?", a: "For regulated industries (healthcare, financial services, insurance), premium brands, and any inbound program where FCR and CSAT drive lifetime value, US-based inbound delivery consistently wins. For commoditized, high-volume, low-complexity inbound (basic WISMO, password resets), offshore or hybrid can be cost-effective. Most growing brands use a hybrid: US-based for complex and high-value inbound, offshore or AI for simple self-service deflection." },
                 { q: "What inbound channels should a modern call center handle?", a: "Modern American inbound call centers handle at minimum: 24/7 voice (the core channel, still 50-70% of inbound volume for most brands), live chat, email, SMS, and social media (Instagram DM, Facebook Messenger, X/Twitter). The best US providers route all channels through a single skills-based ACD queue so top agents can handle the highest-value contact regardless of channel." },
-                { q: "Which inbound call center integrates best with Salesforce and Zendesk?", a: "Contact Center USA (#7) offers native integration with Salesforce, Zendesk, HubSpot, ServiceNow, Five9, Genesys, NICE CXone, and Freshdesk — letting US-based inbound agents handle calls, tickets, and customer history from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-team inbound engagements across major CRM and help desk platforms." },
+                { q: "Which inbound call center integrates best with Salesforce and Zendesk?", a: "Contact Center USA (#8) offers native integration with Salesforce, Zendesk, HubSpot, ServiceNow, Five9, Genesys, NICE CXone, and Freshdesk — letting US-based inbound agents handle calls, tickets, and customer history from a single pane of glass. Global Empire Corporation (#1) and Customer Communications Corp (#4) also integrate well for dedicated-team inbound engagements across major CRM and help desk platforms." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

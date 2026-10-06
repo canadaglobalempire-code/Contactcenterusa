@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "California enterprise process outsourcing and managed BPO services",
+    description:
+      "The enterprise division of B2B Appointment Setting consolidates California enterprise operations — sales, support, and back-office — under one US-based managed services contract. Built for California enterprises that want a single partner accountable for CIPA, CCPA, and AB-5 compliance across every contact channel and every back-office workflow. Their managed services framework handles multi-business-unit California programs with consistent governance, dedicated program management, and quarterly compliance audits.",
+    services: [
+      "Managed California enterprise services",
+      "Cross-BU CIPA, CCPA, and AB-5 governance",
+      "California operations transformation programs",
+      "Onshore back-office consolidation for CA buyers",
+      "Quarterly California compliance audits",
+      "Enterprise technology integration (Salesforce, Workday, ServiceNow)",
+    ],
+    industries: "California enterprise SaaS, fintech, healthcare, public sector",
+    strengths: "Managed BPO depth, single accountable partner for CA compliance, consulting + ops together.",
+    weaknesses: "Enterprise-focused — not built for California SMB or DTC programs.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "California enterprise buyers in SaaS, fintech, and regulated industries",
+    highlight: "California enterprise BPO under a single contract — CIPA, CCPA, and AB-5 governed end to end.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% US-based California CX — every agent CIPA-trained, every workflow CCPA-ready, every CA-resident agent AB-5 W-2.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade California BPO — multi-site US redundancy with mature CIPA, CCPA, and AB-5 compliance.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "California AI-native startups, modern DTC, SaaS scale-ups",
     highlight: "AI-augmented California CX with CCPA-aware automation and CIPA-compliant US-based escalation agents.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "California enterprise process outsourcing and managed BPO services",
-    description:
-      "The enterprise division of B2B Appointment Setting consolidates California enterprise operations — sales, support, and back-office — under one US-based managed services contract. Built for California enterprises that want a single partner accountable for CIPA, CCPA, and AB-5 compliance across every contact channel and every back-office workflow. Their managed services framework handles multi-business-unit California programs with consistent governance, dedicated program management, and quarterly compliance audits.",
-    services: [
-      "Managed California enterprise services",
-      "Cross-BU CIPA, CCPA, and AB-5 governance",
-      "California operations transformation programs",
-      "Onshore back-office consolidation for CA buyers",
-      "Quarterly California compliance audits",
-      "Enterprise technology integration (Salesforce, Workday, ServiceNow)",
-    ],
-    industries: "California enterprise SaaS, fintech, healthcare, public sector",
-    strengths: "Managed BPO depth, single accountable partner for CA compliance, consulting + ops together.",
-    weaknesses: "Enterprise-focused — not built for California SMB or DTC programs.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "California enterprise buyers in SaaS, fintech, and regulated industries",
-    highlight: "California enterprise BPO under a single contract — CIPA, CCPA, and AB-5 governed end to end.",
   },
 ];
 
@@ -338,10 +338,10 @@ export default function Top10BPOCaliforniaContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -583,7 +583,7 @@ export default function Top10BPOCaliforniaContent() {
                 The <strong>California BPO market</strong> is the most demanding in the United States — premium buyers, the highest CSAT bars, and the most aggressive consumer-protection regime in the country. <strong>Best call center Los Angeles</strong> shortlists, <strong>San Francisco call center companies</strong>, and <strong>San Diego call center services</strong> all converge on the same baseline: CIPA two-party recording on every voice contact, CCPA / CPRA workflows wired into the agent desktop, AB-5-clean staffing for California-resident agents, and vertical depth across SaaS, biotech, entertainment, fintech, DTC, and cannabis.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 California ranking with the deepest premium-vertical bench, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-based partner of choice for California — combining <strong>25+ years of US delivery</strong>, CIPA-trained agents, CCPA-ready workflows, AB-5 W-2 staffing for every California-resident agent, Spanish bilingual coverage, and vertical teams for SaaS, biotech, entertainment, fintech, and DTC. Whether you need <Link href="/call-center-services-los-angeles" className="text-red font-semibold hover:underline">Los Angeles call center services</Link>, <Link href="/call-center-services-san-francisco" className="text-red font-semibold hover:underline">San Francisco call center services</Link>, or <Link href="/call-center-services-san-diego" className="text-red font-semibold hover:underline">San Diego call center services</Link>, Contact Center USA is built to win in the most demanding BPO market in America.
+                Global Empire Corporation tops our 2026 California ranking with the deepest premium-vertical bench, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-based partner of choice for California — combining <strong>25+ years of US delivery</strong>, CIPA-trained agents, CCPA-ready workflows, AB-5 W-2 staffing for every California-resident agent, Spanish bilingual coverage, and vertical teams for SaaS, biotech, entertainment, fintech, and DTC. Whether you need <Link href="/call-center-services-los-angeles" className="text-red font-semibold hover:underline">Los Angeles call center services</Link>, <Link href="/call-center-services-san-francisco" className="text-red font-semibold hover:underline">San Francisco call center services</Link>, or <Link href="/call-center-services-san-diego" className="text-red font-semibold hover:underline">San Diego call center services</Link>, Contact Center USA is built to win in the most demanding BPO market in America.
               </p>
 
               {/* CTA */}

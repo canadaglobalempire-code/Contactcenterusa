@@ -152,6 +152,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise managed technical services and IT process outsourcing",
+    description:
+      "The enterprise division of B2B Appointment Setting provides comprehensive American managed technical services and IT process outsourcing for large software, device, and IT organizations seeking to consolidate their domestic technical CX operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 technical support and IT help desk operations to back-office IT processing — all delivered by American professionals working from secure onshore facilities with enterprise-grade security infrastructure.",
+    services: [
+      "American managed technical services",
+      "US-based enterprise IT help desk outsourcing",
+      "Domestic technical operations transformation",
+      "Onshore back-office IT processing",
+      "American program management & governance",
+      "US enterprise technology integration consulting",
+    ],
+    industries: "Enterprise software, Fortune 500 IT, large telecom, cybersecurity enterprises, government IT",
+    strengths: "Enterprise-grade technical BPO, consulting + managed ops, strong compliance.",
+    weaknesses: "Enterprise-focused; not ideal for SMB or growth-stage SaaS.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Fortune 500 tech, large enterprise software vendors, government IT organizations",
+    highlight: "Enterprise American technical BPO combining consulting expertise with managed onshore IT operations.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American technical support — never offshored a single ticket, with ITIL-trained agents across all major ticketing platforms.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise-grade American technical support infrastructure with multi-site US redundancy and dedicated technical teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "Modern SaaS brands, fintech platforms, digital-native software companies",
     highlight: "Digital-first American technical support combining US-based agents with AI copilots and analytics-driven ticket resolution.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise managed technical services and IT process outsourcing",
-    description:
-      "The enterprise division of B2B Appointment Setting provides comprehensive American managed technical services and IT process outsourcing for large software, device, and IT organizations seeking to consolidate their domestic technical CX operations with a single trusted US-based partner. Their managed services model covers everything from Tier 1-3 technical support and IT help desk operations to back-office IT processing — all delivered by American professionals working from secure onshore facilities with enterprise-grade security infrastructure.",
-    services: [
-      "American managed technical services",
-      "US-based enterprise IT help desk outsourcing",
-      "Domestic technical operations transformation",
-      "Onshore back-office IT processing",
-      "American program management & governance",
-      "US enterprise technology integration consulting",
-    ],
-    industries: "Enterprise software, Fortune 500 IT, large telecom, cybersecurity enterprises, government IT",
-    strengths: "Enterprise-grade technical BPO, consulting + managed ops, strong compliance.",
-    weaknesses: "Enterprise-focused; not ideal for SMB or growth-stage SaaS.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Fortune 500 tech, large enterprise software vendors, government IT organizations",
-    highlight: "Enterprise American technical BPO combining consulting expertise with managed onshore IT operations.",
   },
 ];
 
@@ -358,10 +358,10 @@ export default function Top10TechnicalSupportContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -491,7 +491,7 @@ export default function Top10TechnicalSupportContent() {
                 <strong>American technical support outsourcing</strong> has matured into a strategic function that drives customer retention, NPS, and product adoption for software, device, and IT brands. The winners in 2026 combine US-based technical talent, AI-enabled tooling, deep platform integrations, and outcome-based pricing — the providers that still rely on pure hourly offshore models are losing ground fast.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation leads our 2026 technical support ranking with full-service American operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, SOC 2 Type II compliance, ITIL-trained agents, and deep integration with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk. Whether you need <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 1-3 technical support</Link>, <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer success support</Link>, or <Link href="/solutions/information-technology-services" className="text-red font-semibold hover:underline">managed IT help desk outsourcing</Link>, Contact Center USA is built for American software, device, and IT brands that compete on product quality.
+                Global Empire Corporation leads our 2026 technical support ranking with full-service American operations, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, SOC 2 Type II compliance, ITIL-trained agents, and deep integration with Zendesk, Jira Service Management, ServiceNow, Salesforce Service Cloud, and Freshdesk. Whether you need <Link href="/solutions/technical-support-outsourcing" className="text-red font-semibold hover:underline">Tier 1-3 technical support</Link>, <Link href="/industries/saas-technology-support" className="text-red font-semibold hover:underline">SaaS customer success support</Link>, or <Link href="/solutions/information-technology-services" className="text-red font-semibold hover:underline">managed IT help desk outsourcing</Link>, Contact Center USA is built for American software, device, and IT brands that compete on product quality.
               </p>
 
               {/* CTA */}
@@ -513,7 +513,7 @@ export default function Top10TechnicalSupportContent() {
                 { q: "How much does technical support outsourcing cost?", a: "US-based technical support outsourcing typically costs $26-$50 per agent-hour depending on technical skill level and certifications (CompTIA, AWS, Cisco). Enterprise per-ticket pricing ranges from $4-$15. Offshore tech support can be $10-$20 per hour but FCR and CSAT are usually lower. Outcome-based pricing tied to ticket deflection, FCR, and MTTR is rising fast at top American providers." },
                 { q: "What's the difference between Tier 1, Tier 2, and Tier 3 technical support?", a: "Tier 1 is first-contact triage — password resets, basic troubleshooting, and ticket routing. Tier 2 involves deeper diagnostics, configuration assistance, and issue reproduction. Tier 3 is engineering-adjacent escalation for complex bugs, platform issues, and custom troubleshooting. The top American technical support outsourcing companies cover Tier 1-2 directly and coordinate Tier 3 escalations with your internal engineering team." },
                 { q: "Should technical support be onshore or offshore?", a: "For SaaS brands, enterprise software, and premium device brands, US-based (onshore) technical support consistently wins on NPS, retention, and brand alignment. For high-volume, commoditized Tier 1 triage, offshore or AI-first models can be cost-effective. Most growing software companies use a hybrid: US for Tier 2-3 and enterprise customers, AI + offshore for Tier 1 deflection and low-value tiers." },
-                { q: "Which technical support outsourcing company is best for a SaaS company?", a: "For SaaS companies, Global Empire Corporation (#1) and Contact Center USA (#7) are the strongest fits because of their US-based delivery, SOC 2 compliance, ITIL-trained agents, native integration with Zendesk, Jira Service Management, and Salesforce Service Cloud, and flexibility to scale from 5-person startup support teams to 200+ agent enterprise operations. Customer Communications Corp (#4) and Business Process Outsourcing (#9) are also strong for digital-first SaaS brands pursuing AI-driven technical CX." },
+                { q: "Which technical support outsourcing company is best for a SaaS company?", a: "For SaaS companies, Global Empire Corporation (#1) and Contact Center USA (#8) are the strongest fits because of their US-based delivery, SOC 2 compliance, ITIL-trained agents, native integration with Zendesk, Jira Service Management, and Salesforce Service Cloud, and flexibility to scale from 5-person startup support teams to 200+ agent enterprise operations. Customer Communications Corp (#4) and Business Process Outsourcing (#10) are also strong for digital-first SaaS brands pursuing AI-driven technical CX." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

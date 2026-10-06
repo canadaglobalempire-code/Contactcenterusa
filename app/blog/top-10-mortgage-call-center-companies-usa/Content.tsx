@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "US enterprise mortgage process outsourcing for servicers and large originators",
+    description:
+      "The enterprise division of B2B Appointment Setting provides American mortgage process outsourcing for large lenders and servicers seeking to consolidate borrower CX, document processing, and back-office operations with a single US-based partner. Their managed services span borrower support, default outreach (Reg F-compliant), document indexing, condition follow-up, and post-close servicing — all delivered by American mortgage professionals from secure onshore facilities with bank-grade encryption and CFPB-audit-ready records.",
+    services: [
+      "American managed mortgage services",
+      "Mortgage process consulting and transformation",
+      "Borrower default and loss-mitigation outreach (Reg F)",
+      "Onshore document indexing and condition follow-up",
+      "Post-close servicing and escrow administration",
+      "US enterprise mortgage technology integration",
+    ],
+    industries: "Top-50 mortgage servicers, large retail lenders, GSE-aligned originators",
+    strengths: "Enterprise mortgage BPO depth, consulting + managed ops, audit-ready records.",
+    weaknesses: "Enterprise-focused — not for SMB broker shops or fintech mortgage startups.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Top-50 servicers, large retail lenders, GSE-aligned originators",
+    highlight: "Enterprise American mortgage BPO — managed servicing, default outreach, and document operations under one US-based partner.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -173,7 +197,7 @@ const companies = [
     highlight: "25+ years of 100% American mortgage call center work — NMLS licensed in all 50 states, never offshored a single borrower file.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -197,7 +221,7 @@ const companies = [
     highlight: "Enterprise-grade American mortgage infrastructure — bank-grade compliance, multi-site US redundancy, dedicated borrower teams.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -219,30 +243,6 @@ const companies = [
     pricing: "Hourly, per-funded-loan, or blended AI + agent",
     clients: "Digital-first lenders, fintech mortgage originators, refi-tech platforms",
     highlight: "Digital-first American mortgage CX combining AI underwriting copilots with US-based licensed loan-officer-assistant escalation.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "US enterprise mortgage process outsourcing for servicers and large originators",
-    description:
-      "The enterprise division of B2B Appointment Setting provides American mortgage process outsourcing for large lenders and servicers seeking to consolidate borrower CX, document processing, and back-office operations with a single US-based partner. Their managed services span borrower support, default outreach (Reg F-compliant), document indexing, condition follow-up, and post-close servicing — all delivered by American mortgage professionals from secure onshore facilities with bank-grade encryption and CFPB-audit-ready records.",
-    services: [
-      "American managed mortgage services",
-      "Mortgage process consulting and transformation",
-      "Borrower default and loss-mitigation outreach (Reg F)",
-      "Onshore document indexing and condition follow-up",
-      "Post-close servicing and escrow administration",
-      "US enterprise mortgage technology integration",
-    ],
-    industries: "Top-50 mortgage servicers, large retail lenders, GSE-aligned originators",
-    strengths: "Enterprise mortgage BPO depth, consulting + managed ops, audit-ready records.",
-    weaknesses: "Enterprise-focused — not for SMB broker shops or fintech mortgage startups.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Top-50 servicers, large retail lenders, GSE-aligned originators",
-    highlight: "Enterprise American mortgage BPO — managed servicing, default outreach, and document operations under one US-based partner.",
   },
 ];
 
@@ -335,10 +335,10 @@ export default function Top10MortgageCallCenterContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -564,7 +564,7 @@ export default function Top10MortgageCallCenterContent() {
                 The <strong>American mortgage call center industry</strong> is shaped by three forces no provider can shortcut — NMLS state-by-state licensing, TCPA prior-express-written-consent discipline, and native LOS integration. Lenders, brokers, credit unions, and non-bank originators win when they partner with US-based outsourcers that already carry the licensing, the compliance program, and the Encompass / BytePro / LendingPad integrations on day one — not as a six-month implementation project.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking with its full-service American mortgage CX practice and 50-state NMLS sponsorship, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based mortgage operations</strong>, NMLS licensing in all 50 states, mature TCPA compliance, native Encompass / BytePro / LendingPad / Calyx integration, and refi-boom 2-4x scaling. Whether you need <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link> or end-to-end <Link href="/solutions/financial-call-center-services" className="text-red font-semibold hover:underline">financial call center services</Link>, Contact Center USA is built for the lenders that win refi season on speed-to-lead and CSAT.
+                Global Empire Corporation tops our 2026 ranking with its full-service American mortgage CX practice and 50-state NMLS sponsorship, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based mortgage operations</strong>, NMLS licensing in all 50 states, mature TCPA compliance, native Encompass / BytePro / LendingPad / Calyx integration, and refi-boom 2-4x scaling. Whether you need <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link> or end-to-end <Link href="/solutions/financial-call-center-services" className="text-red font-semibold hover:underline">financial call center services</Link>, Contact Center USA is built for the lenders that win refi season on speed-to-lead and CSAT.
               </p>
 
               {/* CTA */}
@@ -589,7 +589,7 @@ export default function Top10MortgageCallCenterContent() {
                 { q: "Which mortgage LOS systems do top call centers integrate with?", a: "The leading US mortgage call centers integrate natively with Ellie Mae Encompass (now ICE Mortgage Technology), BytePro, LendingPad, Calyx Point, Mortgage Cadence, and Black Knight Empower — pulling real-time loan file status, generating preapproval letters, capturing e-consent for credit pulls, and handling encrypted document exchange directly inside the LOS to maintain data integrity." },
                 { q: "Inbound vs outbound mortgage call centers — which do I need?", a: "Use an inbound mortgage call center for refinance booms (rate-driven traffic), purchase pre-approval intake, and post-close servicing. Use an outbound mortgage call center for refi nurture, equity-tap (HELOC) campaigns, lead qualification from purchased lists, and default loss-mitigation outreach. Most top providers offer both, but pricing differs — inbound is hourly, outbound is contingency or per-funded-loan." },
                 { q: "How do mortgage call centers handle RESPA Section 8 compliance?", a: "RESPA Section 8 prohibits kickbacks and unearned fees for the referral of settlement services. Top mortgage call centers structure their fee arrangements as bona-fide compensation for actual services performed (per-hour, per-contact, per-qualified-application) — never as referral fees tied to closed loans. Compliance teams audit scripts and pay structures to ensure no Section 8 exposure for the lender." },
-                { q: "Which mortgage call center is best for refinance booms?", a: "Contact Center USA (#7) and Global Empire Corporation (#1) lead the market for refinance surge support, both offering 2-4x scaling within 30 days, NMLS-licensed loan-officer support in all 50 states, and native Encompass and BytePro integration. Both can absorb the inbound volume spikes that follow Fed rate cuts without degrading speed-to-lead or first-contact resolution." },
+                { q: "Which mortgage call center is best for refinance booms?", a: "Contact Center USA (#8) and Global Empire Corporation (#1) lead the market for refinance surge support, both offering 2-4x scaling within 30 days, NMLS-licensed loan-officer support in all 50 states, and native Encompass and BytePro integration. Both can absorb the inbound volume spikes that follow Fed rate cuts without degrading speed-to-lead or first-contact resolution." },
               ].map((faq, i) => (
                 <div key={i} className="mt-6 border-b border-gray-100 pb-6">
                   <h3 className="text-lg font-bold text-navy">{faq.q}</h3>

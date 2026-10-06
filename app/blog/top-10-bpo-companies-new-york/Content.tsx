@@ -150,6 +150,30 @@ const companies = [
   },
   {
     rank: 7,
+    name: "B2B Appointment Setting (Enterprise)",
+    hq: "United States",
+    founded: "2002",
+    website: "/contact",
+    bestFor: "Enterprise New York commerce and financial services BPO consolidation",
+    description:
+      "The enterprise division of B2B Appointment Setting provides managed BPO services for New York-headquartered enterprises that want to consolidate sales operations, customer support, and back-office processing under a single onshore partner. Their managed services model is designed for the operating realities of regulated New York work — DFS-aligned governance, SHIELD Act-aligned vendor management, NY DNC discipline, and Eastern Time governance reviews — wrapped around consulting-grade operations design and reporting.",
+    services: [
+      "Managed BPO services for NY enterprises",
+      "Sales ops + CX + back-office consolidation",
+      "DFS Part 500-aligned vendor governance",
+      "SHIELD Act-aligned third-party risk program",
+      "Enterprise program management for NY accounts",
+      "Eastern Time governance and QBR cadence",
+    ],
+    industries: "NY enterprise insurance, banking, media, real estate, professional services",
+    strengths: "Enterprise BPO depth, governance maturity, NY-aligned program management.",
+    weaknesses: "Enterprise-focused; not for SMB DTC or growth-stage brands.",
+    pricing: "Enterprise SOWs, outcome-based blends",
+    clients: "Large NY-headquartered insurers, banks, media holding companies, real estate platforms",
+    highlight: "Enterprise New York BPO consolidation with DFS- and SHIELD-aligned governance built in.",
+  },
+  {
+    rank: 8,
     name: "Contact Center USA",
     hq: "United States",
     founded: "1999",
@@ -175,7 +199,7 @@ const companies = [
     highlight: "25+ years of 100% American CX — the only major US-only partner with full NYS DFS Part 500 + SHIELD Act attestation across all New York programs.",
   },
   {
-    rank: 8,
+    rank: 9,
     name: "Call Center Communications",
     hq: "United States",
     founded: "1988",
@@ -199,7 +223,7 @@ const companies = [
     highlight: "Enterprise New York delivery with Buffalo, Rochester, and Albany redundancy that satisfies DFS Part 500 continuity rules.",
   },
   {
-    rank: 9,
+    rank: 10,
     name: "Business Process Outsourcing",
     hq: "United States",
     founded: "2006",
@@ -221,30 +245,6 @@ const companies = [
     pricing: "Hourly, per-outcome, or blended AI + agent",
     clients: "NY fintech, neobanks, modern DTC, digital-first insurance startups",
     highlight: "Digital-first NY CX combining AI deflection with DFS Part 500-compliant US agent escalation.",
-  },
-  {
-    rank: 10,
-    name: "B2B Appointment Setting (Enterprise)",
-    hq: "United States",
-    founded: "2002",
-    website: "/contact",
-    bestFor: "Enterprise New York commerce and financial services BPO consolidation",
-    description:
-      "The enterprise division of B2B Appointment Setting provides managed BPO services for New York-headquartered enterprises that want to consolidate sales operations, customer support, and back-office processing under a single onshore partner. Their managed services model is designed for the operating realities of regulated New York work — DFS-aligned governance, SHIELD Act-aligned vendor management, NY DNC discipline, and Eastern Time governance reviews — wrapped around consulting-grade operations design and reporting.",
-    services: [
-      "Managed BPO services for NY enterprises",
-      "Sales ops + CX + back-office consolidation",
-      "DFS Part 500-aligned vendor governance",
-      "SHIELD Act-aligned third-party risk program",
-      "Enterprise program management for NY accounts",
-      "Eastern Time governance and QBR cadence",
-    ],
-    industries: "NY enterprise insurance, banking, media, real estate, professional services",
-    strengths: "Enterprise BPO depth, governance maturity, NY-aligned program management.",
-    weaknesses: "Enterprise-focused; not for SMB DTC or growth-stage brands.",
-    pricing: "Enterprise SOWs, outcome-based blends",
-    clients: "Large NY-headquartered insurers, banks, media holding companies, real estate platforms",
-    highlight: "Enterprise New York BPO consolidation with DFS- and SHIELD-aligned governance built in.",
   },
 ];
 
@@ -340,10 +340,10 @@ export default function Top10BPONewYorkContent() {
               {companies.map((company, i) => (
                 <div
                   key={company.rank}
-                  className={`mt-10 rounded-2xl border ${company.rank === 7 ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
+                  className={`mt-10 rounded-2xl border ${company.name === "Contact Center USA" ? "border-red/30 bg-red/[0.02]" : "border-gray-200"} p-8`}
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.rank === 7 ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${company.name === "Contact Center USA" ? "bg-red text-white" : i < 3 ? "bg-navy text-white" : "bg-gray-100 text-navy"} text-lg font-bold`}>
                       #{company.rank}
                     </div>
                     <div className="flex-1">
@@ -582,7 +582,7 @@ export default function Top10BPONewYorkContent() {
                 The <strong>New York BPO market</strong> is the most demanding CX environment in the United States. Wall Street's SLA bar, NYS DFS Part 500's third-party service provider obligations, the SHIELD Act's safeguards over every NY resident's data, GBL § 399-p's $1,000-$10,000-per-call DNC penalties, and a multilingual customer base that no other state can match all push NY-aligned BPOs to operate at a higher tier than generic onshore CX. The brands that win in New York pick partners who arrive with full Part 500 attestation, multilingual depth, Eastern Time coverage, and Series-licensed escalation pools already in place.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                Global Empire Corporation tops our 2026 ranking for full-service NY-aligned financial services CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#7) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, full <strong>NYS DFS 23 NYCRR Part 500</strong> attestation, SHIELD Act-compliant safeguards, multilingual coverage in Spanish, Mandarin, Cantonese, Russian, and Haitian Creole, and Eastern Time alignment for every Wall Street, fintech, insurance, and NYC fashion account. Whether you need <Link href="/call-center-services-new-york" className="text-red font-semibold hover:underline">New York call center services</Link>, <Link href="/blog/top-10-financial-services-call-center-companies-usa" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link>, or <Link href="/blog/top-15-insurance-bpo-companies-usa" className="text-red font-semibold hover:underline">insurance BPO support</Link>, Contact Center USA is built for the brands that win New York on CX.
+                Global Empire Corporation tops our 2026 ranking for full-service NY-aligned financial services CX, and <Link href="/" className="text-red font-semibold hover:underline">Contact Center USA</Link> (#8) remains the patriotic US-only partner of choice — combining <strong>25+ years of US-based operations</strong>, full <strong>NYS DFS 23 NYCRR Part 500</strong> attestation, SHIELD Act-compliant safeguards, multilingual coverage in Spanish, Mandarin, Cantonese, Russian, and Haitian Creole, and Eastern Time alignment for every Wall Street, fintech, insurance, and NYC fashion account. Whether you need <Link href="/call-center-services-new-york" className="text-red font-semibold hover:underline">New York call center services</Link>, <Link href="/blog/top-10-financial-services-call-center-companies-usa" className="text-red font-semibold hover:underline">financial services call center outsourcing</Link>, or <Link href="/blog/top-15-insurance-bpo-companies-usa" className="text-red font-semibold hover:underline">insurance BPO support</Link>, Contact Center USA is built for the brands that win New York on CX.
               </p>
 
               {/* CTA */}
@@ -600,7 +600,7 @@ export default function Top10BPONewYorkContent() {
               <h2 className="mt-16 text-2xl font-bold text-navy sm:text-3xl">Frequently Asked Questions</h2>
 
               {[
-                { q: "What are the best BPO companies in New York in 2026?", a: "The top BPO companies serving New York for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), Contact Center USA (#7), Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10). Each provides New York-aligned delivery, Eastern Time coverage for Wall Street workflows, multilingual support (Spanish, Mandarin, Russian, Cantonese), and the controls required by NYS DFS 23 NYCRR Part 500 and the New York SHIELD Act." },
+                { q: "What are the best BPO companies in New York in 2026?", a: "The top BPO companies serving New York for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), B2B Appointment Setting Enterprise (#7), Contact Center USA (#8), Call Center Communications (#9), and Business Process Outsourcing (#10). Each provides New York-aligned delivery, Eastern Time coverage for Wall Street workflows, multilingual support (Spanish, Mandarin, Russian, Cantonese), and the controls required by NYS DFS 23 NYCRR Part 500 and the New York SHIELD Act." },
                 { q: "How much does New York call center outsourcing cost in 2026?", a: "New York-based agent wages run $22-$30/hr — among the highest in the United States — driven by NYC's $16/hr state minimum wage, Manhattan office costs, and competition from Wall Street back-office employers. Most New York-headquartered companies blend a small NYC-based team for premium financial services accounts with lower-cost delivery from Texas, Florida, or Buffalo/Rochester. Per-contact pricing for NY-aligned BPOs averages $2.50-$5.00, and dedicated-team pricing runs $3,200-$6,500 per FTE/month for managed financial services CX." },
                 { q: "What is NYS DFS Part 500 and why does it matter for my BPO?", a: "NYS DFS 23 NYCRR Part 500 is the New York Department of Financial Services Cybersecurity Regulation. It applies to every bank, insurer, mortgage lender, and virtual currency business licensed by DFS — and, critically, to their third-party service providers, including BPOs and call centers. Required controls include a written cybersecurity policy, a designated CISO, multi-factor authentication, encryption of nonpublic information at rest and in transit, an audit trail, annual penetration testing, and 72-hour breach notification to the DFS Superintendent. Penalties run $1,000-$2,500 per violation per day plus consent decrees, so any BPO touching New York financial services data must produce a Part 500 attestation." },
                 { q: "What is the New York SHIELD Act and how does it affect call centers?", a: "The New York Stop Hacks and Improve Electronic Data Security (SHIELD) Act, codified at General Business Law § 899-bb, requires any business that holds private information of New York residents to implement reasonable administrative, technical, and physical safeguards. SHIELD applies regardless of where the business is located, so an out-of-state BPO that handles NY consumer data is in scope. Breach notification to affected NY residents and the Attorney General is required. Top-tier New York BPOs maintain SHIELD-aligned controls including risk assessments, vendor management, employee training, encryption, and disposal procedures." },

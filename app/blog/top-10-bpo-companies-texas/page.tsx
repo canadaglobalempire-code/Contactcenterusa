@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "What are the best BPO companies in Texas in 2026?",
-    a: "The best BPO companies in Texas for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), Contact Center USA (#7), Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10). Each has Texas-based delivery capacity, Spanish-bilingual agent pools, and experience supporting energy, healthcare, SaaS, real estate, and insurance verticals across Dallas, Houston, Austin, San Antonio, and Fort Worth.",
+    a: "The best BPO companies in Texas for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), B2B Appointment Setting Enterprise (#7), Contact Center USA (#8), Call Center Communications (#9), and Business Process Outsourcing (#10). Each has Texas-based delivery capacity, Spanish-bilingual agent pools, and experience supporting energy, healthcare, SaaS, real estate, and insurance verticals across Dallas, Houston, Austin, San Antonio, and Fort Worth.",
   },
   {
     q: "How much does Texas call center outsourcing cost in 2026?",
@@ -56,7 +56,7 @@ const FAQS = [
   },
   {
     q: "Which Texas BPO is best for energy and oil and gas customers?",
-    a: "Houston-based delivery is preferred for energy and oil and gas BPO programs because of proximity to Schlumberger, ExxonMobil, ConocoPhillips, and the petrochemical corridor. Contact Center USA (#7), Customer Communications Corp (#4), and Call Center Communications (#8) all offer Houston-area or Houston-aligned delivery for energy customer support, field service dispatch, and B2B account management.",
+    a: "Houston-based delivery is preferred for energy and oil and gas BPO programs because of proximity to Schlumberger, ExxonMobil, ConocoPhillips, and the petrochemical corridor. Contact Center USA (#8), Customer Communications Corp (#4), and Call Center Communications (#9) all offer Houston-area or Houston-aligned delivery for energy customer support, field service dispatch, and B2B account management.",
   },
   {
     q: "How do Texas BPOs compete with nearshore Mexico call centers?",

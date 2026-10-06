@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "What are the best BPO companies in New York in 2026?",
-    a: "The top BPO companies serving New York for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), Contact Center USA (#7), Call Center Communications (#8), Business Process Outsourcing (#9), and B2B Appointment Setting Enterprise (#10). Each provides New York-aligned delivery, Eastern Time coverage for Wall Street workflows, multilingual support (Spanish, Mandarin, Russian, Cantonese), and the controls required by NYS DFS 23 NYCRR Part 500 and the New York SHIELD Act.",
+    a: "The top BPO companies serving New York for 2026 are Global Empire Corporation (#1), Intelemark (#2), Call Motivated Sellers (#3), Customer Communications Corp (#4), Call Center Staffing (#5), B2B Appointment Setting (#6), B2B Appointment Setting Enterprise (#7), Contact Center USA (#8), Call Center Communications (#9), and Business Process Outsourcing (#10). Each provides New York-aligned delivery, Eastern Time coverage for Wall Street workflows, multilingual support (Spanish, Mandarin, Russian, Cantonese), and the controls required by NYS DFS 23 NYCRR Part 500 and the New York SHIELD Act.",
   },
   {
     q: "How much does New York call center outsourcing cost in 2026?",
