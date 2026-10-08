@@ -150,14 +150,14 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
   },
   "what-is-bpo-collections": {
     slug: "what-is-bpo-collections",
-    title: "What Is BPO in Collections? First vs Third-Party",
+    title: "BPO Collections vs Contingency Collection Agencies",
     h1: "What Is BPO Collections? First-Party vs Third-Party, Explained",
     description:
       "What is BPO collections? Learn how outsourced debt collection works, the difference between first-party and third-party collections, FDCPA compliance.",
     category: "Debt Collection BPO",
     readTime: "12 min read",
     datePublished: "2026-06-26",
-    dateModified: "2026-09-30",
+    dateModified: "2026-10-08",
     image: "/images/cc-management.jpg",
     imageAlt: "Outsourced collections team working accounts receivable",
     keywords: [
@@ -173,6 +173,11 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       "This guide explains what BPO collections is, the key difference between first-party and third-party collections, how compliance works, what it costs, and when outsourcing makes sense.",
     ],
     sections: [
+{"heading": "What is a contingency collection agency?", "paragraphs": ["A contingency collection agency collects on behalf of a creditor and earns an agreed share of recovered money. The placement agreement defines what counts as a recovery and how the fee is calculated. It is a collection model, while BPO describes the broader decision to outsource a business process.", "For the recovery factors, statement checks and agreement questions, read our [contingency collection agency](/blog/contingency-collection-agency) guide. For earlier outreach under your own brand, review [first-party collections outsourcing](/services/first-party-collections)."]},
+{"heading": "Contingency, flat-fee and first-party collection models", "paragraphs": ["Compare the work as well as the payment basis. Contingency generally ties compensation to recovered money. A flat-fee arrangement prices a defined set of tasks or placements. First-party describes outreach in the creditor’s name; it does not, by itself, specify how the provider charges. Confirm scope and commercial terms together.", "Early-stage reminders, dispute resolution and later-stage recovery can need different procedures and authority. Record which accounts enter each stage, who approves a transfer and what information follows the account. A change in the provider name or billing model should not obscure the balance, prior conversations or unresolved dispute."]},
+{"heading": "How placement and account return should work", "paragraphs": ["Before placement, agree the eligible account types, required records, settlement authority, reporting period and review owner. Define the placement period, the treatment of direct payments and the process for withdrawing an account. Ask what work stops when a dispute or restriction appears.", "At the end of the placement period, reconcile payments and pending transfers. Confirm the status of uncollected accounts, who receives the history and whether any continuing activity or charges remain authorised. Return and cancellation treatment depend on the agreement; do not assume every account is automatically returned under the same terms."]},
+{"heading": "When first-party outreach may fit better", "paragraphs": ["First-party outreach can fit an early payment reminder or a customer relationship you want to preserve. The team needs accurate billing information, approved answers and a clear route for disputed invoices. Calls should distinguish an actual payment difficulty from a balance or service error.", "A later-stage agency may be inappropriate when basic account records are incomplete or the dispute is unresolved. Correct the records and decide who has authority before adding collection activity. See our [debt collection call center](/industries/debt-collection-call-center) page for the first-party workflow."]},
+
       {
         heading: "What is BPO collections?",
         paragraphs: [
@@ -306,7 +311,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     category: "Debt Collection BPO",
     readTime: "13 min read",
     datePublished: "2026-09-30",
-    dateModified: "2026-09-30",
+    dateModified: "2026-10-08",
     image: "/images/cc-agent-writing.jpg",
     imageAlt: "Collections specialist reviewing placed accounts and agency contract terms",
     keywords: [
@@ -322,6 +327,11 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       "That simple promise hides a lot of variation. The rate you are offered depends on the accounts you place, the contract decides what counts as a recovery, and federal law limits how the agency may contact your customers. This guide explains how contingency fees work, what moves the rate, how the model compares with flat-fee and first-party collections, when it is the wrong choice, and what to ask before you sign. It describes what drives the rate instead of quoting one, because an honest rate depends on your portfolio.",
     ],
     sections: [
+{"heading": "Compare collection success rate with the fee", "paragraphs": ["Compare recoveries on similar accounts over the same evaluation period. Ask whether the recovery rate uses dollars placed or accounts placed, whether it counts promises or cleared payments, and how disputed or withdrawn accounts enter the denominator. A headline success rate without these definitions cannot support a fair comparison.", "A lower contingency percentage does not necessarily leave more money with the creditor. Review the amount actually recovered, the agreed deductions and the amount remitted. Compare account-age bands separately so a portfolio of fresh, well-documented invoices is not treated as equivalent to older placements."]},
+{"heading": "Why account age belongs in the placement report", "paragraphs": ["Record the original due date, last payment, dispute history and prior collection attempts. Compare placements in consistent age bands rather than averaging every account together. Missing documents, unresolved credits and incorrect contact details can affect recovery independently of age.", "The age of an account also raises legal questions that a recovery forecast cannot answer. Ask the responsible legal reviewer to determine which accounts may be contacted, which restrictions apply and how excluded accounts are removed from active queues. Do not assume that a promising recovery estimate establishes permission to collect."]},
+{"heading": "Gross collections, net recovery and remittance", "paragraphs": ["Gross collections are the payments received before agreed deductions. Net recovery is what remains after the agency fee and other authorised deductions. Remittance is the transfer to the creditor, which may follow a different schedule from the payment receipt. Ask for a sample statement that separates these three events.", "Check how direct-to-creditor payments, reversals, settlement discounts and legal expenses are handled. Match the statement to the underlying account record and the agreement. A useful report makes pending funds, completed transfers and adjustments visible rather than combining them into one total."]},
+{"heading": "Licensing and handling collected funds", "paragraphs": ["Ask which legal entity will work each account, which jurisdictions it covers and how you can verify its current authorisation with the relevant regulator. Confirm the actual licensing and bonding requirements for the account type and location; a national marketing page does not establish that an agency may collect everywhere.", "Ask how collected money is held, reconciled and released, including any applicable trust-account requirements. Confirm who approves settlements, who investigates a missing payment and what happens to money and records when the engagement ends. These are due-diligence questions, not claims about Contact Center USA licences or account arrangements.", "For the consumer-debt framework, see the [CFPB debt collection resources](https://www.consumerfinance.gov/consumer-tools/debt-collection/). Requirements and applicability need review for the actual programme."]},
+
       {
         heading: "What is a contingency collection agency?",
         paragraphs: [
@@ -487,7 +497,11 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         answer:
           "Use first-party collections on early-stage accounts where the customer is worth keeping, because the contact stays in your brand and you pay for the coverage rather than a share of each payment. Use a contingency agency for aged or charged-off accounts you no longer expect to keep. Many creditors use both, one after the other.",
       },
-    ],
+
+{"question": "Is the lowest contingency fee the best offer?", "answer": "Compare net recovery on similar placements, using cleared payments and consistent evaluation periods. The fee alone does not show what the creditor keeps."},
+{"question": "What is the difference between gross collections and remittance?", "answer": "Gross collections are payments received before deductions. Remittance is the transfer to the creditor. The statement should show fees, authorised deductions, reversals and funds still pending."},
+{"question": "What licensing information should a creditor request?", "answer": "Request the collecting legal entity, the relevant jurisdictions and a way to verify current authorisation. Confirm requirements for your account type and ask how collected funds are held and reconciled."},
+],
     related: [
       { label: "Debt collection outsourcing services", href: "/services/debt-collection-outsourcing" },
       { label: "Debt collection call center for first-party recovery", href: "/industries/debt-collection-call-center" },
