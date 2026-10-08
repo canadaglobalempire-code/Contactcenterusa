@@ -10,6 +10,7 @@ export type TrafficBlogSection = {
 };
 
 export type TrafficBlogPost = {
+  path?: string;
   slug: string;
   title: string;
   h1: string;

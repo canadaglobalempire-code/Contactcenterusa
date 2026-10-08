@@ -3,7 +3,10 @@ import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
 import { LeadCTALink } from "@/components/shared/LeadCTALink";
 
+import dashboardGuides from "@/lib/dashboard-guides.json";
+
 const blogPosts = [
+  ...Object.values(dashboardGuides).map(post => ({ title: post.title, excerpt: post.description, category: post.category, readTime: post.readTime, image: post.image, href: post.path })),
   {
     title: "Contingency Collection Agency: Fees, Terms & Fit",
     excerpt:

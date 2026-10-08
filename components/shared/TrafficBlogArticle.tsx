@@ -21,7 +21,7 @@ function jsonLd(data: unknown) {
 }
 
 function blogPostingSchema(post: TrafficBlogPost) {
-  const url = `${SITE_URL}/blog/${post.slug}`;
+  const url = `${SITE_URL}${post.path ?? `/blog/${post.slug}`}`;
 
   return {
     "@context": "https://schema.org",
