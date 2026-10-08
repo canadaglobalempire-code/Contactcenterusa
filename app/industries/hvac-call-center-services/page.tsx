@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
@@ -99,7 +100,7 @@ const seoSections: SEOPattern[] = [
     accent: "gets the $12,000 replacement job",
     body: [
       "When a homeowner's air conditioning fails during a 95°F heatwave or a heating system quits on Christmas Eve, they do not leave voicemails. They call the next HVAC company on Google until a live human answers.",
-      "Contact Center USA provides dedicated, trade-trained US call center agents who answer your calls in under three rings, qualify the job, and lock the appointment into your dispatch software before the customer calls your competitor.",
+      <>Contact Center USA provides dedicated, trade-trained US call center agents who answer your calls in under three rings, qualify the job, and lock the appointment into your dispatch software before the customer calls your competitor. Our <Link href="/blog/top-10-hvac-home-services-call-center-companies-usa" style={{ color: "inherit", textDecoration: "inherit" }}>HVAC call center company guide</Link> explains provider comparisons, while the <Link href="/blog/after-hours-answering-service-hvac-companies" style={{ color: "inherit", textDecoration: "inherit" }}>after-hours HVAC answering guide</Link> helps you prepare dispatch and escalation rules.</>,
     ],
     stats: [
       { stat: "<3 Rings", label: "Average speed to answer on all emergency calls" },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
@@ -155,7 +156,7 @@ const seoSections: SEOPattern[] = [
     body: [
       "After-hours coverage means the answering service takes every call when your office is closed: evenings, nights, weekends and holidays. This is where emergency triage and on-call dispatch matter most. A burst pipe at 2 a.m. cannot wait, a dripping faucet can, and waking a technician for the wrong one costs you the next day's work.",
       "Overflow coverage means the service picks up during business hours when your office line is busy or not answered within a set number of rings. It protects you on the mornings after a freeze, when every homeowner with a split pipe calls at once, and through lunch breaks and staff absences. Overflow calls are mostly bookings and estimate requests, so the key part of the setup is live access to your schedule.",
-      "Many plumbing companies use both, with different rules for each: dispatch rules for after-hours calls and booking rules for overflow. Start with the gap that costs you the most jobs today, then add the other once the scripts are working.",
+      <>Many plumbing companies use both, with different rules for each: dispatch rules for after-hours calls and booking rules for overflow. Start with the gap that costs you the most jobs today, then add the other once the scripts are working. Use our <Link href="/blog/top-10-plumbing-answering-service-companies-usa" style={{ color: "inherit", textDecoration: "inherit" }}>plumbing answering service company guide</Link> to compare coverage and dispatch questions before choosing a provider.</>,
     ],
     bullets: [
       "After-hours: nights, weekends and holidays, with emergency dispatch",
