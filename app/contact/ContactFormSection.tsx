@@ -22,7 +22,9 @@ export function ContactFormSection() {
               <Link href="/privacy-policy" className="font-semibold text-red hover:underline">
                 Privacy Policy
               </Link>{" "}
-              for how we handle your information.
+              for how we handle your information, and our{" "}
+              <Link href="/terms" style={{ color: "inherit", textDecoration: "inherit" }}>Terms of Use</Link>{" "}
+              for website use.
             </p>
 
             <LeadForm
