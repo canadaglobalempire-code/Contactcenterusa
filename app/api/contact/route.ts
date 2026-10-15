@@ -1,3 +1,5 @@
+import { isValidE164 } from "@/components/forms/countries";
+
 const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
 
 const DEFAULT_ALLOWED_ORIGINS = [
@@ -108,10 +110,11 @@ export async function POST(request: Request) {
 
   // Phone is required on every lead form and arrives as dial code + national
   // digits ("+14035551234"). Spaces/dashes/dots/parentheses are tolerated and
-  // stripped; letters or an empty value are rejected.
+  // stripped; letters or an empty value are rejected. The result must be E.164
+  // ("+" and 7–15 digits) and start with a dial code from the country list.
   const phoneRaw = (formData.get("phone_number") ?? "").toString().trim();
   const phoneDigits = phoneRaw.replace(/[\s().-]/g, "");
-  if (!/^\+\d{5,15}$/.test(phoneDigits)) {
+  if (!isValidE164(phoneDigits)) {
     return Response.json(
       { success: false, message: "Please enter a valid phone number." },
       { status: 400, headers },

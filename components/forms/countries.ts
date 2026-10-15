@@ -107,3 +107,19 @@ export const COUNTRIES: Country[] = [
 ];
 
 export const DEFAULT_COUNTRY = "US";
+
+/** Every ITU-assigned dial code in the list ("+1", "+44", "+380", …). Plain
+ *  data, safe to import on the server (app/api/contact/route.ts). */
+export const DIAL_CODES: ReadonlySet<string> = new Set(all.map((c) => c.dial));
+
+/** True only when `dial` exactly matches a dial code in the list. */
+export const isKnownDial = (dial: string) => DIAL_CODES.has(dial);
+
+/** True while `dial` ("+", "+3", "+38") could still become a known code. */
+export const isPartialDial = (dial: string) =>
+  /^\+\d{0,3}$/.test(dial) && !DIAL_CODES.has(dial) && [...DIAL_CODES].some((d) => d.startsWith(dial));
+
+/** True when an E.164 value ("+380501234567") is "+" and 7–15 digits whose
+ *  leading 1–3 digits are a known dial code. */
+export const isValidE164 = (value: string) =>
+  /^\+\d{7,15}$/.test(value) && [2, 3, 4].some((n) => DIAL_CODES.has(value.slice(0, n)));
