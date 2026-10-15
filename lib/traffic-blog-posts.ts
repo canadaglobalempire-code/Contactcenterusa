@@ -974,7 +974,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
     ],
     intro: [
       "Ecommerce call center outsourcing helps online stores handle customer questions before and after the sale. For Shopify, DTC, subscription, marketplace, and retail brands, the support team often has a direct impact on conversion, repeat purchase rate, reviews, refunds, and chargebacks.",
-      "The right outsourced ecommerce support team does more than answer where-is-my-order tickets. It should handle product questions, sizing questions, return requests, cancellations, shipping issues, subscription changes, payment questions, and high-intent calls that can still convert into revenue.",
+      "The right outsourced ecommerce support team does more than answer where-is-my-order tickets. It should handle product questions, sizing questions, return requests, cancellations, shipping issues, subscription changes, payment questions, and high-intent calls that can still convert into revenue. [Scope the service itself on our ecommerce call center outsourcing page](/services/ecommerce-call-center-outsourcing).",
     ],
     sections: [
       {

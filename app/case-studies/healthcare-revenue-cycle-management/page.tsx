@@ -24,7 +24,7 @@ const metrics = [
 ];
 
 const takeaways = [
-  "HIPAA-certified agents with deep EHR integration can reduce billing errors by over a third in the first quarter alone, delivering measurable ROI within 90 days.",
+  "HIPAA-trained agents with deep EHR integration can reduce billing errors by over a third in the first quarter alone, delivering measurable ROI within 90 days.",
   "Automated follow-up workflows ensure no claim falls through the cracks — the single largest driver of denial reduction in this engagement.",
   "A dedicated healthcare billing team outperforms shared-agent models by providing disease-state familiarity and payer-specific knowledge that generic agents lack.",
   "Real-time reporting dashboards give hospital CFOs and revenue cycle directors the visibility they need to course-correct before denials pile up.",
@@ -129,7 +129,7 @@ export default function HealthcareRevenueCyclePage() {
               The network&rsquo;s leadership recognized that the root cause was not a lack
               of effort but a systemic mismatch between the complexity of modern
               healthcare billing and the capabilities of the existing workforce.
-              They needed a partner who could supply HIPAA-certified billing
+              They needed a partner who could supply HIPAA-trained billing
               specialists, integrate seamlessly with their Epic EHR platform, and
               deploy automated workflows that would prevent denials before they
               occurred — all within a budget that made financial sense.
@@ -146,7 +146,7 @@ export default function HealthcareRevenueCyclePage() {
           <div className="mt-8 max-w-3xl space-y-6 text-lg leading-relaxed text-text-muted">
             <p>
               Contact Center USA deployed a dedicated team of 35
-              HIPAA-certified billing agents who were specifically trained in the
+              HIPAA-trained billing agents who were specifically trained in the
               network&rsquo;s payer mix, common denial reason codes, and
               specialty-specific billing requirements. Unlike generalist call
               center agents, each specialist was assigned to a specific facility
@@ -254,7 +254,7 @@ export default function HealthcareRevenueCyclePage() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-text-muted">
             Whether you&rsquo;re a hospital network, physician group, or health system,
-            our HIPAA-certified teams are ready to transform your revenue cycle.
+            our HIPAA-trained teams are ready to transform your revenue cycle.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link

@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import Link from "next/link";
 
-const title = "Banking Financial Services Call Center | Contact Center USA";
+const title = "Banking Call Center Outsourcing for Banks & Credit Unions";
 const description =
-  "US-based banking & financial services call center: customer care, inbound/outbound calls, and back-office support. Request an outsourcing quote.";
+  "US-based banking call center for retail banks and credit unions: account servicing, card disputes, digital banking help and branch call overflow.";
 
 export const metadata: Metadata = {
   title,
@@ -112,7 +113,13 @@ const seoContent: SEOPattern[] = [
     accent: "regulators do",
     body: [
       "Contact Center USA is one of the best banking BPO services providers in the USA — a 100% US-based, PCI DSS Level 1 and SOC 2 Type II certified financial services call center trusted by community banks, regional banks, credit unions, mortgage lenders, and fintech platforms.",
-      "When institutions evaluate banking call center outsourcing USA options, they want one partner that can handle account servicing, Reg E disputes, digital banking support, loan origination assistance, and retention outreach without hiding behind offshore subcontractors. That's what we deliver.",
+      <>
+        When institutions evaluate banking call center outsourcing USA options, they want one partner that can handle account servicing, Reg E disputes, digital banking support, loan origination assistance, and retention outreach without hiding behind offshore subcontractors. That&apos;s what we deliver. Lenders, wealth firms and fintech platforms outside retail banking should see our{" "}
+        <Link href="/industries/financial-services-call-center" className="text-red font-semibold hover:underline">
+          financial services call center
+        </Link>{" "}
+        page.
+      </>,
     ],
     stats: [
       { stat: "PCI L1", label: "Level 1 PCI DSS certified plus SOC 2 Type II across all facilities" },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
@@ -118,7 +119,13 @@ const seoContent: SEOPattern[] = [
     heading: "The ecommerce customer support partner online retailers choose when every minute of response time moves revenue.",
     accent: "moves revenue",
     body: [
-      "Contact Center USA is a 100% US-based e-commerce call center delivering ecommerce customer support for DTC brands, marketplaces, Shopify Plus stores, subscription boxes, and omnichannel retailers.",
+      <>
+        Contact Center USA is a 100% US-based e-commerce call center delivering ecommerce customer support for DTC brands, marketplaces, Shopify Plus stores, subscription boxes, and omnichannel retailers. Scope the full service on our{" "}
+        <Link href="/services/ecommerce-call-center-outsourcing" className="text-red font-semibold hover:underline">
+          ecommerce call center outsourcing
+        </Link>{" "}
+        page, which covers channels, store access and seasonal coverage.
+      </>,
       "For ecommerce brands evaluating online retail customer support partners, the stakes are measurable: every minute of response delay increases abandonment, every mishandled return erodes LTV, and every peak season without surge capacity caps the year's growth. We solve all three.",
     ],
     stats: [

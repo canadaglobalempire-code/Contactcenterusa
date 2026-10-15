@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
+import Link from "next/link";
 
-const title = "Financial Services Call Center | Contact Center USA";
+const title = "Financial Services Call Center for Lenders, Wealth & Fintech";
 const description =
-  "US-based financial services call center support for customer care, inbound calls, outbound outreach, and back office workflows. Request an outsourcing quote.";
+  "US-based financial services call center for lenders, brokerages, wealth firms, fintech and payments platforms: client service, fraud alerts and KYC queues.";
 
 export const metadata: Metadata = {
   title,
@@ -112,7 +113,13 @@ const seoContent: SEOPattern[] = [
     accent: "same weight",
     body: [
       "Contact Center USA is one of the best financial services call center providers in the USA — a 100% US-based, PCI DSS Level 1 certified fintech BPO USA operation trusted by wealth management firms, lending platforms, payments companies, and digital investment brands.",
-      "For financial services leaders evaluating financial customer support outsourcing, the non-negotiables are data security, regulatory coverage, and the ability to handle high-trust client interactions at scale. We meet every one of them.",
+      <>
+        For financial services leaders evaluating financial customer support outsourcing, the non-negotiables are data security, regulatory coverage, and the ability to handle high-trust client interactions at scale. We meet every one of them. Retail banks and credit unions should see our{" "}
+        <Link href="/industries/banking-financial-services-call-center" className="text-red font-semibold hover:underline">
+          banking call center
+        </Link>{" "}
+        page for account servicing, card and dispute support.
+      </>,
     ],
     stats: [
       { stat: "PCI L1", label: "PCI DSS Level 1, SOC 2 Type II, GLBA, and SOX-aligned operations" },

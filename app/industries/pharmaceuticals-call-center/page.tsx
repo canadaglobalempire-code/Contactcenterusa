@@ -111,7 +111,7 @@ const seoContent: SEOPattern[] = [
     heading: "The pharma BPO services partner manufacturers trust when compliance and patient outcomes both matter.",
     accent: "compliance and patient outcomes",
     body: [
-      "Contact Center USA is one of the best pharmaceutical call center providers in the USA — a 100% US-based pharma BPO services partner delivering FDA-compliant adverse event reporting, HIPAA-certified patient assistance programs, specialty pharmacy hub services, and HCP support lines for branded and specialty products.",
+      "Contact Center USA is one of the best pharmaceutical call center providers in the USA — a 100% US-based pharma BPO services partner delivering FDA-compliant adverse event reporting, HIPAA-compliant patient assistance programs, specialty pharmacy hub services, and HCP support lines for branded and specialty products.",
       "For medical affairs, patient services, and commercial leaders searching for pharmaceutical customer service outsourcing that can actually carry regulatory weight, we staff pharmacovigilance-trained agents, pharmacist-supervised MI teams, and SOC 2 Type II-certified infrastructure with zero missed FDA submissions across our book.",
     ],
     stats: [

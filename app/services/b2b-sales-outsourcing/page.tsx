@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ServicePageTemplate } from "@/components/shared/ServicePageTemplate";
 import type { SEOPattern } from "@/components/shared/SEOContentSection";
 import { pageMeta } from "@/lib/seo-config";
@@ -112,7 +113,13 @@ const seoContent: SEOPattern[] = [
     accent: "predictable pipeline",
     body: [
       "Contact Center USA is one of the best B2B sales outsourcing companies in the USA — a 100% US-based B2B lead generation BPO operating outsourced B2B sales teams that plug straight into your CRM, your ICP, and your revenue motion.",
-      "For CROs and VP Sales leaders searching for the best B2B lead generation BPO in USA, we deliver qualified meetings, managed pipeline, and full-funnel SDR coverage without the 6-month ramp and headcount risk of building internally.",
+      <>
+        For CROs and VP Sales leaders searching for the best B2B lead generation BPO in USA, we deliver qualified meetings, managed pipeline, and full-funnel SDR coverage without the 6-month ramp and headcount risk of building internally. Teams that only need top-of-funnel prospecting can start with our{" "}
+        <Link href="/services/sdr-outsourcing" className="text-red font-semibold hover:underline">
+          SDR outsourcing
+        </Link>{" "}
+        service.
+      </>,
     ],
     stats: [
       { stat: "+42%", label: "More sales-qualified leads within 90 days of launch" },

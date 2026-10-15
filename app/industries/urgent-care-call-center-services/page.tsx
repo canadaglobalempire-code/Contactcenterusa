@@ -106,7 +106,7 @@ const seoSections: SEOPattern[] = [
     accent: "focus on in-person patient care",
     body: [
       "When front-desk medical staff juggle check-ins, insurance verification, and constantly ringing phones, patient wait times increase, billing errors rise, and patient satisfaction plunges.",
-      "Contact Center USA provides dedicated, HIPAA-certified US healthcare agents who handle all appointment scheduling, insurance pre-checks, directions, and after-hours triage—integrating directly with your EHR.",
+      "Contact Center USA provides dedicated, HIPAA-trained US healthcare agents who handle all appointment scheduling, insurance pre-checks, directions, and after-hours triage—integrating directly with your EHR.",
     ],
     stats: [
       { stat: "HIPAA", label: "Fully compliant domestic healthcare agents" },
@@ -137,7 +137,7 @@ const seoSections: SEOPattern[] = [
     eyebrow: "Get Started",
     heading: "Ready to elevate your urgent care clinic's patient access and efficiency?",
     accent: "urgent care clinic's patient access",
-    body: "Contact Center USA can deploy a dedicated, HIPAA-certified healthcare support pod tailored to your clinics in under 48 hours.",
+    body: "Contact Center USA can deploy a dedicated, HIPAA-trained healthcare support pod tailored to your clinics in under 48 hours.",
     ctaLabel: "Get a Free Urgent Care Call Center Quote",
     ctaHref: "/contact",
   },
@@ -150,7 +150,7 @@ export default function UrgentCarePage() {
       title="Urgent Care & Medical Clinic Call Center"
       titleHighlight="Urgent Care & Medical Clinic Call Center"
       subtitle="HIPAA-Compliant Patient Scheduling, Insurance Verification & 24/7 Triage"
-      description="Streamline clinic operations and improve patient satisfaction. Our 100% US-based, HIPAA-certified agents handle appointment booking, insurance verification, and after-hours answering directly in your EHR 24/7/365."
+      description="Streamline clinic operations and improve patient satisfaction. Our 100% US-based, HIPAA-trained agents handle appointment booking, insurance verification, and after-hours answering directly in your EHR 24/7/365."
       features={features}
       benefits={benefits}
       image="/images/cc-agent-multilingual.jpg"

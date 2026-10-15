@@ -151,7 +151,7 @@ const milestones = [
   { year: "1999", event: "Founded as a small inbound support center in Southern California with a team of 10 agents handling customer service for local businesses." },
   { year: "2003", event: "Expanded to our second location in Dallas, Texas, growing to 75 agents and adding outbound calling and lead generation services." },
   { year: "2007", event: "Survived the dot-com bust and emerged stronger, opening our Chicago operations center and crossing the 200-agent milestone." },
-  { year: "2010", event: "Navigated the 2008 financial crisis by pivoting to healthcare and financial services support, earning our first HIPAA and PCI certifications." },
+  { year: "2010", event: "Navigated the 2008 financial crisis by pivoting to healthcare and financial services support, earning our first HIPAA program audit and PCI DSS validation." },
   { year: "2015", event: "Launched omnichannel support capabilities, adding live chat, SMS, and email to our voice services and expanding to Miami and Phoenix." },
   { year: "2019", event: "Crossed 500 agents across five US locations, achieved SOC 2 Type II certification, and served over 300 active client accounts." },
   { year: "2023", event: "Introduced AI-powered call routing and chatbot solutions, integrating machine learning to improve first-call resolution and reduce wait times." },

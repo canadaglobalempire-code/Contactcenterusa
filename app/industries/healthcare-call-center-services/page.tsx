@@ -78,9 +78,9 @@ const testimonial = {
 
 const faqs = [
   {
-    question: "Are your healthcare call center agents HIPAA certified?",
+    question: "Are your healthcare call center agents HIPAA trained?",
     answer:
-      "Yes, every agent handling healthcare calls completes comprehensive HIPAA training and certification before taking a single call. We conduct annual recertification and regular audits to ensure ongoing compliance with all federal privacy regulations.",
+      "Yes. There is no HHS-issued HIPAA certification for agents, so we do not claim one. Every agent handling healthcare calls completes our HIPAA training — including privacy and security rules and handling of protected health information — before taking a single call, with annual refresher training and regular audits. Programs touching PHI run under a signed Business Associate Agreement with your organization.",
   },
   {
     question: "Can you integrate with our existing EHR system?",

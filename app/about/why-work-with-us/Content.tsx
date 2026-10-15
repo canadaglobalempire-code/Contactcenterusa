@@ -61,7 +61,7 @@ const advantages = [
     icon: Award,
     title: "Experience",
     description:
-      "25+ years of combined leadership experience serving some of the largest and most complex organizations worldwide.",
+      "In business since 1999 — over 25 years serving some of the largest and most complex organizations worldwide.",
   },
   {
     icon: DollarSign,

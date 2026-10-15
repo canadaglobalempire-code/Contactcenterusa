@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Ecommerce Call Center Outsourcing | US-Based Agents";
 const description =
-  "Ecommerce call center outsourcing with US-based agents for order status, returns, exchanges and product questions, scaled to your peak seasons. Get a free quote.";
+  "Ecommerce call center outsourcing with US-based agents for order status, returns, exchanges and product questions through peak seasons. Get a free quote.";
 
 export const metadata: Metadata = {
   title,
