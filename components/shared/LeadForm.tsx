@@ -9,6 +9,7 @@ import {
   submitLeadForm,
   trackLeadEvent,
 } from "@/lib/lead-tracking";
+import { PhoneField, toE164 } from "@/components/forms/PhoneField";
 
 declare global {
   interface Window {
@@ -227,6 +228,19 @@ export function LeadForm({
     setIsSubmitting(true);
 
     const formData = new FormData(form);
+    // Phone: post dial code + national digits as one E.164-style value
+    // ("+14035551234") under the same phone_number field.
+    const phoneInput = form.elements.namedItem("phone_number") as HTMLInputElement | null;
+    const phone = phoneInput
+      ? toE164(phoneInput.dataset.dialCode ?? "", phoneInput.value)
+      : null;
+    if (!phone) {
+      setErrors(new Set(["phone_number"]));
+      setIsSubmitting(false);
+      phoneInput?.focus();
+      return;
+    }
+    formData.set("phone_number", phone);
     if (token) formData.set("g-recaptcha-response", token);
     // The website field accepts whatever the visitor types — a full URL, a bare
     // domain, or plain text. Only prepend https:// to something that actually
@@ -375,14 +389,7 @@ export function LeadForm({
               placeholder="Company email *"
               className={inputClass + errorRing("work_email")}
             />
-            <input
-              name="phone_number"
-              type="tel"
-              required
-              aria-label="Phone number"
-              placeholder="Phone number *"
-              className={inputClass + errorRing("phone_number")}
-            />
+            <PhoneField name="phone_number" invalid={errors.has("phone_number")} />
           </div>
 
           {/* Website & Solution Type */}

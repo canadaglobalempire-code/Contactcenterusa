@@ -106,6 +106,19 @@ export async function POST(request: Request) {
     );
   }
 
+  // Phone is required on every lead form and arrives as dial code + national
+  // digits ("+14035551234"). Spaces/dashes/dots/parentheses are tolerated and
+  // stripped; letters or an empty value are rejected.
+  const phoneRaw = (formData.get("phone_number") ?? "").toString().trim();
+  const phoneDigits = phoneRaw.replace(/[\s().-]/g, "");
+  if (!/^\+\d{5,15}$/.test(phoneDigits)) {
+    return Response.json(
+      { success: false, message: "Please enter a valid phone number." },
+      { status: 400, headers },
+    );
+  }
+  formData.set("phone_number", phoneDigits);
+
   const accessKey = process.env.SPLITFORMS_ACCESS_KEY?.trim();
   if (!accessKey) {
     console.error("SPLITFORMS_ACCESS_KEY is not configured.");
