@@ -267,6 +267,14 @@ export function LeadForm({
     try {
       const { data, response } = await submitLeadForm(formData);
       if (response.ok && data.success === true) {
+        // Partial-lead tracker (splitforms embed.js): the lead landed, so don't
+        // also send what was typed as a partial. Optional — never blocks.
+        try {
+          (window as Window & { splitforms?: { done?: (f: HTMLFormElement) => void } })
+            .splitforms?.done?.(form);
+        } catch {
+          /* lead already delivered */
+        }
         trackLeadEvent("lead_form_submit", {
           cta_location: formData.get("cta_location")?.toString(),
           form_name: formName,
@@ -301,6 +309,7 @@ export function LeadForm({
       onPointerDown={armCaptcha}
       onFocusCapture={armCaptcha}
     >
+      <Script src="https://splitforms.com/embed.js" strategy="afterInteractive" />
       {captchaArmed && (
         <Script
           src="https://www.google.com/recaptcha/api.js?render=explicit"
