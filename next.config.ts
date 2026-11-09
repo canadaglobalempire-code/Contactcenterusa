@@ -18,6 +18,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Hostinger build containers cap threads; Next's default (cores-1 = 63 workers) aborts with os error 11.
+  experimental: { cpus: 2, workerThreads: false },
   // Expire stale HTML without shortening the cache of content-hashed assets.
   expireTime: 600,
   images: {
