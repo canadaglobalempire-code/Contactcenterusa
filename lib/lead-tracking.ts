@@ -3,6 +3,9 @@ export const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
 export const SPLITFORMS_ACCESS_KEY =
   process.env.NEXT_PUBLIC_SPLITFORMS_ACCESS_KEY?.trim() ||
   "0ffd7166ac97420ba6ffc7727d189d07";
+// SplitForms reserved field `subject`: used verbatim as the notification email
+// subject. Every form on the site sends the same one, whatever page it is on.
+export const LEAD_SUBJECT = "Contact Center USA \u2013 Website Inquiry";
 export const LEAD_FORM_ENDPOINT =
   process.env.NEXT_PUBLIC_LEAD_FORM_ENDPOINT?.trim() || SPLITFORMS_ENDPOINT;
 
@@ -159,6 +162,7 @@ function buildNamespacedLeadPayload(formData: FormData) {
     if (!trimmed) continue;
     payload.set(key, trimmed);
   }
+  payload.set("subject", LEAD_SUBJECT);
 
   return payload;
 }

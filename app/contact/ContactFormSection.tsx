@@ -30,7 +30,6 @@ export function ContactFormSection() {
             <LeadForm
               card={false}
               className="mt-8"
-              subject="New Contact Form Submission — ContactCenterUSA.com"
               ctaLocation="contact_page_form"
               formName="contact_page_form"
               submitLabel="Submit Inquiry"

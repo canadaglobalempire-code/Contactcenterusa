@@ -5,6 +5,7 @@ import Script from "next/script";
 import { ArrowRight, CheckCircle, Lock } from "lucide-react";
 import {
   getLeadFormEndpoint,
+  LEAD_SUBJECT,
   SPLITFORMS_ACCESS_KEY,
   submitLeadForm,
   trackLeadEvent,
@@ -45,6 +46,10 @@ const solutionTypes = [
   "Other or Combination",
 ];
 
+// After a successful submit the thank-you shows, then the empty form comes
+// back on its own so the visitor never has to reload to send another inquiry.
+const RESET_AFTER_MS = 6000;
+
 const agentOptions = ["5-25", "25-50", "50-100", "100+"];
 const volumeOptions = ["0-5,000", "5,000-20,000", "20,000-100,000", "100,000-500,000", "500,000+"];
 const scheduleOptions = ["24/7", "Monday-Friday", "Weekdays + Saturday", "Custom Schedule"];
@@ -57,7 +62,6 @@ const selectClass =
 type LeadFormProps = {
   title?: string;
   description?: string;
-  subject?: string;
   ctaLocation?: string;
   leadOffer?: string;
   formName?: string;
@@ -70,7 +74,6 @@ type LeadFormProps = {
 export function LeadForm({
   title,
   description,
-  subject = "Website Inquiry — ContactCenterUSA.com",
   ctaLocation = "lead_form",
   leadOffer = "General call center quote",
   formName = "lead_form",
@@ -79,9 +82,13 @@ export function LeadForm({
   className = "",
 }: LeadFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [thanksName, setThanksName] = useState("");
+  // Bumped on every success so the form (and the PhoneField's own state)
+  // remounts empty when it comes back.
+  const [formKey, setFormKey] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Set<string>>(new Set());
-  const [redirectTo, setRedirectTo] = useState("/contact?submitted=1");
+  const [redirectTo, setRedirectTo] = useState("/contact");
   const [captchaError, setCaptchaError] = useState("");
   const recaptchaRef = useRef<HTMLDivElement>(null);
   const widgetIdRef = useRef<number | null>(null);
@@ -96,10 +103,17 @@ export function LeadForm({
   const armCaptcha = () => setCaptchaArmed(true);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("submitted") === "1") setIsSubmitted(true);
-    setRedirectTo(`${window.location.pathname}?submitted=1`);
+    // No-JS fallback only: SplitForms sends the browser back to this page.
+    // The submitted state is never kept in the URL, so the form always loads empty.
+    setRedirectTo(window.location.pathname);
   }, []);
+
+  // Bring the empty form back automatically a few seconds after a success.
+  useEffect(() => {
+    if (!isSubmitted) return;
+    const id = window.setTimeout(() => setIsSubmitted(false), RESET_AFTER_MS);
+    return () => window.clearTimeout(id);
+  }, [isSubmitted]);
 
   // Render the reCAPTCHA widget once the API script is ready. Polling covers
   // first load, client-side navigation, and the cached-script case.
@@ -110,7 +124,7 @@ export function LeadForm({
   // staring at "complete the verification" with no checkbox on the page and no
   // way to send the form. See the fail-open branch in handleSubmit.
   useEffect(() => {
-    if (!captchaArmed) return;
+    if (!captchaArmed || isSubmitted) return;
     let tries = 0;
     const id = window.setInterval(() => {
       const g = window.grecaptcha;
@@ -127,7 +141,7 @@ export function LeadForm({
       if (++tries > 300) window.clearInterval(id);
     }, 200);
     return () => window.clearInterval(id);
-  }, [captchaArmed]);
+  }, [captchaArmed, isSubmitted, formKey]);
 
   // Only reset a widget we actually rendered. `reset(undefined)` targets the
   // first widget on the page, which throws when none exists.
@@ -281,6 +295,16 @@ export function LeadForm({
           lead_offer: formData.get("lead_offer")?.toString(),
           source_page: formData.get("source_page")?.toString(),
         });
+        const firstName = (formData.get("full_name") ?? "").toString().trim().split(/\s+/)[0] ?? "";
+        form.reset();
+        resetCaptcha();
+        // The widget lives inside the form, which unmounts for the thank-you;
+        // a fresh one is rendered when the form comes back.
+        widgetIdRef.current = null;
+        setErrors(new Set());
+        setCaptchaError("");
+        setThanksName(firstName);
+        setFormKey((k) => k + 1);
         setIsSubmitted(true);
       } else {
         setCaptchaError(
@@ -322,13 +346,23 @@ export function LeadForm({
       {isSubmitted ? (
         <div className="flex flex-col items-center py-12 text-center">
           <CheckCircle className="h-14 w-14 text-green-500" />
-          <p className="mt-4 text-xl font-bold text-navy">Thank You!</p>
-          <p className="mt-1 text-sm text-gray-700">
-            Your message has been sent. We&apos;ll contact you within 1 working day.
+          <p className="mt-4 text-xl font-bold text-navy">
+            {thanksName ? `Thanks, ${thanksName}!` : "Thanks!"}
           </p>
+          <p className="mt-1 text-sm text-gray-700">
+            Your inquiry has been received. One of our representatives will reach out to you.
+          </p>
+          <button
+            type="button"
+            onClick={() => setIsSubmitted(false)}
+            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-red px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-red-dark"
+          >
+            Submit another inquiry
+          </button>
         </div>
       ) : (
         <form
+          key={formKey}
           action={getLeadFormEndpoint()}
           method="POST"
           encType="multipart/form-data"
@@ -346,7 +380,7 @@ export function LeadForm({
             </div>
           )}
 
-          <input type="hidden" name="form_subject" value={subject} />
+          <input type="hidden" name="subject" value={LEAD_SUBJECT} />
           <input type="hidden" name="access_key" value={SPLITFORMS_ACCESS_KEY} />
           <input type="hidden" name="redirect" value={redirectTo} />
           <input type="hidden" name="source_page" />
@@ -496,9 +530,10 @@ export function LeadForm({
           <textarea
             name="additional_comments"
             rows={2}
-            placeholder="Additional comments (optional)"
+            required
+            placeholder="Additional comments *"
             aria-label="Additional comments"
-            className="w-full rounded-xl border border-gray-200 p-3 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20"
+            className={"w-full rounded-xl border border-gray-200 p-3 text-sm outline-none transition-colors focus:border-red focus:ring-2 focus:ring-red/20" + errorRing("additional_comments")}
           />
 
           {/* reCAPTCHA v2 — token is verified server-side by SplitForms */}

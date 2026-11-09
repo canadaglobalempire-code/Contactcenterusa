@@ -97,7 +97,6 @@ export function FAQSection() {
               <LeadForm
                 title="Get a Free Quote"
                 description="We'll respond within 1 working day."
-                subject="Homepage FAQ Form Inquiry — ContactCenterUSA.com"
                 ctaLocation="homepage_faq_form"
                 leadOffer="Homepage call center quote"
                 formName="homepage_faq_form"

@@ -74,7 +74,6 @@ export function BlogLeadSection() {
             <LeadForm
               title="Get a Free Quote"
               description="We'll respond within 1 working day."
-              subject="Blog Inquiry — ContactCenterUSA.com"
               ctaLocation="blog_article_form"
               leadOffer="Call center quote from blog"
               formName="blog_article_form"

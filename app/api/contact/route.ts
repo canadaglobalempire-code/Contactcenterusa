@@ -1,6 +1,23 @@
 import { isValidE164 } from "@/components/forms/countries";
 
 const SPLITFORMS_ENDPOINT = "https://splitforms.com/api/submit";
+const LEAD_SUBJECT = "Contact Center USA \u2013 Website Inquiry";
+
+// Every visible field on the lead form is required; the server agrees with the
+// client so a direct POST cannot skip them either.
+const REQUIRED_FIELDS = [
+  "full_name",
+  "company_name",
+  "work_email",
+  "phone_number",
+  "company_url",
+  "solution_type",
+  "service_type",
+  "agent_requirement",
+  "call_volume",
+  "operating_schedule",
+  "additional_comments",
+];
 
 const DEFAULT_ALLOWED_ORIGINS = [
   "https://contactcenterusa.com",
@@ -108,6 +125,16 @@ export async function POST(request: Request) {
     );
   }
 
+  const missing = REQUIRED_FIELDS.filter(
+    (field) => !(formData.get(field) ?? "").toString().trim(),
+  );
+  if (missing.length) {
+    return Response.json(
+      { success: false, message: "Please complete all required fields.", missing },
+      { status: 400, headers },
+    );
+  }
+
   // Phone is required on every lead form and arrives as dial code + national
   // digits ("+14035551234"). Spaces/dashes/dots/parentheses are tolerated and
   // stripped; letters or an empty value are rejected. The result must be E.164
@@ -132,6 +159,8 @@ export async function POST(request: Request) {
   }
 
   formData.set("access_key", accessKey);
+  formData.set("subject", LEAD_SUBJECT);
+  formData.delete("form_subject");
 
   // Forward as application/x-www-form-urlencoded, NOT multipart. SplitForms'
   // multipart parser drops fields after the first few (it collapsed the rest
