@@ -148,6 +148,20 @@ function hasNamespacedContactFields(formData: FormData) {
   return formData.has("full_name") || formData.has("work_email");
 }
 
+// The lead email shows each field name as its label. Send the same names the
+// other network sites use so every lead email reads Name / Company / Website /
+// Email / Phone / Agent Count / Message (boss, 2026-11-10). `message` is also
+// the name SplitForms' spam check reads as the lead's message.
+const EMAIL_FIELD_NAMES: Record<string, string> = {
+  full_name: "name",
+  company_name: "company",
+  company_url: "website",
+  work_email: "email",
+  phone_number: "phone",
+  agent_requirement: "agent_count",
+  additional_comments: "message",
+};
+
 function buildNamespacedLeadPayload(formData: FormData) {
   const payload = new FormData();
   payload.set("access_key", SPLITFORMS_ACCESS_KEY);
@@ -160,7 +174,7 @@ function buildNamespacedLeadPayload(formData: FormData) {
 
     const trimmed = value.trim();
     if (!trimmed) continue;
-    payload.set(key, trimmed);
+    payload.set(EMAIL_FIELD_NAMES[key] ?? key, trimmed);
   }
   payload.set("subject", LEAD_SUBJECT);
 
