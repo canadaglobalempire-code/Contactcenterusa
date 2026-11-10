@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Fitness & Gym Call Center | Membership Sales & Retention";
 const description =
-  "US-based call center for gyms, studios, and fitness franchises. Membership enquiries, tour booking, cancellation saves, and billing support. Get a quote.";
+  "US-based call center for gyms, studios, and fitness franchises. Membership inquiries, tour booking, cancellation saves, and billing support. Get a quote.";
 
 export const metadata: Metadata = {
   title,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    title: "Membership Enquiry & Tour Booking",
+    title: "Membership Inquiry & Tour Booking",
     desc: "Prospective members answered live and booked for a tour or intro class on the call, while intent is high — instead of leaving a voicemail with a gym whose staff are all on the floor coaching.",
   },
   {
@@ -54,7 +54,7 @@ const features = [
 ];
 
 const benefits = [
-  "Membership enquiries answered live, not voicemail",
+  "Membership inquiries answered live, not voicemail",
   "100% US-based agents",
   "Mindbody, ABC Glofox & Zen Planner integration",
   "Cancellation save conversations within your offers",
@@ -98,7 +98,7 @@ const faqs = [
   {
     question: "What hours do you cover?",
     answer:
-      "Fitness enquiry volume peaks early morning, evenings, and weekends — precisely when club staff are busiest and corporate offices are closed. We cover those windows specifically, and January volume in particular is planned for in advance, since a club's biggest enquiry month is also the month its staff are least able to reach a phone.",
+      "Fitness inquiry volume peaks early morning, evenings, and weekends — precisely when club staff are busiest and corporate offices are closed. We cover those windows specifically, and January volume in particular is planned for in advance, since a club's biggest inquiry month is also the month its staff are least able to reach a phone.",
   },
 ];
 
@@ -109,7 +109,7 @@ const seoContent: SEOPattern[] = [
     heading: "The person calling to join reaches voicemail. Your staff are on the floor.",
     accent: "reaches voicemail",
     body: [
-      "Contact Center USA answers for gyms, boutique studios, and fitness franchises with US-based agents — membership enquiries, tour booking, lead follow-up, cancellation saves, and failed payment recovery.",
+      "Contact Center USA answers for gyms, boutique studios, and fitness franchises with US-based agents — membership inquiries, tour booking, lead follow-up, cancellation saves, and failed payment recovery.",
       "Fitness businesses are staffed for the members in the building, not for the prospects calling about joining. The result is that the single highest-value call a club receives is routinely the one nobody can pick up.",
     ],
     stats: [
@@ -128,7 +128,7 @@ const seoContent: SEOPattern[] = [
     rightTitle: "Contact Center USA",
     rows: [
       {
-        label: "Membership Enquiries",
+        label: "Membership Inquiries",
         left: "Missed while staff coach or run the floor; prospect joins elsewhere.",
         right: "Answered live and booked for a tour during the call.",
         leftYes: false,
@@ -153,8 +153,8 @@ const seoContent: SEOPattern[] = [
       },
       {
         label: "January Surge",
-        left: "Peak enquiry month collides with peak floor busyness.",
-        right: "Capacity planned in advance for the January enquiry spike.",
+        left: "Peak inquiry month collides with peak floor busyness.",
+        right: "Capacity planned in advance for the January inquiry spike.",
         leftYes: false,
       },
       {
@@ -168,9 +168,9 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "flow",
     eyebrow: "How It Works",
-    heading: "From Enquiry to Joined Member",
+    heading: "From Inquiry to Joined Member",
     intro:
-      "Coverage is built around the enquiry windows that actually matter in fitness — early mornings, evenings, weekends, and January.",
+      "Coverage is built around the inquiry windows that actually matter in fitness — early mornings, evenings, weekends, and January.",
     steps: [
       {
         title: "Offer & Pricing Setup",
@@ -186,11 +186,11 @@ const seoContent: SEOPattern[] = [
       },
       {
         title: "Go Live on Peaks",
-        body: "Coverage opens on evenings, weekends, and overflow first, where the missed-enquiry cost is highest.",
+        body: "Coverage opens on evenings, weekends, and overflow first, where the missed-inquiry cost is highest.",
       },
       {
         title: "Add Retention Work",
-        body: "Layer in cancellation saves and failed payment recovery once enquiry handling is stable.",
+        body: "Layer in cancellation saves and failed payment recovery once inquiry handling is stable.",
       },
     ],
   },
@@ -205,7 +205,7 @@ const seoContent: SEOPattern[] = [
         icon: "zap",
         stat: "Gyms",
         title: "Health Clubs & Big Box",
-        body: "Membership enquiries, tour booking, contract questions, and high-volume retention work.",
+        body: "Membership inquiries, tour booking, contract questions, and high-volume retention work.",
       },
       {
         icon: "heart-pulse",
@@ -235,10 +235,10 @@ const seoContent: SEOPattern[] = [
     imagePosition: "right",
     body: [
       "Clubs invest heavily in acquisition — paid ads, promotions, January campaigns — and then route the resulting calls to a desk staffed by people who are, correctly, busy helping members who are already there.",
-      "Contact Center USA covers the gap. Enquiries answered live and booked on the call, web leads worked within the minute, cancellations turned into save conversations, and failed payments recovered before an involuntary churn becomes permanent.",
+      "Contact Center USA covers the gap. Inquiries answered live and booked on the call, web leads worked within the minute, cancellations turned into save conversations, and failed payments recovered before an involuntary churn becomes permanent.",
     ],
     bullets: [
-      "Enquiries answered live and tours booked during the call",
+      "Inquiries answered live and tours booked during the call",
       "Web lead follow-up starting within a minute of submission",
       "Cancellation saves inside offers you authorize",
       "Failed payment recovery targeting involuntary churn",
@@ -248,9 +248,9 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "dark-cta",
     eyebrow: "Get Started",
-    heading: "Work out what your missed enquiries cost in January.",
-    accent: "what your missed enquiries cost",
-    body: "Send us your enquiry volume, club software, and membership pricing. We will scope coverage for your peak windows plus a retention and payment recovery program.",
+    heading: "Work out what your missed inquiries cost in January.",
+    accent: "what your missed inquiries cost",
+    body: "Send us your inquiry volume, club software, and membership pricing. We will scope coverage for your peak windows plus a retention and payment recovery program.",
     ctaLabel: "Request a Free Consultation",
     ctaHref: "/contact",
   },
@@ -264,7 +264,7 @@ const relatedServices = [
   },
   {
     title: "Customer Care Outsourcing",
-    desc: "Full member services coverage for networks with volume beyond enquiry handling.",
+    desc: "Full member services coverage for networks with volume beyond inquiry handling.",
     href: "/services/customer-care-outsourcing",
   },
   {
@@ -295,8 +295,8 @@ export default function FitnessGymPage() {
       badge="Fitness & Gym Call Center"
       title="Membership Sales & Retention for Fitness Businesses"
       titleHighlight="Fitness Businesses"
-      subtitle="Gyms, studios, and franchise networks use our US-based agents to answer membership enquiries live, book tours on the call, run cancellation saves, and recover failed payments."
-      description="Fitness businesses are staffed for the members in the building, which is why the call from someone ready to join is the one that reaches voicemail. We answer those enquiries live and book the tour during the call, follow up on web leads within a minute, turn cancellation requests into save conversations inside offers you authorize, and recover the failed card payments that drive most membership churn."
+      subtitle="Gyms, studios, and franchise networks use our US-based agents to answer membership inquiries live, book tours on the call, run cancellation saves, and recover failed payments."
+      description="Fitness businesses are staffed for the members in the building, which is why the call from someone ready to join is the one that reaches voicemail. We answer those inquiries live and book the tour during the call, follow up on web leads within a minute, turn cancellation requests into save conversations inside offers you authorize, and recover the failed card payments that drive most membership churn."
       features={features}
       benefits={benefits}
       image="/images/cc-agent-1.jpg"

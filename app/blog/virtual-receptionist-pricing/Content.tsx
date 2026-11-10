@@ -202,7 +202,7 @@ export default function VirtualReceptionistPricingContent({ faqs }: { faqs: Faq[
                 <div className="rounded-2xl border border-gray-200 p-5">
                   <h3 className="font-bold text-navy">Shared pool — $250-$800/mo</h3>
                   <p className="mt-2 text-sm text-gray-700 leading-relaxed">
-                    Agents trained across several similar accounts. Right for routine enquiries, bookings and screening. Cheaper,
+                    Agents trained across several similar accounts. Right for routine inquiries, bookings and screening. Cheaper,
                     scales instantly, and covers more hours. The trade-off is that no one person accumulates deep knowledge of your
                     clients.
                   </p>

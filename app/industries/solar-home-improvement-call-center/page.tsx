@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const features = [
   {
     title: "Speed-to-Lead Response",
-    desc: "Home improvement leads are sold to several companies at once and decay within minutes. Agents call new enquiries the moment they land, qualify them, and book the in-home consultation before a competitor makes contact.",
+    desc: "Home improvement leads are sold to several companies at once and decay within minutes. Agents call new inquiries the moment they land, qualify them, and book the in-home consultation before a competitor makes contact.",
   },
   {
     title: "Qualification Before the Truck Rolls",
@@ -279,7 +279,7 @@ const relatedServices = [
   },
   {
     title: "Plumbing Answering Service & Call Center",
-    desc: "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch.",
+    desc: "Plumbing answering service for incoming inquiries, job intake and after-hours dispatch.",
     href: "/industries/plumbing-call-center-services",
   },
   {

@@ -50,7 +50,7 @@ const faqs = [
   {
     question: "Can you handle a business that spans multiple industries?",
     answer:
-      "Yes, and the configuration matters more than the capability. A property management firm with a medical office building, or a franchise group spanning restaurants and fitness studios, needs separate call flows with separate escalation trees on one account — not one blended script that serves neither caller well. We run distinct flows per line of business with shared reporting, so a tenant emergency, a patient enquiry and a membership question each get handled to their own sector's standard while you see one consolidated view of the program.",
+      "Yes, and the configuration matters more than the capability. A property management firm with a medical office building, or a franchise group spanning restaurants and fitness studios, needs separate call flows with separate escalation trees on one account — not one blended script that serves neither caller well. We run distinct flows per line of business with shared reporting, so a tenant emergency, a patient inquiry and a membership question each get handled to their own sector's standard while you see one consolidated view of the program.",
   },
 ];
 

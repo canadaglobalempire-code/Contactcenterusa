@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Moving & Storage Call Center | Quote Intake & Booking";
 const description =
-  "US-based call center for moving companies and self-storage operators. Quote intake, survey booking, unit enquiries, and peak-season surge coverage. Get a quote.";
+  "US-based call center for moving companies and self-storage operators. Quote intake, survey booking, unit inquiries, and peak-season surge coverage. Get a quote.";
 
 export const metadata: Metadata = {
   title,
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "storage facility answering service",
     "moving quote intake",
     "moving lead follow up",
-    "storage unit enquiry line",
+    "storage unit inquiry line",
     "relocation call center services",
     "peak moving season support",
     "movers phone answering",
@@ -28,33 +28,33 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    title: "Quote Enquiry Intake",
-    desc: "Moving enquiries captured with the detail an accurate estimate requires — origin and destination, home size, access and stairs, elevator and parking constraints, move date flexibility, and special items — instead of a name and a number on a message pad.",
+    title: "Quote Inquiry Intake",
+    desc: "Moving inquiries captured with the detail an accurate estimate requires — origin and destination, home size, access and stairs, elevator and parking constraints, move date flexibility, and special items — instead of a name and a number on a message pad.",
   },
   {
     title: "Speed-to-Lead Follow-Up",
-    desc: "Moving leads are shopped hard and shopped fast. Agents contact new enquiries within a minute, qualify the job, and book the survey or estimate before the customer has finished filling in the next company's form.",
+    desc: "Moving leads are shopped hard and shopped fast. Agents contact new inquiries within a minute, qualify the job, and book the survey or estimate before the customer has finished filling in the next company's form.",
   },
   {
     title: "Survey & Estimate Scheduling",
     desc: "Virtual and in-home survey appointments booked onto estimator calendars with territory and drive-time awareness, plus confirmation calls that protect the sit rate on jobs already in the pipeline.",
   },
   {
-    title: "Self-Storage Unit Enquiries",
+    title: "Self-Storage Unit Inquiries",
     desc: "Unit size guidance, current availability and pricing, move-in requirements, and reservations taken live — the calls that go unanswered whenever a facility runs a single on-site manager who is showing a unit.",
   },
   {
     title: "Peak-Season Surge Coverage",
-    desc: "Moving demand concentrates brutally into late spring and summer. We staff against your seasonal curve so May through August enquiries are answered, then scale back down through the quiet winter months.",
+    desc: "Moving demand concentrates brutally into late spring and summer. We staff against your seasonal curve so May through August inquiries are answered, then scale back down through the quiet winter months.",
   },
   {
     title: "Bilingual Customer Contact",
-    desc: "Native Spanish-speaking agents handle quote intake, scheduling, and storage enquiries end to end across markets where a large share of customers prefer Spanish.",
+    desc: "Native Spanish-speaking agents handle quote intake, scheduling, and storage inquiries end to end across markets where a large share of customers prefer Spanish.",
   },
 ];
 
 const benefits = [
-  "Quote enquiries answered live, seven days a week",
+  "Quote inquiries answered live, seven days a week",
   "100% US-based agents",
   "SmartMoving, MoveitPro & SiteLink integration",
   "Territory-aware survey and estimate scheduling",
@@ -71,12 +71,12 @@ const stats = [
 
 const faqs = [
   {
-    question: "Why do moving companies lose so many enquiries?",
+    question: "Why do moving companies lose so many inquiries?",
     answer:
       "Because the people who could answer are on a truck. Moving companies are operationally lean by design, and the office is often one or two people who are also dispatching crews, handling claims, and processing paperwork. Meanwhile customers request quotes from three or four companies in a single sitting and commit to whoever calls back first with a credible answer.",
   },
   {
-    question: "What detail do you capture on a quote enquiry?",
+    question: "What detail do you capture on a quote inquiry?",
     answer:
       "Whatever your estimators need to price accurately: origin and destination with access details, home or unit size, stairs and elevator constraints, parking and long-carry issues, move date and flexibility, packing requirements, and special items like pianos, safes, or vehicles. An incomplete intake means a second call before anyone can even quote, and that second call is where jobs get lost.",
   },
@@ -86,7 +86,7 @@ const faqs = [
       "Yes. Agents book virtual and in-home surveys directly into your system with territory and drive-time awareness, so an estimator's day forms a workable route. We support SmartMoving, MoveitPro, Supermove, and similar platforms, along with general CRMs.",
   },
   {
-    question: "Do you handle self-storage enquiries?",
+    question: "Do you handle self-storage inquiries?",
     answer:
       "Yes. Storage is a similar structural problem: a facility usually runs one on-site manager who cannot answer the phone while showing a unit, and callers simply move to the next facility. Agents provide unit size guidance, quote current availability and pricing, explain move-in requirements, and take reservations live in SiteLink, storEDGE, or your management platform.",
   },
@@ -109,11 +109,11 @@ const seoContent: SEOPattern[] = [
     heading: "The customer requested four quotes. Three companies called back.",
     accent: "Three companies called back",
     body: [
-      "Contact Center USA answers for moving companies and self-storage operators with US-based agents — quote intake, survey scheduling, unit enquiries, and peak-season surge coverage.",
+      "Contact Center USA answers for moving companies and self-storage operators with US-based agents — quote intake, survey scheduling, unit inquiries, and peak-season surge coverage.",
       "Moving is a lean-office business by design, which means the phone rings while everyone is on a truck or showing a unit. Customers shop three or four companies at once, and the ones who answer are the ones who quote.",
     ],
     stats: [
-      { stat: "60 sec", label: "Target contact time on new quote enquiries" },
+      { stat: "60 sec", label: "Target contact time on new quote inquiries" },
       { stat: "4x", label: "Peak-season staffing flex for May through August" },
       { stat: "7 days", label: "Coverage including weekends when customers plan moves" },
     ],
@@ -121,14 +121,14 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "comparison",
     eyebrow: "Head to Head",
-    heading: "A Lean Office vs. Dedicated Enquiry Coverage",
+    heading: "A Lean Office vs. Dedicated Inquiry Coverage",
     intro:
-      "Moving and storage operations run thin office teams on purpose — it is a low-margin business. The cost of that efficiency shows up entirely in unanswered enquiries.",
+      "Moving and storage operations run thin office teams on purpose — it is a low-margin business. The cost of that efficiency shows up entirely in unanswered inquiries.",
     leftTitle: "In-House Office Only",
     rightTitle: "Contact Center USA",
     rows: [
       {
-        label: "Quote Enquiries",
+        label: "Quote Inquiries",
         left: "Missed while dispatching crews or showing a unit; the customer books elsewhere.",
         right: "Answered live within a minute with full intake detail captured.",
         leftYes: false,
@@ -168,7 +168,7 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "flow",
     eyebrow: "How It Works",
-    heading: "From Quote Enquiry to Booked Job",
+    heading: "From Quote Inquiry to Booked Job",
     intro:
       "Coverage is built around your service area, pricing structure, and the seasonal curve your business actually runs on.",
     steps: [
@@ -186,7 +186,7 @@ const seoContent: SEOPattern[] = [
       },
       {
         title: "Go Live on Overflow",
-        body: "Coverage opens on overflow, weekends, and after-hours where missed enquiries concentrate.",
+        body: "Coverage opens on overflow, weekends, and after-hours where missed inquiries concentrate.",
       },
       {
         title: "Scale for Peak",
@@ -211,7 +211,7 @@ const seoContent: SEOPattern[] = [
         icon: "plane",
         stat: "Long Haul",
         title: "Long-Distance & Van Lines",
-        body: "Interstate enquiry intake, binding estimate coordination, and shipment status calls.",
+        body: "Interstate inquiry intake, binding estimate coordination, and shipment status calls.",
       },
       {
         icon: "store",
@@ -223,7 +223,7 @@ const seoContent: SEOPattern[] = [
         icon: "briefcase",
         stat: "Comm",
         title: "Commercial & Office Moves",
-        body: "Project enquiry qualification and site survey coordination for commercial relocation.",
+        body: "Project inquiry qualification and site survey coordination for commercial relocation.",
       },
     ],
   },
@@ -235,10 +235,10 @@ const seoContent: SEOPattern[] = [
     imagePosition: "right",
     body: [
       "A customer planning a move requests several quotes in one sitting, then makes a shortlist from whoever responds credibly first. Companies that call back a day later are not competing on price — they are not competing at all.",
-      "Contact Center USA answers those enquiries live, captures the detail your estimators need to price on the first pass, books surveys with drive-time logic, and follows up on the aged quotes nobody has time to re-work. Capacity scales with your season, not against it.",
+      "Contact Center USA answers those inquiries live, captures the detail your estimators need to price on the first pass, books surveys with drive-time logic, and follows up on the aged quotes nobody has time to re-work. Capacity scales with your season, not against it.",
     ],
     bullets: [
-      "Contact within a minute of a quote enquiry, seven days a week",
+      "Contact within a minute of a quote inquiry, seven days a week",
       "Full intake detail so estimators can price without a second call",
       "Territory and drive-time aware survey scheduling",
       "Live unit reservations in SiteLink and storEDGE",
@@ -248,9 +248,9 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "dark-cta",
     eyebrow: "Get Started",
-    heading: "Answer the quote enquiries you are currently losing.",
+    heading: "Answer the quote inquiries you are currently losing.",
     accent: "you are currently losing",
-    body: "Send us your enquiry volume and seasonal curve. We will scope overflow and weekend coverage plus a peak-season plan for May through August.",
+    body: "Send us your inquiry volume and seasonal curve. We will scope overflow and weekend coverage plus a peak-season plan for May through August.",
     ctaLabel: "Request a Free Consultation",
     ctaHref: "/contact",
   },
@@ -279,7 +279,7 @@ const relatedServices = [
   },
   {
     title: "Plumbing Answering Service & Call Center",
-    desc: "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch.",
+    desc: "Plumbing answering service for incoming inquiries, job intake and after-hours dispatch.",
     href: "/industries/plumbing-call-center-services",
   },
   {
@@ -295,7 +295,7 @@ export default function MovingStoragePage() {
       badge="Moving & Storage Call Center"
       title="Quote Intake & Booking for Moving and Storage"
       titleHighlight="Moving and Storage"
-      subtitle="Moving companies and self-storage operators use our US-based agents to answer quote enquiries within a minute, capture full intake detail, book surveys, and cover the summer peak."
+      subtitle="Moving companies and self-storage operators use our US-based agents to answer quote inquiries within a minute, capture full intake detail, book surveys, and cover the summer peak."
       description="Moving is a lean-office business, so the phone rings while everyone is on a truck or showing a unit — and customers who requested four quotes book with whoever calls back first. We answer live seven days a week, capture the origin, access, size, and date detail your estimators need to price on the first pass, book surveys with drive-time logic, and scale capacity to your seasonal curve instead of your winter payroll."
       features={features}
       benefits={benefits}

@@ -27,7 +27,7 @@ const never = [
   "Emergencies — burst pipes, no heat, medical symptoms, safety issues",
   "Upset or distressed callers",
   "New patient or new client intake",
-  "High-value sales enquiries and estimates",
+  "High-value sales inquiries and estimates",
   "Anything requiring judgment against your rules",
   "First contact after an accident or incident",
 ];
@@ -79,7 +79,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
                   {[
                     "Four different products are sold under one name, with very different capabilities",
                     "Automation wins on high-volume, low-variation, information-retrieval calls",
-                    "It loses the job on emergencies, upset callers and high-value enquiries",
+                    "It loses the job on emergencies, upset callers and high-value inquiries",
                     "The right setup for most businesses is hybrid, with a fast path to a human",
                     "Track abandonment inside the flow, not just answer rate",
                     "Consent disclosures and HIPAA apply to automated systems exactly as they do to people",
@@ -171,7 +171,7 @@ export default function AutomatedAnsweringServiceContent({ faqs }: { faqs: Faq[]
                 {[
                   { t: "1. Greet and identify", d: "The system answers immediately and establishes what the caller needs, in your company name and with the recorded-line disclosure where your state requires one." },
                   { t: "2. Resolve the routine", d: "Order status, hours, balances, reminders and confirmations complete without a person. This is the volume that justifies the system." },
-                  { t: "3. Escalate on any signal", d: "Emergency keywords, distress, a new-client enquiry, or simply the caller asking for a person — all route to a live agent immediately, not after another menu." },
+                  { t: "3. Escalate on any signal", d: "Emergency keywords, distress, a new-client inquiry, or simply the caller asking for a person — all route to a live agent immediately, not after another menu." },
                   { t: "4. Hand over with context", d: "The agent receives what the system already collected. Making the caller repeat everything is the moment goodwill is lost." },
                 ].map((x, i) => (
                   <div key={i} className="rounded-2xl border border-gray-200 p-5">

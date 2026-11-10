@@ -16,16 +16,16 @@ const qualifyingFields = [
 
 const crmIntegrations = [
   { name: "Follow Up Boss", detail: "Lead creation with tags, stage assignment and instant agent notification" },
-  { name: "kvCORE", detail: "Contact and enquiry writes with behavioural tagging and smart campaign entry" },
+  { name: "kvCORE", detail: "Contact and inquiry writes with behavioural tagging and smart campaign entry" },
   { name: "BoomTown", detail: "Lead routing by area and price band, with qualification notes attached" },
   { name: "Chime", detail: "Lead capture with source attribution and automated assignment rules" },
-  { name: "Sierra Interactive", detail: "Enquiry logging with property interest and agent round-robin" },
+  { name: "Sierra Interactive", detail: "Inquiry logging with property interest and agent round-robin" },
   { name: "ShowingTime & Calendars", detail: "Live showing booking into Google Calendar, Outlook or ShowingTime" },
 ];
 
 const pricingRows = [
   ["Per minute", "$0.85 - $1.65 / min", "Solo agents with unpredictable call volume"],
-  ["Per qualified lead", "$5.00 - $12.00 / lead", "Teams that only want to pay for real, screened enquiries"],
+  ["Per qualified lead", "$5.00 - $12.00 / lead", "Teams that only want to pay for real, screened inquiries"],
   ["Monthly tier", "$300 - $1,200 / mo", "Teams and small brokerages with steady portal volume"],
   ["Dedicated ISA", "$1,500 - $3,500 / mo", "High-volume teams needing outbound nurture, not just inbound"],
 ];
@@ -81,7 +81,7 @@ export default function RealEstateAnsweringServiceContent({ faqs }: { faqs: Faq[
             <div className="lg:col-span-2">
               <p className="text-lg leading-relaxed text-gray-700">
                 Real estate has an unusual problem: your leads arrive precisely when you are least able to answer them. Buyers browse
-                listings on their sofa at 9 PM and on Saturday mornings, and portal enquiries are almost never exclusive — the same
+                listings on their sofa at 9 PM and on Saturday mornings, and portal inquiries are almost never exclusive — the same
                 person often submits on several listings at once. A <strong>real estate answering service</strong> exists to make
                 sure a trained human reaches that person in minutes rather than tomorrow morning, because in this business the
                 second caller is usually competing for a relationship that has already been formed.
@@ -99,7 +99,7 @@ export default function RealEstateAnsweringServiceContent({ faqs }: { faqs: Faq[
                 <h3 className="text-lg font-bold text-navy">Key Takeaways</h3>
                 <ul className="mt-3 space-y-2">
                   {[
-                    "Portal enquiries are rarely exclusive — the first agent to a live conversation usually wins",
+                    "Portal inquiries are rarely exclusive — the first agent to a live conversation usually wins",
                     "Lead response research consistently shows a sharp drop-off in qualification odds after the first hour",
                     "A qualified lead captures budget, financing, timeline and agency status — not just a name",
                     "Showings booked live on your calendar beat 'an agent will call you back' every time",
@@ -120,12 +120,12 @@ export default function RealEstateAnsweringServiceContent({ faqs }: { faqs: Faq[
                 Lead response research across industries has repeatedly found the same pattern: the probability of successfully
                 qualifying an inbound lead is dramatically higher when contact happens within roughly five minutes than when it
                 happens after thirty, and the curve falls away steeply through the first hour. Real estate amplifies this because
-                of non-exclusivity. The buyer who submitted an enquiry on your listing at 9:14 PM very likely submitted on two
+                of non-exclusivity. The buyer who submitted an inquiry on your listing at 9:14 PM very likely submitted on two
                 others by 9:20.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 The practical consequence is that your response window is not really competing against the buyer&apos;s patience. It
-                is competing against the other agents who received the same enquiry. Returning the call at 9 AM the next morning is
+                is competing against the other agents who received the same inquiry. Returning the call at 9 AM the next morning is
                 not a slightly worse outcome than calling in five minutes — it is frequently a completely different outcome, because
                 by then someone else has already booked the showing.
               </p>
@@ -286,8 +286,8 @@ export default function RealEstateAnsweringServiceContent({ faqs }: { faqs: Faq[
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Conclusion</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
                 You are already paying to generate the leads. Portal fees, listing spend and marketing budget all land in the same
-                place: an enquiry that arrives at 9 PM. An answering service is simply the cheapest way to stop that spend from
-                evaporating between the enquiry and your first available moment to call back. Buy on qualification quality and
+                place: an inquiry that arrives at 9 PM. An answering service is simply the cheapest way to stop that spend from
+                evaporating between the inquiry and your first available moment to call back. Buy on qualification quality and
                 booking capability, not on price per minute.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">

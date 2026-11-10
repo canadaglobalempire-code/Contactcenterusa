@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Funeral Home Answering Service | 24/7 First Call Coverage";
 const description =
-  "US-based 24/7 answering service for funeral homes and cremation providers. First call intake, removal coordination, and pre-need enquiries. Get a quote.";
+  "US-based 24/7 answering service for funeral homes and cremation providers. First call intake, removal coordination, and pre-need inquiries. Get a quote.";
 
 export const metadata: Metadata = {
   title,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "cremation provider phone answering",
     "funeral director on call service",
     "removal coordination answering",
-    "pre need enquiry handling",
+    "pre need inquiry handling",
     "mortuary answering service",
     "death care call center",
   ],
@@ -40,8 +40,8 @@ const features = [
     desc: "Agents assigned to death care are prepared specifically for these calls. There is no script-reading, no rushing, and no awkwardness at the moment a family is least able to tolerate it.",
   },
   {
-    title: "Pre-Need & General Enquiries",
-    desc: "Pre-arrangement enquiries, pricing and service questions, and appointment scheduling handled during business hours and after, so a planning enquiry never reaches an unanswered line.",
+    title: "Pre-Need & General Inquiries",
+    desc: "Pre-arrangement inquiries, pricing and service questions, and appointment scheduling handled during business hours and after, so a planning inquiry never reaches an unanswered line.",
   },
   {
     title: "Service & Arrangement Logistics",
@@ -58,7 +58,7 @@ const benefits = [
   "100% US-based agents trained for death care",
   "First call intake with removal detail captured",
   "Escalation to your on-call director by your rules",
-  "Pre-need and general enquiry handling",
+  "Pre-need and general inquiry handling",
   "Bilingual English/Spanish family support",
 ];
 
@@ -83,12 +83,12 @@ const faqs = [
   {
     question: "How quickly do you reach our on-call director?",
     answer:
-      "Immediately, following the escalation order you provide. First calls are treated as the highest-priority contact type on the account, with no queuing behind general enquiries. If your primary contact does not answer, we work down your list rather than leaving a message and waiting.",
+      "Immediately, following the escalation order you provide. First calls are treated as the highest-priority contact type on the account, with no queuing behind general inquiries. If your primary contact does not answer, we work down your list rather than leaving a message and waiting.",
   },
   {
-    question: "Do you handle pre-need enquiries?",
+    question: "Do you handle pre-need inquiries?",
     answer:
-      "Yes. Pre-arrangement enquiries are quite different in tone — considered, often price-sensitive, and frequently made by someone comparing providers. Agents answer general service and pricing questions from information you maintain, and book appointments with your pre-need counselor rather than attempting to sell anything.",
+      "Yes. Pre-arrangement inquiries are quite different in tone — considered, often price-sensitive, and frequently made by someone comparing providers. Agents answer general service and pricing questions from information you maintain, and book appointments with your pre-need counselor rather than attempting to sell anything.",
   },
   {
     question: "Can you cover only nights and weekends?",
@@ -109,7 +109,7 @@ const seoContent: SEOPattern[] = [
     heading: "The first call is the one a family remembers for the rest of their life.",
     accent: "remembers for the rest of their life",
     body: [
-      "Contact Center USA provides 24/7 US-based answering for funeral homes, cremation providers, and death care firms — first call intake, removal coordination, and pre-need enquiries.",
+      "Contact Center USA provides 24/7 US-based answering for funeral homes, cremation providers, and death care firms — first call intake, removal coordination, and pre-need inquiries.",
       "Death calls do not observe business hours, and they cannot go to voicemail. A family reporting a death needs a person who answers calmly, knows what to ask, and can tell them precisely what happens next.",
     ],
     stats: [
@@ -141,7 +141,7 @@ const seoContent: SEOPattern[] = [
       },
       {
         label: "Escalation Speed",
-        left: "First calls queued behind unrelated enquiries.",
+        left: "First calls queued behind unrelated inquiries.",
         right: "Highest-priority handling with your escalation order worked live.",
         leftYes: false,
       },
@@ -152,8 +152,8 @@ const seoContent: SEOPattern[] = [
         leftYes: false,
       },
       {
-        label: "Pre-Need Enquiries",
-        left: "Message taken; the enquiry goes to a competitor who answered.",
+        label: "Pre-Need Inquiries",
+        left: "Message taken; the inquiry goes to a competitor who answered.",
         right: "Questions answered and an appointment booked with your counselor.",
         leftYes: false,
       },
@@ -217,13 +217,13 @@ const seoContent: SEOPattern[] = [
         icon: "shield",
         stat: "Cremation",
         title: "Cremation Providers",
-        body: "Direct cremation enquiries, price questions, and arrangement scheduling at all hours.",
+        body: "Direct cremation inquiries, price questions, and arrangement scheduling at all hours.",
       },
       {
         icon: "briefcase",
         stat: "Pre-Need",
         title: "Pre-Need & Cemetery",
-        body: "Pre-arrangement enquiries, appointment booking, and general service questions.",
+        body: "Pre-arrangement inquiries, appointment booking, and general service questions.",
       },
     ],
   },
@@ -296,7 +296,7 @@ export default function FuneralHomePage() {
       title="24/7 First Call Coverage for Funeral Homes"
       titleHighlight="Funeral Homes"
       subtitle="Funeral homes, cremation providers, and death care groups rely on our US-based agents to answer every first call live, capture what the director needs, and reach the on-call rotation immediately."
-      description="A death call cannot reach voicemail. Families calling at three in the morning have usually never made this call before and need a person who answers calmly, knows what to ask, and can tell them what happens next. Our agents are trained specifically for death care: they answer in your firm's name around the clock, capture complete removal detail, work your on-call escalation order live, and handle pre-need enquiries during the hours nobody is at the office."
+      description="A death call cannot reach voicemail. Families calling at three in the morning have usually never made this call before and need a person who answers calmly, knows what to ask, and can tell them what happens next. Our agents are trained specifically for death care: they answer in your firm's name around the clock, capture complete removal detail, work your on-call escalation order live, and handle pre-need inquiries during the hours nobody is at the office."
       features={features}
       benefits={benefits}
       image="/images/cc-agent-focus.jpg"

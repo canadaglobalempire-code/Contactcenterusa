@@ -150,12 +150,12 @@ const seoContent: SEOPattern[] = [
     imagePosition: "left",
     body: [
       "A telemarketing company makes and takes sales and marketing calls for other businesses. It supplies the trained callers, the dialing technology, the call lists and the compliance controls, and it reports on every call so you can see what each campaign produced. You supply the offer, the target audience and the rules for what counts as a qualified lead or a sale.",
-      "The work covers more than cold calling. Telemarketing companies qualify leads before they reach your sales team, book appointments, follow up on web enquiries and trade show contacts, promote events and webinars, renew or reactivate lapsed customers, and run phone surveys. Each campaign starts with a script and a target list, and a well-run campaign keeps testing both against what the calls show.",
+      "The work covers more than cold calling. Telemarketing companies qualify leads before they reach your sales team, book appointments, follow up on web inquiries and trade show contacts, promote events and webinars, renew or reactivate lapsed customers, and run phone surveys. Each campaign starts with a script and a target list, and a well-run campaign keeps testing both against what the calls show.",
     ],
     bullets: [
       "Prospecting and cold calling to your ideal customer profile",
       "Lead qualification and appointment setting for your sales team",
-      "Follow-up on web enquiries, form fills and event contacts",
+      "Follow-up on web inquiries, form fills and event contacts",
       "Customer reactivation, renewal and cross-sell calls",
       "Market research and phone surveys",
       "List cleaning, Do Not Call scrubbing and call reporting",
@@ -174,7 +174,7 @@ const seoContent: SEOPattern[] = [
     ],
     bullets: [
       "Outbound: prospecting, lead follow-up, appointment setting, reactivation",
-      "Inbound: advertising response lines, order taking and sales enquiries",
+      "Inbound: advertising response lines, order taking and sales inquiries",
       "Blended: an inbound line plus outbound call-backs on missed calls and web forms",
       "Staffing planned around list size for outbound, and the media schedule for inbound",
     ],
@@ -372,7 +372,7 @@ const relatedServices = [
   },
   {
     title: "Inbound Call Center Services",
-    desc: "Live answering for advertising response lines, order support and sales enquiries.",
+    desc: "Live answering for advertising response lines, order support and sales inquiries.",
     href: "/solutions/inbound-call-center-services",
   },
   {

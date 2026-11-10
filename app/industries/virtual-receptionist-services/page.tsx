@@ -41,7 +41,7 @@ const features = [
   },
   {
     title: "New Client & Lead Intake",
-    desc: "Structured intake for prospective clients, capturing the details you actually need to qualify the enquiry, delivered to your inbox or CRM within minutes of the call ending.",
+    desc: "Structured intake for prospective clients, capturing the details you actually need to qualify the inquiry, delivered to your inbox or CRM within minutes of the call ending.",
   },
   {
     title: "Overflow & After-Hours Coverage",
@@ -223,7 +223,7 @@ const seoContent: SEOPattern[] = [
         icon: "dollar",
         stat: "Property",
         title: "Real Estate & Property",
-        body: "Showing requests, tenant maintenance calls, and lead capture from listing enquiries.",
+        body: "Showing requests, tenant maintenance calls, and lead capture from listing inquiries.",
       },
     ],
   },

@@ -49,7 +49,7 @@ const features = [
   },
   {
     title: "Compassionate Call Handling",
-    desc: "Veterinary calls include euthanasia enquiries, critical patients, and grieving owners. Agents are trained on tone and on the strict boundary between scheduling support and anything resembling clinical advice.",
+    desc: "Veterinary calls include euthanasia inquiries, critical patients, and grieving owners. Agents are trained on tone and on the strict boundary between scheduling support and anything resembling clinical advice.",
   },
 ];
 

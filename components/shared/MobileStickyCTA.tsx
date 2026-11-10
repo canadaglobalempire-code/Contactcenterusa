@@ -12,7 +12,7 @@ export function MobileStickyCTA() {
         className="flex w-full items-center justify-center gap-2 bg-red text-white py-3.5 rounded-lg font-semibold text-sm active:scale-[0.98] transition"
       >
         <MessageSquare className="w-4 h-4" />
-        Enquire Now
+        Inquire Now
       </LeadCTALink>
     </div>
   );

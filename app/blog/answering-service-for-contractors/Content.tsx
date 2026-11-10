@@ -11,7 +11,7 @@ const trades = [
   { name: "Electricians", detail: "A mix of routine service calls and genuine safety emergencies that need immediate escalation rather than a next-day callback." },
   { name: "Concrete & masonry", detail: "Seasonal, weather-dependent scheduling where the crew is never near a phone and quotes need site assessment." },
   { name: "Restoration & water damage", detail: "24/7 emergency intake where response speed directly determines whether you win the job and how bad the damage gets." },
-  { name: "Landscaping & hardscaping", detail: "Heavy spring enquiry surges compressed into a few weeks, with crews running equipment all day." },
+  { name: "Landscaping & hardscaping", detail: "Heavy spring inquiry surges compressed into a few weeks, with crews running equipment all day." },
 ];
 
 const estimateFields = [

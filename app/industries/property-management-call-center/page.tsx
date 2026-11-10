@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Property Management Call Center | Tenant & HOA Answering";
 const description =
-  "US-based property management call center for tenant maintenance calls, after-hours emergencies, leasing enquiries, and HOA resident lines. Get a quote.";
+  "US-based property management call center for tenant maintenance calls, after-hours emergencies, leasing inquiries, and HOA resident lines. Get a quote.";
 
 export const metadata: Metadata = {
   title,
@@ -36,7 +36,7 @@ const features = [
     desc: "Maintenance requests captured with the detail your techs need — unit, access instructions, pets, permission to enter — and written straight into AppFolio, Buildium, Yardi, RentManager, or Entrata.",
   },
   {
-    title: "Leasing & Availability Enquiries",
+    title: "Leasing & Availability Inquiries",
     desc: "Prospective renters answered live rather than sent to voicemail: availability, pricing, pet and parking policies, application steps, and tour scheduling booked directly onto your leasing calendar.",
   },
   {
@@ -44,7 +44,7 @@ const features = [
     desc: "Dedicated resident lines for community associations covering dues questions, violation reports, amenity and gate access, architectural request routing, and board escalation by your documented rules.",
   },
   {
-    title: "Rent & Payment Enquiries",
+    title: "Rent & Payment Inquiries",
     desc: "Balance questions, payment portal help, late fee explanations, and payment arrangement routing — high-volume calls that consume a property manager's day without needing their expertise.",
   },
   {
@@ -58,7 +58,7 @@ const benefits = [
   "100% US-based agents",
   "AppFolio, Buildium, Yardi & RentManager integration",
   "Your emergency criteria and vendor escalation rules",
-  "Leasing enquiries answered and tours booked",
+  "Leasing inquiries answered and tours booked",
   "Bilingual English/Spanish resident support",
 ];
 
@@ -110,7 +110,7 @@ const seoContent: SEOPattern[] = [
     accent: "whether a leak is an emergency",
     body: [
       "Contact Center USA runs US-based tenant and resident lines for property managers, apartment communities, and HOAs — triaging after-hours maintenance, creating work orders in your software, and answering the leasing calls that turn into signed leases.",
-      "Property management runs on interruptions. A single manager fields maintenance calls, leasing enquiries, rent questions, and vendor coordination simultaneously, and the calls that get answered are simply the ones that rang at a convenient moment.",
+      "Property management runs on interruptions. A single manager fields maintenance calls, leasing inquiries, rent questions, and vendor coordination simultaneously, and the calls that get answered are simply the ones that rang at a convenient moment.",
     ],
     stats: [
       { stat: "24/7", label: "Live emergency maintenance triage and vendor dispatch" },
@@ -146,7 +146,7 @@ const seoContent: SEOPattern[] = [
         leftYes: false,
       },
       {
-        label: "Leasing Enquiries",
+        label: "Leasing Inquiries",
         left: "Message taken; the prospect has already toured elsewhere.",
         right: "Availability answered live and a tour booked on your calendar.",
         leftYes: false,
@@ -205,7 +205,7 @@ const seoContent: SEOPattern[] = [
         icon: "store",
         stat: "Multi",
         title: "Multifamily & Apartments",
-        body: "High-volume maintenance intake, leasing enquiries, tour booking, and renewal questions.",
+        body: "High-volume maintenance intake, leasing inquiries, tour booking, and renewal questions.",
       },
       {
         icon: "briefcase",
@@ -241,7 +241,7 @@ const seoContent: SEOPattern[] = [
       "Emergency triage against criteria you define in writing",
       "Work orders created live in AppFolio, Buildium, Yardi, and RentManager",
       "On-call vendor dispatch by your escalation rules",
-      "Leasing enquiries answered and tours booked on your calendar",
+      "Leasing inquiries answered and tours booked on your calendar",
       "Bilingual English/Spanish resident and applicant support",
     ],
   },

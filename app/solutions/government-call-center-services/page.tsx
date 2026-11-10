@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Government Call Center Services | Citizen Support";
 const description =
-  "Government call center services for citizen support lines, benefits enquiries, program enrollment and multilingual access. Get a free quote.";
+  "Government call center services for citizen support lines, benefits inquiries, program enrollment and multilingual access. Get a free quote.";
 
 export const metadata: Metadata = {
   title,

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const features = [
   {
     title: "Speed-to-Lead Response",
-    desc: "Mortgage leads decay faster than almost any category. Agents work new enquiries within minutes of submission, qualify against your criteria, and hand your loan officers a live borrower instead of a name in a queue.",
+    desc: "Mortgage leads decay faster than almost any category. Agents work new inquiries within minutes of submission, qualify against your criteria, and hand your loan officers a live borrower instead of a name in a queue.",
   },
   {
     title: "Borrower Qualification & Pre-Screening",
@@ -41,7 +41,7 @@ const features = [
   },
   {
     title: "Application Status & Servicing Calls",
-    desc: "Inbound coverage for status enquiries, payment questions, escrow and statement queries, and payoff requests — the high-volume, low-complexity calls that otherwise interrupt licensed staff all day.",
+    desc: "Inbound coverage for status inquiries, payment questions, escrow and statement queries, and payoff requests — the high-volume, low-complexity calls that otherwise interrupt licensed staff all day.",
   },
   {
     title: "Loan Officer Appointment Setting",
@@ -110,7 +110,7 @@ const seoContent: SEOPattern[] = [
     accent: "calls back in five minutes",
     body: [
       "Contact Center USA runs US-based mortgage call center support for lenders, brokers, and servicers — speed-to-lead response, borrower pre-qualification, document chase, and servicing coverage.",
-      "Mortgage leads are among the most expensive in the country and among the fastest to go cold. A borrower who submits a rate enquiry has almost always submitted several, and response time decides the outcome long before pricing does.",
+      "Mortgage leads are among the most expensive in the country and among the fastest to go cold. A borrower who submits a rate inquiry has almost always submitted several, and response time decides the outcome long before pricing does.",
     ],
     stats: [
       { stat: "60 sec", label: "Target first-contact time on new lead submissions" },
@@ -158,7 +158,7 @@ const seoContent: SEOPattern[] = [
         leftYes: false,
       },
       {
-        label: "After-Hours Enquiries",
+        label: "After-Hours Inquiries",
         left: "Evening and weekend submissions wait until Monday.",
         right: "Covered as they arrive, when borrower intent is highest.",
         leftYes: false,
@@ -217,7 +217,7 @@ const seoContent: SEOPattern[] = [
         icon: "store",
         stat: "Servicing",
         title: "Mortgage Servicers",
-        body: "Payment, escrow, statement, and payoff enquiries handled at volume with escalation for exceptions.",
+        body: "Payment, escrow, statement, and payoff inquiries handled at volume with escalation for exceptions.",
       },
       {
         icon: "shopping-bag",
@@ -234,7 +234,7 @@ const seoContent: SEOPattern[] = [
     image: "/images/cc-agent-laptop.jpg",
     imagePosition: "right",
     body: [
-      "Nothing about outsourcing means handing over loan decisions. The work that belongs outside is the volume work: reaching a borrower before a competitor does, screening out enquiries that were never going to qualify, and chasing the same three documents for the fourth time.",
+      "Nothing about outsourcing means handing over loan decisions. The work that belongs outside is the volume work: reaching a borrower before a competitor does, screening out inquiries that were never going to qualify, and chasing the same three documents for the fourth time.",
       "Contact Center USA staffs domestic agents on scripts your compliance team approves, working inside your LOS, with an explicit boundary at anything requiring a licensed originator. Your officers get live, qualified borrowers and their day back.",
     ],
     bullets: [
@@ -296,7 +296,7 @@ export default function MortgageCallCenterPage() {
       title="Speed-to-Lead & Borrower Support for the Lending Industry"
       titleHighlight="Lending Industry"
       subtitle="Lenders, brokers, and servicers use our US-based agents to reach new borrowers within a minute, pre-qualify against their criteria, chase conditions, and cover high-volume servicing calls."
-      description="Mortgage is a speed business. We work new enquiries within a minute of submission, pre-qualify borrowers against your own criteria, and hand your licensed originators a live, screened conversation. Beyond origination, we chase outstanding conditions to shorten cycle time and absorb the payment, escrow, and payoff calls that otherwise interrupt your servicing team all day."
+      description="Mortgage is a speed business. We work new inquiries within a minute of submission, pre-qualify borrowers against your own criteria, and hand your licensed originators a live, screened conversation. Beyond origination, we chase outstanding conditions to shorten cycle time and absorb the payment, escrow, and payoff calls that otherwise interrupt your servicing team all day."
       features={features}
       benefits={benefits}
       image="/images/cc-agent-pro.jpg"

@@ -24,7 +24,7 @@ const triage = [
   { tier: "Page immediately", ex: "Chest pain, difficulty breathing, severe bleeding, post-operative complications, anything your clinicians listed as urgent", note: "Agent reads the script and routes. No assessment, no advice." },
   { tier: "Same or next morning", ex: "Worsening symptoms that are not emergent, medication questions, post-visit concerns", note: "Structured message flagged for first review of the day." },
   { tier: "Routine administrative", ex: "Booking, rescheduling, directions, hours, forms, billing questions", note: "Handled fully by the agent — never reaches a clinician." },
-  { tier: "Refills and results", ex: "Prescription refill requests, lab result enquiries", note: "Captured and routed per your policy. Agents never discuss results." },
+  { tier: "Refills and results", ex: "Prescription refill requests, lab result inquiries", note: "Captured and routed per your policy. Agents never discuss results." },
 ];
 
 const costRows = [

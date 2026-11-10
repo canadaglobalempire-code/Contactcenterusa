@@ -23,7 +23,7 @@ const emergencyTiers = [
   },
   {
     tier: "Tier 4 — Not maintenance",
-    examples: "Noise complaints, parking disputes, lease questions, rent payment queries, package enquiries, neighbor conflicts",
+    examples: "Noise complaints, parking disputes, lease questions, rent payment queries, package inquiries, neighbor conflicts",
     action: "Structured message routed to the relevant portfolio manager for the next business day",
   },
 ];
@@ -116,7 +116,7 @@ export default function PropertyManagementAnsweringServiceContent({ faqs }: { fa
                     "Habitability clocks start when the resident notifies you — a timestamped call log is your evidence",
                     "After-hours emergency coverage benchmarks at roughly $1.50-$4.00 per door per month",
                     "A written four-tier emergency list is what makes 3 AM decisions consistent across agents",
-                    "Fair Housing training is mandatory for any agent touching a leasing enquiry",
+                    "Fair Housing training is mandatory for any agent touching a leasing inquiry",
                     "Live work order writes into AppFolio, Buildium or Yardi eliminate the morning transcription queue",
                     "Capturing after-hours leasing tours often pays for the service on its own",
                   ].map((item, i) => (
@@ -198,7 +198,7 @@ export default function PropertyManagementAnsweringServiceContent({ faqs }: { fa
               {/* Fair Housing */}
               <h2 className="mt-12 text-2xl font-bold text-navy sm:text-3xl">Fair Housing: The Liability Most Buyers Overlook</h2>
               <p className="mt-4 text-gray-700 leading-relaxed">
-                When you outsource leasing enquiries, you are handing strangers a microphone and your company name. The Fair Housing
+                When you outsource leasing inquiries, you are handing strangers a microphone and your company name. The Fair Housing
                 Act does not care that the person who made a discriminatory remark worked for a vendor rather than for you. A
                 friendly, entirely well-meant answer to &ldquo;what kind of people live in the building?&rdquo; or &ldquo;is it a good
                 area for kids?&rdquo; can create genuine exposure.
@@ -318,7 +318,7 @@ export default function PropertyManagementAnsweringServiceContent({ faqs }: { fa
               <p className="mt-4 text-gray-700 leading-relaxed">
                 A property management answering service is doing three jobs at once: protecting you from habitability exposure with
                 a documented response record, keeping residents from waiting until morning with a flooded unit, and catching the
-                leasing enquiries that arrive when your office is dark. Get the emergency tier list and the vendor spend cap right,
+                leasing inquiries that arrive when your office is dark. Get the emergency tier list and the vendor spend cap right,
                 insist on Fair Housing training and live work order writes, and the service largely runs itself.
               </p>
               <p className="mt-4 text-gray-700 leading-relaxed">

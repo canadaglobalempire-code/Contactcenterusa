@@ -33,7 +33,7 @@ const features = [
   },
   {
     title: "Lead Response & Follow-Up",
-    desc: "Aesthetics leads arrive from paid social and search at all hours and go cold quickly. Agents work new enquiries within a minute and run a structured multi-touch sequence on anyone who does not book immediately.",
+    desc: "Aesthetics leads arrive from paid social and search at all hours and go cold quickly. Agents work new inquiries within a minute and run a structured multi-touch sequence on anyone who does not book immediately.",
   },
   {
     title: "No-Show & Cancellation Recovery",
@@ -49,7 +49,7 @@ const features = [
   },
   {
     title: "Discreet, Non-Clinical Handling",
-    desc: "Aesthetics enquiries are personal. Agents are trained on tone and on a firm boundary: they discuss availability, pricing structure, and process, and never assess candidacy or advise on treatment.",
+    desc: "Aesthetics inquiries are personal. Agents are trained on tone and on a firm boundary: they discuss availability, pricing structure, and process, and never assess candidacy or advise on treatment.",
   },
 ];
 
@@ -110,10 +110,10 @@ const seoContent: SEOPattern[] = [
     accent: "Your team left at six",
     body: [
       "Contact Center USA answers for med spas, aesthetic practices, and cosmetic clinics with US-based agents — consultation booking, immediate lead response, no-show recovery, and membership retention.",
-      "This category buys leads on paid social and search, where enquiries arrive continuously and evaporate within hours. Meanwhile clinic staff are in treatment rooms all day and gone by evening, which is exactly when the enquiries land.",
+      "This category buys leads on paid social and search, where inquiries arrive continuously and evaporate within hours. Meanwhile clinic staff are in treatment rooms all day and gone by evening, which is exactly when the inquiries land.",
     ],
     stats: [
-      { stat: "60 sec", label: "Target response time on new enquiries" },
+      { stat: "60 sec", label: "Target response time on new inquiries" },
       { stat: "7 days", label: "Coverage across evenings and weekends" },
       { stat: "100%", label: "US-based agents booking in your practice software" },
     ],
@@ -124,7 +124,7 @@ const seoContent: SEOPattern[] = [
     heading: "Front Desk Only vs. Dedicated Aesthetics Coverage",
     intro:
       "A med spa front desk is excellent with the patient in front of them. The gap is everything arriving by phone and form while they are doing that.",
-    leftTitle: "Clinic Staff Handling Enquiries",
+    leftTitle: "Clinic Staff Handling Inquiries",
     rightTitle: "Contact Center USA",
     rows: [
       {
@@ -134,9 +134,9 @@ const seoContent: SEOPattern[] = [
         leftYes: false,
       },
       {
-        label: "Evening Enquiries",
+        label: "Evening Inquiries",
         left: "Peak browsing hours land in an empty inbox.",
-        right: "Live coverage during the hours enquiries actually arrive.",
+        right: "Live coverage during the hours inquiries actually arrive.",
         leftYes: false,
       },
       {
@@ -159,7 +159,7 @@ const seoContent: SEOPattern[] = [
       },
       {
         label: "Discretion",
-        left: "Inconsistent handling of a sensitive, privacy-driven enquiry.",
+        left: "Inconsistent handling of a sensitive, privacy-driven inquiry.",
         right: "Trained discreet handling with contact preferences respected.",
         leftYes: false,
       },
@@ -168,7 +168,7 @@ const seoContent: SEOPattern[] = [
   {
     pattern: "flow",
     eyebrow: "How It Works",
-    heading: "From Evening Enquiry to Booked Consultation",
+    heading: "From Evening Inquiry to Booked Consultation",
     intro:
       "Every aesthetics engagement starts with the clinical boundary, because what agents may and may not say matters more here than the scheduling logic.",
     steps: [
@@ -186,7 +186,7 @@ const seoContent: SEOPattern[] = [
       },
       {
         title: "Go Live on Evenings",
-        body: "Coverage opens on evenings, weekends, and overflow first, where enquiries concentrate.",
+        body: "Coverage opens on evenings, weekends, and overflow first, where inquiries concentrate.",
       },
       {
         title: "Add Recall & Retention",
@@ -223,7 +223,7 @@ const seoContent: SEOPattern[] = [
         icon: "building",
         stat: "Multi",
         title: "Multi-Location Groups",
-        body: "Central enquiry line with location-aware routing and consistent lead handling.",
+        body: "Central inquiry line with location-aware routing and consistent lead handling.",
       },
     ],
   },
@@ -234,8 +234,8 @@ const seoContent: SEOPattern[] = [
     image: "/images/cc-woman-headset.jpg",
     imagePosition: "right",
     body: [
-      "Practices in this category spend heavily on paid acquisition, then route the resulting enquiries into an inbox nobody opens until the following morning. By then the prospective patient has consulted with somebody else.",
-      "Contact Center USA covers those hours. Enquiries answered within a minute and consultations booked live, confirmation calls that protect a high-value book, treatment recall that brings patients back on cycle, and a firm clinical boundary on everything that belongs to your providers.",
+      "Practices in this category spend heavily on paid acquisition, then route the resulting inquiries into an inbox nobody opens until the following morning. By then the prospective patient has consulted with somebody else.",
+      "Contact Center USA covers those hours. Inquiries answered within a minute and consultations booked live, confirmation calls that protect a high-value book, treatment recall that brings patients back on cycle, and a firm clinical boundary on everything that belongs to your providers.",
     ],
     bullets: [
       "Response within a minute, including evenings and weekends",
@@ -264,7 +264,7 @@ const relatedServices = [
   },
   {
     title: "Lead Generation & Appointment Setting",
-    desc: "Outbound programs that fill the consultation calendar beyond inbound enquiries.",
+    desc: "Outbound programs that fill the consultation calendar beyond inbound inquiries.",
     href: "/solutions/lead-generation-appointment-setting",
   },
   {
@@ -295,7 +295,7 @@ export default function MedSpaPage() {
       badge="Med Spa & Aesthetics"
       title="Consultation Booking & Retention for Aesthetic Practices"
       titleHighlight="Aesthetic Practices"
-      subtitle="Med spas, injectables studios, and cosmetic practices use our US-based agents to answer evening enquiries live, book consultations on the call, and bring patients back on treatment cycle."
+      subtitle="Med spas, injectables studios, and cosmetic practices use our US-based agents to answer evening inquiries live, book consultations on the call, and bring patients back on treatment cycle."
       description="Aesthetics leads arrive from paid social and search at nine at night, and clinic staff left at six. We answer within a minute across evenings and weekends, book consultations live in Zenoti, Boulevard, or Aesthetic Record, run confirmation calls that protect a high-value book, and handle treatment recall and membership retention — with a firm boundary that keeps every clinical question with your providers."
       features={features}
       benefits={benefits}

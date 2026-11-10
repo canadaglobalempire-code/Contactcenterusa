@@ -223,7 +223,7 @@ const seoContent: SEOPattern[] = [
         icon: "dollar",
         stat: "Esports",
         title: "Esports & Platforms",
-        body: "Tournament registration, prize and payout enquiries, competitive integrity reports, and event coverage.",
+        body: "Tournament registration, prize and payout inquiries, competitive integrity reports, and event coverage.",
       },
     ],
   },

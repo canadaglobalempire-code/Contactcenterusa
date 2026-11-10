@@ -234,7 +234,7 @@ const industries = [
     bullets: [
       "24/7 emergency maintenance triage",
       "Work orders in AppFolio & Buildium",
-      "Leasing enquiries & tour booking",
+      "Leasing inquiries & tour booking",
       "HOA & resident association lines",
     ],
   },
@@ -336,7 +336,7 @@ const industries = [
     color: "bg-orange-100 text-orange-600",
     hoverColor: "group-hover:bg-orange-600 group-hover:text-white",
     bullets: [
-      "Membership enquiries & tours",
+      "Membership inquiries & tours",
       "Lead follow-up in 60 seconds",
       "Cancellation save conversations",
       "Failed payment recovery",
@@ -390,7 +390,7 @@ const industries = [
     bullets: [
       "Quote intake with full detail",
       "Survey & estimate scheduling",
-      "Storage unit enquiries",
+      "Storage unit inquiries",
       "Peak-season surge staffing",
     ],
   },
@@ -443,7 +443,7 @@ const industries = [
       "24/7 live first call intake",
       "Removal detail captured",
       "On-call escalation worked live",
-      "Pre-need enquiry handling",
+      "Pre-need inquiry handling",
     ],
   },
   {
@@ -467,7 +467,7 @@ const industries = [
     hoverColor: "group-hover:bg-slate-600 group-hover:text-white",
     bullets: [
       "Service appointment booking",
-      "Parts & warranty enquiries",
+      "Parts & warranty inquiries",
       "Recall notification campaigns",
       "Roadside assistance intake",
     ],
@@ -505,7 +505,7 @@ const industries = [
     color: "bg-indigo-100 text-indigo-600",
     hoverColor: "group-hover:bg-indigo-600 group-hover:text-white",
     bullets: [
-      "Citizen enquiry lines",
+      "Citizen inquiry lines",
       "Programme eligibility screening",
       "Multilingual public access",
       "Section 508 accessible support",

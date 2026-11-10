@@ -69,7 +69,7 @@ const sections: { heading: string; paragraphs: string[]; bullets?: string[] }[] 
     heading: "Contact through our form",
     paragraphs: [
       "We intentionally do not publish phone numbers or email addresses on this website. Routing inquiries through our protected contact form keeps spam calls and spam email down and makes sure your request reaches the right team. Our forms use validation and anti-spam checks to filter out automated submissions.",
-      "Our forms use Splitforms to save what you type into an enquiry form, even if you do not submit it, so we can follow up on your request.",
+      "Our forms use Splitforms to save what you type into an inquiry form, even if you do not submit it, so we can follow up on your request.",
     ],
   },
   {

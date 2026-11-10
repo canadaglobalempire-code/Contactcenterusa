@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "What is a real estate answering service?",
-    a: "A real estate answering service is a US-based call center that answers buyer, seller and listing enquiries for agents, teams and brokerages — usually 24/7, because property enquiries cluster in evenings and weekends. Agents qualify the caller, capture budget, timeline, financing status and property interest, book showings directly into the agent's calendar, and push the record into a CRM such as Follow Up Boss, kvCORE, BoomTown, Chime or Sierra Interactive before the call ends.",
+    a: "A real estate answering service is a US-based call center that answers buyer, seller and listing inquiries for agents, teams and brokerages — usually 24/7, because property inquiries cluster in evenings and weekends. Agents qualify the caller, capture budget, timeline, financing status and property interest, book showings directly into the agent's calendar, and push the record into a CRM such as Follow Up Boss, kvCORE, BoomTown, Chime or Sierra Interactive before the call ends.",
   },
   {
     q: "How much does a real estate answering service cost?",
@@ -39,15 +39,15 @@ const FAQS = [
   },
   {
     q: "Why does responding within five minutes matter so much?",
-    a: "Widely cited lead response research has consistently found that contacting an inbound lead within about five minutes dramatically increases the odds of qualifying that lead compared with waiting thirty minutes or more, with the effect falling off sharply after the first hour. The mechanism is simple: portal enquiries are rarely exclusive. A buyer browsing Zillow at 9 PM often submits enquiries on several listings, and the first agent to reach a live conversation frames the relationship. Everyone who calls back tomorrow is competing for second place.",
+    a: "Widely cited lead response research has consistently found that contacting an inbound lead within about five minutes dramatically increases the odds of qualifying that lead compared with waiting thirty minutes or more, with the effect falling off sharply after the first hour. The mechanism is simple: portal inquiries are rarely exclusive. A buyer browsing Zillow at 9 PM often submits inquiries on several listings, and the first agent to reach a live conversation frames the relationship. Everyone who calls back tomorrow is competing for second place.",
   },
   {
     q: "Can an answering service book showings directly into my calendar?",
-    a: "Yes, and it is the main reason to buy one. Providers integrate with Google Calendar, Outlook, Calendly, ShowingTime and most major real estate CRMs to check live availability and place the showing on your calendar while the caller is on the line, then send a confirmation text with the address and time. This removes the phone tag that kills a meaningful share of after-hours enquiries.",
+    a: "Yes, and it is the main reason to buy one. Providers integrate with Google Calendar, Outlook, Calendly, ShowingTime and most major real estate CRMs to check live availability and place the showing on your calendar while the caller is on the line, then send a confirmation text with the address and time. This removes the phone tag that kills a meaningful share of after-hours inquiries.",
   },
   {
     q: "Do real estate answering services need Fair Housing training?",
-    a: "Absolutely, and it is non-negotiable. Any agent fielding buyer enquiries must be trained on the Fair Housing Act. Questions like whether a neighborhood is 'good for families' or 'safe' are extremely common from buyers and are exactly the kind of question that produces a steering violation when answered casually. A compliant provider scripts these responses toward objective, public data sources and documents Fair Housing training for every agent on your account.",
+    a: "Absolutely, and it is non-negotiable. Any agent fielding buyer inquiries must be trained on the Fair Housing Act. Questions like whether a neighborhood is 'good for families' or 'safe' are extremely common from buyers and are exactly the kind of question that produces a steering violation when answered casually. A compliant provider scripts these responses toward objective, public data sources and documents Fair Housing training for every agent on your account.",
   },
   {
     q: "Can the service qualify leads, not just take names?",

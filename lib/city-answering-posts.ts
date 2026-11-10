@@ -83,7 +83,7 @@ const SEEDS: CitySeed[] = [
     localContext: [
       "Chicago answering-service demand is unusually seasonal because the weather does the selling. A furnace failure in January and a burst pipe during a February thaw both produce the same call at the same hour, and the contractor who answers is the one who books the job.",
       "The metro also splits sharply between the city proper and the collar counties, which matters for dispatch. A service that treats Cook, DuPage, Lake and Will as one undifferentiated territory will route technicians across an hour of traffic that a locally briefed agent would have avoided.",
-      "There is a second split that national providers rarely account for: Chicago's housing stock is old and structurally unusual. Two-flats and three-flats with shared systems, garden units below grade, and steam heat in prewar buildings generate call descriptions that do not map onto a standard intake form. A caller reporting that \"the radiator is banging and the garden unit has water\" is describing a specific, urgent, and expensive problem, and an agent working from a generic script will log it as a routine plumbing enquiry.",
+      "There is a second split that national providers rarely account for: Chicago's housing stock is old and structurally unusual. Two-flats and three-flats with shared systems, garden units below grade, and steam heat in prewar buildings generate call descriptions that do not map onto a standard intake form. A caller reporting that \"the radiator is banging and the garden unit has water\" is describing a specific, urgent, and expensive problem, and an agent working from a generic script will log it as a routine plumbing inquiry.",
       "Chicago businesses also run into a scheduling constraint that barely exists in newer metros — parking and building access. A technician dispatched to a Lincoln Park three-flat or a Gold Coast high-rise needs loading-dock hours, a certificate of insurance on file, or a permit for the street. An answering service that books the appointment without capturing that detail has created a wasted truck roll, not a job.",
     ],
     wrinkle: {
@@ -526,7 +526,7 @@ const SEEDS: CitySeed[] = [
       {
         question: "Does pollen season really change call volume in Atlanta?",
         answer:
-          "It does, and it catches national providers out because no other major metro has a comparable spike. From late February through April, Atlanta HVAC companies see a sustained rise in filtration, duct-cleaning and indoor-air-quality enquiries on top of normal service demand — and these are booking calls rather than emergencies, which means they convert well with live scheduling and convert poorly with voicemail. If you are buying coverage for a single season here, this one returns more than the winter.",
+          "It does, and it catches national providers out because no other major metro has a comparable spike. From late February through April, Atlanta HVAC companies see a sustained rise in filtration, duct-cleaning and indoor-air-quality inquiries on top of normal service demand — and these are booking calls rather than emergencies, which means they convert well with live scheduling and convert poorly with voicemail. If you are buying coverage for a single season here, this one returns more than the winter.",
       },
       {
         question: "Do I need a HIPAA business associate agreement with my answering service?",
@@ -555,7 +555,7 @@ const SEEDS: CitySeed[] = [
     localContext: [
       "Houston has two distinct answering-service markets sitting on top of each other. Residential trades follow the usual after-hours emergency pattern; the industrial and energy base runs shift operations where a call at 3 AM is routine rather than exceptional.",
       "Hurricane season adds a third pattern. Business-continuity value that looks theoretical in June becomes the entire point of the contract in September, when a distributed provider keeps your line answered through an evacuation or an outage.",
-      "Flooding is the local risk that shapes everything else, and it is not confined to named storms. Houston floods on ordinary heavy rain, the affected areas are well known to residents and invisible to a national script, and the call that follows is a restoration emergency with a very short decision window. An agent who treats standing water as a routine plumbing enquiry has cost the customer a day and you the job.",
+      "Flooding is the local risk that shapes everything else, and it is not confined to named storms. Houston floods on ordinary heavy rain, the affected areas are well known to residents and invisible to a national script, and the call that follows is a restoration emergency with a very short decision window. An agent who treats standing water as a routine plumbing inquiry has cost the customer a day and you the job.",
       "The Texas Medical Center gives the metro a second unusual feature: an enormous concentration of independent medical and dental practices clustered around the largest medical complex in the world. Those practices compete for patients who have real alternatives within a few miles, which makes speed of answer and the quality of the first conversation a genuine commercial differentiator rather than an administrative nicety.",
     ],
     wrinkle: {
@@ -793,7 +793,7 @@ const SEEDS: CitySeed[] = [
       "Miami is a genuinely bilingual market rather than an English market with Spanish speakers in it, and dialect matters more here than in most of the country. Caribbean and South American usage differ in everyday vocabulary, and a provider staffing from a single regional pool will occasionally miss the word a caller actually used.",
       "Condominium and HOA administration is also disproportionately large here, which produces a distinct call mix: access issues, assessment questions, vendor coordination and habitability complaints that carry real response-time exposure.",
       "Florida's condominium rules tightened substantially after the Surfside collapse, and the practical consequence for anyone answering phones in this metro is a sustained rise in structural-inspection, reserve-study and special-assessment calls. Those are anxious, detailed conversations from owners who have received a letter they do not understand, and they take considerably longer than a maintenance request.",
-      "The metro is also more international in its call patterns than any other in this set. Owners, investors and patients calling from other countries produce enquiries at hours that make no sense against an Eastern-time business day, and they expect to reach a person rather than a voicemail box in a language they do not speak.",
+      "The metro is also more international in its call patterns than any other in this set. Owners, investors and patients calling from other countries produce inquiries at hours that make no sense against an Eastern-time business day, and they expect to reach a person rather than a voicemail box in a language they do not speak.",
     ],
     wrinkle: {
       heading: "Florida all-party consent, and hurricane continuity",
@@ -874,7 +874,7 @@ const SEEDS: CitySeed[] = [
       {
         question: "Why does Spanish dialect matter for an answering service in Miami?",
         answer:
-          "Because the vocabulary that differs between Spanish dialects is exactly the vocabulary a service call uses. Words for common fixtures, appliances and household problems vary between Cuban, Venezuelan, Colombian and Argentine usage, and Miami has significant populations of all of them. An agent recruited from a single national pool will handle greetings and scheduling perfectly and then stumble on the specific noun the caller used to describe the problem — which reads to the caller as not understanding their situation. Ask where the provider recruits, and test with a domestic problem rather than a generic enquiry.",
+          "Because the vocabulary that differs between Spanish dialects is exactly the vocabulary a service call uses. Words for common fixtures, appliances and household problems vary between Cuban, Venezuelan, Colombian and Argentine usage, and Miami has significant populations of all of them. An agent recruited from a single national pool will handle greetings and scheduling perfectly and then stumble on the specific noun the caller used to describe the problem — which reads to the caller as not understanding their situation. Ask where the provider recruits, and test with a domestic problem rather than a generic inquiry.",
       },
       {
         question: "How should a Miami condo association or HOA handle after-hours calls?",
@@ -1090,7 +1090,7 @@ const SEEDS: CitySeed[] = [
         ["April - August", "Hail season along the Front Range. Concentrated, high-value surges for roofing and exterior trades."],
         ["October - April", "Heating season. Sustained overnight sub-freezing temperatures make no-heat calls genuine emergencies."],
         ["Late winter and spring", "Freeze-thaw cycles producing burst pipes, ice damming and roof leaks in older stock."],
-        ["June - September", "Wildfire smoke and air-quality events, driving filtration, duct and indoor-air-quality enquiries."],
+        ["June - September", "Wildfire smoke and air-quality events, driving filtration, duct and indoor-air-quality inquiries."],
       ],
     },
     costDrivers: [
@@ -1562,7 +1562,7 @@ const SEEDS: CitySeed[] = [
         ["October - May", "Sustained rain. Water intrusion, roof leaks, drainage failures and moisture damage arriving continuously rather than in spikes."],
         ["January - February", "Gorge ice events. Freezing rain closes roads and produces the metro's most concentrated emergency surge of the year."],
         ["June - September", "The dry season, including increasingly frequent heat events in a housing stock where air conditioning is not standard."],
-        ["August - October", "Wildfire smoke, driving filtration, duct and indoor-air-quality enquiries across the metro."],
+        ["August - October", "Wildfire smoke, driving filtration, duct and indoor-air-quality inquiries across the metro."],
       ],
     },
     costDrivers: [

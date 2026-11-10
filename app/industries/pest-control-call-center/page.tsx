@@ -94,7 +94,7 @@ const faqs = [
   {
     question: "Can you handle termite season and autumn rodent surges?",
     answer:
-      "Yes, and both are planned as known seasonal events rather than absorbed as overflow. Termite swarm season compresses the year's highest-value enquiries into a few weeks, spring drives ant and roach volume, and the first cold snap of autumn produces a rodent surge that holds for weeks. We staff against the seasonal curve for your region and cross-train agents so capacity moves onto your queue within a shift when a surge starts, rather than after a week of missed calls.",
+      "Yes, and both are planned as known seasonal events rather than absorbed as overflow. Termite swarm season compresses the year's highest-value inquiries into a few weeks, spring drives ant and roach volume, and the first cold snap of autumn produces a rodent surge that holds for weeks. We staff against the seasonal curve for your region and cross-train agents so capacity moves onto your queue within a shift when a surge starts, rather than after a week of missed calls.",
   },
   {
     question: "How do you handle commercial pest accounts differently?",
@@ -127,11 +127,11 @@ const seoSections: SEOPattern[] = [
     imagePosition: "right",
     body: [
       "Pest calls carry more emotion than almost any other home-services category. The caller has just seen something in their kitchen, their child's bedroom, or their restaurant's dining room, and they are not comparison shopping — they are calling down a list until a human answers and tells them someone can come. Speed of answer converts here at a rate most trades never see, and a voicemail converts at close to zero.",
-      "The demand curve is also sharply seasonal, and it differs by pest. Termite swarm season produces a concentrated burst of the highest-value enquiries of the year. Ant and roach volume climbs with spring warmth. Rodent calls surge in autumn as temperatures fall, and bed bug calls follow travel seasons. A staffing plan built on the annual average is understaffed for every one of those peaks.",
+      "The demand curve is also sharply seasonal, and it differs by pest. Termite swarm season produces a concentrated burst of the highest-value inquiries of the year. Ant and roach volume climbs with spring warmth. Rodent calls surge in autumn as temperatures fall, and bed bug calls follow travel seasons. A staffing plan built on the annual average is understaffed for every one of those peaks.",
     ],
     bullets: [
       "First-answer wins: pest callers dial down a list and stop at the first live voice",
-      "Termite season concentrates the year's highest-value enquiries into weeks",
+      "Termite season concentrates the year's highest-value inquiries into weeks",
       "Autumn rodent surge and spring ant season need planned, not overflow, capacity",
       "Commercial accounts — restaurants, hotels, property managers — call with compliance deadlines attached",
     ],

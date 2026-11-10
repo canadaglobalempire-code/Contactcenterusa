@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "HVAC Answering Service & Call Center | 24/7 Dispatch";
 const description =
-  "HVAC answering service for repair enquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs.";
+  "HVAC answering service for repair inquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs.";
 
 export const metadata: Metadata = {
   title,
@@ -80,7 +80,7 @@ const testimonial = {
 const faqs = [
   {
     "question": "Which HVAC calls should an answering team handle?",
-    "answer": "Separate repair requests, maintenance bookings, replacement estimates and existing-job updates in the brief. Each may need different questions and scheduling rules. Provide your service area, equipment or job restrictions and the circumstances that require a technician or supervisor so agents can route enquiries without making unsupported promises."
+    "answer": "Separate repair requests, maintenance bookings, replacement estimates and existing-job updates in the brief. Each may need different questions and scheduling rules. Provide your service area, equipment or job restrictions and the circumstances that require a technician or supervisor so agents can route inquiries without making unsupported promises."
   },
   {
     "question": "How do we plan HVAC coverage for seasonal spikes?",
@@ -185,7 +185,7 @@ export default function HVACPage() {
       title="HVAC Answering Service & Call Center"
       titleHighlight="HVAC Answering Service"
       subtitle="24/7 Emergency Dispatch, Live ServiceTitan Booking & High-Ticket Lead Capture"
-      description="HVAC answering service for repair enquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs."
+      description="HVAC answering service for repair inquiries, appointment intake and seasonal overflow. Define dispatch rules, service coverage and after-hours handoffs."
       features={features}
       benefits={benefits}
       image="/images/cc-team-floor.jpg"

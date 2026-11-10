@@ -85,15 +85,15 @@ const testimonial = {
 const faqs = [
   {
     "question": "What should an ecommerce customer service team be able to resolve?",
-    "answer": "Build the scope around your actual contact reasons: order tracking, delivery questions, product information, returns and account support. Provide approved answers and a clear policy for exceptions. Separate enquiries an agent can complete from actions requiring store-owner approval, such as unusual refunds or sensitive account changes."
+    "answer": "Build the scope around your actual contact reasons: order tracking, delivery questions, product information, returns and account support. Provide approved answers and a clear policy for exceptions. Separate inquiries an agent can complete from actions requiring store-owner approval, such as unusual refunds or sensitive account changes."
   },
   {
     "question": "How do we prepare an outsourced team for our store?",
-    "answer": "Provide product information, shipping and returns policies, store and helpdesk access requirements, and an escalation contact. Use sample customer enquiries to check the workflow before launch. Confirm the capabilities of any proposed integration against your own store configuration rather than assuming every platform connection offers the same actions."
+    "answer": "Provide product information, shipping and returns policies, store and helpdesk access requirements, and an escalation contact. Use sample customer inquiries to check the workflow before launch. Confirm the capabilities of any proposed integration against your own store configuration rather than assuming every platform connection offers the same actions."
   },
   {
     "question": "How do we compare ecommerce support proposals?",
-    "answer": "Use the same channels, service hours and normal and peak enquiry volumes in each request. Ask which order actions, training, management and reports are included. Review resolution quality, repeat contacts and customer feedback as well as response speed. Set a review cadence so changes in promotions, products or fulfilment are reflected in the support process."
+    "answer": "Use the same channels, service hours and normal and peak inquiry volumes in each request. Ask which order actions, training, management and reports are included. Review resolution quality, repeat contacts and customer feedback as well as response speed. Set a review cadence so changes in promotions, products or fulfilment are reflected in the support process."
   },
   {
     question: "What does an e-commerce call center do?",

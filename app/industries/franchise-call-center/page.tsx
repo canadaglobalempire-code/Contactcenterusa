@@ -48,7 +48,7 @@ const features = [
     desc: "Individual locations rarely justify their own after-hours coverage. Handled centrally across the network, it becomes affordable for everyone and removes the most common source of lost leads.",
   },
   {
-    title: "Franchise Development Enquiries",
+    title: "Franchise Development Inquiries",
     desc: "A separate qualified line for prospective franchisees, screening on capital, territory interest, and timeline before anything reaches your development team.",
   },
 ];
@@ -91,9 +91,9 @@ const faqs = [
       "With data. Every lead is delivered with full intake detail and a timestamp, and reporting shows exactly what each location received and when. Lead volume and quality arguments between franchisor and franchisee are usually arguments about missing information, and this removes the ambiguity from both sides.",
   },
   {
-    question: "Can you screen franchise development enquiries?",
+    question: "Can you screen franchise development inquiries?",
     answer:
-      "Yes, on a separate line. Prospective franchisee enquiries are screened on available capital, territory interest, relevant experience, and timeline before anything reaches your development team, so they spend their time on genuinely qualified candidates rather than working through general interest.",
+      "Yes, on a separate line. Prospective franchisee inquiries are screened on available capital, territory interest, relevant experience, and timeline before anything reaches your development team, so they spend their time on genuinely qualified candidates rather than working through general interest.",
   },
   {
     question: "What reporting does the franchisor get?",
@@ -211,19 +211,19 @@ const seoContent: SEOPattern[] = [
         icon: "heart-pulse",
         stat: "Health",
         title: "Health & Wellness",
-        body: "Membership and consultation enquiries routed to the nearest studio or clinic.",
+        body: "Membership and consultation inquiries routed to the nearest studio or clinic.",
       },
       {
         icon: "store",
         stat: "Retail",
         title: "Retail & Food Franchises",
-        body: "Location enquiries, catering and group orders, and guest recovery across units.",
+        body: "Location inquiries, catering and group orders, and guest recovery across units.",
       },
       {
         icon: "briefcase",
         stat: "B2B",
         title: "B2B & Professional Franchises",
-        body: "Commercial enquiry qualification and appointment setting for territory owners.",
+        body: "Commercial inquiry qualification and appointment setting for territory owners.",
       },
     ],
   },

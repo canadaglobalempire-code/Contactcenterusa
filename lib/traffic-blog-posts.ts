@@ -336,7 +336,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       {
         heading: "What is a contingency collection agency?",
         paragraphs: [
-          "A collection agency works on contingency when its fee is a share of the money it actually recovers, rather than an hourly charge, a monthly retainer or a fixed price per account. Our [contingency collection agency service page](/services/contingency-collection-agency) explains what to include in a campaign enquiry, while [first-party collections outsourcing](/services/first-party-collections) covers outreach in your own brand. You keep ownership of the debt. The agency acts for you: it contacts the customer, negotiates payment or a payment plan, and passes on what it collects minus its fee. That is different from selling the debt to a debt buyer, where you receive a one-off price and the buyer keeps whatever it later collects.",
+          "A collection agency works on contingency when its fee is a share of the money it actually recovers, rather than an hourly charge, a monthly retainer or a fixed price per account. Our [contingency collection agency service page](/services/contingency-collection-agency) explains what to include in a campaign inquiry, while [first-party collections outsourcing](/services/first-party-collections) covers outreach in your own brand. You keep ownership of the debt. The agency acts for you: it contacts the customer, negotiates payment or a payment plan, and passes on what it collects minus its fee. That is different from selling the debt to a debt buyer, where you receive a one-off price and the buyer keeps whatever it later collects.",
           "Because the agency collects debts owed to someone else, it is a debt collector under the Fair Debt Collection Practices Act (FDCPA) when the accounts are consumer debts, meaning debts taken on mainly for personal, family or household purposes (15 U.S.C. 1692a). Regulation F, the Consumer Financial Protection Bureau's rule at 12 CFR part 1006, adds detailed requirements on calling times, call frequency, validation notices and electronic messages. Debts owed by businesses fall outside the FDCPA, although state law and the placement contract still apply.",
         ],
       },
@@ -2089,7 +2089,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         heading: "When a business genuinely needs both",
         paragraphs: [
           "Plenty of businesses do need inbound and outbound, and the mistake is not buying both — it is buying them as one thing. Two situations make the combination genuinely necessary rather than merely convenient.",
-          "The first is speed-to-lead. If enquiries arrive through a form or a missed call, the outbound follow-up needs to happen in minutes, and the value decays extremely quickly after that. This is outbound work that only exists because of inbound demand, and it should be measured on time-to-first-contact rather than on dials.",
+          "The first is speed-to-lead. If inquiries arrive through a form or a missed call, the outbound follow-up needs to happen in minutes, and the value decays extremely quickly after that. This is outbound work that only exists because of inbound demand, and it should be measured on time-to-first-contact rather than on dials.",
           "The second is lifecycle work: appointment reminders, recall campaigns, renewal outreach and post-service follow-up. These are outbound by mechanism but service-shaped in tone, and they usually sit better with the inbound team than with a sales-oriented outbound one — which is a good illustration of why the split is about disposition rather than call direction.",
           "In both cases, run them as two defined programmes with their own scripts, metrics and quality criteria, even if the same vendor delivers both. Blending the operations is what fails, not using both channels.",
         ],
@@ -2114,7 +2114,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       {
         question: "What is a blended call center model and when does it work?",
         answer:
-          "A blended model has the same agents handling inbound queues and outbound campaigns, typically with the dialler feeding them work when the inbound queue is quiet. It works well in two specific cases: speed-to-lead follow-up, where the outbound call exists only because an inbound enquiry arrived and must happen within minutes; and lifecycle outreach such as reminders, recalls and renewals, which is outbound by mechanism but service-shaped in tone. It works badly when genuine cold prospecting is blended with support, because those need different people and are judged on incompatible metrics.",
+          "A blended model has the same agents handling inbound queues and outbound campaigns, typically with the dialler feeding them work when the inbound queue is quiet. It works well in two specific cases: speed-to-lead follow-up, where the outbound call exists only because an inbound inquiry arrived and must happen within minutes; and lifecycle outreach such as reminders, recalls and renewals, which is outbound by mechanism but service-shaped in tone. It works badly when genuine cold prospecting is blended with support, because those need different people and are judged on incompatible metrics.",
       },
       {
         question: "Can a call center handle both inbound and outbound calls?",
@@ -2355,7 +2355,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       {
         question: "At what call volume should I move away from a named-receptionist service?",
         answer:
-          "There is no fixed number, and treating it as a volume question leads people to the wrong answer. The better test is what proportion of your call value sits in the greeting versus in the resolution. A firm taking thirty considered enquiries a month, where tone and continuity influence conversion, should stay. A business taking three hundred transactional calls a month, where the outcome depends on whether the agent can see live availability and book the job, has outgrown the model regardless of what it is paying. Audit a month of calls and ask which kind each one was.",
+          "There is no fixed number, and treating it as a volume question leads people to the wrong answer. The better test is what proportion of your call value sits in the greeting versus in the resolution. A firm taking thirty considered inquiries a month, where tone and continuity influence conversion, should stay. A business taking three hundred transactional calls a month, where the outcome depends on whether the agent can see live availability and book the job, has outgrown the model regardless of what it is paying. Audit a month of calls and ask which kind each one was.",
       },
       {
         question: "Can a dedicated pod give me the same continuity as a named receptionist?",
@@ -2464,7 +2464,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
         heading: "What a missed call is actually worth to you",
         paragraphs: [
           "None of this arithmetic means anything without the other side of the equation, and the other side is usually much larger than the invoice.",
-          "Take your average job or client value and your close rate on inbound enquiries. A trade business closing one in three enquiries at an average job value of several hundred dollars is losing that expected value every time a call goes unanswered — and the caller who reached voicemail at seven in the evening is not usually calling back, because they dialled the next result instead.",
+          "Take your average job or client value and your close rate on inbound inquiries. A trade business closing one in three inquiries at an average job value of several hundred dollars is losing that expected value every time a call goes unanswered — and the caller who reached voicemail at seven in the evening is not usually calling back, because they dialled the next result instead.",
           "Run that against your missed-call count for a single month. For most businesses with genuine after-hours demand, the number makes the entire pricing discussion look small, and the correct question stops being which plan is cheapest and becomes which provider actually answers.",
         ],
       },
@@ -2488,7 +2488,7 @@ export const trafficBlogPosts: Record<string, TrafficBlogPost> = {
       {
         question: "How much is a missed call actually worth?",
         answer:
-          "Usually far more than the monthly fee, which is why the pricing debate is often the wrong debate. Multiply your average job or client value by your close rate on inbound enquiries, and that is roughly the expected value of every call that goes unanswered. For a trade business closing one in three enquiries at several hundred dollars a job, a handful of missed evening calls a week outweighs the entire cost of coverage. And those callers rarely ring back — they dialled the next search result the same evening.",
+          "Usually far more than the monthly fee, which is why the pricing debate is often the wrong debate. Multiply your average job or client value by your close rate on inbound inquiries, and that is roughly the expected value of every call that goes unanswered. For a trade business closing one in three inquiries at several hundred dollars a job, a handful of missed evening calls a week outweighs the entire cost of coverage. And those callers rarely ring back — they dialled the next search result the same evening.",
       },
       {
         question: "Is hiring an answering service cheaper than hiring an in-house receptionist?",

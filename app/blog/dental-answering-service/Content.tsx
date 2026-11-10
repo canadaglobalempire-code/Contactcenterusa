@@ -6,7 +6,7 @@ import { HeroContactForm } from "@/components/shared/HeroContactForm";
 type Faq = { q: string; a: string };
 
 const callTypes = [
-  { t: "New patient enquiry", d: "The highest-value call your practice receives and the one most likely to be lost. Needs immediate answer, benefit check and a booked appointment — not a callback promise." },
+  { t: "New patient inquiry", d: "The highest-value call your practice receives and the one most likely to be lost. Needs immediate answer, benefit check and a booked appointment — not a callback promise." },
   { t: "Emergency", d: "Triaged against your dentist's written criteria. Genuine emergencies page the on-call dentist; everything else books into the next available slot." },
   { t: "Existing patient admin", d: "Rescheduling, directions, forms, balance questions. Handled end to end so the front desk never sees them." },
   { t: "Recall and reactivation", d: "Outbound work into the overdue-hygiene list. Rarely reached in-house because inbound always wins, and consistently the highest-return use of the service." },

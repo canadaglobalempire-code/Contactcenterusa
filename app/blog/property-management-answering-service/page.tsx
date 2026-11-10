@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "What is a property management answering service?",
-    a: "A property management answering service is a US-based call center that answers resident, owner and prospect calls on your behalf — around the clock or only after hours. Agents triage maintenance emergencies against your written criteria, dispatch on-call vendors, create work orders directly in AppFolio, Buildium, Yardi, Rent Manager or Entrata, capture leasing enquiries with Fair Housing-compliant scripting, and escalate genuine habitability emergencies to your on-call manager with a timestamped record.",
+    a: "A property management answering service is a US-based call center that answers resident, owner and prospect calls on your behalf — around the clock or only after hours. Agents triage maintenance emergencies against your written criteria, dispatch on-call vendors, create work orders directly in AppFolio, Buildium, Yardi, Rent Manager or Entrata, capture leasing inquiries with Fair Housing-compliant scripting, and escalate genuine habitability emergencies to your on-call manager with a timestamped record.",
   },
   {
     q: "How much does a property management answering service cost?",
@@ -47,7 +47,7 @@ const FAQS = [
   },
   {
     q: "How does a property management answering service handle Fair Housing compliance?",
-    a: "Any agent answering leasing enquiries must be trained on the Fair Housing Act, because a casual, well-meant remark about a neighborhood's demographics, whether a property is 'good for families', or steering a caller toward or away from a building can create real liability for your firm. Insist that your provider documents Fair Housing training for every agent on your account, scripts leasing responses to stay on objective criteria such as price, availability, square footage and pet policy, and records calls so you have evidence if a complaint ever arises.",
+    a: "Any agent answering leasing inquiries must be trained on the Fair Housing Act, because a casual, well-meant remark about a neighborhood's demographics, whether a property is 'good for families', or steering a caller toward or away from a building can create real liability for your firm. Insist that your provider documents Fair Housing training for every agent on your account, scripts leasing responses to stay on objective criteria such as price, availability, square footage and pet policy, and records calls so you have evidence if a complaint ever arises.",
   },
   {
     q: "Should the answering service dispatch vendors directly?",

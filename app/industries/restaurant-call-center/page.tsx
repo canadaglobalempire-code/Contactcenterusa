@@ -32,12 +32,12 @@ const features = [
     desc: "Reservations taken, modified, and cancelled live in OpenTable, Resy, SevenRooms, or Tock — including party size changes, special occasion notes, and accessibility or seating requests captured properly.",
   },
   {
-    title: "Catering & Large Party Enquiries",
-    desc: "The highest-value calls a restaurant receives, and the ones most likely to ring out during a lunch rush. Agents capture headcount, date, budget, dietary requirements, and route a qualified enquiry to your events team.",
+    title: "Catering & Large Party Inquiries",
+    desc: "The highest-value calls a restaurant receives, and the ones most likely to ring out during a lunch rush. Agents capture headcount, date, budget, dietary requirements, and route a qualified inquiry to your events team.",
   },
   {
     title: "Overflow During Peak Service",
-    desc: "Nobody can answer the phone at 7pm on a Friday. Calls roll to us once your line is busy or after a set number of rings, so a reservation enquiry does not become a booking at the restaurant down the street.",
+    desc: "Nobody can answer the phone at 7pm on a Friday. Calls roll to us once your line is busy or after a set number of rings, so a reservation inquiry does not become a booking at the restaurant down the street.",
   },
   {
     title: "Guest Recovery & Complaint Handling",
@@ -49,7 +49,7 @@ const features = [
   },
   {
     title: "Bilingual Guest Support",
-    desc: "Native Spanish-speaking agents handle reservations, catering enquiries, and guest recovery end to end, which matters in markets where a large share of guests prefer Spanish.",
+    desc: "Native Spanish-speaking agents handle reservations, catering inquiries, and guest recovery end to end, which matters in markets where a large share of guests prefer Spanish.",
   },
 ];
 
@@ -57,7 +57,7 @@ const benefits = [
   "Overflow coverage during peak service hours",
   "100% US-based agents",
   "OpenTable, Resy, SevenRooms & Tock integration",
-  "Catering and large party enquiry capture",
+  "Catering and large party inquiry capture",
   "Location-aware routing for multi-unit groups",
   "Bilingual English/Spanish guest support",
 ];
@@ -81,9 +81,9 @@ const faqs = [
       "Calls route to us only after your own line is engaged or after a set number of rings, so your host keeps every call they can actually take. During peak service that means the calls we handle are precisely the ones that would otherwise have rung out — which is where the lost bookings live.",
   },
   {
-    question: "Do you handle catering and large party enquiries?",
+    question: "Do you handle catering and large party inquiries?",
     answer:
-      "Yes, and for most operators this is the strongest argument for coverage. A catering enquiry can be worth many times an average cover, and it almost always arrives during a service rush. Agents capture headcount, date, venue or delivery details, budget range, and dietary requirements, then route a qualified enquiry to your events team the same day.",
+      "Yes, and for most operators this is the strongest argument for coverage. A catering inquiry can be worth many times an average cover, and it almost always arrives during a service rush. Agents capture headcount, date, venue or delivery details, budget range, and dietary requirements, then route a qualified inquiry to your events team the same day.",
   },
   {
     question: "Can you handle guest complaints?",
@@ -109,8 +109,8 @@ const seoContent: SEOPattern[] = [
     heading: "Nobody is answering the phone at seven o'clock on a Friday.",
     accent: "at seven o'clock on a Friday",
     body: [
-      "Contact Center USA answers for restaurants and multi-unit groups with US-based agents — reservations, catering enquiries, guest recovery, and overflow during the hours your team physically cannot reach the phone.",
-      "Restaurant phones ring hardest exactly when the floor is busiest. The reservation that rings out at peak service, and the catering enquiry that arrives mid-rush, are the two calls an operator least wants to miss and is most likely to.",
+      "Contact Center USA answers for restaurants and multi-unit groups with US-based agents — reservations, catering inquiries, guest recovery, and overflow during the hours your team physically cannot reach the phone.",
+      "Restaurant phones ring hardest exactly when the floor is busiest. The reservation that rings out at peak service, and the catering inquiry that arrives mid-rush, are the two calls an operator least wants to miss and is most likely to.",
     ],
     stats: [
       { stat: "3 rings", label: "Target answer speed on overflow calls" },
@@ -134,7 +134,7 @@ const seoContent: SEOPattern[] = [
         leftYes: false,
       },
       {
-        label: "Catering Enquiries",
+        label: "Catering Inquiries",
         left: "High-value calls missed mid-rush or taken on a scrap of paper.",
         right: "Qualified with headcount, date, and budget, routed to events same day.",
         leftYes: false,
@@ -205,13 +205,13 @@ const seoContent: SEOPattern[] = [
         icon: "store",
         stat: "FSR",
         title: "Full-Service Restaurants",
-        body: "Reservations, special occasion notes, private dining enquiries, and waitlist management.",
+        body: "Reservations, special occasion notes, private dining inquiries, and waitlist management.",
       },
       {
         icon: "shopping-bag",
         stat: "Catering",
         title: "Catering & Events",
-        body: "High-value enquiry capture with headcount, budget, and dietary requirements qualified.",
+        body: "High-value inquiry capture with headcount, budget, and dietary requirements qualified.",
       },
       {
         icon: "building",
@@ -234,13 +234,13 @@ const seoContent: SEOPattern[] = [
     image: "/images/cc-woman-typing.jpg",
     imagePosition: "right",
     body: [
-      "A missed reservation call is not one lost table. It is a guest who booked elsewhere, and often a party of six on a Saturday. A missed catering enquiry can be worth a full night's covers. Both ring during exactly the hours nobody can pick up.",
-      "Contact Center USA takes the overflow, not the host stand. Agents book live in your reservation platform, qualify catering enquiries to your events team the same day, and resolve service complaints within remedies you authorize — before the review gets written.",
+      "A missed reservation call is not one lost table. It is a guest who booked elsewhere, and often a party of six on a Saturday. A missed catering inquiry can be worth a full night's covers. Both ring during exactly the hours nobody can pick up.",
+      "Contact Center USA takes the overflow, not the host stand. Agents book live in your reservation platform, qualify catering inquiries to your events team the same day, and resolve service complaints within remedies you authorize — before the review gets written.",
     ],
     bullets: [
       "Overflow only — your host keeps every call they can take",
       "Live booking in OpenTable, Resy, SevenRooms, and Tock",
-      "Catering enquiries qualified and routed the same day",
+      "Catering inquiries qualified and routed the same day",
       "Guest recovery inside limits you define, escalating the rest",
       "Location-aware routing on one number for multi-unit groups",
     ],
@@ -250,7 +250,7 @@ const seoContent: SEOPattern[] = [
     eyebrow: "Get Started",
     heading: "Count the calls that rang out last Friday night.",
     accent: "rang out last Friday night",
-    body: "Send us your call volume and reservation platform. We will scope overflow coverage for your peak service windows and a dedicated catering enquiry line.",
+    body: "Send us your call volume and reservation platform. We will scope overflow coverage for your peak service windows and a dedicated catering inquiry line.",
     ctaLabel: "Request a Free Consultation",
     ctaHref: "/contact",
   },
@@ -295,8 +295,8 @@ export default function RestaurantCallCenterPage() {
       badge="Restaurant Call Center"
       title="Reservations & Catering Coverage for Restaurants"
       titleHighlight="Restaurants"
-      subtitle="Independent restaurants and multi-unit groups use our US-based agents to catch overflow at peak service, book reservations live, and qualify the catering enquiries that arrive mid-rush."
-      description="Restaurant phones ring hardest exactly when the floor is busiest, and the two calls that ring out most — a Saturday reservation and a catering enquiry — are the two worth the most. We take overflow only, so your host keeps every call they can answer, booking live in OpenTable, Resy, SevenRooms, or Tock and routing qualified catering enquiries to your events team the same day."
+      subtitle="Independent restaurants and multi-unit groups use our US-based agents to catch overflow at peak service, book reservations live, and qualify the catering inquiries that arrive mid-rush."
+      description="Restaurant phones ring hardest exactly when the floor is busiest, and the two calls that ring out most — a Saturday reservation and a catering inquiry — are the two worth the most. We take overflow only, so your host keeps every call they can answer, booking live in OpenTable, Resy, SevenRooms, or Tock and routing qualified catering inquiries to your events team the same day."
       features={features}
       benefits={benefits}
       image="/images/cc-agent-smile.jpg"

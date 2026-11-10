@@ -91,7 +91,7 @@ const industries = [
   },
   {
     name: "Real estate",
-    why: "Listing enquiries spike evenings and weekends when buyers are actually free to look.",
+    why: "Listing inquiries spike evenings and weekends when buyers are actually free to look.",
     href: "/industries/real-estate-call-center-services",
     linkLabel: "Real estate call center",
   },
@@ -325,7 +325,7 @@ export default function AfterHoursAnsweringServiceContent({ faqs }: { faqs: Faq[
                   { tier: "Tier 1 — Immediate escalation", detail: "Active damage, safety risk, or a defined clinical or habitability emergency. Page the on-call person now, follow the escalation ladder if unanswered within your stated interval, and log every attempt with a timestamp." },
                   { tier: "Tier 2 — Book urgently", detail: "Serious but not actively worsening. Book the first available slot, confirm by SMS, and flag the record so the morning team sees it first." },
                   { tier: "Tier 3 — Book normally", detail: "Routine work the caller wants scheduled. Check live availability, book, confirm. No escalation, no callback required." },
-                  { tier: "Tier 4 — Capture and hold", detail: "General enquiries, vendor calls, non-urgent questions. Structured message delivered for the next business morning." },
+                  { tier: "Tier 4 — Capture and hold", detail: "General inquiries, vendor calls, non-urgent questions. Structured message delivered for the next business morning." },
                 ].map((x, i) => (
                   <div key={i} className="rounded-2xl border border-gray-200 p-5">
                     <h3 className="font-bold text-navy">{x.tier}</h3>

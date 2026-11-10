@@ -45,7 +45,7 @@ const features = [
   },
   {
     title: "Group Sales & Ticket Package Intake",
-    desc: "Inbound and outbound coverage for group bookings, youth and school nights, corporate packages, and theme events — qualifying the enquiry and routing it to your sales team with the details already captured.",
+    desc: "Inbound and outbound coverage for group bookings, youth and school nights, corporate packages, and theme events — qualifying the inquiry and routing it to your sales team with the details already captured.",
   },
   {
     title: "Ticketing Platform Integration",
@@ -88,7 +88,7 @@ const faqs = [
   {
     question: "Can you service suite holders and hospitality accounts?",
     answer:
-      "Yes, and we keep them on a separate queue. Premium accounts represent a large share of revenue and expect to reach someone who knows their account rather than waiting behind general ticket enquiries. Dedicated agents handle their servicing, guest lists, and event logistics to the standard that tier expects.",
+      "Yes, and we keep them on a separate queue. Premium accounts represent a large share of revenue and expect to reach someone who knows their account rather than waiting behind general ticket inquiries. Dedicated agents handle their servicing, guest lists, and event logistics to the standard that tier expects.",
   },
   {
     question: "Do you work inside our ticketing system?",

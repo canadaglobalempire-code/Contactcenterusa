@@ -49,7 +49,7 @@ const features = [
   },
   {
     title: "Bilingual Donor & Constituent Support",
-    desc: "Native Spanish-speaking agents handle donor conversations and program enquiries end to end, which widens both the supporter base and the community your programs can actually reach.",
+    desc: "Native Spanish-speaking agents handle donor conversations and program inquiries end to end, which widens both the supporter base and the community your programs can actually reach.",
   },
 ];
 

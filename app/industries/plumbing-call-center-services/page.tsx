@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo-config";
 
 const title = "Plumbing Answering Service & Call Center | 24/7 Dispatch";
 const description =
-  "Plumbing answering service for incoming enquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team.";
+  "Plumbing answering service for incoming inquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team.";
 
 export const metadata: Metadata = {
   title,
@@ -201,7 +201,7 @@ export default function PlumbingPage() {
       title="Plumbing Answering Service & Call Center"
       titleHighlight="Plumbing Answering Service"
       subtitle="24/7 Emergency Dispatch, ServiceTitan Integration & High-Margin Job Capture"
-      description="Plumbing answering service for incoming enquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team."
+      description="Plumbing answering service for incoming inquiries, job intake and after-hours dispatch. Plan coverage around your service area and on-call team."
       features={features}
       benefits={benefits}
       image="/images/cc-management.jpg"

@@ -91,7 +91,7 @@ const faqs = [
       "They work from a triage script agreed with you at onboarding rather than their own judgement. Certain symptoms — a burning smell at the panel, visible sparking, repeated breaker trips with heat, a downed line — trigger an immediate stop-and-dispatch with scripted safety guidance read verbatim, never improvised. Everything else books as service work against your calendar. The script also defines what agents must never do, such as advise a caller to open a panel or reset equipment. You review and approve every word of it before the first call is taken.",
   },
   {
-    question: "How do you handle high-ticket project enquiries like panel upgrades and EV chargers?",
+    question: "How do you handle high-ticket project inquiries like panel upgrades and EV chargers?",
     answer:
       "As sales-qualified intake rather than message-taking, because these are the most valuable calls an electrical contractor receives. Agents capture the property type and age, the service size if known, what is driving the project, and the caller's timeline — then book directly into your estimator's calendar while the caller is on the line. A homeowner researching an EV charger at 7 PM is calling more than one contractor that evening; the one whose estimator slot is confirmed before the call ends is usually the one who wins the job.",
   },
@@ -125,12 +125,12 @@ const seoSections: SEOPattern[] = [
     image: "/images/cc-agent-night.jpg",
     imagePosition: "right",
     body: [
-      "Electrical demand splits into two very different streams. Emergencies — sparking panels, burning smells, storm damage, full outages — arrive at any hour and carry genuine safety weight: the caller is frightened, will not leave a voicemail, and dials the next contractor within about twenty seconds of not reaching a person. Project calls — panel upgrades, EV chargers, generator installs — arrive in the evening after homeowners finish work, and they are the highest-ticket enquiries an electrical contractor receives.",
-      "Both streams lose to an unanswered phone, but they lose differently. The emergency goes to whoever answers first. The panel-upgrade enquiry, worth several thousand dollars, quietly books a competitor's estimator while your office phone rings out at 6:40 PM. The economics of live answering in this trade are driven by the second stream at least as much as the first.",
+      "Electrical demand splits into two very different streams. Emergencies — sparking panels, burning smells, storm damage, full outages — arrive at any hour and carry genuine safety weight: the caller is frightened, will not leave a voicemail, and dials the next contractor within about twenty seconds of not reaching a person. Project calls — panel upgrades, EV chargers, generator installs — arrive in the evening after homeowners finish work, and they are the highest-ticket inquiries an electrical contractor receives.",
+      "Both streams lose to an unanswered phone, but they lose differently. The emergency goes to whoever answers first. The panel-upgrade inquiry, worth several thousand dollars, quietly books a competitor's estimator while your office phone rings out at 6:40 PM. The economics of live answering in this trade are driven by the second stream at least as much as the first.",
     ],
     bullets: [
       "Emergency calls need triage in the first sentence: hazard now, or service soon",
-      "Weekday 5 PM - 9 PM is where high-ticket project enquiries concentrate",
+      "Weekday 5 PM - 9 PM is where high-ticket project inquiries concentrate",
       "Storm and grid events cluster a month of calls into 48 hours",
       "EV charger and panel-upgrade demand is rising and estimate-driven — qualification decides revenue",
     ],

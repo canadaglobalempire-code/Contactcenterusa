@@ -51,7 +51,7 @@ const FAQS = [
   },
   {
     q: "Is a dedicated receptionist worth the extra cost?",
-    a: "Only when the work genuinely requires continuity. A named receptionist who works solely your account learns your clients, your tone and your exceptions in a way a shared pool cannot, which matters for professional services, high-value clients and complex booking rules. For a business whose calls are mostly routine enquiries and appointments, a shared pool delivers nearly the same outcome at a quarter of the cost.",
+    a: "Only when the work genuinely requires continuity. A named receptionist who works solely your account learns your clients, your tone and your exceptions in a way a shared pool cannot, which matters for professional services, high-value clients and complex booking rules. For a business whose calls are mostly routine inquiries and appointments, a shared pool delivers nearly the same outcome at a quarter of the cost.",
   },
   {
     q: "What is usually not included in the quoted price?",
